@@ -1,0 +1,49 @@
+- type: technology
+  id: HydroponicsMachines
+  name: next-research-technology-hydroponics-machines
+  icon:
+    sprite: Structures/Machines/seed_extractor.rsi
+    state: seedextractor
+  discipline: Hydroponics
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+   - SeedExtractorMachineCircuitboard
+   - HydroponicsTrayMachineCircuitboard
+   - ReagentGrinderIndustrialMachineCircuitboard
+  technologyPrerequisites:
+   - Hydroponics
+
+- type: technology
+  id: EntertainmentMachines
+  name: next-research-technology-entertainment-machines
+  icon:
+    sprite: Structures/Machines/computers.rsi
+    state: television
+  discipline: Service
+  tier: 1
+  cost: 5500
+  recipeUnlocks:
+   - ComputerTelevisionCircuitboard
+   - DawInstrumentMachineCircuitboard
+   - MassMediaCircuitboard
+   - JukeboxCircuitBoard
+  technologyPrerequisites:
+   - Entertainment
+
+- type: technology
+  id: KitchenMachines
+  name: next-research-technology-kitchen-machines
+  icon:
+    sprite: Structures/Machines/fat_sucker.rsi
+    state: display
+  discipline: Service
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+   - FatExtractorMachineCircuitboard
+   - FreezerElectronics
+   - BiofabricatorMachineCircuitboard
+   - BiomassReclaimerMachineCircuitboard
+  technologyPrerequisites:
+   - Kitchen

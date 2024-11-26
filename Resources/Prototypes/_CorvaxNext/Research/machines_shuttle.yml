@@ -1,0 +1,49 @@
+- type: technology
+  id: ShuttleWeaponMachines
+  name: next-research-technology-shuttle-weapon-machines
+  icon:
+    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    state: exp-320g
+  discipline: ShuttleWeapon
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+   - PowerCageRechargerCircuitboard
+   - ShuttleGunSvalinnMachineGunCircuitboard
+   - ShuttleGunPerforatorCircuitboard
+   - ShuttleGunFriendshipCircuitboard
+  technologyPrerequisites:
+  - SalvageWeapons
+  - ShuttleWeapon
+
+- type: technology
+  id: ShuttleWeaponAdvancedMachines
+  name: next-research-technology-shuttle-weapon-advanced-machines
+  icon:
+    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    state: exp-2100g
+  discipline: ShuttleWeapon
+  tier: 1
+  cost: 9500
+  recipeUnlocks:
+   - ShuttleGunDusterCircuitboard
+  technologyPrerequisites:
+  - ShuttleWeaponMachines
+  - ShuttleWeaponAdvanced
+
+- type: technology
+  id: ShuttlecraftMachines
+  name: next-research-technology-shuttlecraft-machines
+  icon:
+    sprite: Structures/Shuttles/gyroscope.rsi
+    state: base
+  discipline: Shuttlecraft
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+   - ShuttleConsoleCircuitboard
+   - ThrusterMachineCircuitboard
+   - GyroscopeMachineCircuitboard
+   - MiniGravityGeneratorCircuitboard
+  technologyPrerequisites:
+  - PowerGenerationMachines

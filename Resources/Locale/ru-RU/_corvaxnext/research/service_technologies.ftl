@@ -1,0 +1,19 @@
+next-research-technology-lightning = Базовое освещение
+next-research-technology-lightning-advanced = Продвинутое освещение
+next-research-technology-bootlegging = Бутлегерство
+next-research-technology-kitchen = Сервировка
+next-research-technology-hydroponics = Гидропоника
+next-research-technology-entertainment = Развлечения
+next-research-technology-faux-astro-tiles = Эмитация природы
+next-research-technology-cleaning = Базовая уборка
+next-research-technology-cleaning-advanced = Продвинутая уборка
+next-research-technology-spray = Базовые распылители
+next-research-technology-spray-advanced = Продвинутые распылители
+next-research-technology-translation-device = Устройства перевода
+next-research-technology-translation-implanter = Импланты перевода
+next-research-technology-translation-device-advanced = Продвинутые устройства перевода
+next-research-technology-translation-implanter-advanced = Продвинутые импланты перевода
+
+next-research-technology-hydroponics-machines = Оборудование гидропоники
+next-research-technology-entertainment-machines = Оборудование развлечений
+next-research-technology-kitchen-machines = Кухонное оборудование

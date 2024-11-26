@@ -1,5 +1,6 @@
 ﻿- type: entity
-  id: ResearchAndDevelopmentServer
+  id: BaseResearchAndDevelopmentServer # Corvax-Next-EDIT-RNDResearch
+  abstract: true # Corvax-Next-RNDResearch
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   name: R&D server
   description: Contains the collective knowledge of the station's scientists. Destroying it would send them back to the stone age. You don't want that do you?
@@ -12,12 +13,12 @@
       - state: server_o
         map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: ResearchServer
-  - type: TechnologyDatabase
-    supportedDisciplines:
-    - Industrial
-    - Arsenal
-    - Experimental
-    - CivilianServices
+  - type: TechnologyDatabase # Corvax-Next-EDIT-RNDResearch
+#    supportedDisciplines:
+#    - Industrial
+#    - Arsenal
+#    - Experimental
+#    - CivilianServices
   - type: ApcPowerReceiver
     powerLoad: 200
   - type: ExtensionCableReceiver
@@ -57,6 +58,76 @@
   - type: GuideHelp
     guides:
     - Science
+
+- type: entity # Corvax-Next-RNDResearch
+  parent: BaseResearchAndDevelopmentServer
+  id: ResearchAndDevelopmentServer
+  components:
+  - type: TechnologyDatabase
+    supportedDisciplines:
+# <-- ENGINEERING -->
+    - Engineering
+    - EngineeringTools
+    - Powercells
+    - AtmosphericTools
+    - PowerGeneration
+    - MechanicalCompression
+    - Atmospheric
+# <-- SCIENTIFIC -->
+    - GravityManipulation
+    - AnomalyCoreHarnessing
+    - QuantumLeaping
+    - BluespaceStorage
+    - AnomalousResearch
+    - XenoArcheology
+    - AlternativeResearch
+    - AbnormalArtifactManipulation
+# <-- ROBOTICS -->
+    - Robotics
+    - Exosuits
+    - CyborgModules
+# <-- SECURITY -->
+    - Security
+    - RiotControl
+    - WarCrimes
+# <-- ARMORY -->
+    - Ammunition
+    - Explosive
+    - CombatLaser
+    - CombatLaserConcentrated
+    - CombatLaserWaveHarnessing
+    - CombatLaserExperimental
+# <-- SERVICE -->
+    - Service
+    - Hydroponics
+    - FauxAstroTiles
+    - Entertainment
+    - Cleaning
+    - Spray
+# <-- SHAFT -->
+    - SalvageWeapons
+    - SalvageEquipment
+    - Grappling
+    - SpaceScanning
+# <-- CARGO -->
+    - Cargo
+    - BluespaceCargoTransport
+# <-- MEDICAL -->
+    - Medicine
+    - Surgery
+    - Chemistry
+    - CrewMonitoring
+    - BodyBags
+    - BiochemicalStasis
+# <-- EQUIPMENT -->
+    - IntegratedHUDs
+    - MagneticBoots
+    - QuantumMagneticBoots
+# <-- SHUTTLE -->
+    - ShuttleWeapon
+    - Shuttlecraft
+# <-- TELECOMMUNICATIONS -->
+    - AudioVisualCommunication
 
 - type: entity
   id: BaseResearchAndDevelopmentPointSource

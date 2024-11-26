@@ -1,0 +1,19 @@
+next-research-technology-lightning = Basic lightning
+next-research-technology-lightning-advanced = Advanced lightning
+next-research-technology-bootlegging = Bootlegging
+next-research-technology-kitchen = Serving
+next-research-technology-hydroponics = Basic hydroponics
+next-research-technology-entertainment = Entertainment
+next-research-technology-faux-astro-tiles = Nature simulation
+next-research-technology-cleaning = Basic cleaning
+next-research-technology-cleaning-advanced = Advanced cleaning
+next-research-technology-spray = Basic sprayers
+next-research-technology-spray-advanced = Advanced sprayers
+next-research-technology-translation-device = Translation devices
+next-research-technology-translation-implanter = Translation implants
+next-research-technology-translation-device-advanced = Advanced translation devices
+next-research-technology-translation-implanter-advanced = Advanced translation implants
+
+next-research-technology-hydroponics-machines = Hydroponics equipment
+next-research-technology-entertainment-machines = Entertainment equipment
+next-research-technology-kitchen-machines = Kitchen equipment

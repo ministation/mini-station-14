@@ -1,0 +1,137 @@
+- type: technology
+  id: MachineParts
+  name: next-research-technology-machine-parts
+  icon:
+    sprite: Objects/Misc/stock_parts.rsi
+    state: matter_bin
+  discipline: MachineParts
+  tier: 1
+  cost: 500
+  recipeUnlocks:
+   - MicroManipulatorStockPart
+   - MatterBinStockPart
+   - CapacitorStockPart
+
+- type: technology
+  id: Powercells
+  name: next-research-technology-powercells
+  icon:
+    sprite: Objects/Power/power_cells.rsi
+    state: small
+  discipline: Powercells
+  tier: 1
+  cost: 500
+  recipeUnlocks:
+   - PowerCellSmall
+   - PowerCellMedium
+
+- type: technology
+  id: PowercellsAdvanced
+  name: next-research-technology-powercells-advanced
+  icon:
+    sprite: Objects/Power/power_cells.rsi
+    state: high
+  discipline: Powercells
+  tier: 1
+  cost: 1500
+  recipeUnlocks:
+   - PowerCellHigh
+  technologyPrerequisites:
+  - Powercells
+
+- type: technology
+  id: PortableFission
+  name: next-research-technology-portable-fission
+  icon:
+    sprite: Objects/Power/power_cells.rsi
+    state: microreactor
+  discipline: Powercells
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+   - PowerCellMicroreactor
+  technologyPrerequisites:
+  - PowercellsAdvanced
+
+#- type: technology
+#  id: EngineeringDevices
+#  name: next-research-technology-engineering-devices
+#  icon:
+#    sprite: Objects/Tools/rcd.rsi
+#    state: icon
+#  discipline: EngineeringDevices
+#  tier: 1
+#  cost: 10000
+#  recipeUnlocks:
+#   - RCDRecipe
+
+#- type: technology
+#  id: AtmosphericDevices
+#  name: next-research-technology-atmospheric-devices
+#  icon:
+#    sprite: Objects/Tools/rpd.rsi
+#    state: icon
+#  discipline: AtmosphericDevices
+#  tier: 1
+#  cost: 7500
+#  recipeUnlocks:
+#   - RapidPipeDispenserRecipe
+
+- type: technology
+  id: EngineeringTools
+  name: next-research-engineering-tools
+  icon:
+    sprite: Objects/Tools/multitool.rsi
+    state: icon
+  discipline: EngineeringTools
+  tier: 1
+  cost: 500
+  recipeUnlocks:
+   - Wirecutter
+   - Igniter
+   - Signaller
+   - Screwdriver
+   - Welder
+   - Wrench
+   - CrowbarGreen
+   - Multitool
+   - NetworkConfigurator
+   - SprayPainter
+   - FlashlightLantern
+   - CableStack
+   - CableMVStack
+   - CableHVStack
+   - TRayScanner
+   - GasAnalyzer
+   - UtilityBelt
+   - AppraisalTool
+   - AirTank
+   - ClothingHeadHatWelding
+
+- type: technology
+  id: EngineeringAdvancedTools
+  name: next-research-engineering-advanced-tools
+  icon:
+    sprite: Objects/Tools/welder_experimental.rsi
+    state: icon
+  discipline: EngineeringTools
+  tier: 1
+  cost: 12000
+  recipeUnlocks:
+   - WelderExperimental
+   - PowerDrill
+   - JawsOfLife
+  technologyPrerequisites:
+  - EngineeringTools
+
+- type: technology
+  id: AtmosphericTools
+  name: next-research-technology-atmospheric-tools
+  icon:
+    sprite: Objects/Devices/Holoprojectors/atmos.rsi
+    state: icon
+  discipline: AtmosphericTools
+  tier: 1
+  cost: 5500
+  recipeUnlocks:
+   - HolofanProjector

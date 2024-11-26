@@ -1,0 +1,230 @@
+- type: technology
+  id: Robotics
+  name: next-research-technology-robotics
+  icon:
+   sprite: Objects/Fun/pai.rsi
+   state: pai-base
+  discipline: Robotics
+  tier: 1
+  cost: 1500
+  recipeUnlocks:
+   - ProximitySensor
+   - PersonalAI
+
+- type: technology
+  id: RoboticsAdvanced
+  name: next-research-technology-robotics-advanced
+  icon:
+   sprite: Objects/Specific/Robotics/mmi.rsi
+   state: posibrain
+  discipline: Robotics
+  tier: 1
+  cost: 2000
+  recipeUnlocks:
+   - CyborgEndoskeleton
+   - LeftArmBorg
+   - RightArmBorg
+   - LeftLegBorg
+   - RightLegBorg
+   - LightHeadBorg
+   - TorsoBorg
+   - MMI
+   - PositronicBrain
+   - SciFlash
+  technologyPrerequisites:
+  - Robotics
+
+- type: technology
+  id: CritterMech
+  name: next-research-technology-critter-mech
+  icon:
+   sprite: Objects/Specific/Mech/mecha.rsi
+   state: hamtr
+  discipline: Exosuits
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+   - HamtrHarness
+   - HamtrLArm
+   - HamtrRArm
+   - HamtrLLeg
+   - HamtrRLeg
+   - HamtrCentralElectronics
+   - HamtrPeripheralsElectronics
+   - MechEquipmentGrabberSmall
+   - VimHarness
+  technologyPrerequisites:
+  - Robotics
+
+- type: technology
+  id: HONKMech
+  name: next-research-technology-honk-mech
+  icon:
+   sprite: Objects/Specific/Mech/mecha.rsi
+   state: honker
+  discipline: Exosuits
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+   - HonkerHarness
+   - HonkerLArm
+   - HonkerRArm
+   - HonkerLLeg
+   - HonkerRLeg
+   - HonkerCentralElectronics
+   - HonkerPeripheralsElectronics
+   - HonkerTargetingElectronics
+   - MechEquipmentHorn
+  technologyPrerequisites:
+  - Robotics
+
+- type: technology
+  id: RipleyAPLUMech
+  name: next-research-technology-ripley-aplu-mech
+  icon:
+   sprite: Objects/Specific/Mech/mecha.rsi
+   state: ripley
+  discipline: Exosuits
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+   - RipleyHarness
+   - RipleyLArm
+   - RipleyRArm
+   - RipleyLLeg
+   - RipleyRLeg
+   - RipleyCentralElectronics
+   - RipleyPeripheralsElectronics
+   - MechEquipmentGrabber
+  technologyPrerequisites:
+  - Robotics
+
+- type: technology
+  id: CyborgModules
+  name: next-research-technology-cyborg-modules
+  icon:
+   sprite: Objects/Specific/Robotics/borgmodule.rsi
+   state: generic
+  discipline: CyborgModules
+  tier: 1
+  cost: 2000
+  recipeUnlocks:
+   - BorgModuleCable
+   - BorgModuleFireExtinguisher
+   - BorgModuleRadiationDetection
+   - BorgModuleTool
+  technologyPrerequisites:
+  - RoboticsAdvanced
+
+- type: technology
+  id: MechanizedTreatmentModules
+  name: next-research-technology-mechanized-treatment-modules
+  icon:
+   sprite: Objects/Specific/Robotics/borgmodule.rsi
+   state: medical
+  discipline: CyborgModules
+  tier: 1
+  cost: 8000
+  recipeUnlocks:
+   - BorgModuleAdvancedTreatment
+   - BorgModuleDefibrillator
+  technologyPrerequisites:
+  - RoboticsAdvanced
+  - CyborgModules
+
+- type: technology
+  id: SpaceScanningModules
+  name: next-research-technology-space-scanning-modules
+  icon:
+   sprite: Objects/Tools/handheld_mass_scanner.rsi
+   state: icon
+  discipline: CyborgModules
+  tier: 1
+  cost: 6500
+  recipeUnlocks:
+   - BorgModuleGPS
+  technologyPrerequisites:
+  - RoboticsAdvanced
+  - CyborgModules
+  - SpaceScanning
+
+- type: technology
+  id: AdvancedToolsModules
+  name: next-research-technology-advanced-tools-modules
+  icon:
+   sprite: Objects/Tools/welder_experimental.rsi
+   state: icon
+  discipline: CyborgModules
+  tier: 1
+  cost: 9000
+  recipeUnlocks:
+   - BorgModuleAdvancedTool
+  technologyPrerequisites:
+  - RoboticsAdvanced
+  - CyborgModules
+  - EngineeringAdvancedTools
+
+- type: technology
+  id: HydroponicsModules
+  name: next-research-technology-hydroponics-modules
+  icon:
+   sprite: Structures/Machines/seed_extractor.rsi
+   state: seedextractor
+  discipline: CyborgModules
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+   - BorgModuleGardening
+   - BorgModuleHarvesting
+  technologyPrerequisites:
+  - RoboticsAdvanced
+  - CyborgModules
+
+- type: technology
+  id: SalvageEquipmentModules
+  name: next-research-technology-salvage-equipment-modules
+  icon:
+   sprite: Objects/Specific/Mech/mecha_equipment.rsi
+   state: mecha_drill
+  discipline: CyborgModules
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+   - MechEquipmentDrill
+  technologyPrerequisites:
+  - RoboticsAdvanced
+  - CyborgModules
+  - SalvageEquipment
+
+- type: technology
+  id: RoboticCleanlinessModules
+  name: next-research-technology-robotic-cleanliness-modules
+  icon:
+   sprite: Objects/Specific/Robotics/borgmodule.rsi
+   state: janitor
+  discipline: CyborgModules
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+   - BorgModuleAdvancedCleaning
+  technologyPrerequisites:
+  - RoboticsAdvanced
+  - CyborgModules
+  - CleaningAdvanced
+
+- type: technology
+  id: XenoArcheologyModules
+  name: next-research-technology-xeno-archeology-modules
+  icon:
+   sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
+   state: ano30
+  discipline: CyborgModules
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+   - BorgModuleArtifact
+   - BorgModuleAnomaly
+  technologyPrerequisites:
+  - RoboticsAdvanced
+  - CyborgModules
+  - XenoArcheologyMachines

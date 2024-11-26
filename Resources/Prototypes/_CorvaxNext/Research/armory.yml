@@ -1,0 +1,192 @@
+- type: technology
+  id: NonlethalAmmunition
+  name: next-research-technology-nonlethal-ammunition
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    state: beanbag
+  discipline: Ammunition
+  tier: 1
+  cost: 3500
+  recipeUnlocks:
+   - MagazineShotgunBeanbag
+   - BoxShellTranquilizer
+   - BoxBeanbag
+   - BoxShotgunPractice
+   - MagazineBoxLightRiflePractice
+   - MagazineBoxMagnumPractice
+   - MagazineBoxPistolPractice
+   - MagazineBoxRiflePractice
+  technologyPrerequisites:
+  - RiotControl
+
+- type: technology
+  id: LethalAmmunition
+  name: next-research-technology-lethal-ammunition
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    state: slug
+  discipline: Ammunition
+  tier: 1
+  cost: 5500
+  recipeUnlocks:
+   - BoxLethalshot
+   - BoxShotgunSlug
+   - MagazineBoxLightRifle
+   - MagazineBoxMagnum
+   - MagazineBoxPistol
+   - MagazineBoxRifle
+   - MagazineLightRifle
+   - MagazineLightRifleEmpty
+   - MagazinePistol
+   - MagazinePistolEmpty
+   - MagazineRifle
+   - MagazineRifleEmpty
+   - MagazinePistolSubMachineGun
+   - MagazinePistolSubMachineGunEmpty
+   - MagazinePistolSubMachineGunTopMounted
+   - MagazinePistolSubMachineGunTopMountedEmpty
+   - MagazineShotgun
+   - MagazineShotgunEmpty
+   - MagazineShotgunSlug
+   - SpeedLoaderMagnum
+   - SpeedLoaderMagnumEmpty
+  technologyPrerequisites:
+  - RiotControl
+  - NonlethalAmmunition
+
+- type: technology
+  id: DraconicAmmunition
+  name: next-research-technology-draconic-ammunition
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+    state: incendiarydisplay
+  discipline: Ammunition
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+   - BoxShotgunIncendiary
+   - MagazineRifleIncendiary
+   - MagazinePistolIncendiary
+   - MagazineLightRifleIncendiary
+   - SpeedLoaderMagnumIncendiary
+   - MagazineShotgunIncendiary
+   - MagazineBoxPistolIncendiary
+   - MagazineBoxMagnumIncendiary
+   - MagazineBoxLightRifleIncendiary
+   - MagazineBoxRifleIncendiary
+  technologyPrerequisites:
+  - RiotControl
+  - LethalAmmunition
+
+- type: technology
+  id: UraniumAmmunition
+  name: next-research-technology-uranium-ammunition
+  icon:
+    sprite: Objects/Materials/Sheets/other.rsi
+    state: uranium
+  discipline: Ammunition
+  tier: 1
+  cost: 9000
+  recipeUnlocks:
+   - MagazineRifleUranium
+   - MagazinePistolUranium
+   - MagazineLightRifleUranium
+   - SpeedLoaderMagnumUranium
+   - MagazineBoxPistolUranium
+   - MagazineBoxMagnumUranium
+   - MagazineBoxLightRifleUranium
+   - MagazineBoxRifleUranium
+   - BoxShotgunUranium
+  technologyPrerequisites:
+  - RiotControl
+  - LethalAmmunition
+
+- type: technology
+  id: Explosive
+  name: next-research-technology-explosive
+  icon:
+    sprite: Objects/Devices/payload.rsi
+    state: payload-explosive-armed
+  discipline: Explosive
+  tier: 1
+  cost: 8000
+  recipeUnlocks:
+   - SignallerAdvanced
+   - SignalTrigger
+   - VoiceTrigger
+   - TimerTrigger
+   - FlashPayload
+   - ExplosivePayload
+   - ChemicalPayload
+
+- type: technology
+  id: CombatLaser
+  name: next-research-technology-combat-laser
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
+    state: icon
+  discipline: CombatLaser
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+   - WeaponLaserCarbine
+  technologyPrerequisites:
+  - LethalAmmunition
+
+- type: technology
+  id: CombatLaserAdvanced
+  name: next-research-technology-combat-laser-advanced
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
+    state: icon
+  discipline: CombatLaser
+  tier: 1
+  cost: 15000
+  recipeUnlocks:
+   - WeaponAdvancedLaser
+   - PortableRecharger
+  technologyPrerequisites:
+  - CombatLaser
+  - CombatLaserConcentrated
+
+- type: technology
+  id: CombatLaserConcentrated
+  name: next-research-technology-combat-laser-concentrated
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
+    state: icon
+  discipline: CombatLaserConcentrated
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+   - WeaponLaserCannon
+  technologyPrerequisites:
+  - CombatLaser
+
+- type: technology
+  id: CombatLaserWaveHarnessing
+  name: next-research-technology-combat-laser-wave-harnessing
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/xray.rsi
+    state: icon
+  discipline: CombatLaserWaveHarnessing
+  tier: 1
+  cost: 12000
+  recipeUnlocks:
+   - WeaponXrayCannon
+  technologyPrerequisites:
+  - CombatLaser
+
+- type: technology
+  id: CombatLaserExperimental
+  name: next-research-technology-combat-laser-experimental
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
+    state: icon
+  discipline: CombatLaserExperimental
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+   - WeaponLaserSvalinn
+  technologyPrerequisites:
+  - CombatLaser

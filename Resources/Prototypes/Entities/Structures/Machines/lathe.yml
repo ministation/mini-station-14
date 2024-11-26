@@ -118,6 +118,8 @@
     unlitIdleState: unlit
     unlitRunningState: unlit-building
     staticRecipes:
+      - SheetRGlass
+    dynamicRecipes: # Corvax-Next-EDIT-RNDResearch
       - Wirecutter
       - Igniter
       - Signaller
@@ -140,7 +142,6 @@
       - Pickaxe
       - ModularReceiver
       - AppraisalTool
-      - SheetRGlass
       - Beaker
       - Syringe
       - HandLabeler
@@ -282,11 +283,11 @@
     runningState: building
     unlitIdleState: unlit
     unlitRunningState: unlit-building
-    staticRecipes:
-    - LargeBeaker
-    - Dropper
-    - ClothingEyesGlassesChemical
-    dynamicRecipes:
+    dynamicRecipes: # Corvax-Next-EDIT-RNDResearch
+      - LargeBeaker
+      - Dropper
+      - ClothingEyesGlassesChemical
+      - ClothingEyesHudDiagnostic # Corvax-Next-RNDResearch
       - PowerDrill
       - MiningDrill
       - MiningDrillDiamond
@@ -344,6 +345,8 @@
       - ClothingBackpackDuffelHolding
       - WelderExperimental
       - JawsOfLife
+      - MechEquipmentDrill # Corvax-Next-RNDResearch
+      - WeaponGrapplingGun # Corvax-Next-RNDResearch
       - FauxTileAstroGrass
       - FauxTileMowedAstroGrass
       - FauxTileJungleAstroGrass
@@ -580,10 +583,11 @@
   - type: Lathe
     idleState: fab-idle
     runningState: fab-active
-    staticRecipes:
+    dynamicRecipes: # Corvax-Next-EDIT-RNDResearch
     - MMI
     - PositronicBrain
     - SciFlash
+    - PersonalAI # Corvax-Next-RNDResearch
     - BorgModuleCable
     - BorgModuleFireExtinguisher
     - BorgModuleRadiationDetection
@@ -595,7 +599,6 @@
     - RightLegBorg
     - LightHeadBorg
     - TorsoBorg
-    dynamicRecipes:
     - ProximitySensor
     - BorgModuleAdvancedCleaning
     - BorgModuleAdvancedTool
@@ -706,7 +709,7 @@
   - type: Lathe
     idleState: icon
     runningState: icon
-    staticRecipes:
+    dynamicRecipes: # Corvax-Next-EDIT-RNDResearch
       - BoxLethalshot
       - BoxShotgunPractice
       - BoxShotgunSlug
@@ -747,7 +750,6 @@
       - WeaponFlareGunSecurity
       - WeaponLaserCarbinePractice
       - Zipties
-    dynamicRecipes:
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
@@ -829,7 +831,7 @@
     - type: Lathe
       idleState: icon
       runningState: icon
-      staticRecipes:
+      dynamicRecipes: # Corvax-Next-EDIT-RNDResearch
         - BoxLethalshot
         - BoxShotgunSlug
         - BoxShellTranquilizer
@@ -877,7 +879,9 @@
   - type: Lathe
     idleState: icon
     runningState: icon
-    staticRecipes:
+    staticRecipes: # Corvax-Next-EDIT-RNDResearch
+      - WhiteCane
+    dynamicRecipes:
       - Brutepack
       - Ointment
       - Gauze
@@ -888,10 +892,6 @@
       - ClothingHandsGlovesNitrile
       - ClothingMaskSterile
       - DiseaseSwab
-      - Beaker
-      - LargeBeaker
-      - Dropper
-      - Jug
       - Syringe
       - Implanter
       - PillCanister
@@ -916,8 +916,6 @@
       - Saw
       - Hemostat
       - ClothingEyesGlassesChemical
-      - WhiteCane
-    dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
       - BluespaceBeaker
@@ -927,6 +925,7 @@
       - NTBodyBag # Corvax-Next-AdvancedBodyBags
       - PrisonerBodyBag # Corvax-Next-AdvancedBodyBags
       - RadiationBodyBag # Corvax-Next-AdvancedBodyBags
+      - HandheldCrewMonitor # Corvax-Next-RNDResearch
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - SyndicateBodyBag # Corvax-Next-AdvancedBodyBags

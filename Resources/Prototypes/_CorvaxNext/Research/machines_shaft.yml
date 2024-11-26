@@ -1,0 +1,42 @@
+- type: technology
+  id: SalvageWeaponsMachines
+  name: next-research-technology-salvage-weapons-machines
+  icon:
+    sprite: Objects/Weapons/Guns/Shuttles/kinetic.rsi
+    state: ptk-800
+  discipline: SalvageWeapons
+  tier: 1
+  cost: 7000
+  recipeUnlocks:
+   - ShuttleGunKineticCircuitboard
+  technologyPrerequisites:
+  - SalvageWeapons
+
+- type: technology
+  id: SalvageEquipmentMachines
+  name: next-research-technology-salvage-equipment-machines
+  icon:
+    sprite: Structures/Machines/ore_processor_industrial.rsi
+    state: inserting
+  discipline: SalvageEquipment
+  tier: 1
+  cost: 5200
+  recipeUnlocks:
+   - OreProcessorIndustrialMachineCircuitboard
+#   - SalvageExpeditionsComputerCircuitBoard # Corvax-Cringe | Its broken?
+  technologyPrerequisites:
+  - SalvageEquipment
+
+- type: technology
+  id: SpaceScanningMachines
+  name: next-research-technology-space-scanning-machines
+  icon:
+    sprite: Objects/Tools/handheld_mass_scanner.rsi
+    state: icon
+  discipline: SpaceScanning
+  tier: 1
+  cost: 3500
+  recipeUnlocks:
+   - RadarConsoleCircuitboard
+  technologyPrerequisites:
+  - SpaceScanning

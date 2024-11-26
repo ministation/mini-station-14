@@ -1,0 +1,117 @@
+- type: technology
+  id: PowerGenerationMachines
+  name: next-research-technology-power-generation-machines
+  icon:
+    sprite: Structures/Power/Generation/portable_generator.rsi
+    state: portgen0
+  discipline: PowerGeneration
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+   - PortableGeneratorPacmanMachineCircuitboard
+   - PortableGeneratorSuperPacmanMachineCircuitboard
+   - PortableGeneratorJrPacmanMachineCircuitboard
+   - PowerComputerCircuitboard #the actual solar panel itself should be in here
+   - SolarControlComputerCircuitboard
+   - SolarTrackerElectronics
+   - EmitterCircuitboard
+
+- type: technology
+  id: PowerGenerationAdvancedMachines
+  name: next-research-technology-power-generation-advanced-machines
+  icon:
+    sprite: Structures/Power/Generation/portable_generator.rsi
+    state: portgen1
+  discipline: PowerGeneration
+  tier: 1
+  cost: 8500
+  recipeUnlocks:
+   - TurboItemRechargerCircuitboard
+   - PortableGeneratorSuperPacmanMachineCircuitboard
+  technologyPrerequisites:
+  - PowerGenerationMachines
+
+- type: technology
+  id: MechanicalCompressionMachines
+  name: next-research-technology-mechanical-compression-machines
+  icon:
+    sprite: Structures/Machines/flatpacker.rsi
+    state: base
+  discipline: MechanicalCompression
+  tier: 1
+  cost: 8500
+  recipeUnlocks:
+   - FlatpackerMachineCircuitboard
+  technologyPrerequisites:
+  - EngineeringAdvancedMachines
+
+- type: technology
+  id: EngineeringMachines
+  name: next-research-technology-engineering-machines
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: charger_APC
+  discipline: Engineering
+  tier: 1
+  cost: 800
+  recipeUnlocks:
+   - IntercomElectronics
+   - FirelockElectronics
+   - DoorElectronics
+   - AirAlarmElectronics
+   - StationMapElectronics
+   - FireAlarmElectronics
+   - MailingUnitElectronics
+   - SignalTimerElectronics
+   - APCElectronics
+   - SMESMachineCircuitboard
+   - SubstationMachineCircuitboard
+   - WallmountSubstationElectronics
+   - CellRechargerCircuitboard
+   - WeaponCapacitorRechargerCircuitboard
+
+- type: technology
+  id: EngineeringAdvancedMachines
+  name: next-research-technology-engineering-advanced-machines
+  icon:
+    sprite: Structures/Machines/protolathe_hypercon.rsi
+    state: building
+  discipline: Engineering
+  tier: 1
+  cost: 12000
+  recipeUnlocks:
+   - AutolatheHyperConvectionMachineCircuitboard
+   - ProtolatheHyperConvectionMachineCircuitboard
+   - CircuitImprinterHyperConvectionMachineCircuitboard
+   - SheetifierMachineCircuitboard
+  technologyPrerequisites:
+  - EngineeringMachines
+  - PowerGenerationAdvancedMachines
+
+- type: technology
+  id: AtmosphericMachines
+  name: next-research-technology-atmospheric-machines
+  icon:
+    sprite: Structures/Piping/Atmospherics/thermomachine.rsi
+    state: freezerOn
+  discipline: Atmospheric
+  tier: 1
+  cost: 5500
+  recipeUnlocks:
+   - ThermomachineFreezerMachineCircuitBoard
+   - GasRecyclerMachineCircuitboard
+
+- type: technology
+  id: AtmosphericAdvancedMachines
+  name: next-research-technology-atmospheric-advanced-machines
+  icon:
+    sprite: Structures/Piping/Atmospherics/hellfirethermomachine.rsi
+    state: freezerOn
+  discipline: Atmospheric
+  tier: 1
+  cost: 8500
+  recipeUnlocks:
+   - HellfireFreezerMachineCircuitBoard
+   - PortableScrubberMachineCircuitBoard
+  technologyPrerequisites:
+  - AtmosphericMachines
