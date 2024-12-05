@@ -41,6 +41,7 @@
   - type: Tool
     qualities:
       - Prying
+      - AdvancedPrying # Corvax-Next-AdvancedPrying
   - type: ToolTileCompatible
   - type: Prying
   - type: UseDelay
