@@ -21,9 +21,10 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
-  - type: Tag
+  - type: Tag # goob edit
     tags:
-      - Meat
+    - Meat
+    - Organ
 
 - type: entity
   id: OrganArachnidStomach
@@ -52,6 +53,11 @@
           Quantity: 5
   - type: Metabolizer
     updateInterval: 1.5
+  - type: Tag # goob edit
+    tags:
+    - Meat
+    - Organ
+    - Stomach
 
 - type: entity
   id: OrganArachnidLungs
@@ -89,6 +95,11 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
+  - type: Tag # goob edit
+    tags:
+    - Meat
+    - Organ
+    - Lungs
 
 - type: entity
   id: OrganArachnidHeart
@@ -163,6 +174,11 @@
     maxReagents: 5
     metabolizerTypes: [Animal]
     removeEmpty: true
+  - type: Tag # goob edit
+    tags:
+    - Meat
+    - Organ
+    - Kidneys
 
 - type: entity
   id: OrganArachnidEyes
@@ -194,3 +210,8 @@
   components:
   - type: Sprite
     state: tongue
+  - type: Tag # goob edit
+    tags:
+    - Meat
+    - Organ
+    - Tongue

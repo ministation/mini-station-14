@@ -1196,6 +1196,9 @@
   id: StringInstrument
 
 - type: Tag
+  id: Stunbaton
+
+- type: Tag
   id: SubdermalImplant
 
 - type: Tag

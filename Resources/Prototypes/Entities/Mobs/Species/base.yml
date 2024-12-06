@@ -189,6 +189,10 @@
         type: StrippableBoundUserInterface
       enum.SurgeryUIKey.Key: # _CorvaxNext: surgery
         type: SurgeryBui
+      enum.StoreUiKey.Key: # goob edit - heretics
+        type: StoreBoundUserInterface
+      enum.HereticLivingHeartKey.Key: # goob edit - heretics
+        type: LivingHeartMenuBoundUserInterface
   - type: Puller
   - type: Speech
     speechSounds: Alto
