@@ -5,7 +5,7 @@ holopad-window-options = [color=darkgray][font size=10][italic]Пожалуйс�
 # Call status
 holopad-window-no-calls-in-progress = Никакие голо-звонки не ведутся
 holopad-window-incoming-call = Входящий голо-звонок от:
-holopad-window-relay-label = Originating at:
+holopad-window-relay-label = Происходит из:
 holopad-window-outgoing-call = Попытка установить соединение...
 holopad-window-call-in-progress = Ведётся голо-звонок
 holopad-window-call-ending = Отсоединение...
@@ -26,7 +26,7 @@ holopad-window-access-denied = В доступе отказано
 holopad-window-select-contact-from-list = Выберите контакт для начала голо-звонка
 holopad-window-fetching-contacts-list = Нет голопадов, с которыми можно связаться
 holopad-window-contact-label = { CAPITALIZE($label) }
-holopad-window-filter-line-placeholder = Search for a contact
+holopad-window-filter-line-placeholder = Поиск контакта
 # Flavor
 holopad-window-flavor-left = ⚠ Не входите пока проектор активен
 holopad-window-flavor-right = v3.0.9
@@ -41,7 +41,7 @@ holopad-general-tools = Общий - Инструменты
 holopad-general-cryosleep = Общий - Криосон
 holopad-general-theater = Общий - Театр
 holopad-general-disposals = Общий - Мусоросброс
-holopad-general-eva = Общий - EVA хранилище
+holopad-general-eva = Общий - хранилище ВКД
 holopad-general-lounge = Общий - Зона отдыха
 holopad-general-arcade = Общий - Аркады
 holopad-general-evac = Общий - Эвак
@@ -63,7 +63,7 @@ holopad-command-hos = Командование - ГСБ
 holopad-science-anomaly = Научный - Аномалистика
 holopad-science-artifact = Научный - Ксеноархеология
 holopad-science-robotics = Научный - Робототехника
-holopad-science-rnd = Научный - НИО
+holopad-science-rnd = Научный - РНД
 holopad-science-front = Научный - Приёмная
 holopad-science-breakroom = Научный - Комната отдыха
 # Medical
@@ -76,7 +76,7 @@ holopad-medical-paramedic = Медицинский - Парамедик
 holopad-medical-virology = Медицинский - Вирусология
 holopad-medical-front = Медицинский - Приёмная
 holopad-medical-breakroom = Медицинский - Комната отдыха
-holopad-medical-clinic = Medical - Clinic
+holopad-medical-clinic = Медицинский - Клиника
 # Cargo
 holopad-cargo-front = Снабжение - Приёмная
 holopad-cargo-bay = Снабжение - Грузовой отсек
@@ -131,7 +131,7 @@ holopad-ai-backup-power = ИИ - Резервное питание
 holopad-ai-entrance = ИИ - Вход
 holopad-ai-chute = ИИ - Транспортный блок
 # Long Range
-holopad-station-bridge = Станция - Бриг
+holopad-station-bridge = Станция - Мостик
 holopad-station-cargo-bay = Станция - Грузовой отсек
 # CentComm
 holopad-centcomm-evac = Центком - Эвакуационный шаттл
