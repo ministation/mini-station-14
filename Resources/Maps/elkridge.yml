@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 250.0.0
+  engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/05/2025 13:44:54
-  entityCount: 17007
+  time: 03/08/2025 05:12:23
+  entityCount: 17012
 maps:
 - 1
 grids:
@@ -10413,13 +10413,6 @@ entities:
     - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 8057
-- proto: ADTSpawnMechPaddy
-  entities:
-  - uid: 3430
-    components:
-    - type: Transform
-      pos: 1.5,-20.5
-      parent: 2
 - proto: AirAlarm
   entities:
   - uid: 488
@@ -14078,7 +14071,7 @@ entities:
       pos: 47.5,5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -358190.44
+      secondsUntilStateChange: -357994.84
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -18084,85 +18077,16 @@ entities:
     - type: Transform
       pos: -35.5,30.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 5471
     components:
     - type: Transform
       pos: -35.5,32.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 13527
     components:
     - type: Transform
       pos: -18.5,13.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
 - proto: BorgChargerCircuitboard
   entities:
   - uid: 16400
@@ -40328,13 +40252,6 @@ entities:
     - type: Transform
       pos: 27.703878,37.44894
       parent: 2
-- proto: CaptainDrobe
-  entities:
-  - uid: 4595
-    components:
-    - type: Transform
-      pos: -24.5,0.5
-      parent: 2
 - proto: CaptainIDCard
   entities:
   - uid: 11350
@@ -45279,41 +45196,6 @@ entities:
     - type: Transform
       pos: 27.5,10.5
       parent: 2
-- proto: ChemistryBottleEthanol
-  entities:
-  - uid: 385
-    components:
-    - type: Transform
-      pos: 26.526052,37.62136
-      parent: 2
-- proto: ChemistryBottleEZNutrient
-  entities:
-  - uid: 14379
-    components:
-    - type: Transform
-      pos: 14.810062,3.8827004
-      parent: 2
-- proto: ChemistryBottleHydrogen
-  entities:
-  - uid: 401
-    components:
-    - type: Transform
-      pos: 26.343384,37.548748
-      parent: 2
-- proto: ChemistryBottleNitrogen
-  entities:
-  - uid: 13772
-    components:
-    - type: Transform
-      pos: 26.492949,36.90781
-      parent: 2
-- proto: ChemistryBottlePhosphorus
-  entities:
-  - uid: 13773
-    components:
-    - type: Transform
-      pos: 26.336699,36.68906
-      parent: 2
 - proto: ChemistryEmptyBottle01
   entities:
   - uid: 8823
@@ -46328,13 +46210,11 @@ entities:
           priority: 0
           component: ClothingSpeedModifier
         title: null
-    - type: Visibility
   - uid: 5275
     components:
     - type: Transform
       pos: -12.517433,9.588177
       parent: 2
-    - type: Visibility
 - proto: ClothingBeltMercWebbing
   entities:
   - uid: 13757
@@ -46706,6 +46586,33 @@ entities:
     - type: Transform
       pos: -18.721369,-13.487272
       parent: 2
+- proto: ClothingOuterArmorBulletproof
+  entities:
+  - uid: 5701
+    components:
+    - type: Transform
+      parent: 3430
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingOuterArmorReflective
+  entities:
+  - uid: 15332
+    components:
+    - type: Transform
+      parent: 3430
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingOuterArmorRiot
+  entities:
+  - uid: 15335
+    components:
+    - type: Transform
+      parent: 3430
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ClothingOuterCoatSyndieCap
   entities:
   - uid: 16060
@@ -47292,6 +47199,14 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -21.5,24.5
       parent: 2
+- proto: ComputerSalvageExpedition
+  entities:
+  - uid: 14306
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 24.5,45.5
+      parent: 2
 - proto: ComputerShuttleCargo
   entities:
   - uid: 4631
@@ -47308,14 +47223,6 @@ entities:
     components:
     - type: Transform
       pos: 0.5,40.5
-      parent: 2
-- proto: ComputerShuttleMiningLavaland
-  entities:
-  - uid: 14306
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 24.5,45.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -53617,6 +53524,13 @@ entities:
     - type: Transform
       pos: 37.652336,-3.2465425
       parent: 2
+- proto: DresserCaptainFilled
+  entities:
+  - uid: 4595
+    components:
+    - type: Transform
+      pos: -24.5,0.5
+      parent: 2
 - proto: DresserChiefEngineerFilled
   entities:
   - uid: 2539
@@ -54660,6 +54574,13 @@ entities:
     - type: Transform
       pos: 9.478508,24.56264
       parent: 2
+- proto: EthanolChemistryBottle
+  entities:
+  - uid: 385
+    components:
+    - type: Transform
+      pos: 26.526052,37.62136
+      parent: 2
 - proto: EvidenceMarkerOne
   entities:
   - uid: 14384
@@ -54803,6 +54724,13 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -5.5,35.5
+      parent: 2
+- proto: EZNutrientChemistryBottle
+  entities:
+  - uid: 14379
+    components:
+    - type: Transform
+      pos: 14.810062,3.8827004
       parent: 2
 - proto: FaxMachineBase
   entities:
@@ -58003,13 +57931,6 @@ entities:
     components:
     - type: Transform
       pos: 39.5,-37.5
-      parent: 2
-- proto: GasMinerPlasma
-  entities:
-  - uid: 5701
-    components:
-    - type: Transform
-      pos: 20.5,-37.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -81641,6 +81562,13 @@ entities:
     - type: Transform
       pos: 20.50719,-11.491249
       parent: 2
+- proto: HydrogenChemistryBottle
+  entities:
+  - uid: 401
+    components:
+    - type: Transform
+      pos: 26.343384,37.548748
+      parent: 2
 - proto: hydroponicsSoil
   entities:
   - uid: 14181
@@ -83071,6 +82999,54 @@ entities:
     - type: Transform
       pos: 1.5,-18.5
       parent: 2
+- proto: LockerSteel
+  entities:
+  - uid: 3430
+    components:
+    - type: Transform
+      pos: 1.5,-20.5
+      parent: 2
+    - type: AccessReader
+      access:
+      - - Armory
+      - - Captain
+      - - CentralCommand
+      - - HeadOfSecurity
+      - - Security
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 15333
+          - 15332
+          - 5701
+          - 15334
+          - 15335
+          - 15336
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: LockerSyndicatePersonal
   entities:
   - uid: 16055
@@ -84231,6 +84207,13 @@ entities:
     - type: Transform
       pos: 25.5,47.5
       parent: 2
+- proto: NitrogenChemistryBottle
+  entities:
+  - uid: 13772
+    components:
+    - type: Transform
+      pos: 26.492949,36.90781
+      parent: 2
 - proto: NitrousOxideTankFilled
   entities:
   - uid: 10611
@@ -84685,6 +84668,13 @@ entities:
     components:
     - type: Transform
       pos: -31.055569,-10.24702
+      parent: 2
+- proto: PhosphorusChemistryBottle
+  entities:
+  - uid: 13773
+    components:
+    - type: Transform
+      pos: 26.336699,36.68906
       parent: 2
 - proto: PianoInstrument
   entities:
@@ -90758,6 +90748,33 @@ entities:
     - type: Transform
       pos: -13.225977,14.12201
       parent: 2
+- proto: RiotBulletShield
+  entities:
+  - uid: 15333
+    components:
+    - type: Transform
+      parent: 3430
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: RiotLaserShield
+  entities:
+  - uid: 15336
+    components:
+    - type: Transform
+      parent: 3430
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: RiotShield
+  entities:
+  - uid: 15334
+    components:
+    - type: Transform
+      parent: 3430
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: RobocopCircuitBoard
   entities:
   - uid: 5492
@@ -94366,13 +94383,6 @@ entities:
     - type: Transform
       pos: -27.5,-3.5
       parent: 2
-- proto: SpawnMobGorillaLargo
-  entities:
-  - uid: 13528
-    components:
-    - type: Transform
-      pos: 10.5,33.5
-      parent: 2
 - proto: SpawnMobLizard
   entities:
   - uid: 13695
@@ -94407,6 +94417,13 @@ entities:
     components:
     - type: Transform
       pos: 2.5,20.5
+      parent: 2
+- proto: SpawnMobRaccoonMorticia
+  entities:
+  - uid: 13528
+    components:
+    - type: Transform
+      pos: 10.5,33.5
       parent: 2
 - proto: SpawnMobShiva
   entities:

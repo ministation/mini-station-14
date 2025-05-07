@@ -4,8 +4,8 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/02/2025 19:36:07
-  entityCount: 28266
+  time: 04/25/2025 16:43:34
+  entityCount: 28267
 maps:
 - 780
 grids:
@@ -697,7 +697,6 @@ entities:
             3640: 59,-51
             3642: 57,-51
             6270: -7,32
-            6304: -3,37
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
@@ -10652,13 +10651,6 @@ entities:
     - type: Transform
       pos: -34.5,-4.5
       parent: 8364
-- proto: ADTSpawnMechPaddy
-  entities:
-  - uid: 8629
-    components:
-    - type: Transform
-      pos: -2.5,37.5
-      parent: 8364
 - proto: ADTToyFigurineBlueshieldOfficer
   entities:
   - uid: 1342
@@ -13908,7 +13900,7 @@ entities:
       pos: 24.5,16.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -95286.914
+      secondsUntilStateChange: -95234.28
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15446,7 +15438,7 @@ entities:
       pos: 9.5,25.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -8543.416
+      secondsUntilStateChange: -8490.779
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -74403,6 +74395,13 @@ entities:
     - type: Transform
       pos: 73.5,2.5
       parent: 8364
+- proto: CrateContrabandStorageSecure
+  entities:
+  - uid: 8629
+    components:
+    - type: Transform
+      pos: 3.5,33.5
+      parent: 8364
 - proto: CrateEmergencyRadiation
   entities:
   - uid: 19055
@@ -75040,7 +75039,7 @@ entities:
   - uid: 7339
     components:
     - type: Transform
-      pos: 3.5,33.5
+      pos: -2.5,37.5
       parent: 8364
 - proto: CrateServiceJanitorialSupplies
   entities:
@@ -88022,7 +88021,7 @@ entities:
       pos: 18.5,-13.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -2517.9277
+      secondsUntilStateChange: -2465.2913
       state: Closing
   - uid: 13388
     components:
@@ -88030,7 +88029,7 @@ entities:
       pos: 18.5,-14.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -2553.6277
+      secondsUntilStateChange: -2500.9912
       state: Closing
   - uid: 13389
     components:
@@ -88198,7 +88197,7 @@ entities:
       pos: -34.5,-14.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -89475.45
+      secondsUntilStateChange: -89422.82
       state: Closing
   - uid: 15010
     components:
@@ -150497,6 +150496,13 @@ entities:
     components:
     - type: Transform
       pos: 7.5,40.5
+      parent: 8364
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 28255
+    components:
+    - type: Transform
+      pos: 14.5,33.5
       parent: 8364
 - proto: SpawnPointServiceWorker
   entities:

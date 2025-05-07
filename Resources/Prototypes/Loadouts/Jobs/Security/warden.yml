@@ -9,11 +9,6 @@
   equipment:
     head: ClothingHeadHatBeretWarden
 
-- type: loadout
-  id: WardenHeadAlt
-  equipment:
-    head: ClothingHeadHatCapWardenAlt
-
 # Jumpsuit
 - type: loadout
   id: WardenJumpsuit
@@ -35,8 +30,3 @@
   id: WardenArmoredWinterCoat
   equipment:
     outerClothing: ClothingOuterWinterWarden
-
-- type: loadout
-  id: WardenCoatAlt
-  equipment:
-    outerClothing: ClothingOuterCoatWardenAlt

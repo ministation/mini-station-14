@@ -1,48 +1,6 @@
 meta:
-  format: 7
-  category: Map
-  engineVersion: 250.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 05/05/2025 14:21:23
-  entityCount: 17411
-maps:
-- 1
-grids:
-- 2
-- 17345
-- 17346
-- 17347
-- 17348
-- 17349
-- 17350
-- 17351
-- 17352
-- 17353
-- 17354
-- 17355
-- 17356
-- 17358
-- 17360
-- 17362
-- 17364
-- 17366
-- 17368
-- 17370
-- 17372
-- 17374
-- 17376
-- 17377
-- 17378
-- 17379
-- 17380
-- 17381
-- 17386
-- 17387
-- 17388
-- 17390
-orphans: []
-nullspace: []
+  format: 6
+  postmapinit: false
 tilemap:
   0: Space
   12: FloorAstroGrass
@@ -120,6 +78,7 @@ entities:
     - type: OccluderTree
     - type: Parallax
       parallax: TrainStation
+    - type: LoadedMap
   - uid: 2
     components:
     - type: MetaData
@@ -6662,13 +6621,6 @@ entities:
     - type: Transform
       pos: -7.466254,-281.50427
       parent: 2
-- proto: ADTSpawnMechPaddy
-  entities:
-  - uid: 7672
-    components:
-    - type: Transform
-      pos: 4.5,-342.5
-      parent: 2
 - proto: AirAlarm
   entities:
   - uid: 5
@@ -12784,57 +12736,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -2.5,-251.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 884
     components:
     - type: Transform
       pos: 7.5,-310.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
 - proto: BorgChargerCircuitboard
   entities:
   - uid: 885
@@ -32325,13 +32231,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -6.6078706,-304.26178
       parent: 2
-- proto: CaptainDrobe
-  entities:
-  - uid: 7134
-    components:
-    - type: Transform
-      pos: -0.5,-13.5
-      parent: 2
 - proto: CaptainIDCard
   entities:
   - uid: 4722
@@ -36500,7 +36399,6 @@ entities:
     - type: Transform
       pos: -11.520256,-161.46404
       parent: 2
-    - type: Visibility
 - proto: ClothingBackpackMerc
   entities:
   - uid: 5419
@@ -36509,7 +36407,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 17.53031,-143.53029
       parent: 2
-    - type: Visibility
 - proto: ClothingBeltChampion
   entities:
   - uid: 5420
@@ -36811,24 +36708,6 @@ entities:
     - type: Transform
       pos: 12.225706,-136.18898
       parent: 2
-- proto: ClothingMaskBlushingClown
-  entities:
-  - uid: 5469
-    components:
-    - type: Transform
-      parent: 5467
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: ClothingMaskBlushingMime
-  entities:
-  - uid: 5482
-    components:
-    - type: Transform
-      parent: 5479
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingMaskBreath
   entities:
   - uid: 5466
@@ -36871,6 +36750,24 @@ entities:
 - proto: ClothingMaskScaredMime
   entities:
   - uid: 5481
+    components:
+    - type: Transform
+      parent: 5479
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingMaskSexyClown
+  entities:
+  - uid: 5469
+    components:
+    - type: Transform
+      parent: 5467
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingMaskSexyMime
+  entities:
+  - uid: 5482
     components:
     - type: Transform
       parent: 5479
@@ -37375,6 +37272,14 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -9.5,-300.5
       parent: 2
+- proto: ComputerSalvageExpedition
+  entities:
+  - uid: 5558
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -7.5,-274.5
+      parent: 2
 - proto: ComputerShuttleCargo
   entities:
   - uid: 5559
@@ -37382,14 +37287,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 8.5,-279.5
-      parent: 2
-- proto: ComputerShuttleMiningLavaland
-  entities:
-  - uid: 5558
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -7.5,-274.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -46392,6 +46289,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: -5.5,-339.5
       parent: 2
+- proto: DresserCaptainFilled
+  entities:
+  - uid: 7134
+    components:
+    - type: Transform
+      pos: -0.5,-13.5
+      parent: 2
 - proto: DresserChiefEngineerFilled
   entities:
   - uid: 7135
@@ -49885,13 +49789,6 @@ entities:
     components:
     - type: Transform
       pos: -24.5,-253.5
-      parent: 2
-- proto: GasMinerPlasma
-  entities:
-  - uid: 8644
-    components:
-    - type: Transform
-      pos: -24.5,-259.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -76353,7 +76250,7 @@ entities:
       pos: 8.5,-176.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -148405.08
+      secondsUntilStateChange: -148220.45
       state: Closing
   - uid: 11227
     components:
@@ -89722,6 +89619,12 @@ entities:
     components:
     - type: Transform
       pos: -5.5,-337.5
+      parent: 2
+  - uid: 13436
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 4.5,-342.5
       parent: 2
   - uid: 13437
     components:

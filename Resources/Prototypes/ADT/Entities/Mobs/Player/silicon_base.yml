@@ -180,9 +180,9 @@
       doAfterDelay: 8 # was 18
       damage:
         types:
-          Blunt: -35
-          Slash: -35
-          Piercing: -35
+          Blunt: -50
+          Slash: -50
+          Piercing: -50
           Heat: -20
           Cold: -20
           Shock: -20

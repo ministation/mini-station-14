@@ -4,7 +4,7 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/04/2025 09:11:49
+  time: 04/26/2025 18:39:54
   entityCount: 649
 maps: []
 grids:
@@ -2772,23 +2772,6 @@ entities:
     - type: Transform
       pos: -4.420553,10.631646
       parent: 2
-- proto: NTVisitorSpawner
-  entities:
-  - uid: 451
-    components:
-    - type: Transform
-      pos: 7.5,12.5
-      parent: 2
-  - uid: 467
-    components:
-    - type: Transform
-      pos: 9.5,12.5
-      parent: 2
-  - uid: 482
-    components:
-    - type: Transform
-      pos: 5.5,12.5
-      parent: 2
 - proto: OxygenCanister
   entities:
   - uid: 397
@@ -3460,6 +3443,27 @@ entities:
     components:
     - type: Transform
       pos: 7.5,22.5
+      parent: 2
+- proto: VisitorClownSpawner
+  entities:
+  - uid: 467
+    components:
+    - type: Transform
+      pos: 7.5,12.5
+      parent: 2
+- proto: VisitorMedicalInternSpawner
+  entities:
+  - uid: 451
+    components:
+    - type: Transform
+      pos: 5.5,12.5
+      parent: 2
+- proto: VisitorMusicianFancySpawner
+  entities:
+  - uid: 482
+    components:
+    - type: Transform
+      pos: 9.5,12.5
       parent: 2
 - proto: WallReinforced
   entities:

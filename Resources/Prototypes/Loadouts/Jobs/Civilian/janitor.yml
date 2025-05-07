@@ -1,20 +1,11 @@
 - type: loadoutEffectGroup
-  id: SeniorJanitorialBaseMaid
+  id: SeniorJanitorial
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobJanitor
-      time: 108000 #30 часов
-
-- type: loadoutEffectGroup
-  id: SeniorJanitorialVeryCool
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobJanitor
-      time: 234000 #65 часов
+      time: 187200 #52 hrs (1 hour per week for 1 year)
 
 # Head
 - type: loadout
@@ -32,30 +23,6 @@
   id: JanitorJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtJanitor
-
-- type: loadout
-  id: JanitorJumpsuitMaid
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorJanitorialBaseMaid
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtJanimaid
-
-- type: loadout
-  id: JanitorJumpsuitMaidSkirt
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorJanitorialBaseMaid
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtJanimaidmini
-
-- type: loadout
-  id: JanitorJumpsuitMaidVeryCool
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorJanitorialVeryCool
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtElegantMaid
 
 # Gloves
 - type: loadout
@@ -84,7 +51,7 @@
   id: JanitorGoldenPlunger
   effects:
   - !type:GroupLoadoutEffect
-    proto: SeniorJanitorialVeryCool #Ещё парочку часов придётся наиграть :)
+    proto: SeniorJanitorial
   storage:
     back:
     - GoldenPlunger

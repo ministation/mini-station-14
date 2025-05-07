@@ -35,16 +35,12 @@
     ClothingUniformJumpsuitSheriff: 1
     ClothingHandsGlovesSheriff: 1
     ClothingBeltSheriffSheath: 1
-    ClothingMaskNeckGaiter: 1
    # Other
     ClothingEyesGlassesGarGiga: 1
     ClothingUniformJumpsuitCommandCaptain: 1
     ClothingBackpackCaptain: 1
     ClothingBackpackDuffelCaptain: 1
     ClothingBackpackSatchelCaptain: 1
-    ClothingMilitaryBackpack: 1
-    ClothingBackpackDuffelMilitary: 1
-    ClothingBackpackMilitarySatchel: 1
    # Stuff
     MedalCase: 1
     FlippoEngravedLighter: 1

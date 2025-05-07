@@ -4,7 +4,7 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/02/2025 20:36:02
+  time: 04/25/2025 16:52:02
   entityCount: 28755
 maps:
 - 951
@@ -9146,13 +9146,6 @@ entities:
     - type: Transform
       pos: -23.5,39.5
       parent: 5350
-- proto: ADTSpawnMechPaddy
-  entities:
-  - uid: 6369
-    components:
-    - type: Transform
-      pos: -8.5,46.5
-      parent: 5350
 - proto: ADTSuitStorageBlueshield
   entities:
   - uid: 7518
@@ -12474,7 +12467,7 @@ entities:
       pos: 11.5,29.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -7003.9893
+      secondsUntilStateChange: -6689.023
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14769,7 +14762,7 @@ entities:
       pos: -29.5,15.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -260933.28
+      secondsUntilStateChange: -260618.31
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15033,7 +15026,7 @@ entities:
       pos: -4.5,53.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -115587.016
+      secondsUntilStateChange: -115272.05
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 2
@@ -70726,6 +70719,16 @@ entities:
     - type: Transform
       pos: -31.5,-73.5
       parent: 5350
+- proto: CrateContrabandStorageSecure
+  entities:
+  - uid: 1706
+    components:
+    - type: Transform
+      anchored: True
+      pos: -1.5,38.5
+      parent: 5350
+    - type: Physics
+      bodyType: Static
 - proto: CrateEmptySpawner
   entities:
   - uid: 3564
@@ -84667,7 +84670,7 @@ entities:
       pos: 31.5,-33.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -38426.066
+      secondsUntilStateChange: -38111.1
       state: Closing
   - uid: 9615
     components:
@@ -129032,11 +129035,34 @@ entities:
       parent: 5350
 - proto: GunSafeDisabler
   entities:
-  - uid: 1706
+  - uid: 6369
     components:
+    - type: MetaData
+      desc: A standard-issue Nanotrasen storage unit, containing 5 Disabler pistols.
     - type: Transform
-      pos: -1.5,38.5
+      anchored: True
+      pos: -8.5,46.5
       parent: 5350
+    - type: Physics
+      bodyType: Static
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: GunSafePistolMk58
   entities:
   - uid: 6511
@@ -185568,7 +185594,7 @@ entities:
       pos: -28.5,-5.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -44137.977
+      secondsUntilStateChange: -43823.01
       state: Opening
   - uid: 17570
     components:

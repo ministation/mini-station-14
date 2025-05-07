@@ -1,10 +1,10 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 250.0.0
+  engineVersion: 248.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/02/2025 20:56:38
+  time: 03/09/2025 09:02:52
   entityCount: 26218
 maps:
 - 1
@@ -645,7 +645,6 @@ entities:
             7779: -113,-3
             7780: -109,-3
             7782: -108,-3
-            7902: -81,-22
         - node:
             angle: 3.141592653589793 rad
             color: '#FFFFFFFF'
@@ -9848,13 +9847,6 @@ entities:
     - type: InstantAction
       originalIconColor: '#FFFFFFFF'
       container: 17810
-- proto: ADTSpawnMechPaddy
-  entities:
-  - uid: 14658
-    components:
-    - type: Transform
-      pos: -80.5,-21.5
-      parent: 2
 - proto: AirAlarm
   entities:
   - uid: 346
@@ -25279,7 +25271,6 @@ entities:
     - type: Transform
       pos: -55.446175,-36.496502
       parent: 2
-    - type: Visibility
 - proto: BoxPillCanister
   entities:
   - uid: 16667
@@ -54733,13 +54724,6 @@ entities:
     - type: Transform
       pos: -24.484737,-64.29825
       parent: 2
-- proto: CaptainDrobe
-  entities:
-  - uid: 2900
-    components:
-    - type: Transform
-      pos: -45.5,2.5
-      parent: 2
 - proto: CaptainIDCard
   entities:
   - uid: 22261
@@ -63596,23 +63580,6 @@ entities:
     - type: Transform
       pos: -39.5,-25.5
       parent: 2
-- proto: ChemistryBottleEpinephrine
-  entities:
-  - uid: 2612
-    components:
-    - type: Transform
-      pos: -60.347107,-3.8663821
-      parent: 2
-  - uid: 6479
-    components:
-    - type: Transform
-      pos: -36.623154,-30.40255
-      parent: 2
-  - uid: 6480
-    components:
-    - type: Transform
-      pos: -36.404404,-30.261925
-      parent: 2
 - proto: ChemistryHotplate
   entities:
   - uid: 3949
@@ -64376,31 +64343,26 @@ entities:
     - type: Transform
       pos: -41.47029,-38.43946
       parent: 2
-    - type: Visibility
   - uid: 4070
     components:
     - type: Transform
       pos: -23.501163,-36.28371
       parent: 2
-    - type: Visibility
   - uid: 4071
     components:
     - type: Transform
       pos: -23.485538,-38.330585
       parent: 2
-    - type: Visibility
   - uid: 8059
     components:
     - type: Transform
       pos: -124.49293,-55.3451
       parent: 2
-    - type: Visibility
   - uid: 13573
     components:
     - type: Transform
       pos: -34.523182,-37.31406
       parent: 2
-    - type: Visibility
 - proto: ClothingBackpackWaterTank
   entities:
   - uid: 3370
@@ -65360,6 +65322,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: -133.5,-48.5
       parent: 2
+- proto: ComputerSalvageExpedition
+  entities:
+  - uid: 22987
+    components:
+    - type: Transform
+      pos: -95.5,35.5
+      parent: 2
 - proto: ComputerShuttleCargo
   entities:
   - uid: 2711
@@ -65377,13 +65346,6 @@ entities:
     components:
     - type: Transform
       pos: -91.5,25.5
-      parent: 2
-- proto: ComputerShuttleMiningLavaland
-  entities:
-  - uid: 22987
-    components:
-    - type: Transform
-      pos: -95.5,35.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -66773,6 +66735,13 @@ entities:
     components:
     - type: Transform
       pos: -44.5,-58.5
+      parent: 2
+- proto: CrateSecurityTrackingMindshieldImplants
+  entities:
+  - uid: 14658
+    components:
+    - type: Transform
+      pos: -80.5,-21.5
       parent: 2
 - proto: CrateServiceJanitorialSupplies
   entities:
@@ -76442,6 +76411,13 @@ entities:
     - type: Transform
       pos: -51.5,-38.5
       parent: 2
+- proto: DresserCaptainFilled
+  entities:
+  - uid: 2900
+    components:
+    - type: Transform
+      pos: -45.5,2.5
+      parent: 2
 - proto: DresserChiefEngineerFilled
   entities:
   - uid: 6289
@@ -76764,6 +76740,23 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -112.5,34.5
+      parent: 2
+- proto: EpinephrineChemistryBottle
+  entities:
+  - uid: 2612
+    components:
+    - type: Transform
+      pos: -60.347107,-3.8663821
+      parent: 2
+  - uid: 6479
+    components:
+    - type: Transform
+      pos: -36.623154,-30.40255
+      parent: 2
+  - uid: 6480
+    components:
+    - type: Transform
+      pos: -36.404404,-30.261925
       parent: 2
 - proto: ExosuitFabricator
   entities:
@@ -142526,13 +142519,6 @@ entities:
     - type: Transform
       pos: -53.5,-1.5
       parent: 2
-- proto: SpawnMobGorillaLargo
-  entities:
-  - uid: 12764
-    components:
-    - type: Transform
-      pos: -88.5,33.5
-      parent: 2
 - proto: SpawnMobMcGriff
   entities:
   - uid: 22277
@@ -142553,6 +142539,13 @@ entities:
     components:
     - type: Transform
       pos: -126.5,-18.5
+      parent: 2
+- proto: SpawnMobRaccoonMorticia
+  entities:
+  - uid: 12764
+    components:
+    - type: Transform
+      pos: -88.5,33.5
       parent: 2
 - proto: SpawnMobShiva
   entities:
@@ -166269,7 +166262,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -199443.3
+      secondsUntilStateChange: -199343.58
       state: Opening
     - type: Airlock
       autoClose: False

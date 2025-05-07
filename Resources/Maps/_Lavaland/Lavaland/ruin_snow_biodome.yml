@@ -4,8 +4,8 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/04/2025 09:09:50
-  entityCount: 571
+  time: 04/26/2025 19:02:54
+  entityCount: 565
 maps: []
 grids:
 - 1
@@ -273,26 +273,6 @@ entities:
     - type: Physics
       angularDamping: 0
       linearDamping: 0
-- proto: ActionToggleInternals
-  entities:
-  - uid: 569
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 568
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 568
-  - uid: 571
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 570
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 570
 - proto: AirCanister
   entities:
   - uid: 546
@@ -1515,13 +1495,6 @@ entities:
       linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingMaskGasExplorer
-  entities:
-  - uid: 567
-    components:
-    - type: Transform
-      pos: -13.702547,4.6956205
-      parent: 1
 - proto: ClothingOuterWinterColorBlue
   entities:
   - uid: 481
@@ -1572,36 +1545,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 3.5,11.5
       parent: 1
-- proto: DoubleEmergencyNitrogenTankFilled
-  entities:
-  - uid: 568
-    components:
-    - type: Transform
-      pos: -13.702547,4.3206205
-      parent: 1
-    - type: GasTank
-      toggleActionEntity: 569
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 569
-- proto: DoubleEmergencyOxygenTank
-  entities:
-  - uid: 570
-    components:
-    - type: Transform
-      pos: -13.546297,4.1018705
-      parent: 1
-    - type: GasTank
-      toggleActionEntity: 571
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 571
 - proto: DrinkIcedTeaCan
   entities:
   - uid: 473
@@ -1953,31 +1896,12 @@ entities:
     - type: Transform
       pos: -5.5,13.5
       parent: 1
-- proto: NTVisitorSpawner
-  entities:
-  - uid: 564
-    components:
-    - type: Transform
-      pos: -0.5,10.5
-      parent: 1
-  - uid: 565
-    components:
-    - type: Transform
-      pos: 1.5,11.5
-      parent: 1
 - proto: PersonalAI
   entities:
   - uid: 472
     components:
     - type: Transform
       pos: 0.5,10.5
-      parent: 1
-- proto: Pickaxe
-  entities:
-  - uid: 566
-    components:
-    - type: Transform
-      pos: -13.358797,4.3362455
       parent: 1
 - proto: Poweredlight
   entities:
@@ -2266,6 +2190,20 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 5.5,13.5
+      parent: 1
+- proto: VisitorDetective
+  entities:
+  - uid: 565
+    components:
+    - type: Transform
+      pos: 3.5,10.5
+      parent: 1
+- proto: VisitorQMSpawner
+  entities:
+  - uid: 564
+    components:
+    - type: Transform
+      pos: -2.5,10.5
       parent: 1
 - proto: WallReinforced
   entities:

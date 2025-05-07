@@ -4,8 +4,8 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/04/2025 09:00:44
-  entityCount: 571
+  time: 04/26/2025 19:05:37
+  entityCount: 566
 maps: []
 grids:
 - 2
@@ -1276,13 +1276,6 @@ entities:
     - type: Transform
       pos: 14.480757,16.071545
       parent: 2
-- proto: ClothingMaskGas
-  entities:
-  - uid: 547
-    components:
-    - type: Transform
-      pos: 11.310326,1.6091874
-      parent: 2
 - proto: ClothingMaskGoldenCursed
   entities:
   - uid: 518
@@ -1641,7 +1634,7 @@ entities:
   - uid: 217
     components:
     - type: Transform
-      pos: 1.6705346,14.633283
+      pos: 1.6415021,14.576649
       parent: 2
     - type: Physics
       angularDamping: 0
@@ -1670,20 +1663,6 @@ entities:
     - type: Transform
       pos: 3.424673,17.532959
       parent: 2
-- proto: NitrogenTankFilled
-  entities:
-  - uid: 561
-    components:
-    - type: Transform
-      pos: 11.560326,1.3748124
-      parent: 2
-- proto: OxygenTankFilled
-  entities:
-  - uid: 225
-    components:
-    - type: Transform
-      pos: 11.685326,1.3904374
-      parent: 2
 - proto: PaperBin20
   entities:
   - uid: 218
@@ -1699,13 +1678,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 11.6626,3.4905415
-      parent: 2
-- proto: Pickaxe
-  entities:
-  - uid: 571
-    components:
-    - type: Transform
-      pos: 11.482201,1.5154374
       parent: 2
 - proto: PlasticBanana
   entities:
@@ -1979,13 +1951,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5,12.5
-      parent: 2
-- proto: Rack
-  entities:
-  - uid: 213
-    components:
-    - type: Transform
-      pos: 11.5,1.5
       parent: 2
 - proto: RevolverCapGun
   entities:
@@ -3657,7 +3622,7 @@ entities:
       pos: 10.5,15.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -42251.19
+      secondsUntilStateChange: -42032.137
       state: Opening
   - uid: 508
     components:

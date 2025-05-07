@@ -5,10 +5,10 @@
   - Bagel
   - Box
   - Convex
-  - Core
+  #- Core
   - Elkridge
   - Fland
-  - Gate
+  #- Gate
   - Loop
   - Marathon
   - Meta
@@ -17,4 +17,4 @@
   - Packed
   - Plasma
   - Reach
-  - Train
+  #- Train

@@ -405,9 +405,6 @@
   loadouts:
   - JanitorJumpsuit
   - JanitorJumpskirt
-  - JanitorJumpsuitMaid
-  - JanitorJumpsuitMaidSkirt
-  - JanitorJumpsuitMaidVeryCool
 
 - type: loadoutGroup
   id: JanitorGloves
@@ -1014,7 +1011,6 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
-  - HeadofSecurityGreatCoat
 
 - type: loadoutGroup
   id: WardenHead
@@ -1023,7 +1019,6 @@
   loadouts:
   - WardenHead
   - WardenBeret
-  - WardenHeadAlt
 
 - type: loadoutGroup
   id: WardenJumpsuit
@@ -1038,7 +1033,6 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
-  - WardenCoatAlt
 
 - type: loadoutGroup
   id: SecurityHead

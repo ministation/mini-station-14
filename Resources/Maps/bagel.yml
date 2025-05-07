@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 250.0.0
+  engineVersion: 249.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/05/2025 13:36:13
-  entityCount: 25711
+  time: 03/23/2025 08:00:27
+  entityCount: 25710
 maps:
 - 943
 grids:
@@ -17352,225 +17352,41 @@ entities:
     - type: Transform
       pos: -114.5,15.5
       parent: 60
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 5587
     components:
     - type: Transform
       pos: -34.5,12.5
       parent: 60
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 5795
     components:
     - type: Transform
       pos: -108.5,15.5
       parent: 60
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 7086
     components:
     - type: Transform
       pos: -30.5,12.5
       parent: 60
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 12750
     components:
     - type: Transform
       pos: -117.5,15.5
       parent: 60
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 21685
     components:
     - type: Transform
       pos: 19.5,11.5
       parent: 60
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 21693
     components:
     - type: Transform
       pos: -113.5,30.5
       parent: 60
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
   - uid: 21694
     components:
     - type: Transform
       pos: -109.5,30.5
       parent: 60
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        charger_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Construction
-      containers:
-      - machine_parts
-      - machine_board
-      - entity_storage
 - proto: BoxBeaker
   entities:
   - uid: 8762
@@ -51977,13 +51793,6 @@ entities:
     - type: Transform
       pos: 23.743336,21.526909
       parent: 60
-- proto: CaptainDrobe
-  entities:
-  - uid: 6419
-    components:
-    - type: Transform
-      pos: -7.5,-6.5
-      parent: 60
 - proto: CaptainIDCard
   entities:
   - uid: 23919
@@ -62477,7 +62286,6 @@ entities:
     - type: Transform
       pos: 20.48184,-11.502675
       parent: 60
-    - type: Visibility
 - proto: ClothingBackpackDuffelSurgeryFilled
   entities:
   - uid: 530
@@ -62485,7 +62293,6 @@ entities:
     - type: Transform
       pos: 38.489937,-12.380952
       parent: 60
-    - type: Visibility
 - proto: ClothingBackpackSatchelLeather
   entities:
   - uid: 8702
@@ -62493,7 +62300,6 @@ entities:
     - type: Transform
       pos: -60.61622,-21.218712
       parent: 60
-    - type: Visibility
 - proto: ClothingBeltChampion
   entities:
   - uid: 18460
@@ -64475,20 +64281,20 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -44.5,5.5
       parent: 60
-- proto: ComputerShuttleCargo
-  entities:
-  - uid: 19004
-    components:
-    - type: Transform
-      pos: 56.5,13.5
-      parent: 60
-- proto: ComputerShuttleMiningLavaland
+- proto: ComputerSalvageExpedition
   entities:
   - uid: 5288
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 42.5,-0.5
+      parent: 60
+- proto: ComputerShuttleCargo
+  entities:
+  - uid: 19004
+    components:
+    - type: Transform
+      pos: 56.5,13.5
       parent: 60
 - proto: ComputerSolarControl
   entities:
@@ -71407,6 +71213,13 @@ entities:
         actions: !type:Container
           ents:
           - 13159
+- proto: DresserCaptainFilled
+  entities:
+  - uid: 6419
+    components:
+    - type: Transform
+      pos: -7.5,-6.5
+      parent: 60
 - proto: DresserChiefEngineerFilled
   entities:
   - uid: 944
@@ -76530,13 +76343,6 @@ entities:
     components:
     - type: Transform
       pos: -44.5,34.5
-      parent: 60
-- proto: GasMinerPlasma
-  entities:
-  - uid: 22116
-    components:
-    - type: Transform
-      pos: -44.5,40.5
       parent: 60
 - proto: GasMinerWaterVapor
   entities:
@@ -134987,13 +134793,6 @@ entities:
     - type: Transform
       pos: 30.5,-35.5
       parent: 60
-- proto: SpawnMobGorillaLargo
-  entities:
-  - uid: 13102
-    components:
-    - type: Transform
-      pos: 45.5,13.5
-      parent: 60
 - proto: SpawnMobMcGriff
   entities:
   - uid: 2806
@@ -135046,6 +134845,13 @@ entities:
     components:
     - type: Transform
       pos: 40.5,-8.5
+      parent: 60
+- proto: SpawnMobRaccoonMorticia
+  entities:
+  - uid: 13102
+    components:
+    - type: Transform
+      pos: 45.5,13.5
       parent: 60
 - proto: SpawnMobShiva
   entities:
