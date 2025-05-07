@@ -57,6 +57,8 @@ uplink-shrapnel-grenade-desc = Выпускает серию острых оск
 # Ammo
 uplink-pistol-magazine-name = Пистолетный магазин (.35 авто)
 uplink-pistol-magazine-desc = Пистолетный магазин на 10 патронов. Совместим с "Гадюкой".
+uplink-pistol-magazine-high-name = Автопистолетный магазин (.35 авто)
+uplink-pistol-magazine-high-desc = Автопистолетный магазин на 16 патронов. Совместим с "Гадюкой".
 uplink-pistol-magazine-c20r-name = Магазин ПП (.35 авто)
 uplink-pistol-magazine-c20r-desc = Магазин ПП на 30 патронов. Совместим с C-20r.
 uplink-pistol-magazine-caseless-name = Пистолетный магазин (.25 безгильзовые)

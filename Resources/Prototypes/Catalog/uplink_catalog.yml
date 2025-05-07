@@ -503,6 +503,17 @@
   categories:
   - UplinkAmmo
 
+- type: listing
+  id: UplinkPistol9mmMagazineHigh
+  name: uplink-pistol-magazine-high-name
+  description: uplink-pistol-magazine-high-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_high_capacity_mag.rsi, state: red-icon }
+  productEntity: MagazinePistolHighCapacity
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmo
+
 # For the C20R
 - type: listing
   id: UplinkMagazinePistolSubMachineGun
