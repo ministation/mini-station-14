@@ -49,6 +49,7 @@
   - MagazineShotgunSlug
   - SpeedLoaderMagnum
   - SpeedLoaderMagnumEmpty
+  - MagazineMiniMachineGunBox
 
 - type: latheRecipePack
   id: SecurityWeaponsStatic

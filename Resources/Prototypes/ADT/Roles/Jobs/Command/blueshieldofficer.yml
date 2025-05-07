@@ -14,7 +14,7 @@
       role: JobChiefMedicalOfficer
       time: 13800 #3 hrs
   weight: 15
-  startingGear: ADTBlueShieldOfficerGear
+  startingGear: BlueShieldOfficerGear
   icon: "JobIconADTBlueShieldOfficer"
   supervisors: job-supervisors-centcom
   canBeAntag: false
@@ -31,7 +31,7 @@
     - Medical
     - Engineering
     - Cargo
-    # - Centcom
+    - Centcom
     - BlueShield
   special:
   - !type:AddImplantSpecial
@@ -44,22 +44,55 @@
         - Shooting
         - Surgery
         - MedicalEquipment
-      - type: CanChokeGrab
 
 - type: startingGear
-  id: ADTBlueShieldOfficerGear
+  id: BlueShieldOfficerGear
   equipment:
     head: ADTClothingHeadHatBeretBlueshieldBlack
     eyes: ADTClothingEyesGlassesBlueshield
     ears: ADTClothingHeadsetBlueshield
     shoes: ClothingShoesBootsCombatFilled
-    outerClothing: ADTBlueshieldSuit
-    belt: ClothingBeltSheathBS
+    outerClothing: ClothingOuterArmorBasic
     gloves: ClothingHandsGlovesCombat
     id: ADTBlueshieldOfficerPDA
     pocket1: WeaponX2DualphaseEnergyLaserGun
-    pocket2: Handcuffs
-    satchel: ADTClothingBackpackSatchelBlueshield
     neck: ADTClothingNeckCloakBlueshield
-  inhand:
-  - ADTBaseWeaponCaseNTBS
+    back: ClothingBackpackBlueShield
+    belt: ClothingBeltMilitaryWebbingBlueShieldFilled
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackBlueShield
+  name: РИГ офицера "Синий Щит"
+  description: Рюкзак офицера "Синий Щит" с функцией РИГ.
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Back/blueshield.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: ToggleableClothing
+    clothingPrototype: ADTBlueshieldSuit
+    requiredSlot: BACK
+    slot: outerClothing
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: Zipties
+        amount: 3
+      - id: MagazineMiniMachineGunBox
+        amount: 3
+      - id: WeaponMiniMachineGun
+      - id: HandheldCrewMonitor
+      - id: TrackingImplanter
+        amount: 3
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+

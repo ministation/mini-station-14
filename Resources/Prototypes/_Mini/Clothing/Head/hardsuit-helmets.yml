@@ -1,0 +1,68 @@
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitMNBase
+  name: шлем MN 12
+  description: Простой шлем, подождите а почему он в строительной краске?
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Head/hardsuitsHelmets/helmetmn12.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Head/hardsuitsHelmets/helmetmn12.rsi
+  - type: PointLight
+    color: blue
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Heat: 0.3
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitMNBaseArmor
+  name: шлем MN 19
+  description: Простой шлем, выглядит внушающе.
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Head/hardsuitsHelmets/helmetmn19.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Head/hardsuitsHelmets/helmetmn19.rsi
+  - type: PointLight
+    color: blue
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Heat: 0.3
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitMNBaseLeader
+  name: шлем MN 100
+  description: мощный шлем, выглядит внушающе.
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Head/hardsuitsHelmets/helmetmn100.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Head/hardsuitsHelmets/helmetmn100.rsi
+  - type: PointLight
+    color: blue
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9      

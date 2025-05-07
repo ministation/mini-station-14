@@ -1,0 +1,11 @@
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazineMiniMachineGunBox
+  result: MagazineMiniMachineGunBox
+  materials:
+    Steel: 1500
+
+- type: latheRecipePack
+  id: SecurityAmmoStaticMini
+  recipes:
+    - MagazineMiniMachineGunBox

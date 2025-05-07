@@ -35,6 +35,4 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - ADTBlueshieldBackpack
-  - ADTBlueshieldSatchel
-  - ADTBlueshieldDuffel
+  - ClothingBackpackBlueShield

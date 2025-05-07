@@ -1,0 +1,17 @@
+- type: entity
+  id: MagazineMiniMachineGunBox
+  name: "блюспейс магазин"
+  parent: MagazineLightRifleBox
+  components:
+  - type: Tag
+    tags:
+    - MagazineMiniMachineGunBox
+  - type: BallisticAmmoProvider
+    proto: CartridgeMinigun
+    capacity: 200
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeMinigun
+  - type: Sprite
+    sprite: _Mini/Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_box.rsi

@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackWinRar
+  name: Рюкзак WinRar
+  description: Говорят в этом рюкзаке заархивирована станция, но пароль от архива давно забыт...
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Back/Backpacks/backpackWinRar.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Huge

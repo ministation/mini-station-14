@@ -1,0 +1,104 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitMRIBase
+  name: MN12 
+  description: Слабо-укреплённая версия костюма, MN - metall new. Этот костюм был создан для медиков и инженерных отрядов. Ходят слухи, что этот костюм создали лишь на 12 попытке...
+  suffix: MRI
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/hardsuits/MN12.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/hardsuits/MN12.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: TemperatureProtection   
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.92
+        Slash: 0.92
+        Piercing: 0.90
+        Heat: 0.9
+        Cold: 0.5
+        Shock: 0.7
+        Radiation: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitMNBase
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitMRIBaseArmor
+  name: MN19 
+  description: Укреплённая версия костюма, MN - metall new. Этот костюм был модифицирован для штурмовых отрядов группировки MRI. Ходят слухи, что этот костюм создал пьяный инженер с помощью гвоздомета лишь на 19 попытке...
+  suffix: MRI
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/hardsuits/MN19.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/hardsuits/MN19.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: TemperatureProtection   
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.65
+        Piercing: 0.55
+        Heat: 0.1
+        Cold: 0.5
+        Shock: 0.7
+        Radiation: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitMNBaseArmor
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitMRIBaseLeader
+  name: MN100
+  description: Тяжёлая версия костюма, MN - metall new. Этот костюм был модифицирован для офицеров группировки MRI. На нём уставновлена большая стальная плита покрывающая важные органы и остальные слабые места человека. Ходят слухи, что этот костюм создал инженер с образованием лишь на 100 попытке...
+  suffix: MRI Leader
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/hardsuits/MN100.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/hardsuits/MN100.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ClothingSpeedModifier
+    walkModifier: 0.6
+    sprintModifier: 0.6
+  - type: TemperatureProtection   
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.4
+        Heat: 0.15
+        Cold: 0.4
+        Shock: 0.4
+        Radiation: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 1.0
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitMNBaseLeader
