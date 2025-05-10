@@ -154,7 +154,7 @@
   - ClothingHeadHatWelding
   - ClothingUniformJumpsuitTacticool
   - ClothingOuterVestTank
-  - ClothingHandsGlovesCombat
+  - ClothingHandsGlovesColorYellow
   - ClothingShoesColorBlack
   - WelderIndustrialAdvanced
   - ClothingBeltUtilityFilled
@@ -208,12 +208,12 @@
     sprite: _CorvaxNext/Objects/Misc/cards.rsi
     state: sc_Jack_of_Spades_black
   content:
-  - ClothingHeadHatBowlerHat
+  - ClothingHeadHatCowboyBrown
   - ClothingEyesGlasses
-  - ClothingNeckTieRed
+  - ClothingMaskNeckGaiterRed
   - ClothingUniformJumpsuitSecBlue
-  - ClothingOuterVest
-  - ClothingShoesBootsLaceup
+  - ClothingOuterPoncho
+  - ClothingShoesBootsCowboyBrown
   - WristwatchLeather
   - TreasureCoinGold
   - TreasureCoinGold
