@@ -60,6 +60,7 @@
         - PistolSet
         - MinigunSet
         - LaserSwordSet
+        - RapierSet
     - type: ActivatableUI
       key: enum.ThiefBackpackUIKey.Key
     - type: UserInterface
