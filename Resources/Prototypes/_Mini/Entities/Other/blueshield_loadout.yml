@@ -60,7 +60,6 @@
         - PistolSet
         - MinigunSet
         - LaserSwordSet
-        - RapierSet
     - type: ActivatableUI
       key: enum.ThiefBackpackUIKey.Key
     - type: UserInterface
@@ -211,14 +210,3 @@
   - DiceBag
   - SpaceCash500
   - CardBoxBlack
-
-- type: thiefBackpackSet
-  id: RapierSet
-  name: Рапира ОСЩ.
-  description: Оружие для профессиональной борьбы на ближней дистанции.
-  sprite:
-    sprite: _Mini/Objects/Weapons/Melee/BlueshieldRapier/blueshield_rapier.rsi
-    state: icon
-  content:
-  - BlueshieldRapier
-  - ClothingBeltSheathBlueshield
