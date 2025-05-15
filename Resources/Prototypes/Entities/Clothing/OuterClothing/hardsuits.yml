@@ -49,6 +49,8 @@
     reduction: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.5
+  - type: StaminaResistance
+    damageCoefficient: 0.45
   - type: Armor
     modifiers:
       coefficients:
@@ -644,6 +646,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
+  - type: StaminaResistance
+    damageCoefficient: 0.45
   - type: Armor
     modifiers:
       coefficients:
