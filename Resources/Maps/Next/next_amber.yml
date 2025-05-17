@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 248.0.2
+  engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/04/2025 10:19:32
-  entityCount: 21449
+  time: 05/17/2025 16:38:40
+  entityCount: 21450
 maps:
 - 1
 grids:
@@ -24640,6 +24640,8 @@ entities:
     - type: Transform
       pos: -13.459316,-32.28296
       parent: 2
+    - type: CollisionWake
+      enabled: False
     - type: Conveyed
   - uid: 3726
     components:
@@ -54287,6 +54289,13 @@ entities:
     - type: Transform
       pos: -26.5,-34.5
       parent: 2
+- proto: ChemistryBottleEZNutrient
+  entities:
+  - uid: 17701
+    components:
+    - type: Transform
+      pos: 48.696175,-60.376625
+      parent: 2
 - proto: ChemistryEmptyBottle03
   entities:
   - uid: 7111
@@ -55382,6 +55391,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+    - type: Visibility
 - proto: ClothingBackpackDuffel
   entities:
   - uid: 1038
@@ -55389,6 +55399,7 @@ entities:
     - type: Transform
       pos: 52.586926,-35.256138
       parent: 2
+    - type: Visibility
 - proto: ClothingBackpackDuffelBrigmedic
   entities:
   - uid: 8615
@@ -55398,6 +55409,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+    - type: Visibility
 - proto: ClothingBackpackDuffelCargo
   entities:
   - uid: 979
@@ -55405,6 +55417,7 @@ entities:
     - type: Transform
       pos: 0.116775274,20.693357
       parent: 2
+    - type: Visibility
 - proto: ClothingBackpackDuffelSurgeryFilled
   entities:
   - uid: 5746
@@ -55431,6 +55444,7 @@ entities:
           priority: 0
           component: ClothingSpeedModifier
         title: null
+    - type: Visibility
 - proto: ClothingBackpackDuffelSyndicatePyjamaBundle
   entities:
   - uid: 7203
@@ -55457,6 +55471,7 @@ entities:
           priority: 0
           component: ClothingSpeedModifier
         title: null
+    - type: Visibility
 - proto: ClothingBackpackSatchelBrigmedic
   entities:
   - uid: 8229
@@ -55466,6 +55481,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+    - type: Visibility
 - proto: ClothingBeltBandolier
   entities:
   - uid: 8283
@@ -56160,17 +56176,17 @@ entities:
   - uid: 21324
     components:
     - type: Transform
-      pos: 13.341,25.556223
+      pos: 17.728107,24.604982
       parent: 2
   - uid: 21325
     components:
     - type: Transform
-      pos: 13.575375,25.556223
+      pos: 17.446857,24.667482
       parent: 2
   - uid: 21326
     components:
     - type: Transform
-      pos: 13.794125,25.556223
+      pos: 17.353107,24.589357
       parent: 2
 - proto: ClothingHeadsetRobotics
   entities:
@@ -66605,13 +66621,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 36.5,-23.5
-      parent: 2
-- proto: EZNutrientChemistryBottle
-  entities:
-  - uid: 17701
-    components:
-    - type: Transform
-      pos: 48.696175,-60.376625
       parent: 2
 - proto: FaxMachineBase
   entities:
@@ -102338,17 +102347,17 @@ entities:
   - uid: 21021
     components:
     - type: Transform
-      pos: -22.791706,6.500923
+      pos: -23.407022,5.4614654
       parent: 2
   - uid: 21022
     components:
     - type: Transform
-      pos: -22.651081,6.579048
+      pos: -23.563272,5.3989654
       parent: 2
   - uid: 21023
     components:
     - type: Transform
-      pos: -22.651081,6.516548
+      pos: -23.469522,5.2895904
       parent: 2
   - uid: 21147
     components:
@@ -102821,7 +102830,7 @@ entities:
   - uid: 21024
     components:
     - type: Transform
-      pos: -22.729206,6.500923
+      pos: -23.532022,5.6333404
       parent: 2
   - uid: 21145
     components:
@@ -107174,11 +107183,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -4.5,-56.5
       parent: 2
-  - uid: 20513
-    components:
-    - type: Transform
-      pos: 13.5,25.5
-      parent: 2
   - uid: 20674
     components:
     - type: Transform
@@ -107194,6 +107198,11 @@ entities:
     components:
     - type: Transform
       pos: -10.5,-13.5
+      parent: 2
+  - uid: 20967
+    components:
+    - type: Transform
+      pos: 17.5,24.5
       parent: 2
 - proto: RadioHandheld
   entities:
@@ -112773,7 +112782,7 @@ entities:
   - uid: 21027
     components:
     - type: Transform
-      pos: -22.213581,6.704048
+      pos: -22.500772,4.5395904
       parent: 2
 - proto: SheetGlass1
   entities:
@@ -112872,7 +112881,7 @@ entities:
   - uid: 21026
     components:
     - type: Transform
-      pos: -22.291706,6.688423
+      pos: -22.547647,4.6645904
       parent: 2
 - proto: SheetPlastic10
   entities:
@@ -112958,7 +112967,7 @@ entities:
   - uid: 21025
     components:
     - type: Transform
-      pos: -22.276081,6.579048
+      pos: -22.516397,4.5239654
       parent: 2
 - proto: SheetSteel1
   entities:
@@ -117326,6 +117335,13 @@ entities:
     - type: Transform
       pos: -25.5,16.5
       parent: 2
+- proto: SpawnPointSeniorSalvageSpecialist
+  entities:
+  - uid: 20513
+    components:
+    - type: Transform
+      pos: 16.5,23.5
+      parent: 2
 - proto: SpawnPointServiceWorker
   entities:
   - uid: 15300
@@ -118405,6 +118421,13 @@ entities:
     components:
     - type: Transform
       pos: 26.5,-35.5
+      parent: 2
+- proto: SuitStorageSeniorSalvageSpecialistFilled
+  entities:
+  - uid: 6989
+    components:
+    - type: Transform
+      pos: 13.5,25.5
       parent: 2
 - proto: SuitStorageWarden
   entities:
@@ -121061,12 +121084,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 9.5,18.5
-      parent: 2
-  - uid: 6989
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -22.5,6.5
       parent: 2
   - uid: 7242
     components:

@@ -4,8 +4,8 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/08/2025 12:07:26
-  entityCount: 30126
+  time: 05/17/2025 16:49:14
+  entityCount: 30127
 maps:
 - 1
 grids:
@@ -9715,20 +9715,6 @@ entities:
       parent: 8991
     - type: InstantAction
       container: 8991
-- proto: ADTLockerBlueshieldFilledHardsuit
-  entities:
-  - uid: 12291
-    components:
-    - type: Transform
-      pos: 26.5,9.5
-      parent: 2
-- proto: ADTSpawnMechPaddy
-  entities:
-  - uid: 1018
-    components:
-    - type: Transform
-      pos: 35.5,-25.5
-      parent: 2
 - proto: AirAlarm
   entities:
   - uid: 2121
@@ -12654,7 +12640,7 @@ entities:
       pos: 38.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -13936.73
+      secondsUntilStateChange: -12108.73
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14575,7 +14561,7 @@ entities:
       pos: -22.5,26.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -35988.902
+      secondsUntilStateChange: -34160.902
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15426,7 +15412,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -134817.52
+      secondsUntilStateChange: -132989.5
       state: Opening
   - uid: 6934
     components:
@@ -15438,7 +15424,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -134820.14
+      secondsUntilStateChange: -132992.12
       state: Opening
   - uid: 6935
     components:
@@ -15450,7 +15436,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -134819
+      secondsUntilStateChange: -132990.98
       state: Opening
   - uid: 6936
     components:
@@ -15461,7 +15447,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -134818.22
+      secondsUntilStateChange: -132990.2
       state: Opening
 - proto: AirlockTheatreLocked
   entities:
@@ -80295,11 +80281,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 26.5,5.5
       parent: 2
-  - uid: 30123
+  - uid: 29417
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 25.5,8.5
+      pos: 26.5,8.5
       parent: 2
 - proto: CommandmentCircuitBoard
   entities:
@@ -80828,6 +80814,12 @@ entities:
     components:
     - type: Transform
       pos: -53.5,-32.5
+      parent: 2
+  - uid: 12797
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 26.5,9.5
       parent: 2
   - uid: 22753
     components:
@@ -81367,6 +81359,13 @@ entities:
         - 0
         - 0
         - 0
+- proto: CrateContrabandStorageSecure
+  entities:
+  - uid: 12291
+    components:
+    - type: Transform
+      pos: 35.5,-25.5
+      parent: 2
 - proto: CrateElectrical
   entities:
   - uid: 9603
@@ -96311,7 +96310,7 @@ entities:
       pos: -13.5,-1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -126141.516
+      secondsUntilStateChange: -124313.516
     - type: DeviceNetwork
       deviceLists:
       - 18275
@@ -99566,6 +99565,9 @@ entities:
     - type: Transform
       pos: -13.386598,20.512804
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodOrange
   entities:
   - uid: 16226
@@ -99639,6 +99641,9 @@ entities:
     - type: Transform
       pos: -12.522015,20.564886
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodSaladWatermelonFruitBowl
   entities:
   - uid: 19127
@@ -99880,13 +99885,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -41.5,13.5
-      parent: 2
-- proto: GasMinerPlasma
-  entities:
-  - uid: 29417
-    components:
-    - type: Transform
-      pos: -41.5,17.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -142266,7 +142264,7 @@ entities:
       pos: 36.5,-35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -162973.33
+      secondsUntilStateChange: -161145.31
       state: Opening
   - uid: 5211
     components:
@@ -143406,13 +143404,6 @@ entities:
     - type: Transform
       pos: 14.5,23.5
       parent: 2
-- proto: LockerBrigmedicFilled
-  entities:
-  - uid: 20845
-    components:
-    - type: Transform
-      pos: 36.5,-30.5
-      parent: 2
 - proto: LockerCaptainFilledNoLaser
   entities:
   - uid: 17459
@@ -144035,6 +144026,39 @@ entities:
     - type: Transform
       pos: 35.5,-30.5
       parent: 2
+  - uid: 4288
+    components:
+    - type: Transform
+      pos: 36.5,-30.5
+      parent: 2
+    - type: Lock
+      locked: False
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.25,-0.48
+            - 0.25,-0.48
+            - 0.25,0.48
+            - -0.25,0.48
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 75
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
   - uid: 4289
     components:
     - type: Transform
@@ -156011,6 +156035,7 @@ entities:
       parent: 2
     - type: Physics
       bodyType: Dynamic
+    - type: Conveyed
   - uid: 29514
     components:
     - type: Transform
@@ -165575,10 +165600,10 @@ entities:
       enabled: False
 - proto: SpawnADTBlueShieldOfficer
   entities:
-  - uid: 12797
+  - uid: 30126
     components:
     - type: Transform
-      pos: 26.5,8.5
+      pos: 23.5,7.5
       parent: 2
 - proto: SpawnMechRipley
   entities:
@@ -166057,13 +166082,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5,15.5
-      parent: 2
-- proto: SpawnPointBrigmedic
-  entities:
-  - uid: 4288
-    components:
-    - type: Transform
-      pos: 36.5,-31.5
       parent: 2
 - proto: SpawnPointCaptain
   entities:
@@ -166592,10 +166610,10 @@ entities:
       parent: 2
 - proto: SpawnPointSecurityCadet
   entities:
-  - uid: 3040
+  - uid: 20845
     components:
     - type: Transform
-      pos: 34.5,-33.5
+      pos: 36.5,-31.5
       parent: 2
   - uid: 20846
     components:
@@ -166643,6 +166661,13 @@ entities:
     components:
     - type: Transform
       pos: 31.5,-33.5
+      parent: 2
+- proto: SpawnPointSeniorSalvageSpecialist
+  entities:
+  - uid: 30123
+    components:
+    - type: Transform
+      pos: -53.5,-21.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
@@ -167633,11 +167658,6 @@ entities:
     - type: Transform
       pos: -54.5,-23.5
       parent: 2
-  - uid: 11821
-    components:
-    - type: Transform
-      pos: -53.5,-23.5
-      parent: 2
 - proto: SuitStorageSec
   entities:
   - uid: 3294
@@ -167654,6 +167674,13 @@ entities:
     components:
     - type: Transform
       pos: 38.5,-22.5
+      parent: 2
+- proto: SuitStorageSeniorSalvageSpecialistFilled
+  entities:
+  - uid: 11821
+    components:
+    - type: Transform
+      pos: -53.5,-23.5
       parent: 2
 - proto: SuitStorageWarden
   entities:
@@ -171489,6 +171516,12 @@ entities:
       parent: 2
 - proto: TableReinforced
   entities:
+  - uid: 1018
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 26.5,9.5
+      parent: 2
   - uid: 1094
     components:
     - type: Transform
@@ -171534,6 +171567,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 56.5,-11.5
+      parent: 2
+  - uid: 3040
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 26.5,9.5
       parent: 2
   - uid: 3042
     components:
@@ -193356,7 +193395,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -13939.563
+      secondsUntilStateChange: -12111.563
       state: Opening
     - type: Airlock
       autoClose: False
@@ -194790,7 +194829,7 @@ entities:
       pos: 24.5,2.5
       parent: 21002
     - type: Door
-      secondsUntilStateChange: -508177.9
+      secondsUntilStateChange: -506349.9
       state: Opening
   - uid: 28863
     components:

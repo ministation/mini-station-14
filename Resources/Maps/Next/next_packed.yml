@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 248.0.2
+  engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/04/2025 16:49:59
-  entityCount: 14012
+  time: 05/17/2025 16:36:41
+  entityCount: 14014
 maps:
 - 1
 grids:
@@ -7465,7 +7465,7 @@ entities:
       pos: 24.5,-39.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -55968.535
+      secondsUntilStateChange: -56098.367
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10807,6 +10807,7 @@ entities:
     - type: Transform
       pos: 19.585323,-12.603194
       parent: 2
+    - type: Visibility
 - proto: BoxSechud
   entities:
   - uid: 672
@@ -33606,6 +33607,7 @@ entities:
     - type: Transform
       pos: 27.493172,5.5327587
       parent: 2
+    - type: Visibility
 - proto: ClothingBeltChampion
   entities:
   - uid: 5164
@@ -41625,7 +41627,7 @@ entities:
       pos: 54.5,-4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -37324.363
+      secondsUntilStateChange: -37454.195
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -41951,6 +41953,9 @@ entities:
     - type: Transform
       pos: -0.0010213852,-26.399889
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodMeat
   entities:
   - uid: 6459
@@ -42007,6 +42012,9 @@ entities:
     - type: Transform
       pos: -0.9697714,-25.884264
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodPoppy
   entities:
   - uid: 6469
@@ -42042,6 +42050,9 @@ entities:
     - type: Transform
       pos: -1.0166464,-26.540514
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
   - uid: 6474
     components:
     - type: Transform
@@ -59754,7 +59765,7 @@ entities:
   - uid: 9158
     components:
     - type: Transform
-      pos: 7.5,18.5
+      pos: 8.5,17.5
       parent: 2
 - proto: HolopadCommandBridge
   entities:
@@ -60865,6 +60876,7 @@ entities:
     - type: Transform
       pos: 9.5,17.5
       parent: 2
+    - type: Conveyed
   - uid: 9321
     components:
     - type: Transform
@@ -71698,6 +71710,13 @@ entities:
     - type: Transform
       pos: 37.5,18.5
       parent: 2
+- proto: SpawnPointSeniorSalvageSpecialist
+  entities:
+  - uid: 14014
+    components:
+    - type: Transform
+      pos: 8.5,16.5
+      parent: 2
 - proto: SpawnPointServiceWorker
   entities:
   - uid: 11115
@@ -72274,6 +72293,13 @@ entities:
     components:
     - type: Transform
       pos: 38.5,21.5
+      parent: 2
+- proto: SuitStorageSeniorSalvageSpecialistFilled
+  entities:
+  - uid: 14013
+    components:
+    - type: Transform
+      pos: 7.5,18.5
       parent: 2
 - proto: SurveillanceCameraCommand
   entities:
@@ -75584,6 +75610,7 @@ entities:
     - type: Transform
       pos: 0.13960361,-25.931139
       parent: 2
+    - type: Conveyed
   - uid: 11668
     components:
     - type: Transform

@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 247.2.0
+  engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/08/2025 04:20:34
-  entityCount: 22549
+  time: 05/17/2025 16:51:49
+  entityCount: 22554
 maps:
 - 17546
 grids:
@@ -49711,6 +49711,13 @@ entities:
     - type: Transform
       pos: 68.64931,-28.332705
       parent: 2
+- proto: CaptainDrobe
+  entities:
+  - uid: 4126
+    components:
+    - type: Transform
+      pos: 43.5,-30.5
+      parent: 2
 - proto: CaptainIDCard
   entities:
   - uid: 4581
@@ -59911,6 +59918,13 @@ entities:
     - type: Transform
       pos: 45.5,11.5
       parent: 2
+- proto: ChemistryBottleRobustHarvest
+  entities:
+  - uid: 8017
+    components:
+    - type: Transform
+      pos: -32.148563,14.497124
+      parent: 2
 - proto: ChemistryHotplate
   entities:
   - uid: 14261
@@ -61041,6 +61055,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+    - type: Visibility
 - proto: ClothingBackpackDuffel
   entities:
   - uid: 6997
@@ -61068,6 +61083,7 @@ entities:
           - 7018
           - 7023
           - 8934
+    - type: Visibility
 - proto: ClothingBackpackDuffelSurgeryFilled
   entities:
   - uid: 6756
@@ -61075,16 +61091,19 @@ entities:
     - type: Transform
       pos: 63.51368,4.701677
       parent: 2
+    - type: Visibility
   - uid: 6757
     components:
     - type: Transform
       pos: 63.48243,0.75376046
       parent: 2
+    - type: Visibility
   - uid: 16537
     components:
     - type: Transform
       pos: 15.512184,31.628899
       parent: 2
+    - type: Visibility
 - proto: ClothingBackpackMime
   entities:
   - uid: 9269
@@ -61110,6 +61129,7 @@ entities:
           component: Armor
         title: null
     - type: InsideEntityStorage
+    - type: Visibility
 - proto: ClothingBeltJanitorFilled
   entities:
   - uid: 879
@@ -62548,20 +62568,20 @@ entities:
     - type: Transform
       pos: 68.5,-25.5
       parent: 2
-- proto: ComputerSalvageExpedition
-  entities:
-  - uid: 14191
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 40.5,20.5
-      parent: 2
 - proto: ComputerShuttleCargo
   entities:
   - uid: 6590
     components:
     - type: Transform
       pos: 27.5,23.5
+      parent: 2
+- proto: ComputerShuttleMiningLavaland
+  entities:
+  - uid: 14191
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 40.5,20.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -62722,12 +62742,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 29.5,23.5
-      parent: 2
-  - uid: 5714
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 34.5,17.5
       parent: 2
   - uid: 7406
     components:
@@ -69620,13 +69634,6 @@ entities:
     components:
     - type: Transform
       pos: 54.45432,8.614397
-      parent: 2
-- proto: DresserCaptainFilled
-  entities:
-  - uid: 4126
-    components:
-    - type: Transform
-      pos: 43.5,-30.5
       parent: 2
 - proto: DresserChiefEngineerFilled
   entities:
@@ -106566,7 +106573,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - TableLayer
+          - MidImpassable
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -106637,7 +106644,7 @@ entities:
             radius: 0.35
             position: 0,0
           mask:
-          - TableLayer
+          - MidImpassable
           - HighImpassable
           - LowImpassable
           - BulletImpassable
@@ -117230,13 +117237,6 @@ entities:
     - type: Transform
       pos: 58.457176,26.640175
       parent: 2
-- proto: RobustHarvestChemistryBottle
-  entities:
-  - uid: 8017
-    components:
-    - type: Transform
-      pos: -32.148563,14.497124
-      parent: 2
 - proto: RubberStampApproved
   entities:
   - uid: 16307
@@ -121350,6 +121350,13 @@ entities:
     - type: Transform
       pos: -17.5,-8.5
       parent: 2
+- proto: SpawnADTBlueShieldOfficer
+  entities:
+  - uid: 22532
+    components:
+    - type: Transform
+      pos: 40.5,-37.5
+      parent: 2
 - proto: SpawnMechRipley
   entities:
   - uid: 5463
@@ -121426,6 +121433,13 @@ entities:
     - type: Transform
       pos: 41.5,-30.5
       parent: 2
+- proto: SpawnMobGorillaLargo
+  entities:
+  - uid: 5733
+    components:
+    - type: Transform
+      pos: 37.5,15.5
+      parent: 2
 - proto: SpawnMobMcGriff
   entities:
   - uid: 4990
@@ -121454,13 +121468,6 @@ entities:
     components:
     - type: Transform
       pos: 52.5,-10.5
-      parent: 2
-- proto: SpawnMobRaccoonMorticia
-  entities:
-  - uid: 5733
-    components:
-    - type: Transform
-      pos: 37.5,15.5
       parent: 2
 - proto: SpawnMobShiva
   entities:
@@ -121922,6 +121929,34 @@ entities:
     components:
     - type: Transform
       pos: -7.5,33.5
+      parent: 2
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 5734
+    components:
+    - type: Transform
+      pos: -6.5,32.5
+      parent: 2
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 22533
+    components:
+    - type: Transform
+      pos: 54.5,3.5
+      parent: 2
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 22536
+    components:
+    - type: Transform
+      pos: 70.5,-12.5
+      parent: 2
+- proto: SpawnPointSeniorSalvageSpecialist
+  entities:
+  - uid: 22535
+    components:
+    - type: Transform
+      pos: 33.5,21.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
@@ -122794,6 +122829,13 @@ entities:
     components:
     - type: Transform
       pos: 7.5,31.5
+      parent: 2
+- proto: SuitStorageSeniorSalvageSpecialistFilled
+  entities:
+  - uid: 5714
+    components:
+    - type: Transform
+      pos: 33.5,22.5
       parent: 2
 - proto: SuitStorageWarden
   entities:
@@ -128088,10 +128130,6 @@ entities:
       parent: 2
     - type: DeviceLinkSource
       linkedPorts:
-        5714:
-        - Left: Reverse
-        - Right: Forward
-        - Middle: Off
         8321:
         - Left: Reverse
         - Right: Forward
@@ -128436,7 +128474,7 @@ entities:
   - uid: 5705
     components:
     - type: Transform
-      pos: 33.5,22.5
+      pos: 34.5,17.5
       parent: 2
 - proto: VendingMachineSciDrobe
   entities:
@@ -148371,12 +148409,6 @@ entities:
     - type: Transform
       pos: 1.5,50.5
       parent: 2
-  - uid: 5734
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 34.5,17.5
-      parent: 2
   - uid: 5975
     components:
     - type: Transform
@@ -148761,6 +148793,12 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 64.5,-36.5
+      parent: 2
+  - uid: 22534
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 35.5,17.5
       parent: 2
 - proto: WoodDoor
   entities:

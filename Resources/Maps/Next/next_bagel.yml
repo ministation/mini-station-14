@@ -2,10 +2,10 @@ meta:
   format: 7
   category: Map
   engineVersion: 250.0.0
-  forkId: syndicate-next
-  forkVersion: d139f441e29b960e8ce51d57d8581bd7018892fe
-  time: 04/11/2025 16:37:09
-  entityCount: 25915
+  forkId: ""
+  forkVersion: ""
+  time: 05/17/2025 16:32:41
+  entityCount: 25919
 maps:
 - 943
 grids:
@@ -862,6 +862,8 @@ entities:
             6079: 2,29
             6080: 2,27
             6642: -31,-19
+            7161: 43,2
+            7162: 43,-1
         - node:
             color: '#FF8FC9FF'
             id: BotRightGreyscale
@@ -3242,11 +3244,9 @@ entities:
             5172: 56,6
             5173: 56,7
             5174: 49,13
-            5366: 44,1
             5370: 49,-1
             5371: 49,2
             5372: 51,0
-            5373: 43,1
             5377: 49,17
             5378: 51,16
             5379: 48,18
@@ -3617,7 +3617,6 @@ entities:
             5168: 53,5
             5169: 50,7
             5367: 44,2
-            5368: 43,0
             5369: 48,-1
             5374: 50,17
             5375: 48,16
@@ -12282,7 +12281,7 @@ entities:
       pos: -20.5,-3.5
       parent: 60
     - type: Door
-      secondsUntilStateChange: -61405.48
+      secondsUntilStateChange: -61594.28
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13260,7 +13259,7 @@ entities:
       pos: -19.5,-41.5
       parent: 60
     - type: Door
-      secondsUntilStateChange: -78486.65
+      secondsUntilStateChange: -78675.445
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13374,7 +13373,7 @@ entities:
       pos: 2.5,0.5
       parent: 24077
     - type: Door
-      secondsUntilStateChange: -62503.01
+      secondsUntilStateChange: -62691.812
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -112671,6 +112670,11 @@ entities:
     - type: Transform
       pos: 40.5,-0.5
       parent: 60
+  - uid: 25917
+    components:
+    - type: Transform
+      pos: 43.5,-0.5
+      parent: 60
 - proto: LockerScienceFilled
   entities:
   - uid: 5593
@@ -134412,6 +134416,13 @@ entities:
     - type: Transform
       pos: -16.5,-26.5
       parent: 60
+- proto: SpawnPointSeniorSalvageSpecialist
+  entities:
+  - uid: 25916
+    components:
+    - type: Transform
+      pos: 42.5,1.5
+      parent: 60
 - proto: SpawnPointServiceWorker
   entities:
   - uid: 25731
@@ -135500,6 +135511,13 @@ entities:
     components:
     - type: Transform
       pos: -21.5,-37.5
+      parent: 60
+- proto: SuitStorageSeniorSalvageSpecialistFilled
+  entities:
+  - uid: 25918
+    components:
+    - type: Transform
+      pos: 43.5,2.5
       parent: 60
 - proto: SuitStorageWarden
   entities:
@@ -141371,10 +141389,10 @@ entities:
       parent: 60
 - proto: VendingMachineSalvage
   entities:
-  - uid: 10390
+  - uid: 25919
     components:
     - type: Transform
-      pos: 43.5,-0.5
+      pos: 47.5,2.5
       parent: 60
 - proto: VendingMachineSciDrobe
   entities:
@@ -160078,8 +160096,8 @@ entities:
   - uid: 3975
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 42.5,2.5
+      rot: -1.5707963267948966 rad
+      pos: 44.5,2.5
       parent: 60
   - uid: 4043
     components:
@@ -160893,6 +160911,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -104.5,-4.5
+      parent: 60
+  - uid: 10390
+    components:
+    - type: Transform
+      pos: 43.5,3.5
       parent: 60
   - uid: 10425
     components:
