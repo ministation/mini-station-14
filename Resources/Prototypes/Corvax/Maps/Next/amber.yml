@@ -1,6 +1,6 @@
 - type: gameMap
   id: NextAmber
-  mapName: 'NT14-SB Амбер'
+  mapName: 'NextAmber'
   mapPath: /Maps/Next/next_amber.yml
   maxRandomOffset: 0
   randomRotation: false
@@ -26,16 +26,19 @@
             # cargo
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 2, 3 ]
+            SeniorSalvageSpecialist: [ 1, 1 ]
             CargoTechnician: [ 2, 3 ]
             # engineering
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 2, 2 ]
+            SeniorEngineer: [ 1, 1 ]
             StationEngineer: [ 2, 4 ]
-            TechnicalAssistant: [ 1, 1 ]
+            TechnicalAssistant: [ 2, 2 ]
             # medical
             ChiefMedicalOfficer: [ 1, 1 ]
             MedicalDoctor: [ 2, 4 ]
             MedicalIntern: [ 1, 2 ]
+            SeniorPhysician: [ 1, 1 ]
             Psychologist: [ 1, 1 ]
             Paramedic: [ 2, 2 ]
             Chemist: [ 2, 2 ]
@@ -43,11 +46,13 @@
             # science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 4, 4 ]
-            ResearchAssistant: [ 1, 2 ]
+            SeniorResearcher: [ 1, 1 ]
+            ResearchAssistant: [ 2, 2 ]
             # security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
+            SeniorOfficer: [ 1, 1 ]
             SecurityCadet: [ 1, 1 ]
             Detective: [ 1, 1 ]
             Brigmedic: [ 1, 1 ]

@@ -1,6 +1,6 @@
 - type: gameMap
   id: NextAvrite
-  mapName: 'NTSY Аврит'
+  mapName: 'NextAvrite'
   mapPath: /Maps/Next/next_avrite.yml
   maxRandomOffset: 0
   randomRotation: false
@@ -18,22 +18,25 @@
       - type: StationJobs
         availableJobs:
           # command
-          ADTBlueShieldOfficer: [ 0, 1 ] #ADT-Roles
+          ADTBlueShieldOfficer: [ 1, 1 ] #ADT-Roles
           Captain: [ 1, 1 ]
           IAA: [ 1, 1 ]
           # cargo
           Quartermaster: [ 1, 1 ]
           SalvageSpecialist: [ 4, 4 ]
+          SeniorSalvageSpecialist: [ 1, 1 ]
           CargoTechnician: [ 4, 5 ]
           # engineering
           ChiefEngineer: [ 1, 1 ]
           AtmosphericTechnician: [ 3, 3 ]
+          SeniorEngineer: [ 1, 1 ]
           StationEngineer: [ 4, 5 ]
           TechnicalAssistant: [ 2, 3 ]
           # medical
           ChiefMedicalOfficer: [ 1, 1 ]
           MedicalDoctor: [ 4, 5 ]
           MedicalIntern: [ 3, 4 ]
+          SeniorPhysician: [ 1, 1 ]
           Psychologist: [ 1, 1 ]
           Paramedic: [ 1, 1 ]
           Chemist: [ 3, 3 ]
@@ -41,10 +44,12 @@
           # science
           ResearchDirector: [ 1, 1 ]
           Scientist: [ 5, 6 ]
+          SeniorResearcher: [ 1, 1 ]
           ResearchAssistant: [ 3, 4 ]
           # security
           HeadOfSecurity: [ 1, 1 ]
           Warden: [ 1, 1 ]
+          SeniorOfficer: [ 1, 1 ]
           SecurityOfficer: [ 8, 9 ]
           SecurityCadet: [ 3, 4 ]
           Detective: [ 1, 1 ]

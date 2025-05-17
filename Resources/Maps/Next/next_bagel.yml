@@ -2,10 +2,10 @@ meta:
   format: 7
   category: Map
   engineVersion: 250.0.0
-  forkId: syndicate-next
-  forkVersion: d139f441e29b960e8ce51d57d8581bd7018892fe
-  time: 04/11/2025 16:37:09
-  entityCount: 25915
+  forkId: ""
+  forkVersion: ""
+  time: 05/17/2025 09:43:57
+  entityCount: 25919
 maps:
 - 943
 grids:
@@ -12282,7 +12282,7 @@ entities:
       pos: -20.5,-3.5
       parent: 60
     - type: Door
-      secondsUntilStateChange: -61405.48
+      secondsUntilStateChange: -61543.617
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13260,7 +13260,7 @@ entities:
       pos: -19.5,-41.5
       parent: 60
     - type: Door
-      secondsUntilStateChange: -78486.65
+      secondsUntilStateChange: -78624.78
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13374,7 +13374,7 @@ entities:
       pos: 2.5,0.5
       parent: 24077
     - type: Door
-      secondsUntilStateChange: -62503.01
+      secondsUntilStateChange: -62641.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -134411,6 +134411,34 @@ entities:
     components:
     - type: Transform
       pos: -16.5,-26.5
+      parent: 60
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 25918
+    components:
+    - type: Transform
+      pos: -3.5,24.5
+      parent: 60
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 25919
+    components:
+    - type: Transform
+      pos: -26.5,-3.5
+      parent: 60
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 25916
+    components:
+    - type: Transform
+      pos: 39.5,-18.5
+      parent: 60
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 25917
+    components:
+    - type: Transform
+      pos: -54.5,13.5
       parent: 60
 - proto: SpawnPointServiceWorker
   entities:

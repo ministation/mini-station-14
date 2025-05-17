@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 248.0.2
+  engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/04/2025 10:40:57
-  entityCount: 20225
+  time: 05/17/2025 09:54:39
+  entityCount: 20229
 maps:
 - 1
 grids:
@@ -16014,6 +16014,7 @@ entities:
           component: ClothingSpeedModifier
         title: null
     - type: InsideEntityStorage
+    - type: Visibility
 - proto: BoxPillCanister
   entities:
   - uid: 1197
@@ -45949,6 +45950,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+    - type: Visibility
 - proto: ClothingBeltMedicalEMT
   entities:
   - uid: 17089
@@ -104486,6 +104488,34 @@ entities:
     components:
     - type: Transform
       pos: 32.5,-23.5
+      parent: 2
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 7902
+    components:
+    - type: Transform
+      pos: -25.5,-32.5
+      parent: 2
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 7903
+    components:
+    - type: Transform
+      pos: 28.5,-24.5
+      parent: 2
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 11421
+    components:
+    - type: Transform
+      pos: -16.5,13.5
+      parent: 2
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 7901
+    components:
+    - type: Transform
+      pos: -15.5,-9.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
