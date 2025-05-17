@@ -4,8 +4,8 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/17/2025 09:59:51
-  entityCount: 22770
+  time: 05/17/2025 16:35:14
+  entityCount: 22768
 maps:
 - 5350
 grids:
@@ -11440,7 +11440,7 @@ entities:
       pos: 34.5,45.5
       parent: 30
     - type: Door
-      secondsUntilStateChange: -25661.203
+      secondsUntilStateChange: -25675.902
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -103031,6 +103031,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 35.498177,-11.398144
       parent: 30
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
   - uid: 19713
     components:
     - type: Transform
@@ -120317,33 +120320,12 @@ entities:
     - type: Transform
       pos: -31.5,59.5
       parent: 30
-- proto: SpawnPointSeniorEngineer
-  entities:
-  - uid: 10389
-    components:
-    - type: Transform
-      pos: -20.5,-41.5
-      parent: 30
-- proto: SpawnPointSeniorOfficer
-  entities:
-  - uid: 10385
-    components:
-    - type: Transform
-      pos: -34.5,58.5
-      parent: 30
-- proto: SpawnPointSeniorPhysician
+- proto: SpawnPointSeniorSalvageSpecialist
   entities:
   - uid: 10387
     components:
     - type: Transform
-      pos: -16.5,-20.5
-      parent: 30
-- proto: SpawnPointSeniorResearcher
-  entities:
-  - uid: 10391
-    components:
-    - type: Transform
-      pos: 30.5,20.5
+      pos: 26.5,-10.5
       parent: 30
 - proto: SpawnPointServiceWorker
   entities:
@@ -121402,6 +121384,13 @@ entities:
     components:
     - type: Transform
       pos: -41.5,51.5
+      parent: 30
+- proto: SuitStorageSeniorSalvageSpecialistFilled
+  entities:
+  - uid: 10385
+    components:
+    - type: Transform
+      pos: 26.5,-11.5
       parent: 30
 - proto: SuitStorageWarden
   entities:

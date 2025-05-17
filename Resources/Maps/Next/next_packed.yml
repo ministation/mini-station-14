@@ -4,8 +4,8 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/17/2025 10:14:01
-  entityCount: 14016
+  time: 05/17/2025 16:36:41
+  entityCount: 14014
 maps:
 - 1
 grids:
@@ -7465,7 +7465,7 @@ entities:
       pos: 24.5,-39.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -56061.035
+      secondsUntilStateChange: -56098.367
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -41627,7 +41627,7 @@ entities:
       pos: 54.5,-4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -37416.863
+      secondsUntilStateChange: -37454.195
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -41953,6 +41953,9 @@ entities:
     - type: Transform
       pos: -0.0010213852,-26.399889
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodMeat
   entities:
   - uid: 6459
@@ -42009,6 +42012,9 @@ entities:
     - type: Transform
       pos: -0.9697714,-25.884264
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodPoppy
   entities:
   - uid: 6469
@@ -42044,6 +42050,9 @@ entities:
     - type: Transform
       pos: -1.0166464,-26.540514
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
   - uid: 6474
     components:
     - type: Transform
@@ -59756,7 +59765,7 @@ entities:
   - uid: 9158
     components:
     - type: Transform
-      pos: 7.5,18.5
+      pos: 8.5,17.5
       parent: 2
 - proto: HolopadCommandBridge
   entities:
@@ -60867,6 +60876,7 @@ entities:
     - type: Transform
       pos: 9.5,17.5
       parent: 2
+    - type: Conveyed
   - uid: 9321
     components:
     - type: Transform
@@ -71700,33 +71710,12 @@ entities:
     - type: Transform
       pos: 37.5,18.5
       parent: 2
-- proto: SpawnPointSeniorEngineer
+- proto: SpawnPointSeniorSalvageSpecialist
   entities:
   - uid: 14014
     components:
     - type: Transform
-      pos: 31.5,-31.5
-      parent: 2
-- proto: SpawnPointSeniorOfficer
-  entities:
-  - uid: 14016
-    components:
-    - type: Transform
-      pos: 34.5,25.5
-      parent: 2
-- proto: SpawnPointSeniorPhysician
-  entities:
-  - uid: 14013
-    components:
-    - type: Transform
-      pos: 73.5,7.5
-      parent: 2
-- proto: SpawnPointSeniorResearcher
-  entities:
-  - uid: 14015
-    components:
-    - type: Transform
-      pos: 55.5,23.5
+      pos: 8.5,16.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
@@ -72304,6 +72293,13 @@ entities:
     components:
     - type: Transform
       pos: 38.5,21.5
+      parent: 2
+- proto: SuitStorageSeniorSalvageSpecialistFilled
+  entities:
+  - uid: 14013
+    components:
+    - type: Transform
+      pos: 7.5,18.5
       parent: 2
 - proto: SurveillanceCameraCommand
   entities:
@@ -75614,6 +75610,7 @@ entities:
     - type: Transform
       pos: 0.13960361,-25.931139
       parent: 2
+    - type: Conveyed
   - uid: 11668
     components:
     - type: Transform

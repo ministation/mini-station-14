@@ -4,8 +4,8 @@ meta:
   engineVersion: 250.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/17/2025 10:11:35
-  entityCount: 14223
+  time: 05/17/2025 16:35:56
+  entityCount: 14221
 maps:
 - 1
 grids:
@@ -430,6 +430,7 @@ entities:
             2442: 39,-25
             2443: 38,-25
             2444: 38,-26
+            2522: 23,12
         - node:
             color: '#DE3A3AFF'
             id: BotGreyscale
@@ -75284,33 +75285,12 @@ entities:
     - type: Transform
       pos: -38.5,11.5
       parent: 2
-- proto: SpawnPointSeniorEngineer
+- proto: SpawnPointSeniorSalvageSpecialist
   entities:
   - uid: 14213
     components:
     - type: Transform
-      pos: -42.5,-8.5
-      parent: 2
-- proto: SpawnPointSeniorOfficer
-  entities:
-  - uid: 13709
-    components:
-    - type: Transform
-      pos: -33.5,11.5
-      parent: 2
-- proto: SpawnPointSeniorPhysician
-  entities:
-  - uid: 14215
-    components:
-    - type: Transform
-      pos: -15.5,-18.5
-      parent: 2
-- proto: SpawnPointSeniorResearcher
-  entities:
-  - uid: 14214
-    components:
-    - type: Transform
-      pos: 3.5,-15.5
+      pos: 23.5,13.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
@@ -75822,6 +75802,13 @@ entities:
     components:
     - type: Transform
       pos: -36.5,22.5
+      parent: 2
+- proto: SuitStorageSeniorSalvageSpecialistFilled
+  entities:
+  - uid: 13709
+    components:
+    - type: Transform
+      pos: 23.5,12.5
       parent: 2
 - proto: SuitStorageWarden
   entities:
