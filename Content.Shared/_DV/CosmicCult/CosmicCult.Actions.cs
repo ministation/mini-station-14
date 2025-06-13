@@ -5,7 +5,6 @@ namespace Content.Shared._DV.CosmicCult;
 
 [RegisterComponent, NetworkedComponent]
 public sealed partial class CosmicCultActionComponent : Component;
-
 public sealed partial class EventCosmicSiphon : EntityTargetActionEvent;
 public sealed partial class EventCosmicBlank : EntityTargetActionEvent;
 public sealed partial class EventCosmicPlaceMonument : InstantActionEvent; //given to the cult leader on roundstart
@@ -16,10 +15,10 @@ public sealed partial class EventCosmicGlare : InstantActionEvent;
 public sealed partial class EventCosmicIngress : EntityTargetActionEvent;
 public sealed partial class EventCosmicImposition : InstantActionEvent;
 public sealed partial class EventCosmicNova : WorldTargetActionEvent;
+public sealed partial class EventCosmicFragmentation : EntityTargetActionEvent;
 
-
-// Rogue Ascended
-public sealed partial class EventRogueCosmicNova : WorldTargetActionEvent;
-public sealed partial class EventRogueInfection : EntityTargetActionEvent;
-public sealed partial class EventRogueGrandShunt : InstantActionEvent;
-public sealed partial class EventRogueSlumber : EntityTargetActionEvent;
+// COLOSSUS ACTIONS
+public sealed partial class EventCosmicColossusSunder : WorldTargetActionEvent;
+public sealed partial class EventCosmicColossusIngress : EntityTargetActionEvent;
+public sealed partial class EventCosmicColossusHibernate : InstantActionEvent;
+public sealed partial class EventCosmicColossusEffigy : InstantActionEvent;

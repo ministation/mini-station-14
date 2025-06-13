@@ -4,16 +4,15 @@
   text: "/ServerInfo/Guidebook/Antagonist/Antagonists.xml"
   children:
   - Traitors
-  - Blob # Goobstation - Blob
-  - CosmicCult # DeltaV - Cosmic Cult
-  - NuclearOperatives
-  - Zombies
-  - Revolutionaries
-  - MinorAntagonists
-  - SpaceNinja
   - Thieves
-  - Heretics
+  - CosmicCult # DeltaV - Cosmic Cult
+  - CosmicColossus # DeltaV - Entropic Colossus
+  - Revolutionaries
+  - NuclearOperatives
+  - SpaceNinja
   - Wizard
+  - Zombies
+  - MinorAntagonists
 
 - type: guideEntry
   id: Traitors

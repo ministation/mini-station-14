@@ -1,15 +1,8 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 - type: entity
-  name: Космо-меч
+  name: entropic blade
   parent: BaseSword
   id: SwordCosmicCult
-  description: Жуткий двуручный клинок, созданный из непостижимого материала, противоестественно проникший в наш мир. Каждое ваше нутро кричит, что он здесь чужд.
+  description: An eerie greatsword wrought of indescribable material, forcibly extruded down into reality. Your instincts tell you that it does not belong here.
   components:
   - type: CosmicEquipment
   - type: Sprite
@@ -22,13 +15,14 @@
     resistanceBypass: true
     angle: 90
     animation: WeaponArcCosmic
-    attackRate: 1.5
+    attackRate: 0.62
     clickDamageModifier: 1.1
     damage:
       types:
-        Slash: 9
-        Asphyxiation: 16
-        Structural: 40
+        Slash: 11
+        Asphyxiation: 12
+        Cold: 12
+        Structural: 15
     soundHit:
       path: /Audio/_DV/CosmicCult/cosmicsword_hit.ogg
       params:
@@ -70,7 +64,7 @@
         Structural: 5
   - type: DisarmMalus
   - type: Item
-    size: Large
+    size: Huge
     sprite: _DV/CosmicCult/Objects/cosmicsword-inhands.rsi
     inhandVisuals:
       left:
@@ -79,14 +73,14 @@
       - state: inhand-right
 
 - type: entity
-  name: Космо-рапира
+  name: vacuous lance
   parent: BaseItem
   id: SpearCosmicCult
-  description: Тревожное копьё, выкованное из неописуемой материи. Близость к нему ощущается как статическое покалывание, расползающееся по нервам.
+  description: An unnerving spear, wrought of indescribable material. Being near it feels like a prickle of static spreading through your nerves.
   components:
   - type: CosmicEquipment
   - type: EmbeddableProjectile
-    removalTime: 1
+    removalTime: 2
     sound: /Audio/_DV/CosmicCult/cosmiclance_impact.ogg
   - type: Sprite
     sprite: _DV/CosmicCult/Objects/cosmiclance.rsi
@@ -98,11 +92,12 @@
     resistanceBypass: true
     angle: 0
     animation: WeaponArcCosmic
-    attackRate: 0.7
+    attackRate: 0.62
     damage:
       types:
-        Piercing: 16
-        Asphyxiation: 17
+        Piercing: 12
+        Asphyxiation: 10
+        Cold: 10
     soundHit:
       path: /Audio/_DV/CosmicCult/cosmiclance_hit.ogg
       params:
@@ -121,8 +116,8 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 35
-        Asphyxiation: 35
+        Piercing: 16
+        Cold: 20
   - type: Wieldable
     wieldSound:
       path: /Audio/_DV/CosmicCult/cosmic_wield.ogg
@@ -139,9 +134,7 @@
       types:
         Piercing: 5
   - type: Item
-    size: Large
-    shape:
-    - 0,0,4,0
+    size: Huge
     sprite: _DV/CosmicCult/Objects/cosmiclance-inhands.rsi
     inhandVisuals:
       left:
@@ -174,8 +167,7 @@
 
 
 - type: entity
-  name: Космо-коса
-  description: Поджарьте попки неверующим! Стреляет маленькими сингулярностями из глубин космоса!
+  name: astral razor
   parent: BaseItem
   id: ScytheCosmicCult
   components:
@@ -195,15 +187,17 @@
       groups:
         Brute: -10
   - type: Gun
-    projectileSpeed: 8
+    projectileSpeed: 15
     soundGunshot: /Audio/_DV/CosmicCult/projectile_razor.ogg
     soundEmpty: null
-    fireRate: 2.2
+    fireRate: 1
     useKey: false
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 0.3
+    rechargeCooldown: 1.8
     rechargeSound:
       path: /Audio/_DV/CosmicCult/projectile_razor_reload.ogg
+      params:
+        variation: 0.08
   - type: BasicEntityAmmoProvider
     proto: ProjectileCosmicRazor
     capacity: 1
@@ -216,8 +210,10 @@
     clickDamageModifier: 1.1
     damage:
       types:
-        Slash: 6
+        Slash: 3
+        Piercing: 3
         Asphyxiation: 6
+        Cold: 6
         Structural: 15
     soundHit:
       path: /Audio/_DV/CosmicCult/cosmicsword_hit.ogg
@@ -227,21 +223,13 @@
     soundSwing:
       path: /Audio/_DV/CosmicCult/cosmicweapon_swing.ogg
       params:
-        variation: 0.125
+        variation: 0.124
         volume: -4
     soundNoDamage:
       path: /Audio/_DV/CosmicCult/cosmicsword_glance.ogg
       params:
         variation: 0.2
         volume: -11
-  - type: Reflect
-    reflectProb: .21
-    spread: 120
-    soundOnReflect:
-      path: /Audio/_DV/CosmicCult/cosmicsword_glance.ogg
-      params:
-        variation: 0.2
-        volume: -6
   - type: Wieldable
     wieldSound:
       path: /Audio/_DV/CosmicCult/cosmic_wield.ogg
@@ -257,6 +245,7 @@
     damage:
       types:
         Structural: 5
+  - type: GunRequiresWield
   - type: Item
     size: Ginormous
     sprite: _DV/CosmicCult/Objects/cosmicscythe-inhands.rsi
