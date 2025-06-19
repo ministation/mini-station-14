@@ -52,6 +52,9 @@
     resistance: 3
   - type: CosmicCorruptible # DeltaV - Cosmic Cult
     convertTo: WindowCosmicCult
+  - type: Penetratable # Corvax-Next - Better snipers
+    penetrateDamage: 75
+    damagePenalty: 0.1
 
 - type: entity
   id: UraniumWindowDirectional
@@ -105,6 +108,9 @@
     price: 100
   - type: RadiationBlocker
     resistance: 1.5
+  - type: Penetratable # Corvax-Next - Better snipers
+    penetrateDamage: 50
+    damagePenalty: 0.1
 
 - type: entity
   parent: UraniumWindow

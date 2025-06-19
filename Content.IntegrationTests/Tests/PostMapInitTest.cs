@@ -91,7 +91,6 @@ namespace Content.IntegrationTests.Tests
             "NextPilgrim",
             "NextPearl",
             "NextTushkan",
-            "NextGlacier",
             "NextAwesome",
             "NextBagel",
             "NextBox",
@@ -100,8 +99,9 @@ namespace Content.IntegrationTests.Tests
             "NextCluster",
             "NextOmega",
             "NextPacked",
-            "BattleRoyale", // BattleRoyale Change
-            "Lavatest", // Lavaland Change
+			"NextChloris",
+            "BattleRoyale",
+            "Lavatest",
             // Corvax-Next-end
             "Dev",
             "TestTeg",
@@ -126,6 +126,8 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             "Convex",
             "Relic",
+            "dm01-entryway"
+
         };
 
         /// <summary>

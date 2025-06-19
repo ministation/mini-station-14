@@ -1,10 +1,10 @@
-ore-silo-ui-title = Блюспейс хранилище
-ore-silo-ui-label-clients = Машины
-ore-silo-ui-label-mats = Материалы
+ore-silo-ui-title = Material Silo
+ore-silo-ui-label-clients = Machines
+ore-silo-ui-label-mats = Materials
 ore-silo-ui-itemlist-entry = {$linked ->
-    [true] {"[Подключено] "}
-    *[false] {""}
-}{$name} ({$beacon}) {$inRange ->
+    [true] {"[Linked] "}
+    *[False] {""}
+} {$name} ({$beacon}) {$inRange ->
     [true] {""}
-    *[false] (Вне зоны)
+    *[false] (Out of Range)
 }

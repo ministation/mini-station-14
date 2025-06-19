@@ -1,11 +1,12 @@
 - type: entity
   id: MachineMaterialSilo
   parent: [ BaseMachinePowered, ConstructibleMachine ]
-  name: Блюспейс хранилище
-  description: Передовое устройство, использующее блюспейс-технологии для передачи материалов на все латы станции.
+  name: material silo
+  description: An advanced machine, capable of using bluespace technology to transmit materials to nearby machines.
   components:
   - type: Sprite
     sprite: Structures/Machines/silo.rsi
+    snapCardinals: true
     layers:
     - state: silo
       map: [ "base" ]

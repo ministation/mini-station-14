@@ -165,6 +165,10 @@ public abstract class SharedMaterialStorageSystem : EntitySystem
         if (!CanTakeVolume(uid, volume, component))
             return false;
 
+        if (!component.IgnoreMaterialWhiteList) // Goobstation Change - Shitcode.
+            if (component.MaterialWhiteList == null ? false : !component.MaterialWhiteList.Contains(materialId))
+                return false;
+                
         if (!IsMaterialWhitelisted((uid, component), materialId))
             return false;
 

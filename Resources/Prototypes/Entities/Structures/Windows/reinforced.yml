@@ -57,6 +57,9 @@
       sprite: Structures/Windows/cracks.rsi
   - type: CosmicCorruptible # DeltaV - Cosmic Cult
     convertTo: WindowCosmicCult
+  - type: Penetratable # Corvax-Next - Better snipers
+    penetrateDamage: 50
+    damagePenalty: 0.1
 
 - type: entity
   id: WindowReinforcedDirectional
@@ -117,6 +120,9 @@
         acts: [ "Destruction" ]
   - type: StaticPrice
     price: 22.5
+  - type: Penetratable # Corvax-Next - Better snipers
+    penetrateDamage: 25
+    damagePenalty: 0.1
 
 - type: entity
   parent: ReinforcedWindow

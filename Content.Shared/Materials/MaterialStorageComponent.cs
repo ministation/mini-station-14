@@ -92,7 +92,6 @@ public enum MaterialStorageVisuals : byte
 }
 
 /// <summary>
-/// Lavaland Change: Event raised on the materialStorage when a material entity is inserted into it.
 /// Collects all the materials stored on a <see cref="MaterialStorageComponent"/>
 /// </summary>
 /// <param name="Entity">The entity holding all these materials</param>

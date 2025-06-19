@@ -1,79 +1,67 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e1142f20f5e4661cb6845cfcf2dd69f864d67432. paper_stamp-syndicate by Veritius. paper_receipt, paper_receipt_horizontal by eoineoineoin. paper_stamp-greytide by ubaser. paper_stamp-psychologist by clinux. syndicate_card by Aserovich. paper_stamp_wizard by brassicaprime69 (Discord)",
-    "size": {
-      "x": 32,
-      "y": 32
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e1142f20f5e4661cb6845cfcf2dd69f864d67432. paper_stamp-syndicate by Veritius. paper_receipt, paper_receipt_horizontal by eoineoineoin. paper_stamp-greytide by ubaser. paper_stamp-psychologist by clinux. syndicate_card by Aserovich. paper_stamp_wizard by brassicaprime69 (Discord), acquisition_form acquisition_form_words and acquisition_form_header by sowelipililimute (GitHub)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "acquisition_form"
     },
-    "states": [
-      {
-        "name": "envelope_closed"
-      },
-      {
-        "name": "envelope_open"
-      },
-      {
-        "name": "envelope_open_overlay"
-      },
-      {
-        "name": "envelope_torn"
-      },
-      {
-        "name": "envelope_torn_overlay"
-      },
-      {
-        "name": "folder-base"
-      },
-      {
-        "name": "folder-colormap"
-      },
-      {
-        "name": "folder-white"
-      },
-      {
-        "name": "folder-centcom"
-      },
-      {
-        "name": "folder-overlay-paper"
-      },
-      {
-        "name": "folder-sec-doc"
-      },
-      {
-          "name": "folder-stamp-inverse"
-      },
-      {
-        "name": "label_cart"
-      },
-      {
-        "name": "labeler0"
-      },
-      {
-        "name": "labeler1"
-      },
-      {
-        "name": "labeler_e"
-      },
-      {
-        "name": "nano_paper"
-      },
-      {
-        "name": "nano_paper_words",
-        "delays": [
-          [
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1
-          ]
+    {
+      "name": "acquisition_form_words"
+    },
+    {
+      "name": "acquisition_form_header"
+    },
+    {
+      "name": "envelope_closed"
+    },
+    {
+      "name": "envelope_open"
+    },
+    {
+      "name": "envelope_open_overlay"
+    },
+    {
+      "name": "envelope_torn"
+    },
+    {
+      "name": "envelope_torn_overlay"
+    },
+    {
+      "name": "label_cart"
+    },
+    {
+      "name": "labeler0"
+    },
+    {
+      "name": "labeler1"
+    },
+    {
+      "name": "labeler_e"
+    },
+    {
+      "name": "nano_paper"
+    },
+    {
+      "name": "nano_paper_words",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
+      ]
       },
       {
         "name": "newspaper"

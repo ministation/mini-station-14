@@ -16,7 +16,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'TA'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Corvax/Shuttles/corvax_emergency.yml
+          emergencyShuttlePath: /Maps/Next/Shuttles/emergency_next.yml
         - type: StationJobs
           availableJobs:
             # command
@@ -76,4 +76,3 @@
           stageBegin: 20
           stageCritical: 300
           stageTheEnd: 600
-        # Corvax-next blob-config-end

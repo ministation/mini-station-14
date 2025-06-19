@@ -4,7 +4,7 @@
   mapPath: /Maps/Next/next_delta.yml
   maxRandomOffset: 0
   randomRotation: false
-  minPlayers: 55
+  minPlayers: 40
   stations:
     NextDelta:
       stationProto: StandardNanotrasenStation
@@ -15,7 +15,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'TG'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Corvax/Shuttles/emergency_corvaxdelta.yml
+          emergencyShuttlePath: /Maps/Next/Shuttles/Delta/emergency_nextDelta.yml
         - type: StationJobs
           availableJobs:
             # command
@@ -64,10 +64,10 @@
             Boxer: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
             Chef: [ 1, 2 ]
-            Clown: [ 1, 1 ]
+            Clown: [ 1, 2 ]
             Janitor: [ 1, 2 ]
             Librarian: [ 1, 1 ]
-            Mime: [ 1, 1 ]
+            Mime: [ 1, 2 ]
             Musician: [ 2, 2 ]
             Reporter: [ 2, 2 ]
             ServiceWorker: [ 3, 3 ]
@@ -75,7 +75,7 @@
             Passenger: [ -1, -1 ]
             # silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 2, 3 ]
+            Borg: [ 2, 4 ]
         - type: StationGoal
           goals:
           - Singularity
@@ -98,9 +98,7 @@
           - XenobiologyRepair
           - VirusologyAmbusol
           - BluespaceHarvest
-          # Corvax-next blob-config-start HUGEs
         - type: StationBlobConfig
           stageBegin: 40
-          stageCritical: 1000
-          stageTheEnd: 1600
-          # Corvax-next blob-config-end
+          stageCritical: 1400
+          stageTheEnd: 2000
