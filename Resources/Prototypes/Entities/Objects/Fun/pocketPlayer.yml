@@ -1,0 +1,53 @@
+- type: entity
+  id: PocketPlayer
+  parent: BaseItem
+  name: Pocket player
+  description: some music!
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/PocketPlayer.rsi
+    state: "off"
+    map: ["enum.JukeboxVisualLayers.Base"]
+  - type: Jukebox
+    onState: on
+    offState: off
+    selectState: select
+  - type: Appearance
+  - type: ActivatableUI
+    key: enum.JukeboxUiKey.Key
+  - type: UserInterface
+    interfaces:
+        enum.JukeboxUiKey.Key:
+          type: JukeboxBoundUserInterface
+  - type: Item
+    size: Small
+
+- type: jukebox
+  id: Du_hast
+  name: Du hash - Rammstein
+  path:
+    path: /Audio/Jukebox/RammsteinDuhast.ogg
+
+- type: jukebox
+  id: Sonne
+  name: Sonne - Rammstein
+  path:
+    path: /Audio/Jukebox/RammsteinSonne.ogg
+
+- type: jukebox
+  id: Hydrogen
+  name: Hydrogen - M.O.O.N
+  path:
+    path: /Audio/Jukebox/M.O.O.N_Hydrogen.ogg
+
+- type: jukebox
+  id: WSV
+  name: World`s smallest violin - AJR
+  path:
+    path: /Audio/Jukebox/AJR_WorldsSmallestViolin.ogg
+
+- type: jukebox
+  id: Breathe
+  name: Breathe - The Prodigy
+  path:
+    path: /Audio/Jukebox/TheProdigyBreathe.ogg
