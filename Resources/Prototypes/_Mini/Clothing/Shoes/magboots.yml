@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingShoesBootsMagAdv, BaseGrandTheftContraband]
+  id: ClothingShoesBootsMagCaptain
+  name: Captain's Magboots
+  description: It's a cool magboots. (just painted advanced magboots)
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Shoes/Boots/captain_magboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Mini/Clothing/Shoes/Boots/captain_magboots.rsi
