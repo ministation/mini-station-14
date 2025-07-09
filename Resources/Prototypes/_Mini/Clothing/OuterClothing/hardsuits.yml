@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitMRIBase
-  name: MN12 
+  name: MN12
   description: Слабо-укреплённая версия костюма, MN - metall new. Этот костюм был создан для медиков и инженерных отрядов. Ходят слухи, что этот костюм создали лишь на 12 попытке...
   suffix: MRI
   components:
@@ -15,7 +15,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
-  - type: TemperatureProtection   
+  - type: TemperatureProtection
     heatingCoefficient: 0.001
     coolingCoefficient: 0.001
   - type: Armor
@@ -36,7 +36,7 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitMRIBaseArmor
-  name: MN19 
+  name: MN19
   description: Укреплённая версия костюма, MN - metall new. Этот костюм был модифицирован для штурмовых отрядов группировки MRI. Ходят слухи, что этот костюм создал пьяный инженер с помощью гвоздомета лишь на 19 попытке...
   suffix: MRI
   components:
@@ -50,7 +50,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
-  - type: TemperatureProtection   
+  - type: TemperatureProtection
     heatingCoefficient: 0.001
     coolingCoefficient: 0.001
   - type: Armor
@@ -85,7 +85,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.6
     sprintModifier: 0.6
-  - type: TemperatureProtection   
+  - type: TemperatureProtection
     heatingCoefficient: 0.001
     coolingCoefficient: 0.001
   - type: Armor
@@ -102,3 +102,51 @@
     damageCoefficient: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitMNBaseLeader
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
+  id: ClothingOuterHardsuitSyndieOfficer
+  name: syndicate officers hardsuit
+  description: SIR GET DOWN!
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/hardsuits/SindicateOfficerHardsuit.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/hardsuits/SindicateOfficerHardsuit.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitSyndieOfficer
+
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, BaseSyndicateContraband ]
+  id: ClothingHeadHelmetHardsuitSyndieOfficer
+  name: Syndicate officer Hardsuit Helmet
+  description: officer`s helmet. SIR GET DOWN!
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Head/SindicateOfficerHardsuitHelmet.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Head/SindicateOfficerHardsuitHelmet.rsi
+  - type: PointLight
+    color: "#ff5050"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5

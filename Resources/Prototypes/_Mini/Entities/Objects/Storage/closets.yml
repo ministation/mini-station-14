@@ -1,0 +1,40 @@
+- type: entity
+  id: LockerSindiAtmos
+  name: Sindicate Atmospherics Locker
+  description: atmospherics locker. Made for sabotage.
+  parent: LockerAtmosphericsFilledHardsuit
+  components:
+    sprite: _Mini/Objects/Lockers/SindiAtmosLocker.rsi  #для его спрайта нужны три состояния:  atmos, atmos_open, atmos_door
+
+- type: entity
+  id: LockerSindibotanist
+  name: Sindicate botanist Locker
+  description: botanist`s locker. Red and dangerous.
+  parent: LockerBotanistFilled
+  components:
+    sprite: _Mini/Objects/Lockers/SindiBotanistLocker.rsi  #для его спрайта нужны три состояния:  hydro, hydro_open, hydro_door
+
+- type: entity
+  id: LockerSindisalvage
+  name: Sindicate salvage Locker
+  description: salvage`s locker. Kick dat rocks!
+  parent: LockerFillSalvageSpecialist
+  components:
+    sprite: _Mini/Objects/Lockers/SindiSalvageLocker.rsi  #для его спрайта нужны три состояния: mining, mining_open, mining_door
+
+- type: entity
+  id: LockerSindiRD
+  name: Sindicate RD Locker
+  description: RD locker. for cyber sun researchers.
+  parent: LockerResearchDirectorFilled
+  components:
+    sprite: _Mini/Objects/Lockers/SindiRSLocker.rsi  #для его спрайта нужны три состояния: rd, rd_open, rd_door
+
+
+- type: entity
+  id: LockerSindiCaptain
+  name: Sindicate Captain`s Locker
+  description: cap`s locker.
+  parent: LockerCaptainFilled
+  components:
+    sprite: _Mini/Objects/Lockers/SindiCapLocker.rsi  #для его спрайта нужны три состояния: cap, cap_open, cap_door
