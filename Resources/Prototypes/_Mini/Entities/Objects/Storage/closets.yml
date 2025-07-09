@@ -4,7 +4,12 @@
   description: atmospherics locker. Made for sabotage.
   parent: LockerAtmosphericsFilledHardsuit
   components:
-    sprite: _Mini/Objects/Lockers/SindiAtmosLocker.rsi  #для его спрайта нужны три состояния:  atmos, atmos_open, atmos_door
+  - type: sprite
+    path: _Mini/Objects/Lockers/SindiAtmosLocker.rsi  #для его спрайта нужны три состояния:  atmos, atmos_open, atmos_door
+  - type: EntityStorageVisuals
+    stateBaseClosed: Satmos
+    stateDoorOpen: Satmos_open
+    stateDoorClosed: Satmos_door
 
 - type: entity
   id: LockerSindibotanist
@@ -12,7 +17,12 @@
   description: botanist`s locker. Red and dangerous.
   parent: LockerBotanistFilled
   components:
-    sprite: _Mini/Objects/Lockers/SindiBotanistLocker.rsi  #для его спрайта нужны три состояния:  hydro, hydro_open, hydro_door
+  - type: sprite
+    path: _Mini/Objects/Lockers/SindiBotanistLocker.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: Shydro
+    stateDoorOpen: Shydro_open
+    stateDoorClosed: Shydro_door
 
 - type: entity
   id: LockerSindisalvage
@@ -20,7 +30,12 @@
   description: salvage`s locker. Kick dat rocks!
   parent: LockerFillSalvageSpecialist
   components:
-    sprite: _Mini/Objects/Lockers/SindiSalvageLocker.rsi  #для его спрайта нужны три состояния: mining, mining_open, mining_door
+  - type: sprite
+    path: _Mini/Objects/Lockers/SindiSalvageLocker.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: SSalvage
+    stateDoorOpen: SSalvage_open
+    stateDoorClosed: SSalvage_door
 
 - type: entity
   id: LockerSindiRD
@@ -28,8 +43,12 @@
   description: RD locker. for cyber sun researchers.
   parent: LockerResearchDirectorFilled
   components:
-    sprite: _Mini/Objects/Lockers/SindiRSLocker.rsi  #для его спрайта нужны три состояния: rd, rd_open, rd_door
-
+  - type: sprite
+    path: _Mini/Objects/Lockers/SindiRSLocker.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: Srd
+    stateDoorOpen: Srd_open
+    stateDoorClosed: Srd_door
 
 - type: entity
   id: LockerSindiCaptain
@@ -37,4 +56,9 @@
   description: cap`s locker.
   parent: LockerCaptainFilled
   components:
-    sprite: _Mini/Objects/Lockers/SindiCapLocker.rsi  #для его спрайта нужны три состояния: cap, cap_open, cap_door
+  - type: sprite
+    path: _Mini/Objects/Lockers/SindiCapLocker.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: Scap
+    stateDoorOpen: Scap_open
+    stateDoorClosed: Scap_door
