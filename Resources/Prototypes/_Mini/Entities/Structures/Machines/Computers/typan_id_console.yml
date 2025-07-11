@@ -1,0 +1,19 @@
+- type: entity
+  parent: ComputerId
+  id: TypanIdComputer
+  name: "Typan ID Console"
+  description: "Terminal for programming Typan Corporation ID cards."
+  components:
+    - type: TypanIdCardConsole
+      privilegedIdSlot:
+        whitelist:
+          components: ["IdCard"]
+      targetIdSlot:
+        whitelist:
+          components: ["IdCard"]
+    - type: ActivatableUI
+      key: enum.IdCardConsoleUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.IdCardConsoleUiKey.Key:
+          type: IdCardConsoleBoundUserInterface

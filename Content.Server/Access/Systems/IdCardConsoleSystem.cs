@@ -13,7 +13,6 @@ using Robust.Shared.Prototypes;
 using System.Linq;
 using static Content.Shared.Access.Components.IdCardConsoleComponent;
 using Content.Shared.Access;
-
 namespace Content.Server.Access.Systems;
 
 [UsedImplicitly]
