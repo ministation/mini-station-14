@@ -1,0 +1,119 @@
+- type: roleLoadout
+  id: TypanBotanist
+  groups:
+  - Inventory
+  - GroupTankHarness
+  - SindieJumpsuit
+  - SindieBackpack
+  - SindieNeck
+  - SindieFace
+  - TBotanistOuterClothing
+  - SindiShoes
+  - Glasses
+  - SindiSurvival
+  - SindieTrinkets
+
+- type: roleLoadout
+  id: TypanAtmosTech
+  groups:
+  - Inventory
+  - GroupTankHarness
+  - TAtmosJumpsuit
+  - SindieBackpack
+  - SindieNeck
+  - SindieFace
+  - TAtmosOuterClothing
+  - SindiShoes
+  - Glasses
+  - SindiSurvival
+  - SindieTrinkets
+
+- type: roleLoadout
+  id: TypanCargotech
+  groups:
+  - Inventory
+  - GroupTankHarness
+  - SindieJumpsuit
+  - SindieBackpack
+  - SindieNeck
+  - SindieFace
+  - TCargoOuterClothing
+  - SindiShoes
+  - Glasses
+  - SindiSurvival
+  - SindieTrinkets
+
+- type: roleLoadout
+  id: TypanChef
+  groups:
+  - Inventory
+  - GroupTankHarness
+  - SindieJumpsuit
+  - SindieBackpack
+  - SindieNeck
+  - SindieFace
+  - TChefOuterClothing
+  - SindiShoes
+  - Glasses
+  - SindiSurvival
+  - SindieTrinkets
+
+- type: roleLoadout
+  id: TypanMedic
+  groups:
+  - Inventory
+  - GroupTankHarness
+  - TMedicJumpsuit
+  - SindieBackpack
+  - SindieNeck
+  - SindieFace
+  - TMedicOuterClothing
+  - SindiShoes
+  - Glasses
+  - SindiSurvival
+  - SindieTrinkets
+
+- type: roleLoadout
+  id: TypanRD
+  groups:
+  - Inventory
+  - GroupTankHarness
+  - SindieComjumpsuit
+  - SindieBackpack
+  - SindieNeck
+  - SindieFace
+  - SindieComOuterClothing
+  - SindiShoes
+  - Glasses
+  - SindiSurvival
+  - SindieTrinkets
+
+- type: roleLoadout
+  id: TypanScience
+  groups:
+  - Inventory
+  - GroupTankHarness
+  - SindieJumpsuit
+  - SindieBackpack
+  - SindieNeck
+  - SindieFace
+  - TScienceOuterClothing
+  - SindiShoes
+  - Glasses
+  - SindiSurvival
+  - SindieTrinkets
+
+- type: roleLoadout
+  id: TypanTelecommunicationsOfficer
+  groups:
+  - Inventory
+  - GroupTankHarness
+  - SindieComjumpsuit
+  - SindieBackpack
+  - SindieNeck
+  - SindieFace
+  - SindieComOuterClothing
+  - SindiShoes
+  - Glasses
+  - SindiSurvival
+  - SindieTrinkets

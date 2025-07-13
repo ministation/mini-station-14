@@ -1,0 +1,144 @@
+
+- type: loadoutGroup
+  id: TBotanistOuterClothing
+  name: loadout-group-Typan-botanist-outerclothing
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ClothingOuterWinterHydro
+  - ClothingOuterArmorBasicSlim
+
+- type: loadoutGroup
+  id: TAtmosJumpsuit
+  name: Typan Atmos jumpsuit
+  minLimit: 1
+  loadouts:
+  - ClothingUniformJumpsuitRepairmanSyndie
+  - ClothingUniformJumpsuitPyjamaSyndicateRed
+
+- type: loadoutGroup
+  id: TAtmosOuterClothing
+  name: loadout-group-Typhab-atmos-outerclothing
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ClothingOuterWinterEngi
+  - ClothingOuterArmorBasicSlim
+
+- type: loadoutGroup
+  id: TCargoOuterClothing
+  name: loadout-group-typhan-cargo-outerclothing
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ClothingOuterWinterCargo
+  - ClothingOuterArmorBasicSlim
+
+- type: loadoutGroup
+  id: TChefOuterClothing
+  name: loadout-group-typhan-chef-outerclothing
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ClothingOuterJacketChef
+  - ClothingOuterWinterChef
+
+- type: loadoutGroup
+  id: TMedicJumpsuit
+  name: Typan Medic jumpsuit
+  minLimit: 1
+  loadouts:
+  - ClothingUniformJumpsuitParamedicSyndie
+  - ClothingUniformJumpsuitPyjamaSyndicateRed
+
+- type: loadoutGroup
+  id: TScienceOuterClothing
+  name: loadout-group-typhan-scientist-outerclothing
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ClothingOuterWinterSci
+  - ClothingOuterArmorBasicSlim
+
+
+
+
+
+- type: loadoutGroup
+  id: SindieComjumpsuit
+  name: Typan Command jumpsuit
+  minLimit: 1
+  loadouts:
+  - ClothingUniformJumpsuitOperative
+  - ClothingUniformJumpsuitPyjamaSyndicatePink
+
+- type: loadoutGroup
+  id: SindieComOuterClothing
+  name: loadout-group-typhan-command-outerclothing
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - ClothingOuterWinterSyndieCapArmored
+  - ClothingOuterWinterSyndie
+
+- type: loadoutGroup
+  id: SindieTrinkets
+  name: loadout-group-trinkets
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+  - SyndicatePersonalAI
+  - CigPackSyndicate
+  - TowelColorSyndicate
+  - ClothingNeckSyndicakePin
+  - SoapSyndie
+  - SyndieHandyFlag
+
+- type: loadoutGroup
+  id: SindiSurvival
+  name: loadout-group-survival-sindicate
+  minLimit: 1
+  maxLimit: 2
+  loadouts:
+  - DoubleEmergencyNitrogenTankFilled
+  - DoubleEmergencyOxygenTankFilled
+  - PlasmaTankFilled
+
+- type: loadoutGroup
+  id: SindiShoes
+  name: loadout-group-Sindicate-shoes
+  loadouts:
+  - ClothingShoesBootsCombat
+  - ClothingShoesBootsWinterSyndicate
+
+- type: loadoutGroup
+  id: SindieFace
+  name: Typan face things
+  minLimit: 0
+  loadouts:
+  - ClothingMaskGasSyndicate
+
+- type: loadoutGroup
+  id: SindieNeck
+  name: Typan neck things
+  minLimit: 0
+  loadouts:
+  - ClothingNeckScarfStripedSyndieGreen
+  - ClothingNeckScarfStripedSyndieRed
+
+- type: loadoutGroup
+  id: SindieBackpack
+  name: Typan backpacks
+  minLimit: 0
+  loadouts:
+  - ClothingBackpackSyndicate
+  - ClothingBackpackDuffelSyndicateAmmo
+
+- type: loadoutGroup
+  id: SindieJumpsuit
+  name: Typan jumpsuit
+  minLimit: 1
+  loadouts:
+  - ClothingUniformJumpsuitRecruitSyndie
+  - ClothingUniformJumpsuitPyjamaSyndicateBlack
+
