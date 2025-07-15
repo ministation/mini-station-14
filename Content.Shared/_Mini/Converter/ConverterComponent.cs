@@ -1,10 +1,10 @@
-using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Robust.Shared.Audio;
 
 namespace Content.Shared._Mini.Converter;
 
 [RegisterComponent]
 public sealed partial class ConverterComponent : Component
 {
-
+    [DataField]
+    public SoundSpecifier? InsertSound = new SoundPathSpecifier("/Audio/_Mini/Misc/convert.ogg");
 }

@@ -25,7 +25,7 @@ public sealed class TechnologyDiskSystem : EntitySystem
     [Dependency] private readonly SharedResearchSystem _research = default!;
     [Dependency] private readonly SharedLatheSystem _lathe = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
-    private const string CallAnnouncementSound = "/Audio/_Mini/Misc/convert.ogg";
+
     public override void Initialize()
     {
         base.Initialize();
@@ -67,9 +67,11 @@ public sealed class TechnologyDiskSystem : EntitySystem
 
         if (HasComp<ConverterComponent>(target))
         {
+            var comp = new ConverterComponent();
             if (!_net.IsServer)
                 return;
             _popup.PopupClient(Loc.GetString("диски обменяны"), target, args.User);
+            _audio.PlayPvs(comp.InsertSound, target);
             // Спавним только 1 телекристалл вместо случайного количества
             Spawn("Telecrystal1", Transform(target).Coordinates);
 
