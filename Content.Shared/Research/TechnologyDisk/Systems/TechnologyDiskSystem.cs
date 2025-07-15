@@ -67,7 +67,7 @@ public sealed class TechnologyDiskSystem : EntitySystem
 
         if (HasComp<ConverterComponent>(target))
         {
-            var comp = new ConverterComponent();
+            var comp = Comp<ConverterComponent>(target);
             if (!_net.IsServer)
                 return;
             _popup.PopupClient(Loc.GetString("диски обменяны"), target, args.User);
