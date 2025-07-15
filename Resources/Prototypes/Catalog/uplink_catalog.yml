@@ -1935,6 +1935,19 @@
           - NukeOpsUplink
 
 - type: listing
+  id: uplinkArtifact
+  name: артефакт
+  description: купи артефакт! особенно полезно для тайпана
+  productEntity: RandomArtifactSpawner
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 5
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkJob
+
+- type: listing
   id: uplinkRiggedBoxingGlovesPassenger
   name: uplink-rigged-boxing-gloves-name
   description: uplink-rigged-boxing-gloves-desc

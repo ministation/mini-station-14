@@ -1,5 +1,5 @@
 - type: entity
-  id: StorePresetUplink
+  id: StorePresetUplinkTypan
   abstract: true
   components:
   - type: Store
