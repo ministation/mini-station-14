@@ -72,7 +72,6 @@ public sealed class TechnologyDiskSystem : EntitySystem
                 return;
             _popup.PopupClient(Loc.GetString("диски обменяны"), target, args.User);
             _audio.PlayPvs(comp.InsertSound, target);
-            // Спавним только 1 телекристалл вместо случайного количества
             Spawn("Telecrystal1", Transform(target).Coordinates);
 
             QueueDel(ent);
