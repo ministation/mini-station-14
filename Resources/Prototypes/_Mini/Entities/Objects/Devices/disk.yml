@@ -1,0 +1,16 @@
+- type: entity
+  id: TypanAccessDisk
+  parent: BaseItem
+  name: Диск доступа Тайпана
+  description: Содержит координаты секретной станции.
+  components:
+    - type: Item
+      size: 5
+    - type: TypanAccessDiskComponents
+    - type: Appearance
+    - type: Sprite
+      sprite: Objects/Misc/cd.rsi
+      state: icon
+    - type: Tag
+      tags:
+      - CoordinatesDisk
