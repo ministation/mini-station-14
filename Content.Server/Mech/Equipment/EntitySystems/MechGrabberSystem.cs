@@ -86,13 +86,6 @@ public sealed class MechGrabberSystem : EntitySystem
         var xform = Transform(toRemove);
         _transform.AttachToGridOrMap(toRemove, xform);
         var (mechPos, mechRot) = _transform.GetWorldPositionRotation(mechxform);
-        // ADT Mech start
-        if (component.SlowMetabolism)
-        {
-            var metabolicEvent = new ApplyMetabolicMultiplierEvent(toRemove, 0.4f, true);
-            RaiseLocalEvent(toRemove, ref metabolicEvent);
-        }
-        // ADT Mech end
         var offset = mechPos + mechRot.RotateVec(component.DepositOffset);
         _transform.SetWorldPositionRotation(toRemove, offset, Angle.Zero);
         _mech.UpdateUserInterface(mech);
@@ -199,13 +192,6 @@ public sealed class MechGrabberSystem : EntitySystem
             return;
 
         _container.Insert(args.Args.Target.Value, component.ItemContainer);
-        // ADT Mech start
-        if (component.SlowMetabolism && args.Target.HasValue)
-        {
-            var metabolicEvent = new ApplyMetabolicMultiplierEvent(args.Target.Value, 0.4f, false);
-            RaiseLocalEvent(args.Target.Value, ref metabolicEvent);
-        }
-        // ADT Mech end
         _mech.UpdateUserInterface(equipmentComponent.EquipmentOwner.Value);
 
         args.Handled = true;

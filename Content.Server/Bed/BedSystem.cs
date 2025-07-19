@@ -51,7 +51,7 @@ namespace Content.Server.Bed
 
                 foreach (var healedEntity in strapComponent.BuckledEntities)
                 {
-                    if (_mobStateSystem.IsDead(healedEntity) || HasComp<SiliconComponent>(healedEntity)) // Parkstation-IPCs // I shouldn't have to modify this.
+                    if (_mobStateSystem.IsDead(healedEntity))
                         continue;
 
                     var damage = bedComponent.Damage;
