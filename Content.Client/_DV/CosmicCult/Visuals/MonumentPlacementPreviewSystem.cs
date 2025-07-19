@@ -1,9 +1,3 @@
-// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
 using System.Numerics;
 using System.Threading;
 using Content.Shared._DV.CosmicCult;
@@ -18,6 +12,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared.Actions.Components;
 
 using Timer = Robust.Shared.Timing.Timer;
 
@@ -55,9 +50,10 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
 
     private void DoMonumentAnimation(EntityUid performer)
     {
-        if (_cachedOverlay == null
-            || _cancellationTokenSource == null
-            || !VerifyPlacement(Transform(performer), out _))
+        if (_cachedOverlay == null || _cancellationTokenSource == null)
+            return;
+
+        if (!VerifyPlacement(Transform(performer), out _))
             return;
 
         _cachedOverlay.LockPlacement = true;
@@ -75,11 +71,15 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
         );
     }
 
-    private void OnCosmicMoveMonument(Entity<CosmicCultLeadComponent> ent, ref EventCosmicMoveMonument args) =>
+    private void OnCosmicMoveMonument(Entity<CosmicCultLeadComponent> ent, ref EventCosmicMoveMonument args)
+    {
         DoMonumentAnimation(args.Performer);
+    }
 
-    private void OnCosmicPlaceMonument(Entity<CosmicCultLeadComponent> ent, ref EventCosmicPlaceMonument args) =>
+    private void OnCosmicPlaceMonument(Entity<CosmicCultLeadComponent> ent, ref EventCosmicPlaceMonument args)
+    {
         DoMonumentAnimation(args.Performer);
+    }
 
     //duplicated from the ability check, minus the station check because that can't be done clientside afaik?
     //and no popups because they're done in the ability check as well
@@ -89,14 +89,17 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
 
         //MAKE SURE WE'RE STANDING ON A GRID
         if (!TryComp(xform.GridUid, out MapGridComponent? grid))
+        {
             return false;
+        }
 
         //CHECK IF IT'S BEING PLACED CHEESILY CLOSE TO SPACE
-        var worldPos = _transform.GetWorldPosition(xform); // this is technically wrong but basically fine
-
+        var worldPos = _transform.GetWorldPosition(xform); //this is technically wrong but basically fine; if
         foreach (var tile in _map.GetTilesIntersecting(xform.GridUid.Value, grid, new Circle(worldPos, MinimumDistanceFromSpace)))
+        {
             if (tile.IsSpace(_tileDef))
                 return false;
+        }
 
         var localTile = _map.GetTileRef(xform.GridUid.Value, grid, xform.Coordinates);
         var targetIndices = localTile.GridIndices + new Vector2i(0, 1);
