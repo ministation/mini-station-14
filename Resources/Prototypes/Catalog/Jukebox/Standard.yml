@@ -39,3 +39,225 @@
   name: PigeonBeans - Sunset
   path:
     path: /Audio/Jukebox/sunset.ogg
+    
+- type: jukebox
+  id: zhiribatman
+  name: Отпетые мошенники x Владимир Жириновский - Обратите внимание
+  path:
+    path: /Audio/_Mini/Music/Zhirinovsky_Batman.ogg
+    
+- type: jukebox
+  id: onwar
+  name: Agatha Christie - Как На Войне 
+  path:
+    path: /Audio/_Mini/Music/kaknavoine.ogg  
+      
+- type: jukebox
+  id: wnight
+  name: Neco Arc - Белая ночь 
+  path:
+    path: /Audio/_Mini/Music/wnight.ogg      
+
+- type: jukebox
+  id: mother
+  name: Татьяна Куртукова - Матушка
+  path:
+    path: /Audio/_Mini/Music/Tatiana_Kurtukova-Mother.ogg
+    
+- type: jukebox
+  id: warfriend
+  name: Песенка боевых друзей
+  path:
+    path: /Audio/_Mini/Music/war-friend.ogg
+
+- type: jukebox
+  id: paradisco2
+  name: PARADISO 2
+  path:
+    path: /Audio/_Mini/Music/PARADISO2.ogg
+
+- type: jukebox
+  id: ser-vbk
+  name: Верка Сердючка - Все будет хорошо
+  path:
+    path: /Audio/_Mini/Music/Songs/Serdyuchka_Vse_budet_khorosho.ogg
+
+- type: jukebox
+  id: ms-m
+  name: Milana Star - Малявка
+  path:
+    path: /Audio/_Mini/Music/Songs/MILANA_STAR_Malavka.ogg
+    
+- type: jukebox
+  id: pnz-ys
+  name: 5'nizza - Я Солдат
+  path:
+    path: /Audio/_Mini/Music/Songs/Piatnitsa_Ya_Soldat.ogg
+
+- type: jukebox
+  id: bbmtm
+  name: Breaking Bad Main Title Theme
+  path:
+    path: /Audio/_Mini/Music/Songs/Breaking_Bad_Main_Title_Theme.ogg
+
+- type: jukebox
+  id: bfbs
+  name: Bosnian Folk Song - Bosanska Artiljerija
+  path:
+    path: /Audio/_Mini/Music/Songs/Bosnian_Folk_Song_Bosanska_Artiljerija.ogg
+
+- type: jukebox
+  id: vtlyt
+  name: Винтаж - Ева я люблю тебя
+  path:
+    path: /Audio/_Mini/Music/Songs/Vintazh_Eva_ya_lyublyu_tebya.ogg
+
+- type: jukebox
+  id: btch
+  name: Боже, Царя храни
+  path:
+    path: /Audio/_Mini/Music/Songs/Bozhe_Tsarya_khrani.ogg
+
+- type: jukebox
+  id: ps
+  name: Прощание Славянки
+  path:
+    path: /Audio/_Mini/Music/Songs/Proshchanie_Slavianki.ogg
+
+- type: jukebox
+  id: lvb5smcm
+  name: Ludwig Van Beethoven’s 5th Symphony in C Minor
+  path:
+    path: /Audio/_Mini/Music/Songs/Ludwig_Van_Beethoven_5th_Symphony_in_C_Minor.ogg
+
+- type: jukebox
+  id: ghhos
+  name: Gasper Horned - ХОС
+  path:
+    path: /Audio/_Mini/Music/Songs/Gasper_Horned_HOS.ogg
+
+- type: jukebox
+  id: npsck
+  name: Неиро песня - СЛАВА КАРГОНИИ
+  path:
+    path: /Audio/_Mini/Music/Songs/Neiro_pesnia_SLAVA_KARGONII.ogg
+
+- type: jukebox
+  id: gshazpr
+  name: ГШ - А я повыше заката рукава
+  path:
+    path: /Audio/_Mini/Music/Songs/GSh_A_ya_povyshe_zakata_rukava.ogg
+
+- type: jukebox
+  id: vdmb
+  name: Ведьмы - BALKON
+  path:
+    path: /Audio/_Mini/Music/Songs/Vedmy_BALKON.ogg
+
+- type: jukebox
+  id: ittttf
+  name: It’s TV Time (DELTARUNE Chapter 3+4 Soundtrack) - Toby Fox
+  path:
+    path: /Audio/_Mini/Music/Songs/Its_TV_Time_DELTARUNE_Chapter_3_4_Soundtrack_Toby_Fox.ogg
+
+- type: jukebox
+  id: spnivc
+  name: Серега пират - ну и что, что вор
+  path:
+    path: /Audio/_Mini/Music/Songs/Serega_pirat_nu_i_chto_hto_vor.ogg
+
+- type: jukebox
+  id: bsdtf
+  name: BIG SHOT (DELTARUNE Chapter 2 Soundtrack) - Toby Fox
+  path:
+    path: /Audio/_Mini/Music/Songs/BIG_SHOT_DELTARUNE_Chapter_2_Soundtrack_Toby_Fox.ogg
+
+- type: jukebox
+  id: pt
+  name: Портрюш
+  path:
+    path: /Audio/_Mini/Music/Songs/Potriush.ogg
+
+- type: jukebox
+  id: dsadw
+  name: Das Schönste Auf Der Welt
+  path:
+    path: /Audio/_Mini/Music/Songs/Das_Schoenste_Auf_Der_Welt.ogg
+
+- type: jukebox
+  id: tp
+  name: Tri polski
+  path:
+    path: /Audio/_Mini/Music/Songs/Tri_polski.ogg
+
+- type: jukebox
+  id: ccratsm
+  name: C&C Red Alert 3 Theme Soviet March
+  path:
+    path: /Audio/_Mini/Music/Songs/C_and_C_Red_Alert_3_Theme_Soviet_March.ogg
+
+- type: jukebox
+  id: lkpts
+  name: LASKKX3I - ПРОТИВ ЦАРЯ
+  path:
+    path: /Audio/_Mini/Music/Songs/LASKKX3I_PROTIV_TSARYA.ogg
+
+- type: jukebox
+  id: iylub
+  name: Иван Юрчев - Легион уходит в бой
+  path:
+    path: /Audio/_Mini/Music/Songs/Ivan_Yurchev_Legion_ukhodit_v_boi.ogg
+
+- type: jukebox
+  id: hb
+  name: Hrste boze
+  path:
+    path: /Audio/_Mini/Music/Songs/Hrste_boze.ogg
+
+- type: jukebox
+  id: vssr
+  name: Voyuitwaien - (SUPER slowed + reverb)
+  path:
+    path: /Audio/_Mini/Music/Songs/Voyuitwaien_SUPER_slowed_reverb.ogg
+
+- type: jukebox
+  id: ksh
+  name: Kaito Shoma - Hotline
+  path:
+    path: /Audio/_Mini/Music/Songs/Kaito_Shoma_Hotline.ogg
+
+- type: jukebox
+  id: pmnntd
+  name: Papa mne ne nuzhni tvoi dengi
+  path:
+    path: /Audio/_Mini/Music/Songs/Papa_mne_ne_nuzhni_tvoi_dengi.ogg
+
+- type: jukebox
+  id: ranyg
+  name: Rick Astley - Never Gonna Give You Up
+  path:
+    path: /Audio/_Mini/Music/Songs/Rick_Astley_Never_Gonna_Give_You_Up.ogg
+
+- type: jukebox
+  id: ftppuk
+  name: Foster The People - Pumped Up Kicks
+  path:
+    path: /Audio/_Mini/Music/Songs/Foster_The_People_Pumped_Up_Kicks.ogg
+
+- type: jukebox
+  id: abf
+  name: Arthur Brown - Fire
+  path:
+    path: /Audio/_Mini/Music/Songs/Arthur_Brown_Fire.ogg
+
+- type: jukebox
+  id: b2bkl
+  name: Браги 2 бидона х lorwride
+  path:
+    path: /Audio/_Mini/Music/Songs/Bragi_2_bidona_kh_lorwride.ogg
+
+- type: jukebox
+  id: iylub
+  name: Иван Юрчев - Легион уходит в бой
+  path:
+    path: /Audio/_Mini/Music/Songs/Ivan_Yurchev_Legion_ukhodit_v_boi.ogg
