@@ -1,0 +1,172 @@
+- type: listing
+  id: BoberFMG1
+  name: Глухарь
+  description: Глухарь — это оружие, которое отличается высокой скоростью стрельбы и низкой точностью.
+  icon: { sprite: /Textures/_Mini/Objects/Weapons/Guns/SMG/Fmg.rsi, state: icon }
+  productEntity: WeaponSubMachineGunFmg9
+  cost:
+    Productunit: 10
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: achete1
+  name: Мачете
+  description: Мачете — острый и легкий нож для ближнего боя и выживания. Идеально подходит для прорубания через растительность.
+  icon: { sprite: /Textures/Objects/Weapons/Melee/machete.rsi, state: icon }
+  productEntity: Machete
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: dbShotgun
+  name: Обрез
+  description: Обрез — компактный и мощный дробовик для ближнего боя, можно положить в карман.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/sawn.rsi, state: icon }
+  productEntity: WeaponShotgunSawn
+  cost:
+    Productunit: 5
+  categories:
+  - UplinkCBRUNWeapon
+
+# - type: listing
+#   id: BoberPulse1
+#   name: Импульсный карабин
+#   description: boobr-pulse-desc
+#   icon: { sprite: /Textures/Objects/Weapons/Guns/Battery/pulse_carbine.rsi, state: icon }
+#   productEntity: WeaponPulseCarbine
+#   cost:
+#     Productunit: 20
+#   categories:
+#   - UplinkCBRUNWeapon
+
+- type: listing
+  id: Boberbulldog1
+  name: Бульдог
+  description: Барабанный дробовик — мощное оружие с высокой скорострельностью и большим магазином для ближнего боя.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon }
+  productEntity: WeaponShotgunBulldog
+  cost:
+    Productunit: 20
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: BoberKammerer1
+  name: Каммерер
+  description: Помповый дробовик — мощное оружие ближнего боя, быстро наносит большой урон и идеально подходит для захвата и защиты в ближних боях.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/pump.rsi, state: icon }
+  productEntity: WeaponShotgunKammerer
+  cost:
+    Productunit: 10
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: BoberXray
+  name: Рентгеновкая пушка
+  description: Экспериментальное оружие, использующее сконцентрированную энергию рентгеновского излучения.
+  productEntity: WeaponXrayCannon
+  cost:
+    Productunit: 12
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: BoberEnforcer1
+  name: Силовик
+  description: Улучшенный помповый дробовик — повышенная мощность, точность и скорострельность для эффективной борьбы в ближнем бою.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/enforcer.rsi, state: icon }
+  productEntity: WeaponShotgunEnforcer
+  cost:
+    Productunit: 15
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: PillAmbuzol
+  name: Амбузол
+  description: Не дает иммунитет от зомби вируса, но спасает если вы были заражены
+  icon: { sprite: /Textures/Objects/Storage/boxes.rsi, state: pillbox }
+  productEntity: PillAmbuzol
+  cost:
+    Productunit: 5
+  categories:
+  - UplinkCBRUNAmbo
+
+- type: listing
+  id: PillAmbuzolPlus
+  name: Амбузол плюс
+  description: Дает иммунитет от зомби вируса.
+  icon: { sprite: /Textures/Objects/Storage/boxes.rsi, state: pillbox }
+  productEntity: PillAmbuzolPlus
+  cost:
+    Productunit: 10
+  categories:
+  - UplinkCBRUNAmbo
+
+- type: listing
+  id: UplinkMagazinePistolSubMachineGun1
+  name: uplink-pistol-magazine-c20r-name
+  description: Магазин ПП на 30 патронов. Совместим с Глухарём.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
+  productEntity: MagazinePistolSubMachineGun
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: UplinkMagazineBulldog
+  name: Барабан для Бульдога
+  description: Барабанный магазин на 8 зарядов — это емкий и надежный магазин, позволяющий быстро перезаряжать оружие.
+  productEntity: MagazineShotgunIncendiary
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: UplinkLethalShot
+  name: коробка дроби
+  description: Упаковка из 16 ружейных патронов — надежное и удобное решение для продолжительной стрельбы.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: base }
+  productEntity: BoxLethalshot
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: UplinkBoxShotgunSlug
+  name: Коробка Ружейных Пуль
+  description: Упаковка из 16 пуль — надежный боезапас для точной и мощной стрельбы в бою.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: slug }
+  productEntity: BoxShotgunSlug
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: UplinkBoxShotgunIncendiary
+  name: Коробка зажигательной дроби
+  description: Упаковка из 16 зажигательных патронов — эффективное средство для поджигания целей и создания огненных эффектов.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: incendiary }
+  productEntity: BoxShotgunIncendiary
+  cost:
+    Productunit: 3
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: BoberPortableRecharger
+  name: boobr-portable-recharger-name
+  description:  boobr-portable-recharger-desc
+  productEntity: PortableRecharger
+  cost:
+    Productunit: 4
+  categories:
+  - UplinkCBRUNAmmo

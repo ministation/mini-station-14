@@ -1,27 +1,28 @@
 name: Publish Public
 
 concurrency:
-  group: publish
+  group: publish-public
 
 on:
   workflow_dispatch:
-  schedule:
-  - cron: '0 2 * * *'
+  # schedule:
+   # - cron: '0 10 * * *'
+  workflow_run:
+    workflows: ["Publish"]
+    types:
+      - completed
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-#    - name: Install dependencies
-#      run: sudo apt-get install -y python3-paramiko python3-lxml
-
     - uses: actions/checkout@v4.2.2
       with:
         submodules: 'recursive'
 
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v4.1.0
+      uses: actions/setup-dotnet@v3.2.0
       with:
         dotnet-version: 9.0.x
 
@@ -43,19 +44,7 @@ jobs:
       run: dotnet run --project Content.Packaging client --no-wipe-release
 
     - name: Publish version
-      run: Tools/publish_multi_request.py
+      run: Tools/publish_multi_request.py --fork-id dspublicfobos
       env:
-        PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN_PUBLIC }}
+        PUBLISH_TOKEN: ${{ secrets.PUBLISH_PUBLIC_TOKEN }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
-        FORK_ID: ${{ vars.FORK_ID_PUBLIC }}
-
-#    - name: Publish changelog (Discord)
-#      run: Tools/actions_changelogs_since_last_run.py
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#        DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
-
-#    - name: Publish changelog (RSS)
-#      run: Tools/actions_changelog_rss.py
-#      env:
-#        CHANGELOG_RSS_KEY: ${{ secrets.CHANGELOG_RSS_KEY }}

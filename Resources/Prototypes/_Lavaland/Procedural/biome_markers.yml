@@ -11,9 +11,9 @@
   minGroupSize: 4
   maxGroupSize: 8
 
-- type: biomeMarkerLayer
-  id: RandomMobLavaland
-  prototype: ADTSpawnMobPRandomLavaland
-  radius: 30
-  maxCount: 5
-  size: 512
+# - type: biomeMarkerLayer
+#   id: RandomMobLavaland
+#   prototype: ADTSpawnMobPRandomLavaland
+#   radius: 30
+#   maxCount: 5
+#   size: 512

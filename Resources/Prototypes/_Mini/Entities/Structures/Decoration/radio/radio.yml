@@ -1,0 +1,75 @@
+# СТАТИЧЕСКОЕ РАДИО
+
+- type: entity
+  id: RadioBase
+  parent: BaseStructure
+  name: радио
+  suffix: Ивент, без музыки
+  description: чудная коробка с звуками. Не требует зарядки, что очень странно...
+  abstract: true
+  components:
+  - type: AmbientSound
+    volume: -16
+    range: 6
+    enabled: true
+    sound:
+      path: /Audio/_Mini/Radio/Music.ogg
+  - type: Sprite
+    sprite: _Mini/Structures/Decoration/radio.rsi
+    state: base
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.08,-0.08,0.08,0.08"
+        mask:
+        - TabletopMachineMask
+        layer:
+        - TabletopMachineLayer
+        density: 200
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+      - !type:EjectVendorItems
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metal_break1.ogg
+  - type: Anchorable
+  - type: Appearance
+
+- type: entity
+  id: RadioRen
+  parent: RadioBase
+  suffix: Ивент, Деревенский самогон
+  components:
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/_Mini/Radio/Music.ogg
+
+- type: entity
+  id: RadioRen1
+  parent: RadioBase
+  suffix: Ивент, Скованные одной цепью
+  components:
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/_Mini/Radio/Music1.ogg

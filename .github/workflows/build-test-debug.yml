@@ -1,6 +1,7 @@
 name: Build & Test Debug
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master, staging, stable ]
   merge_group:
@@ -10,7 +11,7 @@ on:
 
 jobs:
   build:
-    if: github.actor != 'IanComradeBot' && github.event.pull_request.draft == false
+    if: github.actor != 'PJBot' && github.event.pull_request.draft == false
     strategy:
       matrix:
         os: [ubuntu-latest]

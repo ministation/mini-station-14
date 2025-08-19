@@ -161,6 +161,17 @@
   categories:
   - UplinkWeaponry
 
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledGrenadeLauncher
+  name: Rocket Launcher bundle
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponLauncherRocket
+      - id: CartridgeRocket
+        amount: 10
+
 #- type: listing
 #  id: ADTUplinkMask
 #  name: uplink-mask-name

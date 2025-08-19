@@ -994,7 +994,7 @@
     heatingCoefficient: 0.001
     coolingCoefficient: 0.001
   - type: ExplosionResistance
-    damageCoefficient: 0.7
+    damageCoefficient: 0.1
   - type: Armor
     modifiers:
       coefficients:

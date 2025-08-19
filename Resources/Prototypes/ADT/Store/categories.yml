@@ -78,3 +78,21 @@
   id: ADTUplinkERTRevolutionalMechWeapon
   name: uplink-syndimech-weapon
   priority: 2
+
+# CBRUN
+
+- type: storeCategory
+  id: UplinkCBRUNWeapon
+  name: Оружие
+  priority: 1
+
+- type: storeCategory
+  id: UplinkCBRUNAmmo
+  name: Боеприпасы
+  priority: 2
+
+- type: storeCategory
+  id: UplinkCBRUNAmbo
+  name: Зомби Вирус
+  priority: 6
+  
