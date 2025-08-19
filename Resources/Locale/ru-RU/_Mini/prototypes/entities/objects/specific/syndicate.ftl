@@ -9,7 +9,7 @@ ent-BaseUplinkRadio200TCMedic = { ent-BaseUplinkRadio }
 ent-BaseUplinkRadio200TCCommander = { ent-BaseUplinkRadio }
     .desc = { ent-BaseUplinkRadio.desc }
     .suffix = 200 ТК, Командир ядерных оперативников
-	
+
 ent-BaseUplinkRadion350TCLoneOps = { ent-BaseUplinkRadio }
-	.desc = { ent-BaseUplinkRadio.desc }
-	.suffix = 350 ТК, Одиночный ядерный оперативник
+    .desc = { ent-BaseUplinkRadio.desc }
+    .suffix = 350 ТК, Одиночный ядерный оперативник

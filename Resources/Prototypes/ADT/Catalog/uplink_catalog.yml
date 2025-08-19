@@ -170,7 +170,7 @@
     contents:
       - id: WeaponLauncherRocket
       - id: CartridgeRocket
-        amount: 10
+        amount: 3
 
 #- type: listing
 #  id: ADTUplinkMask

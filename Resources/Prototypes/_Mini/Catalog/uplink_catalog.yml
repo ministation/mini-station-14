@@ -34,3 +34,17 @@
       - NukeOpsCommanderUplink
   - !type:ListingLimitedStockCondition
     stock: 1
+
+- type: listing
+  id: UplinkEnergySwordDouble
+  name: uplink-desword-name
+  description: uplink-desword-desc
+  icon: { sprite: Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 25
+  productEntity: EnergySwordDouble
+  cost:
+    Telecrystal: 45
+  categories:
+   - UplinkWeaponry
