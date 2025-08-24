@@ -321,48 +321,48 @@
   - type: AntagLoadProfileRule
     speciesOverride: Human
 
-- type: entity
-  parent: BaseWizardRule
-  id: Wizard
-  components:
-  - type: GameRule
-    minPlayers: 40
-  - type: AntagSelection
-    agentName: wizard-round-end-name
-    selectionTime: PrePlayerSpawn
-    definitions:
-    - prefRoles: [ Wizard ]
-      max: 1
-      playerRatio: 1
-      spawnerPrototype: SpawnPointGhostWizard
-      roleLoadout:
-       - RoleSurvivalExtended
-      briefing:
-        text: wizard-role-greeting
-        color: Turquoise
-        # TODO: Need Wizard Start sound
-        #sound: "/Audio/Ambience/Antag/wizard_start.ogg"
-      startingGear: WizardBlueGear
-      # TODO: WizardComp as needed
-      components:
-      - type: NpcFactionMember
-        factions:
-        - Wizard
-      - type: Skills # Corvax-Next-Skills
-        skills:
-        - ShuttleControl
-        - AdvancedBuilding
-        - Shooting
-        - Surgery
-        - MedicalEquipment
-        - Butchering
-      - type: RandomMetadata
-        nameSegments:
-        - NamesWizardFirst
-        - NamesWizardLast
-        nameFormat: name-format-wizard
-      mindRoles:
-      - MindRoleWizard
+#- type: entity
+#  parent: BaseWizardRule
+#  id: Wizard
+#  components:
+#  - type: GameRule
+#    minPlayers: 40
+#  - type: AntagSelection
+#    agentName: wizard-round-end-name
+#    selectionTime: PrePlayerSpawn
+#    definitions:
+#    - prefRoles: [ Wizard ]
+#      max: 1
+#      playerRatio: 1
+#      spawnerPrototype: SpawnPointGhostWizard
+#      roleLoadout:
+#       - RoleSurvivalExtended
+#      briefing:
+#        text: wizard-role-greeting
+#        color: Turquoise
+#        # TODO: Need Wizard Start sound
+#        #sound: "/Audio/Ambience/Antag/wizard_start.ogg"
+#      startingGear: WizardBlueGear
+#      # TODO: WizardComp as needed
+#      components:
+#      - type: NpcFactionMember
+#        factions:
+#        - Wizard
+#      - type: Skills # Corvax-Next-Skills
+#        skills:
+#        - ShuttleControl
+#        - AdvancedBuilding
+#        - Shooting
+#        - Surgery
+#        - MedicalEquipment
+#        - Butchering
+#      - type: RandomMetadata
+#        nameSegments:
+#        - NamesWizardFirst
+#        - NamesWizardLast
+#        nameFormat: name-format-wizard
+#      mindRoles:
+#      - MindRoleWizard
 
 - type: entity
   id: Zombie
