@@ -1,0 +1,8 @@
+- type: entity
+  parent: ADTClothingEyesGlassesBlueshield
+  id: ClothingEyesLensesBlueshield
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Eyes/blueshield/BSGlasses.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Eyes/blueshield/BSGlasses.rsi

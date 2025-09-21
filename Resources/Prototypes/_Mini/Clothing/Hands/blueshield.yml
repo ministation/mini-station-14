@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsGlovesBlueshield
+  name: Тактические перчатки
+  description: Боевые перчатки для элиты.
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Hands/blueshield/BS_Gloves.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Hands/blueshield/BS_Gloves.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative

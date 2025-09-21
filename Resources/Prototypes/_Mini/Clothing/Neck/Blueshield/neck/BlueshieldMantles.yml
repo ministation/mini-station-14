@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakBlackCloakBlueshield3
+  name: Черная накидка 
+  description: Черная Накидка. Пыль и грязь делает эту накидку брутальной
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Neck/sanabi.rsi
+    state: icon
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodVoidCloak
+    requiredSlot: neck
+    slot: head
+
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfBlueshield
+  name: шарф королевской стражи
+  description: Старый рваный шарф. 
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Neck/scarf.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Neck/scarf.rsi
