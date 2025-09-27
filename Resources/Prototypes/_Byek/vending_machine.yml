@@ -1,0 +1,43 @@
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineClown
+  name: ХонкВенд
+  description: ХОНК!!!
+  components:
+  - type: VendingMachine
+    pack: HonkVendInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: Vocalizer
+  - type: AccessReader
+    access: [["Theatre"]]
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Speech
+  - type: Sprite
+    sprite: 
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
+- type: vendingMachineInventory
+  id: HonkVendInventory
+  startingInventory:
+    ClothingMaskClown: 1
+    ClothingUniformJumpsuitClown: 1
+    ClothingUniformJumpskirtClown: 1
+    ClothingShoesClown: 1
+    ClothingShoesClownLarge: 1
+    GrenadeDummy: 3
+    ToySword: 2
+    ClownRecorder: 1
+    BikeHorn: 5
+    ToyFigurineClown: 1
