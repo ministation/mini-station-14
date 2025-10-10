@@ -42,7 +42,7 @@
     state: vehicle
   productEntity: ADTVehicleSyndicateSegway
   cost:
-    Telecrystal: 5
+    Telecrystal: 25
   categories:
   - UplinkPointless
 
@@ -117,7 +117,7 @@
   description: uplink-syndicate-helmet-desc
   productEntity: ClothingHeadHelmetSwatSyndicate
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
   categories:
     - UplinkWearables
 
@@ -155,9 +155,9 @@
   productEntity: ADTClothingBackpackDuffelSyndicateFilledGrenadeLauncher
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 20
+    Telecrystal: 100
   cost:
-    Telecrystal: 25
+    Telecrystal: 125
   categories:
   - UplinkWeaponry
 
@@ -170,7 +170,7 @@
     contents:
       - id: WeaponLauncherRocket
       - id: CartridgeRocket
-        amount: 10
+        amount: 3
 
 #- type: listing
 #  id: ADTUplinkMask

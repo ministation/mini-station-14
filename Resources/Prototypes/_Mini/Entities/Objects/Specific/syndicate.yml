@@ -1,0 +1,48 @@
+- type: entity
+  parent: BaseUplinkRadio
+  id: BaseUplinkRadio200TC
+  name:
+  description:
+  suffix: 200 TC, NukeOps
+  components:
+  - type: Store
+    balance:
+      Telecrystal: 200
+  - type: Tag
+    tags:
+    - NukeOpsUplink
+
+- type: entity
+  parent: BaseUplinkRadio
+  id: BaseUplinkRadio200TCMedic
+  suffix: 200 TC, NukeOps medic
+  components:
+  - type: Store
+    balance:
+      Telecrystal: 200
+  - type: Tag
+    tags:
+    - NukeOpsUplink
+    - NukeOpsMedicUplink
+    
+- type: entity
+  parent: BaseUplinkRadio
+  id: BaseUplinkRadio200TCCommander
+  suffix: 200 TC, NukeOps commander
+  components:
+  - type: Store
+    balance:
+      Telecrystal: 200
+  - type: Tag
+    tags:
+    - NukeOpsUplink
+    - NukeOpsCommanderUplink
+
+- type: entity
+  parent: BaseUplinkRadio200TCCommander
+  id: BaseUplinkRadion350TCLoneOps
+  suffix: 350 TC, LoneOps
+  components:
+  - type: Store
+    balance:
+      Telecrystal: 350

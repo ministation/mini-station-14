@@ -1,0 +1,158 @@
+- type: listing
+  id: SaintGun
+  name: uplink-ert-saint-gun-name
+  description: uplink-ert-saint-gun-desc
+  icon: { sprite: _Mini/Objects/Weapons/Guns/LMGs/saint_gun.rsi, state: base }
+  productEntity: WeaponSaintGun
+  cost:
+    Productunit: 12
+  categories:
+  - UplinkERTWeapon
+
+- type: listing
+  id: SaintMelee
+  name: uplink-ert-saint-melee-name
+  description: uplink-ert-saint-melee-desc
+  icon: { sprite: _Mini/Objects/Weapons/Melee/cropilo.rsi, state: cropilo }
+  productEntity: Cropilo
+  cost:
+    Productunit: 3
+  categories:
+  - UplinkERTWeapon
+
+# misc
+
+- type: listing
+  id: BoberJawOfLife
+  name: uplink-ert-jaws-of-life-name
+  description: uplink-ert-jaws-of-life-desc
+  productEntity: JawsOfLife
+  cost:
+    Productunit: 4
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: BoberGrenadeShrapnel
+  name: uplink-ert-grenade-shrapnel-name
+  description: uplink-ert-grenade-shrapnel-desc
+  productEntity: GrenadeShrapnel
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTBomb
+
+- type: listing
+  id: Boberc4
+  name: uplink-ert-c4-name
+  productEntity: C4
+  description: uplink-ert-c4-desc
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTBomb
+
+- type: listing
+  id: BoberJetPack
+  name: uplink-ert-jetpack-name
+  productEntity: JetpackVoidFilled
+  description: uplink-ert-jetpack-desc
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: BoberOxtank
+  name: uplink-ert-double-ox-name
+  productEntity: DoubleEmergencyOxygenTank
+  description: uplink-ert-double-ox-desc
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTMisc
+
+- type: listing
+  id: BoberNitank
+  name: uplink-ert-double-nit-name
+  productEntity: DoubleEmergencyNitrogenTank
+  description: uplink-ert-double-nit-desc
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTMisc
+
+#- type: listing
+#  id: BoberGrapplingGun
+#  name: boobr-grappling-gun-name
+#  productEntity: WeaponGrapplingGun
+#  description:  boobr-grappling-gun-desc
+#  cost:
+#    Productunit: 1
+#  categories:
+#  - UplinkERTMisc
+
+- type: listing
+  id: BoberMediKit
+  name: uplink-ert-medkit-name
+  productEntity: MedkitAdvancedFilled
+  description:  uplink-ert-medkit-desc
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkERTMed
+
+- type: listing
+  id: BoberMediKitAir
+  name: uplink-ert-airloss-pen-name
+  productEntity: AirlossAutoInjector
+  description: uplink-ert-airloss-pen-desc
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTMed
+
+- type: listing
+  id: BoberMediKitBr
+  name: uplink-ert-brute-pen-name
+  productEntity: BruteAutoInjector
+  description: uplink-ert-brute-pen-desc
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTMed
+
+- type: listing
+  id: BoberIpcKit
+  name: uplink-ert-welder-name
+  productEntity: WelderIndustrialAdvanced
+  description: uplink-ert-welder-desc
+  cost:
+    Productunit: 2
+  categories:
+  - UplinkERTMisc
+
+
+  #ammo
+
+- type: listing
+  id: SaintAmmo
+  name: uplink-ert-saint-ammo-name
+  description: uplink-ert-saint-ammo-desc
+  icon: { sprite: _Mini/Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/saint_rifle_mag.rsi, state: base }
+  productEntity: MagazineRifleSaint
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTAmmo
+
+
+- type: listing
+  id: SaintBomb
+  name: uplink-ert-holywater-bomb-name
+  productEntity: HolyWaterGrenade
+  description: uplink-ert-holywater-bomb-desc
+  cost:
+    Productunit: 1
+  categories:
+  - UplinkERTBomb

@@ -1,7 +1,7 @@
 # Corvax-HiddenDesc-Start
 ent-Telecrystal = красный кристалл
     .desc = Похоже, он переливается подозрительно манящей энергией.
-    .suffix = 20 ТК, телекристалл
+    .suffix = 1 ТК, телекристалл
 ent-Telecrystal1 = { ent-Telecrystal }
     .suffix = 1 ТК, телекристалл
     .desc = { ent-Telecrystal.desc }

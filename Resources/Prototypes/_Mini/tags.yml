@@ -30,3 +30,9 @@
 
 - type: Tag
   id: CartridgeSilverSaint
+
+- type: Tag
+  id: NukeOpsMedicUplink
+ 
+- type: Tag
+  id: NukeOpsCommanderUplink
