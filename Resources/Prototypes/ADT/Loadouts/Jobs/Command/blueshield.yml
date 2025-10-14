@@ -30,6 +30,16 @@
   equipment:
     jumpsuit: ADTClothingUniformJumpskirtTurtleneckBlueshield
 
+- type: loadout
+  id: BlueshieldJumpsuitUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBlueShield
+
+- type: loadout
+  id: BlueshieldJumpsuitTurtleneck
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTurtleneckBlueshield
+
 # Neck
 - type: loadout
   id: ADTBlueshieldCloak
@@ -45,6 +55,40 @@
   id: BlueshieldMantle
   equipment:
     neck: ClothingNeckMantleBlueshield
+
+- type: loadout
+  id: BlueshieldMantle2
+  equipment:
+    neck: ClothingNeckCloakBlackCloakBlueshield3
+
+- type: loadout
+  id: BlueshieldMantle3
+  equipment:
+    neck: ClothingNeckScarfBlueshield
+
+# Gloves
+
+- type: loadout
+  id: BlueshieldCombatGloves1
+  equipment:
+    gloves: ClothingHandsGlovesCombat
+
+- type: loadout
+  id: BlueshieldCombatGloves2
+  equipment:
+    gloves: ClothingHandsGlovesBlueshield
+
+# Glasses
+
+- type: loadout
+  id: BlueshieldGlasses
+  equipment:
+    eyes: ADTClothingEyesGlassesBlueshield
+
+- type: loadout
+  id: BlueshieldLenses
+  equipment:
+    eyes: ClothingEyesLensesBlueshield
 
 # Back
 #- type: loadout

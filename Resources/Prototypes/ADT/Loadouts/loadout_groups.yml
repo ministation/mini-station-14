@@ -10,6 +10,8 @@
   - ADTBlueshieldJumpskirt
   - ADTBlueshieldJumpsuitTurtleneck
   - ADTBlueshieldJumpskirtTurtleneck
+  - BlueshieldJumpsuitTurtleneck
+  - BlueshieldJumpsuitUniform
 
 - type: loadoutGroup
   id: ADTBlueshieldHead
@@ -29,6 +31,29 @@
   - ADTBlueshieldCloak
   - ADTBlueshieldCloakSecond
   - BlueshieldMantle
+  - BlueshieldMantle2
+  - BlueshieldMantle3
+
+- type: loadoutGroup
+  id: BlueshieldGlasses
+  name: ОСЩ, очки
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - BlueshieldGlasses
+  - BlueshieldLenses
+
+- type: loadoutGroup
+  id: BlueshieldGloves
+  name: ОСЩ, перчатки
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - BlueshieldCombatGloves1
+  - BlueshieldCombatGloves2
+
+
+
 
 #- type: loadoutGroup
 #  id: BlueshieldBackpack

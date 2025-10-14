@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTurtleneckBlueshield
+  name: Водолазка Офицера "Синий Щит"
+  description: Удобная водолака для телохранителя.
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Uniforms/blueshield/turtleneck_blueshield.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Uniforms/blueshield/turtleneck_blueshield.rsi
+  
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueShield
+  name: Униформа Офицера "Синий Щит"
+  description: Стандартная униформа Офицеров "Синий Щит".
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Uniforms/blueshield/Blueshield.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Uniforms/blueshield/Blueshield.rsi
