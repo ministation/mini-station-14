@@ -1,0 +1,48 @@
+- type: entity
+  id: IventRod
+  name: Неизвестная струна
+  description: Ты чувствуешь таинственную силу, заключённую в этой... Что это вообще?
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Pullable
+  - type: Anchorable
+    flags: Anchorable
+  - type: RadiationSource
+    intensity: 4.5
+  - type: ImmovableRod
+    maxSpeed: 0
+    minSpeed: 0
+    shouldGib: true
+    randomizeVelocity: false
+    destroyTiles: false
+    directionOverride: 0
+    hitSound: /Audio/Effects/Grenades/Supermatter/supermatter_start.ogg
+  - type: AmbientSound
+    range: 7
+    volume: -6
+    sound:
+      path: /Audio/Ambience/Objects/anomaly_generator.ogg
+  - type: Sprite
+    sprite: _Mini/Fun/ivent_rod.rsi
+    state: icon
+    noRot: false
+  - type: Physics
+    bodyType: Dynamic
+    linearDamping: 0
+  - type: PointLight
+    radius: 2.5
+    color: '#A6EEFF'
+    energy: 4.0
+    softness: 5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.5
+        density: 1
+        hard: false
+        layer:
+        - Impassable
+        - Opaque
