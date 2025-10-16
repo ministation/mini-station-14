@@ -194,6 +194,8 @@ public sealed partial class StationJobsSystem
                 if (totalSlots == 0)
                     continue; // No slots so just move to the next iteration.
 
+                // tt-mini-station-fucking-fuck-fuck-assign-jobs-start
+                /*
                 // Clear for reuse.
                 stationShares.Clear();
 
@@ -215,6 +217,15 @@ public sealed partial class StationJobsSystem
                     var choice = _random.Pick(stations);
                     stationShares[choice] += candidates.Count - distributed;
                 }
+                */
+
+                // Each station receives an unlimited number of players.
+                // The algorithm will simply cycle through all stations in sequence as long as there are candidates.
+                foreach (var station in stations)
+                {
+                    stationShares[station] = candidates.Count;
+                }
+                // tt-mini-station-fucking-fuck-fuck-assign-jobs-end
 
                 // Actual meat, goes through each station and shakes the tree until everyone has a job.
                 foreach (var station in stations)
