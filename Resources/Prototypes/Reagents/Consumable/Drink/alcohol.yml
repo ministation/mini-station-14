@@ -1577,15 +1577,15 @@
   fizziness: 0.6
 
 - type: reagent
-  id: TequilaSunrise
-  name: reagent-name-tequila-sunrise
+  id: TequilaMini
+  name: reagent-name-tequila-Mini
   parent: BaseAlcohol
-  desc: reagent-desc-tequila-sunrise
+  desc: reagent-desc-tequila-Mini
   physicalDesc: reagent-physical-desc-citric
-  flavor: tequilasunrise
+  flavor: tequilaMini
   color: "#FFE48C"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/tequillasunriseglass.rsi
+    sprite: Objects/Consumable/Drinks/tequillaMiniglass.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-

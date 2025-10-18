@@ -31792,7 +31792,7 @@ entities:
     - type: Transform
       pos: 42.86208,-10.353377
       parent: 31
-- proto: DrinkTequilaSunriseGlass
+- proto: DrinkTequilaMiniGlass
   entities:
   - uid: 10649
     components:

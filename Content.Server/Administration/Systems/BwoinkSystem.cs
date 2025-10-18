@@ -26,6 +26,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Server.Preferences.Managers;
+using Content.Shared.Database; // Ahelp-Antispam, based on Starlight Build: https://github.com/ss14Starlight/space-station-14/pull/85
 
 namespace Content.Server.Administration.Systems
 {
@@ -44,6 +45,7 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly IAfkManager _afkManager = default!;
         [Dependency] private readonly IServerDbManager _dbManager = default!;
         [Dependency] private readonly PlayerRateLimitManager _rateLimit = default!;
+        [Dependency] private readonly IBanManager _banManager = default!; // Mini-Ahelp-Antispam
 
         [GeneratedRegex(@"^https://discord\.com/api/webhooks/(\d+)/((?!.*/).*)$")]
         private static partial Regex DiscordRegex();
@@ -76,6 +78,14 @@ namespace Content.Server.Administration.Systems
         // Maximum length a message can be before it is cut off
         // Should be shorter than DescriptionMax
         private const ushort MessageLengthCap = 3000;
+
+        // Mini-Ahelp-Antispam-Start
+        private readonly TimeSpan _messageCooldown = TimeSpan.FromSeconds(2);
+
+        private readonly Queue<(NetUserId Channel, string Text, TimeSpan Timestamp)> _recentMessages = new();
+        private const int MaxRecentMessages = 10;
+        private const int SpamCheckMessageCount = 3;
+        // Mini-Ahelp-Antispam-End
 
         // Text to be used to cut off messages that are too long. Should be shorter than MessageLengthCap
         private const string TooLongText = "... **(too long)**";
@@ -648,6 +658,19 @@ namespace Content.Server.Administration.Systems
                 return;
             }
 
+            // Ahelp-Antispam-Start
+            // Based on Starlight Build: https://github.com/ss14Starlight/space-station-14/pull/85
+            var currentTime = _timing.RealTime;
+
+            if (IsOnCooldown(message.UserId, currentTime))
+                return;
+
+            if (IsSpam(message.UserId, message.Text))
+                _banManager.CreateServerBan(senderSession.UserId, senderSession.Name, null, null, null, 180, NoteSeverity.High, Loc.GetString("ahelp-antispam-ban-reason"));
+
+            AddToRecentMessages(message.UserId, message.Text, currentTime);
+            // Ahelp-Antispam-End
+
             if (_rateLimit.CountAction(eventArgs.SenderSession, RateLimitKey) != RateLimitStatus.Allowed)
                 return;
 
@@ -853,6 +876,43 @@ namespace Content.Server.Administration.Systems
             /// </summary>
             public bool OnCall;
         }
+
+        // Mini-Ahelp-Antispam-Start
+        private void AddToRecentMessages(NetUserId channelId, string text, TimeSpan timestamp)
+        {
+            _recentMessages.Enqueue((channelId, text, timestamp));
+
+            if (_recentMessages.Count > MaxRecentMessages)
+            {
+                _recentMessages.Dequeue();
+            }
+        }
+
+        private bool IsOnCooldown(NetUserId channelId, TimeSpan currentTime)
+        {
+            var lastMessage = _recentMessages
+                .Where(msg => msg.Channel == channelId)
+                .OrderByDescending(msg => msg.Timestamp)
+                .FirstOrDefault();
+
+            return lastMessage != default && (currentTime - lastMessage.Timestamp) < _messageCooldown;
+        }
+
+        private bool IsSpam(NetUserId channelId, string text)
+        {
+            var recentMessages = _recentMessages
+                .Where(msg => msg.Channel == channelId)
+                .OrderByDescending(msg => msg.Timestamp)
+                .Take(10);
+
+            return recentMessages.All(msg => msg.Text == text) && recentMessages.Count() >= 5;
+        }
+
+        public IEnumerable<(NetUserId Channel, string Text, TimeSpan Timestamp)> GetRecentMessages()
+        {
+            return _recentMessages;
+        }
+        // Mini-Ahelp-Antispam-End
     }
 
     public sealed class AHelpMessageParams

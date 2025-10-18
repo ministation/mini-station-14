@@ -129,6 +129,12 @@
       roleLoadout:
       - RoleSurvivalNukie
       components:
+      # Mini edit start
+      - type: GhostPanelAntagonistMarker
+        name: ghost-panel-antagonist-nukeops-name
+        description: ghost-panel-antagonist-nukeops-description
+        priority: 10
+      # Mini edit end
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:
@@ -345,6 +351,12 @@
       startingGear: WizardBlueGear
       # TODO: WizardComp as needed
       components:
+      # Mini edit start
+      - type: GhostPanelAntagonistMarker
+        name: ghost-panel-antagonist-wizard-name
+        description: ghost-panel-antagonist-wizard-description
+        priority: 5
+      # Mini edit end
       - type: NpcFactionMember
         factions:
         - Wizard

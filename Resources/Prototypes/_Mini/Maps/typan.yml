@@ -14,17 +14,17 @@
             prefixCreator: '14'
         - type: StationJobs
           availableJobs:
-            TypanAtmosTech: [ 0, 2 ]
-            TypanBotanist: [ 0, 1 ]
-            TypanCargotech: [ 0, 2 ]
-            TypanChef: [ 0, 1 ]
-            TypanMedic: [ 0, 3 ]
-            TypanRD: [ 0, 1 ]
-            TypanScience: [ 0, 3 ]
-            TypanOfficer: [ 0, 2 ]
-            TypanBorg: [ 0, 2 ]
-            TypanBorgMedic: [ 0, 1 ]
-            TypanCommander: [ 0, 1 ]
+            TypanAtmosTech: [ 2, 2 ]
+            TypanBotanist: [ 1, 1 ]
+            TypanCargotech: [ 2, 2 ]
+            TypanChef: [ 1, 1 ]
+            TypanMedic: [ 3, 3 ]
+            TypanRD: [ 1, 1 ]
+            TypanScience: [ 3, 3 ]
+            TypanOfficer: [ 2, 2 ]
+            TypanBorg: [ 2, 2 ]
+            TypanBorgMedic: [ 1, 1 ]
+            TypanCommander: [ 1, 1 ]
         - type: StationCargoShuttle
           path: Maps/Shuttles/SindiCargoShuttle.yml
         - type: StationGoal

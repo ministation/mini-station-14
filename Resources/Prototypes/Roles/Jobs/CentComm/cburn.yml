@@ -41,15 +41,14 @@
     ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsMagAdv
     id: CBURNPDA
     pocket1: RadioHandheld
     pocket2: WeaponLaserGun
-    belt: ClothingBeltBandolier
+    belt: ClothingBeltMilitaryWebbing
   storage:
     back:
-    - WeaponShotgunDoubleBarreled
-    - BoxShotgunIncendiary
     - GrenadeFlashBang
     - PillAmbuzolPlus
     - PillAmbuzol
+    - BaseUplinkCBRUN

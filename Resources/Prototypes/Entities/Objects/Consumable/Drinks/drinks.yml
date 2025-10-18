@@ -1985,18 +1985,18 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkTequilaSunriseGlass
-  suffix: tequila sunrise
+  id: DrinkTequilaMiniGlass
+  suffix: tequila Mini
   components:
   - type: SolutionContainerManager
     solutions:
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: TequilaSunrise
+        - ReagentId: TequilaMini
           Quantity: 30
   - type: Icon
-    sprite: Objects/Consumable/Drinks/tequillasunriseglass.rsi
+    sprite: Objects/Consumable/Drinks/tequillaMiniglass.rsi
     state: icon
 
 - type: entity
@@ -2309,7 +2309,7 @@
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: Daiquiri 
+        - ReagentId: Daiquiri
           Quantity: 30
   - type: Icon
     sprite: Objects/Consumable/Drinks/daiquiri.rsi

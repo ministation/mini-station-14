@@ -1,0 +1,57 @@
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseEngineeringContraband]
+  id: ClothingOuterHardsuitRDSindi
+  name: скафандр научного руководителя синдиката
+  description: Специальный костюм, защищающий от воздействия опасных сред с низким давлением. Имеет дополнительный слой брони.
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/OuterClothing/syndicate.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/OuterClothing/syndicate.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: FireProtection
+    reduction: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.8
+        Radiation: 0
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitRDSindi
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitRDSindi
+  name: шлем скафандра научного руководителя синдиката
+  description: Лёгкий шлем для скафандра, который не сковывает движения головы.
+  components:
+  - type: Sprite
+    sprite: _Mini/Clothing/Head/hardsuitsHelmets/syndicate.rsi
+  - type: Clothing
+    sprite: _Mini/Clothing/Head/hardsuitsHelmets/syndicate.rsi
+  - type: PointLight
+    color: green
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

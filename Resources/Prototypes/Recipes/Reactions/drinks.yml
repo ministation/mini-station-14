@@ -1020,14 +1020,14 @@
     Tea: 6
 
 - type: reaction
-  id: TequilaSunrise
+  id: TequilaMini
   reactants:
     JuiceOrange:
       amount: 1
     Tequila:
       amount: 2
   products:
-    TequilaSunrise: 3
+    TequilaMini: 3
 
 - type: reaction
   id: ThreeMileIsland
@@ -1219,7 +1219,7 @@
       amount: 1
   products:
     Cola: 4
-    
+
 - type: reaction
   id: Caipirinha
   requiredMixerCategories:

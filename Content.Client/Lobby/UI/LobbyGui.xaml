@@ -13,13 +13,13 @@
     xmlns:animatedBackground="clr-namespace:Content.Client._OS.UI.AnimatedBackground">
 
     <!-- Анимированный фон -->
-    <animatedBackground:AnimatedBackgroundControl 
-        Access="Public" 
-        VerticalExpand="True" 
-        HorizontalExpand="True" 
-        Name="Background" 
+    <animatedBackground:AnimatedBackgroundControl
+        Access="Public"
+        VerticalExpand="True"
+        HorizontalExpand="True"
+        Name="Background"
         Stretch="KeepAspectCovered"/>
-    
+
     <BoxContainer Name="MainContainer" VerticalExpand="True" HorizontalExpand="True" Orientation="Horizontal" Margin="10 10 10 10">
         <!-- Character setup state -->
         <Control  Access="Public" Visible="False" Name="CharacterSetupState" VerticalExpand="True" HorizontalExpand="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
@@ -50,7 +50,7 @@
             <PanelContainer Name="BottomContainer" StyleClasses="LobbyBackground" MinHeight="500" HorizontalExpand="True" VerticalExpand="True">
                 <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" HorizontalAlignment="Stretch" Margin="0">
                     <!-- Left Panel  -->
-                    <PanelContainer Name="LeftPanel" MinWidth="400" MaxWidth="470" StyleClasses="LobbyBackground" HorizontalExpand="True" VerticalExpand="True">
+                    <PanelContainer Name="LeftPanel" MinWidth="400" MaxWidth="500" StyleClasses="LobbyBackground" HorizontalExpand="True" VerticalExpand="True">
                         <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True" Margin="8 8 8 8" VerticalAlignment="Stretch">
                             <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="8 8 8 8">
                                 <info:ServerInfo Name="ServerInfo" Access="Public" MinSize="0 30" VerticalExpand="True" HorizontalExpand="True" HorizontalAlignment="Stretch"/>
@@ -78,7 +78,7 @@
                     <!-- Right Panel - Chat -->
                     <PanelContainer StyleClasses="LobbyBackground" Name="RightPanel" MinWidth="400" HorizontalExpand="True" VerticalExpand="True">
                         <BoxContainer Orientation="Vertical" MinWidth="400" VerticalExpand="True" HorizontalExpand="True" HorizontalAlignment="Stretch" Margin="8 8 8 8">
-                            <widgets:ChatBox Name="Chat" Access="Public" MinWidth="375" VerticalExpand="True" Margin="3 3 3 3" HorizontalExpand="False" HorizontalAlignment="Right"/>
+                            <widgets:ChatBox Name="Chat" Access="Public" MinWidth="375" VerticalExpand="True" Margin="3 3 3 3" HorizontalExpand="False" HorizontalAlignment="Stretch"/>
                         </BoxContainer>
                     </PanelContainer>
                 </BoxContainer>

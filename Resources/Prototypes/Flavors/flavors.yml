@@ -845,9 +845,9 @@
   description: flavor-complex-syndie-bomb
 
 - type: flavor
-  id: tequilasunrise
+  id: tequilaMini
   flavorType: Complex
-  description: flavor-complex-tequila-sunrise
+  description: flavor-complex-tequila-Mini
 
 - type: flavor
   id: irishcoffee

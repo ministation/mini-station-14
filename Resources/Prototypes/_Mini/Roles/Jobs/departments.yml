@@ -15,8 +15,8 @@
   - TypanScience
 
 - type: department
-  id: TypanSynt
-  name: department-Typan-Synt
+  id: Typan2
+  name: department-Typan2
   description: department-Typan-Synt-description
   color: "#9b2d30"
   roles:

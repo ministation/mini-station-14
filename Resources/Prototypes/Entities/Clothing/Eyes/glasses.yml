@@ -265,3 +265,7 @@
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
   - type: FlashImmunity
+  - type: ClothingGrantComponent
+    component:
+    - type: NightVision
+      color: "#808080"

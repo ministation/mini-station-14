@@ -165,6 +165,12 @@
   parent: BaseMobDragon
   id: MobDragon
   components:
+  # Mini edit start
+  - type: GhostPanelAntagonistMarker
+    name: ghost-panel-antagonist-dragon-name
+    description: ghost-panel-antagonist-dragon-description
+    priority: 60
+  # Mini edit end
   - type: Dragon
     spawnRiftAction: ActionSpawnRift
   - type: GhostRole

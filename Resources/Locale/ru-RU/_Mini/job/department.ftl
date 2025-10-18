@@ -1,2 +1,2 @@
 department-Typan = НИКК Тайпан
-department-Typan-Synt = Синтетики НИКК Тайпан
+department-Typan2 = Синтетики НИКК Тайпан

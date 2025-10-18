@@ -1,6 +1,6 @@
 
 - type: entity
-  id: StorePresetUplinkCBRUNW
+  id: StorePresetUplinkCBRUN
   abstract: true
   components:
   - type: Store
@@ -16,18 +16,18 @@
     - Productunit
 
 - type: entity
-  parent: [BaseItem,  StorePresetUplinkCBRUNW]
-  id: BaseUplinkCBRUNW
+  parent: [BaseItem,  StorePresetUplinkCBRUN]
+  id: BaseUplinkCBRUN
   name: Блюспейс магазин
   description: Блюспейс магазин отряда РХБЗЗ.
   suffix: 35 ЕТ
   components:
   - type: Sprite
-    sprite: _Mini/Objects/Specific/bobert.rsi
+    sprite: _Mini/Objects/Specific/cburn.rsi
     layers:
     - state: icon
   - type: Item
-    sprite: _Mini/Objects/Specific/bobert.rsi
+    sprite: _Mini/Objects/Specific/cburn.rsi
     heldPrefix: icon
   - type: UserInterface
     interfaces:

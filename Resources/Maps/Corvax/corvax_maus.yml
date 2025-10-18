@@ -62472,7 +62472,7 @@ entities:
     - type: Transform
       pos: -49.363075,-51.018986
       parent: 2
-- proto: DrinkTequilaSunriseGlass
+- proto: DrinkTequilaMiniGlass
   entities:
   - uid: 7845
     components:

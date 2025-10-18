@@ -2,7 +2,7 @@
   id: Cargo
   name: department-Cargo
   description: department-Cargo-description
-  color: "#A46106"
+  color: "#9E6A34" # Mini edit
   roles:
   - CargoTechnician
   - Quartermaster
@@ -13,7 +13,7 @@
   id: Civilian
   name: department-Civilian
   description: department-Civilian-description
-  color: "#9FED58"
+  color: "#4e7c22" # Mini edit
   weight: -10
   roles:
   - Bartender
@@ -75,6 +75,7 @@
   name: department-Engineering
   description: department-Engineering-description
   color: "#EFB341"
+  weight: 10  # Mini-weights
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
@@ -86,7 +87,7 @@
   id: Medical
   name: department-Medical
   description: department-Medical-description
-  color: "#52B4E9"
+  color: "#3b627a" # Mini edit
   roles:
   - Chemist
   - ChiefMedicalOfficer
@@ -101,7 +102,7 @@
   id: Security
   name: department-Security
   description: department-Security-description
-  color: "#DE3A3A"
+  color: "#770101" # Mini edit
   weight: 20
   roles:
   - HeadOfSecurity
@@ -118,7 +119,7 @@
   id: Science
   name: department-Science
   description: department-Science-description
-  color: "#D381C9"
+  color: "#984EB4" # Mini edit
   roles:
   - ResearchDirector
   - SeniorResearcher # Corvax-Next-MentorRoles
@@ -129,7 +130,7 @@
   id: Silicon
   name: department-Silicon
   description: department-Silicon-description
-  color: "#D381C9"
+  color: "#61738d" # Mini edit
   roles:
   - Borg
   - StationAi
@@ -139,7 +140,7 @@
   name: department-Specific
   description: department-Specific-description
   color: "#9FED58"
-  weight: 10
+  weight: 5  # Mini-weights
   roles:
   - Boxer
   - Reporter

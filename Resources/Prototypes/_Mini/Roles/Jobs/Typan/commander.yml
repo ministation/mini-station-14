@@ -41,6 +41,7 @@
   - TypanVault
   - TypanExternal
   - SyndicateAgent
+  - NuclearOperative
   special:
   - !type:AddComponentSpecial
     components:

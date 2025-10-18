@@ -1,11 +1,11 @@
 - type: listing
   id: BoberFMG1
-  name: Fmg-9
-  description: Fmg-9 — это оружие, которое отличается высокой скоростью стрельбы и низкой точностью.
+  name: Глухарь
+  description: Глухарь — это оружие, которое отличается высокой скоростью стрельбы и низкой точностью.
   icon: { sprite: /Textures/_Mini/Objects/Weapons/Guns/SMG/Fmg.rsi, state: icon }
   productEntity: WeaponSubMachineGunFmg9
   cost:
-    Productunit: 7
+    Productunit: 10
   categories:
   - UplinkCBRUNWeapon
 
@@ -31,16 +31,16 @@
   categories:
   - UplinkCBRUNWeapon
 
-- type: listing
-  id: BoberPulse1
-  name: Импульсный карабин
-  description: boobr-pulse-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Battery/pulse_carbine.rsi, state: icon }
-  productEntity: WeaponPulseCarbine
-  cost:
-    Productunit: 20
-  categories:
-  - UplinkCBRUNWeapon
+# - type: listing
+#   id: BoberPulse1
+#   name: Импульсный карабин
+#   description: boobr-pulse-desc
+#   icon: { sprite: /Textures/Objects/Weapons/Guns/Battery/pulse_carbine.rsi, state: icon }
+#   productEntity: WeaponPulseCarbine
+#   cost:
+#     Productunit: 20
+#   categories:
+#   - UplinkCBRUNWeapon
 
 - type: listing
   id: Boberbulldog1
@@ -61,6 +61,16 @@
   productEntity: WeaponShotgunKammerer
   cost:
     Productunit: 10
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: BoberXray
+  name: Рентгеновкая пушка
+  description: Экспериментальное оружие, использующее сконцентрированную энергию рентгеновского излучения.
+  productEntity: WeaponXrayCannon
+  cost:
+    Productunit: 12
   categories:
   - UplinkCBRUNWeapon
 
@@ -93,14 +103,14 @@
   icon: { sprite: /Textures/Objects/Storage/boxes.rsi, state: pillbox }
   productEntity: PillAmbuzolPlus
   cost:
-    Productunit: 15
+    Productunit: 10
   categories:
   - UplinkCBRUNAmbo
 
 - type: listing
   id: UplinkMagazinePistolSubMachineGun1
   name: uplink-pistol-magazine-c20r-name
-  description: uplink-pistol-magazine-c20r-desc
+  description: Магазин ПП на 30 патронов. Совместим с Глухарём.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
   productEntity: MagazinePistolSubMachineGun
   cost:
@@ -110,9 +120,9 @@
 
 - type: listing
   id: UplinkMagazineBulldog
-  name: Пустой Барабан для Бульдога
+  name: Барабан для Бульдога
   description: Барабанный магазин на 8 зарядов — это емкий и надежный магазин, позволяющий быстро перезаряжать оружие.
-  productEntity: MagazineShotgunEmpty
+  productEntity: MagazineShotgunIncendiary
   cost:
     Productunit: 1
   categories:
@@ -142,11 +152,21 @@
 
 - type: listing
   id: UplinkBoxShotgunIncendiary
-  name: Коробка зажигательной дроби 
+  name: Коробка зажигательной дроби
   description: Упаковка из 16 зажигательных патронов — эффективное средство для поджигания целей и создания огненных эффектов.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: incendiary }
   productEntity: BoxShotgunIncendiary
   cost:
     Productunit: 3
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: BoberPortableRecharger
+  name: boobr-portable-recharger-name
+  description:  boobr-portable-recharger-desc
+  productEntity: PortableRecharger
+  cost:
+    Productunit: 4
   categories:
   - UplinkCBRUNAmmo

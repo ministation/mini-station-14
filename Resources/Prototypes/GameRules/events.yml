@@ -227,6 +227,12 @@
         color: Green
         sound: /Audio/Misc/ninja_greeting.ogg
       components:
+      # Mini edit start
+      - type: GhostPanelAntagonistMarker
+        name: ghost-panel-antagonist-ninja-name
+        description: ghost-panel-antagonist-ninja-description
+        priority: 40
+      # Mini edit end
       - type: SpaceNinja
       - type: NpcFactionMember
         factions:
@@ -593,6 +599,12 @@
       roleLoadout:
       - RoleSurvivalNukie
       components:
+      # Mini edit start
+      - type: GhostPanelAntagonistMarker
+        name: ghost-panel-antagonist-loneops-name
+        description: ghost-panel-antagonist-loneops-description
+        priority: 20
+      # Mini edit end
       - type: NukeOperative
       - type: RandomMetadata
         nameSegments:

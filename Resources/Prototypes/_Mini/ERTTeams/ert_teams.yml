@@ -8,12 +8,11 @@
       timeToSpawn: 60 # 5 min
       humansList:
         RandomHumanoidSpawnerERTLeader: 1
-        RandomHumanoidSpawnerERTSecurity: 1
+        RandomHumanoidSpawnerERTSecurity: 2
         RandomHumanoidSpawnerERTMedical: 1
-        RandomHumanoidSpawnerERTJanitor: 1
         RandomHumanoidSpawnerERTEngineer: 1
       mustApproveAdmin: false
-      requiredRoundDuration: 1 # min
+      requiredRoundDuration: 10 # min
     red:
       name: ert-team-name-red
       announcementAfterCall: ert-call-announcement-red
@@ -23,10 +22,9 @@
         RandomHumanoidSpawnerERTLeaderEVA: 1
         RandomHumanoidSpawnerERTSecurityEVA: 3
         RandomHumanoidSpawnerERTMedicalEVA: 1
-        RandomHumanoidSpawnerERTJanitorEVA: 1
         RandomHumanoidSpawnerERTEngineerEVA: 1
       mustApproveAdmin: true
-      requiredRoundDuration: 1 # min
+      requiredRoundDuration: 15 # min
     gamma:
       name: ert-team-name-gamma
       announcementAfterCall: ert-call-announcement-gamma
@@ -36,10 +34,9 @@
         RandomHumanoidSpawnerERTLeaderEVA: 1
         RandomHumanoidSpawnerERTSecurityEVA: 4
         RandomHumanoidSpawnerERTMedicalEVA: 2
-        RandomHumanoidSpawnerERTJanitorEVA: 1
         RandomHumanoidSpawnerERTEngineerEVA: 1
       mustApproveAdmin: true
-      requiredRoundDuration: 1 # min
+      requiredRoundDuration: 15 # min
     saint:
       name: ert-team-name-saint
       announcementAfterCall: ert-call-announcement-saint
@@ -49,26 +46,26 @@
         RandomHumanoidSpawnerERTChaplainEVA: 4
         RandomHumanoidSpawnerERTSecurityEVA: 1
       mustApproveAdmin: true
-      requiredRoundDuration: 1 # min
+      requiredRoundDuration: 15 # min
     cburn:
       name: ert-team-name-cburn
       announcementAfterCall: ert-call-announcement-cburn
       shuttle: /Maps/Shuttles/ERT/cburn.yml
       timeToSpawn: 60 # 1 min
       humansList:
-        RandomHumanoidSpawnerCBURNUnit: 8
+        RandomHumanoidSpawnerCBURNUnit: 7
       mustApproveAdmin: true
-      requiredRoundDuration: 1 # min
+      requiredRoundDuration: 15 # min
 
 - type: ertTeams
   id: stationSOGTeams
   teams:
     sog:
-      name: sog-team-name
+      name: Специальный Оперативный Отряд
       announcementAfterCall: sog-call-announcement
       shuttle: /Maps/Shuttles/ISTSindi1.yml
       timeToSpawn: 60 # 1 min
       humansList:
         RandomHumanoidSpawnerNukeOp: 4
       mustApproveAdmin: true
-      requiredRoundDuration: 1 # min
+      requiredRoundDuration: 15 # min
