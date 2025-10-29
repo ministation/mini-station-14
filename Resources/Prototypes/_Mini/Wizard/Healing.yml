@@ -1,0 +1,23 @@
+- type: entity
+  parent: [DrinkBase, BaseMagicalContraband]
+  id: InfinityomnizineBottle
+  name: Зелье Бесконечности
+  description: Волшебный пузырек который имеет бесконечную перезарядку Волшебного напитка.
+  components:
+  - type: Sprite
+    sprite: _Mini/Wizard/inifinityheal.rsi
+    state: icon
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 30
+  - type: SolutionRegeneration
+    solution: drink
+    duration: 4
+    generated:
+      reagents:
+      - ReagentId: Omnizine
+        Quantity: 2
