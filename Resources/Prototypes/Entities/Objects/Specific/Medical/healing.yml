@@ -36,13 +36,14 @@
         Cold: -5
         Shock: -5
         Caustic: -1.5
+    delay: 1.5        
     healingBeginSound:
       path: "/Audio/Items/Medical/ointment_begin.ogg"
     healingEndSound:
       path: "/Audio/Items/Medical/ointment_end.ogg"
   - type: Stack
     stackType: Ointment
-    count: 10
+    count: 15
   - type: StackPrice
     price: 5
 
@@ -87,13 +88,14 @@
         Cold: -10
         Shock: -10
         Caustic: -10
+    delay: 1.5        
     healingBeginSound:
       path: "/Audio/Items/Medical/ointment_begin.ogg"
     healingEndSound:
       path: "/Audio/Items/Medical/ointment_end.ogg"
   - type: Stack
     stackType: RegenerativeMesh
-    count: 10
+    count: 15
   - type: StackPrice
     price: 20
 
@@ -126,13 +128,14 @@
     damage:
       groups:
         Brute: -15 # 5 for each type in the group
+    delay: 1.5        
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
     stackType: Brutepack
-    count: 10
+    count: 15
   - type: StackPrice
     price: 5
 
@@ -176,13 +179,14 @@
       groups:
         Brute: -30 # 10 for each type in the group
     bloodlossModifier: -10 # a suture should stop ongoing bleeding
+    delay: 1.5    
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
     stackType: MedicatedSuture
-    count: 10
+    count: 15
   - type: StackPrice
     price: 20
 
@@ -216,13 +220,14 @@
       types:
         Bloodloss: -0.5 #lowers bloodloss damage
     ModifyBloodLevel: 15 #restores about 5% blood per use on standard humanoids.
+    delay: 1.5    
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
     stackType: Bloodpack
-    count: 10
+    count: 20
   - type: StackPrice
     price: 10
 
@@ -296,13 +301,14 @@
         Slash: -5
         Piercing: -10
     bloodlossModifier: -10
+    delay: 1.5
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
     stackType: Gauze
-    count: 10
+    count: 15
   - type: StackPrice
     price: 10
 
