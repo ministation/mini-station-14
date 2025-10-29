@@ -1615,6 +1615,37 @@
 
 - type: entity
   parent: BaseItem
+  id: HolyRecorder
+  name: holy recorder
+  description: When you just can't get those laughs coming the natural way!
+  components:
+  - type: Sprite
+    sprite: _Mini/Objects/Devices/holyrecorder.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound:
+      collection: HolyRecorder
+  - type: EmitSoundOnLand
+    sound:
+      collection: HolyRecorder
+  - type: EmitSoundOnActivate
+    sound:
+      collection: HolyRecorder
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: HolyRecorder
+  - type: EmitSoundOnCollide
+    sound:
+      collection: HolyRecorder
+  - type: UseDelay
+    delay: 30.0
+  - type: Tag
+    tags:
+    - HolyRecorder
+    - Payload
+
+- type: entity
+  parent: BaseItem
   id: ToyHammer
   name: rubber hammer
   description: A brightly colored hammer made of rubber.

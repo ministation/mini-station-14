@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from mojokelp at commit https://github.com/ministation/mini-station-14/pull/84/commits/155c332133773f7a58d86ac69bd3de9a8d5ab38e",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    }
+  ]
+}
