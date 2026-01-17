@@ -1,8 +1,21 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 using System.Numerics;
 using System.Threading;
 using Content.Shared._DV.CosmicCult;
 using Content.Shared._DV.CosmicCult.Components;
 using Content.Shared.Actions;
+<<<<<<< HEAD
+=======
+using Content.Shared.Actions.Components;
+>>>>>>> goob
 using Content.Shared.Actions.Events;
 using Content.Shared.Maps;
 using Robust.Client.GameObjects;
@@ -12,7 +25,10 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+<<<<<<< HEAD
 using Content.Shared.Actions.Components;
+=======
+>>>>>>> goob
 
 using Timer = Robust.Shared.Timing.Timer;
 
@@ -29,9 +45,15 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
     [Dependency] private readonly IOverlayManager _overlay = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
+<<<<<<< HEAD
     [Dependency] private readonly ITileDefinitionManager _tileDef = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
+=======
+    [Dependency] private readonly SharedMapSystem _map = default!;
+    [Dependency] private readonly TransformSystem _transform = default!;
+    [Dependency] private readonly TurfSystem _turf = default!;
+>>>>>>> goob
 
     private MonumentPlacementPreviewOverlay? _cachedOverlay;
     private CancellationTokenSource? _cancellationTokenSource;
@@ -50,10 +72,16 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
 
     private void DoMonumentAnimation(EntityUid performer)
     {
+<<<<<<< HEAD
         if (_cachedOverlay == null || _cancellationTokenSource == null)
             return;
 
         if (!VerifyPlacement(Transform(performer), out _))
+=======
+        if (_cachedOverlay == null
+            || _cancellationTokenSource == null
+            || !VerifyPlacement(Transform(performer), out _))
+>>>>>>> goob
             return;
 
         _cachedOverlay.LockPlacement = true;
@@ -71,6 +99,7 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
         );
     }
 
+<<<<<<< HEAD
     private void OnCosmicMoveMonument(Entity<CosmicCultLeadComponent> ent, ref EventCosmicMoveMonument args)
     {
         DoMonumentAnimation(args.Performer);
@@ -80,6 +109,13 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
     {
         DoMonumentAnimation(args.Performer);
     }
+=======
+    private void OnCosmicMoveMonument(Entity<CosmicCultLeadComponent> ent, ref EventCosmicMoveMonument args) =>
+        DoMonumentAnimation(args.Performer);
+
+    private void OnCosmicPlaceMonument(Entity<CosmicCultLeadComponent> ent, ref EventCosmicPlaceMonument args) =>
+        DoMonumentAnimation(args.Performer);
+>>>>>>> goob
 
     //duplicated from the ability check, minus the station check because that can't be done clientside afaik?
     //and no popups because they're done in the ability check as well
@@ -89,6 +125,7 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
 
         //MAKE SURE WE'RE STANDING ON A GRID
         if (!TryComp(xform.GridUid, out MapGridComponent? grid))
+<<<<<<< HEAD
         {
             return false;
         }
@@ -100,6 +137,16 @@ public sealed class MonumentPlacementPreviewSystem : EntitySystem
             if (tile.IsSpace(_tileDef))
                 return false;
         }
+=======
+            return false;
+
+        //CHECK IF IT'S BEING PLACED CHEESILY CLOSE TO SPACE
+        var worldPos = _transform.GetWorldPosition(xform); // this is technically wrong but basically fine
+
+        foreach (var tile in _map.GetTilesIntersecting(xform.GridUid.Value, grid, new Circle(worldPos, MinimumDistanceFromSpace)))
+            if (_turf.IsSpace(tile))
+                return false;
+>>>>>>> goob
 
         var localTile = _map.GetTileRef(xform.GridUid.Value, grid, xform.Coordinates);
         var targetIndices = localTile.GridIndices + new Vector2i(0, 1);

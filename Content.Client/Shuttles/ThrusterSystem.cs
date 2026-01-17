@@ -1,3 +1,9 @@
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: MIT
+
 using Content.Shared.Shuttles.Components;
 using Robust.Client.GameObjects;
 
@@ -8,6 +14,8 @@ namespace Content.Client.Shuttles;
 /// </summary>
 public sealed class ThrusterSystem : VisualizerSystem<ThrusterComponent>
 {
+    [Dependency] private readonly SpriteSystem _sprite = default!;
+
     /// <summary>
     /// Updates whether or not the thruster is visibly active/thrusting.
     /// </summary>
@@ -17,7 +25,11 @@ public sealed class ThrusterSystem : VisualizerSystem<ThrusterComponent>
         || !AppearanceSystem.TryGetData<bool>(uid, ThrusterVisualState.State, out var state, args.Component))
             return;
 
+<<<<<<< HEAD
         SpriteSystem.LayerSetVisible((uid, args.Sprite), ThrusterVisualLayers.ThrustOn, state);
+=======
+        _sprite.LayerSetVisible((uid, args.Sprite), ThrusterVisualLayers.ThrustOn, state);
+>>>>>>> goob
         SetThrusting(
             uid,
             state && AppearanceSystem.TryGetData<bool>(uid, ThrusterVisualState.Thrusting, out var thrusting, args.Component) && thrusting,
@@ -30,6 +42,7 @@ public sealed class ThrusterSystem : VisualizerSystem<ThrusterComponent>
     /// </summary>
     private void SetThrusting(EntityUid uid, bool value, SpriteComponent sprite)
     {
+<<<<<<< HEAD
         if (SpriteSystem.LayerMapTryGet((uid, sprite), ThrusterVisualLayers.Thrusting, out var thrustingLayer, false))
         {
             SpriteSystem.LayerSetVisible((uid, sprite), thrustingLayer, value);
@@ -38,6 +51,16 @@ public sealed class ThrusterSystem : VisualizerSystem<ThrusterComponent>
         if (SpriteSystem.LayerMapTryGet((uid, sprite), ThrusterVisualLayers.ThrustingUnshaded, out var unshadedLayer, false))
         {
             SpriteSystem.LayerSetVisible((uid, sprite), unshadedLayer, value);
+=======
+        if (_sprite.LayerMapTryGet((uid, sprite), ThrusterVisualLayers.Thrusting, out var thrustingLayer, false))
+        {
+            _sprite.LayerSetVisible((uid, sprite), thrustingLayer, value);
+        }
+
+        if (_sprite.LayerMapTryGet((uid, sprite), ThrusterVisualLayers.ThrustingUnshaded, out var unshadedLayer, false))
+        {
+            _sprite.LayerSetVisible((uid, sprite), unshadedLayer, value);
+>>>>>>> goob
         }
     }
 }

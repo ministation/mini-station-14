@@ -1,3 +1,9 @@
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Client.Info;
 using Content.Client.Info.PlaytimeStats;
 using Content.Client.Resources;
@@ -65,13 +71,22 @@ namespace Content.Client.Lobby.UI
             StatsButton.OnPressed += _ => new PlaytimeStatsWindow().OpenCentered();
 
             _cfg.OnValueChanged(CCVars.SeeOwnNotes, p => AdminRemarksButton.Visible = p, true);
+<<<<<<< HEAD
             // Corvax-Sponsors-Start
+=======
+
+            // CorvaxGoob-Sponsors-Start
+>>>>>>> goob
             if (IoCManager.Instance!.TryResolveType<ISponsorWindowCreator>(out var creator))
             {
                 SponsorButton.Visible = true;
                 SponsorButton.OnPressed += _ => creator.OpenWindow();
             }
+<<<<<<< HEAD
             // Corvax-Sponsors-End
+=======
+            // CorvaxGoob-Sponsors-End
+>>>>>>> goob
         }
 
         /// <summary>

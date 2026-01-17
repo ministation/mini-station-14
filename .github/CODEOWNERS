@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+=======
+# Last match in file takes precedence.
+
+# Ping for all PRs
+* @KillanGenifer
+
+# Locale
+/Resources/Locale @Ko4ergaPunk
+
+# Textures
+/Resources/Textures/_CorvaxGoob @SonicHDC
+
+# Map files
+/Resources/Prototypes/_CorvaxGoob/Entities/Stations @kvant8
+/Resources/Prototypes/_CorvaxGoob/Maps @kvant8
+/Resources/Maps/_CorvaxGoob @kvant8
+
+# TTS
+/Content.*/_CorvaxGoob/TTS @Morb0
+>>>>>>> goob

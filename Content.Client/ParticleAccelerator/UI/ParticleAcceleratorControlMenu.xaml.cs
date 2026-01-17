@@ -1,3 +1,10 @@
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Numerics;
 using Content.Client.Message;
 using Content.Client.Resources;
@@ -262,6 +269,7 @@ public sealed partial class ParticleAcceleratorControlMenu : FancyWindow
 
 public sealed class PASegmentControl : Control
 {
+    private static readonly ProtoId<ShaderPrototype> GreyscaleShaderId = "Greyscale";
     private readonly ShaderInstance _greyScaleShader;
     private readonly TextureRect _base;
     private readonly TextureRect _unlit;
@@ -272,7 +280,7 @@ public sealed class PASegmentControl : Control
 
     public PASegmentControl()
     {
-        _greyScaleShader = IoCManager.Resolve<IPrototypeManager>().Index<ShaderPrototype>("Greyscale").Instance();
+        _greyScaleShader = IoCManager.Resolve<IPrototypeManager>().Index(GreyscaleShaderId).Instance();
 
         AddChild(_base = new TextureRect());
         AddChild(_unlit = new TextureRect());

@@ -6,6 +6,11 @@ namespace Content.Client.Overlays;
 
 public sealed partial class NoirOverlay : Overlay
 {
+<<<<<<< HEAD
+=======
+    private static readonly ProtoId<ShaderPrototype> Shader = "Noir";
+
+>>>>>>> goob
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     public override OverlaySpace Space => OverlaySpace.WorldSpace;
@@ -15,7 +20,11 @@ public sealed partial class NoirOverlay : Overlay
     public NoirOverlay()
     {
         IoCManager.InjectDependencies(this);
+<<<<<<< HEAD
         _noirShader = _prototypeManager.Index<ShaderPrototype>("Noir").InstanceUnique();
+=======
+        _noirShader = _prototypeManager.Index(Shader).InstanceUnique();
+>>>>>>> goob
         ZIndex = 9; // draw this over the DamageOverlay, RainbowOverlay etc, but before the black and white shader
     }
 

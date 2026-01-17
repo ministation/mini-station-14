@@ -1,7 +1,23 @@
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: MIT
+
 contact_links:
+<<<<<<< HEAD
   - name: Предложение
     url: https://discord.station14.ru
     about: Свои предложения можете оставлять в соответствующем канале Discord.
   - name: Сообщить об уязвимости
     url: https://discord.station14.ru
     about: Пожалуйста, сообщайте о серьезных эксплойтах и уязвимостях безопасности Morty#7384 (369476049836310528) в Discord.
+=======
+  - name: Report a Security Vulnerability
+    url: https://github.com/space-wizards/space-station-14/blob/master/SECURITY.md
+    about: Please report security vulnerabilities privately so we can fix them before they are publicly disclosed.
+  - name: Request a Feature
+    url: https://discord.gg/rGvu9hKffJ
+    about: Submit feature requests on our Discord server (https://discord.gg/rGvu9hKffJ).
+>>>>>>> goob

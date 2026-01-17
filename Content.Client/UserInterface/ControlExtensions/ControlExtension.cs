@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
+=======
+// SPDX-FileCopyrightText: 2023 Hebi <spiritbreakz@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: MIT
+
+>>>>>>> goob
 using Content.Client.Guidebook.Controls;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;

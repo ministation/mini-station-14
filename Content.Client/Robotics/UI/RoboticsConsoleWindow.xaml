@@ -1,4 +1,11 @@
-﻿<controls:FancyWindow xmlns="https://spacestation14.io"
+<!--
+SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<controls:FancyWindow xmlns="https://spacestation14.io"
                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                      Title="{Loc 'robotics-console-window-title'}"
                      MinSize="600 450">
@@ -30,10 +37,17 @@
             </BoxContainer>
             <controls:StripeBack>
                 <BoxContainer Name="DangerZone" Margin="5" Orientation="Horizontal" HorizontalExpand="True" HorizontalAlignment="Center" Visible="False">
+<<<<<<< HEAD
                     <!-- Corvax-Next-MutableLaws-Start -->
                     <Button Name="ChangeLawsButton" Text="{Loc 'robotics-console-change-laws'}" StyleClasses="OpenRight" Disabled="True"/>
                     <Button Name="DisableButton" Text="{Loc 'robotics-console-disable'}" StyleClasses="OpenBoth"/>
                     <!-- Corvax-Next-MutableLaws-End -->
+=======
+                    <!-- Corvax-Goob-MutableLaws-Start -->
+                    <Button Name="ChangeLawsButton" Text="{Loc 'robotics-console-change-laws'}" StyleClasses="OpenRight" Disabled="True"/>
+                    <Button Name="DisableButton" Text="{Loc 'robotics-console-disable'}" StyleClasses="OpenBoth"/>
+                    <!-- Corvax-Goob-MutableLaws-End -->
+>>>>>>> goob
                     <Button Name="DestroyButton" Text="{Loc 'robotics-console-destroy'}" StyleClasses="OpenLeft"/>
                 </BoxContainer>
                 <Label Name="LockedMessage" Text="{Loc 'robotics-console-locked-message'}" HorizontalAlignment="Center" VerticalAlignment="Center"/>

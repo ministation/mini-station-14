@@ -1,3 +1,16 @@
+<!--
+SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
 <Control xmlns="https://spacestation14.io"
          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
@@ -20,12 +33,20 @@
                                   Command="adminremarks"
                                   Text="{Loc 'character-setup-gui-character-setup-adminremarks-button'}"
                                   StyleClasses="ButtonBig" />
+<<<<<<< HEAD
                 <!-- Corvax-Sponsor-Start -->
+=======
+                <!-- CorvaxGoob-Sponsor-Start -->
+>>>>>>> goob
                 <Button Name="SponsorButton"
                         Text="{Loc 'character-setup-gui-character-setup-sponsor-button'}"
                         Visible="False"
                         StyleClasses="ButtonBig" />
+<<<<<<< HEAD
                 <!-- Corvax-Sponsor-End -->
+=======
+                <!-- CorvaxGoob-Sponsor-End -->
+>>>>>>> goob
                 <Button Name="RulesButton"
                         Text="{Loc 'character-setup-gui-character-setup-rules-button'}"
                         StyleClasses="ButtonBig"/>

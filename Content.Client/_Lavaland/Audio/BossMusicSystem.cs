@@ -1,4 +1,30 @@
+<<<<<<< HEAD
 ﻿using Content.Client.Audio;
+=======
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Client.Audio;
+>>>>>>> goob
 using Content.Shared._Lavaland.Audio;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
@@ -15,7 +41,12 @@ using Robust.Shared.Timing;
 
 namespace Content.Client._Lavaland.Audio;
 
+<<<<<<< HEAD
 public sealed class BossMusicSystem : EntitySystem
+=======
+// TODO: Port this system to Shared and optimize it.
+public sealed class BossMusicSystem : SharedBossMusicSystem
+>>>>>>> goob
 {
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IConfigurationManager _configManager = default!;
@@ -37,7 +68,11 @@ public sealed class BossMusicSystem : EntitySystem
     private readonly List<EntityUid> _fadeToRemove = new();
 
     private const float MinVolume = -32f;
+<<<<<<< HEAD
     private const float DefaultDuration = 2f;
+=======
+    private const float DefaultDuration = 1f;
+>>>>>>> goob
 
     public override void Initialize()
     {
@@ -45,9 +80,12 @@ public sealed class BossMusicSystem : EntitySystem
 
         Subs.CVar(_configManager, CCVars.LobbyMusicVolume, BossVolumeCVarChanged, true);
 
+<<<<<<< HEAD
         SubscribeNetworkEvent<BossMusicStartupEvent>(OnBossInit);
         SubscribeNetworkEvent<BossMusicStopEvent>(OnBossDefeated);
 
+=======
+>>>>>>> goob
         SubscribeLocalEvent<LocalPlayerDetachedEvent>(OnMindRemoved);
         SubscribeLocalEvent<ActorComponent, MobStateChangedEvent>(OnPlayerDeath);
         SubscribeLocalEvent<ActorComponent, EntParentChangedMessage>(OnPlayerParentChange);
@@ -74,6 +112,7 @@ public sealed class BossMusicSystem : EntitySystem
     {
         _volumeSlider = SharedAudioSystem.GainToVolume(obj);
 
+<<<<<<< HEAD
         if (_bossMusicStream != null && _musicProto != null)
         {
             _audio.SetVolume(_bossMusicStream, _musicProto.Sound.Params.Volume + _volumeSlider);
@@ -81,21 +120,37 @@ public sealed class BossMusicSystem : EntitySystem
     }
 
     private void OnBossInit(BossMusicStartupEvent args)
+=======
+        if (_bossMusicStream != null
+            && _musicProto != null)
+            _audio.SetVolume(_bossMusicStream, _musicProto.Sound.Params.Volume + _volumeSlider);
+    }
+
+    public override void StartBossMusic(ProtoId<BossMusicPrototype> music)
+>>>>>>> goob
     {
         if (_musicProto != null || _bossMusicStream != null)
             return;
 
         _audioContent.DisableAmbientMusic();
 
+<<<<<<< HEAD
         var sound = _proto.Index(args.MusicId);
         _musicProto = sound;
 
         var strim = _audio.PlayGlobal(
+=======
+        var sound = _proto.Index(music);
+        _musicProto = sound;
+
+        var stream = _audio.PlayGlobal(
+>>>>>>> goob
             sound.Sound,
             Filter.Local(),
             false,
             AudioParams.Default.WithVolume(sound.Sound.Params.Volume + _volumeSlider).WithLoop(true));
 
+<<<<<<< HEAD
 
         if (_musicProto.FadeIn && strim != null)
         {
@@ -107,6 +162,29 @@ public sealed class BossMusicSystem : EntitySystem
     private void OnBossDefeated(BossMusicStopEvent args)
     {
         EndAllMusic();
+=======
+        if (_musicProto.FadeIn
+            && stream != null)
+        {
+            _bossMusicStream = (stream.Value.Entity, stream.Value.Component);
+            FadeIn(_bossMusicStream, stream.Value.Component, sound.FadeInTime);
+        }
+    }
+
+    public override void EndAllMusic()
+    {
+        if (_musicProto == null
+            || _bossMusicStream == null)
+            return;
+
+        if (_musicProto.FadeIn)
+            FadeOut(_bossMusicStream, duration: _musicProto.FadeOutTime);
+        else
+            _audio.Stop(_bossMusicStream);
+
+        _musicProto = null;
+        _bossMusicStream = null;
+>>>>>>> goob
     }
 
     private void OnMindRemoved(LocalPlayerDetachedEvent args)
@@ -136,6 +214,7 @@ public sealed class BossMusicSystem : EntitySystem
         _bossMusicStream = _audio.Stop(_bossMusicStream);
     }
 
+<<<<<<< HEAD
     private void EndAllMusic()
     {
         if (_musicProto == null || _bossMusicStream == null)
@@ -155,6 +234,8 @@ public sealed class BossMusicSystem : EntitySystem
         _bossMusicStream = null;
     }
 
+=======
+>>>>>>> goob
     #region Fades
 
     private void FadeOut(EntityUid? stream, AudioComponent? component = null, float duration = DefaultDuration)
@@ -162,8 +243,11 @@ public sealed class BossMusicSystem : EntitySystem
         if (stream == null || duration <= 0f || !Resolve(stream.Value, ref component))
             return;
 
+<<<<<<< HEAD
         // Just in case
         // TODO: Maybe handle the removals by making it seamless?
+=======
+>>>>>>> goob
         _fadingIn.Remove(stream.Value);
         var diff = component.Volume - MinVolume;
         _fadingOut.Add(stream.Value, diff / duration);

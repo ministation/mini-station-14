@@ -1,9 +1,21 @@
 using System.Linq;
 using System.Text.RegularExpressions;
+<<<<<<< HEAD
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 using Content.Shared.CCVar;
 using Content.Client.CharacterInfo;
+=======
+using Robust.Client.Audio;
+using Robust.Client.UserInterface;
+using Robust.Client.UserInterface.Controllers;
+using Robust.Shared.Audio;
+using Robust.Shared.Player;
+using Content.Shared.CCVar;
+using Content.Client.CharacterInfo;
+using Content.Client.Gameplay;
+using Robust.Shared.Utility;
+>>>>>>> goob
 using static Content.Client.CharacterInfo.CharacterInfoSystem;
 
 namespace Content.Client.UserInterface.Systems.Chat;
@@ -14,12 +26,29 @@ namespace Content.Client.UserInterface.Systems.Chat;
 /// </summary>
 public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSystem>
 {
+<<<<<<< HEAD
     [UISystemDependency] private readonly CharacterInfoSystem _characterInfo = default!;
 
     /// <summary>
     ///     The list of words to be highlighted in the chatbox.
     /// </summary>
     private List<string> _highlights = new();
+=======
+    [Dependency] private readonly ILocalizationManager _loc = default!;
+    [UISystemDependency] private readonly CharacterInfoSystem _characterInfo = default!;
+
+    // Goobstation - Highlight chat ping sound!
+    private static readonly ResPath HighlightSoundPath = new("/Audio/_Goobstation/Interface/HighlightChatPings/Beep.ogg");
+
+    private static readonly Regex StartDoubleQuote = new("\"$");
+    private static readonly Regex EndDoubleQuote = new("^\"|(?<=^@)\"");
+    private static readonly Regex StartAtSign = new("^@");
+
+    /// <summary>
+    ///     The list of words to be highlighted in the chatbox.
+    /// </summary>
+    private readonly List<string> _highlights = new();
+>>>>>>> goob
 
     /// <summary>
     ///     The string holding the hex color used to highlight words.
@@ -35,6 +64,7 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
 
     public event Action<string>? HighlightsUpdated;
 
+<<<<<<< HEAD
     private void InitializeHighlights()
     {
         _config.OnValueChanged(CCVars.ChatAutoFillHighlights, (value) => { _autoFillHighlightsEnabled = value; }, true);
@@ -43,6 +73,40 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
 
         // Load highlights if any were saved.
         string highlights = _config.GetCVar(CCVars.ChatHighlights);
+=======
+    #region Highlight chat ping sound!
+    // Goobstation
+    /// <summary>
+    /// Plays the highlight sound effect if enabled in settings
+    /// </summary>
+    private void PlayHighlightSound()
+    {
+        // Don't play sounds if the game is still loading
+        if (_state.CurrentState is not GameplayStateBase)
+            return;
+
+        if (!_config.GetCVar(CCVars.ChatHighlightSound))
+            return;
+
+        // Get the volume setting and apply it to the audio params
+        var volume = _config.GetCVar(CCVars.ChatHighlightVolume);
+        var volumeDb = MathF.Log10(Math.Clamp(volume, 0f, 1f)) * 20f;
+        var audioParams = AudioParams.Default.WithVolume(volumeDb);
+
+        // Play the sound using the audio system
+        _ent.System<AudioSystem>().PlayGlobal(HighlightSoundPath, Filter.Local(), false, audioParams);
+    }
+    // Goobstation End
+    #endregion
+
+    private void InitializeHighlights()
+    {
+        _config.OnValueChanged(CCVars.ChatAutoFillHighlights, (value) => { _autoFillHighlightsEnabled = value; }, true);
+        _config.OnValueChanged(CCVars.ChatHighlightsColor, (value) => { _highlightsColor = value; }, true);
+
+        // Load highlights if any were saved.
+        var highlights = _config.GetCVar(CCVars.ChatHighlights);
+>>>>>>> goob
 
         if (!string.IsNullOrEmpty(highlights))
         {
@@ -84,12 +148,21 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
 
         // We first subdivide the highlights based on newlines to prevent replacing
         // a valid "\n" tag and adding it to the final regex.
+<<<<<<< HEAD
         string[] splittedHighlights = newHighlights.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
         for (int i = 0; i < splittedHighlights.Length; i++)
         {
             // Replace every "\" character with a "\\" to prevent "\n", "\0", etc...
             string keyword = splittedHighlights[i].Replace(@"\", @"\\");
+=======
+        var splittedHighlights = newHighlights.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+
+        for (var i = 0; i < splittedHighlights.Length; i++)
+        {
+            // Replace every "\" character with a "\\" to prevent "\n", "\0", etc...
+            var keyword = splittedHighlights[i].Replace(@"\", @"\\");
+>>>>>>> goob
 
             // Escape the keyword to prevent special characters like "(" and ")" to be considered valid regex.
             keyword = Regex.Escape(keyword);
@@ -102,6 +175,7 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
             // that make sure the words to match are separated by spaces or punctuation.
             // NOTE: The reason why we don't use \b tags is that \b doesn't match reverse slash characters "\" so
             // a pre-sanitized (see 1.) string like "\[test]" wouldn't get picked up by the \b.
+<<<<<<< HEAD
             if (keyword.Count(c => (c == '"')) > 0)
             {
                 // Matches the last double quote character.
@@ -113,6 +187,19 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
 
             // Make sure any name tagged as ours gets highlighted only when others say it.
             keyword = Regex.Replace(keyword, "^@", "(?<=(?<=/name.*)|(?<=,.*\"\".*))");
+=======
+            if (keyword.Any(c => c == '"'))
+            {
+                // Matches the last double quote character.
+                keyword = StartDoubleQuote.Replace(keyword, "(?!\\w)");
+                // When matching for the first double quote character we also consider the possibility
+                // of the double quote being preceded by a @ character.
+                keyword = EndDoubleQuote.Replace(keyword, "(?<!\\w)");
+            }
+
+            // Make sure any name tagged as ours gets highlighted only when others say it.
+            keyword = StartAtSign.Replace(keyword, "(?<=(?<=/name.*)|(?<=,.*\"\".*))");
+>>>>>>> goob
 
             _highlights.Add(keyword);
         }
@@ -132,7 +219,11 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
         var (_, job, _, _, entityName) = data;
 
         // Mark this entity's name as our character name for the "UpdateHighlights" function.
+<<<<<<< HEAD
         string newHighlights = "@" + entityName;
+=======
+        var newHighlights = "@" + entityName;
+>>>>>>> goob
 
         // Subdivide the character's name based on spaces or hyphens so that every word gets highlighted.
         if (newHighlights.Count(c => (c == ' ' || c == '-')) == 1)
@@ -144,9 +235,15 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
             newHighlights = newHighlights.Split('-')[0] + "\n@" + newHighlights.Split('-')[^1];
 
         // Convert the job title to kebab-case and use it as a key for the loc file.
+<<<<<<< HEAD
         string jobKey = job.Replace(' ', '-').ToLower();
 
         if (Loc.TryGetString($"highlights-{jobKey}", out var jobMatches))
+=======
+        var jobKey = job.Replace(' ', '-').ToLower();
+
+        if (_loc.TryGetString($"highlights-{jobKey}", out var jobMatches))
+>>>>>>> goob
             newHighlights += '\n' + jobMatches.Replace(", ", "\n");
 
         UpdateHighlights(newHighlights);

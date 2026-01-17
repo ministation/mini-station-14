@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Electrocution;
 using Robust.Client.GameObjects;
 using Robust.Client.Player;
@@ -11,6 +16,7 @@ namespace Content.Client.Electrocution;
 public sealed class ElectrocutionHUDVisualizerSystem : VisualizerSystem<ElectrocutionHUDVisualsComponent>
 {
     [Dependency] private readonly IPlayerManager _playerMan = default!;
+    [Dependency] private readonly SpriteSystem _sprite = default!;
 
     public override void Initialize()
     {
@@ -58,7 +64,11 @@ public sealed class ElectrocutionHUDVisualizerSystem : VisualizerSystem<Electroc
             if (!AppearanceSystem.TryGetData<bool>(uid, ElectrifiedVisuals.IsElectrified, out var electrified, appearanceComp))
                 continue;
 
+<<<<<<< HEAD
             SpriteSystem.LayerSetVisible((uid, spriteComp), ElectrifiedLayers.HUD, electrified);
+=======
+            _sprite.LayerSetVisible((uid, spriteComp), ElectrifiedLayers.HUD, electrified);
+>>>>>>> goob
         }
     }
 
@@ -69,7 +79,11 @@ public sealed class ElectrocutionHUDVisualizerSystem : VisualizerSystem<Electroc
         var electrifiedQuery = AllEntityQuery<ElectrocutionHUDVisualsComponent, AppearanceComponent, SpriteComponent>();
         while (electrifiedQuery.MoveNext(out var uid, out _, out _, out var spriteComp))
         {
+<<<<<<< HEAD
             SpriteSystem.LayerSetVisible((uid, spriteComp), ElectrifiedLayers.HUD, false);
+=======
+            _sprite.LayerSetVisible((uid, spriteComp), ElectrifiedLayers.HUD, false);
+>>>>>>> goob
         }
     }
 
@@ -83,6 +97,10 @@ public sealed class ElectrocutionHUDVisualizerSystem : VisualizerSystem<Electroc
             return;
 
         var player = _playerMan.LocalEntity;
+<<<<<<< HEAD
         SpriteSystem.LayerSetVisible((uid, args.Sprite), ElectrifiedLayers.HUD, electrified && HasComp<ShowElectrocutionHUDComponent>(player));
+=======
+        _sprite.LayerSetVisible((uid, args.Sprite), ElectrifiedLayers.HUD, electrified && HasComp<ShowElectrocutionHUDComponent>(player));
+>>>>>>> goob
     }
 }

@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Access;
@@ -15,6 +23,11 @@ namespace Content.Client.Access.UI;
 [GenerateTypedNameReferences]
 public sealed partial class GroupedAccessLevelChecklist : BoxContainer
 {
+<<<<<<< HEAD
+=======
+    private static readonly ProtoId<AccessGroupPrototype> GeneralAccessGroup = "General";
+
+>>>>>>> goob
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
 
     private bool _isMonotone;
@@ -63,7 +76,11 @@ public sealed partial class GroupedAccessLevelChecklist : BoxContainer
 
         // Ensure that the 'general' access group is added to handle
         // misc. access levels that aren't associated with any group
+<<<<<<< HEAD
         if (_protoManager.TryIndex<AccessGroupPrototype>("General", out var generalAccessProto))
+=======
+        if (_protoManager.TryIndex(GeneralAccessGroup, out var generalAccessProto))
+>>>>>>> goob
             _groupedAccessLevels.TryAdd(generalAccessProto, new());
 
         // Assign known access levels with their associated groups
