@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 construction-recipe-curtains-cloth = curtains (cloth)
 construction-recipe-curtains-black = curtains (black)
 construction-recipe-curtains-blue = curtains (blue)
@@ -8,3 +9,15 @@ construction-recipe-curtains-pink = curtains (pink)
 construction-recipe-curtains-purple = curtains (purple)
 construction-recipe-curtains-red = curtains (red)
 construction-recipe-curtains-white = curtains (white)
+=======
+construction-recipe-curtains-cloth = шторы (ткань)
+construction-recipe-curtains-black = шторы (чёрный)
+construction-recipe-curtains-blue = шторы (синий)
+construction-recipe-curtains-cyan = шторы (голубой)
+construction-recipe-curtains-green = шторы (зелёный)
+construction-recipe-curtains-orange = шторы (оранжевый)
+construction-recipe-curtains-pink = шторы (розовый)
+construction-recipe-curtains-purple = шторы (фиолетовый)
+construction-recipe-curtains-red = шторы (красный)
+construction-recipe-curtains-white = шторы (белый)
+>>>>>>> goob

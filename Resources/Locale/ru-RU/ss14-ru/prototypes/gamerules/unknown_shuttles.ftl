@@ -30,8 +30,11 @@ ent-UnknownShuttleJoe = { ent-BaseUnknownShuttleRule }
     .desc = { ent-BaseUnknownShuttleRule.desc }
 ent-UnknownShuttleLambordeere = { ent-BaseUnknownShuttleRule }
     .desc = { ent-BaseUnknownShuttleRule.desc }
+<<<<<<< HEAD
 ent-UnknownShuttleManOWar = { ent-BaseUnknownShuttleRule }
     .desc = { ent-BaseUnknownShuttleRule.desc }
+=======
+>>>>>>> goob
 ent-UnknownShuttleMeatZone = { ent-BaseUnknownShuttleRule }
     .desc = { ent-BaseUnknownShuttleRule.desc }
 ent-UnknownShuttleMicroshuttle = { ent-BaseUnknownShuttleRule }

@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 using Content.Shared.Damage.Systems;
 using Content.Shared.Damage;
 using Content.Shared.Effects;
@@ -6,8 +17,13 @@ using Robust.Shared.Network;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Player;
 using System.Numerics;
+<<<<<<< HEAD
 using Content.Shared._White;
 using Content.Shared._CorvaxNext.Standing;
+=======
+using Content.Goobstation.Common.Standing;
+using Content.Shared._White.Standing;
+>>>>>>> goob
 using Content.Shared.Standing;
 using Robust.Shared.Physics.Components;
 
@@ -52,6 +68,7 @@ public sealed class GrabThrownSystem : EntitySystem
 
         ent.Comp.IgnoreEntity.Add(args.OtherEntity);
 
+<<<<<<< HEAD
         var velocity = args.OurBody.LinearVelocity.Length();
         var velocitySquared = args.OurBody.LinearVelocity.LengthSquared();
         var mass = physicsComponent.Mass;
@@ -64,6 +81,17 @@ public sealed class GrabThrownSystem : EntitySystem
         kineticEnergyDamage.DamageDict.Add("Blunt", 1);
         kineticEnergyDamage *= Math.Floor(kineticEnergy / 100) / 2 + 3;
         _damageable.TryChangeDamage(args.OtherEntity, kineticEnergyDamage);
+=======
+        var velocitySquared = args.OurBody.LinearVelocity.LengthSquared();
+        var mass = physicsComponent.Mass;
+        var kineticEnergy = 0.5f * mass * velocitySquared;
+        var kineticEnergyDamage = new DamageSpecifier();
+        kineticEnergyDamage.DamageDict.Add("Blunt", 1);
+        var modNumber = Math.Floor(kineticEnergy / 100);
+        kineticEnergyDamage *= Math.Floor(modNumber / 3);
+        _damageable.TryChangeDamage(args.OtherEntity, kineticEnergyDamage);
+        _stamina.TakeStaminaDamage(ent, (float) Math.Floor(modNumber / 2));
+>>>>>>> goob
 
         _layingDown.TryLieDown(args.OtherEntity, behavior: DropHeldItemsBehavior.AlwaysDrop);
 
@@ -93,6 +121,7 @@ public sealed class GrabThrownSystem : EntitySystem
         EntityUid thrower,
         Vector2 vector,
         float grabThrownSpeed,
+<<<<<<< HEAD
         float? staminaDamage = null,
         DamageSpecifier? damageToUid = null)
     {
@@ -102,6 +131,16 @@ public sealed class GrabThrownSystem : EntitySystem
         comp.DamageOnCollide = damageToUid;
 
         _layingDown.TryLieDown(uid, behavior: DropHeldItemsBehavior.AlwaysDrop);
+=======
+        DamageSpecifier? damageToUid = null,
+        DropHeldItemsBehavior behavior = DropHeldItemsBehavior.NoDrop) // Goob edit
+    {
+        var comp = EnsureComp<GrabThrownComponent>(uid);
+        comp.IgnoreEntity.Add(thrower);
+        comp.DamageOnCollide = damageToUid;
+
+        _layingDown.TryLieDown(uid, behavior: behavior);
+>>>>>>> goob
         _throwing.TryThrow(uid, vector, grabThrownSpeed, animated: false);
     }
 }

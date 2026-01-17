@@ -23,6 +23,7 @@ ent-CrateSurgery = хирургический ящик
 ent-CrateWeb = паутинный ящик
     .desc = { ent-CrateGeneric.desc }
 ent-CrateSecgear = ящик оборудования службы безопасности
+<<<<<<< HEAD
     .desc = { ent-CrateBaseSecure.desc }
 ent-CrateEngineeringSecure = защищённый инженерный ящик
     .desc = { ent-CrateBaseSecure.desc }
@@ -41,16 +42,51 @@ ent-CrateSecure = защищённый ящик
 ent-CrateHydroSecure = защищённый гидропонный ящик
     .desc = { ent-CrateBaseSecure.desc }
 ent-CrateWeaponSecure = защищённый оружейный ящик
+=======
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseSecure.desc }
+ent-CrateEngineeringSecure = защищённый инженерный ящик
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseSecure.desc }
+ent-CrateMedicalSecure = защищённый медицинский ящик
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseSecure.desc }
+ent-CrateChemistrySecure = защищённый химический ящик
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseSecure.desc }
+ent-CratePrivateSecure = специальный ящик
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseSecure.desc }
+ent-CrateScienceSecure = защищённый научный ящик
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseSecure.desc }
+ent-CratePlasma = плазменный ящик
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseSecure.desc }
+ent-CrateSecure = защищённый ящик
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseSecure.desc }
+ent-CrateHydroSecure = защищённый гидропонный ящик
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseSecure.desc }
+ent-CrateWeaponSecure = защищённый оружейный ящик
+    .suffix = Защищённый
+>>>>>>> goob
     .desc = { ent-CrateBaseSecure.desc }
 ent-CrateContrabandStorageSecure = ящик для хранения контрабанды
     .desc = Запирающийся ящик для хранения контрабанды, конфискованной у подозреваемых или заключённых. Чтобы открыть, необходим уровень доступа Оружейная.
     .suffix = Защищённый, доступ Оружейная
 ent-CrateCommandSecure = ящик командования
+<<<<<<< HEAD
+=======
+    .suffix = Защищённый
+>>>>>>> goob
     .desc = { ent-CrateBaseSecure.desc }
 ent-CrateLivestock = ящик для скота
     .desc = { ent-CrateGeneric.desc }
 ent-CrateRodentCage = хомячья клетка
     .desc = { ent-CrateGeneric.desc }
+<<<<<<< HEAD
 ent-CrateBaseLockBox = lock box
     .desc = A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut.
 ent-CrateLockBoxEngineering = engineering lock box
@@ -62,6 +98,24 @@ ent-CrateLockBoxScience = science lock box
 ent-CrateLockBoxSecurity = security lock box
     .desc = { ent-CrateBaseLockBox.desc }
 ent-CrateLockBoxService = service lock box
+=======
+ent-CrateBaseLockBox = ящик с замком
+    .desc = Защищённый ящик с замком. Прибыль с его продажи будет начислена обратно отделу. Но помните: Карго всегда получает свою долю.
+ent-CrateLockBoxEngineering = инженерный ящик с замком
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseLockBox.desc }
+ent-CrateLockBoxMedical = медицинский ящик с замком
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseLockBox.desc }
+ent-CrateLockBoxScience = научный ящик с замком
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseLockBox.desc }
+ent-CrateLockBoxSecurity = охраннный ящик с замком
+    .suffix = Защищённый
+    .desc = { ent-CrateBaseLockBox.desc }
+ent-CrateLockBoxService = сервисный ящик с замком
+    .suffix = Защищённый
+>>>>>>> goob
     .desc = { ent-CrateBaseLockBox.desc }
 ent-CratePirate = пиратский сундук
     .desc = Сундук космического пирата, не для станционных крыс.
@@ -81,6 +135,10 @@ ent-CrateSyndicate = ящик Синдиката
 ent-CrateTrashCart = мусорная тележка
     .desc = { ent-StructureWheeled.desc }
 ent-CrateTrashCartJani = мусорная тележка уборщика
+<<<<<<< HEAD
+=======
+    .suffix = Защищённый
+>>>>>>> goob
     .desc = { ent-CrateBaseSecure.desc }
 ent-InvisibleCrate = { ent-CrateBaseWeldable }
     .suffix = Стелс

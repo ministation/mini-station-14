@@ -1,11 +1,57 @@
-using System.Linq;
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 ike709 <ike709@github.com>
+// SPDX-FileCopyrightText: 2022 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 Ray <vigersray@gmail.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MFMessage <22904993+MFMessage@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mota <belochuc@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vascreeper@yahoo.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 no <165581243+pissdemon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 poeMota <142114334+poeMota@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server._CorvaxGoob.Skills;
 using Content.Server.Administration.Logs;
 using Content.Server.EUI;
+using Content.Server.GameTicking;
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Ghost.Roles.Events;
-using Content.Shared.Ghost.Roles.Raffles;
 using Content.Server.Ghost.Roles.UI;
 using Content.Server.Mind.Commands;
+using Content.Server.Popups;
+using Content.Shared._CorvaxGoob.GhostBar;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -13,14 +59,18 @@ using Content.Shared.Follower;
 using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
 using Content.Shared.Ghost.Roles;
+using Content.Shared.Ghost.Roles.Components;
+using Content.Shared.Ghost.Roles.Raffles;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Players;
 using Content.Shared.Roles;
+using Content.Shared.Verbs;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
+using Robust.Shared.Collections;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.Enums;
@@ -29,10 +79,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Content.Server.Popups;
-using Content.Shared.Verbs;
-using Robust.Shared.Collections;
-using Content.Shared.Ghost.Roles.Components;
+using System.Linq;
 
 namespace Content.Server.Ghost.Roles;
 
@@ -51,6 +98,8 @@ public sealed class GhostRoleSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly PopupSystem _popupSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private readonly SkillsSystem _skillsSystem = default!; // CorvaxGoob-Skills
+    [Dependency] private readonly GhostSystem _ghost = default!; // CorvaxGoob-GhostBarMoreFeatures
 
     private uint _nextRoleIdentifier;
     private bool _needsUpdateGhostRoleCount = true;
@@ -125,16 +174,19 @@ public sealed class GhostRoleSystem : EntitySystem
 
     public void OpenEui(ICommonSession session)
     {
-        if (session.AttachedEntity is not { Valid: true } attached ||
-            !EntityManager.HasComponent<GhostComponent>(attached))
+        if (session.AttachedEntity is not { Valid: true } attached) // Goob edit
             return;
 
-        if (_openUis.ContainsKey(session))
-            CloseEui(session);
+        if ((TryComp<GhostComponent>(attached, out var ghost) && ghost.CanTakeGhostRoles)
+            || TryComp<GhostBarPlayerComponent>(attached, out var ghostBarPlayer)) // CorvaxGoob-GhostBar
+        {
+            if (_openUis.ContainsKey(session))
+                CloseEui(session);
 
-        var eui = _openUis[session] = new GhostRolesEui();
-        _euiManager.OpenEui(eui, session);
-        eui.StateDirty();
+            var eui = _openUis[session] = new GhostRolesEui();
+            _euiManager.OpenEui(eui, session);
+            eui.StateDirty();
+        }
     }
 
     public void OpenMakeGhostRoleEui(ICommonSession session, EntityUid uid)
@@ -275,7 +327,7 @@ public sealed class GhostRoleSystem : EntitySystem
             return false;
 
         // can't win if you are no longer a ghost (e.g. if you returned to your body)
-        if (player.AttachedEntity == null || !HasComp<GhostComponent>(player.AttachedEntity))
+        if (player.AttachedEntity == null || !HasComp<GhostComponent>(player.AttachedEntity) && !HasComp<GhostBarPlayerComponent>(player.AttachedEntity))
             return false;
 
         if (Takeover(player, identifier))
@@ -457,16 +509,23 @@ public sealed class GhostRoleSystem : EntitySystem
     /// <param name="identifier">ID of the ghost role.</param>
     public void Request(ICommonSession player, uint identifier)
     {
-        if (!_ghostRoles.TryGetValue(identifier, out var roleEnt))
+        if (player.AttachedEntity is not { Valid: true } attached) // Goobstation
             return;
 
-        if (roleEnt.Comp.RaffleConfig is not null)
+        if (HasComp<GhostBarPlayerComponent>(player.AttachedEntity) // CorvaxGoob-GhostBar
+            || EntityManager.TryGetComponent<GhostComponent>(attached, out var ghost) && ghost.CanTakeGhostRoles)
         {
-            JoinRaffle(player, identifier);
-        }
-        else
-        {
-            Takeover(player, identifier);
+            if (!_ghostRoles.TryGetValue(identifier, out var roleEnt))
+                return;
+
+            if (roleEnt.Comp.RaffleConfig is not null)
+            {
+                JoinRaffle(player, identifier);
+            }
+            else
+            {
+                Takeover(player, identifier);
+            }
         }
     }
 
@@ -489,6 +548,16 @@ public sealed class GhostRoleSystem : EntitySystem
             _adminLogger.Add(LogType.GhostRoleTaken, LogImpact.Low, $"{player:player} took the {role.Comp.RoleName:roleName} ghost role {ToPrettyString(player.AttachedEntity.Value):entity}");
 
         CloseEui(player);
+
+        // CorvaxGoob-GhostBar-Start : auto clearing all player's characters
+        var ghostBarEntitiesQuery = EntityQueryEnumerator<GhostBarPlayerComponent>();
+        while (ghostBarEntitiesQuery.MoveNext(out var ent, out var ghostBar))
+        {
+            if (ghostBar.PlayerSession == player)
+                QueueDel(ent);
+        }
+        // CorvaxGoob-GhostBar-End
+
         return true;
     }
 
@@ -500,6 +569,26 @@ public sealed class GhostRoleSystem : EntitySystem
         if (player.AttachedEntity == null)
             return;
 
+        // CorvaxGoob-GhostBar-Start
+        if (HasComp<GhostBarPlayerComponent>(player.AttachedEntity) && _mindSystem.TryGetMind(player, out var mindId, out var mindComp))
+        {
+            var ghostEnt = Spawn(GameTicker.ObserverPrototypeName, _transform.GetMapCoordinates(player.AttachedEntity.Value));
+            _mindSystem.Visit(mindId, ghostEnt, mindComp);
+
+            _followerSystem.StartFollowingEntity(ghostEnt, role);
+
+            if (!TryComp<GhostComponent>(ghostEnt, out var visitingGhostComp))
+                return;
+
+            _ghost.SetCanReturnToBody((ghostEnt, visitingGhostComp), true);
+
+            return;
+        }
+
+        if (!TryComp<GhostComponent>(player.AttachedEntity, out var ghost) || !ghost.CanTakeGhostRoles) // Goob edit
+            return;
+        // CorvaxGoob-GhostBar-End
+
         _followerSystem.StartFollowingEntity(player.AttachedEntity.Value, role);
     }
 
@@ -510,8 +599,13 @@ public sealed class GhostRoleSystem : EntitySystem
 
         DebugTools.AssertNotNull(player.ContentData());
 
+        // After taking a ghost role, the player cannot return to the original body, so wipe the player's current mind
+        // unless it is a visiting mind
+        if(_mindSystem.TryGetMind(player.UserId, out _, out var mind) && !mind.IsVisitingEntity)
+            _mindSystem.WipeMind(player);
+
         var newMind = _mindSystem.CreateMind(player.UserId,
-            EntityManager.GetComponent<MetaDataComponent>(mob).EntityName);
+            Comp<MetaDataComponent>(mob).EntityName);
 
         _mindSystem.SetUserId(newMind, player.UserId);
         _mindSystem.TransferTo(newMind, mob);
@@ -528,7 +622,7 @@ public sealed class GhostRoleSystem : EntitySystem
     public int GetGhostRoleCount()
     {
         var metaQuery = GetEntityQuery<MetaDataComponent>();
-        return _ghostRoles.Count(pair => metaQuery.GetComponent(pair.Value.Owner).EntityPaused == false);
+        return _ghostRoles.Count(pair => metaQuery.CompOrNull(pair.Value.Owner)?.EntityPaused == false); // Goobstation - goidafix random test fail from deleted ghost roles
     }
 
     /// <summary>
@@ -612,6 +706,8 @@ public sealed class GhostRoleSystem : EntitySystem
             _roleSystem.MindAddJobRole(args.Mind, args.Mind, silent:false,ghostRole.JobProto);
         }
 
+        _skillsSystem.UpdateSkills(args.Mind, ghostRole.Skills); // CorvaxGoob-Skills
+
         ghostRole.Taken = true;
         UnregisterGhostRole((uid, ghostRole));
     }
@@ -690,7 +786,7 @@ public sealed class GhostRoleSystem : EntitySystem
         _transform.AttachToGridOrMap(mob);
 
         var spawnedEvent = new GhostRoleSpawnerUsedEvent(uid, mob);
-        RaiseLocalEvent(mob, spawnedEvent);
+        RaiseLocalEvent(mob, spawnedEvent, true); // Goob Edit: Broadcast
 
         if (ghostRole.MakeSentient)
             MakeSentientCommand.MakeSentient(mob, EntityManager, ghostRole.AllowMovement, ghostRole.AllowSpeech);
@@ -733,7 +829,7 @@ public sealed class GhostRoleSystem : EntitySystem
 
         var mind = EnsureComp<MindContainerComponent>(uid);
 
-        if (mind.HasMind)
+        if (mind.HasMind && !component.IgnoreMindCheck) // Goobstation edit
         {
             args.TookRole = false;
             return;
@@ -818,6 +914,11 @@ public sealed class GhostRoleSystem : EntitySystem
         }
 
         SetMode(entity.Owner, ghostRoleProto, ghostRoleProto.Name, entity.Comp);
+    }
+
+    public void SetTaken(GhostRoleComponent role, bool taken) // Goobstation
+    {
+        role.Taken = taken;
     }
 }
 

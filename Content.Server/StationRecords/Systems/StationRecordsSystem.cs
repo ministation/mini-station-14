@@ -1,9 +1,36 @@
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 Theomund <34360334+Theomund@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Zachary Higgs <compgeek223@gmail.com>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Diagnostics.CodeAnalysis;
 using Content.Server.Access.Systems;
-using Content.Server.Forensics;
 using Content.Shared.Access.Components;
 using Content.Shared.Forensics.Components;
 using Content.Shared.GameTicking;
+using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Preferences;
@@ -34,7 +61,7 @@ namespace Content.Server.StationRecords.Systems;
 ///     depend on this general record being created. This is subject
 ///     to change.
 /// </summary>
-public sealed class StationRecordsSystem : SharedStationRecordsSystem
+public sealed partial class StationRecordsSystem : SharedStationRecordsSystem
 {
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly StationRecordKeyStorageSystem _keyStorage = default!;
@@ -64,8 +91,7 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
         // Unfortunately this means that an event is called for it as well, and since TryFindIdCard will succeed if the
         // given entity is a card and the card itself is the key the record will be mistakenly renamed to the card's name
         // if we don't return early.
-        // We also do not include the PDA itself being renamed, as that triggers the same event (e.g. for chameleon PDAs).
-        if (HasComp<IdCardComponent>(ev.Uid) ||  HasComp<PdaComponent>(ev.Uid))
+        if (HasComp<IdCardComponent>(ev.Uid))
             return;
 
         if (_idCard.TryFindIdCard(ev.Uid, out var idCard))
@@ -159,7 +185,7 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
             JobTitle = jobPrototype.LocalizedName,
             JobIcon = jobPrototype.Icon,
             JobPrototype = jobId,
-            Species = species,
+            Species = _prototypeManager.Index<SpeciesPrototype>(species).Name, // CorvaxGoob-Locale
             Gender = gender,
             DisplayPriority = jobPrototype.RealDisplayWeight,
             Fingerprint = mobFingerprint,
@@ -387,6 +413,11 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
         if (filter.Value.Length == 0)
             return false;
 
+        if (filter.Type == StationRecordFilterType.Prints && someRecord.Fingerprint == null) // Goobstation - IPC
+            return true;
+        if (filter.Type == StationRecordFilterType.DNA && someRecord.DNA == null) // Goobstation - IPC
+            return true;
+
         var filterLowerCaseValue = filter.Value.ToLower();
 
         return filter.Type switch
@@ -405,10 +436,13 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
         };
     }
 
+    /* Goobstation - Criminal Records Wildcard
+    // Refer to StationRecordsSystem.Goob.cs for implementation
     private bool IsFilterWithSomeCodeValue(string value, string filter)
     {
         return !value.ToLower().StartsWith(filter);
     }
+    */
 
     /// <summary>
     /// Build a record listing of id to name for a station and filter.

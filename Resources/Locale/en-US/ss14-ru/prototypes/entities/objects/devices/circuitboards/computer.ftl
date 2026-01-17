@@ -36,6 +36,11 @@ ent-SalvageExpeditionsComputerCircuitboard = salvage expeditions computer board
     .desc = A computer printed circuit board for a salvage expeditions computer.
 ent-CargoShuttleConsoleCircuitboard = cargo shuttle console board
     .desc = A computer printed circuit board for a cargo shuttle console.
+<<<<<<< HEAD
+=======
+ent-SalvageShuttleConsoleCircuitboard = salvage shuttle console board
+    .desc = A computer printed circuit board for a salvage shuttle console.
+>>>>>>> goob
 ent-SurveillanceCameraMonitorCircuitboard = surveillance camera monitor board
     .desc = A computer printed circuit board for a surveillance camera monitor.
 ent-SurveillanceWirelessCameraMonitorCircuitboard = surveillance wireless camera monitor board
@@ -58,8 +63,11 @@ ent-CommsComputerCircuitboard = communications computer board
     .desc = A computer printed circuit board for a communications console.
 ent-SyndicateCommsComputerCircuitboard = syndicate communications computer board
     .desc = A computer printed circuit board for a syndicate communications console.
+<<<<<<< HEAD
 ent-WizardCommsComputerCircuitboard = wizard communications computer board
     .desc = A computer printed circuit board for a wizard communications console.
+=======
+>>>>>>> goob
 ent-CentcommCommsComputerCircuitboard = central command communications computer board
     .desc = A computer printed circuit board for a central command communications console.
 ent-RadarConsoleCircuitboard = radar console computer board

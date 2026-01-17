@@ -11,7 +11,11 @@ ent-AirlockCargo = { ent-Airlock }
     .suffix = Снабжение
     .desc = { ent-Airlock.desc }
 ent-AirlockSalvage = { ent-Airlock }
+<<<<<<< HEAD
     .suffix = Salvage
+=======
+    .suffix = Утилизаторы
+>>>>>>> goob
     .desc = { ent-Airlock.desc }
 ent-AirlockHydroponics = { ent-Airlock }
     .suffix = Гидропоника
@@ -62,7 +66,11 @@ ent-AirlockCargoGlass = { ent-AirlockGlass }
     .suffix = Снабжение
     .desc = { ent-AirlockGlass.desc }
 ent-AirlockSalvageGlass = { ent-AirlockGlass }
+<<<<<<< HEAD
     .suffix = Salvage
+=======
+    .suffix = Утилизаторы
+>>>>>>> goob
     .desc = { ent-AirlockGlass.desc }
 ent-AirlockHydroponicsGlass = { ent-AirlockGlass }
     .suffix = Гидропоника
@@ -94,3 +102,9 @@ ent-AirlockMiningGlass = { ent-AirlockCargoGlass }
 ent-AirlockCentralCommandGlass = { ent-AirlockCommandGlass }
     .suffix = Центральное командование
     .desc = { ent-AirlockCommandGlass.desc }
+<<<<<<< HEAD
+=======
+ent-AirlockStandardGlass = { ent-AirlockGlass }
+    .suffix = Сервис
+    .desc = { ent-AirlockGlass.desc }
+>>>>>>> goob

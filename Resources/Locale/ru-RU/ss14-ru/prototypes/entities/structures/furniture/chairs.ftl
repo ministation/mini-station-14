@@ -6,6 +6,11 @@ ent-ChairBase = стул
     .desc = { ent-UnanchoredChairBase.desc }
 ent-OfficeChairBase = стул
     .desc = { ent-UnanchoredChairBase.desc }
+<<<<<<< HEAD
+=======
+ent-RollingOfficeChairBase = chair
+    .desc = Scoot from desk to desk because standing is for interns.
+>>>>>>> goob
 ent-StoolBase = стул
     .desc = { ent-OfficeChairBase.desc }
 ent-Chair = стул
@@ -19,9 +24,15 @@ ent-StoolBar = барный стул
     .desc = { ent-StoolBase.desc }
 ent-ChairBrass = латунный стул
     .desc = { ent-StoolBase.desc }
+<<<<<<< HEAD
 ent-ChairOfficeLight = белое офисное кресло
     .desc = { ent-OfficeChairBase.desc }
 ent-ChairOfficeDark = тёмное офисное кресло
+=======
+ent-ChairOfficeLight = белое офисное кресло без колёс
+    .desc = { ent-OfficeChairBase.desc }
+ent-ChairOfficeDark = тёмное офисное кресло без колёс
+>>>>>>> goob
     .desc = { ent-ChairOfficeLight.desc }
 ent-ComfyChair = удобное кресло
     .desc = Выглядит удобным.

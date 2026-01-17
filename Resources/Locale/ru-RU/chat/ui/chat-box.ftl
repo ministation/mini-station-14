@@ -13,8 +13,14 @@ hud-chatbox-select-channel-LOOC = LOOC
 hud-chatbox-select-channel-OOC = OOC
 hud-chatbox-select-channel-Damage = Повреждения
 hud-chatbox-select-channel-Visual = Действия
+<<<<<<< HEAD
 hud-chatbox-select-channel-Radio = Рация
 hud-chatbox-select-channel-CollectiveMind = Общий разум
+=======
+# Goobstation - Starlight collective mind port
+hud-chatbox-select-channel-CollectiveMind = Collective Mind
+hud-chatbox-select-channel-Radio = Рация
+>>>>>>> goob
 hud-chatbox-channel-Admin = Админ Разное
 hud-chatbox-channel-AdminAlert = Админ Уведомления
 hud-chatbox-channel-AdminChat = Админ Чат
@@ -26,6 +32,7 @@ hud-chatbox-channel-LOOC = LOOC
 hud-chatbox-channel-OOC = OOC
 hud-chatbox-channel-Radio = Рация
 hud-chatbox-channel-Notifications = Уведомления
+<<<<<<< HEAD
 hud-chatbox-channel-CollectiveMind = Коллективный разум
 hud-chatbox-channel-Server = Сервер
 hud-chatbox-channel-Visual = Визуальный
@@ -39,3 +46,21 @@ hud-chatbox-highlights-tooltip = Слова должны быть разделе
 hud-chatbox-highlights-placeholder = Урист
                                      "Пара"
                                      Мост
+=======
+hud-chatbox-channel-Server = Сервер
+hud-chatbox-channel-Visual = Визуальный
+# Goobstation - Starlight collective mind port
+hud-chatbox-channel-CollectiveMind = Collective Mind
+hud-chatbox-channel-Damage = Повреждения
+hud-chatbox-channel-Unspecified = Неопределённый
+hud-chatbox-highlights = Выделения:
+hud-chatbox-highlights-button = Отправить
+hud-chatbox-highlights-tooltip =
+    Слова должны быть разделены новой строкой,
+    если они заключены в кавычки, они будут выделяться
+    только если разделены пробелами или знаками препинания.
+hud-chatbox-highlights-placeholder =
+    МакЧеловек
+    "Правосудие"
+    Медицинский
+>>>>>>> goob

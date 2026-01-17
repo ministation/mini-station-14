@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿#!/usr/bin/env sh
+=======
+#!/usr/bin/env sh
+>>>>>>> goob
 
 # make sure to start from script dir
 if [ "$(dirname $0)" != "." ]; then

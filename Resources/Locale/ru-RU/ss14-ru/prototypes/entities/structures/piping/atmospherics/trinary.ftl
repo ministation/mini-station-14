@@ -1,5 +1,13 @@
 ent-GasTrinaryBase = { ent-GasPipeBase }
     .desc = { ent-GasPipeBase.desc }
+<<<<<<< HEAD
+=======
+ent-GasTrinaryFlippedBase = { "" }
+    .suffix = Flipped
+    .desc = { "" }
+ent-GasFilterBase = { ent-GasTrinaryBase }
+    .desc = { ent-GasTrinaryBase.desc }
+>>>>>>> goob
 ent-GasFilter = газовый фильтр
     .desc = Очень полезен для фильтрации газов.
 ent-GasFilterFlipped = газовый фильтр

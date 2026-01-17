@@ -1,12 +1,28 @@
+<<<<<<< HEAD
 - type: entity
   parent: [ ClothingMaskBase, BaseMagicContraband ]
+=======
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: [ ClothingMaskBase, BaseMagicalContraband ]
+>>>>>>> goob
   id: ClothingMaskMadHeretic
   name: abyssal mask
   description: A mask created from suffering. When you look into its eyes, it looks back.
   components:
+<<<<<<< HEAD
   # what heretic would remove the mask that will shit on everyone around him?
   # also forcing the mask on heathens will be funny.
   - type: SelfUnremovableClothing
+=======
+  - type: UnholyItem
+>>>>>>> goob
   - type: MadnessMask
   - type: Sprite
     sprite: _Goobstation/Heretic/mad_mask.rsi
@@ -14,6 +30,15 @@
     sprite: _Goobstation/Heretic/mad_mask.rsi
   - type: BreathMask
   - type: IdentityBlocker
+<<<<<<< HEAD
+=======
+  - type: Armor
+    coverage:
+    - Head
+    modifiers:
+      coefficients:
+        Holy: 1.25
+>>>>>>> goob
   - type: Tag
     tags:
     - Mask

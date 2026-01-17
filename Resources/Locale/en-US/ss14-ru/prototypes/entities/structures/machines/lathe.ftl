@@ -21,11 +21,19 @@ ent-ExosuitFabricator = exosuit fabricator
 ent-Biofabricator = biocube fabricator
     .desc = Produces animal cubes using biomass.
 ent-SecurityTechFab = security techfab
+<<<<<<< HEAD
     .desc = Prints equipment for use by security crew.
 ent-AmmoTechFab = ammo techfab
     .desc = Prints the bare minimum of bullets that any budget military or armory could need. Nothing fancy.
 ent-MedicalTechFab = medical techfab
     .desc = Prints equipment for use by the medbay.
+=======
+    .desc = Prints equipment and circuitboards for use by security crew.
+ent-AmmoTechFab = ammo techfab
+    .desc = Prints the bare minimum of bullets that any budget military or armory could need. Nothing fancy.
+ent-MedicalTechFab = medical techfab
+    .desc = Prints equipment and circuitboards for use by the medbay.
+>>>>>>> goob
 ent-UniformPrinter = uniform printer
     .desc = Prints new or replacement uniforms.
 ent-Biogenerator = biogenerator

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ent-SpawnMobMouse = спавнер мышь
     .desc = { ent-MarkerBase.desc }
 ent-SpawnMobCockroach = спавнер таракан
@@ -132,3 +133,7 @@ ent-SpawnMobReindeerBuck = спавнер северный олень самец
     .desc = { ent-MarkerBase.desc }
 ent-SpawnMobReindeerDoe = спавнер северный олень самка
     .desc = { ent-MarkerBase.desc }
+=======
+ent-SpawnHonkBot = спавнер хонкбот
+    .desc = { ent-MarkerBase.desc }
+>>>>>>> goob

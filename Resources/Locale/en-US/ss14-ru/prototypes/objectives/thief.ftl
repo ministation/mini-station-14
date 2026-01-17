@@ -18,12 +18,20 @@ ent-DoorRemoteStealCollectionObjective = { ent-BaseThiefStealCollectionObjective
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
 ent-TechnologyDiskStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
+<<<<<<< HEAD
 ent-MailStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
+=======
+>>>>>>> goob
 ent-IDCardsStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
 ent-LAMPStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
+<<<<<<< HEAD
+=======
+ent-BatteryStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
+    .desc = { ent-BaseThiefStealCollectionObjective.desc }
+>>>>>>> goob
 ent-ForensicScannerStealObjective = { ent-BaseThiefStealObjective }
     .desc = { ent-BaseThiefStealObjective.desc }
 ent-FlippoEngravedLighterStealObjective = { ent-BaseThiefStealObjective }
@@ -42,8 +50,11 @@ ent-FireAxeStealObjective = { ent-BaseThiefStealObjective }
     .desc = { ent-BaseThiefStealObjective.desc }
 ent-AmePartFlatpackStealObjective = { ent-BaseThiefStealObjective }
     .desc = { ent-BaseThiefStealObjective.desc }
+<<<<<<< HEAD
 ent-ExpeditionsCircuitboardStealObjective = { ent-BaseThiefStealObjective }
     .desc = { ent-BaseThiefStealObjective.desc }
+=======
+>>>>>>> goob
 ent-CargoShuttleCircuitboardStealObjective = { ent-BaseThiefStealObjective }
     .desc = { ent-BaseThiefStealObjective.desc }
 ent-ClothingEyesHudBeerStealObjective = { ent-BaseThiefStealObjective }
@@ -91,4 +102,8 @@ ent-ShivaStealObjective = { ent-BaseThiefStealAnimalObjective }
 ent-TropicoStealObjective = { ent-BaseThiefStealAnimalObjective }
     .desc = { ent-BaseThiefStealAnimalObjective.desc }
 ent-EscapeThiefShuttleObjective = Escape to centcomm alive and unrestrained.
+<<<<<<< HEAD
     .desc = You don't want your illegal activities to be discovered by anyone, do you?
+=======
+    .desc = You don't want your illegal activities to be discovered by anyone, do you? Get out on the evacuation shuttle.
+>>>>>>> goob

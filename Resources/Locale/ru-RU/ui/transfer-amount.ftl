@@ -1,5 +1,9 @@
 ### Loc for the transfer amount eui window
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> goob
 ## Title
 
 ui-transfer-amount-title = Изменить перемещаемое количество

@@ -1,0 +1,32 @@
+- type: latheRecipePack
+  id: BluespaceHarvesterBoards
+  recipes:
+  - MachineBluespaceHarvesterCircuitboard
+
+- type: latheRecipePack
+  id: BluespaceTechnologyBoards
+  recipes:
+  - MachineBluespaceTransitorCircuitboard
+
+- type: latheRecipePack
+  id: AdvancedRoboticsBoards
+  recipes:
+  - AsimovCircuitBoard
+  - CorporateCircuitBoard
+  - NTDefaultCircuitBoard
+  - CommandmentCircuitBoard
+  - PaladinCircuitBoard
+  - LiveLetLiveCircuitBoard
+  - StationEfficiencyCircuitBoard
+  - RobocopCircuitBoard
+  - OverlordCircuitBoard
+  - GameMasterCircuitBoard
+  - ArtistCircuitBoard
+  - NutimovCircuitBoard
+
+- type: latheRecipePack
+  id: Cloning
+  recipes:
+  - CloningConsoleComputerCircuitboard
+  - CloningPodMachineCircuitboard
+  - MedicalScannerMachineCircuitboard

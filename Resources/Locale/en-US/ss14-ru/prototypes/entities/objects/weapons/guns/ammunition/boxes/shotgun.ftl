@@ -2,6 +2,7 @@ ent-BaseAmmoProvider = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-AmmoProviderShotgunShell = { ent-BaseAmmoProvider }
     .desc = { ent-BaseAmmoProvider.desc }
+<<<<<<< HEAD
 ent-BoxBeanbag = ammunition box (.50 beanbag)
     .desc = { ent-AmmoProviderShotgunShell.desc }
 ent-BoxLethalshot = ammunition box (.50 pellet)
@@ -17,4 +18,21 @@ ent-BoxShotgunUranium = ammunition box (.50 uranium)
 ent-BoxShotgunPractice = ammunition box (.50 practice)
     .desc = { ent-AmmoProviderShotgunShell.desc }
 ent-BoxShellTranquilizer = ammunition box (.50 tranquilizer)
+=======
+ent-BoxBeanbag = ammunition box (12 Gauge beanbag)
+    .desc = { ent-AmmoProviderShotgunShell.desc }
+ent-BoxLethalshot = ammunition box (12 Gauge pellet)
+    .desc = { ent-AmmoProviderShotgunShell.desc }
+ent-BoxShotgunSlug = ammunition box (12 Gauge slug)
+    .desc = { ent-AmmoProviderShotgunShell.desc }
+ent-BoxShotgunFlare = ammunition box (12 Gauge flare)
+    .desc = { ent-AmmoProviderShotgunShell.desc }
+ent-BoxShotgunIncendiary = ammunition box (12 Gauge incendiary)
+    .desc = { ent-AmmoProviderShotgunShell.desc }
+ent-BoxShotgunUranium = ammunition box (12 Gauge uranium)
+    .desc = { ent-AmmoProviderShotgunShell.desc }
+ent-BoxShotgunPractice = ammunition box (12 Gauge practice)
+    .desc = { ent-AmmoProviderShotgunShell.desc }
+ent-BoxShellTranquilizer = ammunition box (12 Gauge tranquilizer)
+>>>>>>> goob
     .desc = { ent-AmmoProviderShotgunShell.desc }

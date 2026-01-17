@@ -1,3 +1,15 @@
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Goobstation.Common.Effects;
 using Content.Shared.Actions;
 using Content.Shared.Coordinates;
 using Content.Shared.Damage;
@@ -34,6 +46,7 @@ public abstract class SharedChameleonProjectorSystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedTransformSystem _xform = default!;
+    [Dependency] private readonly SparksSystem _sparks = default!; // goob edit
 
     public override void Initialize()
     {
@@ -236,6 +249,7 @@ public abstract class SharedChameleonProjectorSystem : EntitySystem
         CopyComp<ItemComponent>((disguise, comp));
 
         _appearance.CopyData(entity, disguise);
+        _sparks.DoSparks(Transform(user).Coordinates); // goob edit - sparks everywhere!
     }
 
     /// <summary>
@@ -258,6 +272,7 @@ public abstract class SharedChameleonProjectorSystem : EntitySystem
 
         Del(ent.Comp.Disguise);
         RemComp<ChameleonDisguisedComponent>(ent);
+        _sparks.DoSparks(Transform(ent).Coordinates); // goob edit - sparks everywhere!
         return true;
     }
 

@@ -1,9 +1,19 @@
 // SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+>>>>>>> goob
 // SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+<<<<<<< HEAD
+=======
+using Content.Goobstation.Common.Religion;
+>>>>>>> goob
 using Content.Server._DV.CosmicCult.Components;
 using Content.Server.Popups;
 using Content.Shared._DV.CosmicCult.Components;
@@ -13,6 +23,11 @@ using Content.Shared.Mindshield.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Stunnable;
+<<<<<<< HEAD
+=======
+using Content.Server.Atmos.Rotting;
+using Content.Server.Administration.Systems;
+>>>>>>> goob
 
 namespace Content.Server._DV.CosmicCult.Abilities;
 
@@ -25,6 +40,11 @@ public sealed class CosmicConversionSystem : EntitySystem
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly SharedCosmicCultSystem _cosmicCult = default!;
     [Dependency] private readonly SharedStunSystem _stun = default!;
+<<<<<<< HEAD
+=======
+    [Dependency] private readonly RottingSystem _rotting = default!;
+    [Dependency] private readonly RejuvenateSystem _rejuvenateSystem = default!;
+>>>>>>> goob
 
     public override void Initialize()
     {
@@ -55,9 +75,20 @@ public sealed class CosmicConversionSystem : EntitySystem
 
         foreach (var target in possibleTargets)
         {
+<<<<<<< HEAD
             if (_mobState.IsDead(target))
             {
                 _popup.PopupEntity(Loc.GetString("cult-glyph-target-dead"), uid, args.User);
+=======
+            if (_rotting.IsRotten(target)) //Goobstation: Prevents using space corpses.
+            {
+                _popup.PopupEntity(Loc.GetString("cult-glyph-target-rotting"), uid, args.User);
+                args.Cancel();
+            }
+            if (HasComp<BibleUserComponent>(target))
+            {
+                _popup.PopupEntity(Loc.GetString("cult-glyph-target-chaplain"), uid, args.User);
+>>>>>>> goob
                 args.Cancel();
             }
             else if (uid.Comp.NegateProtection == false && HasComp<MindShieldComponent>(target))
@@ -68,10 +99,16 @@ public sealed class CosmicConversionSystem : EntitySystem
             else
             {
                 _stun.TryStun(target, TimeSpan.FromSeconds(4f), false);
+<<<<<<< HEAD
                 _damageable.TryChangeDamage(target, uid.Comp.ConversionHeal);
                 _cultRule.CosmicConversion(uid, target);
                 var finaleQuery = EntityQueryEnumerator<CosmicFinaleComponent>(); // Enumerator for The Monument's Finale
 
+=======
+                _rejuvenateSystem.PerformRejuvenate(target); //Goobstation: No one likes being brought into the antag gang dead, now do we?
+                _cultRule.CosmicConversion(uid, target);
+                var finaleQuery = EntityQueryEnumerator<CosmicFinaleComponent>(); // Enumerator for The Monument's Finale
+>>>>>>> goob
                 while (finaleQuery.MoveNext(out var monument, out var comp)
                     && comp.CurrentState == FinaleState.ActiveBuffer)
                 {

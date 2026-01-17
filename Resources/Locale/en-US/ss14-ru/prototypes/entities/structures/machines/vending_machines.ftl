@@ -51,7 +51,11 @@ ent-VendingMachineDiscount = Discount Dan's
 ent-VendingMachineEngivend = Engi-Vend
     .desc = Spare tool vending. What? Did you expect some witty description?
 ent-VendingMachineMedical = NanoMed Plus
+<<<<<<< HEAD
     .desc = It's a medical drug dispenser. Natural chemicals only!
+=======
+    .desc = It's a medical drug dispenser. Natural chemicals only! (And wheelchairs, why not)
+>>>>>>> goob
 ent-VendingMachineNutri = NutriMax
     .desc = A vending machine containing nutritional substances for plants and botanical tools.
 ent-VendingMachineSec = SecTech

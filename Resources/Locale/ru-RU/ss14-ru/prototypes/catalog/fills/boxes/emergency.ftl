@@ -35,7 +35,11 @@ ent-BoxMimeNitrogen = { ent-BoxSurvivalNitrogen }
     .suffix = Мим, Аварийный Азот N2
     .desc = { ent-BoxSurvivalNitrogen.desc }
 ent-BoxMimeMoth = { ent-BoxSurvival }
+<<<<<<< HEAD
     .suffix = Mime, Emergency moth
+=======
+    .suffix = Мим, Аварийный ниан
+>>>>>>> goob
     .desc = { ent-BoxSurvival.desc }
 ent-BoxSurvivalSyndicate = расширенный аварийный запас
     .desc = Коробка с базовым набором для выживания. Согласно этикетке, содержит более ёмкий баллон.

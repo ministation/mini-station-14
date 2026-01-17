@@ -12,6 +12,11 @@ ent-PowerDrill = power drill
     .desc = A simple powered hand drill.
 ent-RCD = RCD
     .desc = The rapid construction device can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function.
+<<<<<<< HEAD
+=======
+ent-RPD = RPD
+    .desc = The rapid piping device allows for the quick placement and removal of atmospheric-related buildings requires compressive matter to use.
+>>>>>>> goob
 ent-RCDEmpty = { ent-RCD }
     .suffix = Empty
     .desc = { ent-RCD.desc }

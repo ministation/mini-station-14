@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 - type: listing
   id: HereticAshPath1
   name: knowledge-path-ash-s1-name
@@ -20,6 +35,11 @@
     - Flesh
     - Lock
     - Void
+<<<<<<< HEAD
+=======
+    - Rust
+    - Cosmos
+>>>>>>> goob
 
 - type: listing
   id: HereticAshPath2
@@ -28,7 +48,11 @@
   icon: { sprite: _Goobstation/Heretic/mansus_grasp.rsi, state: icon }
   productHereticKnowledge: GraspOfAsh
   cost:
+<<<<<<< HEAD
     KnowledgePoint: 2
+=======
+    KnowledgePoint: 1
+>>>>>>> goob
   categories:
   - HereticPathAsh
   conditions:
@@ -55,12 +79,21 @@
     stock: 1
   - !type:HereticPathCondition
     stage: 2
+<<<<<<< HEAD
+=======
+    whitelist:
+    - Ash
+>>>>>>> goob
 
 - type: listing
   id: HereticAshPath4
   name: knowledge-path-ash-s4-name
   description: knowledge-path-ash-s4-desc
+<<<<<<< HEAD
   icon: { sprite: _Goobstation/Heretic/Blades/blade_ash.rsi, state: icon }
+=======
+  icon: { sprite: _Goobstation/Heretic/mansus_grasp.rsi, state: icon }
+>>>>>>> goob
   productHereticKnowledge: MarkOfAsh
   cost:
     KnowledgePoint: 2
@@ -108,6 +141,11 @@
     stock: 1
   - !type:HereticPathCondition
     stage: 5
+<<<<<<< HEAD
+=======
+    whitelist:
+    - Ash
+>>>>>>> goob
 
 - type: listing
   id: HereticAshPath7
@@ -143,6 +181,11 @@
     stock: 1
   - !type:HereticPathCondition
     stage: 7
+<<<<<<< HEAD
+=======
+    whitelist:
+    - Ash
+>>>>>>> goob
 
 - type: listing
   id: HereticAshPath9
@@ -158,6 +201,10 @@
   - !type:ListingLimitedStockCondition
     stock: 1
   - !type:HereticPathCondition
+<<<<<<< HEAD
+=======
+    requiresCanAscend: true
+>>>>>>> goob
     stage: 8
     whitelist:
     - Ash

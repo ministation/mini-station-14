@@ -78,9 +78,15 @@ ent-WallMiningDiagonal = mining wall
 ent-WallVaultAlien = alien vault wall
     .desc = A mysterious ornate looking wall. There may be ancient dangers inside.
 ent-WallVaultRock = rock vault wall
+<<<<<<< HEAD
     .desc = { ent-BaseWall.desc }
 ent-WallVaultSandstone = sandstone vault wall
     .desc = { ent-WallVaultRock.desc }
+=======
+    .desc = { ent-WallVaultAlien.desc }
+ent-WallVaultSandstone = sandstone vault wall
+    .desc = { ent-WallVaultAlien.desc }
+>>>>>>> goob
 ent-WallInvisible = invisible wall
     .desc = { "" }
 ent-WallForce = force wall

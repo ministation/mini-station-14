@@ -6,3 +6,8 @@ admin-announce-button = Сделать объявление
 admin-announce-type-station = Станция
 admin-announce-type-server = Сервер
 admin-announce-keep-open = Держать открытым
+<<<<<<< HEAD
+=======
+cmd-announceui-desc = Открывает меню объявлений.
+cmd-announceui-help = Использование: announceui
+>>>>>>> goob

@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 - type: entity
   abstract: true
   parent: BaseObjective
@@ -6,9 +17,12 @@
   - type: Objective
     difficulty: 1.5
     issuer: objective-issuer-heretic
+<<<<<<< HEAD
   - type: RoleRequirement
     roles:
       - HereticRole
+=======
+>>>>>>> goob
 
 - type: entity
   parent: BaseHereticObjective
@@ -18,9 +32,15 @@
     icon:
       sprite: _Goobstation/Heretic/reality_fracture.rsi
       state: icon_harvested
+<<<<<<< HEAD
   - type: NumberObjective
     min: 12
     max: 18
+=======
+  - type: NumberObjective # Full main path research +1-2 side knowledge
+    min: 13
+    max: 15
+>>>>>>> goob
     title: objective-condition-knowledge-title
   - type: HereticKnowledgeCondition
 
@@ -30,10 +50,17 @@
   components:
   - type: Objective
     icon:
+<<<<<<< HEAD
       sprite: _Goobstation/Heretic/Blades/blade_blade.rsi
       state: icon
   - type: NumberObjective
     min: 2
+=======
+      sprite: _Goobstation/Heretic/Blades/eldritch_blade.rsi
+      state: icon
+  - type: NumberObjective
+    min: 3
+>>>>>>> goob
     max: 4
     title: objective-condition-sacrifice-title
   - type: HereticSacrificeCondition
@@ -44,7 +71,11 @@
   components:
   - type: Objective
     icon:
+<<<<<<< HEAD
       sprite: _Goobstation/Heretic/Blades/blade_blade.rsi
+=======
+      sprite: _Goobstation/Heretic/Blades/eldritch_blade.rsi
+>>>>>>> goob
       state: icon
   - type: NumberObjective
     min: 1

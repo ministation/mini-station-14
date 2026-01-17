@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+ent-JawsOfLifeBase = jaws of life
+    .desc = A set of jaws of life, compressed through the magic of science.
+>>>>>>> goob
 ent-JawsOfLife = челюсти жизни
     .desc = Набор челюстей жизни, скомпонованных при помощи магии науки.
 # Corvax-HiddenDesc-Start

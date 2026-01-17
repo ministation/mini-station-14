@@ -1,9 +1,19 @@
 // SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+>>>>>>> goob
 // SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+<<<<<<< HEAD
+=======
+using Content.Goobstation.Shared.Bible;
+using Content.Goobstation.Shared.Religion; // Goobstation - Bible
+>>>>>>> goob
 using Content.Server.Polymorph.Systems;
 using Content.Server.Popups;
 using Content.Shared._DV.CosmicCult;
@@ -22,6 +32,10 @@ public sealed class CosmicLapseSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly PolymorphSystem _polymorph = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
+<<<<<<< HEAD
+=======
+    [Dependency] private readonly DivineInterventionSystem _divineIntervention = default!;
+>>>>>>> goob
 
     private static readonly ProtoId<PolymorphPrototype> HumanLapse = "CosmicLapseMobHuman";
 
@@ -36,13 +50,23 @@ public sealed class CosmicLapseSystem : EntitySystem
     {
         if (action.Handled
             || HasComp<CosmicBlankComponent>(action.Target)
+<<<<<<< HEAD
             || HasComp<CleanseCultComponent>(action.Target)
             )
+=======
+            || HasComp<CleanseCultComponent>(action.Target))
+>>>>>>> goob
         {
             _popup.PopupEntity(Loc.GetString("cosmicability-generic-fail"), uid, uid);
             return;
         }
 
+<<<<<<< HEAD
+=======
+        if (_divineIntervention.TouchSpellDenied(action.Target))
+            return;
+
+>>>>>>> goob
         action.Handled = true;
         var tgtpos = Transform(action.Target).Coordinates;
         Spawn(uid.Comp.LapseVFX, tgtpos);

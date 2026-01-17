@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 ent-PartVox = часть тела вокса
     .desc = { ent-BaseItem.desc }
 ent-TorsoVox = туловище вокса
     .desc = { ent-PartVox.desc }
+=======
+ent-PartVoxBase = часть тела вокса
+    .desc = { ent-BasePart.desc }
+ent-ChestVox = грудь вокса
+    .desc = { ent-PartVoxBase.desc }
+ent-GroinVox = пах вокса
+    .desc = { ent-PartVoxBase.desc }
+>>>>>>> goob
 ent-HeadVox = голова вокса
     .desc = { ent-PartVox.desc }
 ent-LeftArmVox = левая рука вокса

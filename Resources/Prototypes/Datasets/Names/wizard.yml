@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿- type: localizedDataset
   id: NamesWizardFirst
   values:
@@ -9,3 +10,16 @@
   values:
     prefix: names-wizard-last-dataset-
     count: 69 #nice
+=======
+#- type: localizedDataset
+#  id: NamesWizardFirst
+#  values:
+#    prefix: names-wizard-first-dataset-
+#    count: 44
+#
+#- type: localizedDataset
+# id: NamesWizardLast
+#  values:
+#    prefix: names-wizard-last-dataset-
+#    count: 69
+>>>>>>> goob

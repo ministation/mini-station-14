@@ -1,6 +1,7 @@
 - type: body
   id: SmartCorgi
   name: corgi
+<<<<<<< HEAD:Resources/Prototypes/Body/Prototypes/Animal/smartcorgi.yml
   root: torso
   slots:
     torso:
@@ -9,6 +10,14 @@
       - righthand
       - lefthand
       - legs
+=======
+  root: chest
+  slots:
+    chest:
+      part: ChestAnimal
+      connections:
+      - groin
+>>>>>>> goob:Resources/Prototypes/Body/Prototypes/Specific/smartcorgi.yml
       organs:
         brain: OrganHumanBrain # feels strange but it is what it is
         lungs: OrganAnimalLungs
@@ -16,10 +25,21 @@
         liver: OrganAnimalLiver
         heart: OrganAnimalHeart
         kidneys: OrganAnimalKidneys
+<<<<<<< HEAD:Resources/Prototypes/Body/Prototypes/Animal/smartcorgi.yml
     lefthand:
       part: LeftHandSmartCorgi
     righthand:
       part: RightHandSmartCorgi
+=======
+    groin:
+      part: GroinAnimal
+      connections:
+      - legs
+      organs:
+        stomach: OrganAnimalStomach
+        liver: OrganAnimalLiver
+        kidneys: OrganAnimalKidneys
+>>>>>>> goob:Resources/Prototypes/Body/Prototypes/Specific/smartcorgi.yml
     legs:
       part: LegsAnimal
       connections:

@@ -24,4 +24,8 @@ comp-secret-stash-verb-open = Открыть
 secret-stash-plant = растение
 secret-stash-toilet = туалетный бачок
 secret-stash-plushie = плюшевая игрушка
+<<<<<<< HEAD
 secret-stash-cake = cake
+=======
+secret-stash-cake = торт
+>>>>>>> goob

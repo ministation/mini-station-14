@@ -40,8 +40,13 @@ reagent-name-champagne = шампанское
 reagent-desc-champagne = Премиальное игристое вино.
 reagent-name-acid-spit = кислотный плевок
 reagent-desc-acid-spit = Напиток для смелых, но при неправильном приготовлении может оказаться смертельно опасным!
+<<<<<<< HEAD
 reagent-name-alien-brain-hemorrhage = alien brain hemorrhage
 reagent-desc-alien-brain-hemorrhage = You might want to get that checked out at Med.
+=======
+reagent-name-alien-brain-hemorrhage = инопланетное мозгокровоизлияние
+reagent-desc-alien-brain-hemorrhage = Вам, возможно, стоило бы обследовать это в медблоке.
+>>>>>>> goob
 reagent-name-allies-cocktail = коктейль Союзники
 reagent-desc-allies-cocktail = Напиток из ваших союзников, не так сладок, как если бы из ваших врагов.
 reagent-name-aloe = алоэ
@@ -65,7 +70,11 @@ reagent-desc-banana-honk = Напиток из Бананового Рая.
 reagent-name-barefoot = босоногая
 reagent-desc-barefoot = Босоногая и беременная.
 reagent-name-beepsky-smash = удар Бипски
+<<<<<<< HEAD
 reagent-desc-beepsky-smash = Откажись выпить - и приготовься к ЗАКОНУ.
+=======
+reagent-desc-beepsky-smash = Откажись выпить — и приготовься к ЗАКОНУ.
+>>>>>>> goob
 reagent-name-black-russian = Чёрный Русский
 reagent-desc-black-russian = Для людей с непереносимостью лактозы. Так же прекрасен, как и белый русский.
 reagent-name-bloody-mary = Кровавая Мэри
@@ -74,23 +83,38 @@ reagent-name-booger = козявка
 reagent-desc-booger = Фууу...
 reagent-name-brave-bull = Храбрый Бык
 reagent-desc-brave-bull = Так же эффективен, как и голландский кураж!
+<<<<<<< HEAD
 reagent-name-bronx = Bronx
 reagent-desc-bronx = The orange-flavoured cousin of the Manhattan and Martini.
+=======
+reagent-name-bronx = Бронкс
+reagent-desc-bronx = Двоюродный брат "манхэттена" и "мартини" с апельсиновым вкусом.
+>>>>>>> goob
 reagent-name-coconut-rum = кокосовый ром
 reagent-desc-coconut-rum = Ром с кокосом для тропического настроения.
 reagent-name-cosmopolitan = космополитен
 reagent-desc-cosmopolitan = Даже в худшей ситуации ничто не сравнится со бокалом свежего космополитена.
+<<<<<<< HEAD
 reagent-name-crush-depth = crush depth
 reagent-desc-crush-depth = A stygian drink, harkening back to the abyssopelagic. Dark and Cold, it serves as a reminder that the most ancient emotion is fear, and the strongest type of fear is that of the unknown.
 reagent-name-cuba-libre = Куба либре
 reagent-desc-cuba-libre = Ром, смешанный с колой. Да здравствует революция.
 reagent-name-dark-and-stormy = dark & stormy
 reagent-desc-dark-and-stormy = You can almost hear the thunder.
+=======
+reagent-name-crush-depth = давящая глубина
+reagent-desc-crush-depth = Стигийский напиток, возвращающий в абиссальную пучину. Тёмный и холодный, он служит напоминанием о самой древней из эмоций — страхе, а самый сильный страх — страх перед неизвестным.
+reagent-name-cuba-libre = Куба либре
+reagent-desc-cuba-libre = Ром, смешанный с колой. Да здравствует революция.
+reagent-name-dark-and-stormy = тьма и буря
+reagent-desc-dark-and-stormy = Почти слышно, как гремит гром.
+>>>>>>> goob
 reagent-name-demons-blood = Кровь Демона
 reagent-desc-demons-blood = ААААХ!!!!
 reagent-name-devils-kiss = Поцелуй Дьявола
 reagent-desc-devils-kiss = Жуткое время!
 reagent-name-doctors-delight = Радость Доктора
+<<<<<<< HEAD
 reagent-desc-doctors-delight = Глоток сделал - Медибот свободен. Это, наверное, даже к лучшему.
 reagent-name-driest-martini = самый сухой мартини
 reagent-desc-driest-martini = Только для опытных. Вы уверены, что видите плавающие в бокале песчинки.
@@ -98,6 +122,15 @@ reagent-name-eggnog = eggnog
 reagent-desc-eggnog = Not enough egg.
 reagent-name-electric-shark = electric shark
 reagent-desc-electric-shark = Fun Shark fact: Selachians make up 20% of Space Station 16’s Engineering staff!
+=======
+reagent-desc-doctors-delight = Глоток сделал — Медибот свободен. Это, наверное, даже к лучшему.
+reagent-name-driest-martini = самый сухой мартини
+reagent-desc-driest-martini = Только для опытных. Вы уверены, что видите плавающие в бокале песчинки.
+reagent-name-eggnog = эгг-ног
+reagent-desc-eggnog = Недостаточно яиц.
+reagent-name-electric-shark = электрическая акула
+reagent-desc-electric-shark = Забавный факт: инженерный персонал космической станции 16 состоит из 20% хрящевых.
+>>>>>>> goob
 reagent-name-erika-surprise = сюрприз Эрики
 reagent-desc-erika-surprise = Сюрприз в том, что он зелёный!
 reagent-name-gargle-blaster = пангалактический грызлодёр
@@ -116,11 +149,18 @@ reagent-name-hooch = суррогат
 reagent-desc-hooch = Либо чья-то неудача в приготовлении коктейля, либо чья-то попытка производства алкоголя. В любом случае, вы действительно хотите это выпить?
 reagent-name-iced-beer = пиво со льдом
 reagent-desc-iced-beer = Пиво настолько морозное, что воздух вокруг него замерзает.
+<<<<<<< HEAD
 reagent-name-irish-slammer = Ирландская тюрьма
+=======
+reagent-name-irish-slammer = Пингвин-гренадёр
+reagent-name-irish-car-bomb = Ирландская автомобильная бомба
+reagent-desc-irish-car-bomb = Тревожная смесь ирландских сливок и эля.
+>>>>>>> goob
 reagent-desc-irish-slammer = Нетрадиционная смесь Ирландских сливок и стаута.
 reagent-name-irish-cream = Ирландские сливки
 reagent-desc-irish-cream = Сливки с добавлением виски. Что ещё можно ожидать от ирландцев.
 reagent-name-irish-coffee = ирландский кофе
+<<<<<<< HEAD
 reagent-desc-irish-coffee = Кофе с ирландскими сливками. Обычные сливки - это совсем не то!
 reagent-name-jack-rose = Jack rose
 reagent-desc-jack-rose = Excessively Red.
@@ -132,6 +172,19 @@ reagent-name-kira-special = Кира спешл
 reagent-desc-kira-special = Да здравствует парень, которого все принимали за девушку. Бака!
 reagent-name-tortuga = Tortuga
 reagent-desc-tortuga = Perfect for pirates who’ve been selected as the designated driver. Yarr!
+=======
+reagent-desc-irish-coffee = Кофе с ирландскими сливками. Обычные сливки — это совсем не то!
+reagent-name-jack-rose = Джек Роуз
+reagent-desc-jack-rose = Чрезвычайно красный.
+reagent-name-jungle-bird = птица джунглей
+reagent-desc-jungle-bird = Несмотря на название, не пользуется особой популярностью среди Воксов.
+reagent-name-kalimotxo = калимочо
+reagent-desc-kalimotxo = Высококлассный Куба либре для истинных алкоголиков.
+reagent-name-kira-special = Кира спешл
+reagent-desc-kira-special = Да здравствует парень, которого все принимали за девушку. Бака!
+reagent-name-tortuga = Тортуга
+reagent-desc-tortuga = Идеально подойдёт для пирата, выбраного в качестве трезвого рулевого. Ярр!
+>>>>>>> goob
 reagent-name-long-island-iced-tea = Лонг-Айленд айс ти
 reagent-desc-long-island-iced-tea = Винный шкаф, собранный в вкусную смесь. Предназначен только для женщин-алкоголиков среднего возраста.
 reagent-name-manhattan = Манхэттен
@@ -139,7 +192,11 @@ reagent-desc-manhattan = Любимый напиток Детектива под
 reagent-name-manhattan-project = Манхэттенский Проект
 reagent-desc-manhattan-project = Напиток для учёных, размышляющих о том, как взорвать станцию.
 reagent-name-manly-dorf = Мужественный Дворф
+<<<<<<< HEAD
 reagent-desc-manly-dorf = Пиво и эль, соединённые в восхитительный коктейль. Предназначено только для крепких дворфов.
+=======
+reagent-desc-manly-dorf = Пиво и эль, соединённые в восхитительный коктейль. Предназначено только для крепких гномов.
+>>>>>>> goob
 reagent-name-the-martinez = Мартинес
 reagent-desc-the-martinez = Легенда среди киберпанков. Вспоминается по напитку, забывается по пьяни.
 reagent-name-margarita = маргарита
@@ -150,8 +207,13 @@ reagent-name-mead = медовуха
 reagent-desc-mead = Напиток викингов, хоть и дешёвый.
 reagent-name-mojito = Мохито
 reagent-desc-mojito = Если это достаточно хорошо для Космической Кубы, то подойдёт и для вас.
+<<<<<<< HEAD
 reagent-name-monkey-business = monkey business
 reagent-desc-monkey-business = You’ve got to wonder how the monkeys feel about this drink.
+=======
+reagent-name-monkey-business = обезьяньи шалости
+reagent-desc-monkey-business = Задумайтесь, как обезьяны относятся к этому напитку.
+>>>>>>> goob
 reagent-name-moonshine = самогон
 reagent-desc-moonshine = Самодельный напиток, изготавливаемый в домашних условиях. Что может пойти не так?
 reagent-name-neurotoxin = нейротоксин
@@ -162,8 +224,13 @@ reagent-name-patron = Покровитель
 reagent-desc-patron = Текила с серебром в своём составе, фаворит женщин-алкоголичек из клубной тусовки.
 reagent-name-pina-colada = Пина Колада
 reagent-desc-pina-colada = За то, чтобы потеряться под дождём.
+<<<<<<< HEAD
 reagent-name-radler = radler
 reagent-desc-radler = A simple but staple classic, straight out of Space-Germany.
+=======
+reagent-name-radler = радлер
+reagent-desc-radler = Простая, но неизменная классика, прямиком из космической Германии.
+>>>>>>> goob
 reagent-name-red-mead = красная медовуха
 reagent-desc-red-mead = Настоящий напиток викингов! Несмотря на то, что он имеет странный красный цвет.
 reagent-name-rewriter = Переписчик
@@ -190,8 +257,13 @@ reagent-name-three-mile-island = чай со льдом Три-Майл-Айле
 reagent-desc-three-mile-island = "Сделан для женщин, достаточно крепок для мужчин."
 reagent-name-toxins-special = токсин спешл
 reagent-desc-toxins-special = Эта штука ОГОНЬ! ВЫЗЫВАЙТЕ ЧЁРТОВ ШАТТЛ!
+<<<<<<< HEAD
 reagent-name-vampiro = vampiro
 reagent-desc-vampiro = Popular in Mexico and Transylvania.
+=======
+reagent-name-vampiro = вампиро
+reagent-desc-vampiro = Популярен в Мексике и Трансильвании.
+>>>>>>> goob
 reagent-name-vodka-martini = водка-мартини
 reagent-desc-vodka-martini = Водка вместо джина. Не совсем как пил 007, но всё равно вкусно.
 reagent-name-vodka-tonic = водка-тоник
@@ -221,7 +293,11 @@ reagent-desc-caipirinha = Специальное предложение из С�
 reagent-name-daiquiri = дайкири
 reagent-desc-daiquiri = Классический ромовый коктейль, который остаётся популярным даже на холодных космических просторах.
 reagent-name-death-in-the-afternoon = смерть после полудня
+<<<<<<< HEAD
 reagent-desc-death-in-the-afternoon = "Налейте джиггер абсента в бокал для шампанского. Добавляйте ледяное шампанское, пока оно не достигнет надлежащего опалово-молочного оттенка. Медленно выпейте от трёх до пяти таких бокалов." - Эрнест Хемингуэй
+=======
+reagent-desc-death-in-the-afternoon = "Налейте джиггер абсента в бокал для шампанского. Добавляйте ледяное шампанское, пока оно не достигнет надлежащего опалово-молочного оттенка. Медленно выпейте от трёх до пяти таких бокалов." — Эрнест Хемингуэй
+>>>>>>> goob
 reagent-name-empress-75 = императрица 75
 reagent-desc-empress-75 = Более изысканный вариант мимозы. Как раз то, что могла пить Мария Антуанетта перед революцией.
 reagent-name-espresso-martini = эспрессо-мартини
@@ -239,6 +315,10 @@ reagent-desc-the-sun-also-rises = Крепкий коктейль, смешан�
 reagent-name-whiskey-sour = виски сауэр
 reagent-desc-whiskey-sour = Что за секретный ингредиент? Яйца. Это яйца.
 reagent-name-zombiecocktail = Зомби
+<<<<<<< HEAD
 reagent-desc-zombiecocktail = It gets in your head. Your he-eyeh-ead.
+=======
+reagent-desc-zombiecocktail = Оно пробирается в твои мозги. Твои ма-а-асхи.
+>>>>>>> goob
 reagent-name-bacchus-blessing = благословение бахуса
 reagent-desc-bacchus-blessing = Вы не думали, что жидкость может быть настолько отвратительной. Вы уверены в этом?...

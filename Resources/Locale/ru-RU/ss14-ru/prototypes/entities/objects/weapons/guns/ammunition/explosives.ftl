@@ -2,6 +2,11 @@ ent-CartridgeRocket = выстрел ПГ-7ВЛ
     .desc = Выстрел для гранатомёта РПГ-7. Имеет форму трубы.
 ent-CartridgeRocketSlow = выстрел ПГ-7ВЛ "Улитка"
     .desc = Выстрел для гранатомёта РПГ-7. Необычайно медленная.
+<<<<<<< HEAD
+=======
+ent-CartridgeRocketSingularityBuster = противосингулярная ракета
+    .desc = Боевая часть, содержащая большое количество антиматерии. При попадании в сингулярность антиматерия высвобождается, разрушая её. Гарантия недействительна при попадании во что-либо, кроме сингулярности или теслы.
+>>>>>>> goob
 ent-BaseGrenade = базовая граната-снаряд
     .desc = { ent-BaseItem.desc }
 ent-GrenadeBaton = шоковый снаряд
@@ -12,7 +17,11 @@ ent-GrenadeFlash = светошумовой снаряд
     .desc = { ent-BaseGrenade.desc }
 ent-GrenadeFrag = осколочный снаряд
     .desc = { ent-BaseGrenade.desc }
+<<<<<<< HEAD
 ent-GrenadeCleanade = cleanade grenade round
+=======
+ent-GrenadeCleanade = чистящий снаряд
+>>>>>>> goob
     .desc = { ent-BaseGrenade.desc }
 ent-GrenadeEMP = ЭМИ снаряд
     .desc = { ent-BaseGrenade.desc }

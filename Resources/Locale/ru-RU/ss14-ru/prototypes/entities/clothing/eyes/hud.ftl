@@ -12,6 +12,7 @@ ent-ClothingEyesHudCommand = административный визор
     .desc = Окуляр с индикатором на стекле, который сканирует гуманоидов, находящихся в поле зрения, и предоставляет точные данные о статусе их ID.
 ent-ClothingEyesHudBeer = пивные очки
     .desc = Пара солнцезащитных очков, оснащённых сканером реагентов, а также дающих понимание вязкости жидкости во время движения.
+<<<<<<< HEAD
 ent-ClothingEyesHudFriedOnion = fried onion goggles
     .desc = Filler
 ent-ClothingEyesHudOnionBeer = thungerst goggles
@@ -26,6 +27,22 @@ ent-ClothingEyesHudMultiversal = multiversal hud
     .desc = Filler
 ent-ClothingEyesHudOmni = omni hud
     .desc = Filler
+=======
+ent-ClothingEyesHudFriedOnion = очки жареного лука
+    .desc = Заглушка
+ent-ClothingEyesHudOnionBeer = очки лукового пива
+    .desc = Заглушка
+ent-ClothingEyesHudMedOnion = медлуковый визор
+    .desc = Заглушка
+ent-ClothingEyesHudMedOnionBeer = медпиволуковый визор
+    .desc = Заглушка
+ent-ClothingEyesHudMedSec = мед-охранный визор
+    .desc = Окуляр с индикатором на стекле, напоминающий сочетание визора охраны с медицинским.
+ent-ClothingEyesHudMultiversal = мультиверсальный визор
+    .desc = Заглушка
+ent-ClothingEyesHudOmni = омни визор
+    .desc = Заглушка
+>>>>>>> goob
 ent-ClothingEyesHudSyndicate = синди-визор
     .desc = Профессиональный визор Синдиката с индикатором на стекле, предназначенный для более точного обнаружения гуманоидов с их последующим уничтожением.
 ent-ClothingEyesHudSyndicateAgent = синди-визор агента
@@ -47,5 +64,9 @@ ent-ClothingEyesEyepatchHudBeerFlipped = пивной монокуляр
     .desc = { ent-ClothingEyesEyepatchHudBeer.desc }
 ent-ClothingEyesEyepatchHudDiag = диагностический моновизор
     .desc = Окуляр с индикатором на стекле, способный анализировать целостность и состояние роботов и экзокостюмов. Сделан из си-боргия.
+<<<<<<< HEAD
 ent-ClothingEyesEyepatchHudDiagFlipped = diagnostic hud eyepatch
+=======
+ent-ClothingEyesEyepatchHudDiagFlipped = { ent-ClothingEyesEyepatchHudDiag }
+>>>>>>> goob
     .desc = { ent-ClothingEyesEyepatchHudDiag.desc }

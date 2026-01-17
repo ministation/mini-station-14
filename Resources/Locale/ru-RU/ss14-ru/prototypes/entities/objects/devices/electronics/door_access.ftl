@@ -5,7 +5,11 @@ ent-DoorElectronicsTheatre = { ent-DoorElectronics }
     .suffix = Театр, Закрыт
     .desc = { ent-DoorElectronics.desc }
 ent-DoorElectronicsChapel = { ent-DoorElectronics }
+<<<<<<< HEAD
     .suffix = Церковь, Закрыт
+=======
+    .suffix = Храм, Закрыт
+>>>>>>> goob
     .desc = { ent-DoorElectronics.desc }
 ent-DoorElectronicsJanitor = { ent-DoorElectronics }
     .suffix = Уборщик, Закрыт
@@ -38,7 +42,11 @@ ent-DoorElectronicsCargo = { ent-DoorElectronics }
     .suffix = Снабжение, Закрыт
     .desc = { ent-DoorElectronics.desc }
 ent-DoorElectronicsServiceTheatre = { ent-DoorElectronics }
+<<<<<<< HEAD
     .suffix = Service, Theatre, Locked
+=======
+    .suffix = Сервисный, Театр, Закрыт
+>>>>>>> goob
     .desc = { ent-DoorElectronics.desc }
 ent-DoorElectronicsEngineering = { ent-DoorElectronics }
     .suffix = Инженерный, Закрыт

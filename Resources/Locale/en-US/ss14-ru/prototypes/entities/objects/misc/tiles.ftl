@@ -1,5 +1,9 @@
 ent-FloorTileItemBase = { ent-BaseItem }
+<<<<<<< HEAD
     .desc = These could work as a pretty decent throwing weapon.
+=======
+    .desc = The floor was meant to hold this, not you.
+>>>>>>> goob
 ent-FloorTileItemSteelCheckerDark = steel dark checker tile
     .desc = { ent-FloorTileItemSteel.desc }
 ent-FloorTileItemSteelCheckerLight = steel light checker tile
@@ -59,11 +63,21 @@ ent-FloorTileItemWhitePavement = white steel pavement
 ent-FloorTileItemWhitePavementVertical = white steel vertical pavement
     .desc = { ent-FloorTileItemWhite.desc }
 ent-FloorTileItemMetalDiamond = steel tile
+<<<<<<< HEAD
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemWood = wood floor
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemTechmaint = techmaint floor
     .desc = { ent-FloorTileItemBase.desc }
+=======
+    .desc = { ent-FloorTileItemSteel.desc }
+ent-FloorTileItemWood = wood floor
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemTechmaint = techmaint floor
+    .desc = { ent-FloorTileItemSteel.desc }
+ent-FloorTileItemTechmaintDark = dark techmaint floor
+    .desc = { ent-FloorTileItemSteel.desc }
+>>>>>>> goob
 ent-FloorTileItemMono = mono tile
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemLino = linoleum floor
@@ -75,7 +89,11 @@ ent-FloorTileItemBrassReebe = smooth brass plate
 ent-FloorTileItemDirty = dirty tile
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemElevatorShaft = elevator shaft tile
+<<<<<<< HEAD
     .desc = { ent-FloorTileItemBase.desc }
+=======
+    .desc = { ent-FloorTileItemSteel.desc }
+>>>>>>> goob
 ent-FloorTileItemRockVault = rock vault tile
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemBlue = blue tile
@@ -85,9 +103,15 @@ ent-FloorTileItemLime = lime tile
 ent-FloorTileItemMining = mining tile
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemMiningDark = dark mining tile
+<<<<<<< HEAD
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemMiningLight = light mining tile
     .desc = { ent-FloorTileItemBase.desc }
+=======
+    .desc = { ent-FloorTileItemSteel.desc }
+ent-FloorTileItemMiningLight = light mining tile
+    .desc = { ent-FloorTileItemSteel.desc }
+>>>>>>> goob
 ent-FloorTileItemFreezer = freezer tile
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemShowroom = showroom tile
@@ -193,13 +217,31 @@ ent-FloorTileItemMowedAstroGrass = mowed astro-grass
     .desc = Fake grass that covers up wires and even comes with realistic NanoTrimmings!
 ent-FloorTileItemJungleAstroGrass = jungle astro-grass
     .desc = Fake grass that covers up wires and even comes with realistic NanoTrimmings!
+<<<<<<< HEAD
 ent-FloorTileItemAstroIce = astro-ice
     .desc = Fake ice that's as slippery as the real thing, while being easily removable!
 ent-FloorTileItemAstroSnow = astro-snow
     .desc = Fake snow that's as fluffy as the real thing, while being easily removable!
+=======
+ent-FloorTileItemAstroSnow = astro-snow
+    .desc = Fake snow that's as fluffy as the real thing, while being easily removable!
+ent-FloorTileItemAstroIce = astro-ice
+    .desc = Fake ice that's as slippery as the real thing, while being easily removable!
+>>>>>>> goob
 ent-FloorTileItemAstroAsteroidSand = asteroid astro-sand
     .desc = Fake sand. Luckily, it's not as coarse as the real thing.
 ent-FloorTileItemAstroAsteroidSandBorderless = borderless asteroid astro-sand
     .desc = Fake sand. Luckily, it's not as coarse as the real thing.
 ent-FloorTileItemWoodLarge = large wood floor
     .desc = { ent-FloorTileItemBase.desc }
+<<<<<<< HEAD
+=======
+ent-FloorTileItemWhiteMarble = white marble tile
+    .desc = A chiseled, polished square of the finest Space Marble. Best not to lose it.
+ent-FloorTileItemDarkMarble = dark marble tile
+    .desc = A chiseled, polished square of the finest Space Marble. Best not to lose it.
+ent-FloorTileItemPlasmaMarble = plasmarble tile
+    .desc = A chiseled, polished square of the finest Space Marble. Plasma-infused for extra... something.
+ent-FloorTileItemUraniumMarble = uranium marble tile
+    .desc = A chiseled, polished square of the finest Space Marble. Uranium-infused to make it extra rad! Pun intended!
+>>>>>>> goob

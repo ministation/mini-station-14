@@ -8,8 +8,13 @@ ent-PowerCellSmall = батарея малой ёмкости
 ent-PowerCellSmallPrinted = { ent-PowerCellSmall }
     .suffix = Пустой
     .desc = { ent-PowerCellSmall.desc }
+<<<<<<< HEAD
 ent-PowerCellSmallNuclear = small-capacity nuclear power cell
     .desc = A self rechargeable power cell, designed for fast recharge rate at the expense of capacity.
+=======
+ent-PowerCellSmallNuclear = ядерная батарея малой ёмкости
+    .desc = Самозаряжаемый элемент питания, разработанный для быстрой зарядки за счёт уменьшения ёмкости.
+>>>>>>> goob
 ent-PowerCellMedium = батарея средней ёмкости
     .desc = Перезаряжаемый элемент питания. Популярный и надёжный вариант.
     .suffix = Полный

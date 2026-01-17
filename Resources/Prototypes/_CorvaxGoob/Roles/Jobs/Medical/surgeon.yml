@@ -1,0 +1,51 @@
+- type: job
+  id: Surgeon
+  name: job-name-surgeon
+  description: job-description-surgeon
+  playTimeTracker: JobSurgeon
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 54000 #15 hrs
+  startingGear: SurgeonGear
+  icon: "JobIconSurgeon"
+  supervisors: job-supervisors-cmo
+  skills: # CorvaxGoob-Skills
+  - Surgery
+  - MedicalEquipment
+  - Butchering
+  access:
+  - Medical
+  - Maintenance
+  extendedAccess:
+  - Chemistry
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: SurgerySpeedModifier
+      speedModifier: 2.5
+
+- type: startingGear
+  id: SurgeonGear
+  equipment:
+    ears: ClothingHeadsetMedical
+    belt: ClothingBeltSurgicalBoardFilled
+    shoes: ClothingShoesColorWhite
+    id: SurgeonPDA
+    mask: ClothingMaskSterile
+    gloves: ClothingHandsGlovesNitrile
+
+- type: chameleonOutfit
+  id: SurgeonChameleonOutfit
+  job: Surgeon
+  equipment:
+    head: ClothingHeadHatBeretMedic
+    eyes: ClothingEyesHudMedical
+    mask: ClothingMaskBreath
+    ears: ClothingHeadsetMedical
+    outerClothing: ClothingOuterCoatLab
+    gloves: ClothingHandsGlovesNitrile
+    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    id: SurgeonPDA
+    back: ClothingBackpackMedical
+    shoes: ClothingShoesColorWhite

@@ -29,7 +29,15 @@ lathe-menu-material-amount-missing =
        *[other] { NATURALFIXED($amount, 2) } { $unit } { $material } ([color=red]{ NATURALFIXED($missingAmount, 2) } { $unit } не хватает[/color])
     }
 lathe-menu-no-materials-message = Материалы не загружены
+<<<<<<< HEAD
 lathe-menu-silo-linked-message = Silo Linked
 lathe-menu-fabricating-message = Производится...
 lathe-menu-materials-title = Материалы
 lathe-menu-queue-title = Очередь производства
+=======
+lathe-menu-fabricating-message = Производится...
+lathe-menu-materials-title = Материалы
+lathe-menu-queue-title = Очередь производства
+lathe-menu-queue-reset-title = Сбросить очередь
+lathe-menu-queue-reset-material-overflow = Вы замечаете, что автолат полон.
+>>>>>>> goob

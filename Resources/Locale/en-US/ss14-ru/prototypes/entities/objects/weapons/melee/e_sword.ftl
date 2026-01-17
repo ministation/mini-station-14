@@ -12,11 +12,19 @@ ent-EnergyDaggerBox = e-dagger box
     .suffix = E-Dagger
 ent-EnergyCutlass = energy cutlass
     .desc = An exotic energy weapon.
+<<<<<<< HEAD
 ent-EnergySwordDouble = double-bladed energy sword
     .desc = Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
 ent-HyperEutacticBlade = hypereutactic-blade
     .desc = A supermassive weapon envisioned to cleave the very fabric of space and time itself in twain, the hypereutactic blade dynamically flash-forges a hypereutactic crystaline nanostructure capable of passing through most known forms of matter like a hot knife through butter.
 ent-CyborgEnergySwordDouble = { ent-EnergySwordDouble }
+=======
+ent-EnergySwordDoubleBase = double-bladed energy sword
+    .desc = Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
+ent-EnergySwordDouble = { ent-EnergySwordDoubleBase }
+    .desc = { ent-EnergySwordDoubleBase.desc }
+ent-CyborgEnergySwordDouble = { ent-EnergySwordDoubleBase }
+>>>>>>> goob
     .desc = Syndicate Command Interns thought that having one blade on the energy sword was not enough. Specially designed for syndicate cyborgs.
     .suffix = One-Handed, For Borgs
 ent-EnergyDaggerLoudBlue = { ent-EnergyDaggerLoud }

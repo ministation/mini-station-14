@@ -1,14 +1,25 @@
+<<<<<<< HEAD
 tts-voice-name-zina = Зина
 tts-voice-name-oleg = Лена
 tts-voice-name-aidar = Аидар
 tts-voice-name-baya = Байя
 tts-voice-name-kseniya = Ксения
 tts-voice-name-xenia = Любава
+=======
+tts-voice-name-aidar = Аидар
+tts-voice-name-baya = Байя
+tts-voice-name-kseniya = Ксения
+tts-voice-name-xenia = Кзениа
+>>>>>>> goob
 tts-voice-name-eugene = Юджин
 tts-voice-name-arthas = Артас (Warcraft 3)
 tts-voice-name-thrall = Тралл (Warcraft 3)
 tts-voice-name-kael = Кель (Warcraft 3)
+<<<<<<< HEAD
 tts-voice-name-maiev = Мая
+=======
+tts-voice-name-maiev = Майев (Warcraft 3)
+>>>>>>> goob
 tts-voice-name-rexxar = Рексар (Warcraft 3)
 tts-voice-name-tyrande = Тиранда (Warcraft 3)
 tts-voice-name-furion = Фарион (Warcraft 3)
@@ -18,7 +29,11 @@ tts-voice-name-jaina = Джайна (Warcraft 3)
 tts-voice-name-ladyvashj = Леди Вайш (Warcraft 3)
 tts-voice-name-narrator = Рассказчик (Warcraft 3)
 tts-voice-name-cairne = Кэрн (Warcraft 3)
+<<<<<<< HEAD
 tts-voice-name-garithos = Гаритос
+=======
+tts-voice-name-garithos = Гаритос (Warcraft 3)
+>>>>>>> goob
 tts-voice-name-anubarak = Ануб'арак (Warcraft 3)
 tts-voice-name-uther = Утер (Warcraft 3)
 tts-voice-name-grunt = Бугай (Warcraft 3)
@@ -119,7 +134,11 @@ tts-voice-name-lynette = Линетт (Fallout 2)
 tts-voice-name-marcus = Маркус (Fallout 2)
 tts-voice-name-master = Создатель (Fallout)
 tts-voice-name-morpheus = Морфеус (Fallout)
+<<<<<<< HEAD
 tts-voice-name-myron = Мирон
+=======
+tts-voice-name-myron = Майрон (Fallout 2)
+>>>>>>> goob
 tts-voice-name-nicole = Николь (Fallout)
 tts-voice-name-overseer = Смотритель (Fallout)
 tts-voice-name-rhombus = Ромбус (Fallout)
@@ -759,3 +778,93 @@ tts-voice-name-machine_spirit_4 = Дух машины
 tts-voice-name-magos_galeo = Магос Галео
 tts-voice-name-servo_skull = Серво-череп
 tts-voice-name-balthazar = Вальтазар
+<<<<<<< HEAD
+=======
+tts-voice-name-anastasia = Анастасия (Прочие)
+tts-voice-name-petr = Пётр (Прочие)
+tts-voice-name-valeria = Валерия (Прочие)
+tts-voice-name-gwen = Гвен (LoL)
+tts-voice-name-senna = Сенна (LoL)
+tts-voice-name-zeri = Зери (LoL)
+tts-voice-name-diana = Диана (LoL)
+tts-voice-name-nunu = Нуну (LoL)
+tts-voice-name-ryze = Райз (LoL)
+tts-voice-name-yone = Ёнэ (LoL)
+tts-voice-name-jhin = Джин (LoL)
+tts-voice-name-sett = Сетт (LoL)
+tts-voice-name-yorick = Йорик (LoL)
+tts-voice-name-camille = Камилла (LoL)
+tts-voice-name-lee_sin = Ли Син (LoL)
+tts-voice-name-kayle = Кейл (LoL)
+tts-voice-name-azir = Азир (LoL)
+tts-voice-name-lucian = Лусиан (LoL)
+tts-voice-name-twitch = Твич (LoL)
+tts-voice-name-sion = Сион (LoL)
+tts-voice-name-tahmkench = Там Кенч (LoL)
+tts-voice-name-irelia = Ирелия (LoL)
+tts-voice-name-jhinkc = Джинкс (LoL)
+tts-voice-name-tryndamere = Триндамир (LoL)
+tts-voice-name-karthus = Картус (LoL)
+tts-voice-name-nami = Нами (LoL)
+tts-voice-name-rumble = Рамбл (LoL)
+tts-voice-name-viktor = Виктор (LoL)
+tts-voice-name-lillia = Лиллия (LoL)
+tts-voice-name-ziggs = Зиггс (LoL)
+tts-voice-name-annie = Энни (LoL)
+tts-voice-name-wreckingball = Таран (Overwatch)
+tts-voice-name-reinhardt = Райнхардт (Overwatch)
+tts-voice-name-orisa = Ориса (Overwatch)
+tts-voice-name-torbjorn = Торбьорн (Overwatch)
+tts-voice-name-mei = Мэй (Overwatch)
+tts-voice-name-galmar = Галмар (Skyrim)
+tts-voice-name-delvin = Делвин (Skyrim)
+tts-voice-name-cicero = Цицерон (Skyrim)
+tts-voice-name-mephala = Мефала (Skyrim)
+tts-voice-name-eleanora = Элеонора (Skyrim)
+tts-voice-name-merc3 = Наемник (Skyrim)
+tts-voice-name-cannibal1 = Канибал (Метро)
+tts-voice-name-bandit1 = Bandit1 (Метро)
+tts-voice-name-tribal2 = Tribal2 (Метро)
+tts-voice-name-tank = Танк (Прочие)
+tts-voice-name-imperius = Империус (Diablo)
+tts-voice-name-kaelthas = Кель'тас (Warcraft)
+tts-voice-name-diablo = Диабло (Diablo)
+tts-voice-name-leoric = Леорик (Diablo)
+tts-voice-name-azmodan = Азмодан (Diablo)
+tts-voice-name-wizard = Волшебница (Прочие)
+tts-voice-name-guldan = Гул'дан (Warcraft)
+tts-voice-name-malganis = Мал'Ганис (Warcraft)
+tts-voice-name-zagara = Zagara (Starcraft)
+tts-voice-name-cho = Чо (Warcraft)
+tts-voice-name-meiow = Мяу (Прочие)
+tts-voice-name-stitches = Мясник (Warcraft)
+tts-voice-name-lili = Ли Ли (Warcraft)
+tts-voice-name-amazon = Амазон (Прочие)
+tts-voice-name-hogger = Хоггер (Warcraft)
+tts-voice-name-gazlowe = Газлоу (Warcraft)
+tts-voice-name-baleog = Балрог (Прочие)
+tts-voice-name-falstad = Фалстад (Warcraft)
+tts-voice-name-brightwing = Яркокрыл (Warcraft)
+tts-voice-name-dragonknight = Dragonknight (Дота 2)
+tts-voice-name-linzi = Линзи Рыжехмыл (Hearthstone)
+tts-voice-name-cache = руда монет (Hearthstone)
+tts-voice-name-cravitz = Кравиц Лоран (Hearthstone)
+tts-voice-name-dendrologist = Дендролог Декстер (Hearthstone)
+tts-voice-name-jythiros = Джитирос Вопрошающий(Hearthstone)
+tts-voice-name-draan = Демонолог Драан (Hearthstone)
+tts-voice-name-rikkar = Риккар (Hearthstone)
+tts-voice-name-splintergraft = Лесоповалка (Hearthstone)
+tts-voice-name-malchezaar = Принц Малчезар (Hearthstone)
+tts-voice-name-winslow = Уинслоу Тобток (Hearthstone)
+tts-voice-name-taskmaster = Вербовщица Мару (Hearthstone)
+tts-voice-name-oxana = Оксана Гроза Демонов (Hearthstone)
+tts-voice-name-inara = Инара Удар Бури (Hearthstone)
+tts-voice-name-ivan = Иван (Hearthstone)
+tts-voice-name-kazamon = Казамон Стальная Кожа (Hearthstone)
+tts-voice-name-albin = Альбин Истофт (Hearthstone)
+tts-voice-name-ammunae = Аммунаэ (Hearthstone)
+tts-voice-name-illidara = Иллидара Закатное Солнце (Hearthstone)
+tts-voice-name-nici = Жрица луны Ниси (Hearthstone)
+tts-voice-name-vaas = Ваас (Far Cry)
+tts-voice-name-olya = Оля Петрова (TinyBunny)
+>>>>>>> goob

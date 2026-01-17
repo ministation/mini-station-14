@@ -13,18 +13,34 @@ ent-CrateMaterialBrass = ящик латуни
 ent-CrateMaterialPlasteel = ящик пластали
     .desc = 90 единиц пластали.
 ent-CrateMaterialPlasma = ящик твёрдой плазмы
+<<<<<<< HEAD
     .desc = 30 единиц плазмы.
 ent-CrateMaterialGold = gold crate
     .desc = 30 bars of gold.
 ent-CrateMaterialSilver = silver crate
     .desc = 30 bars of silver.
+=======
+    .suffix = Защищённый
+    .desc = 30 единиц плазмы.
+ent-CrateMaterialGold = ящик золота
+    .desc = 30 слитков золота.
+ent-CrateMaterialSilver = ящик серебра
+    .desc = 30 слитков серебра.
+>>>>>>> goob
 ent-CrateMaterialCardboard = ящик картона
     .desc = 60 единиц картона.
 ent-CrateMaterialPaper = ящик бумаги
     .desc = 90 листов бумаги.
 ent-CrateMaterialRandom = излишки материалов
     .desc = Откуда-то взятые излишки материалов.
+<<<<<<< HEAD
 ent-CrateMaterialSilo = material silo crate
     .desc = A package including all the materials to create a material silo.
 ent-CrateMaterialBasicResource = basic sheet crate
     .desc = 30 sheets of steel, glass, and plastic.
+=======
+ent-CrateMaterialSilo = ящик материалов сило
+    .desc = Пакет, включающий все материалы для сило.
+ent-CrateMaterialBasicResource = ящик с базовыми листами
+    .desc = 30 листов стали, стекла и пластика.
+>>>>>>> goob

@@ -10,6 +10,10 @@ zombie-infection-warning = Вы чувствуете, как зомби-виру
 zombie-infection-underway = Ваша кровь начинает сгущаться
 zombie-alone = Вы чувствуете себя совершенно одиноким.
 zombie-shuttle-call = Мы зафиксировали, что зомби захватили станцию. Аварийный шаттл был отправлен для эвакуации оставшегося персонала.
+<<<<<<< HEAD
+=======
+zombie-start-announcement = Confirmed outbreak of level 7 biological hazard aboard the station. All personnel must contain the outbreak.
+>>>>>>> goob
 zombie-round-end-initial-count =
     { $initialCount ->
         [one] Единственным нулевым пациентом был:

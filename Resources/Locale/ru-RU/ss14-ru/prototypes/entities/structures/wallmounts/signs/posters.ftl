@@ -8,8 +8,13 @@ ent-PosterContrabandAtmosiaDeclarationIndependence = Декларация нез
     .desc = Реликвия подавленного восстания.
 ent-PosterContrabandFunPolice = Шуты в СБ
     .desc = Плакат с критикой службы безопасности станции.
+<<<<<<< HEAD
 ent-PosterContrabandRealExomorph = Real! Exomorph
     .desc = A conspiratorial poster about dangerous alien lifeforms.
+=======
+ent-PosterContrabandRealExomorph = Экзоморфы — факт!
+    .desc = Конспирологический плакат об опасных инопланетных формах жизни.
+>>>>>>> goob
 ent-PosterContrabandLustyExomorph = Похотливая ксено дева
     .desc = Еретический плакат с изображением главной звезды не менее еретической книги.
 ent-PosterContrabandSyndicateRecruitment = Вступайте в Синдикат
@@ -70,8 +75,13 @@ ent-PosterContrabandPunchShit = Мочи всех
     .desc = Деритесь без причины, как мужик!
 ent-PosterContrabandTheGriffin = Гриффин
     .desc = Гриффин приказывает вам вести себя как можно хуже. Вы станете это делать?
+<<<<<<< HEAD
 ent-PosterContrabandRouny = Have You Seen Him?
     .desc = An old poster for a missing alien. Where did he run off to?
+=======
+ent-PosterContrabandRouny = Вы его видели?
+    .desc = Старый плакат о пропавшем инопланетянине. Куда он убежал?
+>>>>>>> goob
 ent-PosterContrabandFreeDrone = Дроны не рабы
     .desc = Этот плакат посвящён храбрости дрона-изменника, однажды изгнанного, а затем окончательно уничтоженного Центкомом.
 ent-PosterContrabandBustyBackdoorExoBabes6 = Фигуристые Ксено-Малышки 6
@@ -124,12 +134,21 @@ ent-PosterContrabandEnlistGorlex = Идёт набор
     .desc = Вступайте в ряды Мародёров Горлекса уже сегодня! Путешествуйте по галактике, убивайте корпоратов, получайте деньги!
 ent-PosterContrabandInterdyne = Interdyne Pharmaceutics: Во имя здоровья человечества
     .desc = Реклама генных клиник GeneClean корпорации Interdyne Pharmaceutics. 'Станьте хозяином своего тела!'
+<<<<<<< HEAD
 ent-PosterContrabandExoAcid = Exomorph Warning: Acid Spit!
     .desc = This poster warns you about an exomorph's acidic spit. Not that such exomorphs are real... Right?
 ent-PosterContrabandExoRun = Exomorph Warning: Run Away!
     .desc = This poster warns you about an athletic exomorph capable of dragging away anyone who gets caught; so don't get caught!
 ent-PosterContrabandExoChomp = Exomorph Warning: Dangerous Bites!
     .desc = This poster warns you about the lethal bites exomorphs can have. Don't become an alien snack!
+=======
+ent-PosterContrabandExoAcid = Внимание, экзоморфы!: Кислотный плевок!
+    .desc = Этот плакат предупреждает вас о кислотной слюне экзоморфа. Не то чтоб такие экзоморфы были реальны... Так ведь?
+ent-PosterContrabandExoRun = Внимание, экзоморфы!: Убегай!
+    .desc = Этот плакат предупреждает вас об атлетическом экзоморфе, способном утащить любого, кто попадётся ему на глаза, так что не попадайтесь!
+ent-PosterContrabandExoChomp = Внимание, экзоморфы!: Опасные укусы!
+    .desc = Этот плакат предупреждает вас о смертельных укусах экзоморфов. Не станьте закуской для пришельцев!
+>>>>>>> goob
 ent-PosterContrabandWaffleCorp = Waffle Corp: Отличные винтовки, доступные цены
     .desc = Старая реклама винтовок от Waffle Corp. 'Пушки лучше, цены ниже!'
 ent-PosterContrabandMissingSpacepen = Пропавший космический медипен
@@ -191,7 +210,11 @@ ent-PosterLegitFruitBowl = Миска с фруктами
 ent-PosterLegitPDAAd = Реклама КПК
     .desc = Плакат, рекламирующий новейшие КПК от поставщиков Nanotrasen.
 ent-PosterLegitEnlist = Вступай!
+<<<<<<< HEAD
     .desc = Запишитесь в резерв эскадрона смерти Nanotrasen сегодня!
+=======
+    .desc = Запишитесь в резерв Эскадрона Смерти Nanotrasen сегодня!
+>>>>>>> goob
 ent-PosterLegitNanomichiAd = Реклама Nanomichi
     .desc = Плакат, рекламирующий аудиокассеты бренда Nanomichi.
 ent-PosterLegit12Gauge = 12 калибр
@@ -238,6 +261,11 @@ ent-PosterLegitNTTGC = Тактическая карточная игра Nanotr
     .desc = Реклама новой ТКИ от Nanotrasen: ПОКУПАЙТЕ БОЛЬШЕ КАРТОЧЕК.
 ent-PosterLegitSafetyMothSSD = Ниан-хранитель — Космическое расстройство сна
     .desc = Этот информационный плакат использует Ниана-хранителя™, чтобы рассказать читателям о Космическом Расстройстве Сна (КРС) — состоянии, при котором член экипажа перестаёт реагировать на происходящее. "Бережно относитесь к членам экипажа с КРС! В любой момент они могут проснуться!"
+<<<<<<< HEAD
+=======
+ent-PosterLegitHelio = реклама "Helio Logistics"
+    .desc = Плакат, рекламирующий "Helio Logistics" и их очаровательного маскота. Слоган гласит: "Погода не беда — доставим вовремя всегда!"
+>>>>>>> goob
 ent-PosterLegitOppenhopper = Опергеймер
     .desc = Постер давно забытого фильма. В нём рассказывается о группе упорных салаг из сектора Мейн, которые противостоят атакам печально известных Ядерных Оперативников. Слоган гласит: «Атаки оперативников будут продолжаться, пока робастность не повысится».
 ent-PosterLegitTyrone = Путеводитель Тайрона по космосу

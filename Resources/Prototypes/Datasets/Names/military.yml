@@ -2,16 +2,28 @@
   id: NamesMilitaryFirstLeader
   values:
     prefix: names-military-leader-first-dataset-
+<<<<<<< HEAD
     count: 5 # Corvax-MRP-Edit
+=======
+    count: 5
+>>>>>>> goob
 
 - type: localizedDataset
   id: NamesMilitaryFirst
   values:
     prefix: names-military-first-dataset-
+<<<<<<< HEAD
     count: 5 # Corvax-MRP-Edit
+=======
+    count: 5
+>>>>>>> goob
 
 - type: localizedDataset
   id: NamesMilitaryLast
   values:
     prefix: names-military-last-dataset-
+<<<<<<< HEAD
     count: 43 # Corvax-MRP-Edit
+=======
+    count: 44
+>>>>>>> goob

@@ -18,10 +18,17 @@ ent-DoorRemoteStealCollectionObjective = { ent-BaseThiefStealCollectionObjective
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
 ent-TechnologyDiskStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
+<<<<<<< HEAD
 ent-MailStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
 ent-IDCardsStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
+=======
+ent-IDCardsStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
+    .desc = { ent-BaseThiefStealCollectionObjective.desc }
+ent-BatteryStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
+    .desc = { ent-BaseThiefStealCollectionObjective.desc }
+>>>>>>> goob
 ent-LAMPStealCollectionObjective = { ent-BaseThiefStealCollectionObjective }
     .desc = { ent-BaseThiefStealCollectionObjective.desc }
 ent-ForensicScannerStealObjective = { ent-BaseThiefStealObjective }

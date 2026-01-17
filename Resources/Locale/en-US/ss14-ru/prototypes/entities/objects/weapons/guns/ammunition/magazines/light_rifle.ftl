@@ -2,6 +2,11 @@ ent-BaseMagazineLightRifle = magazine (.30 rifle)
     .desc = { ent-BaseItem.desc }
 ent-MagazineLightRifleBox = L6 SAW magazine box (.30 rifle)
     .desc = Box containing a 100-round belt of linked .30 rifle rounds, used by light machine guns such as the L6. Intended to hold general-purpose kinetic ammunition.
+<<<<<<< HEAD
+=======
+ent-MagazineLightRifleBoxEmpty = L6 SAW magazine box (.30 rifle any)
+    .desc = { ent-MagazineLightRifleBox.desc }
+>>>>>>> goob
 ent-MagazineLightRifle = magazine (.30 rifle)
     .desc = Curved 30-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
 ent-MagazineLightRifleEmpty = magazine (.30 rifle any)

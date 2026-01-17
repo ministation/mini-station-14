@@ -86,12 +86,22 @@ ent-MobMouse1 = { ent-MobMouse }
     .desc = { ent-MobMouse.desc }
 ent-MobMouse2 = { ent-MobMouse }
     .desc = { ent-MobMouse.desc }
+<<<<<<< HEAD
+=======
+ent-MobMouseCancer = раковая мышь
+    .desc = Токсичная. Скуик!
+>>>>>>> goob
 ent-MobLizard = ящерица
     .desc = Безобидный дракон.
 ent-MobSlug = слизняк
     .desc = И они называли это ящерицей?
 ent-MobFrog = лягушка
     .desc = Прыг прыг прыг. Выглядит мокрой.
+<<<<<<< HEAD
+=======
+ent-MobParrotBase = { ent-SimpleMobBase }
+    .desc = Проникает в ваши владения, шпионит за вами и при этом остаётся классным питомцем.
+>>>>>>> goob
 ent-MobParrot = попугай
     .desc = Проникает в ваши владения, шпионит за вами и при этом остаётся классным питомцем.
 ent-MobPenguin = пингвин
@@ -121,10 +131,17 @@ ent-MobPossumOld = поссум
     .desc = { ent-MobPossum.desc }
 ent-MobRaccoon = енот
     .desc = Мусорная панда!
+<<<<<<< HEAD
 ent-MobCorgi = корги
     .desc = Наконец-то, космический корги!
 ent-MobCorgiBase = corgi
     .desc = Finally, a space corgi!
+=======
+ent-MobCorgiBase = корги
+    .desc = Наконец-то, космический корги!
+ent-MobCorgi = { ent-MobCorgiBase }
+    .desc = { ent-MobCorgiBase.desc }
+>>>>>>> goob
 ent-MobCorgiNarsi = порченный корги
     .desc = Иан! Нет!
 ent-MobCorgiPuppy = щенок корги

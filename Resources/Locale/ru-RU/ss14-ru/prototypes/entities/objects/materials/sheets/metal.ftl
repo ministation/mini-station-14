@@ -24,12 +24,21 @@ ent-SheetBrass1 = латунь
 ent-SheetPlasteel = пласталь
     .suffix = Полный
     .desc = { ent-SheetMetalBase.desc }
+<<<<<<< HEAD
+=======
+ent-SheetPlasteelLingering0 = { ent-SheetPlasteel }
+    .suffix = Lingering, 0
+    .desc = { ent-SheetPlasteel.desc }
+>>>>>>> goob
 ent-SheetPlasteel10 = пласталь
     .suffix = 10
     .desc = { ent-SheetPlasteel.desc }
 ent-SheetPlasteel1 = пласталь
     .suffix = Один
     .desc = { ent-SheetPlasteel.desc }
+<<<<<<< HEAD
 ent-SheetPlasteelLingering0 = { ent-SheetPlasteel }
     .suffix = Lingering, 0
     .desc = { ent-SheetPlasteel.desc }
+=======
+>>>>>>> goob

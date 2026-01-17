@@ -4,6 +4,11 @@ ent-GasPressurePump = gas pump
     .desc = A pump that moves gas by pressure.
 ent-GasVolumePump = volumetric gas pump
     .desc = A pump that moves gas by volume.
+<<<<<<< HEAD
+=======
+ent-GasPressureRegulator = inlet pressure regulator
+    .desc = A valve that releases gas when the inlet pressure exceeds a certain threshold.
+>>>>>>> goob
 ent-GasPassiveGate = passive gate
     .desc = A one-way air valve that does not require power.
 ent-GasValve = manual valve

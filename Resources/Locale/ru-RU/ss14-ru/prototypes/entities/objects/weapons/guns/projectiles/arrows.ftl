@@ -8,5 +8,10 @@ ent-ArrowImprovisedPlasma = стрела из осколка плазменно�
     .desc = Любимый метательный снаряд серорубашечников. Теперь повышенной смертоносности!
 ent-ArrowImprovisedUranium = стрела из осколка уранового стекла
     .desc = Любимый метательный снаряд серорубашечников. Теперь повышенной радиоактивности!
+<<<<<<< HEAD
 ent-ArrowImprovisedCarp = carp tooth arrow
     .desc = The salvager's preferred arrow. Kill your enemies with the teeth of their families.
+=======
+ent-ArrowImprovisedCarp = стрела из зуба карпа
+    .desc = Предпочитаемая стрела утилизатора. Убивайте ваших врагов зубами их же родственников.
+>>>>>>> goob

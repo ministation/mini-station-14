@@ -78,5 +78,12 @@ alerts-revenant-corporeal-name = Материальность
 alerts-revenant-corporeal-desc = Вы физически воплотились. Окружающие могут видеть и наносить вам вред.
 alerts-offer-name = Получить
 alerts-offer-desc = Кто-то передаёт вам предмет.
+<<<<<<< HEAD
 alerts-rooted-name = Rooted
 alerts-rooted-desc = You are attached to the ground. You can't slip, but you absorb fluids under you.
+=======
+alerts-rooted-name = Корни
+alerts-rooted-desc = Вы укоренились к полу. Вы не можете поскользнуться, но поглощаете жидкости под собой.
+alerts-stealthy-name = Карманная кража
+alerts-stealthy-desc = Показывает, совершаете ли вы в данный момент карманную кражу. Нажмите, чтобы переключить.
+>>>>>>> goob

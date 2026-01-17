@@ -20,6 +20,7 @@
   parent: BaseEntitySpellAction
   id: BaseSmiteAction
   components:
+<<<<<<< HEAD
   - type: Magic
     requiresClothes: true
 
@@ -39,8 +40,29 @@
     event: !type:SmiteSpellEvent
   - type: SpeakOnAction
     sentence: action-speech-spell-smite
+=======
+>>>>>>> goob
   - type: Magic
     requiresClothes: true
+
+#- type: entity
+#  parent: BaseSmiteAction
+#  id: ActionSmite
+#  name: Smite
+#  description: Instantly gibs a target.
+#  components:
+#  - type: Action
+#    sound: !type:SoundPathSpecifier
+#      path: /Audio/Magic/disintegrate.ogg
+#    icon:
+#      sprite: Objects/Magic/magicactions.rsi
+#      state: gib
+#  - type: EntityTargetAction
+#    event: !type:SmiteSpellEvent
+#  - type: SpeakOnAction
+#    sentence: action-speech-spell-smite
+#  - type: Magic
+#    requiresClothes: true
 
 # For the Snail
 - type: entity

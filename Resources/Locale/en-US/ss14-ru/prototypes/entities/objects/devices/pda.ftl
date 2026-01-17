@@ -88,9 +88,12 @@ ent-CentcomPDA = CentComm PDA
 ent-AdminPDA = Admin PDA
     .desc = If you are not an admin please return this PDA to the nearest admin.
     .suffix = Admin
+<<<<<<< HEAD
 ent-DeathsquadPDA = { ent-CentcomPDA }
     .suffix = Death Squad
     .desc = { ent-CentcomPDA.desc }
+=======
+>>>>>>> goob
 ent-MusicianPDA = musician PDA
     .desc = It fills you with inspiration.
 ent-VisitorMusicianPDA = { ent-MusicianPDA }
@@ -156,3 +159,8 @@ ent-ChameleonPDA = passenger PDA
     .suffix = Chameleon
 ent-WizardPDA = wizard PDA
     .desc = You hear faint whispers coming from it.
+<<<<<<< HEAD
+=======
+ent-ScurretPDA = { ent-ClearPDA }
+    .desc = A temporary PDA granted to scurret temps. Doesn't do much. Wawa!
+>>>>>>> goob

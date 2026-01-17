@@ -9,7 +9,11 @@ namespace Content.Shared.Silicons.StationAi;
 public sealed partial class StationAiCustomizationGroupPrototype : IPrototype
 {
     [IdDataField]
+<<<<<<< HEAD
     public string ID { get; } = string.Empty;
+=======
+    public string ID { get; private set; } = string.Empty;
+>>>>>>> goob
 
     /// <summary>
     /// The localized name of the customization.

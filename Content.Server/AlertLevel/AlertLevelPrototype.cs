@@ -1,3 +1,17 @@
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Morbo <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server._CorvaxGoob.Announcer;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 
@@ -34,6 +48,13 @@ public sealed partial class AlertLevelDetail
     /// </summary>
     [DataField("announcement")] public string Announcement { get; private set; } = string.Empty;
 
+    // CorvaxGoob-custom-alert-instructions-in-pda-start
+    /// <summary>
+    /// Instruction of alert level in pda
+    /// </summary>
+    [DataField("instruction")] public string AlertLevelInstruction { get; private set; } = string.Empty;
+    // CorvaxGoob-custom-alert-instructions-in-pda-end
+
     /// <summary>
     /// Whether this alert level is selectable from a communications console.
     /// </summary>
@@ -51,6 +72,13 @@ public sealed partial class AlertLevelDetail
     /// The sound that this alert level will play in-game once selected.
     /// </summary>
     [DataField("sound")] public SoundSpecifier? Sound { get; private set; }
+
+    // CorvaxGoob-CustomAnnouncers
+    /// <summary>
+    /// Dictionary of custom announcers and their sounds.
+    /// </summary>
+    [DataField]
+    public Dictionary<ProtoId<AnnouncerPrototype>, SoundSpecifier> AnnouncersAudio = new();
 
     /// <summary>
     /// The color that this alert level will show in-game in chat.
@@ -72,4 +100,3 @@ public sealed partial class AlertLevelDetail
     /// </summary>
     [DataField("shuttleTime")] public TimeSpan ShuttleTime { get; private set; } = TimeSpan.FromMinutes(5);
 }
-

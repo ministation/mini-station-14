@@ -31,9 +31,15 @@ chat-manager-send-ooc-patron-wrap-message = OOC: [bold][color={ $patronColor }]{
 chat-manager-send-dead-chat-wrap-message = { $deadChannelName }: [bold][BubbleHeader]{ $playerName }[/BubbleHeader]:[/bold] [BubbleContent]{ $message }[/BubbleContent]
 chat-manager-send-admin-dead-chat-wrap-message = { $adminChannelName }: [bold]([BubbleHeader]{ $userName }[/BubbleHeader]):[/bold] [BubbleContent]{ $message }[/BubbleContent]
 chat-manager-send-admin-chat-wrap-message = { $adminChannelName }: [bold]{ $playerName }:[/bold] { $message }
+<<<<<<< HEAD
 chat-manager-send-admin-announcement-wrap-message = [bold]{ $adminChannelName }: { $message }[/bold]
 chat-manager-send-hook-ooc-wrap-message = OOC: [bold](D){ $senderName }:[/bold] { $message }
 chat-manager-send-hook-admin-wrap-message = ADMIN: [bold](D){ $senderName }:[/bold] { $message }
+=======
+chat-manager-send-ooc-patron-wrap-message-no-icon = OOC: [bold][color={ $patronColor }]{ $playerName }[/color]:[/bold] { $message }
+chat-manager-send-admin-announcement-wrap-message = [bold]{ $adminChannelName }: { $message }[/bold]
+chat-manager-send-hook-ooc-wrap-message = OOC: [bold](D){ $senderName }:[/bold] { $message }
+>>>>>>> goob
 chat-manager-dead-channel-name = МЁРТВЫЕ
 chat-manager-admin-channel-name = АДМИН
 chat-manager-rate-limited = Вы отправляете сообщения слишком быстро!
@@ -88,6 +94,11 @@ chat-speech-verb-name-canine = Собака
 chat-speech-verb-canine-1 = гавкает
 chat-speech-verb-canine-2 = лает
 chat-speech-verb-canine-3 = воет
+<<<<<<< HEAD
+=======
+chat-speech-verb-skeleton-4 = клацкает
+chat-speech-verb-skeleton-5 = клацклацкает
+>>>>>>> goob
 chat-speech-verb-name-vox = Вокс
 chat-speech-verb-vox-1 = скрипит
 chat-speech-verb-vox-2 = визжит
@@ -111,8 +122,13 @@ chat-speech-verb-parrot-2 = чирикает
 chat-speech-verb-parrot-3 = щебечет
 chat-speech-verb-name-ghost = Призрак
 chat-speech-verb-ghost-1 = жалуется
+<<<<<<< HEAD
 chat-speech-verb-ghost-2 = дышит
 chat-speech-verb-ghost-3 = воет
+=======
+chat-speech-verb-ghost-2 = вздыхает
+chat-speech-verb-ghost-3 = гудит
+>>>>>>> goob
 chat-speech-verb-ghost-4 = бормочет
 chat-speech-verb-name-cluwne = Клувень
 chat-speech-verb-cluwne-1 = хихикает
@@ -122,3 +138,11 @@ chat-speech-verb-name-electricity = Электричество
 chat-speech-verb-electricity-1 = трещит
 chat-speech-verb-electricity-2 = гудит
 chat-speech-verb-electricity-3 = скрипит
+<<<<<<< HEAD
+=======
+chat-speech-verb-name-wawa = Вава
+chat-speech-verb-wawa-1 = напевает
+chat-speech-verb-wawa-2 = утверждает
+chat-speech-verb-wawa-3 = заявляет
+chat-speech-verb-wawa-4 = размышляет
+>>>>>>> goob

@@ -1,13 +1,45 @@
-using System.Linq;
-using Content.Shared.FixedPoint;
-using Content.Shared.Store.Components;
-using Content.Shared.StoreDiscount.Components;
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 2024 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 emmafornash <89596994+emmafornash@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared._CorvaxGoob.Events;
+using Content.Shared._CorvaxGoob.Events.StatusEffects;
+using Content.Shared.Heretic.Prototypes; // Goob
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
+<<<<<<< HEAD
 using Content.Shared.Heretic.Prototypes;
+=======
+using System.Linq;
+>>>>>>> goob
 
 namespace Content.Shared.Store;
+
+// IF SOMEONE IS LOOKING AT THIS,
+// AND CONSIDERING MERGING WIZDEN NEWSTORE HERE:
+// DO NOT.
+// I AM NOT RESPONSIBLE IF YOU DO.
+// I WILL NOT FIX YOUR BULLSHIT IF YOU BREAK EVERY SINGLE STORE BASED ANTAG EVER AGAIN.
+// regards. :heart:
 
 /// <summary>
 ///     This is the data object for a store listing which is passed around in code.
@@ -16,8 +48,9 @@ namespace Content.Shared.Store;
 /// </summary>
 [Serializable, NetSerializable]
 [Virtual, DataDefinition]
-public partial class ListingData : IEquatable<ListingData>
+public partial class ListingData : IEquatable<ListingData>, ICloneable
 {
+<<<<<<< HEAD
     public ListingData()
     {
     }
@@ -93,6 +126,8 @@ public partial class ListingData : IEquatable<ListingData>
         DisableRefund = disableRefund;
     }
 
+=======
+>>>>>>> goob
     [ViewVariables]
     [IdDataField]
     public string ID { get; private set; } = default!;
@@ -104,12 +139,6 @@ public partial class ListingData : IEquatable<ListingData>
     public string? Name;
 
     /// <summary>
-    /// Discount category for listing item. This marker describes chance of how often will item be discounted.
-    /// </summary>
-    [DataField]
-    public ProtoId<DiscountCategoryPrototype>? DiscountCategory;
-
-    /// <summary>
     /// The description of the listing. If empty, uses the entity's description (if present)
     /// </summary>
     [DataField]
@@ -119,7 +148,7 @@ public partial class ListingData : IEquatable<ListingData>
     /// The categories that this listing applies to. Used for filtering a listing for a store.
     /// </summary>
     [DataField]
-    public HashSet<ProtoId<StoreCategoryPrototype>> Categories = new();
+    public List<ProtoId<StoreCategoryPrototype>> Categories = new();
 
     /// <summary>
     /// The original cost of the listing. FixedPoint2 represents the amount of that currency.
@@ -127,7 +156,7 @@ public partial class ListingData : IEquatable<ListingData>
     /// cost modifiers (due to discounts or surplus). Use Cost property on derived class instead.
     /// </summary>
     [DataField]
-    public IReadOnlyDictionary<ProtoId<CurrencyPrototype>, FixedPoint2> OriginalCost = new Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2>();
+    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> Cost = new();
 
     /// <summary>
     /// Specific customizable conditions that determine whether or not the listing can be purchased.
@@ -184,8 +213,15 @@ public partial class ListingData : IEquatable<ListingData>
     /// <summary>
     /// The event that is broadcast when the listing is purchased.
     /// </summary>
-    [DataField]
+    [DataField(serverOnly: true), NonSerialized] // Goob edit
     public object? ProductEvent;
+
+    // goobstation - heretics
+    // i am too tired of making separate systems for knowledge adding
+    // and all that shit. i've had like 4 failed attempts
+    // so i'm just gonna shitcode my way out of my misery
+    [DataField]
+    public ProtoId<HereticKnowledgePrototype>? ProductHereticKnowledge;
 
     [DataField]
     public bool RaiseProductEventOnUser;
@@ -202,17 +238,44 @@ public partial class ListingData : IEquatable<ListingData>
     [DataField]
     public TimeSpan RestockTime = TimeSpan.Zero;
 
-    /// <summary>
-    /// Options for discount - from max amount down to how much item costs can be cut by discount, absolute value.
-    /// </summary>
+    // WD START
+    [DataField] public int SaleLimit = 1;
+
+    [DataField] public bool SaleBlacklist;
+
+    public int DiscountValue;
+
+    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> OldCost = new();
+
+    // Goobstation
+    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2>? SaleCost;
+
     [DataField]
-    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> DiscountDownTo = new();
+    public List<string> Components = new();
+    // WD END
 
     /// <summary>
     /// Whether or not to disable refunding for the store when the listing is purchased from it.
+    /// Goob edit: This won't disable refund, but instead you won't be able to refund this listing.
     /// </summary>
     [DataField]
     public bool DisableRefund = false;
+
+    /// <summary>
+    /// Goobstation.
+    /// When purchased, it will block refunds of these listings.
+    /// </summary>
+    [DataField]
+    public HashSet<ProtoId<ListingPrototype>> BlockRefundListings = new();
+
+    [DataField]
+    public bool ResetRestockOnPurchase = false; // goob edit
+
+    [DataField]
+    public TimeSpan RestockDuration = TimeSpan.FromMinutes(10); // goob edit
+
+    [DataField]
+    public TimeSpan? RestockAfterPurchase { get; private set; } // goob edit
 
     public bool Equals(ListingData? listing)
     {
@@ -225,11 +288,21 @@ public partial class ListingData : IEquatable<ListingData>
             Description != listing.Description ||
             ProductEntity != listing.ProductEntity ||
             ProductAction != listing.ProductAction ||
-            ProductEvent?.GetType() != listing.ProductEvent?.GetType() ||
+            RaiseProductEventOnUser != listing.RaiseProductEventOnUser || // Goobstation
+            DisableRefund != listing.DisableRefund || // Goobstation
+            ResetRestockOnPurchase != listing.ResetRestockOnPurchase || // Goobstation
+            RestockAfterPurchase != listing.RestockAfterPurchase || // Goobstation
             RestockTime != listing.RestockTime)
             return false;
 
+        if (ProductEvent != null && listing.ProductEvent != null && ProductEvent.GetType() != listing.ProductEvent.GetType()) // Goobstation
+            return false;
+
         if (Icon != null && !Icon.Equals(listing.Icon))
+            return false;
+
+        // Goobstation
+        if (!BlockRefundListings.OrderBy(x => x).SequenceEqual(listing.BlockRefundListings.OrderBy(x => x)))
             return false;
 
         // more complicated conditions that eat perf. these don't really matter
@@ -237,7 +310,7 @@ public partial class ListingData : IEquatable<ListingData>
         if (!Categories.OrderBy(x => x).SequenceEqual(listing.Categories.OrderBy(x => x)))
             return false;
 
-        if (!OriginalCost.OrderBy(x => x).SequenceEqual(listing.OriginalCost.OrderBy(x => x)))
+        if (!Cost.OrderBy(x => x).SequenceEqual(listing.Cost.OrderBy(x => x)))
             return false;
 
         if ((Conditions != null && listing.Conditions != null) &&
@@ -247,14 +320,54 @@ public partial class ListingData : IEquatable<ListingData>
         return true;
     }
 
+    /// <summary>
+    /// Creates a unique instance of a listing. ALWAWYS USE THIS WHEN ENUMERATING LISTING PROTOTYPES
+    /// DON'T BE DUMB AND MODIFY THE PROTOTYPES
+    /// </summary>
+    /// <returns>A unique copy of the listing data.</returns>
+    public object Clone()
+    {
+        return new ListingData
+        {
+            ID = ID,
+            Name = Name,
+            Description = Description,
+            Categories = Categories,
+            Cost = Cost,
+            Conditions = Conditions,
+            Icon = Icon,
+            Priority = Priority,
+            ProductEntity = ProductEntity,
+            ProductAction = ProductAction,
+            ProductUpgradeId = ProductUpgradeId,
+            ProductActionEntity = ProductActionEntity,
+            ProductEvent = ProductEvent,
+            RaiseProductEventOnUser = RaiseProductEventOnUser, // goob edit
+            ProductHereticKnowledge = ProductHereticKnowledge, // goob edit
+            DisableRefund = DisableRefund, // goob edit
+            BlockRefundListings = BlockRefundListings, // goob edit
+            ResetRestockOnPurchase = ResetRestockOnPurchase, // goob edit
+            RestockAfterPurchase = RestockAfterPurchase, // goob edit
+            PurchaseAmount = PurchaseAmount,
+            RestockTime = RestockTime,
+            // WD START
+            SaleLimit = SaleLimit,
+            SaleBlacklist = SaleBlacklist,
+            DiscountValue = DiscountValue,
+            OldCost = OldCost,
+            SaleCost = SaleCost,
+            Components = Components,
+            // WD END
+        };
+    }
 }
 
 /// <summary>
 ///     Defines a set item listing that is available in a store
 /// </summary>
-[Prototype]
-[Serializable, NetSerializable]
+[Prototype("listing")]
 [DataDefinition]
+<<<<<<< HEAD
 public sealed partial class ListingPrototype : ListingData, IPrototype
 {
     /// <summary> Setter/getter for item cost from prototype. </summary>
@@ -454,3 +567,6 @@ public sealed partial class DiscountCategoryPrototype : IPrototype
     [DataField]
     public int? MaxItems { get; private set; }
 }
+=======
+public sealed partial class ListingPrototype : ListingData, IPrototype;
+>>>>>>> goob

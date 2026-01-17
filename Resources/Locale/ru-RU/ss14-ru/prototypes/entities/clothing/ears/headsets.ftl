@@ -36,5 +36,10 @@ ent-ClothingHeadsetGrey = гарнитура пассажира
     .desc = { ent-ClothingHeadset.desc }
 ent-ClothingHeadsetFreelance = гарнитура фрилансера
     .desc = Такими пользуются группы бродячих фрилансеров.
+<<<<<<< HEAD
 ent-ClothingHeadsetWizard = wizard headset
     .desc = A headset used by the dreaded space wizards.
+=======
+ent-ClothingHeadsetWizard = гарнитура мага
+    .desc = Такими пользуются группы космических магов.
+>>>>>>> goob

@@ -22,7 +22,11 @@ ent-MindRoleGhostRoleTeamAntagonist = Роль призрака (Командн�
     .desc = { ent-MindRoleGhostRoleNeutral.desc }
 ent-MindRoleGhostRoleTeamAntagonistFlock = Роль призрака (Командный антагонист)
     .desc = { ent-MindRoleGhostRoleTeamAntagonist.desc }
+<<<<<<< HEAD
 ent-MindRoleSiliconBrain = Роль мозг киборга
+=======
+ent-MindRoleSiliconBrain = Роль мозг борга
+>>>>>>> goob
     .desc = { ent-BaseMindRole.desc }
 ent-MindRoleJob = Роль работа
     .desc = { ent-BaseMindRole.desc }
@@ -44,8 +48,11 @@ ent-MindRoleHeadRevolutionary = Роль глава революции
     .desc = { ent-BaseMindRoleAntag.desc }
 ent-MindRoleRevolutionary = Роль революционер
     .desc = { ent-MindRoleHeadRevolutionary.desc }
+<<<<<<< HEAD
 ent-MindRoleSurvivor = Роль выживший
     .desc = { ent-BaseMindRoleAntag.desc }
+=======
+>>>>>>> goob
 ent-MindRoleThief = Роль вор
     .desc = { ent-BaseMindRoleAntag.desc }
 ent-MindRoleTraitor = Роль предатель
@@ -54,8 +61,11 @@ ent-MindRoleTraitorReinforcement = Роль подкрепление Синди�
     .desc = { ent-MindRoleTraitor.desc }
 ent-MindRoleTraitorSleeper = Роль спящий агент
     .desc = { ent-MindRoleTraitor.desc }
+<<<<<<< HEAD
 ent-MindRoleWizard = Роль призрак
     .desc = { ent-BaseMindRoleAntag.desc }
+=======
+>>>>>>> goob
 ent-MindRoleInitialInfected = Роль нулевой пациент
     .desc = { ent-BaseMindRoleAntag.desc }
 ent-MindRoleZombie = Роль зомби

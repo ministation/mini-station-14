@@ -22,6 +22,13 @@
       "directions": 4
     },
     {
+<<<<<<< HEAD
+=======
+      "name": "equipped-HELMET-vox",
+      "directions": 4
+    },
+    {
+>>>>>>> goob
       "name": "reinforced1-equipped-OUTERCLOTHING",
       "directions": 4
     },
@@ -33,6 +40,13 @@
       "directions": 4
     },
     {
+<<<<<<< HEAD
+=======
+      "name": "reinforced1-equipped-HELMET-vox",
+      "directions": 4
+    },
+    {
+>>>>>>> goob
       "name": "reinforced1-icon_head"
     },
     {
@@ -47,6 +61,13 @@
       "directions": 4
     },
     {
+<<<<<<< HEAD
+=======
+      "name": "reinforced2-equipped-HELMET-vox",
+      "directions": 4
+    },
+    {
+>>>>>>> goob
       "name": "reinforced2-icon_head"
     },
     {
@@ -61,7 +82,31 @@
       "directions": 4
     },
     {
+<<<<<<< HEAD
       "name": "reinforced3-icon_head"
+=======
+      "name": "reinforced3-equipped-HELMET-vox",
+      "directions": 4
+    },
+    {
+      "name": "reinforced3-icon_head"
+    },
+	{
+      "name": "equipped-OUTERCLOTHING-vox",
+      "directions": 4
+    },
+    {
+      "name": "reinforced1-equipped-OUTERCLOTHING-vox",
+      "directions": 4
+    },
+	{
+      "name": "reinforced2-equipped-OUTERCLOTHING-vox",
+      "directions": 4
+    },
+	{
+      "name": "reinforced3-equipped-OUTERCLOTHING-vox",
+      "directions": 4
+>>>>>>> goob
     }
   ]
 }

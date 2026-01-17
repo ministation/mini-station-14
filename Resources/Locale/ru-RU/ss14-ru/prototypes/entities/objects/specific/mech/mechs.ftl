@@ -16,7 +16,11 @@ ent-MechHamtrBattery = { ent-MechHamtr }
     .suffix = Батарея
     .desc = { ent-MechHamtr.desc }
 ent-MechVim = ВИМ
+<<<<<<< HEAD
     .desc = Миниатюрный экзокостюм компании Nanotrasen, разработанный для того, чтобы позволить незаменимым питомцам станции прожить немного дольше.
+=======
+    .desc = Миниатюрный экзокостюм компании NanoTrasen, разработанный для того, чтобы позволить незаменимым питомцам станции прожить немного дольше.
+>>>>>>> goob
 ent-MechVimBattery = { ent-MechVim }
     .suffix = Батарея
     .desc = { ent-MechVim.desc }

@@ -15,6 +15,11 @@ ent-EnergyDaggerBox = футляр энергокинжала
     .suffix = Энергокинжал
 ent-EnergyCutlass = абордажная энергосабля
     .desc = Экзотическое энергетическое оружие.
+<<<<<<< HEAD
+=======
+ent-EnergySwordDoubleBase = double-bladed energy sword
+    .desc = Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
+>>>>>>> goob
 # Corvax-HiddenDesc-Start
 ent-EnergySwordDouble = игрушечный двухклинковый меч
     .desc = Новый двойной пластиковый меч от Sandy-Cat! В два раза больше эпика и громких звуков!
@@ -23,8 +28,15 @@ ent-EnergySwordDouble = игрушечный двухклинковый меч
 ent-HyperEutacticBlade = гиперэвтектический клинок
     .desc = Сверхмассивное оружие, способное разорвать на части саму ткань пространства и времени, гиперэвтектический клинок динамически выковывает гиперэвтектическую кристаллическую наноструктуру, способную проходить сквозь большинство известных форм материи, как горячий нож сквозь масло.
 ent-CyborgEnergySwordDouble = { ent-EnergySwordDouble }
+<<<<<<< HEAD
     .desc = Стажеры из командования Синдиката решили, что одного клинка на энергетическом мече недостаточно. Специальная разработка для киборгов Синдиката.
     .suffix = Одноручное, Для боргов
 ent-EnergyDaggerLoudBlue = { ent-EnergyDaggerLoud }
     .suffix = blue
+=======
+    .desc = Стажеры из командования Синдиката решили, что одного клинка на энергетическом мече недостаточно. Специальная разработка для боргов Синдиката.
+    .suffix = Одноручное, Для боргов
+ent-EnergyDaggerLoudBlue = { ent-EnergyDaggerLoud }
+    .suffix = Синий
+>>>>>>> goob
     .desc = { ent-EnergyDaggerLoud.desc }

@@ -16,3 +16,9 @@ ent-GyroscopeUnanchored = { ent-Gyroscope }
 ent-DebugGyroscope = { ent-BaseThruster }
     .suffix = DEBUG
     .desc = { ent-BaseThruster.desc }
+<<<<<<< HEAD
+=======
+ent-ThrusterShuttleEvac = { ent-BaseThruster }
+    .desc = { ent-BaseThruster.desc }
+    .suffix = Эвакуация, Неоткрепляемый
+>>>>>>> goob

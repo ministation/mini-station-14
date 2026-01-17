@@ -1,6 +1,16 @@
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Threading.Tasks;
 using Content.Shared.Procedural;
 using Content.Shared.Procedural.PostGeneration;
+<<<<<<< HEAD
+=======
+using Content.Shared.Storage;
+>>>>>>> goob
 using Robust.Shared.Random;
 
 namespace Content.Server.Procedural.DungeonJob;
@@ -19,7 +29,11 @@ public sealed partial class DungeonJob
             if (reservedTiles.Contains(tile))
                 continue;
 
+<<<<<<< HEAD
             var blocked = _anchorable.TileFree((_gridUid, _grid), tile, DungeonSystem.CollisionLayer, DungeonSystem.CollisionMask);
+=======
+            var blocked = _anchorable.TileFree(_grid, tile, DungeonSystem.CollisionLayer, DungeonSystem.CollisionMask);
+>>>>>>> goob
 
             if (blocked)
                 continue;

@@ -1,5 +1,10 @@
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+>>>>>>> goob
 // SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -15,7 +20,11 @@ namespace Content.Server._DV.CosmicCult.Components;
 public sealed partial class CleanseOnUseComponent : Component
 {
     [DataField]
+<<<<<<< HEAD
     public TimeSpan UseTime = TimeSpan.FromSeconds(10);
+=======
+    public TimeSpan UseTime = TimeSpan.FromSeconds(6);
+>>>>>>> goob
 
     [DataField]
     public SoundSpecifier SizzleSound = new SoundPathSpecifier("/Audio/Effects/lightburn.ogg");

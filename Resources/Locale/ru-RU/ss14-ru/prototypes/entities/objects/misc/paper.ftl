@@ -16,8 +16,13 @@ ent-PaperNanoTaskItem = распечатка НаноДела
     .desc = Распечатка НаноДела. Можно вставить в КПК, чтобы добавить в свои дела.
 ent-PaperCargoBountyManifest = этикетка запроса
     .desc = Бумажная этикетка, обозначающая, что ящик содержит нужный товар. Продав ящик с такой этикеткой, вы получите награду.
+<<<<<<< HEAD
 ent-PaperSalvageJobLabel = salvage job shipment label
     .desc = A paper label designating a crate as containing a shipment to fulfill a salvage job. Selling a crate with this will fulfill the job.
+=======
+ent-PaperSalvageJobLabel = этикетка поставки утилизаторской работы
+    .desc = Бумажная этикетка, обозначающая, что ящик содержит груз для выполнения утилизаторской работы. Продав ящик с такой этикеткой, вы выполните работу.
+>>>>>>> goob
 ent-PaperCNCSheet = лист персонажа
     .desc = Лист для вашего персонажа игры Карпы и Крипты.
 ent-PaperWritten = { ent-Paper }
@@ -34,4 +39,7 @@ ent-AllTraitorCodesPaper = реестр кодовых слов Синдикат
     .suffix = Адмемы
 ent-Envelope = конверт
     .desc = Небольшой конверт для защиты от посторонних глаз ваших конфиденциальных документов.
+<<<<<<< HEAD
 ent-TapeRecorderTranscript = расшифровка записи
+=======
+>>>>>>> goob

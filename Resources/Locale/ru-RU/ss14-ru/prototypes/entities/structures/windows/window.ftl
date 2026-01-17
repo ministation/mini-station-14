@@ -2,7 +2,15 @@ ent-Window = окно
     .desc = Смотри не заляпай.
 ent-TintedWindow = матовое окно
     .desc = { ent-Window.desc }
+<<<<<<< HEAD
 ent-WindowRCDResistant = { ent-Window }
+=======
+ent-TintedWindowTransparent = { ent-TintedWindow }
+    .suffix = Прозрачное
+    .desc = { ent-TintedWindow.desc }
+ent-WindowRCDResistant = { ent-Window }
+    .suffix = РСУ защита
+>>>>>>> goob
     .desc = { ent-Window.desc }
 ent-WindowDirectional = направленное окно
     .desc = Смотри не заляпай.

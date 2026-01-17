@@ -1,3 +1,25 @@
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2022 Myctai <108953437+Myctai@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <milonpl.git@proton.me>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server._CorvaxGoob.TTS;
 using Content.Server.Administration;
 using Content.Server.Chat.Systems;
 using Content.Shared.Administration;
@@ -12,6 +34,7 @@ namespace Content.Server.Announcements;
 public sealed class AnnounceCommand : LocalizedEntityCommands
 {
     [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly TTSSystem _tts = default!; // CorvaxGoob-TTS
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IResourceManager _res = default!;
 
@@ -26,7 +49,7 @@ public sealed class AnnounceCommand : LocalizedEntityCommands
             case 0:
                 shell.WriteError(Loc.GetString("shell-need-minimum-one-argument"));
                 return;
-            case > 4:
+            case > 5: // CorvaxGoob-TTS Edit from 4 to 5
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;
         }
@@ -59,6 +82,15 @@ public sealed class AnnounceCommand : LocalizedEntityCommands
             sound = new SoundPathSpecifier(args[3]);
 
         _chat.DispatchGlobalAnnouncement(message, sender, true, sound, color);
+
+        // CorvaxGoob-TTS-Start
+        if (args.Length >= 5)
+        {
+            _tts.SendTTSAdminAnnouncement(message, args[4], args[3]);
+
+        }
+         // CorvaxGoob-TTS-Start
+
         shell.WriteLine(Loc.GetString("shell-command-success"));
     }
 
@@ -73,6 +105,7 @@ public sealed class AnnounceCommand : LocalizedEntityCommands
                 CompletionHelper.AudioFilePath(args[3], _proto, _res),
                 Loc.GetString("cmd-announce-arg-sound")
             ),
+            5 => CompletionResult.FromHint(Loc.GetString("cmd-announce-arg-voice")), // CorvaxGoob-TTS
             _ => CompletionResult.Empty
         };
     }

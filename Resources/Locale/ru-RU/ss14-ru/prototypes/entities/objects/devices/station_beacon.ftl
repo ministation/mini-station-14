@@ -52,11 +52,33 @@ ent-DefaultStationBeaconCourtroom = { ent-DefaultStationBeaconSecurity }
     .suffix = Зал суда
     .desc = { ent-DefaultStationBeaconSecurity.desc }
 ent-DefaultStationBeaconLawOffice = { ent-DefaultStationBeaconSecurity }
+<<<<<<< HEAD
     .suffix = Офис АВД
+=======
+    .suffix = Офис адвоката
+>>>>>>> goob
     .desc = { ent-DefaultStationBeaconSecurity.desc }
 ent-DefaultStationBeaconSecurityCheckpoint = { ent-DefaultStationBeaconSecurity }
     .suffix = КПП СБ
     .desc = { ent-DefaultStationBeaconSecurity.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconSecurityGorlex = { ent-DefaultStationBeaconSecurity }
+    .suffix = Gorlex казармы
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+ent-DefaultStationBeaconSecurityGorlexOffice = { ent-DefaultStationBeaconSecurity }
+    .suffix = Gorlex офис
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+ent-DefaultStationBeaconSecurityGorlexBreak = { ent-DefaultStationBeaconSecurity }
+    .suffix = Gorlex комната отдыха
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+ent-DefaultStationBeaconSecurityGorlexHos = { ent-DefaultStationBeaconSecurity }
+    .suffix = Gorlex командование
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+ent-DefaultStationBeaconSecurityCybersunLegal = { ent-DefaultStationBeaconSecurity }
+    .suffix = Cybersun юридический отдел
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconMedical = { ent-DefaultStationBeacon }
     .suffix = Медицинский отдел
     .desc = { ent-DefaultStationBeacon.desc }
@@ -84,11 +106,27 @@ ent-DefaultStationBeaconPsychology = { ent-DefaultStationBeaconMedical }
 ent-DefaultStationBeaconClinic = { ent-DefaultStationBeaconMedical }
     .suffix = Клиника
     .desc = { ent-DefaultStationBeaconMedical.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconParamedic = { ent-DefaultStationBeaconMedical }
+    .suffix = Парамедик
+    .desc = { ent-DefaultStationBeaconMedical.desc }
+ent-DefaultStationBeaconInterdyne = { ent-DefaultStationBeaconMedical }
+    .suffix = Interdyne снабжение
+    .desc = { ent-DefaultStationBeaconMedical.desc }
+ent-DefaultStationBeaconInterdyneFront = { ent-DefaultStationBeaconMedical }
+    .suffix = Interdyne приёмная
+    .desc = { ent-DefaultStationBeaconMedical.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconScience = { ent-DefaultStationBeacon }
     .suffix = Научный отдел
     .desc = { ent-DefaultStationBeacon.desc }
 ent-DefaultStationBeaconRND = { ent-DefaultStationBeaconScience }
+<<<<<<< HEAD
     .suffix = РНД
+=======
+    .suffix = НИО
+>>>>>>> goob
     .desc = { ent-DefaultStationBeaconScience.desc }
 ent-DefaultStationBeaconServerRoom = { ent-DefaultStationBeaconScience }
     .suffix = Сервер исследований
@@ -105,6 +143,12 @@ ent-DefaultStationBeaconArtifactLab = { ent-DefaultStationBeaconScience }
 ent-DefaultStationBeaconAnomalyGenerator = { ent-DefaultStationBeaconScience }
     .suffix = Генератор аномалий
     .desc = { ent-DefaultStationBeaconScience.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconCybersunRD = { ent-DefaultStationBeaconScience }
+    .suffix = Cybersun R&D
+    .desc = { ent-DefaultStationBeaconScience.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconSupply = { ent-DefaultStationBeacon }
     .suffix = Снабжение
     .desc = { ent-DefaultStationBeacon.desc }
@@ -120,6 +164,15 @@ ent-DefaultStationBeaconQMRoom = { ent-DefaultStationBeaconSupply }
 ent-DefaultStationBeaconSalvage = { ent-DefaultStationBeaconSupply }
     .suffix = Утилизаторская
     .desc = { ent-DefaultStationBeaconSupply.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconDonk = { ent-DefaultStationBeaconSupply }
+    .suffix = DONK Co. снабжение
+    .desc = { ent-DefaultStationBeaconSupply.desc }
+ent-DefaultStationBeaconDonkFront = { ent-DefaultStationBeaconSupply }
+    .suffix = DONK Co. приёмная
+    .desc = { ent-DefaultStationBeaconSupply.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconEngineering = { ent-DefaultStationBeacon }
     .suffix = Инженерный отдел
     .desc = { ent-DefaultStationBeacon.desc }
@@ -132,6 +185,33 @@ ent-DefaultStationBeaconAME = { ent-DefaultStationBeaconEngineering }
 ent-DefaultStationBeaconSolars = { ent-DefaultStationBeaconEngineering }
     .suffix = Солнечные панели
     .desc = { ent-DefaultStationBeaconEngineering.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconSolarsN = { ent-DefaultStationBeaconEngineering }
+    .suffix = Солнечные панели, Север
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsNE = { ent-DefaultStationBeaconEngineering }
+    .suffix = Солнечные панели, Северо-восток
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsE = { ent-DefaultStationBeaconEngineering }
+    .suffix = Солнечные панели, Восток
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsSE = { ent-DefaultStationBeaconEngineering }
+    .suffix = Солнечные панели, Юго-восток
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsS = { ent-DefaultStationBeaconEngineering }
+    .suffix = Солнечные панели, Юг
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsSW = { ent-DefaultStationBeaconEngineering }
+    .suffix = Солнечные панели, Юго-запад
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsW = { ent-DefaultStationBeaconEngineering }
+    .suffix = Солнечные панели, Запад
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsNW = { ent-DefaultStationBeaconEngineering }
+    .suffix = Солнечные панели, Северо-запад
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconGravGen = { ent-DefaultStationBeaconEngineering }
     .suffix = Генератор гравитации
     .desc = { ent-DefaultStationBeaconEngineering.desc }
@@ -156,6 +236,12 @@ ent-DefaultStationBeaconTEG = { ent-DefaultStationBeaconEngineering }
 ent-DefaultStationBeaconTechVault = { ent-DefaultStationBeaconEngineering }
     .suffix = Технологическое хранилище
     .desc = { ent-DefaultStationBeaconEngineering.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconShipyard = { ent-DefaultStationBeaconEngineering }
+    .suffix = Shipyard
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconService = { ent-DefaultStationBeacon }
     .suffix = Сервис
     .desc = { ent-DefaultStationBeacon.desc }
@@ -199,7 +285,11 @@ ent-DefaultStationBeaconEVAStorage = { ent-DefaultStationBeacon }
     .suffix = Хранилище ВКД
     .desc = { ent-DefaultStationBeacon.desc }
 ent-DefaultStationBeaconChapel = { ent-DefaultStationBeacon }
+<<<<<<< HEAD
     .suffix = Церковь
+=======
+    .suffix = Храм
+>>>>>>> goob
     .desc = { ent-DefaultStationBeacon.desc }
 ent-DefaultStationBeaconLibrary = { ent-DefaultStationBeacon }
     .suffix = Библиотека
@@ -225,6 +315,7 @@ ent-DefaultStationBeaconCryosleep = { ent-DefaultStationBeacon }
 ent-DefaultStationBeaconEscapePod = { ent-DefaultStationBeacon }
     .suffix = Спасательная капсула
     .desc = { ent-DefaultStationBeacon.desc }
+<<<<<<< HEAD
 ent-DefaultStationBeaconVox = { ent-DefaultStationBeacon }
     .suffix = Вокс
     .desc = { ent-DefaultStationBeacon.desc }
@@ -243,3 +334,32 @@ ent-DefaultStationBeaconCentCommThunderdome = { ent-DefaultStationBeaconGhost }
 ent-DefaultStationBeaconCentCommERT = { ent-DefaultStationBeaconGhost }
     .suffix = CentComm ERT
     .desc = { ent-DefaultStationBeaconGhost.desc }
+=======
+ent-DefaultStationBeaconEscapePodN = { ent-DefaultStationBeacon }
+    .suffix = Спасательная капсула, Север
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodNE = { ent-DefaultStationBeacon }
+    .suffix = Спасательная капсула, Северо-запад
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodE = { ent-DefaultStationBeacon }
+    .suffix = Спасательная капсула, Запад
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodSE = { ent-DefaultStationBeacon }
+    .suffix = Спасательная капсула, Юго-запад
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodS = { ent-DefaultStationBeacon }
+    .suffix = Спасательная капсула, Юг
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodSW = { ent-DefaultStationBeacon }
+    .suffix = Спасательная капсула, Юго-восток
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodW = { ent-DefaultStationBeacon }
+    .suffix = Спасательная капсула, Восток
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodNW = { ent-DefaultStationBeacon }
+    .suffix = Спасательная капсула, Северо-восток
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconVox = { ent-DefaultStationBeacon }
+    .suffix = Вокс
+    .desc = { ent-DefaultStationBeacon.desc }
+>>>>>>> goob

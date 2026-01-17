@@ -41,3 +41,7 @@ names-military-last-dataset-40 = Чау
 names-military-last-dataset-41 = Шедар
 names-military-last-dataset-42 = Шаула
 names-military-last-dataset-43 = Электра
+<<<<<<< HEAD
+=======
+names-military-last-dataset-44 = Буря
+>>>>>>> goob

@@ -66,7 +66,11 @@ holopad-science-artifact = Научный - Ксеноархеология
 holopad-science-artifact-north = Научный - Ксеноархеология Север
 holopad-science-artifact-south = Научный - Ксеноархеология Юг
 holopad-science-robotics = Научный - Робототехника
+<<<<<<< HEAD
 holopad-science-rnd = Научный - РНД
+=======
+holopad-science-rnd = Научный - НИО
+>>>>>>> goob
 holopad-science-front = Научный - Приёмная
 holopad-science-breakroom = Научный - Комната отдыха
 # Medical
@@ -109,7 +113,11 @@ holopad-security-breakroom = СБ - Комната отдыха
 holopad-security-detective = СБ - Детектив
 holopad-security-perma = СБ - Перма
 holopad-security-courtroom = СБ - Зал суда
+<<<<<<< HEAD
 holopad-security-lawyer = СБ - АВД
+=======
+holopad-security-lawyer = СБ - Адвокат
+>>>>>>> goob
 holopad-security-armory = СБ - Оружейная
 holopad-security-locker-room = СБ - Раздевалка
 holopad-security-brig-med = СБ - Бригмед
@@ -120,7 +128,11 @@ holopad-service-janitor = Сервис - Уборщик
 holopad-service-bar = Сервис - Бар
 holopad-service-kitchen = Сервис - Кухня
 holopad-service-botany = Сервис - Гидропоника
+<<<<<<< HEAD
 holopad-service-chapel = Сервис - Церковь
+=======
+holopad-service-chapel = Сервис - Храм
+>>>>>>> goob
 holopad-service-library = Сервис - Библиотека
 holopad-service-newsroom = Сервис - Новостная
 holopad-service-zookeeper = Сервис - Зоотехник

@@ -19,7 +19,11 @@ ent-SheetRGlass1 = бронестекло
     .suffix = Один
     .desc = { ent-SheetRGlass.desc }
 ent-SheetRGlassLingering0 = { ent-SheetRGlass }
+<<<<<<< HEAD
     .suffix = Lingering, 0
+=======
+    .suffix = Не исчезают закончившись, 0
+>>>>>>> goob
     .desc = { ent-SheetRGlass.desc }
 ent-SheetPGlass = плазменное стекло
     .suffix = Полный
@@ -34,7 +38,11 @@ ent-SheetRPGlass1 = плазменное бронестекло
     .suffix = Один
     .desc = { ent-SheetRPGlass.desc }
 ent-SheetRPGlassLingering0 = { ent-SheetRPGlass }
+<<<<<<< HEAD
     .suffix = Lingering, 0
+=======
+    .suffix = Не исчезают закончившись, 0
+>>>>>>> goob
     .desc = { ent-SheetRPGlass.desc }
 ent-SheetUGlass = урановое стекло
     .desc = Лист уранового стекла.

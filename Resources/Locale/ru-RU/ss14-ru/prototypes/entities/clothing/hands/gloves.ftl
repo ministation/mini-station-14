@@ -49,6 +49,7 @@ ent-ClothingHandsGlovesForensic = криминалистические перч�
     .desc = Не оставляют ни волокна, ни отпечатки пальцев. Если вы работаете без них, то вы — УЖАСНЫЙ ДЕТЕКТИВ.
 ent-ClothingHandsGlovesJanitor = резиновые перчатки
     .desc = Высококачественные резиновые перчатки, скрипящие от желания сделать уборку!
+<<<<<<< HEAD
 ent-ClothingHandsKnuckleDusters = knuckle dusters
     .desc = Cold plasteel knuckle dusters, makes your punches hit much harder.
 ent-ClothingHandsKnuckleDustersBrass = brass knuckle dusters
@@ -61,3 +62,5 @@ ent-ClothingHandsKnuckleDustersStun = stun knuckle dusters
     .desc = A pair of knuckle dusters combined with the tech of a stun baton. This makes beating tiders a whole lot easier.
 ent-ClothingHandsKnuckleBoneCrushers = bone crushers
     .desc = Blessed by the Gods to break all those who don't obey.
+=======
+>>>>>>> goob

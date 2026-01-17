@@ -4,8 +4,11 @@ ent-RespawnDeadRule = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-SubGamemodesRule = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
+<<<<<<< HEAD
 ent-SubGamemodesRuleNoWizard = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
+=======
+>>>>>>> goob
 ent-DummyNonAntagChance = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-DeathMatch31 = { ent-BaseGameRule }
@@ -18,6 +21,11 @@ ent-BaseNukeopsRule = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-Nukeops = { ent-BaseNukeopsRule }
     .desc = { ent-BaseNukeopsRule.desc }
+<<<<<<< HEAD
+=======
+ent-BaseTraitorRuleNoObjectives = { ent-BaseGameRule }
+    .desc = { ent-BaseGameRule.desc }
+>>>>>>> goob
 ent-BaseTraitorRule = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-Traitor = { ent-BaseTraitorRule }
@@ -30,12 +38,21 @@ ent-Sandbox = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-Secret = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
+<<<<<<< HEAD
 ent-BaseWizardRule = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-Wizard = { ent-BaseWizardRule }
     .desc = { ent-BaseWizardRule.desc }
 ent-Zombie = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
+=======
+ent-AntagStationEventScheduler = { ent-BaseGameRule }
+    .desc = { ent-BaseGameRule.desc }
+ent-Zombie = { ent-BaseGameRule }
+    .desc = { ent-BaseGameRule.desc }
+ent-BasicStationEventSchedulerNoAntag = { ent-BaseGameRule }
+    .desc = { ent-BaseGameRule.desc }
+>>>>>>> goob
 ent-DummyNonAntag = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-BasicStationEventScheduler = { ent-BaseGameRule }

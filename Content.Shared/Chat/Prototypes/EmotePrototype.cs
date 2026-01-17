@@ -1,3 +1,18 @@
+// SPDX-FileCopyrightText: 2023 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared._CorvaxGoob.Events;
 using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -68,11 +83,25 @@ public sealed partial class EmotePrototype : IPrototype
     /// </summary>
     [DataField]
     public HashSet<string> ChatTriggers = new();
+<<<<<<< HEAD
 	
 	// Corvax-Next-AnimateEmote-Start
     [DataField]
     public object? Event = null;
 	// Corvax-Next-AnimateEmote-End
+=======
+
+    // goob edit - animations
+    [DataField]
+    public object? Event = null;
+
+    // CorvaxGoob-PrototypedAnimations
+    /// <summary>
+    ///     Alternative way to execute an animation with emote via prototyped animations system.
+    /// </summary>
+    [DataField]
+    public List<BaseTargetEvent>? TargetEvents;
+>>>>>>> goob
 }
 
 /// <summary>
@@ -86,5 +115,6 @@ public enum EmoteCategory : byte
     Invalid = 0,
     Vocal = 1 << 0,
     Hands = 1 << 1,
+    Farts = 1 << 2, // Goobstation - Fart Emotes
     General = byte.MaxValue
 }

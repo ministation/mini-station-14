@@ -6,9 +6,14 @@ ent-PinpointerSyndicateNuclear = syndicate pinpointer
     .desc = Produced specifically for nuclear operative missions, get that disk!
 ent-PinpointerUniversal = universal pinpointer
     .desc = A handheld tracking device that locks onto any physical entity while off. Keep upright to retain accuracy.
+<<<<<<< HEAD
 ent-PinpointerStation = station pinpointer
     .desc = A handheld tracking device that leads to the direction of any nearby station.
     .suffix = Station
+=======
+ent-PinpointerStation = research server pinpointer
+    .desc = A handheld tracking device that leads to the direction of any nearby research server.
+>>>>>>> goob
 ent-PinpointerMothership = core pinpointer
     .desc = A handheld tracking device that leads to the direction of the mothership core.
     .suffix = Mothership

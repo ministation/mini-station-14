@@ -1,6 +1,12 @@
 ent-PartGingerbread = gingerbread body part
     .desc = { ent-BaseItem.desc }
+<<<<<<< HEAD
 ent-TorsoGingerbread = gingerbread torso
+=======
+ent-ChestGingerbread = gingerbread chest
+    .desc = { ent-PartGingerbread.desc }
+ent-GroinGingerbread = gingerbread groin
+>>>>>>> goob
     .desc = { ent-PartGingerbread.desc }
 ent-HeadGingerbread = gingerbread head
     .desc = { ent-PartGingerbread.desc }

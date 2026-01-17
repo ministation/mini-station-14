@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 ent-ClothingOuterHardsuitAtmos = atmos hardsuit
     .desc = A special suit that protects against hazardous, low pressure environments. Has thermal shielding.
 ent-ClothingOuterHardsuitEngineering = engineering hardsuit
     .desc = A special suit that protects against hazardous, low pressure environments. Has radiation shielding.
+=======
+ent-ClothingOuterHardsuitAtmos = atmospherics hardsuit
+    .desc = A special suit that protects against hazardous, low pressure environments. Has thermal shielding.
+ent-ClothingOuterHardsuitEngineering = engineering hardsuit
+    .desc = A special hardsuit that protects against hazardous, low pressure environments. Has radiation shielding.
+>>>>>>> goob
 ent-ClothingOuterHardsuitSpatio = spationaut hardsuit
     .desc = A lightweight hardsuit designed for industrial EVA in zero gravity.
 ent-ClothingOuterHardsuitSalvage = mining hardsuit
@@ -16,8 +23,13 @@ ent-ClothingOuterHardsuitBrigmedic = brigmedic hardsuit
     .desc = Special hardsuit of the guardian angel of the brig. It is the medical version of the security hardsuit.
 ent-ClothingOuterHardsuitWarden = warden's hardsuit
     .desc = A specialized riot suit geared to combat low pressure environments.
+<<<<<<< HEAD
 ent-ClothingOuterHardsuitCap = captain's armored spacesuit
     .desc = A formal armored spacesuit, made for the station's captain.
+=======
+ent-ClothingOuterHardsuitCap = captain's parade hardsuit
+    .desc = A formal and slightly armored hardsuit, made for the station's captain.
+>>>>>>> goob
 ent-ClothingOuterHardsuitEngineeringWhite = chief engineer's hardsuit
     .desc = A special hardsuit that protects against hazardous, low pressure environments, made for the chief engineer of the station.
 ent-ClothingOuterHardsuitMedical = chief medical officer's hardsuit
@@ -25,7 +37,11 @@ ent-ClothingOuterHardsuitMedical = chief medical officer's hardsuit
 ent-ClothingOuterHardsuitRd = experimental research hardsuit
     .desc = A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
 ent-ClothingOuterHardsuitSecurityRed = head of security's hardsuit
+<<<<<<< HEAD
     .desc = A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
+=======
+    .desc = Lighter and more protective than the standard security hardsuit, but not by much.
+>>>>>>> goob
 ent-ClothingOuterHardsuitLuxury = luxury mining hardsuit
     .desc = A refurbished mining hardsuit, fashioned after the Quartermaster's colors. Graphene lining provides less protection, but is much easier to move.
 ent-ClothingOuterHardsuitSyndie = blood-red hardsuit
@@ -33,11 +49,19 @@ ent-ClothingOuterHardsuitSyndie = blood-red hardsuit
 ent-ClothingOuterHardsuitSyndieMedic = blood-red medic hardsuit
     .desc = A heavily armored and agile advanced hardsuit specifically designed for field medic operations.
 ent-ClothingOuterHardsuitSyndieElite = syndicate elite hardsuit
+<<<<<<< HEAD
     .desc = An elite version of the blood-red hardsuit, with improved radiation resistance and fireproofing. Property of Gorlex Marauders.
 ent-ClothingOuterHardsuitSyndieCommander = syndicate commander hardsuit
     .desc = A bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
 ent-ClothingOuterHardsuitJuggernaut = cybersun juggernaut suit
     .desc = A suit made by the cutting edge R&D department at cybersun to be hyper resilient.
+=======
+    .desc = An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
+ent-ClothingOuterHardsuitSyndieCommander = syndicate commander hardsuit
+    .desc = A bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
+ent-ClothingOuterHardsuitJuggernaut = cybersun juggernaut suit
+    .desc = A suit made by the cutting edge R&D department at Cybersun to be hyper resilient.
+>>>>>>> goob
 ent-ClothingOuterHardsuitWizard = wizard hardsuit
     .desc = A bizarre gem-encrusted suit that radiates magical energies.
 ent-ClothingOuterHardsuitLing = organic space suit
@@ -59,8 +83,13 @@ ent-ClothingOuterHardsuitERTSecurity = ERT security's hardsuit
     .desc = A protective hardsuit worn by the security officers of an emergency response team.
 ent-ClothingOuterHardsuitERTJanitor = ERT janitor's hardsuit
     .desc = A protective hardsuit worn by the janitors of an emergency response team.
+<<<<<<< HEAD
 ent-ClothingOuterHardsuitDeathsquad = death squad hardsuit
     .desc = An advanced hardsuit favored by commandos for use in special operations.
+=======
+ent-ClothingOuterHardsuitDeathsquad = PI-52 "Lucifer" hardsuit
+    .desc = A famous hardsuit used by Central Command's death-squadrons, often shown in movies by Nanotrasen intended to increase recruitment.
+>>>>>>> goob
 ent-ClothingOuterHardsuitCBURN = CBURN exosuit
     .desc = A lightweight yet strong exosuit used for special cleanup operations.
 ent-ClothingOuterHardsuitClown = clown hardsuit

@@ -59,10 +59,17 @@ ent-AirlockAssemblyMedicalGlass = { ent-AirlockAssembly }
     .suffix = Медицинский, Стеклянный
     .desc = { ent-AirlockAssembly.desc }
 ent-AirlockAssemblySalvage = { ent-AirlockAssembly }
+<<<<<<< HEAD
     .suffix = Salvage
     .desc = { ent-AirlockAssembly.desc }
 ent-AirlockAssemblySalvageGlass = { ent-AirlockAssembly }
     .suffix = Salvage, Glass
+=======
+    .suffix = Утилизаторы
+    .desc = { ent-AirlockAssembly.desc }
+ent-AirlockAssemblySalvageGlass = { ent-AirlockAssembly }
+    .suffix = Утилизаторы, Стеклянный
+>>>>>>> goob
     .desc = { ent-AirlockAssembly.desc }
 ent-AirlockAssemblyScience = { ent-AirlockAssembly }
     .suffix = Научный

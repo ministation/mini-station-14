@@ -1,1 +1,6 @@
 preload: false
+<<<<<<< HEAD
+=======
+sample:
+  filter: true
+>>>>>>> goob

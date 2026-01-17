@@ -53,5 +53,10 @@ gun-revolver-spin = Вращать барабан
 gun-revolver-spun = Барабан вращается
 gun-speedloader-empty = Спидлоадер пуст
 # GunSpreadModifier
+<<<<<<< HEAD
 examine-gun-spread-modifier-reduction = The spread has been reduced by [color=yellow]{ $percentage }%[/color].
 examine-gun-spread-modifier-increase = The spread has been increased by [color=yellow]{ $percentage }%[/color].
+=======
+examine-gun-spread-modifier-reduction = Разброс был уменьшен на [color=yellow]{ $percentage }%[/color].
+examine-gun-spread-modifier-increase = Разброс был увеличен на [color=yellow]{ $percentage }%[/color].
+>>>>>>> goob

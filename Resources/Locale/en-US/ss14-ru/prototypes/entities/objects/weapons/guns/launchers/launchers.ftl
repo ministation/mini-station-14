@@ -16,6 +16,11 @@ ent-WeaponForceGun = force gun
     .desc = Manipulates gravity around objects to fling them at high velocities.
 ent-WeaponGrapplingGun = grappling gun
     .desc = { ent-BaseItem.desc }
+<<<<<<< HEAD
+=======
+ent-WeaponLauncherSingularityBuster = singularity buster rocket launcher
+    .desc = An experimental rocket launcher designed to fire rockets capable of decomposing a singularity or tesla.
+>>>>>>> goob
 ent-WeaponTetherGunAdmin = tether gun
     .desc = Manipulates gravity around objects to fling them at high velocities.
     .suffix = Admeme

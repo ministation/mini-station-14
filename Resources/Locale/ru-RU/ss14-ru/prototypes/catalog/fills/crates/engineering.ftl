@@ -9,6 +9,10 @@ ent-CrateEngineeringCableMV = ящик кабеля СВ
 ent-CrateEngineeringCableHV = ящик кабеля ВВ
     .desc = 3 мотка высоковольтного кабеля.
 ent-CrateEngineeringFoamGrenade = ящик герметизирующих гранат
+<<<<<<< HEAD
+=======
+    .suffix = Защищённый
+>>>>>>> goob
     .desc = 5 гранат с металлопенным герметиком.
 ent-CrateEngineeringCableBulk = ящик кабеля различного вольтажа
     .desc = 2 мотка кабеля каждого типа.
@@ -23,16 +27,39 @@ ent-CrateEngineeringMiniJetpack = ящик мини-джетпаков
 ent-CrateAirlockKit = ящик компонентов шлюза
     .desc = Набор для строительства 6 воздушных шлюзов, инструменты в комплект не входят.
 ent-CrateEvaKit = набор ВКД
+<<<<<<< HEAD
     .desc = Набор, состоящий из двух престижных ВКД скафандров и шлемов.
 ent-CrateRCDAmmo = ящик зарядов РСУ
     .desc = 3 обоймы для РСУ, каждая из которых восстанавливает 5 зарядов.
 ent-CrateRCD = ящик РСУ
     .desc = Ящик, содержащий одно ручное строительное устройство.
 ent-CrateParticleDecelerators = ящик с замедлителями частиц
+=======
+    .suffix = Защищённый
+    .desc = Набор, состоящий из двух престижных ВКД скафандров и шлемов.
+ent-CrateRCDAmmo = ящик зарядов РСУ
+    .suffix = Защищённый
+    .desc = 3 обоймы для РСУ, каждая из которых восстанавливает 5 зарядов.
+ent-CrateRCD = ящик РСУ
+    .suffix = Защищённый
+    .desc = Ящик, содержащий одно ручное строительное устройство.
+ent-CrateParticleDecelerators = ящик с замедлителями частиц
+    .suffix = Защищённый
+>>>>>>> goob
     .desc = Ящик, содержащий три замедлителя частиц.
 ent-CrateEngineeringSpaceHeater = ящик с термостатом
     .desc = Содержит термостат для климат-контроля.
 ent-CrateTechBoardRandom = излишки плат
     .desc = Откуда-то взятые излишки плат.
+<<<<<<< HEAD
 ent-CrateAirGrenade = air grenade crate
     .desc = A crate containing 3 air grenades.
+=======
+ent-CrateRPD = ящик РФУ
+    .suffix = Защищённый
+    .desc = Ящик, содержащий РФУ.
+ent-CrateEngineeringFirefighterBackpackTank = ящик пожарного
+    .desc = Содержит водяной бак пожарного рюкзака.
+ent-CrateAirGrenade = ящик воздушных гранат
+    .desc = Ящик, содержащий 3 воздушные гранаты.
+>>>>>>> goob

@@ -1,7 +1,13 @@
 ent-Cane = cane
+<<<<<<< HEAD
     .desc = A wooden cane.
 ent-CaneBlade = cane blade
     .desc = A sharp blade with a cane shaped hilt.
+=======
+    .desc = A standard wooden cane. Can help disabled people move easier.
+ent-CaneBlade = cane blade
+    .desc = A sharp blade with a cane shaped hilt. Enchanted with fire powers by a fellow book lover.
+>>>>>>> goob
 ent-CaneSheath = { ent-Cane }
     .suffix = Empty
     .desc = { ent-Cane.desc }

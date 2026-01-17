@@ -11,7 +11,14 @@
             "name": "tail"
         },
         {
+<<<<<<< HEAD
             "name": "torso"
+=======
+            "name": "chest"
+        },
+        {
+            "name": "groin"
+>>>>>>> goob
         }
     ]
 }

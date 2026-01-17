@@ -1,13 +1,40 @@
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 pointer-to-null <91910481+pointer-to-null@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Remuchi <72476615+Remuchi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Alert;
 using Content.Shared.Rejuvenate;
+using Content.Shared.StatusEffectNew;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
-using Robust.Shared.Utility;
 
 namespace Content.Shared.StatusEffect
 {
+    [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
     public sealed class StatusEffectsSystem : EntitySystem
     {
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
@@ -95,6 +122,34 @@ namespace Content.Shared.StatusEffect
         }
 
         /// <summary>
+        ///     Goobstation/EE
+        ///     Tries to add a status effect to an entity, with a given component added as well.
+        /// </summary>
+        /// <param name="uid">The entity to add the effect to.</param>
+        /// <param name="key">The status effect ID to add.</param>
+        /// <param name="time">How long the effect should last for.</param>
+        /// <param name="refresh">The status effect cooldown should be refreshed (true) or accumulated (false).</param>
+        /// <param name="component">The component of status effect itself.</param>
+        /// <param name="status">The status effects component to change, if you already have it.</param>
+        /// <returns>False if the effect could not be added or the component already exists, true otherwise.</returns>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.SharedStatusEffectsSystem is required")]
+        public bool TryAddStatusEffect(EntityUid uid,
+            string key,
+            TimeSpan time,
+            bool refresh,
+            Component component,
+            StatusEffectsComponent? status = null)
+        {
+            if (!Resolve(uid, ref status, false) || !TryAddStatusEffect(uid, key, time, refresh, status))
+                return false;
+
+            // If we already have this component, overwrite it, since new component could have different data
+            AddComp(uid, component, true);
+            status.ActiveEffects[key].RelevantComponent = Factory.GetComponentName(component.GetType());
+            return true;
+        }
+
+        /// <summary>
         ///     Tries to add a status effect to an entity, with a given component added as well.
         /// </summary>
         /// <param name="uid">The entity to add the effect to.</param>
@@ -104,6 +159,7 @@ namespace Content.Shared.StatusEffect
         /// <param name="status">The status effects component to change, if you already have it.</param>
         /// <returns>False if the effect could not be added or the component already exists, true otherwise.</returns>
         /// <typeparam name="T">The component type to add and remove from the entity.</typeparam>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool TryAddStatusEffect<T>(EntityUid uid, string key, TimeSpan time, bool refresh,
             StatusEffectsComponent? status = null)
             where T : IComponent, new()
@@ -117,12 +173,17 @@ namespace Content.Shared.StatusEffect
             if (HasComp<T>(uid))
                 return true;
 
+<<<<<<< HEAD
             EntityManager.AddComponent<T>(uid);
+=======
+            AddComp<T>(uid);
+>>>>>>> goob
             status.ActiveEffects[key].RelevantComponent = Factory.GetComponentName<T>();
             return true;
 
         }
 
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool TryAddStatusEffect(EntityUid uid, string key, TimeSpan time, bool refresh, string component,
             StatusEffectsComponent? status = null)
         {
@@ -132,10 +193,17 @@ namespace Content.Shared.StatusEffect
             if (TryAddStatusEffect(uid, key, time, refresh, status))
             {
                 // If they already have the comp, we just won't bother updating anything.
+<<<<<<< HEAD
                 if (!EntityManager.HasComponent(uid, Factory.GetRegistration(component).Type))
                 {
                     var newComponent = (Component) Factory.GetComponent(component);
                     EntityManager.AddComponent(uid, newComponent);
+=======
+                if (!HasComp(uid, Factory.GetRegistration(component).Type))
+                {
+                    var newComponent = (Component) Factory.GetComponent(component);
+                    AddComp(uid, newComponent);
+>>>>>>> goob
                     status.ActiveEffects[key].RelevantComponent = component;
                 }
                 return true;
@@ -162,6 +230,7 @@ namespace Content.Shared.StatusEffect
         ///     If the effect already exists, it will simply replace the cooldown with the new one given.
         ///     If you want special 'effect merging' behavior, do it your own damn self!
         /// </remarks>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool TryAddStatusEffect(EntityUid uid,
             string key,
             TimeSpan time,
@@ -255,6 +324,7 @@ namespace Content.Shared.StatusEffect
         ///     Obviously this doesn't automatically clear any effects a status effect might have.
         ///     That's up to the removed component to handle itself when it's removed.
         /// </remarks>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool TryRemoveStatusEffect(EntityUid uid, string key,
             StatusEffectsComponent? status = null, bool remComp = true)
         {
@@ -273,7 +343,7 @@ namespace Content.Shared.StatusEffect
                 && Factory.TryGetRegistration(state.RelevantComponent, out var registration))
             {
                 var type = registration.Type;
-                EntityManager.RemoveComponent(uid, type);
+                RemComp(uid, type);
             }
 
             if (proto.Alert != null)
@@ -298,6 +368,7 @@ namespace Content.Shared.StatusEffect
         /// <param name="uid">The entity to remove effects from.</param>
         /// <param name="status">The status effects component to change, if you already have it.</param>
         /// <returns>False if any status effects failed to be removed, true if they all did.</returns>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool TryRemoveAllStatusEffects(EntityUid uid,
             StatusEffectsComponent? status = null)
         {
@@ -321,6 +392,7 @@ namespace Content.Shared.StatusEffect
         /// <param name="uid">The entity to check on.</param>
         /// <param name="key">The status effect ID to check for</param>
         /// <param name="status">The status effect component, should you already have it.</param>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool HasStatusEffect(EntityUid uid, string key,
             StatusEffectsComponent? status = null)
         {
@@ -338,16 +410,22 @@ namespace Content.Shared.StatusEffect
         /// <param name="uid">The entity to check on.</param>
         /// <param name="key">The status effect ID to check for</param>
         /// <param name="status">The status effect component, should you already have it.</param>
-        public bool CanApplyEffect(EntityUid uid, string key, StatusEffectsComponent? status = null)
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
+        public bool CanApplyEffect(EntityUid uid, string key, StatusEffectsComponent? status = null, bool raiseEvent = true)
         {
             // don't log since stuff calling this prolly doesn't care if we don't actually have it
             if (!Resolve(uid, ref status, false))
                 return false;
 
-            var ev = new BeforeStatusEffectAddedEvent(key);
-            RaiseLocalEvent(uid, ref ev);
-            if (ev.Cancelled)
-                return false;
+            // Goob edit start
+            if (raiseEvent)
+            {
+                var ev = new OldBeforeStatusEffectAddedEvent(key);
+                RaiseLocalEvent(uid, ref ev);
+                if (ev.Cancelled)
+                    return false;
+            }
+            // Goob edit end
 
             if (!_prototypeManager.TryIndex<StatusEffectPrototype>(key, out var proto))
                 return false;
@@ -364,6 +442,7 @@ namespace Content.Shared.StatusEffect
         /// <param name="key">The status effect to add time to.</param>
         /// <param name="time">The amount of time to add.</param>
         /// <param name="status">The status effect component, should you already have it.</param>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool TryAddTime(EntityUid uid, string key, TimeSpan time,
             StatusEffectsComponent? status = null)
         {
@@ -395,6 +474,7 @@ namespace Content.Shared.StatusEffect
         /// <param name="key">The status effect to remove time from.</param>
         /// <param name="time">The amount of time to add.</param>
         /// <param name="status">The status effect component, should you already have it.</param>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool TryRemoveTime(EntityUid uid, string key, TimeSpan time,
             StatusEffectsComponent? status = null)
         {
@@ -430,6 +510,7 @@ namespace Content.Shared.StatusEffect
         /// <remarks>
         ///     Not used internally; just sets it itself.
         /// </remarks>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool TrySetTime(EntityUid uid, string key, TimeSpan time,
             StatusEffectsComponent? status = null)
         {
@@ -453,6 +534,7 @@ namespace Content.Shared.StatusEffect
         /// <param name="time">Out var for the time, if it exists.</param>
         /// <param name="status">The status effects component to use, if any.</param>
         /// <returns>False if the status effect was not active, true otherwise.</returns>
+        [Obsolete("Migration to Content.Shared.StatusEffectNew.StatusEffectsSystem is required")]
         public bool TryGetTime(EntityUid uid, string key,
             [NotNullWhen(true)] out (TimeSpan, TimeSpan)? time,
             StatusEffectsComponent? status = null)
@@ -469,10 +551,10 @@ namespace Content.Shared.StatusEffect
     }
 
     /// <summary>
-    ///     Raised on an entity before a status effect is added to determine if adding it should be cancelled.
+    /// Goob edit
     /// </summary>
     [ByRefEvent]
-    public record struct BeforeStatusEffectAddedEvent(string Key, bool Cancelled=false);
+    public record struct OldBeforeStatusEffectAddedEvent(string Key, bool Cancelled=false);
 
     public readonly struct StatusEffectAddedEvent
     {

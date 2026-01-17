@@ -1,4 +1,14 @@
-﻿using Content.Shared.DoAfter;
+// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: MIT
+
+using Content.Shared.DoAfter;
 using Content.Shared.Mech.Components;
 using Robust.Shared.Serialization;
 
@@ -55,6 +65,7 @@ public sealed partial class GrabberDoAfterEvent : SimpleDoAfterEvent
 public sealed partial class InsertEquipmentEvent : SimpleDoAfterEvent
 {
 }
+<<<<<<< HEAD
 
 // ADT Content start
 [Serializable, NetSerializable]
@@ -62,3 +73,5 @@ public sealed partial class MechDrillDoAfterEvent : SimpleDoAfterEvent
 {
 }
 // ADT Content end
+=======
+>>>>>>> goob

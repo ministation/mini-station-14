@@ -4,6 +4,11 @@ ent-MobObserverBase = observer
     .desc = Boo!
 ent-MobObserver = { ent-MobObserverBase }
     .desc = { ent-MobObserverBase.desc }
+<<<<<<< HEAD
+=======
+ent-ActionGhostShowRadar = Mass Scanner Interface
+    .desc = View a Mass Scanner Interface.
+>>>>>>> goob
 ent-ActionGhostBoo = Boo!
     .desc = Scare your crew members because of boredom!
 ent-ActionToggleLighting = Toggle Lighting

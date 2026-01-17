@@ -1,3 +1,82 @@
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Júlio César Ueti <52474532+Mirino97@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Morber <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Pancake <Pangogie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 TekuNut <13456422+TekuNut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 2022 drakewill <drake@drakewill-crl>
+// SPDX-FileCopyrightText: 2022 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 2013HORSEMEATSCANDAL <146540817+2013HORSEMEATSCANDAL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Dakamakat <52600490+dakamakat@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 OctoRocket <88291550+OctoRocket@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vyacheslav Titov <rincew1nd@ya.ru>
+// SPDX-FileCopyrightText: 2023 coolmankid12345 <55817627+coolmankid12345@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 lzk228 <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Титов Вячеслав Витальевич <rincew1nd@yandex.ru>
+// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Avalon <148660190+BYONDFuckery@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 LankLTE <135308300+LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <koolthunder019@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Rainfall <rainfey0+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Rainfey <rainfey0+github@gmail.com>
+// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Wrexbe (Josh) <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dolgovmi <96251346+dolgovmi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lunarcomets <140772713+lunarcomets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2024 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Antag;
 using Content.Server.Communications;
 using Content.Server.GameTicking.Rules.Components;
@@ -27,6 +106,10 @@ using System.Linq;
 using Content.Shared._CorvaxNext.Mood;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Store.Components;
+using Content.Server.Station.Systems;
+using Content.Server.Chat.Systems;
+using Robust.Server.Player;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -39,12 +122,17 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
     [Dependency] private readonly RoundEndSystem _roundEndSystem = default!;
     [Dependency] private readonly StoreSystem _store = default!;
     [Dependency] private readonly TagSystem _tag = default!;
+    // goob edit
+    [Dependency] private readonly StationSystem _stationSystem = default!;
+    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly IPlayerManager _playerManager = default!;
+    // goob edit end
 
-    [ValidatePrototypeId<CurrencyPrototype>]
-    private const string TelecrystalCurrencyPrototype = "Telecrystal";
+    private static readonly ProtoId<CurrencyPrototype> TelecrystalCurrencyPrototype = "Telecrystal";
+    private static readonly ProtoId<TagPrototype> NukeOpsUplinkTagPrototype = "NukeOpsUplink";
 
     [ValidatePrototypeId<TagPrototype>]
-    private const string NukeOpsUplinkTagPrototype = "NukeOpsUplink";
+    private const string NukeOpsReinforcementUplinkTagPrototype = "NukeOpsReinforcementUplink"; // Goobstation
 
 
     public override void Initialize()
@@ -96,23 +184,24 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         GameRuleComponent gameRule,
         ref RoundEndTextAppendEvent args)
     {
-        var winText = Loc.GetString($"nukeops-{component.WinType.ToString().ToLower()}");
+        var winText = Loc.GetString($"{component.LocalePrefix}{component.WinType.ToString().ToLower()}");
         args.AddLine(winText);
 
         foreach (var cond in component.WinConditions)
         {
-            var text = Loc.GetString($"nukeops-cond-{cond.ToString().ToLower()}");
+            var text = Loc.GetString($"{component.LocalePrefix}cond-{cond.ToString().ToLower()}");
             args.AddLine(text);
         }
 
-        args.AddLine(Loc.GetString("nukeops-list-start"));
+        /* Goob edit - nukie objective
+        args.AddLine(Loc.GetString($"{component.LocalePrefix}list-start"));
 
         var antags = _antag.GetAntagIdentifiers(uid);
 
         foreach (var (_, sessionData, name) in antags)
         {
-            args.AddLine(Loc.GetString("nukeops-list-name-user", ("name", name), ("user", sessionData.UserName)));
-        }
+            args.AddLine(Loc.GetString($"{component.LocalePrefix}list-name-user", ("name", name), ("user", sessionData.UserName)));
+        } */
     }
 
     private void OnNukeExploded(NukeExplodedEvent ev)
@@ -273,7 +362,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
     private void OnComponentRemove(EntityUid uid, NukeOperativeComponent component, ComponentRemove args)
     {
-        CheckRoundShouldEnd();
+        CheckRoundShouldEnd(false); // Goobstation
     }
 
     private void OnMobStateChanged(EntityUid uid, NukeOperativeComponent component, MobStateChangedEvent ev)
@@ -329,6 +418,8 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
     private void OnShuttleCallAttempt(ref CommunicationConsoleCallShuttleAttemptEvent ev)
     {
+        var operatives = EntityQuery<NukeOperativeComponent, MobStateComponent, TransformComponent>(true);
+
         var query = QueryActiveRules();
         while (query.MoveNext(out _, out _, out var nukeops, out _))
         {
@@ -344,6 +435,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
                     return;
                 }
             }
+
         }
     }
 
@@ -396,7 +488,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         var enumerator = EntityQueryEnumerator<StoreComponent>();
         while (enumerator.MoveNext(out var uid, out var component))
         {
-            if (!_tag.HasTag(uid, NukeOpsUplinkTagPrototype))
+            if (!_tag.HasTag(uid, NukeOpsUplinkTagPrototype) || _tag.HasTag(uid, NukeOpsReinforcementUplinkTagPrototype)) // Goob edit - no tc for reinforcements
                 continue;
 
             if (GetOutpost(nukieRule.Owner) is not { } outpost)
@@ -405,11 +497,25 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             if (Transform(uid).MapID != Transform(outpost).MapID) // Will receive bonus TC only on their start outpost
                 continue;
 
-            _store.TryAddCurrency(new() { { TelecrystalCurrencyPrototype, nukieRule.Comp.WarTcAmountPerNukie } }, uid, component);
+            _store.TryAddCurrency(new() { { TelecrystalCurrencyPrototype, CalculateBonusTcPerNukie(nukieRule.Comp) } }, uid, component); // Goob edit
 
             var msg = Loc.GetString("store-currency-war-boost-given", ("target", uid));
             _popupSystem.PopupEntity(msg, uid);
         }
+    }
+
+    private int CalculateBonusTcPerNukie(NukeopsRuleComponent rule) // Goobstation
+    {
+        var nukiesCount = EntityQuery<NukeopsRoleComponent>().Count();
+        if (nukiesCount == 0)
+            return rule.WarTcAmountPerNukie;
+        var totalPlayersCount = _antag.GetTotalPlayerCount(_playerManager.Sessions);
+        var playersCount = Math.Max(0, totalPlayersCount - nukiesCount);
+        var maxNukies = totalPlayersCount / rule.WarNukiePlayerRatio;
+        var nukiesMissing = Math.Max(0, maxNukies - nukiesCount);
+        var totalBonus = playersCount * rule.WarTcPerPlayer;
+        totalBonus += nukiesMissing * rule.WarTcPerNukieMissing;
+        return Math.Max(rule.WarTcAmountPerNukie, totalBonus / nukiesCount);
     }
 
     private void SetWinType(Entity<NukeopsRuleComponent> ent, WinType type, bool endRound = true)
@@ -420,16 +526,18 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             _roundEndSystem.EndRound();
     }
 
-    private void CheckRoundShouldEnd()
+    private void CheckRoundShouldEnd(bool announce = true) // Goobstation
     {
         var query = QueryActiveRules();
         while (query.MoveNext(out var uid, out _, out var nukeops, out _))
         {
-            CheckRoundShouldEnd((uid, nukeops));
+            CheckRoundShouldEnd((uid, nukeops),
+                                announce); // Goobstation
         }
     }
 
-    private void CheckRoundShouldEnd(Entity<NukeopsRuleComponent> ent)
+    private void CheckRoundShouldEnd(Entity<NukeopsRuleComponent> ent,
+                                     bool announce = true) // Goobstation
     {
         var nukeops = ent.Comp;
 
@@ -484,6 +592,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
         SetWinType(ent, WinType.CrewMajor, false);
 
+<<<<<<< HEAD
         if (nukeops.RoundEndBehavior == RoundEndBehavior.Nothing) // It's still worth checking if operatives have all died, even if the round-end behaviour is nothing. 
             return; // Shouldn't actually try to end the round in the case of nothing though.
 
@@ -493,6 +602,13 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         nukeops.RoundEndTextShuttleCall,
         nukeops.RoundEndTextAnnouncement);
 
+=======
+        // goob edit - no more roundend behavior, just announcement
+        if (announce)
+            _chat.DispatchGlobalAnnouncement(
+                Loc.GetString(nukeops.RoundEndTextAnnouncement),
+                Loc.GetString(nukeops.RoundEndTextSender));
+>>>>>>> goob
 
         // prevent it called multiple times
         nukeops.RoundEndBehavior = RoundEndBehavior.Nothing;
@@ -506,7 +622,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         RaiseLocalEvent(args.EntityUid, new MoodEffectEvent("NukeopsFocused")); // _CorvaxNext: mood
 
         _antag.SendBriefing(args.Session,
-            Loc.GetString("nukeops-welcome",
+            Loc.GetString($"{ent.Comp.LocalePrefix}welcome",
                 ("station", target),
                 ("name", Name(ent))),
             Color.Red,
@@ -516,7 +632,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
     private void OnGetBriefing(Entity<NukeopsRoleComponent> role, ref GetBriefingEvent args)
     {
         // TODO Different character screen briefing for the 3 nukie types
-        args.Append(Loc.GetString("nukeops-briefing"));
+        args.Append(Loc.GetString("nukeops-briefing")); // TODO: Goobstation: somehow pass the nukeopsrulecomponent here so we can change this based on LocalePrefix for Honkops.
     }
 
     /// <remarks>

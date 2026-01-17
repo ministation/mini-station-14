@@ -37,9 +37,15 @@ ent-ClothingHandsGlovesFingerlessInsulated = fingerless insulated gloves
     .desc = Insulated gloves resistant to shocks, or at least they used to.
 ent-ClothingHandsGlovesMercFingerless = mercenary fingerless gloves
     .desc = Gloves that may not protect you from finger burns, but will make you cooler.
+<<<<<<< HEAD
 ent-ThievingGloves = { ent-ClothingHandsGlovesColorBlack }
     .suffix = Thieving
     .desc = { ent-ClothingHandsGlovesColorBlack.desc }
+=======
+ent-ThievingGloves = { ent-ClothingHandsChameleon }
+    .suffix = Chameleon, Thieving
+    .desc = { ent-ClothingHandsChameleon.desc }
+>>>>>>> goob
 ent-ClothingHandsGlovesCluwne = cluwne hands
     .desc = A cursed pair of cluwne hands.
     .suffix = Unremoveable
@@ -49,6 +55,7 @@ ent-ClothingHandsGlovesForensic = forensic gloves
     .desc = Do not leave fibers or fingerprints. If you work without them, you're A TERRIBLE DETECTIVE.
 ent-ClothingHandsGlovesJanitor = rubber gloves
     .desc = High-quality rubber gloves, squeaky to do some cleaning!
+<<<<<<< HEAD
 ent-ClothingHandsKnuckleDusters = knuckle dusters
     .desc = Cold plasteel knuckle dusters, makes your punches hit much harder.
 ent-ClothingHandsKnuckleDustersBrass = brass knuckle dusters
@@ -61,3 +68,5 @@ ent-ClothingHandsKnuckleDustersStun = stun knuckle dusters
     .desc = A pair of knuckle dusters combined with the tech of a stun baton. This makes beating tiders a whole lot easier.
 ent-ClothingHandsKnuckleBoneCrushers = bone crushers
     .desc = Blessed by the Gods to break all those who don't obey.
+=======
+>>>>>>> goob

@@ -17,6 +17,20 @@
 		{
 			"name": "inhand-right",
 			"directions": 4
+<<<<<<< HEAD
+=======
+		},
+                {
+			"name": "evil"
+		},
+		{
+			"name": "evil-inhand-left",
+			"directions": 4
+		},
+		{
+			"name": "evil-inhand-right",
+			"directions": 4
+>>>>>>> goob
 		}
 	]
 }

@@ -12,8 +12,23 @@ health-analyzer-window-entity-damage-total-text = Общие поврежден�
 health-analyzer-window-damage-group-text = { $damageGroup }: { $amount }
 health-analyzer-window-damage-type-text = { $damageType }: { $amount }
 health-analyzer-window-entity-unrevivable-text = [color=red]Обнаружено уникальное строение тела! Пациент не может быть реанимирован стандартными средствами![/color]
+<<<<<<< HEAD
 health-analyzer-window-entity-bleeding-text = У пациента кровотечение!
+=======
+health-analyzer-window-entity-bleeding-text = [color=red]У пациента кровотечение![/color]
+>>>>>>> goob
 health-analyzer-window-scan-mode-text = Режим сканирования:
 health-analyzer-window-scan-mode-active = АКТИВЕН
 health-analyzer-window-scan-mode-inactive = НЕАКТИВЕН
 health-analyzer-popup-scan-target = { CAPITALIZE($user) } пытается просканировать вас!
+<<<<<<< HEAD
+=======
+health-analyzer-window-return-button-text = < Назад
+health-analyzer-window-body = Тело
+health-analyzer-window-organs = Органы
+health-analyzer-window-chemicals = Химикаты
+health-analyzer-window-conditions = Состояние
+solution-type-chemicals = Химикаты в крови
+solution-type-bloodstream = Количество крови
+solution-type-stomach = Химикаты в желудке
+>>>>>>> goob

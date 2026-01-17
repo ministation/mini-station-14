@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD:Resources/Textures/Clothing/Hands/Gloves/KnuckleDusters/brassknuckleduster.rsi/meta.json
+    "copyright": "Icon taken from ParadiseSS13 at commit https://github.com/ParadiseSS13/Paradise/commit/391f296ed9b06d9bd13daca5b51c68740e714f1f, and altered by Unkn0wnGh0st333; In hand sprites done by Unkn0wnGh0st333 on github, inhand-kangaroo by brainfood (github)",
+=======
+    "copyright": "Taken at commit https://github.com/Space-Stories/space-station-14/commit/9f417bc5b0e90d5d45ed7f0fd3dd84e070770672",
+>>>>>>> goob:Resources/Textures/_Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi/meta.json
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "equipped-HAND-kangaroo",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "equipped-BELT",
+            "directions": 4
+        },
+		{
+            "name": "equipped-SUITSTORAGE",
+            "directions": 4
+        }
+    ]
+}

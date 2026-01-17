@@ -5,5 +5,9 @@ construction-menu-place-ghost = Разместить призрак констр
 construction-menu-clear-all = Очистить всё
 construction-menu-eraser-mode = Режим ластика
 construction-menu-craft = Создание
+<<<<<<< HEAD
 construction-menu-search = Search
+=======
+construction-menu-search = Поиск
+>>>>>>> goob
 construction-menu-grid-view = Вид плиткой

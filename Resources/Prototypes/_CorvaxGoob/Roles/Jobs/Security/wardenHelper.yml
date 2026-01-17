@@ -1,0 +1,61 @@
+- type: job
+  id: WardenHelper
+  name: job-name-wardenHelper
+  description: job-description-wardenHelper
+  playTimeTracker: JobWardenHelper
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000 #20 hrs
+    - !type:SpeciesRequirement # CorvaxGoob-Species
+      inverted: true
+      species:
+      - Abductor
+  startingGear: WardenHelperGear
+  icon: "JobIconWardenHelper"
+  supervisors: job-supervisors-hos
+  weight: 5
+  canBeAntag: false
+  skills: # CorvaxGoob-Skills
+  - Shooting
+  access:
+  - Security
+  - Brig
+  - Armory
+  - Maintenance
+  - Service
+  - External
+  - Detective
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: WardenHelperGear
+  equipment:
+    head: ClothingHeadHatWardenHelper
+    eyes: ClothingEyesGlassesSecurity
+    id: WardenHelperPDA
+    ears: ClothingHeadsetSecurity
+    pocket1: WeaponPistolMk58
+    pocket2: BookSpaceLaw
+  storage:
+    back:
+    - Flash
+    - MagazinePistol
+
+- type: chameleonOutfit
+  id: WardenHelperChameleonOutfit
+  job: WardenHelper
+  equipment:
+    head: ClothingHeadHatWardenHelper
+    eyes: ClothingEyesGlassesSecurity
+    mask: ClothingMaskGasSecurity
+    ears: ClothingHeadsetSecurity
+    outerClothing: ClothingOuterCoatWarden
+    gloves: ClothingHandsGlovesCombat
+    jumpsuit: ClothingUniformJumpsuitWarden
+    id: WardenHelperPDA
+    back: ClothingBackpackSecurity
+    shoes: ClothingShoesBootsJack

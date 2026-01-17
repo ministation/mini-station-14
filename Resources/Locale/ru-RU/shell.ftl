@@ -1,5 +1,9 @@
 ### for technical and/or system messages
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> goob
 ## General
 
 shell-command-success = Команда выполнена.
@@ -11,6 +15,10 @@ shell-must-be-attached-to-entity = Для выполнения этой кома
 
 ## Arguments
 
+<<<<<<< HEAD
+=======
+shell-must-have-body = У вас должно быть тело для использования этой команды.
+>>>>>>> goob
 shell-need-exactly-one-argument = Нужен ровно один аргумент.
 shell-wrong-arguments-number-need-specific =
     Нужно { $properAmount } { $properAmount ->
@@ -29,10 +37,18 @@ shell-need-between-arguments = Нужно от { $lower } до { $upper } арг
 shell-need-minimum-arguments = Нужно не менее { $minimum } аргументов!
 shell-need-minimum-one-argument = Нужен хотя бы один аргумент!
 shell-argument-uid = EntityUid
+<<<<<<< HEAD
+=======
+shell-need-exactly-zero-arguments = Эта команда принимает ноль аргументов.
+>>>>>>> goob
 
 ## Guards
 
 shell-entity-is-not-mob = Целевая сущность не является мобом!
+<<<<<<< HEAD
+=======
+shell-missing-required-permission = Вам нужен { $perm } для этой команды!
+>>>>>>> goob
 shell-invalid-entity-id = Недопустимый ID сущности.
 shell-invalid-grid-id = Недопустимый ID сетки.
 shell-invalid-map-id = Недопустимый ID карты.
@@ -42,8 +58,13 @@ shell-entity-uid-must-be-number = EntityUid должен быть числом.
 shell-could-not-find-entity = Не удалось найти сущность { $entity }.
 shell-could-not-find-entity-with-uid = Не удалось найти сущность с uid { $uid }.
 shell-entity-with-uid-lacks-component = Сущность с uid { $uid } не имеет компонента { $componentName }.
+<<<<<<< HEAD
 shell-entity-target-lacks-component = Target entity doesn't have { INDEFINITE($componentName) } { $componentName } component
 shell-invalid-color-hex = Недопустимый HEX-цвет!
+=======
+shell-invalid-color-hex = Недопустимый HEX-цвет!
+shell-entity-target-lacks-component = Целевая сущность не имеет компонента { $componentName }
+>>>>>>> goob
 shell-target-player-does-not-exist = Целевой игрок не существует!
 shell-target-entity-does-not-have-message = Целевая сущность не имеет { $missing }!
 shell-timespan-minutes-must-be-correct = { $span } не является допустимым промежутком времени в минутах.

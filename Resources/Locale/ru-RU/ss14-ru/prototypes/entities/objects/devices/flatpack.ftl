@@ -30,5 +30,10 @@ ent-CrewMonitoringServerFlatpack = упаковка сервера монито�
     .desc = Универсально-сборная упаковка, используемая для сборки сервера мониторинга экипажа.
 ent-CrewMonitoringComputerFlatpack = упаковка консоли мониторинга экипажа
     .desc = Универсально-сборная упаковка, используемая для сборки консоли мониторинга экипажа.
+<<<<<<< HEAD
 ent-HydroponicsTrayFlatpack = hydroponics tray flatpack
     .desc = A flatpack used for constructing a hydroponics tray.
+=======
+ent-HydroponicsTrayFlatpack = упаковка гидропонного лотка
+    .desc = Универсально-сборная упаковка, используемая для сборки гидропонного лотка.
+>>>>>>> goob

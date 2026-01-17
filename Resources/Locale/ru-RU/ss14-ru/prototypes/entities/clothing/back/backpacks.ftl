@@ -48,7 +48,11 @@ ent-ClothingBackpackERTClown = рюкзак клоуна ОБР
     .desc = Вместительный рюкзак с множеством карманов, который носят клоуны отряда быстрого реагирования.
 ent-ClothingBackpackERTChaplain = рюкзак священника ОБР
     .desc = Вместительный рюкзак с множеством карманов, который носят священники отряда быстрого реагирования.
+<<<<<<< HEAD
 ent-ClothingBackpackDeathSquad = рюкзак эскадрона смерти
+=======
+ent-ClothingBackpackDeathSquad = рюкзак Эскадрона Смерти
+>>>>>>> goob
     .desc = Вмещает снаряжение самых устрашающих агентов Центкома.
 ent-ClothingBackpackSyndicate = рюкзак Синдиката
     .desc = { ent-ClothingBackpack.desc }

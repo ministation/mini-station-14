@@ -1,0 +1,90 @@
+﻿- type: entity
+  parent: ClothingHandsGlovesCaptain
+  id: ClothingHandsGlovesCaptainWhite
+  name: white captain gloves
+  description: Royal white gloves with gold trim. Gorgeous.
+  components:
+  - type: Sprite
+    sprite: _CorvaxGoob/Clothing/Hands/Gloves/white_captain_gloves.rsi
+  - type: Clothing
+    sprite: _CorvaxGoob/Clothing/Hands/Gloves/white_captain_gloves.rsi
+
+- type: entity
+  parent: ClothingHandsGlovesCaptain
+  id: ClothingHandsGlovesSheriff
+  name: sheriff gloves
+  description: Gloves with an ergonomic shape designed to hold a revolver.
+  components:
+  - type: Sprite
+    sprite: _CorvaxGoob/Clothing/Hands/Gloves/sheriff_gloves.rsi
+  - type: Clothing
+    sprite: _CorvaxGoob/Clothing/Hands/Gloves/sheriff_gloves.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesAerostatic
+  name: aerostatic gloves
+  description: Breathable red gloves for expert handling of a pen and notebook.
+  components:
+    - type: Sprite
+      sprite: _CorvaxGoob/Clothing/Hands/Gloves/kim.rsi
+    - type: Clothing
+      sprite: _CorvaxGoob/Clothing/Hands/Gloves/kim.rsi
+    - type: Insulated
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesCentcomNaval
+  name: nanotrasen naval gloves
+  description: A high quality pair of thick gloves covered in gold stitching, given to Nanotrasen's Naval Commanders.
+  components:
+    - type: Sprite
+      sprite: _CorvaxGoob/Clothing/Hands/Gloves/centcom_naval.rsi
+    - type: Clothing
+      sprite: _CorvaxGoob/Clothing/Hands/Gloves/centcom_naval.rsi
+    - type: Insulated
+
+- type: entity
+  parent: ClothingHandsCatPawsBase
+  id: ClothingHandsCatPawsBrown
+  name: brown cat paws
+  description: Super-soft brown cat paws, made specially for the most brutal agents.
+  components:
+  - type: Sprite
+    state: brown-icon
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - state: brown-equipped-HAND
+  - type: Fiber
+    fiberColor: fibers-brown
+
+- type: entity
+  parent: ClothingHandsCatPawsBase
+  id: ClothingHandsCatPawsBlack
+  name: black cat paws
+  description: Super-soft black paws, made specially for the most brutal agents.
+  components:
+  - type: Sprite
+    state: black-icon
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - state: black-equipped-HAND
+  - type: Fiber
+    fiberColor: fibers-black
+
+- type: entity
+  parent: ClothingHandsCatPawsBase
+  id: ClothingHandsCatPawsBlackWhite
+  name: black and white cat paws
+  description: Super-soft black and white cat paws, made specially for the most brutal agents.
+  components:
+  - type: Sprite
+    state: blackwhite-icon
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - state: blackwhite-equipped-HAND
+  - type: Fiber
+    fiberColor: fibers-grey

@@ -1,9 +1,15 @@
 ent-AirlockServiceLocked = { ent-Airlock }
     .suffix = Service, Locked
     .desc = { ent-Airlock.desc }
+<<<<<<< HEAD
 ent-AirlockLawyerLocked = { ent-AirlockServiceLocked }
     .suffix = Lawyer, Locked
     .desc = { ent-AirlockServiceLocked.desc }
+=======
+ent-AirlockLawyerLocked = { ent-AirlockLawyer }
+    .suffix = Lawyer, Locked
+    .desc = { ent-AirlockLawyer.desc }
+>>>>>>> goob
 ent-AirlockTheatreLocked = { ent-AirlockServiceLocked }
     .suffix = Theatre, Locked
     .desc = { ent-AirlockServiceLocked.desc }
@@ -13,9 +19,15 @@ ent-AirlockServiceTheatreLocked = { ent-AirlockServiceLocked }
 ent-AirlockChapelLocked = { ent-AirlockServiceLocked }
     .suffix = Chapel, Locked
     .desc = { ent-AirlockServiceLocked.desc }
+<<<<<<< HEAD
 ent-AirlockJanitorLocked = { ent-AirlockServiceLocked }
     .suffix = Janitor, Locked
     .desc = { ent-AirlockServiceLocked.desc }
+=======
+ent-AirlockJanitorLocked = { ent-AirlockJanitor }
+    .suffix = Janitor, Locked
+    .desc = { ent-AirlockJanitor.desc }
+>>>>>>> goob
 ent-AirlockKitchenLocked = { ent-AirlockServiceLocked }
     .suffix = Kitchen, Locked
     .desc = { ent-AirlockServiceLocked.desc }
@@ -100,6 +112,7 @@ ent-AirlockCentralCommandLocked = { ent-AirlockCentralCommand }
 ent-AirlockCommandLocked = { ent-AirlockCommand }
     .suffix = Command, Locked
     .desc = { ent-AirlockCommand.desc }
+<<<<<<< HEAD
 ent-AirlockCaptainLocked = { ent-AirlockCommand }
     .suffix = Captain, Locked
     .desc = { ent-AirlockCommand.desc }
@@ -121,6 +134,29 @@ ent-AirlockHeadOfPersonnelLocked = { ent-AirlockCommand }
 ent-AirlockQuartermasterLocked = { ent-AirlockCommand }
     .suffix = Quartermaster, Locked
     .desc = { ent-AirlockCommand.desc }
+=======
+ent-AirlockCaptainLocked = { ent-AirlockCaptain }
+    .suffix = Captain, Locked
+    .desc = { ent-AirlockCaptain.desc }
+ent-AirlockChiefMedicalOfficerLocked = { ent-AirlockChiefMedicalOfficer }
+    .suffix = ChiefMedicalOfficer, Locked
+    .desc = { ent-AirlockChiefMedicalOfficer.desc }
+ent-AirlockChiefEngineerLocked = { ent-AirlockChiefEngineer }
+    .suffix = ChiefEngineer, Locked
+    .desc = { ent-AirlockChiefEngineer.desc }
+ent-AirlockHeadOfSecurityLocked = { ent-AirlockHeadOfSecurity }
+    .suffix = HeadOfSecurity, Locked
+    .desc = { ent-AirlockHeadOfSecurity.desc }
+ent-AirlockResearchDirectorLocked = { ent-AirlockResearchDirector }
+    .suffix = ResearchDirector, Locked
+    .desc = { ent-AirlockResearchDirector.desc }
+ent-AirlockHeadOfPersonnelLocked = { ent-AirlockHeadOfPersonnel }
+    .suffix = HeadOfPersonnel, Locked
+    .desc = { ent-AirlockHeadOfPersonnel.desc }
+ent-AirlockQuartermasterLocked = { ent-AirlockQuartermaster }
+    .suffix = Quartermaster, Locked
+    .desc = { ent-AirlockQuartermaster.desc }
+>>>>>>> goob
 ent-AirlockSecurityLocked = { ent-AirlockSecurity }
     .suffix = Security, Locked
     .desc = { ent-AirlockSecurity.desc }
@@ -145,9 +181,15 @@ ent-AirlockEVALocked = { ent-AirlockCommand }
 ent-AirlockServiceGlassLocked = { ent-AirlockGlass }
     .suffix = Service, Locked
     .desc = { ent-AirlockGlass.desc }
+<<<<<<< HEAD
 ent-AirlockLawyerGlassLocked = { ent-AirlockServiceGlassLocked }
     .suffix = Lawyer, Locked
     .desc = { ent-AirlockServiceGlassLocked.desc }
+=======
+ent-AirlockLawyerGlassLocked = { ent-AirlockLawyerGlass }
+    .suffix = Lawyer, Locked
+    .desc = { ent-AirlockLawyerGlass.desc }
+>>>>>>> goob
 ent-AirlockTheatreGlassLocked = { ent-AirlockServiceGlassLocked }
     .suffix = Theatre, Locked
     .desc = { ent-AirlockServiceGlassLocked.desc }
@@ -181,9 +223,15 @@ ent-AirlockExternalGlassAtmosphericsLocked = { ent-AirlockExternalGlass }
 ent-AirlockKitchenGlassLocked = { ent-AirlockServiceGlassLocked }
     .suffix = Kitchen, Locked
     .desc = { ent-AirlockServiceGlassLocked.desc }
+<<<<<<< HEAD
 ent-AirlockJanitorGlassLocked = { ent-AirlockServiceGlassLocked }
     .suffix = Janitor, Locked
     .desc = { ent-AirlockServiceGlassLocked.desc }
+=======
+ent-AirlockJanitorGlassLocked = { ent-AirlockJanitorGlass }
+    .suffix = Janitor, Locked
+    .desc = { ent-AirlockJanitorGlass.desc }
+>>>>>>> goob
 ent-AirlockHydroGlassLocked = { ent-AirlockHydroponicsGlass }
     .suffix = Hydroponics, Locked
     .desc = { ent-AirlockHydroponicsGlass.desc }
@@ -229,6 +277,7 @@ ent-AirlockCentralCommandGlassLocked = { ent-AirlockCentralCommandGlass }
 ent-AirlockCommandGlassLocked = { ent-AirlockCommandGlass }
     .suffix = Command, Locked
     .desc = { ent-AirlockCommandGlass.desc }
+<<<<<<< HEAD
 ent-AirlockCaptainGlassLocked = { ent-AirlockCommandGlass }
     .suffix = Captain, Locked
     .desc = { ent-AirlockCommandGlass.desc }
@@ -250,6 +299,29 @@ ent-AirlockHeadOfPersonnelGlassLocked = { ent-AirlockCommandGlass }
 ent-AirlockQuartermasterGlassLocked = { ent-AirlockCommandGlass }
     .suffix = Quartermaster, Locked
     .desc = { ent-AirlockCommandGlass.desc }
+=======
+ent-AirlockCaptainGlassLocked = { ent-AirlockCaptainGlass }
+    .suffix = Captain, Locked
+    .desc = { ent-AirlockCaptainGlass.desc }
+ent-AirlockChiefMedicalOfficerGlassLocked = { ent-AirlockChiefMedicalOfficerGlass }
+    .suffix = ChiefMedicalOfficer, Locked
+    .desc = { ent-AirlockChiefMedicalOfficerGlass.desc }
+ent-AirlockChiefEngineerGlassLocked = { ent-AirlockChiefEngineerGlass }
+    .suffix = ChiefEngineer, Locked
+    .desc = { ent-AirlockChiefEngineerGlass.desc }
+ent-AirlockHeadOfSecurityGlassLocked = { ent-AirlockHeadOfSecurityGlass }
+    .suffix = HeadOfSecurity, Locked
+    .desc = { ent-AirlockHeadOfSecurityGlass.desc }
+ent-AirlockResearchDirectorGlassLocked = { ent-AirlockResearchDirectorGlass }
+    .suffix = ResearchDirector, Locked
+    .desc = { ent-AirlockResearchDirectorGlass.desc }
+ent-AirlockHeadOfPersonnelGlassLocked = { ent-AirlockHeadOfPersonnelGlass }
+    .suffix = HeadOfPersonnel, Locked
+    .desc = { ent-AirlockHeadOfPersonnelGlass.desc }
+ent-AirlockQuartermasterGlassLocked = { ent-AirlockQuartermasterGlass }
+    .suffix = Quartermaster, Locked
+    .desc = { ent-AirlockQuartermasterGlass.desc }
+>>>>>>> goob
 ent-AirlockSecurityGlassLocked = { ent-AirlockSecurityGlass }
     .suffix = Security, Locked
     .desc = { ent-AirlockSecurityGlass.desc }

@@ -9,6 +9,16 @@
   "states": [
     {
       "name": "icon"
+<<<<<<< HEAD
     }
   ]
 }
+=======
+    },
+    {
+      "name": "equipped-BELT",
+      "directions": 4
+    }
+  ]
+}
+>>>>>>> goob

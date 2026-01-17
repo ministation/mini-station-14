@@ -24,7 +24,11 @@ ent-CrateNPCGorilla = ящик с гориллой
     .desc = Ящик, содержащий одну гориллу.
 ent-CrateNPCMonkeyCube = ящик обезьяньих кубиков
     .desc = Ящик, содержащий коробку обезьяньих кубиков.
+<<<<<<< HEAD
 ent-CrateNPCKoboldCube = ящик кобольдовых кубик
+=======
+ent-CrateNPCKoboldCube = ящик кобольдовых кубиков
+>>>>>>> goob
     .desc = Ящик, содержащий коробку кобольдовых кубиков.
 ent-CrateNPCMouse = ящик мышей
     .desc = Ящик, содержащий пять мышей.

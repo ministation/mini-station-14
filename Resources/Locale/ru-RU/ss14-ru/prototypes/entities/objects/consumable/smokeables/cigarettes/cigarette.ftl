@@ -21,12 +21,17 @@ ent-CigaretteDermaline = Алоэ-арахисовый маслянный поп
     .desc = { ent-SoakedCigarette.desc }
 ent-CigaretteArithrazine = Римский трубопрокат
     .desc = { ent-SoakedCigarette.desc }
+<<<<<<< HEAD
 ent-CigaretteNutriment = Grandma's Christmas Fruitcake
+=======
+ent-CigaretteNutriment = Бабушкин рождественский пирог
+>>>>>>> goob
     .desc = { ent-SoakedCigarette.desc }
 ent-CigaretteIpecac = Бабушкин рождественский фруктовый кекс
     .desc = { ent-SoakedCigarette.desc }
 ent-CigaretteBicaridine = Усовершенствованная сигарета Мокрый пёс
     .desc = { ent-SoakedCigarette.desc }
+<<<<<<< HEAD
 ent-CigaretteSaline = North Atlantic Cruise
     .desc = { ent-SoakedCigarette.desc }
 ent-CigaretteDexalin = Мускус скалистых гор
@@ -44,6 +49,25 @@ ent-CigaretteLaughter = Clown Adjacency Bonus
 ent-CigaretteLipolicide = 80's Workout Routine
     .desc = { ent-SoakedCigarette.desc }
 ent-CigaretteSodiumPolyacrylate = Unhealthy Habits
+=======
+ent-CigaretteSaline = Круиз по Северной Атлантике
+    .desc = { ent-SoakedCigarette.desc }
+ent-CigaretteDexalin = Мускус скалистых гор
+    .desc = { ent-SoakedCigarette.desc }
+ent-CigaretteFrezon = Атмосферное приключение
+    .desc = { ent-SoakedCigarette.desc }
+ent-CigarettePax = Швейцарский экспресс
+    .desc = { ent-SoakedCigarette.desc }
+ent-CigaretteRadium = Экс Рей
+    .desc = { ent-SoakedCigarette.desc }
+ent-CigaretteHaloperidol = Теплый бычий экстракт
+    .desc = { ent-SoakedCigarette.desc }
+ent-CigaretteLaughter = Бонус клоунского соседства
+    .desc = { ent-SoakedCigarette.desc }
+ent-CigaretteLipolicide = Программа тренировок 80-х
+    .desc = { ent-SoakedCigarette.desc }
+ent-CigaretteSodiumPolyacrylate = Вредные привычки
+>>>>>>> goob
     .desc = { ent-SoakedCigarette.desc }
 ent-CigaretteBbqSauce = Пряно-древесный аромат
     .desc = { ent-SoakedCigarette.desc }
@@ -51,9 +75,15 @@ ent-CigaretteBlackPepper = Английская пряность
     .desc = { ent-SoakedCigarette.desc }
 ent-CigaretteCapsaicinOil = Прохладный П
     .desc = { ent-SoakedCigarette.desc }
+<<<<<<< HEAD
 ent-CigaretteRobustHarvest = Hippie Romance Novel
     .desc = { ent-SoakedCigarette.desc }
 ent-CigarettePhlogiston = Dragon Dating Sim
+=======
+ent-CigaretteRobustHarvest = Романтическая новелла хиппи
+    .desc = { ent-SoakedCigarette.desc }
+ent-CigarettePhlogiston = Симулятор свиданий с драконами
+>>>>>>> goob
     .desc = { ent-SoakedCigarette.desc }
 ent-CigaretteBread = Двойной тост
     .desc = { ent-SoakedCigarette.desc }

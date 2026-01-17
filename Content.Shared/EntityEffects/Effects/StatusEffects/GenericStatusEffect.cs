@@ -1,4 +1,15 @@
+<<<<<<< HEAD:Content.Shared/EntityEffects/Effects/StatusEffects/GenericStatusEffect.cs
 using Content.Shared.Chemistry.Reagent;
+=======
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared.EntityEffects;
+>>>>>>> goob:Content.Server/EntityEffects/Effects/StatusEffects/GenericStatusEffect.cs
 using Content.Shared.StatusEffect;
 using Robust.Shared.Prototypes;
 
@@ -13,6 +24,10 @@ namespace Content.Shared.EntityEffects.Effects.StatusEffects;
 /// <remarks>
 ///     Can be used for things like adding accents or something. I don't know. Go wild.
 /// </remarks>
+<<<<<<< HEAD:Content.Shared/EntityEffects/Effects/StatusEffects/GenericStatusEffect.cs
+=======
+[Obsolete("Use ModifyStatusEffect with StatusEffectNewSystem instead")]
+>>>>>>> goob:Content.Server/EntityEffects/Effects/StatusEffects/GenericStatusEffect.cs
 public sealed partial class GenericStatusEffect : EntityEffect
 {
     [DataField(required: true)]
@@ -62,6 +77,7 @@ public sealed partial class GenericStatusEffect : EntityEffect
         "reagent-effect-guidebook-status-effect",
         ("chance", Probability),
         ("type", Type),
+        ("refresh", Refresh),
         ("time", Time),
         ("key", $"reagent-effect-status-effect-{Key}"));
 }

@@ -23,8 +23,15 @@ ent-ClosetRadiationSuitFilled = { ent-ClosetRadiationSuit }
     .suffix = Заполненный
     .desc = { ent-ClosetRadiationSuit.desc }
 ent-LockerEvacRepairFilled = { ent-LockerEvacRepair }
+<<<<<<< HEAD
     .suffix = Filled
     .desc = { ent-LockerEvacRepair.desc }
 ent-LockerWallEvacRepairFilled = { ent-LockerWallEvacRepair }
     .suffix = Filled
+=======
+    .suffix = Заполненный
+    .desc = { ent-LockerEvacRepair.desc }
+ent-LockerWallEvacRepairFilled = { ent-LockerWallEvacRepair }
+    .suffix = Заполненный
+>>>>>>> goob
     .desc = { ent-LockerWallEvacRepair.desc }

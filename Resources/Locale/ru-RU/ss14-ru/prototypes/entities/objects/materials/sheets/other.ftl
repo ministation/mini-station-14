@@ -15,8 +15,13 @@ ent-SheetPlasma10 = { ent-SheetPlasma }
 ent-SheetPlasma1 = плазма
     .suffix = Один
     .desc = { ent-SheetPlasma.desc }
+<<<<<<< HEAD
 ent-SheetPlasmaLingering0 = plasma
     .suffix = 0, Lingering
+=======
+ent-SheetPlasmaLingering0 = плазма
+    .suffix = Не исчезают закончившись, 0
+>>>>>>> goob
     .desc = { ent-SheetPlasma.desc }
 ent-SheetPlastic = пластик
     .suffix = Полный

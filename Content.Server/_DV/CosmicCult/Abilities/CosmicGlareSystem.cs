@@ -1,13 +1,37 @@
+<<<<<<< HEAD
 
 using System.Linq;
+=======
+// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using System.Linq;
+using Content.Goobstation.Common.Religion;
+using Content.Goobstation.Shared.Bible;
+using Content.Goobstation.Shared.Religion; // Goobstation - Bible
+>>>>>>> goob
 using Content.Server.Flash;
 using Content.Server.Light.Components;
 using Content.Server.Light.EntitySystems;
 using Content.Shared._DV.CosmicCult;
 using Content.Shared._DV.CosmicCult.Components;
+<<<<<<< HEAD
 using Content.Shared.Effects;
 using Content.Shared.Humanoid;
 using Content.Shared.Interaction;
+=======
+using Content.Shared._EinsteinEngines.Silicon.Components;
+using Content.Shared.Effects;
+using Content.Shared.Humanoid;
+using Content.Shared.Interaction;
+using Content.Shared.Inventory;
+>>>>>>> goob
 using Content.Shared.Mobs.Components;
 using Content.Shared.Physics;
 using Content.Shared.Silicons.Borgs.Components;
@@ -28,6 +52,11 @@ public sealed class CosmicGlareSystem : EntitySystem
     [Dependency] private readonly SharedCosmicCultSystem _cosmicCult = default!;
     [Dependency] private readonly SharedInteractionSystem _interact = default!;
     [Dependency] private readonly SharedStunSystem _stun = default!;
+<<<<<<< HEAD
+=======
+    [Dependency] private readonly DivineInterventionSystem _divineIntervention = default!;
+
+>>>>>>> goob
     private HashSet<Entity<PoweredLightComponent>> _lights = [];
 
     public override void Initialize()
@@ -61,7 +90,12 @@ public sealed class CosmicGlareSystem : EntitySystem
 
             if (!HasComp<MobStateComponent>(ent)
                 || !HasComp<HumanoidAppearanceComponent>(ent)
+<<<<<<< HEAD
                 || _cosmicCult.EntityIsCultist(ent))
+=======
+                || _cosmicCult.EntityIsCultist(ent)
+                || _divineIntervention.ShouldDeny(ent))
+>>>>>>> goob
                 return true;
 
             return !_interact.InRangeUnobstructed((uid, Transform(uid)),
@@ -82,12 +116,22 @@ public sealed class CosmicGlareSystem : EntitySystem
             _flash.Flash(targetEnt,
                 uid,
                 args.Action,
+<<<<<<< HEAD
                 (float) uid.Comp.CosmicGlareDuration.TotalMilliseconds,
+=======
+                uid.Comp.CosmicGlareDuration,
+>>>>>>> goob
                 uid.Comp.CosmicGlarePenalty,
                 false,
                 false,
                 uid.Comp.CosmicGlareStun);
 
+<<<<<<< HEAD
+=======
+            if (HasComp<BorgChassisComponent>(targetEnt) // fuck them clankers
+                || HasComp<SiliconComponent>(targetEnt))
+                _stun.TryParalyze(targetEnt, uid.Comp.CosmicGlareDuration / 2, true);
+>>>>>>> goob
 
             _color.RaiseEffect(Color.CadetBlue,
                 new List<EntityUid>() { targetEnt },

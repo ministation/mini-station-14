@@ -78,6 +78,10 @@ marking-HumanHairLowfade = Фэйд (Низкий)
 marking-HumanHairBaldfade = Фэйд (Лысый)
 marking-HumanHairFeather = Перья
 marking-HumanHairFather = Отец
+<<<<<<< HEAD
+=======
+marking-HumanHairNiko = Нико
+>>>>>>> goob
 marking-HumanHairSargeant = Флэттоп
 marking-HumanHairFlair = Флейр
 marking-HumanHairBigflattop = Флэттоп (Большой)
@@ -163,9 +167,14 @@ marking-HumanHairF = Короткая 7
 marking-HumanHairShorthairg = Короткая 8
 marking-HumanHair80s = Короткая (80-ые)
 marking-HumanHairRosa = Короткая (Роза)
+<<<<<<< HEAD
 marking-HumanHairBAlt = Shoulder-length Hair (Over eye)
 marking-HumanHairB = Волосы до плеч
 marking-HumanHairShoulderLengthOverEye = До плеч через глаз
+=======
+marking-HumanHairB = До плеч
+marking-HumanHairBAlt = До плеч (Над глазом)
+>>>>>>> goob
 marking-HumanHairSidecut = Боковой вырез
 marking-HumanHairSkinhead = Бритоголовый
 marking-HumanHairProtagonist = Слегка длинная
@@ -196,5 +205,10 @@ marking-HumanHairLongest2 = Очень длинная (Через глаз)
 marking-HumanHairVeryshortovereyealternate = Очень короткая (Через глаз альт.)
 marking-HumanHairVlongfringe = Очень короткая (Чёлка)
 marking-HumanHairVolaju = Воладзю
+<<<<<<< HEAD
 marking-HumanHairLongWithBangs = Long With Bangs
 marking-HumanHairWisp = Пряди
+=======
+marking-HumanHairWisp = Пряди
+marking-HumanHairLongWithBangs = Длинная с чёлкой
+>>>>>>> goob

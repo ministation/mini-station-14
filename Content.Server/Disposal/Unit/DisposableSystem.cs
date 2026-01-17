@@ -1,3 +1,33 @@
+// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
+// SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Henry <sigma1198@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Kot <1192090+koteq@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 sleepyyapril <123355664+sleepyyapril@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 sleepyyapril <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>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Disposal.Tube;
 using Content.Shared.Body.Components;
@@ -43,6 +73,8 @@ namespace Content.Server.Disposal.Unit
             _xformQuery = GetEntityQuery<TransformComponent>();
 
             SubscribeLocalEvent<DisposalHolderComponent, ComponentStartup>(OnComponentStartup);
+            SubscribeLocalEvent<DisposalHolderComponent, ContainerIsInsertingAttemptEvent>(CanInsert);
+            SubscribeLocalEvent<DisposalHolderComponent, EntInsertedIntoContainerMessage>(OnInsert);
         }
 
         private void OnComponentStartup(EntityUid uid, DisposalHolderComponent holder, ComponentStartup args)
@@ -50,34 +82,16 @@ namespace Content.Server.Disposal.Unit
             holder.Container = _containerSystem.EnsureContainer<Container>(uid, nameof(DisposalHolderComponent));
         }
 
-        public bool TryInsert(EntityUid uid, EntityUid toInsert, DisposalHolderComponent? holder = null)
+        private void CanInsert(Entity<DisposalHolderComponent> ent, ref ContainerIsInsertingAttemptEvent args)
         {
-            if (!Resolve(uid, ref holder))
-                return false;
-            if (!CanInsert(uid, toInsert, holder))
-                return false;
-
-            if (!_containerSystem.Insert(toInsert, holder.Container))
-                return false;
-
-            if (_physicsQuery.TryGetComponent(toInsert, out var physBody))
-                _physicsSystem.SetCanCollide(toInsert, false, body: physBody);
-
-            return true;
+            if (!HasComp<ItemComponent>(args.EntityUid) && !HasComp<BodyComponent>(args.EntityUid))
+                args.Cancel();
         }
 
-        private bool CanInsert(EntityUid uid, EntityUid toInsert, DisposalHolderComponent? holder = null)
+        private void OnInsert(Entity<DisposalHolderComponent> ent, ref EntInsertedIntoContainerMessage args)
         {
-            if (!Resolve(uid, ref holder))
-                return false;
-
-            if (!_containerSystem.CanInsert(toInsert, holder.Container))
-            {
-                return false;
-            }
-
-            return HasComp<ItemComponent>(toInsert) ||
-                   HasComp<BodyComponent>(toInsert);
+            if (_physicsQuery.TryGetComponent(args.Entity, out var physBody))
+                _physicsSystem.SetCanCollide(args.Entity, false, body: physBody);
         }
 
         public void ExitDisposals(EntityUid uid, DisposalHolderComponent? holder = null, TransformComponent? holderTransform = null)
@@ -156,7 +170,7 @@ namespace Content.Server.Disposal.Unit
                 holder.Air.Clear();
             }
 
-            EntityManager.DeleteEntity(uid);
+            Del(uid);
         }
 
         // Note: This function will cause an ExitDisposals on any failure that does not make an ExitDisposals impossible.
@@ -243,7 +257,7 @@ namespace Content.Server.Disposal.Unit
                 holder.TimeLeft -= time;
                 frameTime -= time;
 
-                if (!EntityManager.EntityExists(holder.CurrentTube))
+                if (!Exists(holder.CurrentTube))
                 {
                     ExitDisposals(uid, holder);
                     break;
@@ -268,7 +282,7 @@ namespace Content.Server.Disposal.Unit
 
                 // Find next tube
                 var nextTube = _disposalTubeSystem.NextTubeFor(currentTube, holder.CurrentDirection);
-                if (!EntityManager.EntityExists(nextTube))
+                if (!Exists(nextTube))
                 {
                     ExitDisposals(uid, holder);
                     break;

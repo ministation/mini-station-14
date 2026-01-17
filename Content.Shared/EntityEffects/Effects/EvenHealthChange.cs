@@ -1,16 +1,32 @@
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.EntityEffects;
+<<<<<<< HEAD:Content.Shared/EntityEffects/Effects/EvenHealthChange.cs
 using Content.Shared.FixedPoint;
 using Content.Shared.Localizations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.EntityEffects.Effects;
+=======
+using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared.Localizations;
+using JetBrains.Annotations;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Utility;
+using Content.Shared._Shitmed.Damage;
+using System.Text.Json.Serialization;
+
+namespace Content.Server.EntityEffects.Effects;
+>>>>>>> goob:Content.Server/EntityEffects/Effects/EvenHealthChange.cs
 
 /// <summary>
 /// Version of <see cref="HealthChange"/> that distributes the healing to groups
 /// </summary>
+<<<<<<< HEAD:Content.Shared/EntityEffects/Effects/EvenHealthChange.cs
+=======
+[UsedImplicitly]
+>>>>>>> goob:Content.Server/EntityEffects/Effects/EvenHealthChange.cs
 public sealed partial class EvenHealthChange : EntityEffect
 {
     /// <summary>
@@ -33,6 +49,12 @@ public sealed partial class EvenHealthChange : EntityEffect
     [DataField]
     public bool IgnoreResistances = true;
 
+<<<<<<< HEAD:Content.Shared/EntityEffects/Effects/EvenHealthChange.cs
+=======
+    [DataField]
+    public SplitDamageBehavior SplitDamage = SplitDamageBehavior.SplitEnsureAllOrganic;
+
+>>>>>>> goob:Content.Server/EntityEffects/Effects/EvenHealthChange.cs
     protected override string ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
     {
         var damages = new List<string>();
@@ -134,6 +156,11 @@ public sealed partial class EvenHealthChange : EntityEffect
             args.TargetEntity,
             dspec * scale,
             IgnoreResistances,
+<<<<<<< HEAD:Content.Shared/EntityEffects/Effects/EvenHealthChange.cs
             interruptsDoAfters: false);
+=======
+            interruptsDoAfters: false,
+            splitDamage: SplitDamage); // Shitmed Change
+>>>>>>> goob:Content.Server/EntityEffects/Effects/EvenHealthChange.cs
     }
 }

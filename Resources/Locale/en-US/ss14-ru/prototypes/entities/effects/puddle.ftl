@@ -12,6 +12,15 @@ ent-PuddleEgg = { ent-PuddleTemporary }
 ent-PuddleTomato = { ent-PuddleTemporary }
     .suffix = Tomato
     .desc = { ent-PuddleTemporary.desc }
+<<<<<<< HEAD
+=======
+ent-PuddleBloodSmall = { ent-PuddleTemporary }
+    .suffix = Blood (5u)
+    .desc = { ent-PuddleTemporary.desc }
+ent-PuddleBlood = { ent-PuddleTemporary }
+    .suffix = Blood (30u)
+    .desc = { ent-PuddleTemporary.desc }
+>>>>>>> goob
 ent-PuddleWatermelon = { ent-PuddleTemporary }
     .suffix = Watermelon
     .desc = { ent-PuddleTemporary.desc }

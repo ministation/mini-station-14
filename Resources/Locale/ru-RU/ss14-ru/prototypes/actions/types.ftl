@@ -40,8 +40,11 @@ ent-ActionChangeVoiceMask = Изменить имя
     .desc = Измените имя, которое все слышат, на другое.
 ent-ActionVendingThrow = Выдать предмет
     .desc = Выдаёт случайный предмет из вашего инвентаря.
+<<<<<<< HEAD
 ent-ActionArtifactActivate = Активировать артефакт
     .desc = Немедленно активирует текущий узел артефакта.
+=======
+>>>>>>> goob
 ent-ActionToggleBlock = Блокирование
     .desc = Поднимите или опустите свой щит.
 ent-ActionClearNetworkLinkOverlays = Очистить оверлей сетевых соединений
@@ -60,6 +63,7 @@ ent-ActionToggleEyes = Открыть/закрыть глаза
     .desc = Закройте глаза, чтобы защитить их, или откройте, чтобы насладиться яркими цветами.
 ent-ActionToggleWagging = Махать хвостом
     .desc = Начать/перестать махать хвостом.
+<<<<<<< HEAD
 ent-FakeMindShieldToggleAction = [color=green]Переключить фальшивый Щит разума[/color]
     .desc = Переключить трансляцию фальшивого Щита разума
 ent-ActionToggleRootable = action-name-toggle-rootable
@@ -68,3 +72,13 @@ ent-ActionChameleonController = Control clothing
     .desc = Change your entire outfit fast!
 ent-ActionToggleParamedicSiren = Переключить сирену парамедика
     .desc = Включает или выключает сирену парамедика.
+=======
+ent-ActionGravityJump = Прыгнуть
+    .desc = Активирует продвинутую систему ускорения, перемещает вас на короткое расстояние в направлении взгляда.
+ent-ActionToggleRootable = action-name-toggle-rootable
+    .desc = action-description-toggle-rootable
+ent-ActionChameleonController = Изменить одежду
+    .desc = Быстро смените свой внешний вид!
+ent-FakeMindShieldToggleAction = [color=green]Переключить фальшивый Щит разума[/color]
+    .desc = Переключить трансляцию фальшивого Щита разума
+>>>>>>> goob

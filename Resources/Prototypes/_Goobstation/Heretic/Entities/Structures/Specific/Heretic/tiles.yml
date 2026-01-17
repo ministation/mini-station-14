@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 - type: entity
   id: HereticFireAA # AA in ash ascension
   name: fire
@@ -12,15 +26,28 @@
   - type: StepTrigger
     requiredTriggeredSpeed: 0
     intersectRatio: 0.1
+<<<<<<< HEAD
   - type: Sprite
     sprite: Effects/fire.rsi
     drawdepth: Effects
+=======
+    triggerGroups:
+      types:
+        - Lava
+  - type: Sprite
+    sprite: Effects/fire.rsi
+    drawdepth: FloorEffects
+>>>>>>> goob
     layers:
       - state: 1
         shader: unshaded
   - type: TileEntityEffect
     effects:
     - !type:FlammableReaction
+<<<<<<< HEAD
+=======
+      fireProtectionPenetration: 0.5
+>>>>>>> goob
       multiplier: 3.75
       multiplierOnExisting: 0.75
     - !type:Ignite
@@ -43,6 +70,13 @@
   - type: Tag
     tags:
       - HideContextMenu
+<<<<<<< HEAD
+=======
+  - type: PreventCollide
+    whitelist:
+      components:
+      - Ghoul
+>>>>>>> goob
 
 - type: entity
   id: TileHereticVoid
@@ -53,17 +87,46 @@
     snap:
     - Wall
   components:
+<<<<<<< HEAD
   - type: StepTrigger
     requiredTriggeredSpeed: 0
     intersectRatio: 0.1
   - type: Sprite
+=======
+  - type: TimedDespawn
+    lifetime: 30
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.1
+    triggerGroups:
+      types:
+        - Lava
+  - type: Sprite
+    drawdepth: Effects
+>>>>>>> goob
     sprite: _Goobstation/Heretic/void_overlay.rsi
     layers:
       - state: voidtile
         shader: unshaded
+<<<<<<< HEAD
   - type: TileEntityEffect
     effects:
     - !type:VoidCurse
+=======
+  - type: SyncSprite
+  - type: TileEntityEffect
+    effects:
+    - !type:VoidCurse
+    - !type:GenericStatusEffect
+      key: PressureImmunity
+      component: PressureImmunity
+      conditions:
+      - !type:HasComponentCondition
+        components:
+          - Heretic
+          - Ghoul
+        guidebookComponentName: reagent-comp-condition-heretic-or-ghoul
+>>>>>>> goob
   - type: Transform
     anchored: true
   - type: Physics
@@ -83,3 +146,131 @@
   - type: Tag
     tags:
       - HideContextMenu
+<<<<<<< HEAD
+=======
+
+- type: entity
+  id: TileHereticRustRune
+  name: rune
+  description: Rusty...
+  components:
+  - type: Sprite
+    drawdepth: FloorEffects
+    sprite: _Goobstation/Heretic/Effects/effects.rsi
+    layers:
+      - state: small_rune_1
+        shader: unshaded
+        map: [ "base" ]
+  - type: RandomSprite
+    available:
+      - base:
+          small_rune_1: ""
+          small_rune_2: ""
+          small_rune_3: ""
+          small_rune_4: ""
+          small_rune_5: ""
+          small_rune_6: ""
+          small_rune_7: ""
+          small_rune_8: ""
+          small_rune_9: ""
+          small_rune_10: ""
+          small_rune_11: ""
+          small_rune_12: ""
+  - type: Transform
+    anchored: true
+  - type: RequiresTile
+  - type: SpriteRandomOffset
+  - type: Appearance
+  - type: TimedDespawn
+    lifetime: 0.7
+  - type: Tag
+    tags:
+      - HideContextMenu
+
+- type: entity
+  id: HereticRustAscensionSpreader
+  name: rust
+  description: It grows...
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Transform
+    anchored: true
+  - type: RustSpreader
+  - type: Tag
+    tags:
+      - HideContextMenu
+
+- type: tile
+  id: PlatingRust
+  name: tiles-plating-rust
+  sprite: /Textures/_Goobstation/Heretic/tiles.rsi/plating_rust.png
+  baseTurf: Plating
+  isSubfloor: true
+  deconstructTools: [ Prying ] # This used to be welding but it was annoying to weld plating instead of rust accidentally and space the area
+  deconstructTimeMultiplier: 5
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 1.5
+  heatCapacity: 10000
+
+- type: entity
+  id: WallFieldCosmic
+  name: cosmic field
+  description: A field that cannot be passed by people marked with a cosmic star.
+  components:
+  - type: TimedDespawn
+    lifetime: 30
+  - type: Tag
+    tags:
+    - Wall
+    - WideSwingIgnore
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+        - HighImpassable
+        - MidImpassable
+        - LowImpassable
+      fix2:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,-0.6,0.6,0.6"
+        layer:
+        - HighImpassable
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+        - Opaque
+        hard: false
+  - type: Airtight
+    airBlocked: false
+    blockExplosions: false
+  - type: Sprite
+    sprite: _Goobstation/Heretic/Effects/effects.rsi
+    layers:
+    - state: cosmic_carpet
+  - type: RustRequiresPathStage
+    pathStage: 11 # Can't rust
+  - type: CosmicField
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 1.25
+    sprintSpeedModifier: 1.25
+    affectAirborne: true
+    whitelist:
+      components:
+      - CosmosPassive
+  - type: VelocityModifierContacts
+    isActive: false
+    modifier: 0.05
+    whitelist:
+      components:
+      - Projectile
+    blacklist:
+      components:
+      - StarBlast
+>>>>>>> goob

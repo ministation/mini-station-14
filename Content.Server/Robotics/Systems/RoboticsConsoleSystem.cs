@@ -1,3 +1,15 @@
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 ImHoks <imhokzzzz@gmail.com>
+// SPDX-FileCopyrightText: 2025 KillanGenifer <killangenifer@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Administration.Logs;
 using Content.Server.DeviceNetwork.Systems;
 using Content.Server.Radio.EntitySystems;
@@ -9,7 +21,10 @@ using Content.Shared.Robotics.Components;
 using Content.Shared.Robotics.Systems;
 using Robust.Server.GameObjects;
 using Robust.Shared.Timing;
+<<<<<<< HEAD
 using System.Diagnostics.CodeAnalysis;
+=======
+>>>>>>> goob
 using Content.Shared.Containers.ItemSlots;
 using Robust.Shared.Containers;
 using Content.Shared.DeviceNetwork.Events;
@@ -38,10 +53,18 @@ public sealed class RoboticsConsoleSystem : SharedRoboticsConsoleSystem
         base.Initialize();
 
         SubscribeLocalEvent<RoboticsConsoleComponent, DeviceNetworkPacketEvent>(OnPacketReceived);
+<<<<<<< HEAD
         // Corvax-Next-MutableLaws-Start
         SubscribeLocalEvent<RoboticsConsoleComponent, EntInsertedIntoContainerMessage>(OnInserted);
         SubscribeLocalEvent<RoboticsConsoleComponent, EntRemovedFromContainerMessage>(OnRemoved);
         // Corvax-Next-MutableLaws-End
+=======
+        // Corvax-Goob-MutableLaws-Start
+        SubscribeLocalEvent<RoboticsConsoleComponent, EntInsertedIntoContainerMessage>(OnInserted);
+        SubscribeLocalEvent<RoboticsConsoleComponent, RoboticsConsoleChangeLawsMessage>(OnChangeLaws);
+        SubscribeLocalEvent<RoboticsConsoleComponent, EntRemovedFromContainerMessage>(OnRemoved);
+        // Corvax-Goob-MutableLaws-End
+>>>>>>> goob
         Subs.BuiEvents<RoboticsConsoleComponent>(RoboticsConsoleUiKey.Key, subs =>
         {
             subs.Event<BoundUIOpenedEvent>(OnOpened);
@@ -97,7 +120,11 @@ public sealed class RoboticsConsoleSystem : SharedRoboticsConsoleSystem
         UpdateUserInterface(ent);
     }
 
+<<<<<<< HEAD
     // Corvax-Next-MutableLaws-Start
+=======
+    // Corvax-Goob-MutableLaws-Start
+>>>>>>> goob
     private void OnInserted(Entity<RoboticsConsoleComponent> ent, ref EntInsertedIntoContainerMessage args)
     {
         UpdateUserInterface(ent);
@@ -107,14 +134,22 @@ public sealed class RoboticsConsoleSystem : SharedRoboticsConsoleSystem
     {
         UpdateUserInterface(ent);
     }
+<<<<<<< HEAD
     // Corvax-Next-MutableLaws-End
+=======
+    // Corvax-Goob-MutableLaws-End
+>>>>>>> goob
 
     private void OnOpened(Entity<RoboticsConsoleComponent> ent, ref BoundUIOpenedEvent args)
     {
         UpdateUserInterface(ent);
     }
 
+<<<<<<< HEAD
     // Corvax-Next-MutableLaws-Start
+=======
+    // Corvax-Goob-MutableLaws-Start
+>>>>>>> goob
     private void OnChangeLaws(Entity<RoboticsConsoleComponent> ent, ref RoboticsConsoleChangeLawsMessage args)
     {
         if (_lock.IsLocked(ent.Owner))
@@ -125,6 +160,13 @@ public sealed class RoboticsConsoleSystem : SharedRoboticsConsoleSystem
 
         if (!_slots.TryGetSlot(ent, ent.Comp.CircuitBoardItemSlot, out var slot) || slot.Item is null)
             return;
+<<<<<<< HEAD
+=======
+        // Corvax-Next-AiRemoteControl-Start
+        if (data.IsAiControllable)
+            return;
+        // Corvax-Next-AiRemoteControl-End
+>>>>>>> goob
 
         var payload = new NetworkPayload()
         {
@@ -138,7 +180,11 @@ public sealed class RoboticsConsoleSystem : SharedRoboticsConsoleSystem
         _radio.SendRadioMessage(ent, message, ent.Comp.RadioChannel, ent);
         _adminLogger.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(args.Actor):user} changed laws of borg {data.Name} with address {args.Address}");
     }
+<<<<<<< HEAD
     // Corvax-Next-MutableLaws-End
+=======
+    // Corvax-Goob-MutableLaws-End
+>>>>>>> goob
 
     private void OnDisable(Entity<RoboticsConsoleComponent> ent, ref RoboticsConsoleDisableMessage args)
     {
@@ -186,7 +232,11 @@ public sealed class RoboticsConsoleSystem : SharedRoboticsConsoleSystem
 
     private void UpdateUserInterface(Entity<RoboticsConsoleComponent> ent)
     {
+<<<<<<< HEAD
         var state = new RoboticsConsoleState(ent.Comp.Cyborgs, _slots.TryGetSlot(ent, ent.Comp.CircuitBoardItemSlot, out var slot) && slot.HasItem); // Corvax-Next-MutableLaws
+=======
+        var state = new RoboticsConsoleState(ent.Comp.Cyborgs, _slots.TryGetSlot(ent, ent.Comp.CircuitBoardItemSlot, out var slot) && slot.HasItem); // Corvax-Goob-MutableLaws
+>>>>>>> goob
         _ui.SetUiState(ent.Owner, RoboticsConsoleUiKey.Key, state);
     }
 }

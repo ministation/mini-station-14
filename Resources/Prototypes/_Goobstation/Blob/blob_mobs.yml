@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+=======
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 shibe <95730644+shibechef@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+>>>>>>> goob
 # Pod
 - type: entity
   id: MobBlobPod
@@ -15,8 +33,13 @@
       spreadAmount: 20
       solution:
         reagents:
+<<<<<<< HEAD
           - ReagentId: FluorosulfuricAcid
             Quantity: 5
+=======
+          - ReagentId: TearGas
+            Quantity: 3
+>>>>>>> goob
     - type: Damageable
       damageContainer: Blob
       damageModifierSet: BlobMob
@@ -30,9 +53,16 @@
       tags:
         - HidesHair
         - BlobMob
+<<<<<<< HEAD
         - BlobMind
     - type: CollectiveMind
       defaultChannel: Blobmind
+=======
+    - type: CollectiveMind
+      defaultChannel: Blobmind
+      channels:
+      - Blobmind
+>>>>>>> goob
     - type: IngestionBlocker
     - type: IdentityBlocker
     - type: BlobPod
@@ -52,7 +82,19 @@
         NavBlob: !type:Bool
           true
     - type: BlobMob
+<<<<<<< HEAD
     #- type: BlobSpeak
+=======
+    # - type: BlobSpeak
+    # Einstein Engines - Language begin
+    - type: LanguageSpeaker
+    - type: LanguageKnowledge
+      speaks:
+      - Blob
+      understands:
+      - Blob
+    # Einstein Engines - Language end
+>>>>>>> goob
     - type: CombatMode
     - type: NpcFactionMember
       factions:
@@ -65,7 +107,11 @@
       animation: WeaponArcSmash
       damage:
         types:
+<<<<<<< HEAD
           Piercing: 5
+=======
+          Blunt: 8
+>>>>>>> goob
     - type: DamageStateVisuals
       states:
         Alive:
@@ -103,6 +149,7 @@
     - type: GuideHelp
       guides:
       - Blob
+<<<<<<< HEAD
     - type: GhostRole
       name: ghost-role-information-blobpod-name
       description: ghost-role-information-blobpod-description
@@ -110,6 +157,8 @@
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
+=======
+>>>>>>> goob
 
 # Blobbernaut
 - type: entity
@@ -122,6 +171,7 @@
     - type: ZombieImmune
     - type: Damageable
       damageContainer: Blob
+<<<<<<< HEAD
       damageModifierSet: BlobMob
     - type: Tag
       tags:
@@ -129,20 +179,52 @@
         - BlobMind
     - type: CollectiveMind
       defaultChannel: Blobmind
+=======
+      damageModifierSet: BlobBlobbernaut
+    - type: Tag
+      tags:
+        - Blobbernaut
+        - BlobMob
+    - type: CollectiveMind
+      defaultChannel: Blobmind
+      channels:
+      - Blobmind
+>>>>>>> goob
     - type: GhostRole
       name: ghost-role-information-blobbernaut-name
       description: ghost-role-information-blobbernaut-description
       rules: You are an antagonist, defend your blob core!
+<<<<<<< HEAD
       raffle:
         settings: default
+=======
+      mindRoles:
+      - MindRoleGhostRoleTeamAntagonist
+      raffle:
+        settings: short
+    - type: TTS # CorvaxGoob-TTS
+      voice: Gizmo
+>>>>>>> goob
     - type: GhostTakeoverAvailable
     - type: Blobbernaut
     - type: Physics
     - type: InputMover
     - type: MobMover
     - type: BlobMob
+<<<<<<< HEAD
     - type: ReplacementAccent
       accent: genericAggressive
+=======
+    # - type: BlobSpeak
+    # Einstein Engines - Language begin
+    - type: LanguageSpeaker
+    - type: LanguageKnowledge
+      speaks:
+      - Blob
+      understands:
+      - Blob
+    # Einstein Engines - Language end
+>>>>>>> goob
     - type: CombatMode
     - type: HTN
       rootTask:
@@ -202,9 +284,21 @@
           shader: unshaded
     - type: NightVision
       color: "#808080"
+<<<<<<< HEAD
     - type: GuideHelp
       guides:
       - Blob
+=======
+      activateSound: null
+      deactivateSound: null
+    - type: GuideHelp
+      guides:
+      - Blob
+    - type: Bloodstream
+      bloodMaxVolume: 300
+      bloodReagent: Blood
+      bleedReductionAmount: 5
+>>>>>>> goob
 
 # Observer
 - type: entity
@@ -219,8 +313,22 @@
           type: BlobChemSwapBoundUserInterface
     - type: Actions
     - type: Alerts
+<<<<<<< HEAD
     - type: ReplacementAccent
       accent: genericAggressive
+=======
+    # Einstein Engines - Language begin
+    - type: LanguageSpeaker
+      currentLanguage: Blob
+    - type: LanguageKnowledge
+      speaks:
+      - Blob
+      understands:
+      - Blob
+      - Xeno
+      - TauCetiBasic
+    # Einstein Engines - Language end
+>>>>>>> goob
     - type: Hands
       showInHands: true
     - type: BlobObserver
@@ -237,8 +345,16 @@
       name: ghost-role-information-blob-name
       description: ghost-role-information-blob-description
       rules: You are an antagonist, destroy the station!
+<<<<<<< HEAD
       raffle:
         settings: default
+=======
+      mindRoles:
+      - MindRoleGhostRoleSoloAntagonist
+      requirements:
+      - !type:OverallPlaytimeRequirement
+        time: 18000 #5 hours
+>>>>>>> goob
     - type: GhostTakeoverAvailable
     - type: Fixtures
       fixtures:
@@ -267,6 +383,13 @@
     - type: Tag
       tags:
       - BypassInteractionRangeChecks
+<<<<<<< HEAD
       - BlobMind
     - type: CollectiveMind
       defaultChannel: Blobmind
+=======
+    - type: CollectiveMind
+      defaultChannel: Blobmind
+      channels:
+      - Blobmind
+>>>>>>> goob

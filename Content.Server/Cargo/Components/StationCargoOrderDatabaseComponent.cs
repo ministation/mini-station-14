@@ -1,3 +1,14 @@
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Andrew <blackledgecreates@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Linq;
 using Content.Server.Station.Components;
 using Content.Shared.Cargo;
@@ -32,6 +43,15 @@ public sealed partial class StationCargoOrderDatabaseComponent : Component
     public int NumOrdersCreated;
 
     /// <summary>
+<<<<<<< HEAD
+=======
+    ///     GoobStation - Tracks next time that a product on cooldown can be ordered.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadOnly), DataField]
+    public Dictionary<string, TimeSpan> ProductCooldownTime = new Dictionary<string, TimeSpan>();
+
+    /// <summary>
+>>>>>>> goob
     /// An all encompassing determiner of what markets can be ordered from.
     /// Not every console can order from every market, but a console can't order from a market not on this list.
     /// </summary>

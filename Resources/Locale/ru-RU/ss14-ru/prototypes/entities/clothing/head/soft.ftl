@@ -15,9 +15,15 @@ ent-ClothingHeadHatQMsoft = кепка квартирмейстера
     .desc = Бейсболка, окрашенная в цвет квартирмейстера.
 ent-ClothingHeadHatQMsoftFlipped = кепка квартирмейстера
     .desc = { ent-ClothingHeadHeadHatBaseFlipped.desc }
+<<<<<<< HEAD
 ent-ClothingHeadHatCommandSoft = command cap
     .desc = It's a baseball hat painted in Command colours.
 ent-ClothingHeadHatCommandSoftFlipped = command cap
+=======
+ent-ClothingHeadHatCommandSoft = кепка командования
+    .desc = Бейсболка в узнаваемом синем оттенке командования.
+ent-ClothingHeadHatCommandSoftFlipped = { ent-ClothingHeadHatCommandSoft }
+>>>>>>> goob
     .desc = { ent-ClothingHeadHeadHatBaseFlipped.desc }
 ent-ClothingHeadHatCorpsoft = корпоративная кепка
     .desc = Бейсболка, окрашенная в цвета корпорации.

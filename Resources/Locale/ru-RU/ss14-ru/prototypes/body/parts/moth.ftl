@@ -1,6 +1,12 @@
 ent-PartMoth = часть тела ниана
     .desc = { ent-BasePart.desc }
+<<<<<<< HEAD
 ent-TorsoMoth = торс ниана
+=======
+ent-ChestMoth = грудь ниана
+    .desc = { ent-PartMoth.desc }
+ent-GroinMoth = пах ниана
+>>>>>>> goob
     .desc = { ent-PartMoth.desc }
 ent-HeadMoth = голова ниана
     .desc = { ent-PartMoth.desc }

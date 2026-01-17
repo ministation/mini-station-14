@@ -23,15 +23,26 @@ ent-BaseSyringe = syringe
     .desc = Used to draw blood samples from mobs, or to inject them with reagents.
 ent-Syringe = { ent-BaseSyringe }
     .desc = { ent-BaseSyringe.desc }
+<<<<<<< HEAD
 ent-MiniSyringe = mini syringe
     .desc = A regular syringe, reshaped to fit inside of a gun.
+=======
+>>>>>>> goob
 ent-PrefilledSyringe = { ent-BaseSyringe }
     .desc = { ent-BaseSyringe.desc }
 ent-SyringeBluespace = bluespace syringe
     .desc = Injecting with advanced bluespace technology.
 ent-SyringeCryostasis = cryostasis syringe
+<<<<<<< HEAD
     .desc = A syringe used to contain chemicals or solutions without reactions.
 ent-Pill = pill
     .desc = It's not a suppository.
 ent-PillCanister = pill canister
     .desc = Holds up to 10 pills.
+=======
+    .desc = An improved syringe used to contain chemicals or solutions without reactions.
+ent-Pill = pill
+    .desc = It's not a suppository.
+ent-PillCanister = pill canister
+    .desc = Holds up to 15 pills.
+>>>>>>> goob

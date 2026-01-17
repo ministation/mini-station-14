@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ent-ClothingUniformJumpsuitDeathSquad = униформа Эскадрона смерти
+=======
+ent-ClothingUniformJumpsuitDeathSquad = униформа Эскадрона Смерти
+>>>>>>> goob
     .desc = Усовершенствованный бронированный комбинезон, используемый спецподразделениями при проведении специальных операций.
 ent-ClothingUniformJumpsuitAncient = старинный комбинезон
     .desc = Ужасно поношенный и потрёпанный серый комбинезон. Он выглядит так, будто его не стирали более десяти лет.
@@ -66,8 +70,13 @@ ent-ClothingUniformJumpsuitHoSGrey = серый комбинезон главы 
     .desc = Серый комбинезон главы службы безопасности, который делает его несколько похожим на ассистента.
 ent-ClothingUniformJumpsuitHoSParadeMale = парадная форма главы службы безопасности
     .desc = Одежда класса люкс для мужчин, возглавляющих службу безопасности, для особых случаев.
+<<<<<<< HEAD
 ent-ClothingUniformJumpsuitCommandGeneric = command jumpsuit
     .desc = A generic Command-colored jumpsuit not associated with any particular department.
+=======
+ent-ClothingUniformJumpsuitCommandGeneric = комбинезон командования
+    .desc = Универсальный комбинезон цвета командования, не связанный с каким-либо конкретным отделом.
+>>>>>>> goob
 ent-ClothingUniformJumpsuitHydroponics = комбинезон ботаника
     .desc = Имеет сильный запах земли. Будем надеяться, что он просто грязный, а не весь в земле.
 ent-ClothingUniformJumpsuitJanitor = комбинезон уборщика

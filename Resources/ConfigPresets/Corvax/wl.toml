@@ -5,7 +5,11 @@ maxplayers = 80
 soft_max_players = 70
 map_rotation = true
 role_timers = false
+<<<<<<< HEAD
 peaceful_end = false
+=======
+# peaceful_end = false
+>>>>>>> goob
 
 [server]
 lobby_name = "️🛰️ Corvax — Вайтлист ☕"

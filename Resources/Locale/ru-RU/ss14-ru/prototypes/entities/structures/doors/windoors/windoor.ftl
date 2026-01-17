@@ -67,7 +67,11 @@ ent-WindoorSecureCargoLocked = { ent-WindoorSecure }
     .suffix = Карго, Снабжение, Закрыт
     .desc = { ent-WindoorSecure.desc }
 ent-WindoorSecureChapelLocked = { ent-WindoorSecure }
+<<<<<<< HEAD
     .suffix = Церковь, Закрыт
+=======
+    .suffix = Храм, Закрыт
+>>>>>>> goob
     .desc = { ent-WindoorSecure.desc }
 ent-WindoorSecureCentralCommandLocked = { ent-WindoorSecure }
     .suffix = Центральное командование, Закрыт
@@ -121,7 +125,11 @@ ent-WindoorSecureJanitorLocked = { ent-WindoorSecure }
     .suffix = Уборщик, Закрыт
     .desc = { ent-WindoorSecure.desc }
 ent-WindoorSecureResearchDirectorLocked = { ent-WindoorSecureCommandLocked }
+<<<<<<< HEAD
     .suffix = ResearchDirector, Locked
+=======
+    .suffix = Научный Руководитель, Закрыт
+>>>>>>> goob
     .desc = { ent-WindoorSecureCommandLocked.desc }
 ent-WindoorSecureKitchenLocked = { ent-WindoorSecure }
     .suffix = Кухня, Закрыт
@@ -133,7 +141,11 @@ ent-PlasmaWindoorSecureSecurityLocked = { ent-WindoorSecurePlasma }
     .suffix = Служба Безопасности, Закрыт, Плазма
     .desc = { ent-WindoorSecurePlasma.desc }
 ent-WindoorChapelLocked = { ent-Windoor }
+<<<<<<< HEAD
     .suffix = Церковь, Закрыт
+=======
+    .suffix = Храм, Закрыт
+>>>>>>> goob
     .desc = { ent-Windoor.desc }
 ent-PlasmaWindoorSecureScienceLocked = { ent-WindoorSecurePlasma }
     .suffix = Научный, Закрыт, Плазма
@@ -156,6 +168,12 @@ ent-PlasmaWindoorSyndicateLocked = { ent-WindoorPlasma }
 ent-PlasmaWindoorSecureSyndicateLocked = { ent-WindoorSecurePlasma }
     .suffix = Синдикат, Закрыт, Плазма
     .desc = { ent-WindoorSecurePlasma.desc }
+<<<<<<< HEAD
+=======
+ent-PlasmaWindoorSecureSyndicateLockedIndestructable = плазменное раздвижное окно?
+    .desc = У тебя нехорошее предчувствие.
+    .suffix = Синдикат, Закрыт, Плазма, Неразрушимое
+>>>>>>> goob
 ent-UraniumWindoorSyndicateLocked = { ent-WindoorUranium }
     .suffix = Синдикат, Закрыт, Уран
     .desc = { ent-WindoorUranium.desc }

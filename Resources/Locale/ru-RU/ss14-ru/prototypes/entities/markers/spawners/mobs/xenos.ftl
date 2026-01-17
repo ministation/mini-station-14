@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ent-SpawnMobXenoBurrower = Xeno Spawner
     .suffix = Burrower
     .desc = { ent-MarkerBase.desc }
@@ -18,4 +19,26 @@ ent-SpawnMobXenoRunner = Xeno Spawner
     .desc = { ent-MarkerBase.desc }
 ent-SpawnMobXenoSpitter = Xeno Spawner
     .suffix = Spitter
+=======
+ent-SpawnMobXenoBurrower = спавнер ксено
+    .suffix = Бурильщик
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobXenoDrone = спавнер ксено
+    .suffix = Дрон
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobXenoPraetorian = спавнер ксено
+    .suffix = Преторианец
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobXenoQueen = спавнер ксено
+    .suffix = Королева
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobXenoRavager = спавнер ксено
+    .suffix = Разрушитель
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobXenoRunner = спавнер ксено
+    .suffix = Бегун
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobXenoSpitter = спавнер ксено
+    .suffix = Плевальщик
+>>>>>>> goob
     .desc = { ent-MarkerBase.desc }

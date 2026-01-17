@@ -25,7 +25,11 @@ ent-AnomalyRockUranium = { ent-AnomalyRockBase }
     .suffix = Камень, Уран
     .desc = { ent-AnomalyRockBase.desc }
 ent-AnomalyRockBananium = { ent-AnomalyRockBase }
+<<<<<<< HEAD
     .suffix = Rock, Bananium
+=======
+    .suffix = Камень, Бананиум
+>>>>>>> goob
     .desc = { ent-AnomalyRockBase.desc }
 ent-AnomalyRockQuartz = { ent-AnomalyRockBase }
     .suffix = Камень, Кварц

@@ -1,9 +1,16 @@
 ent-BaseWeaponLauncher = BaseWeaponLauncher
     .desc = Дерзай — налетай, целься и стреляй.
+<<<<<<< HEAD
 ent-WeaponLauncherChinaLake = Чайна Лэйк
     .desc = БЛУП.
 ent-WeaponLauncherHydra = hydra
     .desc = PLOOP... FSSSSSS
+=======
+ent-WeaponLauncherChinaLake = China Lake
+    .desc = БЛУП.
+ent-WeaponLauncherHydra = гидра
+    .desc = БЛУП... ПШШШШШШ
+>>>>>>> goob
 ent-WeaponLauncherRocket = РПГ-7
     .desc = Древний ручной реактивный гранатомёт.
 ent-WeaponLauncherMultipleRocket = система залпового пуска
@@ -16,6 +23,11 @@ ent-WeaponForceGun = силовая пушка
     .desc = Манипулирует гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
 ent-WeaponGrapplingGun = крюк-пушка
     .desc = { ent-BaseItem.desc }
+<<<<<<< HEAD
+=======
+ent-WeaponLauncherSingularityBuster = противосингулярный гранатомёт
+    .desc = Экспериментальный гранатомёт, предназначенный для стрельбы ракетами, способными разрушать сингулярность или теслу.
+>>>>>>> goob
 ent-WeaponTetherGunAdmin = гравипушка
     .desc = Манипулирует гравитацией вокруг объектов, чтобы бросать их с высокой скоростью.
     .suffix = Адмемы

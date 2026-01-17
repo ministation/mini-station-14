@@ -47,7 +47,11 @@ ent-ClothingMaskGasMerc = противогаз наёмника
     .desc = Немного устаревший, но надёжный противогаз военного образца.
 ent-ClothingMaskGasERT = противогаз ОБР
     .desc = Противогаз элитного отряда быстрого реагирования.
+<<<<<<< HEAD
 ent-ClothingMaskGasDeathSquad = противогаз эскадрона смерти
+=======
+ent-ClothingMaskGasDeathSquad = противогаз Эскадрона Смерти
+>>>>>>> goob
     .desc = Уникальный противогаз самого элитного отряда NT.
 ent-ClothingMaskRat = маска крысы
     .desc = Маска крысы, похожая на крысу. Возможно, они примут вас за обычную крысу.
@@ -67,6 +71,7 @@ ent-ClothingMaskNeckGaiter = шейный гетр
     .desc = Стильный гетр, способный защитить от космического ветра?...
 ent-ClothingMaskNeckGaiterRed = красный шейный гетр
     .desc = { ent-ClothingMaskNeckGaiter.desc }
+<<<<<<< HEAD
 ent-ClothingMaskBlushingClown = застенчивая маска клоуна
     .desc = Маска для застенчивого клоуна.
 ent-ClothingMaskBlushingMime = застенчивая маска мима
@@ -77,6 +82,20 @@ ent-ClothingMaskScaredMime = испуганная маска мима
     .desc = Кажется, он бы закричал, если бы не маска.
 ent-ClothingMaskMimeSecurity = security mime mask
     .desc = You have the right to remain silent.
+=======
+ent-ClothingMaskSexyClown = сексуальная маска клоуна
+    .desc = Некоторые озорные клоуны думают, что именно так выглядит Хонкоматерь.
+ent-ClothingMaskSexyMime = сексуальная маска мима
+    .desc = Эти румяные щёчки так и просятся, чтобы их погладили.
+ent-ClothingMaskBlushingClown = застенчивая маска клоуна
+    .desc = Маска для застенчивого клоуна.
+ent-ClothingMaskSadMime = грустная маска мима
+    .desc = Многие считают, что именно так выглядит настоящая маска мима.
+ent-ClothingMaskMimeSecurity = маска мима безопасности
+    .desc = Вы имеете право хранить молчание.
+ent-ClothingMaskScaredMime = испуганная маска мима
+    .desc = Кажется, он бы закричал, если бы не маска.
+>>>>>>> goob
 ent-ClothingMaskItalianMoustache = итальянские усы
     .desc = Изготовлены из волосков настоящих итальянских усов. Придаёт владельцу непреодолимое желание бурно жестикулировать.
 ent-ClothingMaskNinja = маска ниндзя

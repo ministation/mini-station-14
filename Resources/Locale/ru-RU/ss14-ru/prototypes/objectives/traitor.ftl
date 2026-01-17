@@ -8,6 +8,11 @@ ent-EscapeShuttleObjective = Улететь на Центком живым и с
     .desc = Один из наших агентов под прикрытием допросит вас по прибытии. Не дайте себя арестовать.
 ent-DieObjective = Умереть славной смертью.
     .desc = Умрите.
+<<<<<<< HEAD
+=======
+ent-HijackShuttleObjective = Завладейте эвакуационным шаттлом
+    .desc = Улетите на шаттле свободным и без лояльного экипажа NanoTrasen на борту. Используйте ЛЮБЫЕ доступные вам методы. Агенты Синдиката, враги NanoTrasen и заложники в наручниках могут оставаться на шаттле живыми. Игнорируйте помощь от кого-либо, кроме агента поддержки.
+>>>>>>> goob
 ent-KillRandomPersonObjective = { ent-BaseTraitorObjective }
     .desc = Сделайте это, как посчитаете нужным. Только убедитесь, что цель не улетит на Центком.
 ent-KillRandomHeadObjective = { ent-BaseTraitorObjective }
@@ -20,22 +25,37 @@ ent-BaseCMOStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
 ent-CMOHyposprayStealObjective = { ent-BaseCMOStealObjective }
     .desc = { ent-BaseCMOStealObjective.desc }
+<<<<<<< HEAD
 ent-CMOCrewMonitorStealObjective = { ent-BaseCMOStealObjective }
     .desc = { ent-BaseCMOStealObjective.desc }
+=======
+>>>>>>> goob
 ent-BaseRDStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
 ent-RDHardsuitStealObjective = { ent-BaseRDStealObjective }
     .desc = { ent-BaseRDStealObjective.desc }
 ent-HandTeleporterStealObjective = { ent-BaseRDStealObjective }
     .desc = { ent-BaseRDStealObjective.desc }
+<<<<<<< HEAD
+=======
+ent-BaseCEStealObjective = { ent-BaseTraitorStealObjective }
+    .desc = { ent-BaseTraitorStealObjective.desc }
+>>>>>>> goob
 ent-EnergyShotgunStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
 ent-MagbootsStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
+<<<<<<< HEAD
 ent-ClipboardStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
 ent-KnuckleDustersStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
+=======
+ent-KnuckleDustersStealObjective = { ent-BaseTraitorStealObjective }
+    .desc = { ent-BaseTraitorStealObjective.desc }
+ent-ClipboardStealObjective = { ent-BaseTraitorStealObjective }
+    .desc = { ent-BaseTraitorStealObjective.desc }
+>>>>>>> goob
 ent-CorgiMeatStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
 ent-BaseCaptainObjective = { ent-BaseTraitorStealObjective }
@@ -44,9 +64,16 @@ ent-CaptainIDStealObjective = { ent-BaseCaptainObjective }
     .desc = { ent-BaseCaptainObjective.desc }
 ent-CaptainJetpackStealObjective = { ent-BaseCaptainObjective }
     .desc = { ent-BaseCaptainObjective.desc }
+<<<<<<< HEAD
 ent-CaptainGunStealObjective = { ent-BaseCaptainObjective }
     .desc = { ent-BaseCaptainObjective.desc }
 
 # ent-NukeDiskStealObjective = { ent-BaseCaptainObjective }
 #     .desc = { ent-BaseCaptainObjective.desc }
 
+=======
+ent-NukeDiskStealObjective = { ent-BaseCaptainObjective }
+    .desc = { ent-BaseCaptainObjective.desc }
+ent-CaptainGunStealObjective = { ent-BaseCaptainObjective }
+    .desc = { ent-BaseCaptainObjective.desc }
+>>>>>>> goob

@@ -1,4 +1,5 @@
 ﻿[game]
+<<<<<<< HEAD
 hostname = "🛰️ Corvax — Мейн 🚀⚡[TTS][NEXT]"
 desc = "Корвакс — первый русскоязычный проект в Space Station 14.\n⚡ На этом сервере используется сборка Corvax Next. Больше контента, возможностей и взаимодействия!\nНа этом сервере пониженные требования к RP.\nИмеется интеграция TTS (Text-To-Speech)."
 maxplayers = 190
@@ -9,6 +10,19 @@ peaceful_end = false
 [server]
 rules_file = "CorvaxLRPRuleset"
 lobby_name = "️🛰️ Corvax — Мейн 🚀⚡"
+=======
+hostname = "🛰️ CorvaxGoob — Мейн 🚀 [LRP] [TTS]"
+desc = "Corvax — первый русскоязычный проект в Space Station 14!\n• 🛠️ На этом сервере используется измененная сборка Goob Station.\n   Больше контента, возможностей и взаимодействия!\n• 🟢 Пониженные требования к RP.\n• 🔊 Имеется интеграция TTS (Text-To-Speech)."
+maxplayers = 180
+soft_max_players = 100
+map_rotation = true
+defaultpreset = "secretplusmid"
+# peaceful_end = false
+
+[server]
+rules_file = "CorvaxLRPRuleset"
+lobby_name = "️🛰️ CorvaxGoob — Мейн 🚀 [LRP] [TTS]"
+>>>>>>> goob
 
 [game.panic_bunker]
 enabled = true
@@ -19,9 +33,21 @@ deny_vpn = true
 enable_without_admins = true
 disable_with_admins = true
 
+<<<<<<< HEAD
+=======
+[skills]
+enabled = false
+
+>>>>>>> goob
 [rules]
 time = 180.0
 
 [hub]
 advertise = true
 tags = "lang:ru,rp:low,rp:med,region:eu_e,tts"
+<<<<<<< HEAD
+=======
+
+[jobs]
+mrp_enabled = false
+>>>>>>> goob

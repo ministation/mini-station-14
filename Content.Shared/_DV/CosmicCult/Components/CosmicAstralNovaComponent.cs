@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SaffronFennec <firefoxwolf2020@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 using Content.Shared.Damage;
 using Robust.Shared.GameStates;
 
@@ -16,7 +25,11 @@ public sealed partial class CosmicAstralNovaComponent : Component
     public DamageSpecifier CosmicNovaDamage = new()
     {
         DamageDict = new() {
+<<<<<<< HEAD
             { "Asphyxiation", 13 }
+=======
+            { "Asphyxiation", 5 }
+>>>>>>> goob
         }
     };
 }

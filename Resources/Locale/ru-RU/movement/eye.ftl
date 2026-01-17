@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 parse-bool-fail = Невозможно спарсить { $arg } как bool
 parse-float-fail = Невозможно спарсить { $arg } как float
+=======
+>>>>>>> goob
 lockeyes-command-description = Предотвращает дальнейший поворот зрения
 lockeyes-command-help = lockeyes <true/false>
 rotateeyes-command-description = Поворачивает зрение всех игроков на указанный градус.

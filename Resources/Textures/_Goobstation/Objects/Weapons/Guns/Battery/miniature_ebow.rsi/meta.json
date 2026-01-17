@@ -11,6 +11,12 @@
             "name": "icon"
         },
         {
+<<<<<<< HEAD
+=======
+            "name": "base"
+        },
+        {
+>>>>>>> goob
             "name": "mag-0"
         },
         {

@@ -155,6 +155,12 @@
             "name": "icon-syndicate"
         },
         {
+            "name": "icon-surgery"
+        },
+        {
+            "name": "icon-advanced-surgery"
+        },
+        {
             "name": "janitor"
         },
         {
@@ -180,10 +186,10 @@
         },
         {
             "name": "xenoborg_engi"
-        }, 
+        },
         {
             "name": "xenoborg_generic"
-        }, 
+        },
         {
             "name": "xenoborg_heavy"
         },

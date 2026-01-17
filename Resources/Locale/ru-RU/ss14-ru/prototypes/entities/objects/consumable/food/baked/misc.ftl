@@ -69,5 +69,10 @@ ent-FoodBakedCroissantCotton = хлопковый круассан
     .desc = Маслянистое, слоистое, волокнистое лакомство.
 ent-FoodBakedGrilledCheeseSandwich = сэндвич с жареным сыром
     .desc = Хлеб и сыр, поджаренные с маслом, идеально подходят для прохладного дня в космосе.
+<<<<<<< HEAD
 ent-FoodBakedGrilledCheeseSandwichCotton = cotton grilled cheese sandwich
     .desc = Cotton bread slightly burnt in butter, with melted cheese. Moths find it difficult to resist this combination.
+=======
+ent-FoodBakedGrilledCheeseSandwichCotton = хлопковый сэндвич с жареным сыром
+    .desc = Cлегка обжаренный в масле хлопковый хлеб с расплавленным сыром. Молям трудно противостоять такому сочетанию.
+>>>>>>> goob

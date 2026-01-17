@@ -1,5 +1,6 @@
 ent-BorgChassisSelectable = { ent-BaseBorgChassisNT }
     .desc = { ent-BaseBorgChassisNT.desc }
+<<<<<<< HEAD
 ent-BorgChassisGeneric = обычный киборг
     .suffix = Выбранный тип
     .desc = { ent-BorgChassisSelectable.desc }
@@ -20,4 +21,26 @@ ent-BorgChassisSyndicateMedical = медицинский киборг Синди
 ent-BorgChassisSyndicateSaboteur = саботажный киборг Синдиката
     .desc = Изящный инженерный киборг, оснащённый модулями скрытности. Проектор-хамелеон позволяет ему маскироваться под киборга Nanotrasen.
 ent-BorgChassisDerelict = заброшенный киборг
+=======
+ent-BorgChassisGeneric = обычный борг
+    .suffix = Выбранный тип
+    .desc = { ent-BorgChassisSelectable.desc }
+ent-BorgChassisMining = борг-шахтёр
+    .desc = { ent-BorgChassisSelectable.desc }
+ent-BorgChassisEngineer = борг-инженер
+    .desc = { ent-BorgChassisSelectable.desc }
+ent-BorgChassisJanitor = борг-уборщик
+    .desc = { ent-BorgChassisSelectable.desc }
+ent-BorgChassisMedical = борг-доктор
+    .desc = { ent-BorgChassisSelectable.desc }
+ent-BorgChassisService = борг-официант
+    .desc = { ent-BorgChassisSelectable.desc }
+ent-BorgChassisSyndicateAssault = штурмовой борг Синдиката
+    .desc = Машина для убийств с доступом к различным смертоносным модулям.
+ent-BorgChassisSyndicateMedical = медицинский борг Синдиката
+    .desc = Боевой медицинский борг. Имеет ограниченный наступательный потенциал, но с лихвой компенсирует его своими вспомогательными возможностями.
+ent-BorgChassisSyndicateSaboteur = саботажный борг Синдиката
+    .desc = Изящный инженерный борг, оснащённый модулями скрытности. Проектор-хамелеон позволяет ему маскироваться под борга NanoTrasen.
+ent-BorgChassisDerelict = заброшенный борг
+>>>>>>> goob
     .desc = Гибрид человека и машины, помогающий в работе станции. Этот находится в очень запущенном состоянии.

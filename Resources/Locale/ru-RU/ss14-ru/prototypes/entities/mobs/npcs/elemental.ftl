@@ -10,19 +10,32 @@ ent-MobIronCrab = { ent-MobOreCrab }
     .suffix = Железо
 ent-MobCoalCrab = { ent-MobOreCrab }
     .desc = Рудный краб, состоящий из угля.
+<<<<<<< HEAD
     .suffix = Coal
+=======
+    .suffix = Уголь
+>>>>>>> goob
 ent-MobUraniumCrab = { ent-MobOreCrab }
     .desc = Рудный краб, состоящий из урана.
     .suffix = Уран
 ent-MobBananiumCrab = { ent-MobOreCrab }
+<<<<<<< HEAD
     .desc = An ore crab made from bananium.
     .suffix = Bananium
+=======
+    .desc = Рудный краб, состоящий из бананиума.
+    .suffix = Бананиум
+>>>>>>> goob
 ent-MobSilverCrab = { ent-MobOreCrab }
     .desc = Рудный краб, состоящий из серебра.
     .suffix = Серебро
 ent-MobGoldCrab = { ent-MobOreCrab }
     .desc = Рудный краб, состоящий из золота.
+<<<<<<< HEAD
     .suffix = Gold
+=======
+    .suffix = Золото
+>>>>>>> goob
 ent-ReagentSlime = химический слайм
     .desc = Состоит из жидкости и хочет растворить вас в себе.
     .suffix = Вода

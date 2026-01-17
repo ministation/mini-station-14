@@ -44,8 +44,11 @@ ent-MindRoleHeadRevolutionary = Head Revolutionary Role
     .desc = { ent-BaseMindRoleAntag.desc }
 ent-MindRoleRevolutionary = Revolutionary Role
     .desc = { ent-MindRoleHeadRevolutionary.desc }
+<<<<<<< HEAD
 ent-MindRoleSurvivor = Survivor Role
     .desc = { ent-BaseMindRoleAntag.desc }
+=======
+>>>>>>> goob
 ent-MindRoleThief = Thief Role
     .desc = { ent-BaseMindRoleAntag.desc }
 ent-MindRoleTraitor = Traitor Role
@@ -54,8 +57,11 @@ ent-MindRoleTraitorSleeper = Sleeper Agent Role
     .desc = { ent-MindRoleTraitor.desc }
 ent-MindRoleTraitorReinforcement = Syndicate Reinforcement Role
     .desc = { ent-MindRoleTraitor.desc }
+<<<<<<< HEAD
 ent-MindRoleWizard = Wizard Role
     .desc = { ent-BaseMindRoleAntag.desc }
+=======
+>>>>>>> goob
 ent-MindRoleInitialInfected = Initial Infected Role
     .desc = { ent-BaseMindRoleAntag.desc }
 ent-MindRoleZombie = Zombie Role

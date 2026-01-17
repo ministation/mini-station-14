@@ -1,3 +1,131 @@
+# SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2019 Ephememory <yetanotherscuffed@gmail.com>
+# SPDX-FileCopyrightText: 2019 Injazz <43905364+Injazz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 2019 PrPleGoo <felix.leeuwen@gmail.com>
+# SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 FL-OZ <58238103+FL-OZ@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 FL-OZ <anotherscuffed@gmail.com>
+# SPDX-FileCopyrightText: 2020 Git-Nivrak <59925169+Git-Nivrak@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2020 Rohesie <rohesie@gmail.com>
+# SPDX-FileCopyrightText: 2020 Swept <jamesurquhartwebb@gmail.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 AndrewUnderscore <71723495+UnderscoreX5@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 UnderscoreX5 <andrea.bisesti66@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Pancake <Pangogie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Kit0vras <123590995+Kit0vras@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 NULL882 <104377798+NULL882@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Doomsdrayk <robotdoughnut@comcast.net>
+# SPDX-FileCopyrightText: 2024 DrEnzyme <DrEnzyme@gmail.com>
+# SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Elysium206 <151651971+Elysium206@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Floofi <126319569+Shadowtheprotogen546@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 FoxxoTrystan <45297731+FoxxoTrystan@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
+# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
+# SPDX-FileCopyrightText: 2024 MetalSage <74924875+MetalSage@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MetalSage <metalsage.official@gmail.com>
+# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 NotSoDamn <75203942+NotSoDana@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+# SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ps3Moira <113228053+ps3moira@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pspritechologist <naaronn@gmail.com>
+# SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2024 WarMechanic <69510347+WarMechanic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ike709 <ike709@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 marbow <152051971+marboww@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 mhamster <81412348+mhamsterr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+
+
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Princess Cheeseballs <66055347+Pronana@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Thomas <87614336+Aeshus@users.noreply.github.com>
+
+# SPDX-FileCopyrightText: 2025 Weax <59857479+ImWeax@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 cohanna <conornhanna@gmail.com>
+
+# SPDX-FileCopyrightText: 2025 kosticia <kosticia46@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: tile
   id: FloorSteel
   name: tiles-steel-floor
@@ -15,6 +143,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteel
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelCheckerLight
@@ -33,6 +162,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteelCheckerLight
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelCheckerDark
@@ -51,6 +181,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteelCheckerDark
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelMini
@@ -69,6 +200,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteelMini
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelPavement
@@ -87,6 +219,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteelPavement
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelDiagonal
@@ -105,6 +238,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteelDiagonal
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelOffset
@@ -117,6 +251,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteelOffset
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelMono
@@ -135,6 +270,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemSteelMono
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelPavementVertical
@@ -153,6 +289,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemSteelPavementVertical
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelHerringbone
@@ -171,6 +308,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemSteelHerringbone
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorSteelDiagonalMini
@@ -189,6 +327,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemSteelDiagonalMini
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorBrassFilled
@@ -201,6 +340,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemBrassFilled
   heatCapacity: 10000
+  tileRipResistance: 220
 
 - type: tile
   id: FloorBrassReebe
@@ -213,6 +353,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemBrassReebe
   heatCapacity: 10000
+  tileRipResistance: 220
 
 - type: tile
   id: FloorPlastic
@@ -231,6 +372,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteel
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWood
@@ -251,6 +393,7 @@
     collection: BarestepWood
   itemDrop: FloorTileItemWood
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhite
@@ -269,6 +412,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhite
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhiteMini
@@ -287,6 +431,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteMini
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhitePavement
@@ -305,6 +450,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhitePavement
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhiteDiagonal
@@ -323,6 +469,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteDiagonal
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhiteOffset
@@ -335,6 +482,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteOffset
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhiteMono
@@ -353,6 +501,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteMono
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhitePavementVertical
@@ -371,6 +520,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhitePavementVertical
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhiteHerringbone
@@ -389,6 +539,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteHerringbone
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhiteDiagonalMini
@@ -407,6 +558,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteDiagonalMini
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorWhitePlastic
@@ -425,6 +577,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWhite
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorDark
@@ -443,6 +596,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDark
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorDarkMini
@@ -461,6 +615,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDarkMini
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorDarkPavement
@@ -479,6 +634,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDarkPavement
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorDarkDiagonal
@@ -497,6 +653,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDarkDiagonal
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorDarkOffset
@@ -509,6 +666,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDarkOffset
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorDarkMono
@@ -527,6 +685,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDarkMono
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorDarkPavementVertical
@@ -545,6 +704,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDarkPavementVertical
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorDarkHerringbone
@@ -563,6 +723,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDarkHerringbone
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorDarkDiagonalMini
@@ -581,6 +742,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDarkDiagonalMini
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorDarkPlastic
@@ -599,6 +761,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemDark
   heatCapacity: 10000
+  tileRipResistance: 50
 
 - type: tile
   id: FloorTechMaint
@@ -611,6 +774,20 @@
     collection: FootstepHull
   itemDrop: FloorTileItemTechmaint
   heatCapacity: 10000
+  tileRipResistance: 250
+
+- type: tile
+  id: FloorTechMaintDark
+  name: tiles-techmaint-floor-dark
+  sprite: /Textures/Tiles/tech_maint_dark.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaintDark
+  heatCapacity: 10000
+  tileRipResistance: 250
 
 - type: tile
   id: FloorReinforced
@@ -623,6 +800,7 @@
     collection: FootstepHull
   itemDrop: PartRodMetal1
   heatCapacity: 10000
+  reinforced: true
 
 - type: tile
   id: FloorMono
@@ -635,6 +813,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemMono
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorLino
@@ -647,6 +826,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemLino
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorSteelDirty
@@ -665,6 +845,7 @@
     collection: FootstepPlating
   itemDrop: FloorTileItemDirty
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorElevatorShaft
@@ -677,6 +858,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemElevatorShaft
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorMetalDiamond
@@ -689,6 +871,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemMetalDiamond
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorRockVault
@@ -701,6 +884,7 @@
     collection: FootstepAsteroid
   itemDrop: FloorTileItemRockVault
   heatCapacity: 10000
+  tileRipResistance:  400
 
 - type: tile
   id: FloorBlue
@@ -713,6 +897,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemBlue
   heatCapacity: 10000
+  tileRipResistance: 50
 
 - type: tile
   id: FloorSteelLime
@@ -731,6 +916,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemLime
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorMining
@@ -743,6 +929,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemMining
   heatCapacity: 10000
+  tileRipResistance: 250
 
 - type: tile
   id: FloorMiningDark
@@ -755,6 +942,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemMiningDark
   heatCapacity: 10000
+  tileRipResistance: 250
 
 - type: tile
   id: FloorMiningLight
@@ -767,6 +955,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemMiningLight
   heatCapacity: 10000
+  tileRipResistance: 250
 
 # Departamental
 - type: tile
@@ -780,6 +969,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemFreezer
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorShowroom
@@ -792,6 +982,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShowroom
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorHydro
@@ -804,6 +995,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemHydro
   heatCapacity: 10000
+  tileRipResistance: 50
 
 - type: tile
   id: FloorBar
@@ -822,6 +1014,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemBar
   heatCapacity: 10000
+  tileRipResistance: 100
 
 - type: tile
   id: FloorClown
@@ -834,6 +1027,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemClown
   heatCapacity: 10000
+  tileRipResistance: 50
 
 - type: tile
   id: FloorMime
@@ -846,6 +1040,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemMime
   heatCapacity: 10000
+  tileRipResistance: 50
 
 - type: tile
   id: FloorKitchen
@@ -858,6 +1053,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemKitchen
   heatCapacity: 10000
+  tileRipResistance: 50
 
 - type: tile
   id: FloorLaundry
@@ -870,6 +1066,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemLaundry
   heatCapacity: 10000
+  tileRipResistance: 50
 
 - type: tile
   id: FloorSteelDamaged
@@ -889,6 +1086,24 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemSteel #This should probably be made null when it becomes possible to make it such, in SS13 prying destroyed tiles wouldn't give you anything.
   heatCapacity: 10000
+  tileRipResistance: 175
+
+- type: tile
+  id: FloorSteelBurnt
+  name: tiles-steel-floor
+  sprite: /Textures/Tiles/steel_burnt.png
+  variants: 2
+  placementVariants:
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel #Same case as FloorSteelDamaged, make it null when possible
+  heatCapacity: 10000
+  tileRipResistance: 175
 
 # Concrete
 - type: tile
@@ -908,6 +1123,8 @@
     collection: FootstepTile
   itemDrop: FloorTileItemConcrete
   heatCapacity: 10000
+  weather: true
+  tileRipResistance: 300
 
 - type: tile
   id: FloorConcreteMono
@@ -926,6 +1143,8 @@
     collection: FootstepTile
   itemDrop: FloorTileItemConcreteMono
   heatCapacity: 10000
+  weather: true
+  tileRipResistance: 300
 
 - type: tile
   id: FloorConcreteSmooth
@@ -944,6 +1163,8 @@
     collection: FootstepTile
   itemDrop: FloorTileItemConcreteSmooth
   heatCapacity: 10000
+  weather: true
+  tileRipResistance: 300
 
 - type: tile
   id: FloorGrayConcrete
@@ -962,6 +1183,8 @@
     collection: FootstepTile
   itemDrop: FloorTileItemGrayConcrete
   heatCapacity: 10000
+  weather: true
+  tileRipResistance: 300
 
 - type: tile
   id: FloorGrayConcreteMono
@@ -980,6 +1203,8 @@
     collection: FootstepTile
   itemDrop: FloorTileItemGrayConcreteMono
   heatCapacity: 10000
+  weather: true
+  tileRipResistance: 300
 
 - type: tile
   id: FloorGrayConcreteSmooth
@@ -998,6 +1223,8 @@
     collection: FootstepTile
   itemDrop: FloorTileItemGrayConcreteSmooth
   heatCapacity: 10000
+  weather: true
+  tileRipResistance: 300
 
 - type: tile
   id: FloorOldConcrete
@@ -1016,6 +1243,8 @@
     collection: FootstepTile
   itemDrop: FloorTileItemOldConcrete
   heatCapacity: 10000
+  weather: true
+  tileRipResistance: 300
 
 - type: tile
   id: FloorOldConcreteMono
@@ -1034,6 +1263,8 @@
     collection: FootstepTile
   itemDrop: FloorTileItemOldConcreteMono
   heatCapacity: 10000
+  weather: true
+  tileRipResistance: 300
 
 - type: tile
   id: FloorOldConcreteSmooth
@@ -1052,6 +1283,8 @@
     collection: FootstepTile
   itemDrop: FloorTileItemOldConcreteSmooth
   heatCapacity: 10000
+  weather: true
+  tileRipResistance: 300
 
 # Carpets (non smoothing)
 - type: tile
@@ -1068,6 +1301,7 @@
   friction: 1.25
   itemDrop: FloorTileItemArcadeBlue
   heatCapacity: 10000
+  tileRipResistance: 75
 
 - type: tile
   id: FloorArcadeBlue2
@@ -1083,6 +1317,7 @@
   friction: 1.25
   itemDrop: FloorTileItemArcadeBlue2
   heatCapacity: 10000
+  tileRipResistance: 75
 
 - type: tile
   id: FloorArcadeRed
@@ -1098,6 +1333,7 @@
   friction: 1.25
   itemDrop: FloorTileItemArcadeRed
   heatCapacity: 10000
+  tileRipResistance: 75
 
 - type: tile
   id: FloorEighties
@@ -1113,6 +1349,7 @@
   friction: 1.25
   itemDrop: FloorTileItemEighties
   heatCapacity: 10000
+  tileRipResistance: 75
 
 - type: tile
   id: FloorCarpetClown
@@ -1128,6 +1365,7 @@
   friction: 1.25
   itemDrop: FloorTileItemCarpetClown
   heatCapacity: 10000
+  tileRipResistance: 75
 
 - type: tile
   id: FloorCarpetOffice
@@ -1143,6 +1381,7 @@
   friction: 1.25
   itemDrop: FloorTileItemCarpetOffice
   heatCapacity: 10000
+  tileRipResistance: 75
 
 - type: tile
   id: FloorBoxing
@@ -1162,6 +1401,7 @@
   friction: 1.25
   itemDrop: FloorTileItemBoxing
   heatCapacity: 10000
+  tileRipResistance: 50
 
 - type: tile
   id: FloorGym
@@ -1181,6 +1421,7 @@
   friction: 1.25
   itemDrop: FloorTileItemGym
   heatCapacity: 10000
+  tileRipResistance: 50
 
 # Shuttle
 - type: tile
@@ -1200,17 +1441,20 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShuttleWhite
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorShuttleGrey
   name: tiles-grey-shuttle-floor
   sprite: /Textures/Tiles/shuttlegrey.png
+  # Corvax-Goob-Resprites-start
   variants: 4
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  # Corvax-Goob-Resprites-end
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1218,17 +1462,20 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShuttleGrey
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorShuttleBlack
   name: tiles-black-shuttle-floor
   sprite: /Textures/Tiles/shuttleblack.png
+  # Corvax-Goob-Resprites-start
   variants: 4
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  # Corvax-Goob-Resprites-end
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1236,6 +1483,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShuttleBlack
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorShuttleBlue
@@ -1254,6 +1502,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShuttleBlue
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorShuttleOrange
@@ -1272,17 +1521,20 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShuttleOrange
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorShuttlePurple
   name: tiles-purple-shuttle-floor
   sprite: /Textures/Tiles/shuttlepurple.png
+  # Corvax-Goob-Resprites-start
   variants: 4
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  # Corvax-Goob-Resprites-end
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1290,17 +1542,20 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShuttlePurple
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 - type: tile
   id: FloorShuttleRed
   name: tiles-red-shuttle-floor
   sprite: /Textures/Tiles/shuttlered.png
+  # Corvax-Goob-Resprites-start
   variants: 4
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  # Corvax-Goob-Resprites-end
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -1308,6 +1563,7 @@
     collection: FootstepFloor
   itemDrop: FloorTileItemShuttleRed
   heatCapacity: 10000
+  tileRipResistance: 4500
 
 
 # Materials
@@ -1322,6 +1578,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemGold
   heatCapacity: 10000
+  tileRipResistance: 600
 
 - type: tile
   id: FloorSilver
@@ -1334,6 +1591,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemSilver
   heatCapacity: 10000
+  tileRipResistance: 500
 
 - type: tile
   id: FloorGlass
@@ -1352,6 +1610,7 @@
     collection: FootstepTile
   itemDrop: SheetGlass1
   heatCapacity: 10000
+  tileRipResistance: 150
 
 - type: tile
   id: FloorRGlass
@@ -1370,6 +1629,7 @@
     collection: FootstepTile
   itemDrop: SheetRGlass1
   heatCapacity: 10000
+  tileRipResistance: 175
 
 - type: tile
   id: FloorMetalFoam
@@ -1398,6 +1658,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemGCircuit
   heatCapacity: 10000
+  tileRipResistance: 225
 
 - type: tile
   id: FloorBlueCircuit
@@ -1410,6 +1671,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemBCircuit
   heatCapacity: 10000
+  tileRipResistance: 225
 
 - type: tile
   id: FloorRedCircuit
@@ -1451,12 +1713,21 @@
   id: FloorGrass
   name: tiles-planet-grass-floor
   sprite: /Textures/Tiles/grass.png
+<<<<<<< HEAD
   variants: 4 #Corvax
+=======
+  # Corvax-Goob-GrassResprite-start
+  variants: 4
+>>>>>>> goob
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+<<<<<<< HEAD
+=======
+  # Corvax-Goob-GrassResprite-end
+>>>>>>> goob
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1469,12 +1740,21 @@
   id: FloorGrassJungle
   name: tiles-jungle-grass-floor
   sprite: /Textures/Tiles/grassjungle.png
+<<<<<<< HEAD
   variants: 4 #Corvax
+=======
+  # Corvax-Goob-GrassResprite-start
+  variants: 4
+>>>>>>> goob
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+<<<<<<< HEAD
+=======
+  # Corvax-Goob-GrassResprite-end
+>>>>>>> goob
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1809,6 +2089,7 @@
   itemDrop: FloorTileItemFlesh
   friction: 0.25 #slippy
   heatCapacity: 10000
+  tileRipResistance: 80
 
 - type: tile
   id: FloorTechMaint2
@@ -1821,6 +2102,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemSteelMaint
   heatCapacity: 10000
+  tileRipResistance: 225
 
 - type: tile
   id: FloorTechMaint3
@@ -1839,6 +2121,7 @@
     collection: FootstepHull
   itemDrop: FloorTileItemGratingMaint
   heatCapacity: 10000
+  tileRipResistance: 225
 
 - type: tile
   id: FloorWoodTile
@@ -1859,6 +2142,7 @@
     collection: BarestepWood
   itemDrop: FloorTileItemWoodPattern
   heatCapacity: 10000
+  tileRipResistance: 75
 
 - type: tile
   id: FloorBrokenWood
@@ -1882,6 +2166,7 @@
     collection: BarestepWood
   itemDrop: MaterialWoodPlank1
   heatCapacity: 10000
+  tileRipResistance: 60
 
 - type: tile
   id: FloorWebTile
@@ -1896,6 +2181,7 @@
     collection: BarestepCarpet
   itemDrop: FloorTileItemWeb
   heatCapacity: 10000
+  tileRipResistance: 30
 
 - type: tile
   id: FloorChromite
@@ -1927,18 +2213,23 @@
     collection: FootstepHull
   itemDrop: FloorTileItemSteel #probably should not be normally obtainable, but the game shits itself and dies when you try to put null here
   heatCapacity: 10000
+  tileRipResistance: 500
 
 - type: tile
   id: FloorHullReinforced
   name: tiles-hull-reinforced
   sprite: /Textures/Tiles/hull_reinforced.png
-  baseTurf: Plating
-  isSubfloor: false
+  #goobstation start
+  baseTurf: Lattice
+  isSubfloor: true
+  friction: 1.5 #same as normal plating
+  #goobstation end
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemSteel
   heatCapacity: 100000 #/tg/ has this set as "INFINITY." I don't know if that exists here so I've just added an extra 0
   indestructible: true
+  reinforced: true
 
 - type: tile
   id: FloorReinforcedHardened
@@ -1980,6 +2271,7 @@
     collection: FootstepGrass
   itemDrop: FloorTileItemAstroGrass
   heatCapacity: 10000
+  tileRipResistance: 50
 
 - type: tile
   id: FloorMowedAstroGrass
@@ -1996,7 +2288,11 @@
   isSubfloor: false
   deconstructTools: [ Cutting ]
   itemDrop: FloorTileItemMowedAstroGrass
+<<<<<<< HEAD
   weather: false # Corvax
+=======
+  tileRipResistance: 50
+>>>>>>> goob
 
 - type: tile
   id: FloorJungleAstroGrass
@@ -2006,7 +2302,11 @@
   isSubfloor: false
   deconstructTools: [ Cutting ]
   itemDrop: FloorTileItemJungleAstroGrass
+<<<<<<< HEAD
   weather: false # Corvax
+=======
+  tileRipResistance: 50
+>>>>>>> goob
 
 # Ice
 - type: tile
@@ -2021,6 +2321,7 @@
   mobFriction: 0.05
   mobAcceleration: 0.1
   itemDrop: FloorTileItemAstroIce
+  tileRipResistance: 50
 
 - type: tile
   id: FloorAstroSnow
@@ -2030,7 +2331,11 @@
   isSubfloor: false
   deconstructTools: [ Prying ]
   itemDrop: FloorTileItemAstroSnow
+<<<<<<< HEAD
   weather: false # Corvax
+=======
+  tileRipResistance: 50
+>>>>>>> goob
 
 # Asteroid Sand
 - type: tile
@@ -2071,4 +2376,97 @@
   barestepSounds:
     collection: BarestepWood
   itemDrop: FloorTileItemWoodLarge
+  heatCapacity: 10000
+  tileRipResistance: 100
+
+- type: tile
+  id: FloorWhiteMarble
+  name: tiles-white-marble
+  sprite: /Textures/Tiles/white_marble.png
+  variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  friction: 0.8
+  itemDrop: FloorTileItemWhiteMarble
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorDarkMarble
+  name: tiles-dark-marble
+  sprite: /Textures/Tiles/dark_marble.png
+  variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  friction: 0.8
+  itemDrop: FloorTileItemDarkMarble
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorPlasmaMarble
+  name: tiles-plasma-marble
+  sprite: /Textures/Tiles/plasmarble.png
+  variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  friction: 0.8
+  itemDrop: FloorTileItemPlasmaMarble
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorUraniumMarble
+  name: tiles-uranium-marble
+  sprite: /Textures/Tiles/uranium_marble.png
+  variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  friction: 0.8
+  itemDrop: FloorTileItemUraniumMarble
   heatCapacity: 10000

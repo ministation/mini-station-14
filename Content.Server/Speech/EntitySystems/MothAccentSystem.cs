@@ -1,6 +1,17 @@
-﻿using System.Text.RegularExpressions;
+// SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 router <messagebus@vk.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
 using Robust.Shared.Random;
+<<<<<<< HEAD
+=======
+using Content.Shared.Speech;
+>>>>>>> goob
 
 namespace Content.Server.Speech.EntitySystems;
 
@@ -10,6 +21,8 @@ public sealed class MothAccentSystem : EntitySystem
 
     private static readonly Regex RegexLowerBuzz = new Regex("z{1,3}");
     private static readonly Regex RegexUpperBuzz = new Regex("Z{1,3}");
+
+    [Dependency] private readonly IRobustRandom _random = default!; // CorvaxGoob-Localization
 
     public override void Initialize()
     {
@@ -26,7 +39,11 @@ public sealed class MothAccentSystem : EntitySystem
         // buZZZ
         message = RegexUpperBuzz.Replace(message, "ZZZ");
 
+<<<<<<< HEAD
         // Corvax-Localization-Start
+=======
+        // CorvaxGoob-Localization-Start
+>>>>>>> goob
         // ж => жжж
         message = Regex.Replace(
             message,
@@ -51,7 +68,11 @@ public sealed class MothAccentSystem : EntitySystem
             "З+",
             _random.Pick(new List<string>() { "ЗЗ", "ЗЗЗ" })
         );
+<<<<<<< HEAD
         // Corvax-Localization-End
+=======
+        // CorvaxGoob-Localization-End
+>>>>>>> goob
 
         args.Message = message;
     }

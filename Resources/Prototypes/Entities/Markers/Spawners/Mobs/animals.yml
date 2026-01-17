@@ -88,6 +88,24 @@
 
 - type: entity
   parent: MarkerBase
+<<<<<<< HEAD
+=======
+  id: SpawnMobMoproach
+  name: Moproach Spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Animals/mothroach/moproach.rsi
+      state: icon
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - MobMoproach
+
+- type: entity
+  parent: MarkerBase
+>>>>>>> goob
   id: SpawnMobCow
   name: Cow Spawner
   components:
@@ -195,11 +213,23 @@
     - sprite: Mobs/Animals/mouse.rsi
       state: icon-2
     - state: ai
+<<<<<<< HEAD
   - type: ConditionalSpawner
+=======
+  # Goobstation
+  - type: RandomSpawner
+>>>>>>> goob
     prototypes:
     - MobMouse
     - MobMouse1
     - MobMouse2
+<<<<<<< HEAD
+=======
+    rareChance: 0.12
+    offset: 0
+    rarePrototypes:
+    - MobMousePlague
+>>>>>>> goob
 
 - type: entity
   parent: MarkerBase
@@ -210,10 +240,17 @@
     layers:
     - state: green
     - state: parrot
+<<<<<<< HEAD
       sprite: Mobs/Animals/parrot.rsi
   - type: ConditionalSpawner
     prototypes:
     - MobParrotSmart # Corvax-Next-Parrot: replaced MobParrot
+=======
+      sprite: Mobs/Animals/parrot/parrot.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobParrot
+>>>>>>> goob
 
 - type: entity
   parent: MarkerBase

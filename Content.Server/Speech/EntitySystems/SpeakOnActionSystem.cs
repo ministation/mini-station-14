@@ -4,6 +4,13 @@ using Content.Shared.Speech;
 using Content.Shared.Speech.EntitySystems;
 using Content.Shared.Speech.Muting;
 using Content.Shared.Actions.Events;
+using Content.Goobstation.Maths.FixedPoint;
+using Content.Shared._Goobstation.Wizard.Chuuni;
+using Content.Shared._Shitmed.Targeting;
+using Content.Shared.Magic.Components;
+using Content.Shared.Damage;
+using Content.Shared.Chat;
+using Content.Shared._Shitmed.Damage;
 
 
 namespace Content.Server.Speech.EntitySystems;
@@ -15,6 +22,7 @@ namespace Content.Server.Speech.EntitySystems;
 public sealed class SpeakOnActionSystem : SharedSpeakOnActionSystem
 {
     [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly DamageableSystem _damageable = default!;
 
     public override void Initialize()
     {
@@ -31,9 +39,29 @@ public sealed class SpeakOnActionSystem : SharedSpeakOnActionSystem
         if (!HasComp<SpeechComponent>(user) || HasComp<MutedComponent>(user))
             return;
 
-        if (string.IsNullOrWhiteSpace(ent.Comp.Sentence))
+        // Goob. TODO: Remove Aviu from this plane of existence for whatever has occured here.
+        var speech = ent.Comp.Sentence;
+
+        if (TryComp(ent, out MagicComponent? magic))
+        {
+            var invocationEv = new GetSpellInvocationEvent(magic.School, args.Performer);
+            RaiseLocalEvent(args.Performer, invocationEv);
+            if (invocationEv.Invocation.HasValue)
+                speech = invocationEv.Invocation;
+            if (invocationEv.ToHeal.GetTotal() > FixedPoint2.Zero)
+            {
+                _damageable.TryChangeDamage(args.Performer,
+                    -invocationEv.ToHeal,
+                    true,
+                    false,
+                    targetPart: TargetBodyPart.All,
+                    splitDamage: SplitDamageBehavior.SplitEnsureAll); // Shitmed Change
+            }
+        }
+
+        if (string.IsNullOrWhiteSpace(speech))
             return;
 
-        _chat.TrySendInGameICMessage(user, Loc.GetString(ent.Comp.Sentence), InGameICChatType.Speak, false);
+        _chat.TrySendInGameICMessage(user, Loc.GetString(speech), InGameICChatType.Speak, false);
     }
 }

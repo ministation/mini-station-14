@@ -41,8 +41,17 @@ ent-CrateFunToyBox = { ent-CrateToyBox }
     .suffix = Filled
     .desc = { ent-CrateToyBox.desc }
 ent-CrateFunBikeHornImplants = bike horn implants
+<<<<<<< HEAD
     .desc = A thousand honks a day keeps security officers away!
+=======
+    .desc = A thousand honks a day keeps security officers away! Now with bike horns!
+>>>>>>> goob
 ent-CrateFunMysteryFigurines = mystery figure crate
     .desc = A collection of 10 Mystery Figurine boxes. Duplicates non refundable.
 ent-CrateFunDartsSet = dartboard box set
     .desc = A box with everything you need for a fun game of darts.
+<<<<<<< HEAD
+=======
+ent-CrateFunScurret = hydrated scurret
+    .desc = Wait, what?
+>>>>>>> goob

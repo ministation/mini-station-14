@@ -1,3 +1,10 @@
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   name: anomaly injector
   parent: MarkerBase
@@ -47,6 +54,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCorePyroclastic
         coreInertPrototype: AnomalyCorePyroclasticInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyPyroSupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionPyroclastic
         startMessage: inner-anomaly-start-message-pyro
@@ -80,6 +89,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreElectricity
         coreInertPrototype: AnomalyCoreElectricityInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyElectricitySupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionElectric
         startMessage: inner-anomaly-start-message-shock
@@ -113,6 +124,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreShadow
         coreInertPrototype: AnomalyCoreShadowInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyShadowSupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionShadow
         startMessage: inner-anomaly-start-message-shadow
@@ -146,6 +159,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreIce
         coreInertPrototype: AnomalyCoreIceInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyIceSupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionIce
         startMessage: inner-anomaly-start-message-frost
@@ -179,6 +194,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreFlora
         coreInertPrototype: AnomalyCoreFloraInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyFloraSupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionFlora
         startMessage: inner-anomaly-start-message-flora
@@ -212,6 +229,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreBluespace
         coreInertPrototype: AnomalyCoreBluespaceInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyBluespaceSupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionBluespace
         startMessage: inner-anomaly-start-message-bluespace
@@ -245,6 +264,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreFlesh
         coreInertPrototype: AnomalyCoreFleshInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyFleshSupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionFlesh
         startMessage: inner-anomaly-start-message-flesh
@@ -278,6 +299,9 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreGravity
         coreInertPrototype: AnomalyCoreGravityInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyGravitySupercritical
+        supercriticalDuration: 15
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionGravity
         startMessage: inner-anomaly-start-message-grav
@@ -311,6 +335,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreTech
         coreInertPrototype: AnomalyCoreTechInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyTechSupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionTech
         startMessage: inner-anomaly-start-message-tech
@@ -345,6 +371,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreRock
         coreInertPrototype: AnomalyCoreRockInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyRockSupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionRock
         startMessage: inner-anomaly-start-message-rock
@@ -378,6 +406,8 @@
         maxPointsPerSecond: 100
         corePrototype: AnomalyCoreSanta
         coreInertPrototype: AnomalyCoreSantaInert
+        supercriticalSoundAtAnimationStart:
+          collection: AnomalyPresentSupercritical
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionSanta
         startMessage: inner-anomaly-start-message-santa

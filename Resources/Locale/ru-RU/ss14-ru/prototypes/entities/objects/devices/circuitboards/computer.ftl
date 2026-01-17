@@ -14,6 +14,7 @@ ent-StationRecordsComputerCircuitboard = консоль станционного
     .desc = Консольная плата для консоли станционного учёта.
 ent-CargoRequestComputerCircuitboard = консоль заказа грузов (консольная плата)
     .desc = Консольная плата для консоли заказа грузов.
+<<<<<<< HEAD
 ent-CargoRequestEngineeringComputerCircuitboard = engineering request computer board
     .desc = A computer printed circuit board for an engineering request computer.
 ent-CargoRequestMedicalComputerCircuitboard = medical request computer board
@@ -26,16 +27,40 @@ ent-CargoRequestServiceComputerCircuitboard = service request computer board
     .desc = A computer printed circuit board for a service request computer.
 ent-FundingAllocationComputerCircuitboard = funding allocation computer board
     .desc = A computer printed circuit board for a funding allocation card console.
+=======
+ent-CargoRequestEngineeringComputerCircuitboard = инженерная консоль заказа грузов (консольная плата)
+    .desc = Консольная плата для инженерной консоли заказа грузов.
+ent-CargoRequestMedicalComputerCircuitboard = медицинская консоль заказа грузов (консольная плата)
+    .desc = Консольная плата для медицинской консоли заказа грузов.
+ent-CargoRequestScienceComputerCircuitboard = научная консоль заказа грузов (консольная плата)
+    .desc = Консольная плата для научной консоли заказа грузов.
+ent-CargoRequestSecurityComputerCircuitboard = охранная консоль заказа грузов (консольная плата)
+    .desc = Консольная плата для охранной консоли заказа грузов.
+ent-CargoRequestServiceComputerCircuitboard = сервисная консоль заказа грузов (консольная плата)
+    .desc = Консольная плата для сервисной консоли заказа грузов.
+ent-FundingAllocationComputerCircuitboard = консоль распределения средств (консольная плата)
+    .desc = Консольная плата для консоли распределения средств.
+>>>>>>> goob
 ent-CargoSaleComputerCircuitboard = консоль продажи товаров (консольная плата)
     .desc = Консольная плата для консоли продажи товаров.
 ent-CargoBountyComputerCircuitboard = консоль запросов (консольная плата)
     .desc = Консольная плата для консоли запросов.
+<<<<<<< HEAD
 ent-SalvageJobBoardComputerCircuitboard = salvage job board computer board
     .desc = A computer printed circuit board for a salvage job board computer.
+=======
+ent-SalvageJobBoardComputerCircuitboard = доска утилизаторских работ (консольная плата)
+    .desc = Консольная плата для консоли с доской утилизаторских работ.
+>>>>>>> goob
 ent-CargoShuttleComputerCircuitboard = консоль вызова грузового шаттла (консольная плата)
     .desc = Консольная плата для консоли вызова грузового шаттла.
 ent-SalvageExpeditionsComputerCircuitboard = консоль утилизаторских экспедиций (консольная плата)
     .desc = Консольная плата для консоли утилизаторских экспедиций.
+<<<<<<< HEAD
+=======
+ent-SalvageShuttleConsoleCircuitboard = консоль управления утилизаторским шаттлом (консольная плата)
+    .desc = Консольная плата для консоли управления утилизаторским шаттлом.
+>>>>>>> goob
 ent-CargoShuttleConsoleCircuitboard = консоль управления грузовым шаттлом (консольная плата)
     .desc = Консольная плата для консоли управления грузовым шаттлом.
 ent-SurveillanceCameraMonitorCircuitboard = монитор камер наблюдения (консольная плата)
@@ -60,8 +85,11 @@ ent-CommsComputerCircuitboard = консоль связи (консольная 
     .desc = Консольная плата для консоли связи.
 ent-SyndicateCommsComputerCircuitboard = консоль связи Синдиката (консольная плата)
     .desc = Консольная плата для консоли связи Синдиката.
+<<<<<<< HEAD
 ent-WizardCommsComputerCircuitboard = консоль связи волшебника (консольная плата)
     .desc = Консольная плата для консоли связи волшебника.
+=======
+>>>>>>> goob
 ent-CentcommCommsComputerCircuitboard = консоль связи Центрального командования (консольная плата)
     .desc = Консольная плата для консоли связи Центрального командования.
 ent-RadarConsoleCircuitboard = консоль сканера массы (консольная плата)

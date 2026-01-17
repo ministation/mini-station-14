@@ -1,4 +1,47 @@
+// SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Errant <35878406+dmnct@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2023 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 corentt <36075110+corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Debug <49997488+DebugOk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Patrik Caes-Sayrs <heartofgoldfish@gmail.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 CerberusWolfie <wb.johnb.willis@gmail.com>
+// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 UpAndLeaves <92269094+Alpha-Two@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Linq;
+using Content.Shared.NPC.Prototypes;
 using Content.Server.Actions;
 using Content.Server.Body.Systems;
 using Content.Server.Chat;
@@ -22,9 +65,20 @@ using Content.Shared.Popups;
 using Content.Shared.Roles;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Zombies;
+using Content.Shared.Blocking; // Goobstation
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+
+// Shitmed Change
+using Content.Shared._Shitmed.Damage;
+using Content.Shared._Shitmed.Targeting;
+
+// Language Change
+using Content.Server._EinsteinEngines.Language;
+using Content.Shared._EinsteinEngines.Language;
+using Content.Shared._EinsteinEngines.Language.Components;
+using Content.Shared._EinsteinEngines.Language.Events;
 
 namespace Content.Server.Zombies
 {
@@ -42,6 +96,9 @@ namespace Content.Server.Zombies
         [Dependency] private readonly MobStateSystem _mobState = default!;
         [Dependency] private readonly SharedPopupSystem _popup = default!;
         [Dependency] private readonly SharedRoleSystem _role = default!;
+        [Dependency] private readonly LanguageSystem _language = default!;
+
+        public readonly ProtoId<NpcFactionPrototype> Faction = "Zombie";
 
         public const SlotFlags ProtectiveSlots =
             SlotFlags.FEET |
@@ -57,7 +114,6 @@ namespace Content.Server.Zombies
         {
             base.Initialize();
 
-            SubscribeLocalEvent<ZombieComponent, ComponentStartup>(OnStartup);
             SubscribeLocalEvent<ZombieComponent, EmoteEvent>(OnEmote, before:
                 new[] { typeof(VocalSystem), typeof(BodyEmotesSystem) });
 
@@ -76,6 +132,10 @@ namespace Content.Server.Zombies
             SubscribeLocalEvent<IncurableZombieComponent, MapInitEvent>(OnPendingMapInit);
 
             SubscribeLocalEvent<ZombifyOnDeathComponent, MobStateChangedEvent>(OnDamageChanged);
+
+            // Goob Edit - Prevent Zombies Speaking/Understanding Languages
+            SubscribeLocalEvent<ZombieComponent, DetermineEntityLanguagesEvent>(OnLanguageApply);
+            SubscribeLocalEvent<ZombieComponent, ComponentShutdown>(OnShutdown);
         }
 
         private void OnBeforeRemoveAnomalyOnDeath(Entity<PendingZombieComponent> ent, ref BeforeRemoveAnomalyOnDeathEvent args)
@@ -88,6 +148,7 @@ namespace Content.Server.Zombies
         private void OnPendingMapInit(EntityUid uid, IncurableZombieComponent component, MapInitEvent args)
         {
             _actions.AddAction(uid, ref component.Action, component.ZombifySelfActionPrototype);
+            _faction.AddFaction(uid, Faction);
 
             if (HasComp<ZombieComponent>(uid) || HasComp<ZombieImmuneComponent>(uid))
                 return;
@@ -134,7 +195,13 @@ namespace Content.Server.Zombies
                     ? comp.CritDamageMultiplier
                     : 1f;
 
-                _damageable.TryChangeDamage(uid, comp.Damage * multiplier, true, false, damage);
+                _damageable.TryChangeDamage(uid,
+                    comp.Damage * multiplier,
+                    true,
+                    false,
+                    damage,
+                    targetPart: TargetBodyPart.All, // Shitmed Change
+                    splitDamage: SplitDamageBehavior.SplitEnsureAll); // Shitmed Change
             }
 
             // Heal the zombified
@@ -155,7 +222,14 @@ namespace Content.Server.Zombies
                     : 1f;
 
                 // Gradual healing for living zombies.
-                _damageable.TryChangeDamage(uid, comp.PassiveHealing * multiplier, true, false, damage);
+                _damageable.TryChangeDamage(uid,
+                    comp.PassiveHealing * multiplier,
+                    true,
+                    false,
+                    damage,
+                    ignoreBlockers: true, // Shitmed Change
+                    targetPart: TargetBodyPart.All, // Shitmed Change
+                    splitDamage: SplitDamageBehavior.SplitEnsureAll); // Shitmed Change
             }
         }
 
@@ -176,9 +250,16 @@ namespace Content.Server.Zombies
 
         private void OnStartup(EntityUid uid, ZombieComponent component, ComponentStartup args)
         {
-            if (component.EmoteSoundsId == null)
+            if (component.EmoteSoundsId == null
+                || TerminatingOrDeleted(uid)) // Goob Change
                 return;
-            _protoManager.TryIndex(component.EmoteSoundsId, out component.EmoteSounds);
+
+            // Goobstation Change Start
+            var comp = EnsureComp<LanguageSpeakerComponent>(uid); // Ensure they can speak language before adding language.
+            if (!string.IsNullOrEmpty(component.ForcedLanguage)) // Should never be false, but security either way.
+                comp.CurrentLanguage = component.ForcedLanguage;
+            _language.UpdateEntityLanguages(uid);
+            // Goobstation Change End
         }
 
         private void OnEmote(EntityUid uid, ZombieComponent component, ref EmoteEvent args)
@@ -186,7 +267,10 @@ namespace Content.Server.Zombies
             // always play zombie emote sounds and ignore others
             if (args.Handled)
                 return;
-            args.Handled = _chat.TryPlayEmoteSound(uid, component.EmoteSounds, args.Emote);
+
+            _protoManager.TryIndex(component.EmoteSoundsId, out var sounds);
+
+            args.Handled = _chat.TryPlayEmoteSound(uid, sounds, args.Emote);
         }
 
         private void OnMobState(EntityUid uid, ZombieComponent component, MobStateChangedEvent args)
@@ -195,7 +279,7 @@ namespace Content.Server.Zombies
             {
                 // Groaning when damaged
                 EnsureComp<EmoteOnDamageComponent>(uid);
-                _emoteOnDamage.AddEmote(uid, "Scream");
+                _emoteOnDamage.AddEmote(uid, 60, "Scream"); // CorvaxGoob : Args changes
 
                 // Random groaning
                 EnsureComp<AutoEmoteComponent>(uid);
@@ -204,11 +288,16 @@ namespace Content.Server.Zombies
             else
             {
                 // Stop groaning when damaged
-                _emoteOnDamage.RemoveEmote(uid, "Scream");
+                _emoteOnDamage.RemoveEmote(uid, 60, "Scream"); // CorvaxGoob : Args changes
 
                 // Stop random groaning
                 _autoEmote.RemoveEmote(uid, "ZombieGroan");
             }
+        }
+
+        private bool IsUserBlocking(BlockingUserComponent? component) // Goobstation
+        {
+            return (TryComp<BlockingComponent>(component?.BlockingItem, out var blockComp) && blockComp.IsBlocking);
         }
 
         private float GetZombieInfectionChance(EntityUid uid, ZombieComponent zombieComponent)
@@ -252,7 +341,10 @@ namespace Content.Server.Zombies
                 if (!TryComp<MobStateComponent>(entity, out var mobState))
                     continue;
 
-                if (HasComp<ZombieComponent>(entity))
+                if (TryComp<BlockingUserComponent>(entity, out var blockingUser) && IsUserBlocking(blockingUser)) // Goobstation edit - prevents infection if user is actively blocking
+                    return;
+
+                if (HasComp<ZombieComponent>(entity) || HasComp<InitialInfectedComponent>(entity)) // Goobstation edit - prevent zombies from damaging IIs
                 {
                     args.BonusDamage = -args.BaseDamage;
                 }
@@ -265,7 +357,7 @@ namespace Content.Server.Zombies
                     }
                 }
 
-                if (_mobState.IsIncapacitated(entity, mobState) && !HasComp<ZombieComponent>(entity) && !HasComp<ZombieImmuneComponent>(entity))
+                if (_mobState.IsIncapacitated(entity, mobState) && !HasComp<ZombieComponent>(entity) && !HasComp<ZombieImmuneComponent>(entity) && !HasComp<InitialInfectedComponent>(entity)) // Goobstation edit - prevent zombies from damaging IIs
                 {
                     ZombifyEntity(entity);
                     args.BonusDamage = -args.BaseDamage;
@@ -322,7 +414,41 @@ namespace Content.Server.Zombies
         // Remove the role when getting cloned, getting gibbed and borged, or leaving the body via any other method.
         private void OnMindRemoved(Entity<ZombieComponent> ent, ref MindRemovedMessage args)
         {
+<<<<<<< HEAD
             _role.MindRemoveRole<ZombieRoleComponent>((args.Mind.Owner,  args.Mind.Comp));
+=======
+            _role.MindRemoveRole<ZombieRoleComponent>((args.Mind.Owner, args.Mind.Comp));
+>>>>>>> goob
         }
+
+        #region Goob Language Changes
+
+        /// <summary>
+        ///     This forces the languages to reset and apply only the current language for the entity based on Zombie Component.
+        /// </summary>
+        private void OnLanguageApply(Entity<ZombieComponent> ent, ref DetermineEntityLanguagesEvent args)
+        {
+            if (ent.Comp.LifeStage is ComponentLifeStage.Removing
+                or ComponentLifeStage.Stopping
+                or ComponentLifeStage.Stopped)
+                return;
+
+            // Clear the languages and then apply the forced language.
+            args.SpokenLanguages.Clear();
+            args.UnderstoodLanguages.Clear();
+            args.SpokenLanguages.Add(ent.Comp.ForcedLanguage);
+            args.UnderstoodLanguages.Add(ent.Comp.ForcedLanguage);
+        }
+
+        // When comp is removed, reset languages.
+        private void OnShutdown(Entity<ZombieComponent> ent, ref ComponentShutdown args)
+        {
+            if (TerminatingOrDeleted(ent))
+                return;
+
+            _language.UpdateEntityLanguages(ent.Owner); // This uses ent.Owner because UpdateEntityLanguages checks for <LanguageSpeakerComponent>.
+        }
+
+        #endregion
     }
 }

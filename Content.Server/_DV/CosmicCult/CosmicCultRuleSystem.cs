@@ -1,9 +1,31 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 CerberusWolfie <wb.johnb.willis@gmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <milonpl.git@proton.me>
+// SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 the biggest bruh <199992874+thebiggestbruh@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 using Content.Server._DV.CosmicCult.Components;
 using Content.Server.Actions;
 using Content.Server.Administration.Logs;
 using Content.Server.Antag;
 using Content.Server.Atmos.Components;
 using Content.Server.Audio;
+<<<<<<< HEAD
+=======
+using Content.Goobstation.Shared.Religion; // Goobstation - Shitchap
+>>>>>>> goob
 using Content.Server.Chat.Systems;
 using Content.Server.EUI;
 using Content.Server.GameTicking.Rules;
@@ -53,10 +75,20 @@ using Robust.Shared.Enums;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+<<<<<<< HEAD
 using Robust.Shared.Utility;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using System.Linq;
+=======
+using Robust.Shared.Random;
+using Robust.Shared.Timing;
+using System.Linq;
+using Content.Goobstation.Common.Religion;
+using Content.Server.Station.Systems;
+using Content.Shared.Cuffs.Components;
+using Content.Server.Cuffs;
+>>>>>>> goob
 
 namespace Content.Server._DV.CosmicCult;
 
@@ -77,7 +109,10 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly IConfigurationManager _config = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+<<<<<<< HEAD
     [Dependency] private readonly IPlayerManager _playerMan = default!;
+=======
+>>>>>>> goob
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
     [Dependency] private readonly IRobustRandom _rand = default!;
     [Dependency] private readonly IVoteManager _votes = default!;
@@ -96,7 +131,14 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
     [Dependency] private readonly VisibilitySystem _visibility = default!;
+<<<<<<< HEAD
     [Dependency] private readonly ISharedPlayerManager _player = default!;
+=======
+    [Dependency] private readonly IPlayerManager _player = default!;
+    [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly CuffableSystem _cuffable = default!; // goob edit
+
+>>>>>>> goob
     private ISawmill _sawmill = default!;
     private TimeSpan _t3RevealDelay = default!;
     private TimeSpan _t2RevealDelay = default!;
@@ -231,12 +273,16 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
             //do spooky effects
             var sender = Loc.GetString("cosmiccult-announcement-sender");
             var mapData = _map.GetMap(_transform.GetMapId(component.MonumentInGame.Owner.ToCoordinates()));
+<<<<<<< HEAD
             _chatSystem.DispatchStationAnnouncement(component.MonumentInGame,
                 Loc.GetString("cosmiccult-announce-tier2-progress"),
                 null,
                 false,
                 null,
                 Color.FromHex("#4cabb3"));
+=======
+            //_chatSystem.DispatchStationAnnouncement(component.MonumentInGame, Loc.GetString("cosmiccult-announce-tier2-progress"), sender, false, null, Color.FromHex("#4cabb3"));
+>>>>>>> goob
             _chatSystem.DispatchStationAnnouncement(component.MonumentInGame,
                 Loc.GetString("cosmiccult-announce-tier2-warning"),
                 null,
@@ -266,6 +312,20 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
             UpdateCultData(component.MonumentInGame); //instantly go up a tier if they manage it
             _ui.SetUiState(component.MonumentInGame.Owner, MonumentKey.Key, new MonumentBuiState(component.MonumentInGame.Comp)); //not sure if this is needed but I'll be safe
         }
+<<<<<<< HEAD
+=======
+        //  Goobstation: Recalls Shuttle if Tier 3 and Cultists Alive
+        if (component.CurrentTier >= 3
+            && _roundEnd.ExpectedCountdownEnd != null
+            && CultistsAlive()) // Goobstation - Check for cultists alive (prevent infinite recall)
+        {
+            foreach (var station in _station.GetStations())
+            {
+                _roundEnd.CancelRoundEndCountdown(checkCooldown: false);
+                _chatSystem.DispatchStationAnnouncement(station, Loc.GetString("cult-alert-recall-shuttle"), colorOverride: Color.FromHex("#4cabb3"));
+            }
+        }
+>>>>>>> goob
     }
 
     private void StewardVote()
@@ -377,8 +437,17 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
     private bool CultistsAlive()
     {
         var query = EntityQueryEnumerator<CosmicCultComponent, MobStateComponent>();
+<<<<<<< HEAD
         while (query.MoveNext(out _, out var comp, out var mob))
         {
+=======
+        while (query.MoveNext(out var ent, out var comp, out var mob)) // goob edit
+        {
+
+            if (TryComp<CuffableComponent>(ent, out var cuffComp) && _cuffable.IsCuffed((ent, cuffComp))) // goob edit
+                continue; // dont count restrained cultists as counting towards objectives.
+
+>>>>>>> goob
             if (!mob.Running
                 || mob.CurrentState != MobState.Alive)
                 continue;
@@ -503,7 +572,11 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
             || AssociatedGamerule(uid) is not { } cult)
             return;
 
+<<<<<<< HEAD
         cult.Comp.TotalCrew = _playerMan.Sessions.Count(session
+=======
+        cult.Comp.TotalCrew = _player.Sessions.Count(session
+>>>>>>> goob
             => session.Status == SessionStatus.InGame
                 && HasComp<HumanoidAppearanceComponent>(session.AttachedEntity));
 
@@ -582,6 +655,11 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
         _ui.SetUiState(uid.Owner, MonumentKey.Key, new MonumentBuiState(uid.Comp));
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> goob
     #region De- & Conversion
     public void TryStartCult(EntityUid uid, Entity<CosmicCultRuleComponent> rule)
     {
@@ -677,8 +755,15 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
             EnsureComp<RoleBriefingComponent>(cosmicRole.Value.Owner);
             Comp<RoleBriefingComponent>(cosmicRole.Value.Owner).Briefing = Loc.GetString("objective-cosmiccult-charactermenu");
         }
+<<<<<<< HEAD
 
         _antag.SendBriefing(mind.Session, Loc.GetString("cosmiccult-role-conversion-fluff"), Color.FromHex("#4cabb3"), _briefingSound);
+=======
+        if (!_player.TryGetSessionById(mind.UserId, out var session))
+            return;
+
+        _antag.SendBriefing(session, Loc.GetString("cosmiccult-role-conversion-fluff"), Color.FromHex("#4cabb3"), _briefingSound);
+>>>>>>> goob
         _antag.SendBriefing(uid, Loc.GetString("cosmiccult-role-short-briefing"), Color.FromHex("#cae8e8"), null);
 
         var cultComp = EnsureComp<CosmicCultComponent>(uid);
@@ -689,7 +774,10 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
 
         if (cosmicGamerule.CurrentTier == 3)
         {
+<<<<<<< HEAD
             _damage.SetDamageContainerID(uid, "BiologicalMetaphysical");
+=======
+>>>>>>> goob
             cultComp.EntropyBudget = 48; // pity balance
             cultComp.Respiration = false;
 
@@ -702,6 +790,15 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
         }
         else if (cosmicGamerule.CurrentTier == 2)
         {
+<<<<<<< HEAD
+=======
+            // Goobstation Change - Shitchap
+            if (!HasComp<WeakToHolyComponent>(uid))
+                EnsureComp<WeakToHolyComponent>(uid).AlwaysTakeHoly = true;
+            else
+                cultComp.WasWeakToHoly = true;
+
+>>>>>>> goob
             cultComp.EntropyBudget = 26; // pity balance
 
             foreach (var influenceProto in _protoMan.EnumeratePrototypes<InfluencePrototype>().Where(influenceProto => influenceProto.Tier == 2))
@@ -719,10 +816,16 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
         _mind.TryAddObjective(mindId, mind, "CosmicMonumentObjective");
         _mind.TryAddObjective(mindId, mind, "CosmicEntropyObjective");
 
+<<<<<<< HEAD
         if (_player.TryGetSessionById(mind.UserId, out var session))
             _euiMan.OpenEui(new CosmicConvertedEui(), session);
 
         //RemComp<BibleUserComponent>(uid);
+=======
+        _euiMan.OpenEui(new CosmicConvertedEui(), session);
+
+        RemComp<BibleUserComponent>(uid);
+>>>>>>> goob
 
         cosmicGamerule.TotalCult++;
         cosmicGamerule.Cultists.Add(uid);
@@ -749,9 +852,21 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
         RemComp<CosmicCultLeadComponent>(uid);
         RemComp<InfluenceVitalityComponent>(uid);
         RemComp<InfluenceStrideComponent>(uid);
+<<<<<<< HEAD
         RemComp<PressureImmunityComponent>(uid);
         RemComp<TemperatureImmunityComponent>(uid);
         RemComp<CosmicStarMarkComponent>(uid);
+=======
+        RemComp<CosmicEmpoweredSpeedComponent>(uid);
+        RemComp<PressureImmunityComponent>(uid);
+        RemComp<TemperatureImmunityComponent>(uid);
+        RemComp<CosmicStarMarkComponent>(uid);
+
+        // Goobstation Change: Shitchap
+        if (!uid.Comp.WasWeakToHoly)
+            RemComp<WeakToHolyComponent>(uid);
+
+>>>>>>> goob
         _damage.SetDamageContainerID(uid.Owner, uid.Comp.StoredDamageContainer);
         _antag.SendBriefing(uid, Loc.GetString("cosmiccult-role-deconverted-fluff"), Color.FromHex("#4cabb3"), _deconvertSound);
         _antag.SendBriefing(uid, Loc.GetString("cosmiccult-role-deconverted-briefing"), Color.FromHex("#cae8e8"), null);
@@ -767,7 +882,11 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
         if (TryComp(uid, out EyeComponent? eyeComp))
             _eye.SetVisibilityMask(uid, eyeComp.VisibilityMask & (int) ~VisibilityFlags.CosmicCultMonument);
 
+<<<<<<< HEAD
         if (_player.TryGetSessionById(mind.UserId, out var session))
+=======
+        if (_player.TryGetSessionById(mindComp.UserId, out var session))
+>>>>>>> goob
             _euiMan.OpenEui(new CosmicDeconvertedEui(), session);
 
         _eye.SetVisibilityMask(uid, 1);

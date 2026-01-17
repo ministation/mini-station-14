@@ -34,5 +34,12 @@ ent-CrateEngineeringSpaceHeater = space heater crate
     .desc = Contains a space heater for climate control.
 ent-CrateTechBoardRandom = surplus boards
     .desc = Surplus boards from somewhere.
+<<<<<<< HEAD
+=======
+ent-CrateRPD = RPD crate
+    .desc = A crate containing a single rapid piping device.
+ent-CrateEngineeringFirefighterBackpackTank = firefighter crate
+    .desc = Contains a firefighter backpack water tank.
+>>>>>>> goob
 ent-CrateAirGrenade = air grenade crate
     .desc = A crate containing 3 air grenades.

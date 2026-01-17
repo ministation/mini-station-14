@@ -1,0 +1,18 @@
+# Jumpsuit
+- type: loadout
+  id: HeadofSecurityJumpsuitBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSBlack
+
+- type: loadout
+  id: HeadofSecurityJumpskirtBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSBlack
+
+- type: loadout
+  id: HeadofSecurityCloakExperimental
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+  equipment:
+    neck: ClothingNeckCloakHosExperimental

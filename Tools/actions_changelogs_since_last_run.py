@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2023 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Myra <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 """
 Sends updates to a Discord webhook for new changelog entries since the last GitHub Actions publish run.
@@ -13,7 +21,6 @@ from typing import Any, Iterable
 
 import requests
 import yaml
-import time
 
 DEBUG = False
 DEBUG_CHANGELOG_FILE_OLD = Path("Resources/Changelog/Old.yml")
@@ -23,7 +30,11 @@ GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
 DISCORD_SPLIT_LIMIT = 2000
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
+<<<<<<< HEAD
 CHANGELOG_FILES = ["Resources/Changelog/Changelog.yml", "Resources/Changelog/ChangelogSyndie.yml"] # Corvax-MultiChangelog
+=======
+CHANGELOG_FILE = "Resources/Changelog/GoobChangelog.yml"
+>>>>>>> goob
 
 TYPES_TO_EMOJI = {
     "Fix":    "🐛",
@@ -156,23 +167,9 @@ def get_discord_body(content: str):
 def send_discord_webhook(lines: list[str]):
     content = "".join(lines)
     body = get_discord_body(content)
-    retry_attempt = 0
 
-    try:
-        response = requests.post(DISCORD_WEBHOOK_URL, json=body, timeout=10)
-        while response.status_code == 429:
-            retry_attempt += 1
-            if retry_attempt > 20:
-                print("Too many retries on a single request despite following retry_after header... giving up")
-                exit(1)
-            retry_after = response.json().get("retry_after", 5)
-            print(f"Rate limited, retrying after {retry_after} seconds")
-            time.sleep(retry_after)
-            response = requests.post(DISCORD_WEBHOOK_URL, json=body, timeout=10)
-        response.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        print(f"Failed to send message: {e}")
-        exit(1)
+    response = requests.post(DISCORD_WEBHOOK_URL, json=body)
+    response.raise_for_status()
 
 
 def changelog_entries_to_message_lines(entries: Iterable[ChangelogEntry]) -> list[str]:
@@ -180,6 +177,7 @@ def changelog_entries_to_message_lines(entries: Iterable[ChangelogEntry]) -> lis
     message_lines = []
 
     for contributor_name, group in itertools.groupby(entries, lambda x: x["author"]):
+        message_lines.append("\n")
         message_lines.append(f"**{contributor_name}** updated:\n")
 
         for entry in group:
@@ -196,7 +194,8 @@ def changelog_entries_to_message_lines(entries: Iterable[ChangelogEntry]) -> lis
                     message = message[: DISCORD_SPLIT_LIMIT - 100].rstrip() + " [...]"
 
                 if url is not None:
-                    line = f"{emoji} - {message} [PR]({url}) \n"
+                    pr_number = url.split("/")[-1]
+                    line = f"{emoji} - {message} ([#{pr_number}]({url}))\n"
                 else:
                     line = f"{emoji} - {message}\n"
 

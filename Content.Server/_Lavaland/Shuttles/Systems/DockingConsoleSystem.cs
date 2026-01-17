@@ -1,3 +1,32 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 using Content.Server._Lavaland.Procedural.Components;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
@@ -158,7 +187,11 @@ public sealed class DockingConsoleSystem : SharedDockingConsoleSystem
         _shuttle.FTLToDock(shuttle, Comp<ShuttleComponent>(shuttle), grid, priorityTag: docking.DockTag);
     }
 
+<<<<<<< HEAD
     private readonly ResPath _miningShuttlePath = new("/Maps/_Lavaland/mining.yml");
+=======
+    private readonly ResPath _miningShuttlePath = new("/Maps/_CorvaxGoob/Lavaland/mining.yml"); // Corvax-Goob
+>>>>>>> goob
 
     /// <summary>
     /// Load a new mining shuttle if it still doesn't exist
@@ -188,10 +221,24 @@ public sealed class DockingConsoleSystem : SharedDockingConsoleSystem
             return;
         }
 
+<<<<<<< HEAD
         // Add the station of the calling console
         if (!TryComp<DockingShuttleComponent>(shuttle, out var shuttleComp))
             return;
 
+=======
+        // Find the mining shuttle
+        if (!TryComp<DockingShuttleComponent>(shuttle, out var docking))
+        {
+            Log.Error("Loaded mining shuttle had no DockingShuttleComponent!");
+            return;
+        }
+
+        // Add the station of the calling console
+        var shuttleUid = ent.Comp.Shuttle;
+        if (!TryComp<DockingShuttleComponent>(shuttleUid, out var shuttleComp))
+            return;
+>>>>>>> goob
         if (shuttleComp.Station == null)
         {
             var targetUid = Transform(ent).MapUid;
@@ -199,16 +246,28 @@ public sealed class DockingConsoleSystem : SharedDockingConsoleSystem
             if (targetUid == null)
                 return;
 
+<<<<<<< HEAD
             RaiseLocalEvent(shuttle.Value, new ShuttleAddStationEvent(targetUid.Value, targetMap), false);
         }
 
         // Finally FTL
         _shuttle.FTLToDock(shuttle.Value, Comp<ShuttleComponent>(shuttle.Value), grid, priorityTag: shuttleComp.DockTag);
+=======
+            RaiseLocalEvent(shuttleUid.Value, new ShuttleAddStationEvent(targetUid.Value, targetMap), false);
+        }
+
+        // Finally FTL
+        _shuttle.FTLToDock(shuttle.Value, Comp<ShuttleComponent>(shuttle.Value), grid, priorityTag: docking.DockTag);
+>>>>>>> goob
         UpdateShuttle(ent);
         UpdateUI(ent);
         Dirty(ent);
 
+<<<<<<< HEAD
         // shitcode because funny
+=======
+        // shitcode because FTL takes time
+>>>>>>> goob
         Timer.Spawn(TimeSpan.FromSeconds(15), () => _mapSystem.DeleteMap(dummyMap));
     }
 

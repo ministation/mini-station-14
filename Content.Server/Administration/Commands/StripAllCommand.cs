@@ -42,6 +42,7 @@ public sealed class StripAllCommand : LocalizedEntityCommands
 
         if (EntityManager.TryGetComponent<HandsComponent>(targetEntity, out var hands))
         {
+<<<<<<< HEAD
             foreach (var hand in _handsSystem.EnumerateHands(targetEntity.Value, hands))
             {
                 _handsSystem.TryDrop(targetEntity.Value,
@@ -49,6 +50,14 @@ public sealed class StripAllCommand : LocalizedEntityCommands
                     checkActionBlocker: false,
                     doDropInteraction: false,
                     handsComp: hands);
+=======
+            foreach (var hand in _handsSystem.EnumerateHands((targetEntity.Value, hands)))
+            {
+                _handsSystem.TryDrop((targetEntity.Value, hands),
+                    hand,
+                    checkActionBlocker: false,
+                    doDropInteraction: false);
+>>>>>>> goob
             }
         }
     }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ent-XenoborgEngi = engi xenoborg
     .desc = A man-machine hybrid that aims to replicate itself. They love extracting brains to insert into fresh xenoborg chassis to grow their army. This one seems to be an engineering type, as it has more tools for supporting the other xenoborgs.
     .suffix = with brain
@@ -21,4 +22,29 @@ ent-XenoborgScoutPrinted = { ent-XenoborgScout }
     .desc = { ent-XenoborgScout.desc }
 ent-XenoborgStealthPrinted = { ent-XenoborgStealth }
     .suffix = no brain
+=======
+ent-XenoborgEngi = инженерный ксеноборг
+    .desc = Гибрид машины и человека, стремящийся к самовоспроизведению. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы пополнять свою армию. Этот, похоже, инженерного типа, так как у него больше интрументов для поддержки других ксеноборгов.
+    .suffix = С мозгом
+ent-XenoborgHeavy = тяжёлый ксеноборг
+    .desc = Гибрид машины и человека, стремящийся к самовоспроизведению. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы пополнять свою армию. У этого типа тяжёлые имеются  лазеры и он покрыт тяжёлыми бронепластинами. Может он и крепче, но его скорость соответствует его мощи.
+    .suffix = С мозгом
+ent-XenoborgScout = разведчик ксеноборг
+    .desc = Гибрид машины и человека, стремящийся к самовоспроизведению. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы пополнять свою армию. Он разведывательного типа. Его манёвренные двигатели позволяют ему быстро перемещаться в космосе.
+    .suffix = С мозгом
+ent-XenoborgStealth = скрытый ксеноборг
+    .desc = Гибрид машины и человека, стремящийся к самовоспроизведению. Они любят извлекать мозги и вставлять их в новые шасси ксеноборгов, чтобы пополнять свою армию. Это скрытый тип. Его броня переливается на свету, как никакой другой материал, который вы видели.
+    .suffix = С мозгом
+ent-XenoborgEngiPrinted = { ent-XenoborgEngi }
+    .suffix = Без мозга
+    .desc = { ent-XenoborgEngi.desc }
+ent-XenoborgHeavyPrinted = { ent-XenoborgHeavy }
+    .suffix = Без мозга
+    .desc = { ent-XenoborgHeavy.desc }
+ent-XenoborgScoutPrinted = { ent-XenoborgScout }
+    .suffix = Без мозга
+    .desc = { ent-XenoborgScout.desc }
+ent-XenoborgStealthPrinted = { ent-XenoborgStealth }
+    .suffix = Без мозга
+>>>>>>> goob
     .desc = { ent-XenoborgStealth.desc }

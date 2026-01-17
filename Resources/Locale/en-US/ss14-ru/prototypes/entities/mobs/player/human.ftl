@@ -19,5 +19,8 @@ ent-MobHumanNukeOp = Nuclear Operative
     .desc = { ent-MobHuman.desc }
 ent-MobHumanLoneNuclearOperative = Lone Operative
     .desc = { ent-MobHuman.desc }
+<<<<<<< HEAD
 ent-MobHumanWizard = Wizard
     .desc = { ent-MobHuman.desc }
+=======
+>>>>>>> goob

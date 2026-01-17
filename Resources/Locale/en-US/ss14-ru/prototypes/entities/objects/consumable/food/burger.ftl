@@ -70,3 +70,8 @@ ent-FoodBurgerXeno = xenoburger
     .desc = Smells caustic. Tastes like heresy.
 ent-FoodBurgerMothRoach = mothroachburger
     .desc = The last lamp it saw was the one inside the microwave.
+<<<<<<< HEAD
+=======
+ent-FoodBurgerChud = nothing burger
+    .desc = A burger for when nothing happens.
+>>>>>>> goob

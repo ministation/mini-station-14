@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ent-MobXeno = burrower
     .desc = They mostly come at night. Mostly.
 ent-MobXenoPraetorian = praetorian
@@ -14,6 +15,8 @@ ent-MobXenoRouny = rouny
     .desc = { ent-MobXenoRunner.desc }
 ent-MobXenoSpitter = spitter
     .desc = { ent-MobXeno.desc }
+=======
+>>>>>>> goob
 ent-MobPurpleSnake = space adder
     .desc = A menacing purple snake from Kepler-283c.
 ent-MobSmallPurpleSnake = space adder

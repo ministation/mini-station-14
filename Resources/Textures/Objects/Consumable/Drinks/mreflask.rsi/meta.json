@@ -1,16 +1,29 @@
 {
     "version": 1,
+<<<<<<< HEAD
+=======
+    "copyright": "Created by EmoGarbage, inhands by TiniestShark (github), icon_open by Prole0 (GitHub)",
+>>>>>>> goob
     "size": {
         "x": 32,
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
     "copyright": "Created by EmoGarbage, inhands by TiniestShark (github)",
+=======
+>>>>>>> goob
     "states": [
         {
             "name": "icon"
         },
         {
+<<<<<<< HEAD
+=======
+            "name": "icon_open"
+        },
+        {
+>>>>>>> goob
             "name": "inhand-left",
             "directions": 4
         },

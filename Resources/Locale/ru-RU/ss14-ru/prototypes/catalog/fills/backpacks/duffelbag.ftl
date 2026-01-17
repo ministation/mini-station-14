@@ -10,6 +10,11 @@ ent-ClothingBackpackDuffelSyndicateFilledShotgun = { ent-ClothingBackpackDuffelS
 ent-ClothingBackpackDuffelSyndicateFilledSMG = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
     .suffix = набор "C-20r"
+<<<<<<< HEAD
+=======
+ent-ClothingBackpackDuffelSyndicateFilledRifle = Набор с Эстоком
+    .desc = Для стрельбы на средние дистанции, Эсток. В комплекте три магазина.
+>>>>>>> goob
 ent-ClothingBackpackDuffelSyndicateFilledRevolver = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
     .suffix = набор "Питон"
@@ -65,8 +70,15 @@ ent-ClothingBackpackDuffelZombieBundle = { ent-ClothingBackpackDuffelSyndicate }
 ent-ClothingBackpackDuffelSyndicateMedicalBundleFilled = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
     .suffix = набор медикаментов
+<<<<<<< HEAD
 ent-ClothingBackpackDuffelSyndicateFilledStarterKit = basic operative bundle
     .desc = Contains a weapon, medical supplies, breaching tools, spare ammo, and some simple utilities.
+=======
+ent-ClothingBackpackDuffelAcolyteBundle = комплект брони преспешника
+    .desc = Содержит броню преспешника, необходимую каждому лидеру культа.
+ent-ClothingBackpackDuffelSyndicateFilledStarterKit = базовый комплект оперативника
+    .desc = Содержит оружие, медицинские припасы, инструменты для взлома, запасные патроны и простые полезные вещи.
+>>>>>>> goob
 ent-ClothingBackpackDuffelSyndicateDecoyKitFilled = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
     .suffix = набор обманок

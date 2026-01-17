@@ -14,6 +14,7 @@ ent-CrateFoodSoftdrinks = ящик газировки
     .desc = Разнообразная газировка для небольшой вечеринки, без необходимости опустошать соответствующие торгоматы. В комплект входят 14 банок газировки.
 ent-CrateFoodSoftdrinksLarge = оптовый ящик газировки
     .desc = Большое количество банок газировки, извлечённых прямо из торгоматов Центкома, ведь вы просто не можете покинуть свой отдел. Включает 28 банок газировки.
+<<<<<<< HEAD
 ent-CrateFoodGetMore = Getmore Bakemore crate
     .desc = Getmore branded snacks and baking supplies for the creative chef, all without the need of emptying your station's Getmore machines!
 ent-CrateFoodIceCream = ice cream delivery
@@ -22,3 +23,13 @@ ent-CrateFoodSnowcone = snowcone delivery
     .desc = A freezer packed with refreshing snowcones for a hard working crew, or even a lazy one! Includes 16 snowcones.
 ent-CrateFoodHappyHonkBigBite = Happy Honk meal delivery
     .desc = Two fully loaded Happy Honk Big Bite burger meals, complete with cheesy fries, a bottle of Space Cola, a slice of apple pie and a toy!
+=======
+ent-CrateFoodGetMore = ящик Getmore Bakemore
+    .desc = Закуски и ингредиенты бренда Getmore для креативного повара — и всё это без необходимости опустошать автоматы Getmore на вашей станции!
+ent-CrateFoodIceCream = доставка мороженого
+    .desc = Ассорти мороженого на любой случай! Включает 16 замороженных лакомств.
+ent-CrateFoodSnowcone = доставка снежков
+    .desc = Морозильник, заполненный освежающими снежками для трудолюбивой команды — или даже ленивой! Включает 16 снежков.
+ent-CrateFoodHappyHonkBigBite = доставка еды Happy Honk
+    .desc = Два полноценного сета "Счастливый Гудок — Большой Укус" с бургерами, сырным картофелем, бутылкой Спейс Кола, кусочком яблочного пирога и игрушкой!
+>>>>>>> goob

@@ -1,3 +1,13 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Centronias <me@centronias.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 holorain <scratchysenior@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
 ## Static
 
 - type: latheRecipePack
@@ -12,14 +22,16 @@
   - NetworkConfigurator
   - Signaller
   - SprayPainter
+  - SprayPainterAmmo
   - FlashlightLantern
   - HandheldGPSBasic
   - TRayScanner
-  - UtilityBelt
+  # - UtilityBelt # CorvaxGoob-WorkBelts-Techfab
   - ClothingOuterVestTank
   - HandheldStationMap
   - ClothingHeadHatWelding
   - ClothingHeadHatCone
+  - WeaponHammer
 
 - type: latheRecipePack
   id: AtmosStatic
@@ -45,6 +57,7 @@
   - CellRechargerCircuitboard
   - WeaponCapacitorRechargerCircuitboard
   - FreezerElectronics
+  - CameraElectronics # goob
 
 - type: latheRecipePack
   id: EngineeringBoardsStatic
@@ -59,8 +72,6 @@
   - PowerDrill
   - WelderExperimental
   - JawsOfLife
-  - Fulton
-  - FultonBeacon
 
 - type: latheRecipePack
   id: AtmosTools
@@ -73,6 +84,8 @@
   - WeaponParticleDecelerator
 
 - type: latheRecipePack
+  parent:
+  - EngineeringBoardsGoob # Goobstation
   id: EngineeringBoards
   recipes:
   - ThermomachineFreezerMachineCircuitBoard
@@ -88,3 +101,5 @@
   - TelecomServerCircuitboard
   - SMESAdvancedMachineCircuitboard
   - HolopadMachineCircuitboard
+  - TeslaCoilCircuitboard
+  - RadiationCollectorCircuitboard

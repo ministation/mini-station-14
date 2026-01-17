@@ -24,10 +24,13 @@ ent-NinjaSpawn = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-ParadoxCloneSpawn = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
+<<<<<<< HEAD
 ent-RevenantSpawn = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-WizardSpawn = { ent-BaseWizardRule }
     .desc = { ent-BaseWizardRule.desc }
+=======
+>>>>>>> goob
 ent-GasLeak = { ent-BaseStationEventShortDelay }
     .desc = { ent-BaseStationEventShortDelay.desc }
 ent-KudzuGrowth = { ent-BaseStationEventLongDelay }

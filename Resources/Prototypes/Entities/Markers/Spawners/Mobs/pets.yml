@@ -220,6 +220,24 @@
 
 - type: entity
   parent: MarkerBase
+<<<<<<< HEAD
+=======
+  id: SpawnMobPollyParrot
+  name: Polly the parrot Spawner
+  suffix: CE Pet
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: parrot
+      sprite: Mobs/Animals/parrot/parrot.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobPollyParrot
+
+- type: entity
+  parent: MarkerBase
+>>>>>>> goob
   id: SpawnMobPossumMorty
   name: Possum Morty Spawner
   suffix: Morgue Pet

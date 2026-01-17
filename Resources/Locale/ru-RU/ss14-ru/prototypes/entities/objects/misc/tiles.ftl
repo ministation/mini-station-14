@@ -64,6 +64,11 @@ ent-FloorTileItemDark = тёмная плитка
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemTechmaint = технический пол
     .desc = { ent-FloorTileItemBase.desc }
+<<<<<<< HEAD
+=======
+ent-FloorTileItemTechmaintDark = тёмный технический пол
+    .desc = { ent-FloorTileItemSteel.desc }
+>>>>>>> goob
 ent-FloorTileItemMono = моно плитка
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemLino = линолеум
@@ -199,7 +204,22 @@ ent-FloorTileItemAstroSnow = астро-снег
     .desc = Искусственный снег, такой же пушистый, как настоящий, и при этом легко снимается!
 ent-FloorTileItemAstroAsteroidSand = астро-песок астероида
     .desc = Искусственный песок. К счастью, он не такой крупнозернистый, как настоящий.
+<<<<<<< HEAD
 ent-FloorTileItemAstroAsteroidSandBorderless = borderless asteroid astro-sand
     .desc = Fake sand. Luckily, it's not as coarse as the real thing.
 ent-FloorTileItemWoodLarge = большой деревянный пол
     .desc = { ent-FloorTileItemBase.desc }
+=======
+ent-FloorTileItemAstroAsteroidSandBorderless = безграничный астро-песок астероида
+    .desc = Искусственный песок. К счастью, он не такой крупнозернистый, как настоящий.
+ent-FloorTileItemWoodLarge = большой деревянный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWhiteMarble = плитка белого мрамора
+    .desc = Вырезанный и отполированный квадрат из лучшего космического мрамора. Лучше не терять.
+ent-FloorTileItemDarkMarble = плитка тёмного мрамора
+    .desc = Вырезанный и отполированный квадрат из лучшего космического мрамора. Лучше не терять.
+ent-FloorTileItemPlasmaMarble = плитка плазма мрамора
+    .desc = Вырезанный и отполированный квадрат из лучшего космического мрамора. Пропитан плазмой для дополнительного... чего-то там.
+ent-FloorTileItemUraniumMarble = плитка уранового мрамора
+    .desc = Вырезанный и отполированный квадрат из лучшего космического мрамора. Пропитан ураном для максимальной крутости!
+>>>>>>> goob

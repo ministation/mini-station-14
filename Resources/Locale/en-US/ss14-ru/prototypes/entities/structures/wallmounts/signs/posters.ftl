@@ -187,7 +187,11 @@ ent-PosterLegitFruitBowl = Fruit Bowl
 ent-PosterLegitPDAAd = PDA Ad
     .desc = A poster advertising the latest PDA from Nanotrasen suppliers.
 ent-PosterLegitEnlist = Enlist
+<<<<<<< HEAD
     .desc = Enlist in the Nanotrasen Deathsquadron reserves today!
+=======
+    .desc = Enlist in the Nanotrasen ERT reserves today!
+>>>>>>> goob
 ent-PosterLegitNanomichiAd = Nanomichi Ad
     .desc = A poster advertising Nanomichi brand audio cassettes.
 ent-PosterLegit12Gauge = 12 gauge
@@ -238,6 +242,11 @@ ent-PosterLegitOppenhopper = Oppenhopper
     .desc = A poster for a long-forgotten movie. It follows a group of tenacious greenhorns from the Grasshopper Sector as they defend against onslaughts of the infamous Nuclear Operatives. The tagline reads: "Nuke Ops will continue until robustness improves."
 ent-PosterLegitTyrone = Tyrone's Guide to Space
     .desc = A poster advertising online schooling about space. The classes listed seem to cover things from the basic usage of station equipment to complicated subjects like creating pipebombs or covering entire hallways in spacelube. A disclaimer reads "It's never THAT bad, and at the end you might even get a tortilla."
+<<<<<<< HEAD
+=======
+ent-PosterLegitHelio = Helio Logistics ad
+    .desc = A poster advertising Helio Logistics and their adorable mascot. The slogan reads 'Come rain or shine, we deliver on time.'
+>>>>>>> goob
 ent-PosterMapBagel = Bagel Map
     .desc = A map of Bagel Station.
 ent-PosterMapDelta = Delta Map

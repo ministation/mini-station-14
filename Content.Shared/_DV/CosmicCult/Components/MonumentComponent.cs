@@ -28,7 +28,11 @@ public sealed partial class MonumentComponent : Component
     /// the list of glyphs that this monument is allowed to scribe
     /// </summary>
     [DataField, AutoNetworkedField]
+<<<<<<< HEAD
     public HashSet<ProtoId<GlyphPrototype>> UnlockedGlyphs = [];
+=======
+    public HashSet<ProtoId<GlyphPrototype>> UnlockedGlyphs = new();
+>>>>>>> goob
 
     /// <summary>
     /// the glyph that will be scribed when the button is pressed
@@ -120,6 +124,18 @@ public sealed partial class MonumentComponent : Component
     public TimeSpan? PhaseOutTimer;
 }
 
+<<<<<<< HEAD
+=======
+/// <summary>
+/// Added to a glyph entity to track which monument it belongs to for cleanup.
+/// </summary>
+[RegisterComponent]
+public sealed partial class MonumentGlyphComponent : Component
+{
+    public EntityUid Monument;
+}
+
+>>>>>>> goob
 [Serializable, NetSerializable]
 public sealed class InfluenceSelectedMessage(ProtoId<InfluencePrototype> influenceProtoId) : BoundUserInterfaceMessage
 {

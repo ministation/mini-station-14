@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 using Content.Shared.Actions;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -164,14 +180,6 @@ public sealed partial class ActionComponent : Component
     public bool RaiseOnUser;
 
     /// <summary>
-    ///     If true, this will cause the the action event to always be raised directed at the action itself instead of the action's container/provider.
-    ///     Takes priority over RaiseOnUser.
-    /// </summary>
-    [DataField]
-    [Obsolete("This datafield will be reworked in an upcoming action refactor")]
-    public bool RaiseOnAction;
-
-    /// <summary>
     ///     Whether or not to automatically add this action to the action bar when it becomes available.
     /// </summary>
     [DataField, AutoNetworkedField]
@@ -194,6 +202,23 @@ public sealed partial class ActionComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public SoundSpecifier? Sound;
+<<<<<<< HEAD
+=======
+    
+    /// <summary>
+    ///     Goobstation.
+    ///     If true, ghosts will be granted this action.
+    /// </summary>
+    [DataField] 
+    public bool AllowGhostAction;
+
+    /// <summary>
+    ///     Goobstation.
+    ///     Is this action predicted.
+    /// </summary>
+    [DataField] 
+    public bool Predicted = true;
+>>>>>>> goob
 }
 
 [DataRecord, Serializable, NetSerializable]

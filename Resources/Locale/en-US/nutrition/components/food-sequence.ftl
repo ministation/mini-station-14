@@ -1,10 +1,22 @@
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 RumiTiger <154005209+RumiTiger@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 food-sequence-no-space = You can't put any more!
 
 # GENERAL
 
 food-sequence-content-chicken = chicken
 food-sequence-content-duck = duck
-food-sequence-content-crab = crab
+food-sequence-content-crab = crabs
 food-sequence-content-dragon = dragon
 food-sequence-content-snake = snake
 food-sequence-content-xeno = xeno
@@ -86,7 +98,6 @@ food-sequence-burger-content-raw-meat = raw
 food-sequence-burger-content-meat = meaty
 food-sequence-burger-content-carp = carpo
 food-sequence-burger-content-bear = bear
-food-sequence-burger-content-crab = crabs
 food-sequence-burger-content-penguin = peng
 food-sequence-burger-content-corgi = corgi
 food-sequence-burger-content-goliath = goli

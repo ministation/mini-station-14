@@ -1,11 +1,18 @@
 ent-Pen = pen
     .desc = A dark ink pen.
+<<<<<<< HEAD
 ent-PenEmbeddable = { ent-Pen }
     .desc = { ent-Pen.desc }
 ent-LuxuryPen = luxury pen
     .desc = A fancy and expensive pen that you only deserve to own if you're qualified to handle vast amounts of paperwork.
 ent-BaseAdvancedPen = { ent-PenEmbeddable }
     .desc = { ent-PenEmbeddable.desc }
+=======
+ent-LuxuryPen = luxury pen
+    .desc = A fancy and expensive pen that you only deserve to own if you're qualified to handle vast amounts of paperwork.
+ent-BaseAdvancedPen = { ent-Pen }
+    .desc = { ent-Pen.desc }
+>>>>>>> goob
 ent-CyberPen = Cybersun pen
     .desc = A high-tech pen straight from Cybersun's legal department, capable of refracting hard-light at impossible angles through its diamond tip in order to write. So powerful, it's even able to rewrite officially stamped documents should the need arise.
 ent-PenCentcom = CentComm pen

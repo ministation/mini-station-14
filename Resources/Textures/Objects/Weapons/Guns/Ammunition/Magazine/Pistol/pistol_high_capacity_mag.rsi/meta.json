@@ -11,6 +11,7 @@
             "name": "base"
         },
         {
+<<<<<<< HEAD
             "name": "practice"
         },
         {
@@ -24,6 +25,9 @@
         },
         {
             "name": "piercing"
+=======
+            "name": "stripe"
+>>>>>>> goob
         },
         {
             "name": "mag-1"

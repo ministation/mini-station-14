@@ -67,7 +67,11 @@ ent-ClothingUniformJumpskirtSec = security jumpskirt
 ent-ClothingUniformJumpskirtWarden = warden's uniform
     .desc = A formal security suit for officers complete with Nanotrasen belt buckle.
 ent-ClothingUniformJumpskirtLibrarian = librarian jumpskirt
+<<<<<<< HEAD
     .desc = A cosy red jumper fit for a curator of books.
+=======
+    .desc = A cosy green jumper fit for a curator of books.
+>>>>>>> goob
 ent-ClothingUniformJumpskirtCurator = sensible skirt
     .desc = It's sensible. Too sensible...
 ent-ClothingUniformJumpskirtPerformer = performer's jumpskirt

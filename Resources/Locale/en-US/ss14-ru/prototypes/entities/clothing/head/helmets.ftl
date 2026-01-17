@@ -26,7 +26,11 @@ ent-ClothingHeadHelmetTemplar = knight helmet
 ent-ClothingHeadHelmetThunderdome = thunderdome helmet
     .desc = Let the battle commence!
 ent-ClothingHeadHelmetWizardHelm = wizard helm
+<<<<<<< HEAD
     .desc = Strange-looking helmet that most certainly belongs to a real magic user.
+=======
+    .desc = Strange-looking helmet that most certainly belongs to a real magic user. Doesn't count as wizard hat.
+>>>>>>> goob
 ent-ClothingHeadHelmetFire = fire helmet
     .desc = An atmos tech's best friend. Provides some heat resistance and looks cool.
 ent-ClothingHeadHelmetAtmosFire = atmos fire helmet
@@ -40,7 +44,11 @@ ent-ClothingHeadHelmetERTSecurity = ERT security helmet
 ent-ClothingHeadHelmetERTMedic = ERT medic helmet
     .desc = An in-atmosphere helmet worn by medical members of the Nanotrasen Emergency Response Team. Has white highlights.
 ent-ClothingHeadHelmetERTEngineer = ERT engineer helmet
+<<<<<<< HEAD
     .desc = An in-atmosphere helmet worn by engineering members of the Nanotrasen Emergency Response Team. Has orange highlights.
+=======
+    .desc = An in-atmosphere helmet worn by engineering members of the Nanotrasen Emergency Response Team. Has orange highlights and keeps your eyes safe.
+>>>>>>> goob
 ent-ClothingHeadHelmetERTJanitor = ERT janitor helmet
     .desc = An in-atmosphere helmet worn by janitorial members of the Nanotrasen Emergency Response Team. Has dark purple highlights.
 ent-ClothingHeadHelmetRaid = syndicate raid helmet

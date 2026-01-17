@@ -1,5 +1,9 @@
 ### Gravity Generator
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> goob
 ## UI
 
 gravity-generator-window-title = Генератор гравитации

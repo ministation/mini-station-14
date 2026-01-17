@@ -1,6 +1,9 @@
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Text;
 using Content.Client.Implants;
+=======
+>>>>>>> goob
 using Content.IntegrationTests.Tests.Interaction;
 using Content.Shared.Clothing;
 using Content.Shared.Implants;
@@ -11,17 +14,29 @@ using Robust.Shared.Prototypes;
 namespace Content.IntegrationTests.Tests.Chameleon;
 
 /// <summary>
+<<<<<<< HEAD
 /// Ensures all round <see cref="IsProbablyRoundStartJob">"round start jobs"</see> have an associated chameleon loadout.
 /// </summary>
 public sealed class ChameleonJobLoadoutTest : InteractionTest
 {
     private readonly List<ProtoId<JobPrototype>> JobBlacklist =
+=======
+/// Ensures all <see cref="IsProbablyRoundStartJob">"round start jobs"</see> have an associated chameleon loadout.
+/// </summary>
+public sealed class ChameleonJobLoadoutTest : InteractionTest
+{
+    private static readonly List<ProtoId<JobPrototype>> JobBlacklist =
+>>>>>>> goob
     [
 
     ];
 
     [Test]
+<<<<<<< HEAD
     public async Task CheckAllJobs()
+=======
+    public Task CheckAllJobs()
+>>>>>>> goob
     {
         var alljobs = ProtoMan.EnumeratePrototypes<JobPrototype>();
 
@@ -47,6 +62,7 @@ public sealed class ChameleonJobLoadoutTest : InteractionTest
             validJobs[chameleon.Job.Value] += 1;
         }
 
+<<<<<<< HEAD
         var errorMessage = new StringBuilder();
         errorMessage.AppendLine("The following job(s) have no chameleon prototype(s):");
         var invalid = false;
@@ -65,6 +81,18 @@ public sealed class ChameleonJobLoadoutTest : InteractionTest
             return;
 
         Assert.Fail(errorMessage.ToString());
+=======
+        Assert.Multiple(() =>
+        {
+            foreach (var job in validJobs)
+            {
+                Assert.That(job.Value, Is.Not.Zero,
+                    $"{job.Key} has no chameleonOutfit prototype.");
+            }
+        });
+
+        return Task.CompletedTask;
+>>>>>>> goob
     }
 
     /// <summary>

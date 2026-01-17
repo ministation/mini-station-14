@@ -8,10 +8,17 @@ ent-AirlockTheatreLocked = { ent-AirlockServiceLocked }
     .suffix = Театр, Закрыт
     .desc = { ent-AirlockServiceLocked.desc }
 ent-AirlockServiceTheatreLocked = { ent-AirlockServiceLocked }
+<<<<<<< HEAD
     .suffix = Service, Theatre, Locked
     .desc = { ent-AirlockServiceLocked.desc }
 ent-AirlockChapelLocked = { ent-AirlockServiceLocked }
     .suffix = Церковь, Закрыт
+=======
+    .suffix = Сервисный, Театр, Закрыт
+    .desc = { ent-AirlockServiceLocked.desc }
+ent-AirlockChapelLocked = { ent-AirlockServiceLocked }
+    .suffix = Храм, Закрыт
+>>>>>>> goob
     .desc = { ent-AirlockServiceLocked.desc }
 ent-AirlockJanitorLocked = { ent-AirlockServiceLocked }
     .suffix = Уборщик, Закрыт
@@ -152,7 +159,11 @@ ent-AirlockTheatreGlassLocked = { ent-AirlockServiceGlassLocked }
     .suffix = Театр, Закрыт
     .desc = { ent-AirlockServiceGlassLocked.desc }
 ent-AirlockServiceTheatreGlassLocked = { ent-AirlockServiceGlassLocked }
+<<<<<<< HEAD
     .suffix = Service, Theatre, Locked
+=======
+    .suffix = Сервисный, Театр, Закрыт
+>>>>>>> goob
     .desc = { ent-AirlockServiceGlassLocked.desc }
 ent-AirlockBarGlassLocked = { ent-AirlockServiceGlassLocked }
     .suffix = Бар, Закрыт
@@ -188,7 +199,11 @@ ent-AirlockHydroGlassLocked = { ent-AirlockHydroponicsGlass }
     .suffix = Гидропоника, Закрыт
     .desc = { ent-AirlockHydroponicsGlass.desc }
 ent-AirlockChapelGlassLocked = { ent-AirlockServiceGlassLocked }
+<<<<<<< HEAD
     .suffix = Церковь, Закрыт
+=======
+    .suffix = Храм, Закрыт
+>>>>>>> goob
     .desc = { ent-AirlockServiceGlassLocked.desc }
 ent-AirlockEngineeringGlassLocked = { ent-AirlockEngineeringGlass }
     .suffix = Инженерный, Закрыт
@@ -305,7 +320,11 @@ ent-AirlockMaintBarKitchenLocked = { ent-AirlockMaintServiceLocked }
     .suffix = Бар/Кухня, Закрыт
     .desc = { ent-AirlockMaintServiceLocked.desc }
 ent-AirlockMaintChapelLocked = { ent-AirlockMaintServiceLocked }
+<<<<<<< HEAD
     .suffix = Церковь, Закрыт
+=======
+    .suffix = Храм, Закрыт
+>>>>>>> goob
     .desc = { ent-AirlockMaintServiceLocked.desc }
 ent-AirlockMaintHydroLocked = { ent-AirlockMaintServiceLocked }
     .suffix = Гидропоника, Закрыт

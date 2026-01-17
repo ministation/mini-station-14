@@ -1,5 +1,6 @@
 ent-BaseStash = { "" }
     .desc = { "" }
+<<<<<<< HEAD
 ent-BasePlushie = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-PlushieThrongler = throngler plushie
@@ -72,6 +73,8 @@ ent-PlushieHuman = human plushie
     .desc = This is a felt plush of a human. All craftsmanship is of the lowest quality. The human is naked. The human is crying. The human is screaming.
 ent-PlushieMoth = moth plushie
     .desc = Cute and fluffy moth plushie. Enjoy, bz!
+=======
+>>>>>>> goob
 ent-BaseRubberToy = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-ToyRubberDuck = rubber ducky
@@ -117,15 +120,23 @@ ent-TeslaToy = Teddy Tesla
     .desc = The favorite toy of the great engineer Nikola Tesla.
 ent-PonderingOrb = pondering orb
     .desc = Ponderous, man... Really ponderous.
+<<<<<<< HEAD
 ent-PonderingOrbWizard = pondering orb
     .desc = Ponderous, man... Really ponderous. Magically shows the station's camera network.
     .suffix = Wizard
+=======
+>>>>>>> goob
 ent-ToySword = toy sword
     .desc = New Sandy-Cat plastic sword! Comes with realistic sound and full color! Looks almost like the real thing!
 ent-ToyAmongPequeno = among pequeño
     .desc = Sus!
 ent-FoamCutlass = foam cutlass
     .desc = Cosplay as a pirate and force your friends to walk the plank.
+<<<<<<< HEAD
+=======
+ent-CardSword = cardboard sword
+    .desc = A cardboard tube thats been fashioned into a sword.
+>>>>>>> goob
 ent-ClownRecorder = clown recorder
     .desc = When you just can't get those laughs coming the natural way!
 ent-ToyHammer = rubber hammer

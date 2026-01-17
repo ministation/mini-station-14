@@ -23,5 +23,10 @@ ent-DrinkOatMilkCarton = овсяное молоко
     .desc = Бежевое и питательное удовольствие!
 ent-DrinkJuiceLemonCarton = лимонный сок
     .desc = На первый глоток он кислит, а затем всё равно кислит.
+<<<<<<< HEAD
 ent-DrinkJuicePineappleCarton = pineapple juice
     .desc = Tastes like a tropical vacation far from space.
+=======
+ent-DrinkJuicePineappleCarton = ананасовый сок
+    .desc = На вкус как отпуск в тропиках далеко от космоса.
+>>>>>>> goob

@@ -4,6 +4,7 @@ ent-CrateSalvageEquipment = ящик со снаряжением для утил
 ent-CrateSalvageAssortedGoodies = { ent-CrateGenericSteel }
     .suffix = Заполненный, Случайный утиль
     .desc = { ent-CrateGenericSteel.desc }
+<<<<<<< HEAD
 ent-CrateCrusherDagger = crusher dagger crate
     .desc = Contains 4 crusher daggers for use by salvage.
 ent-CrateSeismicCharge = seismic charge crate
@@ -22,6 +23,26 @@ ent-CrateCrusherGlaive = crusher glaive crate
     .desc = Contains a crusher glaive for use by salvage.
 ent-CrateSupremeSalvagerCloak = supreme salvager cloak crate
     .desc = Contains a cloak only to be worn by supreme salvagers. Wearing it undeservedly will result in your doom.
+=======
+ent-CrateCrusherDagger = ящик с кинжалами Крушитель
+    .desc = Содержит 4 кинжала Крушитель для использования при спасательных работах.
+ent-CrateSeismicCharge = ящик с сейсмическими зарядами
+    .desc = Содержит 6 сейсмических зарядов для использования при спасательных работах.
+ent-CrateDoubleEmergencyTank = ящик с двойными аварийными баллонами
+    .desc = Содержит 2 двойных аварийных кислородных баллона и 2 двойных аварийных азотных баллона.
+ent-CrateCrusher = ящик с Крушительми
+    .desc = Содержит 2 Крушитель для использования при спасательных работах.
+ent-CrateFulton = ящик с фултоном
+    .desc = Содержит маяк Фултона и 8 фультонов.
+ent-CrateVoidJetpack = ящик с вакуумным реактивным ранцем
+    .desc = Содержит один вакуумный реактивный ранец.
+ent-CrateSalvageHardsuit = ящик со спасательным тяжёлым костюмом
+    .desc = Содержит спасательный тяжёлый костюм, дыхательную маску и кислородный баллон.
+ent-CrateCrusherGlaive = ящик с копьём Крушитель
+    .desc = Содержит копьё Крушитель для использования при спасательных работах.
+ent-CrateSupremeSalvagerCloak = ящик с плащом верховного спасателя
+    .desc = Содержит плащ, который могут носить только верховные спасатели. Несанкционированное ношение приведёт к вашей гибели.
+>>>>>>> goob
 ent-CratePartsT3 = ящик компонентов 3 уровня
     .desc = Содержит 5 случайных компонентов третьего уровня для улучшения оборудования.
 ent-CratePartsT3T4 = ящик компонентов 3/4 уровня

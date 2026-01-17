@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ent-RandomHumanoidSpawnerDeathSquad = Death Squad Agent
+=======
+ent-RandomHumanoidSpawnerDeathSquad = Death Squad Operative
+>>>>>>> goob
     .suffix = ERTRole, Death Squad
     .desc = { "" }
 ent-RandomHumanoidSpawnerERTLeader = ERT leader
@@ -7,9 +11,12 @@ ent-RandomHumanoidSpawnerERTLeader = ERT leader
 ent-RandomHumanoidSpawnerERTLeaderEVA = ERT leader
     .suffix = ERTRole, Armored EVA
     .desc = { ent-RandomHumanoidSpawnerERTLeader.desc }
+<<<<<<< HEAD
 ent-RandomHumanoidSpawnerERTLeaderEVALecter = { ent-RandomHumanoidSpawnerERTLeaderEVA }
     .suffix = ERTRole, Lecter, EVA
     .desc = { ent-RandomHumanoidSpawnerERTLeaderEVA.desc }
+=======
+>>>>>>> goob
 ent-RandomHumanoidSpawnerERTChaplain = ERT chaplain
     .suffix = ERTRole, Basic
     .desc = { ent-RandomHumanoidSpawnerERTLeader.desc }
@@ -34,9 +41,12 @@ ent-RandomHumanoidSpawnerERTSecurity = ERT security
 ent-RandomHumanoidSpawnerERTSecurityEVA = ERT security
     .suffix = ERTRole, Armored EVA
     .desc = { ent-RandomHumanoidSpawnerERTSecurity.desc }
+<<<<<<< HEAD
 ent-RandomHumanoidSpawnerERTSecurityEVALecter = { ent-RandomHumanoidSpawnerERTSecurityEVA }
     .suffix = ERTRole, Lecter, EVA
     .desc = { ent-RandomHumanoidSpawnerERTSecurityEVA.desc }
+=======
+>>>>>>> goob
 ent-RandomHumanoidSpawnerERTMedical = ERT medic
     .suffix = ERTRole, Basic
     .desc = { ent-RandomHumanoidSpawnerERTLeader.desc }

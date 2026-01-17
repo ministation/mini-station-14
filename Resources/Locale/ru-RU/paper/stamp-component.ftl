@@ -19,4 +19,8 @@ stamp-component-stamped-name-syndicate = Синдикат
 stamp-component-stamped-name-ce = Старший инженер
 stamp-component-stamped-name-greytide = Грейтайд
 stamp-component-stamped-name-psychologist = Психолог
+<<<<<<< HEAD
 stamp-component-stamped-name-wizard = Волшебник
+=======
+stamp-component-stamped-name-wizard = Маг
+>>>>>>> goob

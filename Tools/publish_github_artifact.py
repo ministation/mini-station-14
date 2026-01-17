@@ -1,3 +1,10 @@
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Fiftyllama <45442346+Fiftyllama@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 #!/usr/bin/env python3
 
 import requests
@@ -15,7 +22,12 @@ FORK_ID = os.environ['FORK_ID']
 # CONFIGURATION PARAMETERS
 # Forks should change these to publish to their own infrastructure.
 #
+<<<<<<< HEAD
 ROBUST_CDN_URL = "https://cdn.station14.ru/"
+=======
+ROBUST_CDN_URL = "https://cdn.simplestation.org/"
+FORK_ID = "goobstation-lrp"
+>>>>>>> goob
 
 def main():
     print("Fetching artifact URL from API...")

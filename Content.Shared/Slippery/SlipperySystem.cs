@@ -1,10 +1,47 @@
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 pointer-to-null <91910481+pointer-to-null@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2022 hubismal <47284081+hubismal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 KISS <59531932+YuriyKiss@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Yurii Kis <yurii.kis@smartteksas.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2024 Джексон Миссиссиппи <tripwiregamer@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Princess Cheeseballs <66055347+Pronana@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Inventory;
-using Robust.Shared.Network;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
-using Content.Shared.Popups;
 using Content.Shared.StatusEffect;
 using Content.Shared.StepTrigger.Systems;
 using Content.Shared.Stunnable;
@@ -13,16 +50,19 @@ using Content.Shared._CorvaxNext.Mood;
 using JetBrains.Annotations;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Network;
 using Robust.Shared.Physics.Components;
-using Robust.Shared.Physics.Systems;
 using Robust.Shared.Physics.Events;
+using Robust.Shared.Physics.Systems;
 using Robust.Shared.Utility;
+using Content.Shared.Projectiles;
 
 namespace Content.Shared.Slippery;
 
 [UsedImplicitly]
 public sealed class SlipperySystem : EntitySystem
 {
+    [Dependency] private readonly INetManager _net = default!; // Goobstation
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedStunSystem _stun = default!;
@@ -44,8 +84,20 @@ public sealed class SlipperySystem : EntitySystem
         SubscribeLocalEvent<SlowedOverSlipperyComponent, InventoryRelayedEvent<SlipAttemptEvent>>((e, c, ev) => OnSlowedOverSlipAttempt(e, c, ev.Args));
         SubscribeLocalEvent<SlowedOverSlipperyComponent, InventoryRelayedEvent<GetSlowedOverSlipperyModifierEvent>>(OnGetSlowedOverSlipperyModifier);
         SubscribeLocalEvent<SlipperyComponent, EndCollideEvent>(OnEntityExit);
+
+        SubscribeLocalEvent<SlipperyComponent, ProjectileHitEvent>(OnProjectileHit); // Goob - Deslippler
+        SubscribeLocalEvent<SlipperyComponent, ThrowDoHitEvent>(OnThrowHit); // Goob - Deslippler
     }
 
+    private void OnProjectileHit(EntityUid uid, SlipperyComponent component, ref ProjectileHitEvent args) // Goob - Deslippler
+    {
+        TrySlip(uid, component, args.Target);
+    }
+
+    private void OnThrowHit(EntityUid uid, SlipperyComponent component, ThrowDoHitEvent args) // Goob - Deslippler
+    {
+        TrySlip(uid, component, args.Target);
+    }
     private void HandleStepTrigger(EntityUid uid, SlipperyComponent component, ref StepTriggeredOffEvent args)
     {
         TrySlip(uid, component, args.Tripper);
@@ -56,7 +108,7 @@ public sealed class SlipperySystem : EntitySystem
         SlipperyComponent component,
         ref StepTriggerAttemptEvent args)
     {
-        args.Continue |= CanSlip(uid, args.Tripper);
+        args.Continue |= component.SlipData.SlipOnStep && CanSlip(uid, args.Tripper); // Goob edit
     }
 
     private static void OnNoSlipAttempt(EntityUid uid, NoSlipComponent component, SlipAttemptEvent args)
@@ -85,29 +137,48 @@ public sealed class SlipperySystem : EntitySystem
             _speedModifier.AddModifiedEntity(args.OtherEntity);
     }
 
-    private bool CanSlip(EntityUid uid, EntityUid toSlip)
+    public bool CanSlip(EntityUid uid, EntityUid toSlip) // Goob edit
     {
         return !_container.IsEntityInContainer(uid)
-                && _statusEffects.CanApplyEffect(toSlip, "Stun"); //Should be KnockedDown instead?
+                && _statusEffects.CanApplyEffect(toSlip, "KnockedDown", raiseEvent: false); // Goob edit
     }
 
-    public void TrySlip(EntityUid uid, SlipperyComponent component, EntityUid other, bool requiresContact = true)
+    public void TrySlip(EntityUid uid, SlipperyComponent component, EntityUid other, bool requiresContact = true, bool force = false, bool predicted = true) // Goob edit
     {
-        if (HasComp<KnockedDownComponent>(other) && !component.SlipData.SuperSlippery)
+        // Goob edit start
+        if (!predicted && _net.IsClient)
             return;
 
+<<<<<<< HEAD
         var attemptEv = new SlipAttemptEvent(uid);
         RaiseLocalEvent(other, attemptEv);
         if (attemptEv.SlowOverSlippery)
             _speedModifier.AddModifiedEntity(other);
 
         if (attemptEv.NoSlip)
+=======
+        if ((HasComp<KnockedDownComponent>(other) || HasComp<StunnedComponent>(other)) && !component.SlipData.SuperSlippery)
+>>>>>>> goob
             return;
 
-        var attemptCausingEv = new SlipCausingAttemptEvent();
-        RaiseLocalEvent(uid, ref attemptCausingEv);
-        if (attemptCausingEv.Cancelled)
-            return;
+        if (!force)
+        {
+            var attemptEv = new SlipAttemptEvent(uid);
+            RaiseLocalEvent(other, attemptEv);
+            if (attemptEv.SlowOverSlippery)
+                _speedModifier.AddModifiedEntity(other);
+
+            if (attemptEv.NoSlip)
+                return;
+
+            var attemptCausingEv = new SlipCausingAttemptEvent();
+            RaiseLocalEvent(uid, ref attemptCausingEv);
+            if (attemptCausingEv.Cancelled)
+                return;
+        }
+
+        var hardStun = component.SlipData.SuperSlippery; // Goobstation
+        // Goob edit end
 
         var ev = new SlipEvent(other);
         RaiseLocalEvent(uid, ref ev);
@@ -127,14 +198,22 @@ public sealed class SlipperySystem : EntitySystem
 
         var playSound = !_statusEffects.HasStatusEffect(other, "KnockedDown");
 
-        _stun.TryParalyze(other, component.SlipData.ParalyzeTime, true);
+        // goob edit - stunmeta
+        var time = component.SlipData.ParalyzeTime;
+        if (hardStun)
+            _stun.TryParalyze(other, time, true);
+        else
+            _stun.KnockdownOrStun(other, time, true);
 
         RaiseLocalEvent(other, new MoodEffectEvent("MobSlipped")); // _CorvaxNext: mood
 
         // Preventing from playing the slip sound when you are already knocked down.
         if (playSound)
         {
-            _audio.PlayPredicted(component.SlipSound, other, other);
+            if (predicted)
+                _audio.PlayPredicted(component.SlipSound, other, other);
+            else
+                _audio.PlayPvs(component.SlipSound, other);
         }
 
         _adminLogger.Add(LogType.Slip, LogImpact.Low,

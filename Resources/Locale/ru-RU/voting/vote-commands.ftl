@@ -1,5 +1,9 @@
 ### Voting system related console commands
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> goob
 ## 'createvote' command
 
 cmd-createvote-desc = Создаёт голосование

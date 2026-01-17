@@ -10,7 +10,11 @@ ent-FoodBoxPizza = коробка пиццы
 ent-FoodBoxPizzaFilled = коробка пиццы
     .suffix = Заполненная
     .desc = { ent-FoodBoxPizza.desc }
+<<<<<<< HEAD
 ent-FoodBoxPizzaCotton = pizza box
+=======
+ent-FoodBoxPizzaCotton = коробка пиццы
+>>>>>>> goob
     .suffix = Хлопковая пицца
     .desc = { ent-FoodBoxPizzaFilled.desc }
 ent-FoodBoxNugget = куриные наггетсы
@@ -33,7 +37,11 @@ ent-FoodBoxDonkpocketHonk = коробка донк-покетов со вкус
     .desc = { ent-FoodBoxDonkpocket.desc }
 ent-FoodBoxDonkpocketDink = коробка динк-покетов
     .desc = Ноль углеводов! Нет необходимости в разогреве!
+<<<<<<< HEAD
 ent-FoodBoxDonkpocketMoth = box of moth-pockets
+=======
+ent-FoodBoxDonkpocketMoth = коробка моль-покетов
+>>>>>>> goob
     .desc = { ent-FoodBoxDonkpocket.desc }
 ent-HappyHonk = обед Хэппи Хонк
     .desc = Игрушка съедобнее, чем еда.
@@ -52,7 +60,12 @@ ent-HappyHonkCluwne = обед Жалкий Клувень
 ent-FoodMealHappyHonkClown = { ent-HappyHonk }
     .suffix = Спавнер случайный обед
     .desc = { ent-HappyHonk.desc }
+<<<<<<< HEAD
 ent-FoodMealHappyHonkBigBite = Happy Honk Big Bite Meal
     .desc = Someone paid good money to get this fast food meal shipped out this way. It smells fresh, somehow.
+=======
+ent-FoodMealHappyHonkBigBite = обед Хэппи Хонк Большой бургер
+    .desc = Кто-то заплатил неплохие деньги за доставку этой еды из фастфуда именно таким способом. На удивление, пахнет свежо.
+>>>>>>> goob
 ent-FoodBoxCloth = коробка ткани бренда FlutterSoft
     .desc = Волокно — это самая важная порция пищи для моли! Не пропускайте её и не используйте хлам из нижних ящиков, а покупайте высококачественную ткань бренда FlutterSoft.

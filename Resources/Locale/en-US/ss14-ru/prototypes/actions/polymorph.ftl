@@ -5,7 +5,11 @@ ent-BaseActionPolymorph = { ent-BaseAction }
 ent-ActionPolymorphWizardSpider = Spider Polymorph
     .desc = Polymorphs you into a Spider.
 ent-ActionPolymorphWizardRod = Rod Form
+<<<<<<< HEAD
     .desc = CLANG!
+=======
+    .desc = Take on the form of an immovable rod, destroying everything in your path.
+>>>>>>> goob
 ent-ActionPolymorphJaunt = Ethereal Jaunt
     .desc = Melt into the Ethereal Plane for a quick getaway!
 ent-ActionPolymorphJauntII = Ethereal Jaunt II

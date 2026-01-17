@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 ent-GasPipeSansLayers = gas pipe
     .desc = Holds gas.
 ent-GasPipeBase = труба
     .desc = Содержит газ.
+=======
+ent-GasPipeSansLayers = газовая труба
+    .desc = Удерживает газ.
+ent-GasPipeBase = труба
+    .desc = Содержит газ.
+ent-VentCrawlerHolder = vent craw holder
+    .desc = { "" }
+ent-GasPipeNoOverlap = { ent-GasPipeBase }
+    .desc = { ent-GasPipeBase.desc }
+>>>>>>> goob
 ent-GasPipeHalf = { ent-GasPipeBase }
     .suffix = Половинная
     .desc = { ent-GasPipeBase.desc }
@@ -17,7 +28,14 @@ ent-GasPipeTJunction = { ent-GasPipeBase }
 ent-GasPipeFourway = { ent-GasPipeBase }
     .suffix = Четверная
     .desc = { ent-GasPipeBase.desc }
+<<<<<<< HEAD
 ent-GasPipeBroken = сломанная труба
     .desc = Раньше в ней содержался газ.
 ent-GasPipeManifold = gas pipe manifold
     .desc = Allows gas pipes of different configurations to be connected together.
+=======
+ent-GasPipeManifold = газовый коллектор
+    .desc = Позволяет газовым трубам разных конфигураций соединяться вместе.
+ent-GasPipeBroken = сломанная труба
+    .desc = Раньше в ней содержался газ.
+>>>>>>> goob

@@ -64,7 +64,11 @@
     displayName: Eyes
     whitelist:
       tags:
+<<<<<<< HEAD
       - CorgiWearable
+=======
+      - PetWearable
+>>>>>>> goob
   - name: head
     slotTexture: head
     slotFlags: HEAD
@@ -74,3 +78,18 @@
     whitelist:
       tags:
       - CorgiWearable
+<<<<<<< HEAD
+=======
+  - name: back
+    slotTexture: back
+    fullTextureName: template_small
+    slotFlags: BACK
+    slotGroup: SecondHotbar
+    stripTime: 6
+    uiWindowPos: 3,0
+    strippingWindowPos: 0,5
+    displayName: Back
+    whitelist:
+      tags:
+      - CorgiWearable
+>>>>>>> goob

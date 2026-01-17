@@ -21,6 +21,10 @@ guide-entry-signalvalve = Сигнальный клапан
 guide-entry-pneumaticvalve = Пневматический клапан
 guide-entry-passivegate = Пассивный клапан
 guide-entry-mixingandfiltering = Смешивание и фильтрация
+<<<<<<< HEAD
+=======
+guide-entry-ressureregulator = Регулятор давления
+>>>>>>> goob
 guide-entry-gascanisters = Газовые канистры
 guide-entry-thermomachines = Термомашины
 guide-entry-gascondensing = Конденсация газов
@@ -71,6 +75,10 @@ guide-entry-brute =
     Продвинутое лечение
     механических повреждений
 guide-entry-botanical = Ботанические
+<<<<<<< HEAD
+=======
+guide-entry-plastic = Пластиковая продукция
+>>>>>>> goob
 guide-entry-cloning = Клонирование
 guide-entry-cryogenics = Криогеника
 guide-entry-science = Научный отдел
@@ -83,7 +91,11 @@ guide-entry-artifact-reports = Отчёты об артефактах
 guide-entry-traversal-distorter = Поперечный искатель
 guide-entry-machine-upgrading = Улучшение оборудования
 guide-entry-robotics = Робототехника
+<<<<<<< HEAD
 guide-entry-cyborgs = Киборги
+=======
+guide-entry-cyborgs = Борги
+>>>>>>> goob
 guide-entry-security = Безопасность станции
 guide-entry-forensics = Криминалистика
 guide-entry-defusal = Обезвреживание крупной бомбы
@@ -133,7 +145,10 @@ guide-entry-revolutionaries = Революционеры
 guide-entry-minor-antagonists = Малые антагонисты
 guide-entry-space-ninja = Космический ниндзя
 guide-entry-thieves = Воры
+<<<<<<< HEAD
 guide-entry-wizard = Волшебник
+=======
+>>>>>>> goob
 guide-entry-rules = Правила сервера
 guide-entry-rules-core-only = Только основные правила
 guide-entry-rules-lrp = Стандартные правила
@@ -172,6 +187,14 @@ guide-entry-rules-r12 = Р12
 guide-entry-rules-r13 = Р13
 guide-entry-rules-r14 = Р14
 guide-entry-rules-r15 = Р15
+<<<<<<< HEAD
+=======
+guide-entry-rules-r16 = R16
+guide-entry-rules-r17 = R17
+guide-entry-rules-r18 = R18
+guide-entry-rules-r19 = R19
+guide-entry-rules-r20 = R20
+>>>>>>> goob
 guide-entry-rules-silicon = Правила синтетиков
 guide-entry-rules-s1 = С1
 guide-entry-rules-s2 = С2

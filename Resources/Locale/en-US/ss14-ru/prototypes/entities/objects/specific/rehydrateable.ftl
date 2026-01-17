@@ -12,6 +12,11 @@ ent-GoatCube = goat cube
     .desc = { ent-RehydratableAnimalCube.desc }
 ent-MothroachCube = mothroach cube
     .desc = { ent-RehydratableAnimalCube.desc }
+<<<<<<< HEAD
+=======
+ent-MoproachCube = moproach cube
+    .desc = { ent-RehydratableAnimalCube.desc }
+>>>>>>> goob
 ent-MouseCube = mouse cube
     .desc = { ent-RehydratableAnimalCube.desc }
 ent-CockroachCube = cockroach cube

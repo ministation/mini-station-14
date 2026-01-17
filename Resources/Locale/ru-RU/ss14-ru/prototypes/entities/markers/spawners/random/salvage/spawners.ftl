@@ -33,7 +33,11 @@ ent-SalvageSpawnerMobMagnet75 = { ent-SalvageSpawnerMobMagnet }
 ent-SalvageSpawnerMobMagnet100 = { ent-SalvageSpawnerMobMagnet }
     .suffix = 100%
     .desc = { ent-SalvageSpawnerMobMagnet.desc }
+<<<<<<< HEAD
 ent-SalvageSpawnerStructuresVarious = Space Debris Structure Spawner
+=======
+ent-SalvageSpawnerStructuresVarious = спавнер обломок структура
+>>>>>>> goob
     .desc = { ent-MarkerBase.desc }
 ent-SalvageSpawnerMobShark = спавнер обломок Карпоакула
     .desc = { ent-MarkerBase.desc }

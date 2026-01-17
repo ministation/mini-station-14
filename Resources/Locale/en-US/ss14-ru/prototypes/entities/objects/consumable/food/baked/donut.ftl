@@ -50,7 +50,11 @@ ent-FoodDonutJelly = matcha jelly-donut
     .desc = The L-theanine in this jelly-donut is relaxing, yet not euphoric. Goes great with a cup of tea.
 ent-FoodDonutJellySweetpea = sweet pea jelly-donut
     .desc = Goes great with a bottle of Bastion Burbon!
+<<<<<<< HEAD
 ent-FoodDonutJellySlugcat = slugcat jelly-donut
+=======
+ent-FoodDonutJellyScurret = scurret jelly-donut
+>>>>>>> goob
     .desc = No holes in this donut in case a suspicious looking pole shows up.
 ent-FoodDonutPoison = { ent-FoodDonutPink }
     .suffix = Poison

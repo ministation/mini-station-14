@@ -16,6 +16,7 @@ toggle-light = Переключить свет
 ai-device-not-responding = Устройство не отвечает
 ai-consciousness-download-warning = Ваше сознание начали загружать.
 # UI
+<<<<<<< HEAD
 station-ai-customization-menu = AI customization
 station-ai-customization-categories = Categories
 station-ai-customization-options = Options (choice of one)
@@ -34,3 +35,25 @@ station-ai-hologram-male = Male appearance
 station-ai-hologram-face = Disembodied head
 station-ai-hologram-cat = Cat form
 station-ai-hologram-dog = Corgi form
+=======
+station-ai-customization-menu = Настройка ИИ
+station-ai-customization-categories = Категории
+station-ai-customization-options = Опции (выбрать одну)
+station-ai-customization-core = Дисплей ядра ИИ
+station-ai-customization-hologram = Голографический аватар
+# Customizations
+station-ai-icon-ai = Дух из машины
+station-ai-icon-angel = Ангел-хранитель
+station-ai-icon-bliss = Более простые времена
+station-ai-icon-clown = Клоуничаем
+station-ai-icon-dorf = Приключение ждёт
+station-ai-icon-heartline = Линия жизни
+station-ai-icon-smiley = Улыбка
+station-ai-hologram-female = Женский образ
+station-ai-hologram-male = Мужской образ
+station-ai-hologram-face = Бестелесная голова
+station-ai-hologram-cat = Форма кота
+station-ai-hologram-dog = Форма корги
+station-ai-hologram-kobold = Форма кобольда
+station-ai-hologram-monkey = Форма обезьяны
+>>>>>>> goob

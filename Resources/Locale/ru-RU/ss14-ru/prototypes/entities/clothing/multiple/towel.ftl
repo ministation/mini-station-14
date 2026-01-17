@@ -40,7 +40,11 @@ ent-TowelColorSilver = серебряное полотенце
     .desc = { ent-BaseTowel.desc }
 ent-TowelColorMime = бесшумное полотенце
     .desc = { ent-BaseTowel.desc }
+<<<<<<< HEAD
 ent-TowelColorNT = полотенце марки Nanotrasen
+=======
+ent-TowelColorNT = полотенце марки NanoTrasen
+>>>>>>> goob
     .desc = { ent-BaseTowel.desc }
 ent-TowelColorCentcom = полотенце Центком
     .desc = { ent-BaseTowel.desc }

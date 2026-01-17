@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 ent-BaseXenoArtifactItem = alien artifact
     .desc = A strange handheld alien device.
+=======
+>>>>>>> goob
 ent-SimpleXenoArtifactItem = { ent-BaseXenoArtifactItem }
     .suffix = Simple
     .desc = { ent-BaseXenoArtifactItem.desc }
 ent-MediumXenoArtifactItem = { ent-BaseXenoArtifactItem }
     .suffix = Medium
     .desc = { ent-BaseXenoArtifactItem.desc }
+<<<<<<< HEAD
 ent-ComplexXenoArtifactItem = { ent-BaseXenoArtifactItem }
     .suffix = Complex
     .desc = { ent-BaseXenoArtifactItem.desc }
@@ -17,3 +21,8 @@ ent-ArtifactFragment = artifact fragment
 ent-ArtifactFragment1 = { ent-ArtifactFragment }
     .suffix = Single
     .desc = { ent-ArtifactFragment.desc }
+=======
+ent-VariedXenoArtifactItem = { ent-BaseXenoArtifactItem }
+    .suffix = Varied
+    .desc = { ent-BaseXenoArtifactItem.desc }
+>>>>>>> goob

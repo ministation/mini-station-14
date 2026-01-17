@@ -25,9 +25,15 @@ marking-LizardTailLTiger-tail_ltiger = Унатх, хвост (Светлые т
 marking-LizardTailLTiger = Унатх, хвост (Светлые тигриные полоски)
 marking-LizardTailDTiger-tail_dtiger = Унатх, хвост (Тёмные тигриные полоски)
 marking-LizardTailDTiger = Унатх, хвост (Тёмные тигриные полоски)
+<<<<<<< HEAD
 marking-LizardTailAquatic-tail_aquatic = Lizard Tail (Aquatic)
 marking-LizardTailAquatic = Lizard Tail (Aquatic)
 marking-LizardSnoutRound-snout_round = Унатх, морда (Круглая)
+=======
+marking-LizardSnoutRound-snout_round = Унатх, морда (Круглая)
+marking-LizardTailAquatic-tail_aquatic = Унатх, хвост (Водный)
+marking-LizardTailAquatic = Унатх, хвост (Водный)
+>>>>>>> goob
 marking-LizardSnoutRound = Унатх, морда (Круглая)
 marking-LizardSnoutSharp-snout_sharp = Унатх, морда (Заострёная)
 marking-LizardSnoutSharp = Унатх, морда (Заострёная)
@@ -74,8 +80,14 @@ marking-LizardChestUnderbelly-body_underbelly = Унатх, грудь (Подб
 marking-LizardChestUnderbelly = Унатх, грудь (Подбрюшье)
 marking-LizardChestBackspikes-body_backspikes = Унатх, грудь, шипы на спине (Четыре)
 marking-LizardChestBackspikes = Унатх, грудь, шипы на спине (Четыре)
+<<<<<<< HEAD
 marking-LizardChestFin-body_fin = Lizard Fin
 marking-LizardChestFin = Lizard Fin
 marking-LizardSnoutSplotch = Унатх, морда лица (Пятно)
+=======
+marking-LizardSnoutSplotch = Унатх, морда лица (Пятно)
+marking-LizardChestFin-body_fin = Унатх, плавник
+marking-LizardChestFin = Унатх, плавник
+>>>>>>> goob
 marking-LizardSnoutSplotch-snout_splotch_primary = Морда
 marking-LizardSnoutSplotch-snout_splotch_secondary = Нос

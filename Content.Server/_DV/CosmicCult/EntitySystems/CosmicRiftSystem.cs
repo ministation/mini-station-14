@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 using Content.Server._DV.CosmicCult.Components;
 using Content.Server.Atmos.Components;
+=======
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Goobstation.Common.Religion;
+using Content.Server._DV.CosmicCult.Components;
+using Content.Server.Atmos.Components;
+using Content.Goobstation.Shared.Bible; // Goobstation - Bible
+>>>>>>> goob
 using Content.Server.Popups;
 using Content.Shared._DV.CosmicCult;
 using Content.Shared._DV.CosmicCult.Components;
@@ -36,6 +49,14 @@ public sealed class CosmicRiftSystem : EntitySystem
             return;
         }
 
+<<<<<<< HEAD
+=======
+        if (HasComp<BibleUserComponent>(args.User))
+        {
+            _popup.PopupEntity(Loc.GetString("cosmiccult-rift-chaplainoops"), args.User, args.User);
+            return;
+        }
+>>>>>>> goob
 
         if (!TryComp<CosmicCultComponent>(args.User, out var cultist))
         {
@@ -74,6 +95,25 @@ public sealed class CosmicRiftSystem : EntitySystem
             return;
         }
 
+<<<<<<< HEAD
+=======
+        if (HasComp<BibleComponent>(args.Used))
+        {
+            uid.Comp.Occupied = true;
+            _popup.PopupEntity(Loc.GetString("cosmiccult-rift-beginpurge"), args.User, args.User);
+            var doargs = new DoAfterArgs(EntityManager,
+                args.User,
+                uid.Comp.BibleTime,
+                new EventPurgeRiftDoAfter(),
+                uid,
+                uid)
+            {
+                DistanceThreshold = 1.5f, Hidden = false, BreakOnDamage = true, BreakOnDropItem = true,
+                BreakOnMove = true, MovementThreshold = 2f,
+            };
+            _doAfter.TryStartDoAfter(doargs);
+        }
+>>>>>>> goob
         else if (TryComp<CleanseOnUseComponent>(args.Used, out var comp) && comp.CanPurge)
         {
             uid.Comp.Occupied = true;
@@ -113,6 +153,10 @@ public sealed class CosmicRiftSystem : EntitySystem
         comp.CosmicGlareStun = TimeSpan.FromSeconds(1);
         comp.CosmicImpositionDuration = TimeSpan.FromSeconds(7.2);
         comp.Respiration = false;
+<<<<<<< HEAD
+=======
+        EnsureComp<CosmicEmpoweredSpeedComponent>(args.User);
+>>>>>>> goob
         EnsureComp<PressureImmunityComponent>(args.User);
         EnsureComp<TemperatureImmunityComponent>(args.User);
         _popup.PopupCoordinates(

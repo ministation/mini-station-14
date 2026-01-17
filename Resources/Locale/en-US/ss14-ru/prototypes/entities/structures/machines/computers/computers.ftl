@@ -12,6 +12,11 @@ ent-ComputerShuttleSyndie = syndicate shuttle console
     .desc = Used to pilot a syndicate shuttle.
 ent-ComputerShuttleCargo = cargo shuttle console
     .desc = Used to pilot the cargo shuttle.
+<<<<<<< HEAD
+=======
+ent-ComputerShuttleSalvage = salvage shuttle console
+    .desc = Used to pilot the salvage shuttle.
+>>>>>>> goob
 ent-ComputerIFF = IFF computer
     .desc = Allows you to control the IFF characteristics of this vessel.
 ent-ComputerIFFSyndicate = IFF computer
@@ -39,8 +44,11 @@ ent-ComputerComms = communications computer
     .desc = A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
 ent-SyndicateComputerComms = syndicate communications computer
     .desc = A computer capable of remotely hacking into the station's communications systems. Using this to make an announcement will alert the station to your presence.
+<<<<<<< HEAD
 ent-WizardComputerComms = wizard communications computer
     .desc = A computer capable of magically projecting your speech to the station. Using this to make an announcement will alert the station to your presence.
+=======
+>>>>>>> goob
 ent-CentcommComputerComms = central command communications computer
     .desc = A computer used to make world wide announcements via keyboard. The superior cousin of the regular communications computer.
 ent-ComputerSolarControl = solar control computer

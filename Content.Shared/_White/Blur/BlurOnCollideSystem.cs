@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+>>>>>>> goob
 using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Projectiles;
 using Content.Shared.StatusEffect;
@@ -29,9 +37,29 @@ public sealed class BlurOnCollideSystem : EntitySystem
 
     private void ApplyEffects(EntityUid target, BlurOnCollideComponent component)
     {
+<<<<<<< HEAD
         _statusEffects.TryAddStatusEffect<BlurryVisionComponent>(target,
             "BlurryVision",
             TimeSpan.FromSeconds(component.BlurTime),
             true);
     }
 }
+=======
+        if (component.BlurTime > TimeSpan.Zero)
+        {
+            _statusEffects.TryAddStatusEffect<BlurryVisionComponent>(target,
+                "BlurryVision",
+                component.BlurTime,
+                true);
+        }
+
+        if (component.BlindTime > TimeSpan.Zero)
+        {
+            _statusEffects.TryAddStatusEffect<TemporaryBlindnessComponent>(target,
+                "TemporaryBlindness",
+                component.BlindTime,
+                true);
+        }
+    }
+}
+>>>>>>> goob

@@ -1,6 +1,12 @@
 ent-WardrobePrisonFilled = { ent-WardrobePrison }
     .desc = Contains a selection of nice orange clothes for people enjoying their stay in the brig.
     .suffix = Filled
+<<<<<<< HEAD
+=======
+ent-ClosetWallWardrobePrisonFilled = { ent-ClosetWallOrange }
+    .suffix = Filled
+    .desc = { ent-ClosetWallOrange.desc }
+>>>>>>> goob
 ent-WardrobeRoboticsFilled = { ent-WardrobeRobotics }
     .desc = You can build a robot out of this locker.
     .suffix = Filled
@@ -37,6 +43,12 @@ ent-WardrobeSalvageFilled = { ent-WardrobeSalvage }
 ent-WardrobeAtmosphericsFilled = { ent-WardrobeAtmospherics }
     .desc = This locker contains a uniform for atmospheric technicians.
     .suffix = Filled
+<<<<<<< HEAD
+=======
+ent-ClosetWallWardrobeAtmosphericsFilled = { ent-ClosetWallAtmospherics }
+    .desc = This locker contains a uniform for atmospheric technicians.
+    .suffix = Filled
+>>>>>>> goob
 ent-WardrobeEngineeringFilled = { ent-WardrobeEngineering }
     .desc = This locker contains a uniform for engineering or social engineering.
     .suffix = Filled

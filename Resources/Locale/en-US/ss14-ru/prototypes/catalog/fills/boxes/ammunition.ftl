@@ -1,9 +1,16 @@
 ent-BoxMagazine = box of magazines
     .desc = A box full of magazines.
+<<<<<<< HEAD
 ent-BoxMagazinePistolCaselessRifle = box of .25 caseless magazines
     .desc = A box full of .25 caseless magazines.
 ent-BoxMagazinePistolCaselessRiflePractice = box of .25 caseless (practice) magazines
     .desc = A box full of .25 caseless practice magazines.
+=======
+ent-BoxMagazinePistolCaselessRifle = box of 9.5mm HP magazines
+    .desc = A box full of 9.5mm caseless magnum hollow-point magazines.
+ent-BoxMagazinePistolCaselessRiflePractice = box of 9.5mm (practice) magazines
+    .desc = A box full of 9.5mm caseless magnum practice magazines.
+>>>>>>> goob
 ent-BoxMagazineLightRifle = box of .30 rifle magazines
     .desc = A box full of .30 rifle magazines.
 ent-BoxMagazineLightRiflePractice = box of .30 rifle (practice) magazines

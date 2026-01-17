@@ -1,0 +1,14 @@
+ent-ClothingNeckCaptainWide = captain wide overcoat
+    .desc = Wide captain's greatcoat. It doesn't seem to fit you, but it will do as a cape on your shoulders.
+ent-ClothingNeckCloakRoyalCaptain = royal captain cloak
+    .desc = The king in the palace, the king in the palace.
+ent-ClothingNeckCloakSyndicateAdmiral = Syndicate Admiral cloak
+    .desc = Red cloak sewn with a gold cloth.
+ent-ClothingNeckWhiteMantleCaptain = white captain mantle
+    .desc = Captain mantle, with white down.
+ent-ClothingNeckCloakCentcomBlack = special operations officer cloak
+    .desc = The NanoTrasen logo embroidered in gold speaks for itself.
+ent-ClothingNeckCloakCentcomAdmiral = admiral's cape
+    .desc = A vibrant green cape with gold stitching, worn by Nanotrasen Navy Admirals.
+ent-ClothingNeckCloakHosExperimental = experimental HOS cloak
+    .desc = An experimental HOS cloak that provides style and an impressive appearance to its wearer.

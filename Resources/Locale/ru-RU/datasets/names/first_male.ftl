@@ -664,6 +664,7 @@ names-first-male-dataset-663 = Зейн
 names-first-male-dataset-664 = Зейден
 names-first-male-dataset-665 = Зик
 names-first-male-dataset-666 = Зион
+<<<<<<< HEAD
 # CORVAX BLET
 names-first-male-dataset-667 = Августин
 names-first-male-dataset-668 = Азамат
@@ -985,3 +986,5 @@ names-first-male-dataset-983 = Петро
 names-first-male-dataset-984 = Савва
 names-first-male-dataset-985 = Артем
 names-first-male-dataset-986 = Терентий
+=======
+>>>>>>> goob

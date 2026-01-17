@@ -1,6 +1,9 @@
 delivery-recipient-examine = Адресовано: { $recipient }, { $job }.
 delivery-already-opened-examine = Уже вскрыто.
+<<<<<<< HEAD
 delivery-earnings-examine = Delivering this will earn the station [color=yellow]{ $spesos }[/color] spesos.
+=======
+>>>>>>> goob
 delivery-recipient-no-name = Безымянный
 delivery-recipient-no-job = Неизвестно
 delivery-unlocked-self = Вы разблокировали { $delivery } отпечатком пальца.
@@ -21,6 +24,7 @@ delivery-opened-others =
     } { $delivery }.
 delivery-unlock-verb = Разблокировать
 delivery-open-verb = Вскрыть
+<<<<<<< HEAD
 delivery-slice-verb = Slice open
 delivery-teleporter-amount-examine =
     { $amount ->
@@ -37,3 +41,5 @@ delivery-fragile-examine = This is a [color=red]fragile { $type }[/color]. Deliv
 delivery-fragile-broken-examine = This is a [color=red]fragile { $type }[/color]. It looks badly damaged.
 delivery-bomb-examine = This is a [color=purple]bomb { $type }[/color]. Oh no.
 delivery-bomb-primed-examine = This is a [color=purple]bomb { $type }[/color]. Reading this is a bad use of your time.
+=======
+>>>>>>> goob

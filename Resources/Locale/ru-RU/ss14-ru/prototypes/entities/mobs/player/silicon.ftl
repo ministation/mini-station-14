@@ -4,6 +4,7 @@ ent-AiHeldIntellicard = { "" }
     .desc = Компоненты добавляются/удаляются из сущности, которая помещается в интелкарту.
 ent-AiHolder = { "" }
     .desc = Управляет взаимодействием ИИ на голокартах + ядрах ИИ
+<<<<<<< HEAD
 ent-AsimovCircuitBoard = плата законов (Крюзимов)
     .desc = Электронная плата, хранящая набор законов ИИ 'Крюзимов'.
 ent-CorporateCircuitBoard = плата законов (Корпорат)
@@ -30,6 +31,8 @@ ent-AntimovCircuitBoard = плата законов (Антимов)
     .desc = Электронная плата, хранящая набор законов ИИ 'Антимов'.
 ent-NutimovCircuitBoard = плата законов (Орехимов)
     .desc = Электронная плата, хранящая набор законов ИИ 'Орехимов'.
+=======
+>>>>>>> goob
 ent-Intellicard = интелкарта
     .desc = Устройство для хранения ИИ.
     .suffix = Пустой
@@ -62,7 +65,11 @@ ent-PlayerBorgSyndicateSaboteurBattery = { ent-BorgChassisSyndicateSaboteur }
 ent-PlayerBorgSyndicateSaboteurGhostRole = { ent-PlayerBorgSyndicateSaboteurBattery }
     .suffix = Роль призрака
     .desc = { ent-PlayerBorgSyndicateSaboteurBattery.desc }
+<<<<<<< HEAD
 ent-PlayerBorgSyndicateInvasionGhostRoleSpawner = syndicate invasion borg spawner
+=======
+ent-PlayerBorgSyndicateInvasionGhostRoleSpawner = спавнер штурмовой борг Синдиката
+>>>>>>> goob
     .desc = { ent-MarkerBase.desc }
 ent-PlayerBorgDerelict = { ent-BorgChassisDerelict }
     .suffix = Батарея, Модуль

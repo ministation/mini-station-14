@@ -1,5 +1,60 @@
+<<<<<<< HEAD
 # Im not even gonna bother marking this file with _CorvaxNext Change(s), I'm fucking with almost everything.
 
+=======
+# SPDX-FileCopyrightText: 2020 DmitriyRubetskoy <75271456+DmitriyRubetskoy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 DmitriyRubetskoy <rubetskoy234@mail.ru>
+# SPDX-FileCopyrightText: 2020 GlassEclipse <32942106+GlassEclipse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 GlassEclipse <tsymall5@gmail.com>
+# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2020 Remie Richards <remierichards@gmail.com>
+# SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2020 Ygg01 <daniel.fath7@gmail.com>
+# SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
+# SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2021 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2021 Tarlan2 <76408146+Tarlan2@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 and_a <and_a@DESKTOP-RJENGIR>
+# SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 I.K <45953835+notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nairod <110078045+Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Skye <57879983+Rainbeon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ColonicAcid <claudiomota1990@googlemail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 RedBookcase <crazykid1590@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+>>>>>>> goob
 # Base
 
 - type: entity
@@ -9,11 +64,19 @@
   components:
   - type: Sprite
   - type: StaticPrice
+<<<<<<< HEAD
     price: 20
   - type: Tag # _CorvaxNext: surgery
     tags: # _CorvaxNext: surgery
     - SurgeryTool # _CorvaxNext: surgery
   - type: SurgeryTool # _CorvaxNext: surgery
+=======
+    price: 60
+  - type: Tag
+    tags:
+    - SurgeryTool
+  - type: SurgeryTool
+>>>>>>> goob
 
 # Cautery
 
@@ -24,10 +87,17 @@
   description: A surgical tool used to cauterize open wounds.
   components:
   - type: Sprite
+<<<<<<< HEAD
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/cautery.rsi
     state: cautery
   - type: Item
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/cautery.rsi
+=======
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
+    state: cautery
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
+>>>>>>> goob
     storedRotation: 90
   - type: MeleeWeapon
     damage:
@@ -35,6 +105,7 @@
         Heat: 5
     soundHit:
       path: /Audio/Effects/lightburn.ogg
+<<<<<<< HEAD
   # start-_CorvaxNext: surgery
   - type: SurgeryTool
     startSound:
@@ -48,6 +119,20 @@
     - Cautery
   # end-_CorvaxNext: surgery
 
+=======
+  # Shitmed Change
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/cautery1.ogg
+    endSound:
+      path: /Audio/_Shitmed/Medical/Surgery/cautery2.ogg
+  - type: Cautery
+  - type: AlwaysHot # Goob
+  - type: Tag # CorvaxGoob-SurgicalMagneticBoard
+    tags:
+    - SurgeryTool
+    - Cautery
+>>>>>>> goob
 # Drill
 
 - type: entity
@@ -57,10 +142,17 @@
   description: A surgical drill for making holes into hard material.
   components:
   - type: Sprite
+<<<<<<< HEAD
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/drill.rsi
     state: drill
   - type: Item
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/drill.rsi
+=======
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/drill.rsi
+    state: drill
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/drill.rsi
+>>>>>>> goob
     shape:
     - 0,0,1,0
     - 1,1,1,1
@@ -72,6 +164,7 @@
       path: /Audio/Items/drill_hit.ogg
   - type: StaticPrice
     price: 40
+<<<<<<< HEAD
   # start-_CorvaxNext: surgery
   - type: SurgeryTool
     startSound:
@@ -82,6 +175,17 @@
     - SurgeryTool
     - Drill
   # end-_CorvaxNext: surgery
+=======
+  # Shitmed Change
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
+  - type: Drill
+  - type: Tag # CorvaxGoob-SurgicalMagneticBoard
+    tags:
+    - SurgeryTool
+    - Drill
+>>>>>>> goob
 
 # Scalpel
 
@@ -101,10 +205,17 @@
     types:
       - Knife
   - type: Sprite
+<<<<<<< HEAD
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/scalpel.rsi
     state: scalpel
   - type: Item
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/scalpel.rsi
+=======
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
+    state: scalpel
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
+>>>>>>> goob
     storedRotation: 90
   - type: MeleeWeapon
     wideAnimationRotation: 90
@@ -115,6 +226,7 @@
         Slash: 8
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
+<<<<<<< HEAD
   # start-_CorvaxNext: surgery
   - type: SurgeryTool
     startSound:
@@ -128,6 +240,20 @@
     - Scalpel
   # end-_CorvaxNext: surgery
 
+=======
+  # Shitmed Change
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/scalpel1.ogg
+    endSound:
+      path: /Audio/_Shitmed/Medical/Surgery/scalpel2.ogg
+  - type: Scalpel
+  - type: Tag # Goobstation
+    tags:
+    - SurgeryTool
+    - Knife
+    - Scalpel # CorvaxGoob-SurgicalMagneticBoard
+>>>>>>> goob
 
 - type: entity
   name: shiv
@@ -160,8 +286,13 @@
     damage:
       types:
         Slash: 12
+<<<<<<< HEAD
   - type: Scalpel # _CorvaxNext
     speed: 1.25
+=======
+  - type: Scalpel # Shitmed
+    speed: 1.35
+>>>>>>> goob
 
 - type: entity
   name: laser scalpel
@@ -176,14 +307,22 @@
     sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
     storedRotation: 90
     heldPrefix: laser
+<<<<<<< HEAD
   # start-_CorvaxNext: surgery
   - type: Scalpel
     speed: 1.5
+=======
+  - type: Scalpel # Shitmed
+    speed: 1.75
+>>>>>>> goob
   - type: Tag
     tags:
     - SurgeryTool
     - ScalpelLaser
+<<<<<<< HEAD
   # end-_CorvaxNext: surgery
+=======
+>>>>>>> goob
   # TODO: prevent bleeding from incisions
 
 # Retractor
@@ -195,6 +334,7 @@
   description: A surgical tool used to hold open incisions.
   components:
   - type: Sprite
+<<<<<<< HEAD
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/retractor.rsi
     state: retractor
   - type: Item
@@ -206,18 +346,35 @@
       path: /Audio/Medical/Surgery/retractor1.ogg
     endSound:
       path: /Audio/Medical/Surgery/retractor2.ogg
+=======
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
+    state: retractor
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
+    storedRotation: 90
+  # Shitmed Change
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/retractor1.ogg
+    endSound:
+      path: /Audio/_Shitmed/Medical/Surgery/retractor2.ogg
+>>>>>>> goob
   - type: Retractor
   - type: Tag
     tags:
     - SurgeryTool
     - Retractor
+<<<<<<< HEAD
   # end-_CorvaxNext: surgery
+=======
+>>>>>>> goob
 
 # Hemostat
 
 - type: entity
   name: hemostat
   id: Hemostat
+<<<<<<< HEAD
   parent: BaseToolSurgery # _CorvaxNext
   description: A surgical tool used to compress blood vessels to prevent bleeding.
   components:
@@ -237,10 +394,32 @@
   - type: Hemostat
   - type: Tweezers
   - type: Tending
+=======
+  parent: BaseToolSurgery # Shitmed Change
+  description: A surgical tool used to compress blood vessels to prevent bleeding.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi # Shitmed Change
+    state: hemostat
+  - type: Item
+    heldPrefix: hemostat
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi # Shitmed Change
+    storedRotation: 90
+  # Shitmed Change
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/retractor1.ogg
+    endSound:
+      path: /Audio/_Shitmed/Medical/Surgery/hemostat1.ogg
+  - type: Hemostat
+  - type: Tweezers # Shitmed
+  - type: Tending # Shitmed
+>>>>>>> goob
   - type: Tag
     tags:
     - SurgeryTool
     - Hemostat
+<<<<<<< HEAD
   # end-_CorvaxNext: surgery
 
 # Bone setter
@@ -268,6 +447,8 @@
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/bone-gel.rsi
     state: bone-gel
   - type: BoneGel
+=======
+>>>>>>> goob
 
 # Saws
 
@@ -291,6 +472,7 @@
   - type: Tool
     qualities:
       - Sawing
+<<<<<<< HEAD
     speedModifier: 1.0
   # start-_CorvaxNext: surgery
   - type: MeleeWeapon
@@ -305,6 +487,14 @@
   # end-_CorvaxNext: surgery
 # --No melee for regular saw because have you ever seen someone use a band saw as a weapon? It's dumb.--
 # No, I'm going to saw through your bones.
+=======
+  # Shitmed Change
+  - type: BoneSaw
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/bone_saw.ogg
+# No melee for regular saw because have you ever seen someone use a band saw as a weapon? It's dumb.
+>>>>>>> goob
 
 - type: entity
   name: choppa
@@ -328,9 +518,14 @@
     qualities:
       - Sawing
     speedModifier: 0.5
+<<<<<<< HEAD
   - type: BoneSaw
     speed: 0.5
   # end-_CorvaxNext: surgery
+=======
+  - type: BoneSaw # Shitmed
+    speed: 0.5
+>>>>>>> goob
 
 - type: entity
   name: circular saw
@@ -339,11 +534,19 @@
   description: For heavy duty cutting.
   components:
   - type: Sprite
+<<<<<<< HEAD
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/circular-saw.rsi
     state: circular-saw
   - type: Item
     size: Normal
     sprite: _CorvaxNext/Objects/Specific/Medical/Surgery/circular-saw.rsi
+=======
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
+    state: circular-saw
+  - type: Item
+    size: Normal
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
+>>>>>>> goob
   - type: MeleeWeapon
     damage:
       groups:
@@ -355,19 +558,30 @@
     qualities:
       - Sawing
     speedModifier: 1.5
+<<<<<<< HEAD
   - type: BoneSaw
     speed: 1.5
+=======
+  - type: BoneSaw # Shitmed
+    speed: 1.5
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
+>>>>>>> goob
   - type: Tag
     tags:
     - SurgeryTool
     - SawElectric
+<<<<<<< HEAD
   # end-_CorvaxNext: surgery
+=======
+>>>>>>> goob
 
 - type: entity
   name: advanced circular saw
   id: SawAdvanced
-  parent: [ SawElectric, BaseSyndicateContraband ]
-  description: Interdyne's state-of-the-art surgical saw. Guaranteed to stay spotless and sterile, no matter how messy the job.
+  parent: [ SawElectric ]
+  description: You think you can cut anything with it.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/Surgery/saw.rsi
@@ -384,6 +598,7 @@
     qualities:
       - Sawing
     speedModifier: 2.0
+<<<<<<< HEAD
   - type: BoneSaw # _CorvaxNext
     speed: 2
 
@@ -532,3 +747,7 @@
   - type: Tending
     speed: 2
 # end-_CorvaxNext: surgery
+=======
+  - type: BoneSaw # Shitmed
+    speed: 2
+>>>>>>> goob

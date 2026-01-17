@@ -1,0 +1,15 @@
+ent-LibrarianTranslatorImplanter = { ent-BaseTranslatorImplanter }
+    .suffix = Librarian
+    .desc = { ent-BaseTranslatorImplanter.desc }
+ent-ChevalTranslatorImplanter = { ent-BaseTranslatorImplanter }
+    .suffix = Cheval
+    .desc = { ent-BaseTranslatorImplanter.desc }
+ent-BasicSpaceItalianTranslatorImplanter = { ent-BaseTranslatorImplanter }
+    .suffix = Basic Space Italian
+    .desc = { ent-BaseTranslatorImplanter.desc }
+ent-AdvancedSpaceItalianTranslatorImplanter = { ent-BaseTranslatorImplanter }
+    .suffix = Advanced Space Italian
+    .desc = { ent-BaseTranslatorImplanter.desc }
+ent-YowKriolTranslatorImplanter = { ent-BaseTranslatorImplanter }
+    .suffix = Yow Kriol
+    .desc = { ent-BaseTranslatorImplanter.desc }

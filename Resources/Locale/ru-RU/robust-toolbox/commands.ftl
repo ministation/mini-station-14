@@ -1,5 +1,9 @@
 ### Localization for engine console commands
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> goob
 ## generic command errors
 
 cmd-invalid-arg-number-error = Недопустимое число аргументов.
@@ -171,6 +175,10 @@ cmd-hint-savebp-id = <Grid EntityID>
 
 ## 'flushcookies' command
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> goob
 # Примечание: команда flushcookies взята из Robust.Client.WebView, её нет в коде основного движка.
 
 cmd-flushcookies-desc = Сброс хранилища CEF-cookie на диск

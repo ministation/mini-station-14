@@ -1,3 +1,22 @@
+// SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 Chris <HoofedEar@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: MIT
+
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Server.Administration.Logs;
@@ -49,7 +68,11 @@ namespace Content.Server.Research.Systems
             serverUid = null;
             serverComponent = null;
 
+<<<<<<< HEAD
             var query = GetServers(client).ToList();
+=======
+            var query = GetServers(client);
+>>>>>>> goob
             foreach (var (uid, server) in query)
             {
                 if (server.Id != id)
@@ -67,6 +90,7 @@ namespace Content.Server.Research.Systems
         /// <returns></returns>
         public string[] GetServerNames(EntityUid client)
         {
+<<<<<<< HEAD
             var allServers = GetServers(client).ToArray();
             var list = new string[allServers.Length];
 
@@ -76,6 +100,9 @@ namespace Content.Server.Research.Systems
             }
 
             return list;
+=======
+            return GetServers(client).Select(x => x.Comp.ServerName).ToArray();
+>>>>>>> goob
         }
 
         /// <summary>
@@ -84,6 +111,7 @@ namespace Content.Server.Research.Systems
         /// <returns></returns>
         public int[] GetServerIds(EntityUid client)
         {
+<<<<<<< HEAD
             var allServers = GetServers(client).ToArray();
             var list = new int[allServers.Length];
 
@@ -91,8 +119,20 @@ namespace Content.Server.Research.Systems
             {
                 list[i] = allServers[i].Comp.Id;
             }
+=======
+            return GetServers(client).Select(x => x.Comp.Id).ToArray();
+        }
 
-            return list;
+        public HashSet<Entity<ResearchServerComponent>> GetServers(EntityUid client)
+        {
+            var clientXform = Transform(client);
+            if (clientXform.GridUid is not { } grid)
+                return [];
+>>>>>>> goob
+
+            var set = new HashSet<Entity<ResearchServerComponent>>();
+            _lookup.GetGridEntities(grid, set);
+            return set;
         }
 
         public HashSet<Entity<ResearchServerComponent>> GetServers(EntityUid client)

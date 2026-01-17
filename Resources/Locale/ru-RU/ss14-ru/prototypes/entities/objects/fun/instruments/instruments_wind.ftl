@@ -2,8 +2,11 @@ ent-BaseWoodwindInstrument = { ent-BaseHandheldInstrument }
     .desc = { ent-BaseHandheldInstrument.desc }
 ent-SaxophoneInstrument = саксофон
     .desc = Инструмент. Вероятно, вы можете перемолоть его в сырой джаз.
+<<<<<<< HEAD
 ent-AccordionInstrument = аккордеон
     .desc = { ent-BaseHandheldInstrument.desc }
+=======
+>>>>>>> goob
 ent-HarmonicaInstrument = губная гармошка
     .desc = { ent-BaseHandheldInstrument.desc }
 ent-ClarinetInstrument = кларнет

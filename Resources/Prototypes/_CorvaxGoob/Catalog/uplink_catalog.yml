@@ -1,0 +1,24 @@
+- type: listing
+  id: UplinkWeaponGrapplingGunHunterSyndicate
+  name: uplink-syndicate-capture-device-scd-name
+  description: uplink-syndicate-capture-device-scd-desc
+  productEntity: WeaponGrapplingGunHunterSyndicate
+  cost:
+    Telecrystal: 40
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: UplinkCatMaidBundle
+  name: uplink-cat-maid-bundle-name
+  description: uplink-cat-maid-bundle-desc
+  productEntity: ClothingBackpackDuffelSyndicateCatMaidBundle
+  cost:
+    Telecrystal: 135
+  categories:
+  - UplinkPointless

@@ -2,6 +2,7 @@ ent-CartridgeRocket = PG-7VL grenade
     .desc = A 1.5 warhead designed for the RPG-7 launcher. Has tubular shape.
 ent-CartridgeRocketSlow = PG-7VL grenade "Snail-Rocket"
     .desc = A 1.5 warhead designed for the RPG-7 launcher. It's unusually slow.
+<<<<<<< HEAD
 ent-BaseGrenade = base grenade
     .desc = { ent-BaseItem.desc }
 ent-GrenadeBaton = baton grenade
@@ -15,6 +16,23 @@ ent-GrenadeFrag = frag grenade
 ent-GrenadeCleanade = cleanade grenade round
     .desc = { ent-BaseGrenade.desc }
 ent-GrenadeEMP = EMP grenade
+=======
+ent-CartridgeRocketSingularityBuster = rocket-propelled anti-singularity grenade
+    .desc = A warhead containing a large amount of anti-particles. Upon hitting a singularity, the anti-particles are released, decomposing the singularity. Warranty void if the rocket hits anything besides a singularity or tesla.
+ent-BaseGrenade = base grenade
+    .desc = { ent-BaseItem.desc }
+ent-GrenadeBaton = baton grenade (40mm)
+    .desc = { ent-BaseGrenade.desc }
+ent-GrenadeBlast = blast grenade (40mm)
+    .desc = { ent-BaseGrenade.desc }
+ent-GrenadeFlash = flash grenade (40mm)
+    .desc = { ent-BaseGrenade.desc }
+ent-GrenadeFrag = frag grenade (40mm)
+    .desc = { ent-BaseGrenade.desc }
+ent-GrenadeCleanade = cleanade grenade round
+    .desc = { ent-BaseGrenade.desc }
+ent-GrenadeEMP = EMP grenade (40mm)
+>>>>>>> goob
     .desc = { ent-BaseGrenade.desc }
 ent-BaseCannonBall = base cannon ball
     .desc = { ent-BaseItem.desc }

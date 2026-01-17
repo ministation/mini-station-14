@@ -45,7 +45,11 @@ ent-SpawnPointMusician = музыкант
     .desc = { ent-SpawnPointJobBase.desc }
 ent-SpawnPointBoxer = боксёр
     .desc = { ent-SpawnPointJobBase.desc }
+<<<<<<< HEAD
 ent-SpawnPointBorg = киборг
+=======
+ent-SpawnPointBorg = борг
+>>>>>>> goob
     .desc = { ent-SpawnPointJobBase.desc }
 ent-SpawnPointCaptain = капитан
     .desc = { ent-SpawnPointJobBase.desc }

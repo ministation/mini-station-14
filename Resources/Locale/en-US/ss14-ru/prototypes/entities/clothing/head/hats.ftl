@@ -1,4 +1,5 @@
 ent-ClothingHeadHatBeaverHat = beaver hat
+<<<<<<< HEAD
     .desc = Gentlemen?
 ent-ClothingHeadHatBeret = beret
     .desc = A beret, an artists favorite headwear.
@@ -8,11 +9,23 @@ ent-ClothingHeadHatBeretSecurity = security beret
     .desc = A stylish clothing option for security officers.
 ent-ClothingHeadHatSecurityTrooper = trooper hat
     .desc = A campaign hat for the Nanotrasen Troopers, comes with a case too, but you lost it.
+=======
+    .desc = "Gentlemen?"
+ent-ClothingHeadHatBeret = beret
+    .desc = An artist's favorite headwear.
+ent-ClothingHeadHatBeretFrench = french beret
+    .desc = A French beret. "Vive la France!"
+ent-ClothingHeadHatBeretSecurity = security beret
+    .desc = A beret with the security department's insignia. For officers that are more inclined towards style than safety.
+ent-ClothingHeadHatSecurityTrooper = trooper hat
+    .desc = A campaign hat for the Nanotrasen Troopers. It's supposed to come with a case, too...
+>>>>>>> goob
 ent-ClothingHeadHatCasa = casa
     .desc = Cone-shaped hat.
 ent-ClothingHeadHatBeretRND = scientific beret
     .desc = A beret for real scientists.
 ent-ClothingHeadHatBeretEngineering = engineering beret
+<<<<<<< HEAD
     .desc = A beret with the engineering insignia emblazoned on it. For engineers that are more inclined towards style than safety.
 ent-ClothingHeadHatBeretQM = quartermaster's beret
     .desc = A beret with the cargo's insignia emblazoned on it. For quartermasters that are more inclined towards style.
@@ -64,6 +77,59 @@ ent-ClothingHeadHatSantahat = santa hat
     .desc = A festive hat worn by Santa Claus. Now with a foldable beard.
 ent-ClothingHeadHatSombrero = sombrero
     .desc = Perfectly for Space Mexico, si?
+=======
+    .desc = A beret with the engineering department's insignia. For engineers that are more inclined towards style than safety.
+ent-ClothingHeadHatBeretQM = quartermaster's beret
+    .desc = A beret with the cargo department's insignia.
+ent-ClothingHeadHatBeretHoS = head of security's beret
+    .desc = A black beret with a commander's rank emblem. For officers that are more inclined towards style than safety.
+ent-ClothingHeadHatBeretWarden = warden's beret
+    .desc = A corporate-blue beret with a warden's rank emblem. For officers that are more inclined towards style than safety.
+ent-ClothingHeadHatBeretSeniorPhysician = physician beret
+    .desc = Donning the colours of medical and chemistry, physicians are the pride of this department!
+ent-ClothingHeadHatBeretBrigmedic = brigmedical beret
+    .desc = A white beret for brigmedics.
+ent-ClothingHeadHatBeretMerc = mercenary beret
+    .desc = An olive beret with a badge depicting a jackal on a rock.
+ent-ClothingHeadHatBeretCommand = command beret
+    .desc = A beret with the Nanotrasen logo. It has an aura of authority.
+ent-ClothingHeadHatBowlerHat = bowler hat
+    .desc = A stylish bowler hat.
+ent-ClothingHeadHatCaptain = captain's hardhat
+    .desc = Feels good being the king.
+ent-ClothingHeadHatCardborg = cardborg helmet
+    .desc = A hat made out of a box.
+ent-ClothingHeadHatCentcom = CentComm brand hat
+    .desc = Feels good being the king's boss.
+ent-ClothingHeadHatChef = chef's hat
+    .desc = A hat used by chefs to keep their hair out of your food. Judging by the food in the mess, they don't work.
+ent-ClothingHeadHatFedoraBrown = brown fedora
+    .desc = A brown fedora.
+ent-ClothingHeadHatFedoraGrey = grey fedora
+    .desc = A grey fedora.
+ent-ClothingHeadHatFez = fez
+    .desc = A red fez.
+ent-ClothingHeadHatHopcap = head of personnel's cap
+    .desc = A stylish cap worn by the Head of Personnel. Shows paperwork who's in charge.
+ent-ClothingHeadHatHoshat = head of security cap
+    .desc = A stylish cap worn by the Head of Security. Shows the officers who's in charge.
+ent-ClothingHeadHatOutlawHat = outlaw's hat
+    .desc = A hat that makes you look like you carry a notched pistol, numbered one and nineteen more.
+ent-ClothingHeadHatWitch1 = witch hat
+    .desc = Strange-looking hat-wear. Makes you want to cast fireballs.
+ent-ClothingHeadHatPaper = paper hat
+    .desc = A hat made of paper.
+ent-ClothingHeadHatPirate = pirate hat
+    .desc = "Yo ho ho and a bottle of rum!"
+ent-ClothingHeadHatPlaguedoctor = plague doctor hat
+    .desc = These were once used by plague doctors.
+ent-ClothingHeadHatRedwizard = red wizard hat
+    .desc = A strange-looking red hat that most certainly belongs to a powerful magic-user.
+ent-ClothingHeadHatSantahat = santa hat
+    .desc = A festive hat worn by Santa Claus. Now with a foldable beard.
+ent-ClothingHeadHatSombrero = sombrero
+    .desc = "Perfect for Space Mexico, si?"
+>>>>>>> goob
 ent-ClothingHeadHatSurgcapBlue = surgical cap
     .desc = A blue cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
 ent-ClothingHeadHatSurgcapGreen = surgical cap
@@ -73,6 +139,7 @@ ent-ClothingHeadHatSurgcapPurple = surgical cap
 ent-ClothingHeadHatTophat = tophat
     .desc = A stylish black tophat.
 ent-ClothingHeadHatUshanka = ushanka
+<<<<<<< HEAD
     .desc = Perfect for winter in Siberia, da?
 ent-ClothingHeadHatCanadaBeanie = beanie
     .desc = Red, white and snug. It radiates a homely feeling, if your home happens to be chilly and filled with coffeehouses.
@@ -92,6 +159,28 @@ ent-ClothingHeadHatXmasCrown = xmas crown
     .desc = Happy Christmas!
 ent-ClothingHeadHatTrucker = trucker hat
     .desc = Formerly Chucks, this hat is yours now.
+=======
+    .desc = "Perfect for winter in Siberia, da?"
+ent-ClothingHeadHatCanadaBeanie = beanie
+    .desc = Red, white and snug. It radiates a homely feeling, if your home happens to be chilly and filled with coffeehouses.
+ent-ClothingHeadHatVioletwizard = violet wizard hat
+    .desc = A strange-looking violet hat that most certainly belongs to a powerful magic-user.
+ent-ClothingHeadHatWarden = warden's cap
+    .desc = This hat emphasizes that you are THE LAW.
+ent-ClothingHeadHatWitch = witch hat
+    .desc = Strange-looking hat-wear. Makes you want to cast fireballs.
+ent-ClothingHeadHatWizardFake = fake wizard hat
+    .desc = It has "WIZZARD" written across it in garish sequins. Comes with a cool beard.
+ent-ClothingHeadHatWizardBase = { ent-ClothingHeadBase }
+    .suffix = Wizard Clothes
+    .desc = { ent-ClothingHeadBase.desc }
+ent-ClothingHeadHatWizard = wizard hat
+    .desc = A strange-looking blue hat that most certainly belongs to a powerful magic-user.
+ent-ClothingHeadHatXmasCrown = xmas crown
+    .desc = "Happy Christmas!"
+ent-ClothingHeadHatTrucker = trucker hat
+    .desc = Formerly Chuck's, this hat is yours now.
+>>>>>>> goob
 ent-ClothingHeadPyjamaSyndicateBlack = syndicate black pyjama hat
     .desc = For keeping that traitor head of yours warm.
 ent-ClothingHeadPyjamaSyndicatePink = syndicate pink pyjama hat
@@ -99,6 +188,7 @@ ent-ClothingHeadPyjamaSyndicatePink = syndicate pink pyjama hat
 ent-ClothingHeadPyjamaSyndicateRed = syndicate red pyjama hat
     .desc = For keeping that traitor head of yours warm.
 ent-ClothingHeadPaperSack = papersack hat
+<<<<<<< HEAD
     .desc = A paper sack with crude holes cut out for eyes. Useful for hiding one's identity or ugliness.
 ent-ClothingHeadPaperSackSmile = smiling papersack hat
     .desc = A paper sack with crude holes cut out for eyes and a sketchy smile drawn on the front. Not creepy at all.
@@ -106,6 +196,15 @@ ent-ClothingHeadFishCap = fishing cap
     .desc = Women fear me. Fish fear me. Men turn their eyes away from me. As I walk no beast dares make a sound in my presence. I am alone on this barren Earth.
 ent-ClothingHeadWehcellentCap = wehcellent cap
     .desc = It was a net hat! Tiders wear them all the time! It's got airholes in the back to keep a cross-breeze going and everything!
+=======
+    .desc = A paper sack with crude holes cut out for eyes. Useful for hiding one's identity and/or ugliness.
+ent-ClothingHeadPaperSackSmile = smiling papersack hat
+    .desc = A paper sack with crude holes cut out for eyes and a sketchy smile drawn on the front. Not creepy at all.
+ent-ClothingHeadFishCap = fishing cap
+    .desc = "Women fear me. Fish fear me. Men turn their eyes away from me. As I walk no beast dares make a sound in my presence. I am alone on this barren Earth."
+ent-ClothingHeadWehcellentCap = wehcellent cap
+    .desc = "It was a net hat! Tiders wear them all the time! It's got airholes in the back to keep a cross-breeze going and everything!"
+>>>>>>> goob
 ent-ClothingHeadNurseHat = nurse hat
     .desc = Somehow I feel I'm not supposed to leave this place.
 ent-ClothingHeadRastaHat = rasta hat
@@ -113,6 +212,7 @@ ent-ClothingHeadRastaHat = rasta hat
 ent-ClothingHeadSafari = safari hat
     .desc = Keeps the sun out of your eyes. Makes you a target for the locals.
 ent-ClothingHeadHatJester = jester hat
+<<<<<<< HEAD
     .desc = A hat with bells, to add some merriness to the suit.
 ent-ClothingHeadHatJesterAlt = { ent-ClothingHeadHatJester }
     .desc = { ent-ClothingHeadHatJester.desc }
@@ -120,6 +220,15 @@ ent-ClothingHeadHatBeretCmo = chief medical officer's beret
     .desc = Turquoise beret with a cross on the front. The sight of it calms you down and makes it clear that you will be cured.
 ent-ClothingHeadHatPirateTricord = pirate hat
     .desc = Yo ho ho and a bottle of rum!
+=======
+    .desc = A hat with bells, to add some merriness to your head.
+ent-ClothingHeadHatJesterAlt = { ent-ClothingHeadHatJester }
+    .desc = { ent-ClothingHeadHatJester.desc }
+ent-ClothingHeadHatBeretCmo = chief medical officer's beret
+    .desc = A turquoise beret with a cross on the front. The sight of it calms you down and makes it clear that you will be cured.
+ent-ClothingHeadHatPirateTricord = pirate hat
+    .desc = "Yo ho ho and a bottle of rum!"
+>>>>>>> goob
 ent-ClothingHeadHatWatermelon = watermelon helmet
     .desc = A carelessly cut half of a watermelon, gutted from the inside, to be worn as a helmet. It can soften the blow to the head.
 ent-ClothingHeadHatHolyWatermelon = watermelon halo
@@ -133,11 +242,19 @@ ent-ClothingHeadHatTacticalMaidHeadband = tactical maid headband
 ent-ClothingHeadHatHetmanHat = hetman hat
     .desc = From the Zaporozhian Sich with love.
 ent-ClothingHeadHatMagician = magician's tophat
+<<<<<<< HEAD
     .desc = A magician's tophat.
 ent-ClothingHeadHatCapcap = cap cap
     .desc = A grand, stylish captain cap.
 ent-ClothingHeadHatCentcomcap = CentComm cap
     .desc = An extravagant, fancy Central Commander cap.
+=======
+    .desc = A magician's top hat.
+ent-ClothingHeadHatCapcap = cap cap
+    .desc = A grand, stylish cap worn by the Captain. Shows the station who's in charge.
+ent-ClothingHeadHatCentcomcap = CentComm cap
+    .desc = An extravagant, stylish cap worn by CentComm officials. Shows the Captain who's in charge.
+>>>>>>> goob
 ent-ClothingHeadHatGladiator = gladiator helmet
     .desc = Protects the head from harsh ash winds and toy spears.
 ent-ClothingHeadHatPartyRed = red party hat
@@ -153,9 +270,15 @@ ent-ClothingHeadHatPartyWaterCup = water cup party hat
 ent-ClothingHeadHatGreyFlatcap = grey flatcap
     .desc = Fashionable for both the working class and old man Jenkins.
 ent-ClothingHeadHatBrownFlatcap = brown flatcap
+<<<<<<< HEAD
     .desc = Stupid clown! You made me look bad!
 ent-ClothingHeadHatCowboyBrown = brown cowboy hat
     .desc = This hat ain't big enough for the both of us.
+=======
+    .desc = "Stupid clown! You made me look bad!"
+ent-ClothingHeadHatCowboyBrown = brown cowboy hat
+    .desc = "This hat ain't big enough for the two of us."
+>>>>>>> goob
 ent-ClothingHeadHatCowboyBlack = black cowboy hat
     .desc = { ent-ClothingHeadHatCowboyBrown.desc }
 ent-ClothingHeadHatCowboyGrey = grey cowboy hat
@@ -169,6 +292,14 @@ ent-ClothingHeadHatCowboyBountyHunter = bounty hunter cowboy hat
 ent-ClothingHeadHatStrawHat = straw hat
     .desc = A fancy hat for hot days! Not recommended to wear near fires.
 ent-ClothingHeadHatBeretMedic = medical beret
+<<<<<<< HEAD
     .desc = White beret that encourages you to be clean.
 ent-ClothingHeadHatSolidHeadband = solid headband
     .desc = You'll feel like you're Invisible while wearing this! (DISCLAIMER: DOES NOT ACTUALLY MAKE THE WEARER INVISIBLE)
+=======
+    .desc = A sterile white beret.
+ent-ClothingHeadHatSolidHeadband = solid headband
+    .desc = "You'll feel like you're Invisible while wearing this! (DISCLAIMER: DOES NOT ACTUALLY MAKE THE WEARER INVISIBLE)"
+ent-ClothingHeadPropellerHat = propeller hat
+    .desc = You're the bestest boy.
+>>>>>>> goob

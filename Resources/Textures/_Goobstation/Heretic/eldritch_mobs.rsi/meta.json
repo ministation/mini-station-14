@@ -1,7 +1,11 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
   "copyright": "Taken from TG station",
+=======
+  "copyright": "Taken from TG station. rust_walker left and right direction sprites made by Armok.",
+>>>>>>> goob
   "size": {
     "x": 32,
     "y": 32
@@ -11,6 +15,12 @@
       "name": "raw_prophet"
     },
     {
+<<<<<<< HEAD
+=======
+      "name": "fire_shark_icon"
+    },
+    {
+>>>>>>> goob
       "name": "raw_prophet-move",
       "delays":
       [
@@ -42,7 +52,12 @@
       "directions": 4
     },
     {
+<<<<<<< HEAD
       "name": "rust_walker_s",
+=======
+      "name": "rust_walker",
+      "directions": 4,
+>>>>>>> goob
       "delays": [
         [
           0.1,
@@ -51,11 +66,43 @@
           0.1,
           0.1,
           0.2
+<<<<<<< HEAD
+=======
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.2
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.2
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.2
+>>>>>>> goob
         ]
       ]
     },
     {
+<<<<<<< HEAD
       "name": "rust_walker_n",
+=======
+      "name": "rust_walker-move",
+      "directions": 4,
+>>>>>>> goob
       "delays": [
         [
           0.1,
@@ -64,6 +111,33 @@
           0.1,
           0.1,
           0.2
+<<<<<<< HEAD
+=======
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.2
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.2
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.2
+>>>>>>> goob
         ]
       ]
     },
@@ -101,4 +175,8 @@
       "name": "moon_mass"
     }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> goob

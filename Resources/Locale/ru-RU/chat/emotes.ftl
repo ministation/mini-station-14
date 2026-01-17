@@ -50,6 +50,10 @@ chat-emote-msg-snap = щёлкает пальцами.
 chat-emote-msg-salute = салютует.
 chat-emote-msg-gasp = задыхается.
 chat-emote-msg-deathgasp = замирает и бездыханно оседает, { POSS-ADJ($entity) } глаза мертвы и безжизненны...
+<<<<<<< HEAD
+=======
+chat-emote-msg-deathgasp-scurret = издаёт последнее "ва" и замирает...
+>>>>>>> goob
 chat-emote-msg-deathgasp-monkey = издаёт слабый взвизг, оседает и замирает...
 chat-emote-msg-buzz = жужжит!
 chat-emote-msg-weh = вехает!

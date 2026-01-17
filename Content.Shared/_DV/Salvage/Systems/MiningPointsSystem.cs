@@ -1,3 +1,31 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Goobstation.Common.Silo;
+>>>>>>> goob
 using Content.Shared._DV.Salvage.Components;
 using Content.Shared._Lavaland.UnclaimedOre;
 using Content.Shared.Access.Systems;
@@ -35,7 +63,14 @@ public sealed class MiningPointsSystem : EntitySystem
     private void OnMaterialEntityInserted(Entity<MiningPointsLatheComponent> ent, ref MaterialEntityInsertedEvent args)
     {
         if (!_timing.IsFirstTimePredicted
+<<<<<<< HEAD
             || !TryComp<UnclaimedOreComponent>(args.Inserted, out var unclaimedOre))
+=======
+            || !TryComp<UnclaimedOreComponent>(args.Inserted, out var unclaimedOre)
+            || !TryComp<SiloUtilizerComponent>(ent, out var utilizer)
+            || !utilizer.Silo.HasValue
+            || Transform(utilizer.Silo.Value).MapID != Transform(ent).MapID)
+>>>>>>> goob
             return;
 
         var points = unclaimedOre.MiningPoints * args.Count;
@@ -46,12 +81,41 @@ public sealed class MiningPointsSystem : EntitySystem
     private void OnClaimMiningPoints(Entity<MiningPointsLatheComponent> ent, ref LatheClaimMiningPointsMessage args)
     {
         var user = args.Actor;
+<<<<<<< HEAD
         if (TryFindIdCard(user) is {} dest)
+=======
+        if (GetPointComp(user) is {} dest) // Goobstation - borg Miningpoints
+>>>>>>> goob
             TransferAll(ent.Owner, dest);
     }
 
     #endregion
     #region Public API
+<<<<<<< HEAD
+=======
+    /// <summary>
+    /// if user can claim mining points 
+    /// <summary>
+    public bool CanClaimPoints(EntityUid user) // Goobstation - borg Miningpoints
+    {
+        if (TryComp<MiningPointsComponent>(user, out var comp))
+            return true;
+        if (TryFindIdCard(user) != null)
+            return true;
+
+        return false;
+    }
+
+    /// <summary>
+    /// returns Miningpoint component of user, if its directly atatched or on users Id card
+    /// <summary>
+    public Entity<MiningPointsComponent?>? GetPointComp(EntityUid user) // Goobstation - borg Miningpoints
+    {
+        if (TryComp<MiningPointsComponent>(user, out var comp))
+            return  (user,comp);
+        return TryFindIdCard(user);
+    }
+>>>>>>> goob
 
     /// <summary>
     /// Tries to find the user's id card and gets its <see cref="MiningPointsComponent"/>.
@@ -75,7 +139,11 @@ public sealed class MiningPointsSystem : EntitySystem
     /// </summary>
     public bool UserHasPoints(EntityUid user, uint points)
     {
+<<<<<<< HEAD
         if (TryFindIdCard(user)?.Comp is not {} comp)
+=======
+        if (GetPointComp(user)?.Comp is not {} comp) // Goobstation - borg Miningpoints
+>>>>>>> goob
             return false;
 
         return comp.Points >= points;
@@ -138,4 +206,8 @@ public sealed class MiningPointsSystem : EntitySystem
     }
 
     #endregion
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> goob

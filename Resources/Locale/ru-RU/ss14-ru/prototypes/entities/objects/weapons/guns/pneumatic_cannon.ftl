@@ -2,8 +2,11 @@ ent-WeaponImprovisedPneumaticCannon = импровизированная пне�
     .desc = Сделана из трубы, кабельных стяжек и пневматической пушки. Не принимает баллоны без достаточного количества газа.
 ent-LauncherCreamPie = пирогомёт
     .desc = Для оптимального результата заряжать кремовыми пирогами.
+<<<<<<< HEAD
 ent-LauncherSyringe = шприцемёт
     .desc = Зарядите шприцы ядом для получения максимального удовольствия.
+=======
+>>>>>>> goob
 ent-WeaponImprovisedPneumaticCannonGun = { ent-WeaponImprovisedPneumaticCannon }
     .suffix = Оружие
     .desc = { ent-WeaponImprovisedPneumaticCannon.desc }

@@ -1,3 +1,16 @@
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Administration.Logs;
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
@@ -13,7 +26,6 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Timing;
 using System.Diagnostics.CodeAnalysis;
-using Content.Shared.Warps;
 
 namespace Content.Server.Pinpointer;
 
@@ -28,7 +40,7 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly ITileDefinitionManager _tileDefManager = default!;
+    [Dependency] private readonly TurfSystem _turfSystem = default!;
 
     public const float CloseDistance = 15f;
     public const float FarDistance = 30f;
@@ -118,7 +130,11 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
             var relative = SharedMapSystem.GetChunkRelative(tile, ChunkSize);
             ref var tileData = ref chunk.TileData[GetTileIndex(relative)];
 
+<<<<<<< HEAD
             if (change.NewTile.IsSpace(_tileDefManager))
+=======
+            if (_turfSystem.IsSpace(change.NewTile))
+>>>>>>> goob
             {
                 tileData = 0;
                 if (PruneEmpty((ev.Entity, navMap), chunk))
@@ -444,12 +460,12 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
     /// to the position of <paramref name="ent"/> from the nearest beacon.
     /// </summary>
     [PublicAPI]
-    public string GetNearestBeaconString(Entity<TransformComponent?> ent, bool onlyName = false)
+    public string GetNearestBeaconString(Entity<TransformComponent?> ent)
     {
         if (!Resolve(ent, ref ent.Comp))
             return Loc.GetString("nav-beacon-pos-no-beacons");
 
-        return GetNearestBeaconString(_transformSystem.GetMapCoordinates(ent, ent.Comp), onlyName);
+        return GetNearestBeaconString(_transformSystem.GetMapCoordinates(ent, ent.Comp));
     }
 
     /// <summary>
@@ -457,13 +473,10 @@ public sealed partial class NavMapSystem : SharedNavMapSystem
     /// to <paramref name="coordinates"/> from the nearest beacon.
     /// </summary>
 
-    public string GetNearestBeaconString(MapCoordinates coordinates, bool onlyName = false)
+    public string GetNearestBeaconString(MapCoordinates coordinates)
     {
         if (!TryGetNearestBeacon(coordinates, out var beacon, out var pos))
             return Loc.GetString("nav-beacon-pos-no-beacons");
-
-        if (onlyName)
-            return beacon.Value.Comp.Text!;
 
         var gridOffset = Angle.Zero;
         if (_mapManager.TryFindGridAt(pos.Value, out var grid, out _))

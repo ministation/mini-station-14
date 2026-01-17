@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 ent-ClothingHeadHelmetHardsuitAtmos = atmos hardsuit helmet
     .desc = A special hardsuit helmet designed for working in low-pressure, high thermal environments.
 ent-ClothingHeadHelmetHardsuitEngineering = engineering hardsuit helmet
     .desc = An engineering hardsuit helmet designed for working in low-pressure, high radioactive environments.
+=======
+ent-ClothingHeadHelmetHardsuitAtmos = atmospherics hardsuit helmet
+    .desc = A special hardsuit helmet designed for working in low-pressure and high-temperature environments.
+ent-ClothingHeadHelmetHardsuitEngineering = engineering hardsuit helmet
+    .desc = An engineering hardsuit helmet designed for working in low-pressure, highly radioactive environments.
+>>>>>>> goob
 ent-ClothingHeadHelmetHardsuitSpatio = spationaut hardsuit helmet
     .desc = A sturdy helmet designed for complex industrial operations in space.
 ent-ClothingHeadHelmetHardsuitSalvage = salvage hardsuit helmet
@@ -16,8 +23,13 @@ ent-ClothingHeadHelmetHardsuitBrigmedic = brigmedic hardsuit helmet
     .desc = The lightweight helmet of the brigmedic hardsuit. Protects against viruses, and clowns.
 ent-ClothingHeadHelmetHardsuitWarden = warden's hardsuit helmet
     .desc = A modified riot helmet. Oddly comfortable.
+<<<<<<< HEAD
 ent-ClothingHeadHelmetHardsuitCap = captain's hardsuit helmet
     .desc = Special hardsuit helmet, made for the captain of the station.
+=======
+ent-ClothingHeadHelmetHardsuitCap = captain's spacesuit helmet
+    .desc = Special spacesuit helmet, made for the captain of the station.
+>>>>>>> goob
 ent-ClothingHeadHelmetHardsuitEngineeringWhite = chief engineer's hardsuit helmet
     .desc = Special hardsuit helmet, made for the chief engineer of the station.
 ent-ClothingHeadHelmetHardsuitMedical = chief medical officer's hardsuit helmet
@@ -32,9 +44,15 @@ ent-ClothingHeadHelmetHardsuitSyndie = blood-red hardsuit helmet
     .desc = A heavily armored helmet designed for work in special operations. Property of Gorlex Marauders.
 ent-ClothingHeadHelmetHardsuitSyndieMedic = blood-red medic hardsuit helmet
     .desc = An advanced red hardsuit helmet specifically designed for field medic operations.
+<<<<<<< HEAD
 ent-ClothingHeadHelmetHardsuitSyndieElite = syndicate elite helmet
     .desc = An elite version of the blood-red hardsuit's helmet, with improved radiation resistance and fireproofing. Property of Gorlex Marauders.
 ent-ClothingHeadHelmetHardsuitSyndieCommander = syndicate commander helmet
+=======
+ent-ClothingHeadHelmetHardsuitSyndieElite = syndicate elite hardsuit helmet
+    .desc = An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
+ent-ClothingHeadHelmetHardsuitSyndieCommander = syndicate hardsuit helmet
+>>>>>>> goob
     .desc = A bulked up version of the blood-red hardsuit's helmet, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
 ent-ClothingHeadHelmetHardsuitCybersun = cybersun juggernaut helmet
     .desc = Made of compressed red matter, this helmet was designed in the Tau chromosphere facility.

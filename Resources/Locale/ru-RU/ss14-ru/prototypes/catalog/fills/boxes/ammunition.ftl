@@ -2,6 +2,7 @@ ent-BoxMagazine = коробка магазинов
     .desc = Полная коробка магазинов.
 ent-BoxMagazinePistolCaselessRifle = коробка магазинов с .25 безгильзовыми
     .desc = Полная коробка магазинов с патронами калибра .25 безгильзовый.
+<<<<<<< HEAD
 ent-BoxMagazinePistolCaselessRiflePractice = коробка магазинов с .25 безгильзовыми (учебными)
     .desc = Полная коробка магазинов с учебными патронами калибра .25 безгильзовый.
 ent-BoxMagazineLightRifle = коробка магазинов с .30 винтовочными
@@ -11,6 +12,17 @@ ent-BoxMagazineLightRiflePractice = коробка магазинов с .30 в�
 ent-BoxMagazineMagnumSubMachineGun = коробка магазинов с .45 ПП магнум
     .desc = Полная коробка магазинов с патронами калибра .45 ПП магнум.
 ent-BoxMagazineMagnumSubMachineGunPractice = коробка магазинов .45 ПП магнум (учебными)
+=======
+ent-BoxMagazinePistolCaselessRiflePractice = коробка магазинов с .25 безгильзовыми (учебные)
+    .desc = Полная коробка магазинов с учебными патронами калибра .25 безгильзовый.
+ent-BoxMagazineLightRifle = коробка магазинов с .30 винтовочными
+    .desc = Полная коробка магазинов с патронами калибра .30 винтовочный.
+ent-BoxMagazineLightRiflePractice = коробка магазинов с .30 винтовочными (учебные)
+    .desc = Полная коробка магазинов с учебными патронами калибра .30 винтовочный.
+ent-BoxMagazineMagnumSubMachineGun = коробка магазинов с .45 ПП магнум
+    .desc = Полная коробка магазинов с патронами калибра .45 ПП магнум.
+ent-BoxMagazineMagnumSubMachineGunPractice = коробка магазинов .45 ПП магнум (учебные)
+>>>>>>> goob
     .desc = Полная коробка магазинов с учебными патронами калибра .45 ПП магнум.
 ent-BoxMagazinePistolSubMachineGunTopMounted = коробка магазинов WT550 .35 авто
     .desc = Полная коробка магазинов с патронами калибра .35 авто для WT550.

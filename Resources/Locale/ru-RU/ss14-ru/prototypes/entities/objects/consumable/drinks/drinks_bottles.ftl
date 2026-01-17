@@ -2,7 +2,11 @@ ent-DrinkBottlePlasticBaseFull = { ent-DrinkBase }
     .desc = { ent-DrinkBase.desc }
     .suffix = Полный
 ent-DrinkBottlePlasticSmallBaseFull = { ent-DrinkBase }
+<<<<<<< HEAD
     .suffix = Full
+=======
+    .suffix = Полный
+>>>>>>> goob
     .desc = { ent-DrinkBase.desc }
 ent-DrinkBottleGlassSmallBaseFull = { ent-DrinkBottlePlasticSmallBaseFull }
     .desc = { ent-DrinkBottlePlasticSmallBaseFull.desc }

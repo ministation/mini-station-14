@@ -9,7 +9,11 @@ blockgame-menu-gameover-info =
     Глобальный счёт: { $global }
     Локальный счёт: { $local }
     Очки: { $points }
+<<<<<<< HEAD
 blockgame-menu-title = Блоки Nanotrasen
+=======
+blockgame-menu-title = Блоки NanoTrasen
+>>>>>>> goob
 blockgame-menu-button-new-game = Новая игра
 blockgame-menu-button-scoreboard = Таблица лидеров
 blockgame-menu-button-pause = Пауза
@@ -20,4 +24,8 @@ blockgame-menu-button-back = Назад
 blockgame-menu-label-next = Следующее
 blockgame-menu-label-hold = Удерживать
 blockgame-menu-text-station = Станция
+<<<<<<< HEAD
 blockgame-menu-text-nanotrasen = Nanotrasen
+=======
+blockgame-menu-text-nanotrasen = NanoTrasen
+>>>>>>> goob

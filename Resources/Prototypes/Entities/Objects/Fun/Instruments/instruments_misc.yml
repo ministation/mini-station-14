@@ -1,4 +1,20 @@
-﻿- type: entity
+# SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Clon clover <76759079+noudoit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Bandit <queenjess521@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
   parent: BaseHandheldInstrument
   id: MusicalLungInstrument
   name: musical lung
@@ -50,6 +66,18 @@
   - type: Sprite
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
     state: red_phone
+  # Goobstation edit start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/phone_pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/phone_drop.ogg
+      params:
+        volume: -2
+  # Goobstation edit end
   - type: EmitSoundOnLand
     sound:
        path: /Audio/Items/ring.ogg
@@ -62,6 +90,8 @@
     notificationPrefix: prayer-chat-notify-centcom
     verb: prayer-verbs-call
     verbImage: null
+    notificationSound: # Goobstation - Admin Notifications
+      path: /Audio/_Goobstation/Misc/phone_ring.ogg
 
 - type: entity
   parent: PhoneInstrument
@@ -75,6 +105,8 @@
   - type: Prayable
     sentMessage: prayer-popup-notify-syndicate-sent
     notificationPrefix: prayer-chat-notify-syndicate
+    notificationSound: # Goobstation - Admin Notifications
+      path: /Audio/_Goobstation/Misc/phone_ring.ogg
 
 - type: entity
   parent: BaseHandheldInstrument
@@ -180,3 +212,5 @@
     notificationPrefix: prayer-chat-notify-honkmother
     verb: prayer-verbs-call
     verbImage: null
+    notificationSound: # Goobstation - Admin Notifications
+      path: /Audio/_Goobstation/Misc/phone_ring.ogg

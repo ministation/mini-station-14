@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 thief-backpack-window-title = Окно выбора предметов
 thief-backpack-window-description =
     Внутри находятся некоторые припасы, осталось только вспомнить, какие.
+=======
+thief-backpack-window-title = Воровской набор
+thief-backpack-window-description =
+    Внутри находятся ваши орудия труда, которые растворятся, когда вы будете готовы.
+>>>>>>> goob
     Выберите { $maxCount } { $maxCount ->
         [1] набор
         [few] разных набора
@@ -55,6 +61,7 @@ thief-backpack-category-smuggler-description =
     Не забудьте присоединить свой фултон.
     В комплект входят: маяк фултона, 10 фултонов, 3 дымовые гранаты,
     и невидимый ящик, чтобы прятать ценную добычу.
+<<<<<<< HEAD
 assistant-backpack-category-welder-description =
     Вот и настал момент, когда нужно взяться за дело.
     Хорошо, что ты — сварщик девятого разряда.
@@ -67,3 +74,5 @@ assistant-backpack-category-pirate-description =
 assistant-backpack-category-casino-description =
     Ох, как же вам нравится выигрывать!
     Ваши вещи помогут подзаработать на этих слащавых пижонах!
+=======
+>>>>>>> goob

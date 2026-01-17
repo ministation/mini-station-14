@@ -4,6 +4,11 @@ ent-MobObserverBase = наблюдатель
     .desc = Буу!
 ent-MobObserver = { ent-MobObserverBase }
     .desc = { ent-MobObserverBase.desc }
+<<<<<<< HEAD
+=======
+ent-ActionGhostShowRadar = Интерфейс сканера массы
+    .desc = Просмотр интерфейса сканера массы.
+>>>>>>> goob
 ent-ActionGhostBoo = Бу!
     .desc = Пугайте членов своей команды со скуки!
 ent-ActionToggleLighting = Переключить освещение

@@ -1,0 +1,59 @@
+- type: roleLoadout
+  id: JobSurgeon
+  groups:
+  - Inventory
+  - SurgeonHead
+  - SurgeonJumpsuit
+  - MedicalGloves
+  - MedicalBackpack
+  - MedicalShoes
+  - MedicalEyewear
+  - SurgeonScalpel
+  - MedicalDoctorEnvirohelm
+  - MedicalDoctorEnvirosuit
+  - MedicalDoctorEnvirogloves
+  - Trinkets
+  - Animals
+  - SurvivalMedical
+  - GroupSpeciesBreathToolMedical
+
+- type: roleLoadout
+  id: JobWardenHelper
+  groups:
+  - Inventory
+  - WardenHead
+  - WardenJumpsuit
+  - SecurityBackpack
+  - SecurityMelee
+  - SecurityNeck
+  - SecurityBelt
+  - WardenOuterClothing
+  - SecurityShoes
+  - SurvivalSecurity
+  - SecurityStar
+  - Trinkets
+  - Animals
+  - GroupSpeciesBreathToolSecurity
+  - WardenEnvirohelm
+  - WardenEnvirosuit
+  - WardenEnvirogloves
+
+- type: roleLoadout
+  id: JobPilot
+  groups:
+  - Inventory
+  - PilotHead
+  - PilotJumpsuit
+  - SecurityBackpack
+  - SecurityMelee
+  - SecurityNeck
+  - PilotOuterClothing
+  - SecurityBelt
+  - SecurityShoes
+  - SurvivalSecurity
+  - Trinkets
+  - Animals
+  - GroupSpeciesBreathToolSecurity
+  - SecurityOfficerEnvirohelm
+  - SecurityOfficerEnvirosuit
+  - SecurityOfficerEnvirogloves

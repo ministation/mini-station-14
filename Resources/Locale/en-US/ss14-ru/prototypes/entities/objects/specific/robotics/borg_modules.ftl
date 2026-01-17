@@ -83,13 +83,24 @@ ent-BorgModuleClowning = clowning cyborg module
 ent-BorgModuleSyndicateWeapon = weapon cyborg module
     .desc = { ent-BaseBorgModule.desc }
 ent-BorgModuleOperative = operative cyborg module
+<<<<<<< HEAD
     .desc = A module that comes with a crowbar, an Emag, an Access Breaker and a syndicate pinpointer.
+=======
+    .desc = A module that comes with a pair of syndicate jaws of life, an Emag, an Access Breaker and a syndicate pinpointer.
+>>>>>>> goob
 ent-BorgModuleEsword = energy sword cyborg module
     .desc = A module that comes with a double energy sword.
 ent-BorgModuleL6C = L6C ROW cyborg module
     .desc = A module that comes with a L6C.
 ent-BorgModuleMartyr = martyr cyborg module
     .desc = A module that comes with an explosive you probably don't want to handle yourself.
+<<<<<<< HEAD
+=======
+ent-BorgModuleSurgery = surgery cyborg module
+    .desc = { ent-BaseBorgModuleMedical.desc }
+ent-BorgModuleAdvancedSurgery = advanced surgery cyborg module
+    .desc = { ent-BaseBorgModuleMedical.desc }
+>>>>>>> goob
 ent-XenoborgModuleBasic = basic xenoborg module
     .desc = Essential items for any xenoborg.
 ent-XenoborgModuleTool = tool xenoborg module

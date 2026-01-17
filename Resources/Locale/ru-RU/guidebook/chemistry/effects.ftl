@@ -81,6 +81,7 @@ reagent-effect-guidebook-even-health-change =
     { $chance ->
         [1]
             { $healsordeals ->
+<<<<<<< HEAD
                 [heals] Evenly heals
                 [deals] Evenly deals
                *[both] Evenly modifies health by
@@ -90,6 +91,17 @@ reagent-effect-guidebook-even-health-change =
                 [heals] evenly heal
                 [deals] evenly deal
                *[both] evenly modify health by
+=======
+                [heals] Равномерно лечит
+                [deals] Равномерно наносит
+               *[both] Равномерно изменяет здоровье на
+            }
+       *[other]
+            { $healsordeals ->
+                [heals] раномерно лечат
+                [deals] равномерно наносят
+               *[both] равномерно изменяют здоровье на
+>>>>>>> goob
             }
     } { $changes }
 reagent-effect-guidebook-status-effect =
@@ -110,11 +122,14 @@ reagent-effect-guidebook-status-effect =
                *[other] удаляют
             } { NATURALFIXED($time, 3) } от { LOC($key) }
     }
+<<<<<<< HEAD
 reagent-effect-guidebook-activate-artifact =
     { $chance ->
         [1] Пытается
        *[other] пытаются
     } активировать артефакт
+=======
+>>>>>>> goob
 reagent-effect-guidebook-set-solution-temperature-effect =
     { $chance ->
         [1] Устанавливает
@@ -240,16 +255,27 @@ reagent-effect-guidebook-drunk =
         [1] Вызывает
        *[other] вызывают
     } опьянение
+<<<<<<< HEAD
 reagent-effect-guidebook-emote =
     { $chance ->
         [1] Will force
        *[other] force
     } the metabolizer to [bold][color=white]{ $emote }[/color][/bold]
+=======
+>>>>>>> goob
 reagent-effect-guidebook-electrocute =
     { $chance ->
         [1] Бьёт током
        *[other] бьют током
     } употребившего в течении { NATURALFIXED($time, 3) }
+<<<<<<< HEAD
+=======
+reagent-effect-guidebook-emote =
+    { $chance ->
+        [1] Вызывает
+       *[other] вызвать
+    }  у цели [bold][color=white]{ $emote }[/color][/bold]
+>>>>>>> goob
 reagent-effect-guidebook-extinguish-reaction =
     { $chance ->
         [1] Гасит
@@ -356,14 +382,24 @@ reagent-effect-guidebook-area-reaction =
     }
 reagent-effect-guidebook-artifact-unlock =
     { $chance ->
+<<<<<<< HEAD
         [1] Helps
        *[other] help
     } unlock an alien artifact.
+=======
+        [1] Помогает
+       *[other] помогают
+    } разблокировать инопланетный артефакт.
+>>>>>>> goob
 reagent-effect-guidebook-add-to-solution-reaction =
     { $chance ->
         [1] Заставляет
        *[other] заставляют
     } химикаты, применённые к объекту, добавиться во внутренний контейнер для растворов этого объекта
+<<<<<<< HEAD
+=======
+reagent-effect-guidebook-artifact-durability-restore = Restores { $restored } durability in active alien artifact nodes.
+>>>>>>> goob
 reagent-effect-guidebook-plant-attribute =
     { $chance ->
         [1] Изменяет

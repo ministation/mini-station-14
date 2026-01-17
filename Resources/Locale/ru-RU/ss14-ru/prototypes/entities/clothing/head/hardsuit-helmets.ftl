@@ -4,8 +4,13 @@ ent-ClothingHeadHelmetHardsuitAtmos = шлем скафандра атмос-т�
     .desc = Специальный шлем скафандра, предназначенный для работы в условиях низкого давления и высокой температуры.
 ent-ClothingHeadHelmetHardsuitCap = шлем скафандра капитана
     .desc = Особенный шлем скафандра, изготовленный для капитана станции.
+<<<<<<< HEAD
 ent-ClothingHeadHelmetHardsuitDeathsquad = шлем скафандра эскадрона смерти
     .desc = Робастный шлем скафандра для специальных операций.
+=======
+ent-ClothingHeadHelmetHardsuitDeathsquad = шлем скафандра Эскадрона Смерти
+    .desc = Продвинутый шлем скафандра для специальных операций.
+>>>>>>> goob
 ent-ClothingHeadHelmetHardsuitEngineering = шлем скафандра инженера
     .desc = Шлем инженерного скафандра, предназначенный для работы в условиях низкого давления и высокой радиоактивности.
 ent-ClothingHeadHelmetHardsuitGoliath = шлем скафандра голиафа

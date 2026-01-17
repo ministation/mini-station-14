@@ -6,6 +6,11 @@ ent-ChairBase = chair
     .desc = { ent-UnanchoredChairBase.desc }
 ent-OfficeChairBase = chair
     .desc = { ent-UnanchoredChairBase.desc }
+<<<<<<< HEAD
+=======
+ent-RollingOfficeChairBase = chair
+    .desc = Scoot from desk to desk because standing is for interns.
+>>>>>>> goob
 ent-StoolBase = stool
     .desc = { ent-OfficeChairBase.desc }
 ent-Chair = chair

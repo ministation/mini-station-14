@@ -26,8 +26,11 @@ ent-CrateVendingMachineRestockPTechFilled = PTech restock crate
     .desc = Contains a restock box for the PTech bureaucracy dispenser.
 ent-CrateVendingMachineRestockRobustSoftdrinksFilled = beverage vendor restock crate
     .desc = Contains restock boxes for beverage vending machines.
+<<<<<<< HEAD
 ent-CrateVendingMachineRestockSalvageEquipmentFilled = Salvage restock crate
     .desc = Contains a restock box for the salvage vendor.
+=======
+>>>>>>> goob
 ent-CrateVendingMachineRestockSecTechFilled = SecTech restock crate
     .desc = Contains a restock box for the SecTech vending machine.
 ent-CrateVendingMachineRestockSeedsFilled = MegaSeed restock crate

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ent-BaseHandheldStationMap = карта станции
+=======
+ent-BaseHandheldStationMap = портативная карта станции
+>>>>>>> goob
     .desc = Отображает схему текущей станции.
 ent-HandheldStationMap = { ent-BaseHandheldStationMap }
     .desc = { ent-BaseHandheldStationMap.desc }

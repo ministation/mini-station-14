@@ -23,12 +23,18 @@ ent-ClothingNeckNonBinaryPin = { ent-ClothingNeckLGBTPin }
     .desc = { ent-ClothingNeckLGBTPin.desc }
 ent-ClothingNeckPansexualPin = { ent-ClothingNeckLGBTPin }
     .desc = { ent-ClothingNeckLGBTPin.desc }
+<<<<<<< HEAD
 ent-ClothingNeckPluralPin = plural pin
     .desc = Be plural, do crimes.
+=======
+ent-ClothingNeckPluralPin = { ent-ClothingNeckLGBTPin }
+    .desc = { ent-ClothingNeckLGBTPin.desc }
+>>>>>>> goob
 ent-ClothingNeckOmnisexualPin = { ent-ClothingNeckLGBTPin }
     .desc = { ent-ClothingNeckLGBTPin.desc }
 ent-ClothingNeckGenderqueerPin = { ent-ClothingNeckLGBTPin }
     .desc = { ent-ClothingNeckLGBTPin.desc }
+<<<<<<< HEAD
 ent-ClothingNeckGenderfluidPin = genderfluid pin
     .desc = be gender, be fluid
 ent-ClothingNeckTransPin = { ent-ClothingNeckLGBTPin }
@@ -37,3 +43,13 @@ ent-ClothingNeckAutismPin = значок "аутизм"
     .desc = Значок в честь дня распространения информации о проблеме аутизма.
 ent-ClothingNeckGoldAutismPin = золотой значок "аутизм"
     .desc = { ent-ClothingNeckAutismPin.desc }
+=======
+ent-ClothingNeckGenderfluidPin = { ent-ClothingNeckLGBTPin }
+    .desc = { ent-ClothingNeckLGBTPin.desc }
+ent-ClothingNeckTransPin = { ent-ClothingNeckLGBTPin }
+    .desc = { ent-ClothingNeckLGBTPin.desc }
+ent-ClothingNeckAutismPin = значок "аутизм"
+    .desc = Значок в честь дня распространения информации о проблеме нейродивергентов.
+ent-ClothingNeckGoldAutismPin = значок "аутизм"
+    .desc = Значок в честь дня распространения информации о проблеме аутизма.
+>>>>>>> goob

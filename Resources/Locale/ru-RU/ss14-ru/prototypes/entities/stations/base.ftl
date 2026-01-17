@@ -4,6 +4,11 @@ ent-BaseStationCargo = { "" }
     .desc = { "" }
 ent-BaseStationJobsSpawning = { "" }
     .desc = { "" }
+<<<<<<< HEAD
+=======
+ent-BaseStationNtrTasks = { "" }
+    .desc = { "" }
+>>>>>>> goob
 ent-BaseStationRecords = { "" }
     .desc = { "" }
 ent-BaseStationArrivals = { "" }
@@ -28,7 +33,10 @@ ent-BaseStationSiliconLawCrewsimov = { "" }
     .desc = { "" }
 ent-BaseStationNews = { "" }
     .desc = { "" }
+<<<<<<< HEAD
 ent-BaseStationDeliveries = { "" }
     .desc = { "" }
+=======
+>>>>>>> goob
 ent-BaseStationAllEventsEligible = { "" }
     .desc = { "" }

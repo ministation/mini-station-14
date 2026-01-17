@@ -1,11 +1,125 @@
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ForestNoises <33579038+ForestNoises@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Menshin <Menshin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Shared._Goobstation.Wizard;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions.Components;
 using Content.Shared.Actions.Events;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
+using Content.Shared.Ghost;
 using Content.Shared.Hands;
+using Content.Shared.Heretic;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Mind;
@@ -14,14 +128,21 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
+using Robust.Shared.Network;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-
 namespace Content.Shared.Actions;
+
+// Shitmed Change
+using Content.Shared._Shitmed.Antags.Abductor;
+using Content.Shared.Silicons.StationAi;
+using Content.Shared.Popups;
 
 public abstract class SharedActionsSystem : EntitySystem
 {
     [Dependency] protected readonly IGameTiming GameTiming = default!;
+<<<<<<< HEAD
     [Dependency] private   readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private   readonly ActionBlockerSystem _actionBlocker = default!;
     [Dependency] private   readonly ActionContainerSystem _actionContainer = default!;
@@ -30,6 +151,18 @@ public abstract class SharedActionsSystem : EntitySystem
     [Dependency] private   readonly SharedAudioSystem _audio = default!;
     [Dependency] private   readonly SharedInteractionSystem _interaction = default!;
     [Dependency] private   readonly SharedTransformSystem _transform = default!;
+=======
+    [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
+    [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
+    [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
+    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
+    [Dependency] private readonly RotateToFaceSystem _rotateToFace = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly INetManager _net = default!; // Goobstation
+    [Dependency] private readonly SharedPopupSystem _popup = default!; // Shitmed Change
+    [Dependency] private readonly SharedInteractionSystem _interaction = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!;
+>>>>>>> goob
 
     private EntityQuery<ActionComponent> _actionQuery;
     private EntityQuery<ActionsComponent> _actionsQuery;
@@ -108,7 +241,11 @@ public abstract class SharedActionsSystem : EntitySystem
     /// </summary>
     public Entity<ActionComponent>? GetAction(Entity<ActionComponent?>? action, bool logError = true)
     {
+<<<<<<< HEAD
         if (action is not {} ent || TerminatingOrDeleted(ent))
+=======
+        if (action is not {} ent || Deleted(ent))
+>>>>>>> goob
             return null;
 
         if (!_actionQuery.Resolve(ent, ref ent.Comp, logError))
@@ -219,6 +356,12 @@ public abstract class SharedActionsSystem : EntitySystem
 
     private void OnRejuventate(Entity<ActionsComponent> ent, ref RejuvenateEvent args)
     {
+<<<<<<< HEAD
+=======
+        if (!args.ResetActions) // Goobstation
+            return;
+
+>>>>>>> goob
         foreach (var act in ent.Comp.Actions)
         {
             ClearCooldown(act);
@@ -263,23 +406,118 @@ public abstract class SharedActionsSystem : EntitySystem
         if (args.SenderSession.AttachedEntity is not { } user)
             return;
 
+<<<<<<< HEAD
         if (!_actionsQuery.TryComp(user, out var component))
             return;
+=======
+        TryPerformAction(user, ev); // Goobstation - port contents of this event to API
+    }
+>>>>>>> goob
 
-        var actionEnt = GetEntity(ev.Action);
+    private void OnValidate(Entity<ActionComponent> ent, ref ActionValidateEvent args)
+    {
+        if ((ent.Comp.CheckConsciousness && !_actionBlocker.CanConsciouslyPerformAction(args.User))
+            || (ent.Comp.CheckCanInteract && !_actionBlocker.CanInteract(args.User, null)))
+            args.Invalid = true;
+    }
 
-        if (!TryComp(actionEnt, out MetaDataComponent? metaData))
-            return;
+    private void OnInstantValidate(Entity<InstantActionComponent> ent, ref ActionValidateEvent args)
+    {
+        _adminLogger.Add(LogType.Action,
+            $"{ToPrettyString(args.User):user} is performing the {Name(ent):action} action provided by {ToPrettyString(args.Provider):provider}.");
+    }
 
-        var name = Name(actionEnt, metaData);
-
-        // Does the user actually have the requested action?
-        if (!component.Actions.Contains(actionEnt))
+    private void OnEntityValidate(Entity<EntityTargetActionComponent> ent, ref ActionValidateEvent args)
+    {
+        // let WorldTargetAction handle it
+        if (ent.Comp.Event is not {} ev)
         {
-            _adminLogger.Add(LogType.Action,
-                $"{ToPrettyString(user):user} attempted to perform an action that they do not have: {name}.");
+            DebugTools.Assert(HasComp<WorldTargetActionComponent>(ent), $"Entity-world targeting action {ToPrettyString(ent)} requires WorldTargetActionComponent");
             return;
         }
+
+        if (args.Input.EntityTarget is not {} netTarget)
+        {
+            args.Invalid = true;
+            return;
+        }
+
+        var user = args.User;
+
+        var target = GetEntity(netTarget);
+
+        var targetWorldPos = _transform.GetWorldPosition(target);
+
+        if (ent.Comp.RotateOnUse)
+            _rotateToFace.TryFaceCoordinates(user, targetWorldPos);
+
+        if (!ValidateEntityTarget(user, target, ent))
+            return;
+
+        _adminLogger.Add(LogType.Action,
+            $"{ToPrettyString(user):user} is performing the {Name(ent):action} action (provided by {ToPrettyString(args.Provider):provider}) targeted at {ToPrettyString(target):target}.");
+
+        ev.Target = target;
+    }
+
+    private void OnWorldValidate(Entity<WorldTargetActionComponent> ent, ref ActionValidateEvent args)
+    {
+        var user = args.User;
+        var provider = args.Provider;
+
+        if (args.Input.EntityCoordinatesTarget is not { } netTarget)
+        {
+            args.Invalid |= !Fallback(); // Goob edit
+            return;
+        }
+
+        var target = GetCoordinates(netTarget);
+
+        if (ent.Comp.RotateOnUse)
+            _rotateToFace.TryFaceCoordinates(user, _transform.ToMapCoordinates(target).Position);
+
+        if (!ValidateWorldTarget(user, target, ent))
+        {
+            Fallback(); // Goobstation
+            return;
+        }
+
+        // if the client specified an entity it needs to be valid
+        var targetEntity = GetEntity(args.Input.EntityTarget);
+        if (targetEntity != null && (
+            !TryComp<EntityTargetActionComponent>(ent, out var entTarget) ||
+            !ValidateEntityTarget(user, targetEntity.Value, (ent, entTarget))))
+        {
+            args.Invalid |= !Fallback(); // Goob edit
+            return;
+        }
+
+        _adminLogger.Add(LogType.Action,
+            $"{ToPrettyString(user):user} is performing the {Name(ent):action} action (provided by {args.Provider}) targeting {targetEntity} at {target:target}.");
+
+        if (ent.Comp.Event is {} ev)
+        {
+            ev.Target = target;
+            ev.Entity = targetEntity;
+        }
+
+        // Goobtation start
+        return;
+
+        bool Fallback()
+        {
+            if (ent.Comp.Event is not InstantWorldTargetActionEvent instantWorldEv)
+                return false;
+
+            instantWorldEv.Target = EntityCoordinates.Invalid;
+            instantWorldEv.Entity = null;
+
+            _adminLogger.Add(LogType.Action,
+                $"{ToPrettyString(user):user} is performing the {Name(ent):action} action provided by {ToPrettyString(provider):provider}.");
+
+            return true;
+        }
+<<<<<<< HEAD
 
         if (GetAction(actionEnt) is not {} action)
             return;
@@ -410,6 +648,23 @@ public abstract class SharedActionsSystem : EntitySystem
         if (_whitelist.IsBlacklistPass(comp.Blacklist, target))
             return false;
 
+=======
+        // Goobstation end
+    }
+
+    public bool ValidateEntityTarget(EntityUid user, EntityUid target, Entity<EntityTargetActionComponent> ent)
+    {
+        var (uid, comp) = ent;
+        if (!target.IsValid() || Deleted(target))
+            return false;
+
+        if (_whitelist.IsWhitelistFail(comp.Whitelist, target))
+            return false;
+
+        if (_whitelist.IsBlacklistPass(comp.Blacklist, target))
+            return false;
+
+>>>>>>> goob
         if (_actionQuery.Comp(uid).CheckCanInteract && !_actionBlocker.CanInteract(user, target))
             return false;
 
@@ -423,7 +678,13 @@ public abstract class SharedActionsSystem : EntitySystem
 
         // if not just checking pure range, let stored entities be targeted by actions
         // if it's out of range it probably isn't stored anyway...
+<<<<<<< HEAD
         return _interaction.CanAccessViaStorage(user, target);
+=======
+        // return _interaction.CanAccessViaStorage(user, target);
+        // This shit is broken - Goob edit
+        return true;
+>>>>>>> goob
     }
 
     public bool ValidateWorldTarget(EntityUid user, EntityCoordinates target, Entity<WorldTargetActionComponent> ent)
@@ -441,6 +702,7 @@ public abstract class SharedActionsSystem : EntitySystem
         // even if we don't check for obstructions, we may still need to check the range.
         var xform = Transform(user);
         if (xform.MapID != _transform.GetMapId(coords))
+<<<<<<< HEAD
             return false;
 
         if (comp.Range <= 0)
@@ -479,13 +741,97 @@ public abstract class SharedActionsSystem : EntitySystem
     private void OnEntitySetEvent(Entity<EntityTargetActionComponent> ent, ref ActionSetEventEvent args)
     {
         if (args.Event is EntityTargetActionEvent ev)
+=======
+        {
+            _popup.PopupCursor(Loc.GetString("world-target-out-of-range"), user); // Goobstation Change
+            return false;
+        }
+
+        if (comp.Range <= 0)
+            return true;
+
+        var hasNoSpecificComponents = !HasComp<StationAiOverlayComponent>(user) && !HasComp<AbductorScientistComponent>(user); // Shitmed Change
+        if (comp.CheckCanAccess && !_actionBlocker.CanInteract(user, null) && hasNoSpecificComponents) // Shitmed Change
+            return false;
+
+        return _transform.InRange(coords, xform.Coordinates, comp.Range);
+    }
+
+    private void OnInstantGetEvent(Entity<InstantActionComponent> ent, ref ActionGetEventEvent args)
+    {
+        if (ent.Comp.Event is {} ev)
+            args.Event = ev;
+    }
+
+    private void OnEntityGetEvent(Entity<EntityTargetActionComponent> ent, ref ActionGetEventEvent args)
+    {
+        if (ent.Comp.Event is {} ev)
+            args.Event = ev;
+    }
+
+    private void OnWorldGetEvent(Entity<WorldTargetActionComponent> ent, ref ActionGetEventEvent args)
+    {
+        if (ent.Comp.Event is {} ev)
+            args.Event = ev;
+    }
+
+    private void OnInstantSetEvent(Entity<InstantActionComponent> ent, ref ActionSetEventEvent args)
+    {
+        if (args.Event is InstantActionEvent ev)
+>>>>>>> goob
         {
             ent.Comp.Event = ev;
             args.Handled = true;
         }
     }
 
+<<<<<<< HEAD
     private void OnWorldSetEvent(Entity<WorldTargetActionComponent> ent, ref ActionSetEventEvent args)
+    {
+        if (args.Event is WorldTargetActionEvent ev)
+=======
+    private void OnEntitySetEvent(Entity<EntityTargetActionComponent> ent, ref ActionSetEventEvent args)
+    {
+        if (args.Event is EntityTargetActionEvent ev)
+>>>>>>> goob
+        {
+            ent.Comp.Event = ev;
+            args.Handled = true;
+        }
+    }
+
+<<<<<<< HEAD
+    private void OnEntitySetTarget(Entity<EntityTargetActionComponent> ent, ref ActionSetTargetEvent args)
+    {
+        if (ent.Comp.Event is {} ev)
+        {
+            ev.Target = args.Target;
+            args.Handled = true;
+        }
+    }
+
+    private void OnWorldSetTarget(Entity<WorldTargetActionComponent> ent, ref ActionSetTargetEvent args)
+    {
+        if (ent.Comp.Event is {} ev)
+        {
+            ev.Target = Transform(args.Target).Coordinates;
+            // only set Entity if the action also has EntityTargetAction
+            ev.Entity = HasComp<EntityTargetActionComponent>(ent) ? args.Target : null;
+            args.Handled = true;
+        }
+    }
+
+    /// <summary>
+    /// Perform an action, bypassing validation checks.
+    /// </summary>
+    /// <param name="performer">The entity performing the action</param>
+    /// <param name="action">The action being performed</param>
+    /// <param name="actionEvent">An event override to perform. If null, uses <see cref="GetEvent"/></param>
+    /// <param name="predicted">If false, prevents playing the action's sound on the client</param>
+    public void PerformAction(Entity<ActionsComponent?> performer, Entity<ActionComponent> action, BaseActionEvent? actionEvent = null, bool predicted = true)
+=======
+    private void OnWorldSetEvent(Entity<WorldTargetActionComponent> ent, ref ActionSetEventEvent args)
+>>>>>>> goob
     {
         if (args.Event is WorldTargetActionEvent ev)
         {
@@ -523,6 +869,9 @@ public abstract class SharedActionsSystem : EntitySystem
     /// <param name="predicted">If false, prevents playing the action's sound on the client</param>
     public void PerformAction(Entity<ActionsComponent?> performer, Entity<ActionComponent> action, BaseActionEvent? actionEvent = null, bool predicted = true)
     {
+        if (!action.Comp.Predicted) // Goobstation
+            predicted = false;
+
         var handled = false;
 
         var toggledBefore = action.Comp.Toggled;
@@ -550,9 +899,12 @@ public abstract class SharedActionsSystem : EntitySystem
         if (!action.Comp.RaiseOnUser && action.Comp.Container is {} container && !_mindQuery.HasComp(container))
             target = container;
 
+<<<<<<< HEAD
         if (action.Comp.RaiseOnAction)
             target = action;
 
+=======
+>>>>>>> goob
         RaiseLocalEvent(target, (object) ev, broadcast: true);
         handled = ev.Handled;
 
@@ -574,12 +926,81 @@ public abstract class SharedActionsSystem : EntitySystem
         var performed = new ActionPerformedEvent(performer);
         RaiseLocalEvent(action, ref performed);
     }
+
+    /// <summary>
+    /// Goobstation
+    /// Performs an action WITH all condition checks.
+    /// </summary>
+    public bool TryPerformAction(EntityUid user, RequestPerformActionEvent ev)
+    {
+        if (!_actionsQuery.TryComp(user, out var component))
+            return false;
+
+        var actionEnt = GetEntity(ev.Action);
+        if (GetAction(actionEnt) is not {} action)
+            return false;
+
+        if (!CanPerformAction((user, component), action, ev))
+            return false;
+
+        // All checks passed. Perform the action!
+        PerformAction((user, component), action);
+        return true;
+    }
+
+    /// <summary>
+    /// Goobstation
+    /// Runs all checks to see if user currently can perform some action.
+    /// </summary>
+    public bool CanPerformAction(Entity<ActionsComponent?> user, Entity<ActionComponent> action, RequestPerformActionEvent ev)
+    {
+        if (!Resolve(user.Owner, ref user.Comp, false)
+            || !TryComp(action, out MetaDataComponent? metaData))
+            return false;
+
+        var name = Name(action, metaData);
+
+        // Does the user actually have the requested action?
+        if (!user.Comp.Actions.Contains(action))
+        {
+            _adminLogger.Add(LogType.Action,
+                $"{ToPrettyString(user):user} attempted to perform an action that they do not have: {name}.");
+            return false;
+        }
+
+        DebugTools.Assert(action.Comp.AttachedEntity == user);
+        if (!action.Comp.Enabled)
+            return false;
+
+        var curTime = GameTiming.CurTime;
+        if (IsCooldownActive(action, curTime))
+            return false;
+
+        // check for action use prevention
+        // TODO: make code below use this event with a dedicated component
+        var attemptEv = new ActionAttemptEvent(user);
+        RaiseLocalEvent(action, ref attemptEv);
+        if (attemptEv.Cancelled)
+            return false;
+
+        // Validate request by checking action blockers and the like
+        var provider = action.Comp.Container ?? user;
+        var validateEv = new ActionValidateEvent()
+        {
+            Input = ev,
+            User = user,
+            Provider = provider
+        };
+        RaiseLocalEvent(action, ref validateEv);
+        return !validateEv.Invalid;
+    }
+
     #endregion
 
     #region AddRemoveActions
 
     public EntityUid? AddAction(EntityUid performer,
-        string? actionPrototypeId,
+        [ForbidLiteral] string? actionPrototypeId,
         EntityUid container = default,
         ActionsComponent? component = null)
     {
@@ -599,7 +1020,7 @@ public abstract class SharedActionsSystem : EntitySystem
     /// <param name="container">The entity that contains/enables this action (e.g., flashlight).</param>
     public bool AddAction(EntityUid performer,
         [NotNullWhen(true)] ref EntityUid? actionId,
-        string? actionPrototypeId,
+        [ForbidLiteral] string? actionPrototypeId,
         EntityUid container = default,
         ActionsComponent? component = null)
     {
@@ -610,7 +1031,11 @@ public abstract class SharedActionsSystem : EntitySystem
     public bool AddAction(EntityUid performer,
         [NotNullWhen(true)] ref EntityUid? actionId,
         [NotNullWhen(true)] out ActionComponent? action,
+<<<<<<< HEAD
         string? actionPrototypeId,
+=======
+        [ForbidLiteral] string? actionPrototypeId,
+>>>>>>> goob
         EntityUid container = default,
         ActionsComponent? component = null)
     {
@@ -651,6 +1076,7 @@ public abstract class SharedActionsSystem : EntitySystem
     public bool AddActionDirect(Entity<ActionsComponent?> performer,
         Entity<ActionComponent?>? action)
     {
+<<<<<<< HEAD
         if (GetAction(action) is not {} ent)
             return false;
 
@@ -665,6 +1091,25 @@ public abstract class SharedActionsSystem : EntitySystem
         if (ent.Comp.StartDelay && ent.Comp.UseDelay != null)
             SetCooldown((ent, ent), ent.Comp.UseDelay.Value);
 
+=======
+        if (GameTiming.ApplyingState) // Goobstation
+            return false;
+
+        if (GetAction(action) is not {} ent)
+            return false;
+
+        DebugTools.Assert(ent.Comp.Container == null || _net.IsClient && action?.Comp?.ClientExclusive is false || // Goob edit
+                          (TryComp(ent.Comp.Container, out ActionsContainerComponent? containerComp)
+                           && containerComp.Container.Contains(ent)));
+
+        if (ent.Comp.AttachedEntity is {} user)
+            RemoveAction(user, (ent, ent));
+
+        // TODO: make this an event bruh
+        if (ent.Comp.StartDelay && ent.Comp.UseDelay != null)
+            SetCooldown((ent, ent), ent.Comp.UseDelay.Value);
+
+>>>>>>> goob
         DebugTools.AssertOwner(performer, performer.Comp);
         performer.Comp ??= EnsureComp<ActionsComponent>(performer);
         ent.Comp.AttachedEntity = performer;
@@ -718,9 +1163,15 @@ public abstract class SharedActionsSystem : EntitySystem
 
         performer.Comp ??= EnsureComp<ActionsComponent>(performer);
 
+        var ghost = HasComp<GhostComponent>(performer); // Goobstation
+
         foreach (var actionId in container.Comp.Container.ContainedEntities)
         {
+<<<<<<< HEAD
             if (GetAction(actionId) is {} action)
+=======
+            if (GetAction(actionId) is {} action && (!ghost || action.Comp.AllowGhostAction))
+>>>>>>> goob
                 AddActionDirect(performer, (action, action));
         }
     }
@@ -842,12 +1293,31 @@ public abstract class SharedActionsSystem : EntitySystem
         // See client-side system for UI code.
     }
 
+<<<<<<< HEAD
     public bool ValidAction(Entity<ActionComponent> ent, bool canReach = true)
     {
         var (uid, comp) = ent;
         if (!comp.Enabled)
             return false;
 
+=======
+    // Goobstation start
+    protected virtual void SaveActions(EntityUid performer)
+    {
+    }
+
+    protected virtual void LoadActions(EntityUid performer)
+    {
+    }
+    // Goobstation end
+
+    public bool ValidAction(Entity<ActionComponent> ent, bool canReach = true)
+    {
+        var (uid, comp) = ent;
+        if (!comp.Enabled)
+            return false;
+
+>>>>>>> goob
         var curTime = GameTiming.CurTime;
         if (comp.Cooldown.HasValue && comp.Cooldown.Value.End > curTime)
             return false;
@@ -902,7 +1372,7 @@ public abstract class SharedActionsSystem : EntitySystem
     #region EquipHandlers
     private void OnDidEquip(Entity<ActionsComponent> ent, ref DidEquipEvent args)
     {
-        if (GameTiming.ApplyingState)
+        if (GameTiming.ApplyingState || !GameTiming.IsFirstTimePredicted) // Goob edit
             return;
 
         var ev = new GetItemActionsEvent(_actionContainer, args.Equipee, args.Equipment, args.SlotFlags);
@@ -912,11 +1382,16 @@ public abstract class SharedActionsSystem : EntitySystem
             return;
 
         GrantActions((ent, ent), ev.Actions, args.Equipment);
+<<<<<<< HEAD
+=======
+
+        LoadActions(args.Equipee); // Goobstation
+>>>>>>> goob
     }
 
     private void OnHandEquipped(Entity<ActionsComponent> ent, ref DidEquipHandEvent args)
     {
-        if (GameTiming.ApplyingState)
+        if (GameTiming.ApplyingState || !GameTiming.IsFirstTimePredicted) // Goob edit
             return;
 
         var ev = new GetItemActionsEvent(_actionContainer, args.User, args.Equipped);
@@ -926,20 +1401,47 @@ public abstract class SharedActionsSystem : EntitySystem
             return;
 
         GrantActions((ent, ent), ev.Actions, args.Equipped);
+<<<<<<< HEAD
+=======
+
+        LoadActions(args.User); // Goobstation
+>>>>>>> goob
     }
 
     private void OnDidUnequip(EntityUid uid, ActionsComponent component, DidUnequipEvent args)
     {
-        if (GameTiming.ApplyingState)
+        if (GameTiming.ApplyingState || !GameTiming.IsFirstTimePredicted) // Goob edit
             return;
+
+        // Goobstation start
+        if (!TerminatingOrDeleted(args.Equipment))
+        {
+            var ev = new GetItemActionsEvent(_actionContainer, args.Equipee, args.Equipment);
+            RaiseLocalEvent(args.Equipment, ev);
+
+            if (ev.Actions.Count > 0)
+                SaveActions(uid);
+        }
+        // Goobstation end
 
         RemoveProvidedActions(uid, args.Equipment, component);
     }
 
     private void OnHandUnequipped(EntityUid uid, ActionsComponent component, DidUnequipHandEvent args)
     {
-        if (GameTiming.ApplyingState)
+        if (GameTiming.ApplyingState || !GameTiming.IsFirstTimePredicted) // Goob edit
             return;
+
+        // Goobstation start
+        if (!TerminatingOrDeleted(args.Unequipped))
+        {
+            var ev = new GetItemActionsEvent(_actionContainer, args.User, args.Unequipped);
+            RaiseLocalEvent(args.Unequipped, ev);
+
+            if (ev.Actions.Count > 0)
+                SaveActions(uid);
+        }
+        // Goobstation end
 
         RemoveProvidedActions(uid, args.Unequipped, component);
     }
@@ -1019,4 +1521,66 @@ public abstract class SharedActionsSystem : EntitySystem
         // TODO: Check for charge recovery timer
         return action.Cooldown.HasValue && action.Cooldown.Value.End > curTime;
     }
+
+    /// <summary>
+    /// Marks the action as temporary.
+    /// Temporary actions get deleted upon being removed from an entity.
+    /// </summary>
+    public void SetTemporary(Entity<ActionComponent?> ent, bool temporary)
+    {
+        if (!Resolve(ent.Owner, ref ent.Comp, false))
+            return;
+
+        ent.Comp.Temporary = temporary;
+        Dirty(ent);
+    }
+
+    // Shitmed Change Start - Starlight Abductors
+    public EntityUid[] HideActions(EntityUid performer, ActionsComponent? comp = null)
+    {
+        if (!Resolve(performer, ref comp, false))
+            return [];
+
+        var actions = comp.Actions.ToArray();
+        comp.Actions.Clear();
+        Dirty(performer, comp);
+        return actions;
+    }
+
+    public void UnHideActions(EntityUid performer, EntityUid[] actions, ActionsComponent? comp = null)
+    {
+        if (!Resolve(performer, ref comp, false))
+            return;
+
+        foreach (var action in actions)
+            comp.Actions.Add(action);
+        Dirty(performer, comp);
+    }
+    // Shitmed Change End
+
+    // Goobstation edit start
+    public bool TryGetActionById(
+        EntityUid actionContainer,
+        EntProtoId actionId,
+        [NotNullWhen(true)] out Entity<ActionComponent>? action)
+    {
+        action = null;
+        var actions = GetActions(actionContainer).ToList();
+        foreach (var (uid, comp) in actions)
+        {
+            if (TerminatingOrDeleted(uid))
+                continue;
+
+            var entityPrototypeId = MetaData(uid).EntityPrototype?.ID;
+            if (entityPrototypeId == null
+                || entityPrototypeId != actionId)
+                continue;
+
+            action = (uid, comp);
+            return true;
+        }
+
+        return false;
+    }
+    // Goobstation edit end
 }

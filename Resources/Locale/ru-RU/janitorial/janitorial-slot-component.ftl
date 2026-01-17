@@ -4,6 +4,10 @@ mop-bucket-slot-component-eject-verb = Вынуть
 # janitorial trolley
 janitorial-trolley-slot-component-slot-name-plunger = Вантуз
 janitorial-trolley-slot-component-slot-name-sign = Табличка
+<<<<<<< HEAD
+=======
+janitorial-trolley-slot-component-slot-name-goldenplunger = Золотой вантуз
+>>>>>>> goob
 janitorial-trolley-slot-component-slot-name-lightreplacer = Лампозаменитель
 janitorial-trolley-slot-component-slot-name-spray = Распылитель
 janitorial-trolley-slot-component-slot-name-bucket = Ведро

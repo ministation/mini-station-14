@@ -7,7 +7,11 @@ ent-WeaponRevolverInspector = Инспектор
     .desc = Лучший друг детектива. Использует патроны калибра .45 магнум.
     .suffix = Револьвер
 ent-WeaponRevolverMateba = Матеба
+<<<<<<< HEAD
     .desc = Знаковое оружие ужасающих эскадронов смерти. Использует патроны калибра .45 магнум.
+=======
+    .desc = Знаковое оружие ужасающего Эскадрона Смерти. Использует патроны калибра .45 магнум.
+>>>>>>> goob
     .suffix = Револьвер
 ent-WeaponRevolverMatebaAP = { ent-WeaponRevolverMateba }
     .suffix = Бронебойные
@@ -22,5 +26,9 @@ ent-WeaponRevolverPirate = пиратский револьвер
     .desc = Странный дульнозарядный револьвер, который использовали пираты. Использует патроны калибра .45 магнум.
     .suffix = Револьвер
 ent-WeaponRevolverPirateEmpty = { ent-WeaponRevolverPirate }
+<<<<<<< HEAD
     .suffix = Empty
+=======
+    .suffix = Пустой
+>>>>>>> goob
     .desc = { ent-WeaponRevolverPirate.desc }

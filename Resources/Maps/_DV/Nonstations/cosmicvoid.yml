@@ -22,9 +22,13 @@ entities:
     - type: Transform
     - type: Map
       mapPaused: True
+<<<<<<< HEAD
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids
+=======
+    - type: GridTree
+>>>>>>> goob
     - type: Broadphase
     - type: OccluderTree
     - type: LoadedMap
@@ -2097,4 +2101,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: 23.5,-12.5
       parent: 2
+<<<<<<< HEAD
 ...
+=======
+...
+>>>>>>> goob

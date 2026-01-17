@@ -1,7 +1,19 @@
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Milon <milonpl.git@proton.me>
+// SPDX-FileCopyrightText: 2024 Skubman <ba.fallaria@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Access.Components;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CartridgeLoader;
 using Content.Shared.CartridgeLoader.Cartridges;
+using Content.Shared._DV.NanoChat; // DeltaV
 using Content.Shared.Database;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Labels.EntitySystems;
@@ -14,7 +26,11 @@ using System.Text;
 
 namespace Content.Server.CartridgeLoader.Cartridges;
 
+<<<<<<< HEAD
 public sealed partial class LogProbeCartridgeSystem : EntitySystem // Corvax-Next-PDAChat - Made partial
+=======
+public sealed partial class LogProbeCartridgeSystem : EntitySystem // DeltaV - Made partial
+>>>>>>> goob
 {
     [Dependency] private readonly CartridgeLoaderSystem _cartridge = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
@@ -29,8 +45,12 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // Corvax-Nex
     public override void Initialize()
     {
         base.Initialize();
+<<<<<<< HEAD
         InitializeNanoChat(); // Corvax-Next-PDAChat
 
+=======
+        InitializeNanoChat(); // DeltaV
+>>>>>>> goob
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeUiReadyEvent>(OnUiReady);
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeAfterInteractEvent>(AfterInteract);
         SubscribeLocalEvent<LogProbeCartridgeComponent, CartridgeMessageEvent>(OnMessage);
@@ -47,14 +67,22 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // Corvax-Nex
         if (args.InteractEvent.Handled || !args.InteractEvent.CanReach || args.InteractEvent.Target is not { } target)
             return;
 
+<<<<<<< HEAD
         // Corvax-Next-PDAChat-Start - Add NanoChat card scanning
+=======
+        // DeltaV begin - Add NanoChat card scanning
+>>>>>>> goob
         if (TryComp<NanoChatCardComponent>(target, out var nanoChatCard))
         {
             ScanNanoChatCard(ent, args, target, nanoChatCard);
             args.InteractEvent.Handled = true;
             return;
         }
+<<<<<<< HEAD
         // Corvax-Next-PDAChat-End
+=======
+        // DeltaV end
+>>>>>>> goob
 
         if (!TryComp(target, out AccessReaderComponent? accessReaderComponent))
             return;
@@ -65,7 +93,11 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // Corvax-Nex
 
         ent.Comp.EntityName = Name(target);
         ent.Comp.PulledAccessLogs.Clear();
+<<<<<<< HEAD
 		ent.Comp.ScannedNanoChatData = null; // Corvax-Next-PDAChat - Clear any previous NanoChat data
+=======
+        ent.Comp.ScannedNanoChatData = null; // DeltaV - Clear any previous NanoChat data
+>>>>>>> goob
 
         foreach (var accessRecord in accessReaderComponent.AccessLog)
         {
@@ -133,7 +165,12 @@ public sealed partial class LogProbeCartridgeSystem : EntitySystem // Corvax-Nex
 
     private void UpdateUiState(Entity<LogProbeCartridgeComponent> ent, EntityUid loaderUid)
     {
+<<<<<<< HEAD
         var state = new LogProbeUiState(ent.Comp.EntityName, ent.Comp.PulledAccessLogs, ent.Comp.ScannedNanoChatData); // Corvax-Next-PDAChat - NanoChat support
         _cartridge.UpdateCartridgeUiState(loaderUid, state);
+=======
+        var state = new LogProbeUiState(ent.Comp.EntityName, ent.Comp.PulledAccessLogs, ent.Comp.ScannedNanoChatData); // DeltaV - NanoChat support
+        _cartridge?.UpdateCartridgeUiState(loaderUid, state);
+>>>>>>> goob
     }
 }

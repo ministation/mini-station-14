@@ -7,7 +7,11 @@
   - type: MagnetPickup
   - type: Sprite
     sprite: Objects/Specific/Mining/ore_bag.rsi
+<<<<<<< HEAD
     state: orebag_off # Corvax-Next sprite fix
+=======
+    state: orebag_off
+>>>>>>> goob
   - type: Clothing
     sprite: Objects/Specific/Mining/ore_bag.rsi
     quickEquip: false

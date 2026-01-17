@@ -11,7 +11,11 @@ namespace Content.Shared.Silicons.StationAi;
 public sealed partial class StationAiCustomizationPrototype : IPrototype, IInheritingPrototype
 {
     [IdDataField]
+<<<<<<< HEAD
     public string ID { get; } = string.Empty;
+=======
+    public string ID { get; private set; } = string.Empty;
+>>>>>>> goob
 
     /// <summary>
     /// The (unlocalized) name of the customization.
@@ -42,7 +46,11 @@ public sealed partial class StationAiCustomizationPrototype : IPrototype, IInher
     /// </summary>
     [ViewVariables]
     [ParentDataFieldAttribute(typeof(AbstractPrototypeIdArraySerializer<StationAiCustomizationPrototype>))]
+<<<<<<< HEAD
     public string[]? Parents { get; }
+=======
+    public string[]? Parents { get; private set; }
+>>>>>>> goob
 
     /// <summary>
     /// Specifies whether the prototype is abstract.
@@ -50,5 +58,9 @@ public sealed partial class StationAiCustomizationPrototype : IPrototype, IInher
     [ViewVariables]
     [NeverPushInheritance]
     [AbstractDataField]
+<<<<<<< HEAD
     public bool Abstract { get; }
+=======
+    public bool Abstract { get; private set; }
+>>>>>>> goob
 }

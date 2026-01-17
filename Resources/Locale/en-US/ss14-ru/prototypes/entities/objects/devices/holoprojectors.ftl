@@ -11,8 +11,11 @@ ent-HolofanProjector = holofan projector
 ent-HolofanProjectorEmpty = { ent-HolofanProjector }
     .suffix = Empty
     .desc = { ent-HolofanProjector.desc }
+<<<<<<< HEAD
 ent-HolofanProjectorBorg = integrated holofan
     .desc = Stops idiots from causing more crew harm during atmospheric emergencies. Installed directly into an engineering cyborg, it  recharges over time.
+=======
+>>>>>>> goob
 ent-HoloprojectorField = force field projector
     .desc = Creates an impassable forcefield that won't let anything through. Close proximity may or may not cause cancer.
 ent-HoloprojectorFieldEmpty = { ent-HoloprojectorField }

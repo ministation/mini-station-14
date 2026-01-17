@@ -1,0 +1,35 @@
+{
+    "version": 1,
+<<<<<<< HEAD:Resources/Textures/Clothing/Hands/Gloves/KnuckleDusters/goldenknuckleduster.rsi/meta.json
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Icon taken from ParadiseSS13 at commit https://github.com/ParadiseSS13/Paradise/commit/391f296ed9b06d9bd13daca5b51c68740e714f1f; In hand sprites done by Unkn0wnGh0st333 on github, inhand-kangaroo by brainfood (github)",
+=======
+>>>>>>> goob:Resources/Textures/_Goobstation/Objects/Vehicles/broomstick.rsi/meta.json
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "By fizzoghoster (Discord), edited by Roudenn (Github)",
+    "states": [
+        {
+            "name": "vehicle",
+            "directions": 4
+        },
+        {
+            "name": "vehicle_folded"
+        },
+        {
+            "name": "equipped-HAND-kangaroo",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        }
+    ]
+}

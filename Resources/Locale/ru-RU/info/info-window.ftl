@@ -1,5 +1,9 @@
 ### Info Window
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> goob
 ## General stuff
 
 ui-info-title = Информация

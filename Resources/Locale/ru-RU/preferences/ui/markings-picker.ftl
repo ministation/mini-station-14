@@ -17,14 +17,35 @@ marking-slot = Слот { $number }
 markings-category-Special = Специальное
 markings-category-Hair = Причёска
 markings-category-FacialHair = Лицевая растительность
+<<<<<<< HEAD
+=======
+markings-category-Face = Лицо
+>>>>>>> goob
 markings-category-Head = Голова
 markings-category-HeadTop = Голова (верх)
 markings-category-HeadSide = Голова (бок)
 markings-category-Snout = Морда
+<<<<<<< HEAD
 markings-category-UndergarmentTop = Нижнее бельё (Верх)
 markings-category-UndergarmentBottom = Нижнее бельё (Низ)
 markings-category-Chest = Грудь
 markings-category-Arms = Руки
 markings-category-Legs = Ноги
 markings-category-Tail = Хвост
+=======
+markings-category-Chest = Грудь
+markings-category-Arms = Руки
+markings-category-RightArm = Правая рука
+markings-category-RightHand = Правая ладонь
+markings-category-LeftArm = Левая рука
+markings-category-LeftHand = Левая ладонь
+markings-category-RightLeg = Правая нога
+markings-category-RightFoot = Правая стопа
+markings-category-LeftLeg = Левая нога
+markings-category-LeftFoot = Левая стопа
+markings-category-Legs = Ноги
+markings-category-Tail = Хвост
+markings-category-Undershirt = Майка
+markings-category-Underwear = Нижнее белье
+>>>>>>> goob
 markings-category-Overlay = Наложение

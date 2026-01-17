@@ -1,0 +1,15 @@
+ent-DoorElectronicsCentralCommandCaptain = { ent-DoorElectronics }
+    .suffix = CentCommCap, Locked
+    .desc = { ent-DoorElectronics.desc }
+ent-DoorElectronicsNTR = { ent-DoorElectronics }
+    .suffix = NanotrasenRepresentative, Locked
+    .desc = { ent-DoorElectronics.desc }
+ent-DoorElectronicsBSO = { ent-DoorElectronics }
+    .suffix = BlueshieldOfficer, Locked
+    .desc = { ent-DoorElectronics.desc }
+ent-DoorElectronicsRobotics = { ent-DoorElectronics }
+    .suffix = Robotics, Locked
+    .desc = { ent-DoorElectronics.desc }
+ent-DoorElectronicsAllService = { ent-DoorElectronics }
+    .suffix = All Service, Locked
+    .desc = { ent-DoorElectronics.desc }

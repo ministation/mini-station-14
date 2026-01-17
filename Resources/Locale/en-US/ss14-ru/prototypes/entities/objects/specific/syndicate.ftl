@@ -1,6 +1,10 @@
 ent-Telecrystal = telecrystal
     .desc = It seems to be pulsing with suspiciously enticing energies.
+<<<<<<< HEAD
     .suffix = 20 TC
+=======
+    .suffix = 100 TC
+>>>>>>> goob
 ent-Telecrystal1 = { ent-Telecrystal }
     .suffix = 1 TC
     .desc = { ent-Telecrystal.desc }
@@ -13,6 +17,7 @@ ent-Telecrystal10 = { ent-Telecrystal }
 ent-BaseUplinkRadio = syndicate uplink
     .desc = Suspiciously looking old radio...
     .suffix = Empty
+<<<<<<< HEAD
 ent-BaseUplinkRadio20TC = { ent-BaseUplinkRadio }
     .suffix = 20 TC
     .desc = { ent-BaseUplinkRadio.desc }
@@ -24,6 +29,25 @@ ent-BaseUplinkRadio40TC = { ent-BaseUplinkRadio }
     .desc = { ent-BaseUplinkRadio.desc }
 ent-BaseUplinkRadio60TC = { ent-BaseUplinkRadio }
     .suffix = 60 TC, LoneOps
+=======
+ent-BaseUplinkRadio50TC = { ent-BaseUplinkRadio }
+    .suffix = 50 TC
+    .desc = { ent-BaseUplinkRadio.desc }
+ent-BaseUplinkRadio50TCNukeOps = { ent-BaseUplinkRadio }
+    .suffix = 50 TC, NukeOps reinforcement
+    .desc = { ent-BaseUplinkRadio.desc }
+ent-BaseUplinkRadio100TC = { ent-BaseUplinkRadio }
+    .suffix = 100 TC
+    .desc = { ent-BaseUplinkRadio.desc }
+ent-BaseUplinkRadio125TC = { ent-BaseUplinkRadio }
+    .suffix = 125 TC
+    .desc = { ent-BaseUplinkRadio.desc }
+ent-BaseUplinkRadio200TC = { ent-BaseUplinkRadio }
+    .suffix = 200 TC
+    .desc = { ent-BaseUplinkRadio.desc }
+ent-BaseUplinkRadio350TC = { ent-BaseUplinkRadio }
+    .suffix = 350 TC, Commander
+>>>>>>> goob
     .desc = { ent-BaseUplinkRadio.desc }
 ent-BaseUplinkRadioDebug = { ent-BaseUplinkRadio }
     .suffix = DEBUG

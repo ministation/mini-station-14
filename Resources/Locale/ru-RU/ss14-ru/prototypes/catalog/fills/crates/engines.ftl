@@ -1,4 +1,5 @@
 ent-CrateEngineeringAMEShielding = ящик компонентов ДАМ
+<<<<<<< HEAD
     .desc = 9 частей для создания нового или расширения существующего двигателя антиматерии.
 ent-CrateEngineeringAMEJar = ящик антиматериевого топлива
     .desc = Три канистры антиматериевого топлива, для заправки двигателя антиматерии.
@@ -13,6 +14,30 @@ ent-CrateEngineeringSingularityContainment = ящик с генератором 
 ent-CrateEngineeringSingularityGenerator = ящик с генератором сингулярности
     .desc = Генератор сингулярности, матерь монстра.
 ent-CrateEngineeringParticleAccelerator = ящик с ускорителем частиц
+=======
+    .suffix = Защищённый
+    .desc = 9 частей для создания нового или расширения существующего двигателя антиматерии.
+ent-CrateEngineeringAMEJar = ящик антиматериевого топлива
+    .suffix = Защищённый
+    .desc = Три канистры антиматериевого топлива, для заправки двигателя антиматерии.
+ent-CrateEngineeringAMEControl = ящик с контроллером управления ДАМ
+    .suffix = Защищённый
+    .desc = Управляющий компьютер ДАМ.
+ent-CrateEngineeringSingularityEmitter = ящик с эмиттером
+    .suffix = Защищённый
+    .desc = Эмиттер, используемый в сингулярном двигателе.
+ent-CrateEngineeringSingularityCollector = ящик с коллектором радиации
+    .suffix = Защищённый
+    .desc = Коллектор для радиации, используемый в сингулярном двигателе. Плазма входит в комплект.
+ent-CrateEngineeringSingularityContainment = ящик с генератором сдерживающего поля
+    .suffix = Защищённый
+    .desc = Генератор сдерживающего поля, удерживает сингулярность под контролем.
+ent-CrateEngineeringSingularityGenerator = ящик с генератором сингулярности
+    .suffix = Защищённый
+    .desc = Генератор сингулярности, матерь монстра.
+ent-CrateEngineeringParticleAccelerator = ящик с ускорителем частиц
+    .suffix = Защищённый
+>>>>>>> goob
     .desc = Сложная в настройке, но чертовски полезная.
 ent-CrateEngineeringGenerator = ящик с генератором
     .desc = { ent-CrateEngineering.desc }
@@ -20,10 +45,23 @@ ent-CrateEngineeringGenerator = ящик с генератором
 ent-CrateEngineeringSolar = ящик сборных солнечных панелей
     .desc = Набор с упаковками и стеклом для строительства десяти солнечных панелей.
 ent-CrateEngineeringShuttle = ящик электропитания шаттла
+<<<<<<< HEAD
     .desc = Ящик, содержащий всё необходимое для обеспечения шаттла электропитанием.
 ent-CrateEngineeringTeslaGenerator = ящик с генератором Теслы
     .desc = Генератор Теслы. Храни вас Господь.
 ent-CrateEngineeringTeslaCoil = ящик с катушкой Теслы
     .desc = Катушка Теслы. Притягивает молнии и вырабатывает из них энергию.
 ent-CrateEngineeringTeslaGroundingRod = ящик с заземляющим стержнем Теслы
+=======
+    .suffix = Защищённый
+    .desc = Ящик, содержащий всё необходимое для обеспечения шаттла электропитанием.
+ent-CrateEngineeringTeslaGenerator = ящик с генератором Теслы
+    .suffix = Защищённый
+    .desc = Генератор Теслы. Храни вас Господь.
+ent-CrateEngineeringTeslaCoil = ящик с катушкой Теслы
+    .suffix = Защищённый
+    .desc = Катушка Теслы. Притягивает молнии и вырабатывает из них энергию.
+ent-CrateEngineeringTeslaGroundingRod = ящик с заземляющим стержнем Теслы
+    .suffix = Защищённый
+>>>>>>> goob
     .desc = Заземляющий стержень, идеален для защиты от молний.

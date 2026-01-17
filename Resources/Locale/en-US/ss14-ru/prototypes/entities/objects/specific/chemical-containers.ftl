@@ -72,3 +72,9 @@ ent-JugPlantBGone = { ent-Jug }
 ent-JugWeldingFuel = { ent-Jug }
     .suffix = welding fuel
     .desc = { ent-Jug.desc }
+<<<<<<< HEAD
+=======
+ent-JugHolyWater = { ent-Jug }
+    .suffix = holy water
+    .desc = { ent-Jug.desc }
+>>>>>>> goob

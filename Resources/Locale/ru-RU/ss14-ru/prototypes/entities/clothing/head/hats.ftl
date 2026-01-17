@@ -26,8 +26,13 @@ ent-ClothingHeadHatBeretBrigmedic = берет бригмедика
     .desc = Белый берет, похож на кремовый пирог на голове.
 ent-ClothingHeadHatBeretMerc = берет наёмника
     .desc = Оливковый берет, на значке изображён шакал на скале.
+<<<<<<< HEAD
 ent-ClothingHeadHatBeretCommand = command beret
     .desc = A beret with a Command insignia emblazoned on it. It has an aura of authority.
+=======
+ent-ClothingHeadHatBeretCommand = берет командования
+    .desc = Берет с логотипом Nanotrasen. От него исходит аура власти.
+>>>>>>> goob
 ent-ClothingHeadHatBowlerHat = шляпа котелок
     .desc = Стильная шляпа-котелок.
 ent-ClothingHeadHatCaptain = капитанская каска
@@ -74,8 +79,13 @@ ent-ClothingHeadHatTophat = цилиндр
     .desc = Стильный чёрный цилиндр.
 ent-ClothingHeadHatUshanka = ушанка
     .desc = Идеально подходит для зимы в Сибири, da?
+<<<<<<< HEAD
 ent-ClothingHeadHatCanadaBeanie = beanie
     .desc = Red, white and snug. It radiates a homely feeling, if your home happens to be chilly and filled with coffeehouses.
+=======
+ent-ClothingHeadHatCanadaBeanie = шапка-бини
+    .desc = Красная, белая и уютная. Она излучает домашний уют, если в вашем доме прохладно и много кофеен.
+>>>>>>> goob
 ent-ClothingHeadHatVioletwizard = фиолетовая волшебная шляпа
     .desc = Странного вида фиолетовая шляпа, которая, несомненно, принадлежала настоящему магу.
 ent-ClothingHeadHatWarden = фуражка смотрителя
@@ -86,6 +96,10 @@ ent-ClothingHeadHatWizardFake = поддельная волшебная шляп
     .desc = На ней блёстками написано ВАЛШЕБНАЯ. Комплектуется классной бородой.
 ent-ClothingHeadHatWizardBase = { ent-ClothingHeadBase }
     .desc = { ent-ClothingHeadBase.desc }
+<<<<<<< HEAD
+=======
+    .suffix = Wizard Clothes
+>>>>>>> goob
 ent-ClothingHeadHatWizard = волшебная шляпа
     .desc = Странного вида синяя шляпа, которая, несомненно, принадлежала сильному магу.
 ent-ClothingHeadHatXmasCrown = рождественский венец
@@ -170,5 +184,12 @@ ent-ClothingHeadHatStrawHat = соломенная шляпа
     .desc = Модная шляпа для жарких деньков! Не рекомендуется носить около источников огня.
 ent-ClothingHeadHatBeretMedic = берет врача
     .desc = Белый берет, призывающий вас к чистоте.
+<<<<<<< HEAD
 ent-ClothingHeadHatSolidHeadband = solid headband
     .desc = You'll feel like you're Invisible while wearing this! (DISCLAIMER: DOES NOT ACTUALLY MAKE THE WEARER INVISIBLE)
+=======
+ent-ClothingHeadHatSolidHeadband = солидная головная повязка
+    .desc = "Нося её, вы почувствуете себя Невидимым! (ДИСКЛЕЙМЕР: НА САМОМ ДЕЛЕ НЕ ДЕЛАЕТ НОСИТЕЛЯ НЕВИДИМЫМ)"
+ent-ClothingHeadPropellerHat = кепка с пропеллером
+    .desc = Ты самый лучший мальчик.
+>>>>>>> goob

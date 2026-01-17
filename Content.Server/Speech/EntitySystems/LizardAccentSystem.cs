@@ -1,6 +1,16 @@
-﻿using System.Text.RegularExpressions;
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
 using Robust.Shared.Random;
+<<<<<<< HEAD
+=======
+using Content.Shared.Speech;
+>>>>>>> goob
 
 namespace Content.Server.Speech.EntitySystems;
 
@@ -12,7 +22,11 @@ public sealed class LizardAccentSystem : EntitySystem
     private static readonly Regex RegexLowerEndX = new(@"\bx([\-|r|R]|\b)");
     private static readonly Regex RegexUpperEndX = new(@"\bX([\-|r|R]|\b)");
 
+<<<<<<< HEAD
     [Dependency] private readonly IRobustRandom _random = default!; // Corvax-Localization
+=======
+    [Dependency] private readonly IRobustRandom _random = default!; // CorvaxGoob-Localization
+>>>>>>> goob
 
     public override void Initialize()
     {
@@ -35,7 +49,11 @@ public sealed class LizardAccentSystem : EntitySystem
         // eckS
         message = RegexUpperEndX.Replace(message, "ECKS$1");
 
+<<<<<<< HEAD
         // Corvax-Localization-Start
+=======
+        // CorvaxGoob-Localization-Start
+>>>>>>> goob
         // c => ссс
         message = Regex.Replace(
             message,
@@ -84,7 +102,12 @@ public sealed class LizardAccentSystem : EntitySystem
             "Ч+",
             _random.Pick(new List<string>() { "ЩЩ", "ЩЩЩ" })
         );
+<<<<<<< HEAD
         // Corvax-Localization-End
+=======
+        // CorvaxGoob-Localization-End
+
+>>>>>>> goob
         args.Message = message;
     }
 }

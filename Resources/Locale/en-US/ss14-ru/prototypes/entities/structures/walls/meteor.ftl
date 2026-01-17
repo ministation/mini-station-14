@@ -1,6 +1,7 @@
 ent-MeteorRock = meteorite rock
     .desc = What remains of a meteorite.
 ent-MeteorRockCoal = { ent-MeteorRock }
+<<<<<<< HEAD
     .desc = An ore vein rich with coal.
     .suffix = Coal
 ent-MeteorRockGold = { ent-MeteorRock }
@@ -27,3 +28,31 @@ ent-MeteorRockUranium = { ent-MeteorRock }
 ent-MeteorRockBananium = { ent-MeteorRock }
     .desc = An ore vein rich with bananium.
     .suffix = Bananium
+=======
+    .suffix = Coal
+    .desc = { ent-MeteorRock.desc }
+ent-MeteorRockGold = { ent-MeteorRock }
+    .suffix = Gold
+    .desc = { ent-MeteorRock.desc }
+ent-MeteorRockDiamond = { ent-MeteorRock }
+    .suffix = Diamond
+    .desc = { ent-MeteorRock.desc }
+ent-MeteorRockPlasma = { ent-MeteorRock }
+    .suffix = Plasma
+    .desc = { ent-MeteorRock.desc }
+ent-MeteorRockQuartz = { ent-MeteorRock }
+    .suffix = Quartz
+    .desc = { ent-MeteorRock.desc }
+ent-MeteorRockSilver = { ent-MeteorRock }
+    .suffix = Silver
+    .desc = { ent-MeteorRock.desc }
+ent-MeteorRockTin = { ent-MeteorRock }
+    .suffix = Iron
+    .desc = { ent-MeteorRock.desc }
+ent-MeteorRockUranium = { ent-MeteorRock }
+    .suffix = Uranium
+    .desc = { ent-MeteorRock.desc }
+ent-MeteorRockBananium = { ent-MeteorRock }
+    .suffix = Bananium
+    .desc = { ent-MeteorRock.desc }
+>>>>>>> goob

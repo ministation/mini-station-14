@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 using Content.Shared._CorvaxNext.Mining.Components;
+=======
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared._NF.Mining.Components; // Frontier
+>>>>>>> goob
 using Content.Shared.Inventory;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Mining.Components;
@@ -9,7 +19,11 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared.Mining;
 
+<<<<<<< HEAD
 public sealed partial class MiningScannerSystem : EntitySystem // Corvax-Next-Dwarf
+=======
+public sealed partial class MiningScannerSystem : EntitySystem // Frontier: partial
+>>>>>>> goob
 {
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly INetManager _net = default!;
@@ -23,8 +37,12 @@ public sealed partial class MiningScannerSystem : EntitySystem // Corvax-Next-Dw
         SubscribeLocalEvent<MiningScannerComponent, EntGotInsertedIntoContainerMessage>(OnInserted);
         SubscribeLocalEvent<MiningScannerComponent, EntGotRemovedFromContainerMessage>(OnRemoved);
         SubscribeLocalEvent<MiningScannerComponent, ItemToggledEvent>(OnToggled);
+<<<<<<< HEAD
 
 		CNInitialize(); // Corvax-Next-Dwarf
+=======
+        NFInitialize(); // Frontier
+>>>>>>> goob
     }
 
     private void OnInserted(Entity<MiningScannerComponent> ent, ref EntGotInsertedIntoContainerMessage args)
@@ -88,17 +106,28 @@ public sealed partial class MiningScannerSystem : EntitySystem // Corvax-Next-Dw
         {
             if (viewer.QueueRemoval)
             {
+<<<<<<< HEAD
                 // Corvax-Next-Dwarf-Start: innate mining scanner
+=======
+                // Frontier: innate mining scanner
+>>>>>>> goob
                 if (TryComp<InnateMiningScannerViewerComponent>(uid, out var innateViewer))
                 {
                     SetupInnateMiningViewerComponent((uid, innateViewer));
                 }
                 else
                 {
+<<<<<<< HEAD
                     RemCompDeferred(uid, viewer);
                     continue;
                 }
 				// Corvax-Next-Dwarf-End: innate mining scanner
+=======
+                    // End Frontier: innate mining scanner
+                    RemCompDeferred(uid, viewer);
+                    continue;
+                } // Frontier
+>>>>>>> goob
             }
 
             if (_timing.CurTime < viewer.NextPingTime)

@@ -14,7 +14,11 @@ ent-BladedFlatcapGrey = grey flatcap
     .desc = Fashionable for both the working class and old man Jenkins. It has glass shards hidden in the brim.
     .suffix = Bladed
 ent-BladedFlatcapBrown = brown flatcap
+<<<<<<< HEAD
     .desc = Stupid clown! You made me look bad! It has glass shards hidden in the brim.
+=======
+    .desc = "Stupid clown! You made me look bad!" It has glass shards hidden in the brim.
+>>>>>>> goob
 ent-Shiv = shiv
     .desc = A crude weapon fashioned from a piece of cloth and a glass shard.
 ent-ReinforcedShiv = reinforced shiv

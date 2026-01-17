@@ -16,7 +16,11 @@ ent-OintmentAdvanced1 = { ent-RegenerativeMesh }
     .desc = { ent-RegenerativeMesh.desc }
     .suffix = Один
 ent-RegenerativeMeshLingering0 = { ent-RegenerativeMesh }
+<<<<<<< HEAD
     .suffix = 0, Lingering
+=======
+    .suffix = Не исчезают закончившись, 0
+>>>>>>> goob
     .desc = { ent-RegenerativeMesh.desc }
 ent-Brutepack = набор для ушибов
     .desc = Терапевтический набор гелей и пластырей, предназначенных для лечения ушибов.
@@ -34,13 +38,20 @@ ent-BrutepackAdvanced1 = { ent-MedicatedSuture }
     .desc = { ent-MedicatedSuture.desc }
     .suffix = Один
 ent-MedicatedSutureLingering0 = { ent-MedicatedSuture }
+<<<<<<< HEAD
     .suffix = 0, Lingering
+=======
+    .suffix = Не исчезают закончившись, 0
+>>>>>>> goob
     .desc = { ent-MedicatedSuture.desc }
 ent-Bloodpack = пакет крови
     .desc = Содержит новый инновационный универсальный кровезаменитель, разработанный передовыми учёными компании Nanotrasen.
     .suffix = Полный
+<<<<<<< HEAD
 ent-Bloodpack1 = { ent-Bloodpack }
     .suffix = Один
+=======
+>>>>>>> goob
     .desc = { ent-Bloodpack.desc }
 ent-Bloodpack10Lingering = { ent-Bloodpack }
     .suffix = 10, Не исчезают закончившись

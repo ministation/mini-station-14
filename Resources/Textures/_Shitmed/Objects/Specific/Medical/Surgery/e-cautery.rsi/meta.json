@@ -14,6 +14,7 @@
             "name": "e-cautery-on"
 		},
 		{
+<<<<<<< HEAD
 			"name": "inhand-left",
 			"directions": 4
 		},
@@ -27,6 +28,21 @@
 		},
 		{
 			"name": "inhand-right-on",
+=======
+			"name": "cautery-inhand-left",
+			"directions": 4
+		},
+        {
+            "name": "cautery-inhand-right",
+            "directions": 4
+        },
+		{
+			"name": "stitches-inhand-left",
+			"directions": 4
+		},
+		{
+			"name": "stitches-inhand-right",
+>>>>>>> goob
 			"directions": 4
 		}
 	]

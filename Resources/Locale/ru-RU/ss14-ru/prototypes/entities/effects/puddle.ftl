@@ -12,6 +12,15 @@ ent-PuddleEgg = { ent-PuddleTemporary }
 ent-PuddleTomato = { ent-PuddleTemporary }
     .desc = { ent-PuddleTemporary.desc }
     .suffix = Помидор
+<<<<<<< HEAD
+=======
+ent-PuddleBloodSmall = { ent-PuddleTemporary }
+    .suffix = Кровь (5u)
+    .desc = { ent-PuddleTemporary.desc }
+ent-PuddleBlood = { ent-PuddleTemporary }
+    .suffix = Кровь (30u)
+    .desc = { ent-PuddleTemporary.desc }
+>>>>>>> goob
 ent-PuddleWatermelon = { ent-PuddleTemporary }
     .desc = { ent-PuddleTemporary.desc }
     .suffix = Арбуз

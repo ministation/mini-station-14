@@ -1,6 +1,12 @@
 ent-PartDiona = diona body part
     .desc = { ent-BaseItem.desc }
+<<<<<<< HEAD
 ent-TorsoDiona = diona torso
+=======
+ent-ChestDiona = diona chest
+    .desc = { ent-PartDiona.desc }
+ent-GroinDiona = diona groin
+>>>>>>> goob
     .desc = { ent-PartDiona.desc }
 ent-HeadDiona = diona head
     .desc = { ent-PartDiona.desc }

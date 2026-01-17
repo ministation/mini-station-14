@@ -1,0 +1,62 @@
+<!--
+SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Манипуляции с частями тела
+
+  Вот как вы можете превратить таяран в людей, или наоборот, если вам особенно жестоко.
+
+  ## Анатомия
+
+  Обычно тело имеет 11 основных частей. Это:
+
+  <Box>
+  <GuideEntityEmbed Entity="HeadHuman" Caption="голова"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="RightHandHuman" Caption="правая рука"/>
+  <GuideEntityEmbed Entity="RightArmHuman" Caption="правое предплечье"/>
+  <GuideEntityEmbed Entity="ChestHuman" Caption="торс"/>
+  <GuideEntityEmbed Entity="GroinHuman" Caption="пах"/>
+  <GuideEntityEmbed Entity="LeftArmHuman" Caption="левое предплечье"/>
+  <GuideEntityEmbed Entity="LeftHandHuman" Caption="левая рука"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="RightFootHuman" Caption="правая нога"/>
+  <GuideEntityEmbed Entity="RightLegHuman" Caption="правое бедро"/>
+  <GuideEntityEmbed Entity="LeftLegHuman" Caption="левое бедро"/>
+  <GuideEntityEmbed Entity="LeftFootHuman" Caption="левая нога"/>
+  </Box>
+
+  У некоторых видов может быть больше или меньше частей, например хвосты, крылья или дополнительные конечности, но это примерная структура, с которой вы столкнётесь.
+  Чтобы оторвать конечность, нужно применить операцию "Удаление части тела", которая снимет её, не навредив пациенту.
+
+  Если же вы хотите снова присоединить конечность, примените операцию "Прикрепление части тела" туда, куда хотите её прикрепить.
+  Руки прикрепляются к предплечьям, ноги — к бедрам. Всё остальное крепится к торсу.
+
+  ## Где взять дополнительные части тела?
+
+  Обычно пациенты, которым нужны новые конечности, получают их взамен старых — отсутствующих или сильно повреждённых.
+  Для этого можно использовать Медицинский Биофабрикатор с некоторым количеством Биомассы, который может создавать биосинтетические конечности для всех видов.
+
+  <Box>
+  <GuideEntityEmbed Entity="MedicalBiofabricator" Caption="медицинский биофабрикатор"/>
+  <GuideEntityEmbed Entity="MedicalBiofabMachineBoard" Caption="плата биофабрикатора"/>
+  <GuideEntityEmbed Entity="MaterialBiomass" Caption="биомасса"/>
+  </Box>
+
+  По умолчанию у каждого Главного Медицинского Офицера есть доступ к плате биофабрикатора в шкафчике.
+
+  ## Я присоединил конечность пациенту, но
+  ## она не работает?
+
+  Пациент получил такие повреждения, что нервы конечности были серьёзно повреждены, и её нужно правильно вылечить, чтобы она снова заработала.
+  Для этого можно применить операции "Обработка ран" или дать пациенту использовать наружные средства на повреждённом месте.
+
+</Document>

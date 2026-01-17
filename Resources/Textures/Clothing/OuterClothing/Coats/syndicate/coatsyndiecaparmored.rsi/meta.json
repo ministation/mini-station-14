@@ -1,7 +1,11 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
   "copyright": "Sprited by belay5 (Discord), sprites for resomi made by Pofitlo",
+=======
+  "copyright": "Sprited by belay5 (Discord), equipped-OUTERCLOTHING-resomi made by Pofitlo",
+>>>>>>> goob
   "size": {
     "x": 32,
     "y": 32
@@ -24,6 +28,14 @@
     },
     {
       "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-resomi",
+      "directions": 4
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-vox",
       "directions": 4
     }
   ]

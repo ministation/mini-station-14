@@ -1,3 +1,12 @@
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 JORJ949 <159719201+JORJ949@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
 ### Visitors with Visitor ID
 
 # Command
@@ -44,7 +53,7 @@
     id: VisitorPDA
     belt: ClothingBeltChiefEngineerFilled
     back: ClothingBackpackDuffelEngineering
-    ears: ClothingHeadsetCE
+    ears: ClothingHeadsetAltEngineering # Goobstation
     outerClothing: ClothingOuterVestHazard
     pocket1: WeaponDisabler
 
@@ -58,7 +67,7 @@
     id: VisitorPDA
     belt: ClothingBeltChiefEngineerFilled
     back: ClothingBackpackSatchelEngineering
-    ears: ClothingHeadsetCE
+    ears: ClothingHeadsetAltEngineering # Goobstation
     outerClothing: ClothingOuterWinterCE
     pocket1: WeaponDisabler
 
@@ -72,7 +81,7 @@
     neck: ClothingCloakCmo
     id: VisitorPDA
     back: ClothingBackpackMedical
-    ears: ClothingHeadsetCMO
+    ears: ClothingHeadsetAltMedical # Goobstation
     belt: ClothingBeltMedicalFilled
     outerClothing: ClothingOuterCoatLabCmo
     pocket1: WeaponDisabler
@@ -87,7 +96,7 @@
     neck: ClothingNeckMantleCMO
     id: VisitorPDA
     back: ClothingBackpackSatchelMedical
-    ears: ClothingHeadsetCMO
+    ears: ClothingHeadsetAltMedical # Goobstation
     belt: ClothingBeltMedicalFilled
     outerClothing: ClothingOuterCoatLabCmo
     pocket1: WeaponDisabler
@@ -132,9 +141,10 @@
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelSecurity
     ears: ClothingHeadsetAltSecurity
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatHoSTrench
-    pocket1: WeaponDisabler
+    #pocket1: WeaponDisabler #Goobstation (Disablers in belts)
     pocket2: MagazinePistolSubMachineGunTopMounted
   inhand:
   - WeaponSubMachineGunWt550
@@ -151,8 +161,9 @@
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelLeather
     ears: ClothingHeadsetAltSecurity
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
-    pocket1: WeaponDisabler
+    #pocket1: WeaponDisabler #Goobstation (Disablers in belts)
     pocket2: MagazinePistolSubMachineGunTopMounted
   inhand:
   - WeaponSubMachineGunWt550
@@ -167,7 +178,7 @@
     neck: ClothingNeckCloakRd
     id: VisitorPDA
     back: ClothingBackpackScience
-    ears: ClothingHeadsetRD
+    ears: ClothingHeadsetAltScience # Goobstation
     outerClothing: ClothingOuterCoatRD
     pocket1: WeaponDisabler
 
@@ -181,7 +192,7 @@
     neck: ClothingNeckMantleRD
     id: VisitorPDA
     back: ClothingBackpackSatchelScience
-    ears: ClothingHeadsetRD
+    ears: ClothingHeadsetAltScience # Goobstation
     outerClothing: ClothingOuterCoatRD
     pocket1: WeaponDisabler
 
@@ -194,7 +205,7 @@
     neck: ClothingNeckCloakQm
     id: VisitorPDA
     back: ClothingBackpackCargo
-    ears: ClothingHeadsetRD
+    ears: ClothingHeadsetAltCargo # Goobstation
     outerClothing: ClothingOuterWinterQM
     pocket1: WeaponDisabler
     pocket2: AppraisalTool
@@ -208,7 +219,7 @@
     neck: ClothingNeckMantleQM
     id: VisitorPDA
     back: ClothingBackpackSatchelCargo
-    ears: ClothingHeadsetQM
+    ears: ClothingHeadsetAltCargo # Goobstation
     outerClothing: ClothingOuterWinterQM
     pocket1: WeaponDisabler
     pocket2: AppraisalTool
@@ -224,7 +235,8 @@
     id: VisitorPDA
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetAltSecurityRegular # Goobstation
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasic
     pocket1: WeaponPistolMk58
@@ -242,7 +254,8 @@
     id: VisitorPDA
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetAltSecurityRegular # Goobstation
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasicSlim
     pocket1: WeaponPistolMk58
@@ -259,7 +272,8 @@
     id: VisitorPDA
     belt: ClothingBeltSecurityWebbingFilled
     back: ClothingBackpackSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetAltSecurityRegular # Goobstation
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasic
     pocket1: WeaponPistolMk58
@@ -277,12 +291,13 @@
     id: VisitorPDA
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetAltSecurityRegular # Goobstation
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterArmorBasicSlim
     pocket1: WeaponPistolMk58
     pocket2: MagazinePistol
-  inhand: 
+  inhand:
   - FlashlightSeclite
 
 - type: startingGear
@@ -295,7 +310,8 @@
     id: VisitorPDA
     belt: ClothingBeltHolsterFilled
     back: ClothingBackpackSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetAltSecurityRegular # Goobstation
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatDetectiveLoadout
     pocket1: ForensicScanner
@@ -313,7 +329,8 @@
     id: VisitorPDA
     belt: ClothingBeltHolsterFilled
     back: ClothingBackpackSatchelSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetAltSecurityRegular # Goobstation
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterVestDetective
     pocket1: ForensicScanner
@@ -332,7 +349,8 @@
     id: VisitorPDA
     belt: ClothingBeltSecurityWebbingFilled
     back: ClothingBackpackSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetAltSecurityRegular # Goobstation
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterCoatWarden
     pocket1: WeaponDisabler
@@ -351,10 +369,11 @@
     id: VisitorPDA
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelSecurity
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetAltSecurityRegular # Goobstation
+    mask: ClothingMaskGasSecurity # Goobstation
     eyes: ClothingEyesGlassesSecurity
     outerClothing: ClothingOuterWinterWarden
-    pocket1: WeaponDisabler
+    #pocket1: WeaponDisabler #Goobstation (Disablers in belts)
     pocket2: Zipties
   inhand:
   - FlashlightSeclite
@@ -859,7 +878,7 @@
     eyes: ClothingEyesHudMedical
     pocket1: RegenerativeMesh
     pocket2: PillCanisterBicaridine
-  inhand: 
+  inhand:
   - ScalpelAdvanced
   - MedicatedSuture
 
@@ -1017,6 +1036,9 @@
     outerClothing: ClothingOuterPlagueSuit
     pocket1: PlushieSharkGrey
     pocket2: FoodSnackEnergy
+  inhand:                 #goobstation
+  - Nullrod               #goobstation
+  - ArmamentsBeacon       #goobstation
 
 - type: startingGear
   id: VisitorChaplainAlt
@@ -1030,6 +1052,9 @@
     outerClothing: ClothingOuterNunRobe
     pocket1: PlushiePenguin
     pocket2: DrinkCoconutWaterCarton
+  inhand:                 #goobstation
+  - Nullrod               #goobstation
+  - ArmamentsBeacon       #goobstation
 
 - type: startingGear
   id: VisitorChef
@@ -1046,7 +1071,7 @@
     pocket1: ButchCleaver
     pocket2: BookHowToCookForFortySpaceman
   inhand:
-  - ClothingMaskItalianMoustache
+  #- ClothingMaskItalianMoustache         #Chefs now start with the space italian implant.
   - DrinkWineBottleFull
 
 - type: startingGear
@@ -1064,7 +1089,7 @@
     pocket1: RollingPin
     pocket2: BookHowToCookForFortySpaceman
   inhand:
-  - ClothingMaskItalianMoustache
+  #- ClothingMaskItalianMoustache        #Chefs now start with the space italian implant.
   - FoodCheese
 
 - type: startingGear
@@ -1120,7 +1145,7 @@
     neck: ClothingNeckLawyerbadge
     id: VisitorPDA
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLawyer # CorvaxGoob: ClothingHeadsetSecurity > ClothingHeadsetLawyer
     pocket1: RubberStampLawyer
     pocket2: LuxuryPen
   inhand:
@@ -1135,7 +1160,7 @@
     neck: ClothingNeckLawyerbadge
     id: VisitorPDA
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLawyer # CorvaxGoob: ClothingHeadsetSecurity > ClothingHeadsetLawyer
     pocket1: RubberStampLawyer
     pocket2: SmokingPipeFilledTobacco
   inhand:
@@ -1151,7 +1176,7 @@
     id: VisitorPDA
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltStorageWaistbag
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLawyer # CorvaxGoob: ClothingHeadsetSecurity > ClothingHeadsetLawyer
     pocket1: RubberStampLawyer
     pocket2: SmokingPipeFilledTobacco
   inhand:
@@ -1168,7 +1193,7 @@
     mask: CigarGold
     id: VisitorPDA
     back: ClothingBackpackSatchelLeather
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLawyer # CorvaxGoob: ClothingHeadsetSecurity > ClothingHeadsetLawyer
     outerClothing: ClothingOuterCoatExpensive
     pocket1: RubberStampLawyer
     pocket2: LuxuryPen
@@ -1185,7 +1210,7 @@
     id: VisitorPDA
     back: ClothingBackpackSatchelLeather
     belt: ClothingBeltStorageWaistbag
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetLawyer # CorvaxGoob: ClothingHeadsetSecurity > ClothingHeadsetLawyer
     pocket1: RubberStampLawyer
     pocket2: LuxuryPen
   inhand:

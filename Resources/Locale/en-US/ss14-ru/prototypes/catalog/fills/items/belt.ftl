@@ -20,13 +20,21 @@ ent-ClothingBeltMedicalFilled = { ent-ClothingBeltMedical }
     .suffix = Filled
     .desc = { ent-ClothingBeltMedical.desc }
 ent-ClothingBeltMedicalEMTFilled = { ent-ClothingBeltMedicalEMT }
+<<<<<<< HEAD
     .suffix = Paramedic,Filled
+=======
+    .suffix = Paramedic, Filled
+>>>>>>> goob
     .desc = { ent-ClothingBeltMedicalEMT.desc }
 ent-ClothingBeltPlantFilled = { ent-ClothingBeltPlant }
     .suffix = Filled
     .desc = { ent-ClothingBeltPlant.desc }
 ent-ClothingBeltSheathFilled = { ent-ClothingBeltSheath }
+<<<<<<< HEAD
     .suffix = Filled
+=======
+    .suffix = Filled, Captain
+>>>>>>> goob
     .desc = { ent-ClothingBeltSheath.desc }
 ent-ClothingBeltMilitaryWebbingGrenadeFilled = grenadier chest rig
     .suffix = Filled
@@ -38,7 +46,11 @@ ent-ClothingBeltWandFilled = { ent-ClothingBeltWand }
     .suffix = Filled
     .desc = { ent-ClothingBeltWand.desc }
 ent-ClothingBeltHolsterFilled = { ent-ClothingBeltHolster }
+<<<<<<< HEAD
     .suffix = Filled
+=======
+    .suffix = Filled, Inspector
+>>>>>>> goob
     .desc = { ent-ClothingBeltHolster.desc }
 ent-ClothingBeltChefFilled = { ent-ClothingBeltChef }
     .suffix = Filled

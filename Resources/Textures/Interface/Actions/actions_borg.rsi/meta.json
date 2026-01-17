@@ -65,6 +65,12 @@
             "name":"treatment-module"
         },
         {
+            "name":"surgery-module"
+        },
+        {
+            "name":"adv-surgery-module"
+        },
+        {
             "name":"chem-module"
         },
         {

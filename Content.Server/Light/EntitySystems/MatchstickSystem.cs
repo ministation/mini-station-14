@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Light.Components;
 using Content.Shared.Audio;
@@ -6,15 +7,56 @@ using Content.Shared.Item;
 using Content.Shared.Smoking;
 using Content.Shared.IgnitionSource.Components;
 using Content.Shared.Smoking.Systems;
+=======
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server.Atmos.EntitySystems;
+using Content.Shared.Interaction;
+using Content.Shared.Item;
+using Content.Shared.Smoking;
+using Content.Shared.Smoking.Components; // Shitmed Change
+using Content.Shared.Smoking.Systems; // Shitmed Change
+>>>>>>> goob
 using Content.Shared.Temperature;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
+<<<<<<< HEAD
 using Robust.Shared.Player;
 
 namespace Content.Server.Light.EntitySystems
 {
     public sealed class MatchstickSystem : SharedMatchstickSystem
+=======
+
+namespace Content.Server.Light.EntitySystems
+{
+    public sealed class MatchstickSystem : SharedMatchstickSystem // Shitmed Change
+>>>>>>> goob
     {
         [Dependency] private readonly AtmosphereSystem _atmosphereSystem = default!;
         [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
@@ -28,6 +70,10 @@ namespace Content.Server.Light.EntitySystems
         public override void Initialize()
         {
             base.Initialize();
+<<<<<<< HEAD
+=======
+            SubscribeLocalEvent<MatchstickComponent, InteractUsingEvent>(OnInteractUsing);
+>>>>>>> goob
             SubscribeLocalEvent<MatchstickComponent, IsHotEvent>(OnIsHotEvent);
             SubscribeLocalEvent<MatchstickComponent, ComponentShutdown>(OnShutdown);
         }
@@ -46,10 +92,20 @@ namespace Content.Server.Light.EntitySystems
                 if (match.Comp.CurrentState != SmokableState.Lit || Paused(match) || match.Comp.Deleted)
                     continue;
 
+<<<<<<< HEAD
                 if (Transform(match).GridUid is not { } gridUid)
                     return;
 
                 var position = _transformSystem.GetGridOrMapTilePosition(match, Transform(match));
+=======
+                var xform = Transform(match);
+
+                if (xform.GridUid is not {} gridUid)
+                    return;
+
+                var position = _transformSystem.GetGridOrMapTilePosition(match, xform);
+
+>>>>>>> goob
                 _atmosphereSystem.HotspotExpose(gridUid, position, 400, 50, match, true);
             }
         }
@@ -77,16 +133,30 @@ namespace Content.Server.Light.EntitySystems
         public void Ignite(Entity<MatchstickComponent> matchstick, EntityUid user)
         {
             var component = matchstick.Comp;
+<<<<<<< HEAD
             _audio.PlayPvs(component.IgniteSound, matchstick, AudioParams.Default.WithVariation(0.125f).WithVolume(-0.125f));
             SetState((matchstick, component), SmokableState.Lit);
             _litMatches.Add(matchstick);
             matchstick.Owner.SpawnTimer(component.Duration * 1000, delegate
             {
                 SetState((matchstick, component), SmokableState.Burnt);
+=======
+
+            // Play Sound
+            _audio.PlayPvs(component.IgniteSound, matchstick, AudioParams.Default.WithVariation(0.125f).WithVolume(-0.125f));
+
+            // Change state
+            SetState((matchstick, component), SmokableState.Lit); // Shitmed Change
+            _litMatches.Add(matchstick);
+            matchstick.Owner.SpawnTimer(component.Duration * 1000, delegate
+            {
+                SetState((matchstick, component), SmokableState.Burnt); // Shitmed Change
+>>>>>>> goob
                 _litMatches.Remove(matchstick);
             });
         }
 
+<<<<<<< HEAD
         public override bool SetState(Entity<MatchstickComponent> ent, SmokableState value)
         {
             var uid = ent.Owner;
@@ -94,10 +164,26 @@ namespace Content.Server.Light.EntitySystems
             ent.Comp.State = value;
             if (_lights.TryGetLight(uid, out var pointLightComponent))
             {
+=======
+        // Shitmed Change Start
+        public override bool SetState(Entity<MatchstickComponent> ent, SmokableState value)
+        {
+            if (!base.SetState(ent, value))
+                return false;
+
+            var (uid, component) = ent;
+
+        // Shitmed Change End
+
+            if (_lights.TryGetLight(uid, out var pointLightComponent))
+            {
+                _lights.SetEnabled(uid, component.CurrentState == SmokableState.Lit, pointLightComponent);
+>>>>>>> goob
             }
 
             if (EntityManager.TryGetComponent(uid, out ItemComponent? item))
             {
+<<<<<<< HEAD
                 if (component.CurrentState == SmokableState.Lit)
                     _item.SetHeldPrefix(uid, "lit", component: item);
                 else
@@ -111,3 +197,26 @@ namespace Content.Server.Light.EntitySystems
         }
     }
 }
+=======
+                switch (component.CurrentState)
+                {
+                    case SmokableState.Lit:
+                        _item.SetHeldPrefix(uid, "lit", component: item);
+                        break;
+                    default:
+                        _item.SetHeldPrefix(uid, "unlit", component: item);
+                        break;
+                }
+            }
+
+            if (EntityManager.TryGetComponent(uid, out AppearanceComponent? appearance))
+            {
+                _appearance.SetData(uid, SmokingVisuals.Smoking, component.CurrentState, appearance);
+            }
+
+
+            return true; // Shitmed Change
+        }
+    }
+}
+>>>>>>> goob

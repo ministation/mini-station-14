@@ -1,7 +1,11 @@
 ent-MonkeyCubeBox = коробка кубиков обезьян
     .desc = Кубики обезьян фирмы Drymate. Просто добавь воды!
 ent-BaseWrappedCube = { ent-BaseItem }
+<<<<<<< HEAD
     .suffix = Wrapped
+=======
+    .suffix = Завёрнутый
+>>>>>>> goob
     .desc = { ent-BaseItem.desc }
 ent-MonkeyCubeWrapped = кубик обезьяны
     .desc = Разверните его, чтобы получить кубик обезьяны.

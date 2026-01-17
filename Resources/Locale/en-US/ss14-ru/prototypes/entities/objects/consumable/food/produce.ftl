@@ -95,7 +95,11 @@ ent-FoodAloe = aloe
 ent-FoodPoppy = poppy
     .desc = A flower with extracts often used in the production of medicine.
 ent-FoodLily = lily
+<<<<<<< HEAD
     .desc = A beautiful orange flower.
+=======
+    .desc = A beautiful orange flower containing topical medicine.
+>>>>>>> goob
 ent-FoodLingzhi = lingzhi
     .desc = A potent medicinal mushroom. Don't go overboard.
 ent-FoodAmbrosiaVulgaris = ambrosia vulgaris

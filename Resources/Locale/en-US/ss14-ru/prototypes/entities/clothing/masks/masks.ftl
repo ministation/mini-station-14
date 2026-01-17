@@ -65,9 +65,15 @@ ent-ClothingMaskNeckGaiter = neck gaiter
     .desc = Stylish neck gaiter for your neck, can protect from the cosmic wind?...
 ent-ClothingMaskNeckGaiterRed = red neck gaiter
     .desc = { ent-ClothingMaskNeckGaiter.desc }
+<<<<<<< HEAD
 ent-ClothingMaskBlushingClown = blushing clown mask
     .desc = A mask for a blushing clown.
 ent-ClothingMaskBlushingMime = blushing mime mask
+=======
+ent-ClothingMaskSexyClown = sexy clown mask
+    .desc = Some naughty clowns think this is what the Honkmother looks like.
+ent-ClothingMaskSexyMime = sexy mime mask
+>>>>>>> goob
     .desc = Those ruddy cheeks just want to be rubbed.
 ent-ClothingMaskSadMime = sad mime mask
     .desc = Many people think this is what a real mime mask looks like.

@@ -28,7 +28,11 @@
 - type: entity
   parent: BaseMappingAction
   id: ActionMappingEraser
+<<<<<<< HEAD
   name: action-name-mapping-erase
+=======
+  name: Erase Entity
+>>>>>>> goob
   components:
   - type: Action
     icon: Interface/VerbIcons/delete.svg.192dpi.png

@@ -22,6 +22,12 @@
   - StationAiHologramFace
   - StationAiHologramCat
   - StationAiHologramDog
+<<<<<<< HEAD
+=======
+  - StationAiHologramKobold
+  - StationAiHologramMonkey
+  - StationAiHologramScurret # goob
+>>>>>>> goob
 
 # Iconography
 - type: stationAiCustomization
@@ -161,3 +167,24 @@
     Hologram:
       sprite: Mobs/Silicon/holograms.rsi
       state: ai_dog
+<<<<<<< HEAD
+=======
+
+- type: stationAiCustomization
+  id: StationAiHologramKobold
+  name: station-ai-hologram-kobold
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: Mobs/Silicon/holograms.rsi
+      state: ai_kobold
+
+- type: stationAiCustomization
+  id: StationAiHologramMonkey
+  name: station-ai-hologram-monkey
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: Mobs/Silicon/holograms.rsi
+      state: ai_monkey
+>>>>>>> goob

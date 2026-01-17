@@ -60,8 +60,13 @@ ent-ActionToggleWagging = Wagging Tail
     .desc = Start or stop wagging your tail.
 ent-FakeMindShieldToggleAction = [color=green]Toggle Fake Mindshield[/color]
     .desc = Turn the Fake Mindshield implant's transmission on/off
+<<<<<<< HEAD
 ent-ActionToggleParamedicSiren = Toggle Paramedic Siren
     .desc = Toggles the paramedic siren on and off.
+=======
+ent-ActionGravityJump = Jump
+    .desc = Activating the advanced propulsion system, you propel yourself a short distance in the direction of your gaze.
+>>>>>>> goob
 ent-ActionToggleRootable = Rootable
     .desc = Begin or stop being rooted to the floor.
 ent-ActionChameleonController = Control clothing

@@ -39,9 +39,12 @@ ent-MedicatedSutureLingering0 = { ent-MedicatedSuture }
 ent-Bloodpack = blood pack
     .desc = Contains a groundbreaking universal blood replacement created by Nanotrasen's advanced medical science.
     .suffix = Full
+<<<<<<< HEAD
 ent-Bloodpack1 = { ent-Bloodpack }
     .suffix = Single
     .desc = { ent-Bloodpack.desc }
+=======
+>>>>>>> goob
 ent-Bloodpack10Lingering = { ent-Bloodpack }
     .suffix = 10, Lingering
     .desc = { ent-Bloodpack.desc }
@@ -64,25 +67,41 @@ ent-PillDexalin = pill
     .suffix = Dexalin 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterDexalin = pill canister
+<<<<<<< HEAD
     .suffix = Dexalin 10u, 7
+=======
+    .suffix = Dexalin 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillDylovene = pill
     .suffix = Dylovene 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterDylovene = pill canister
+<<<<<<< HEAD
     .suffix = Dylovene 10u, 5
+=======
+    .suffix = Dylovene 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillHyronalin = pill
     .suffix = Hyronalin 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterHyronalin = pill canister
+<<<<<<< HEAD
     .suffix = Hyronalin 10u, 5
+=======
+    .suffix = Hyronalin 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillPotassiumIodide = pill
     .suffix = Potassium iodide 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterPotassiumIodide = pill canister
+<<<<<<< HEAD
     .suffix = Potassium iodide 10u, 5
+=======
+    .suffix = Potassium iodide 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillIron = pill
     .suffix = Iron 10u
@@ -91,22 +110,37 @@ ent-PillCopper = pill
     .suffix = Copper 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterIron = pill canister
+<<<<<<< HEAD
     .suffix = Iron 10u, 5
     .desc = { ent-PillCanister.desc }
 ent-PillCanisterCopper = pill canister
     .suffix = Copper 10u, 5
+=======
+    .suffix = Iron 10u, 15
+    .desc = { ent-PillCanister.desc }
+ent-PillCanisterCopper = pill canister
+    .suffix = Copper 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillKelotane = pill
     .suffix = Kelotane 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterKelotane = pill canister
+<<<<<<< HEAD
     .suffix = Kelotane 10u, 5
+=======
+    .suffix = Kelotane 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillDermaline = pill
     .suffix = Dermaline 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterDermaline = pill canister
+<<<<<<< HEAD
     .suffix = Dermaline 10u, 5
+=======
+    .suffix = Dermaline 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillSpaceDrugs = space mirage
     .desc = { ent-Pill.desc }
@@ -114,19 +148,31 @@ ent-PillTricordrazine = pill
     .suffix = Tricordrazine 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterTricordrazine = pill canister
+<<<<<<< HEAD
     .suffix = Tricordrazine 10u, 5
+=======
+    .suffix = Tricordrazine 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillBicaridine = pill
     .suffix = Bicaridine 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterBicaridine = pill canister
+<<<<<<< HEAD
     .suffix = Bicaridine 10u, 5
+=======
+    .suffix = Bicaridine 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillCharcoal = pill
     .suffix = Charcoal 10u
     .desc = { ent-Pill.desc }
 ent-PillCanisterCharcoal = pill canister
+<<<<<<< HEAD
     .suffix = Charcoal 10u, 3
+=======
+    .suffix = Charcoal 10u, 15
+>>>>>>> goob
     .desc = { ent-PillCanister.desc }
 ent-PillRomerol = romerol pill
     .desc = { ent-Pill.desc }

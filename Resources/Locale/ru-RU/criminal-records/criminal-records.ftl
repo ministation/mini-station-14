@@ -17,8 +17,18 @@ criminal-records-status-suspected = Подозревается
 criminal-records-status-discharged = Освобождён
 criminal-records-status-paroled = Освобождён по УДО
 criminal-records-console-wanted-reason = Причина розыска
+<<<<<<< HEAD
 criminal-records-console-suspected-reason = Причина подозрения
 criminal-records-console-reason = Причина
+=======
+criminal-records-status-dangerous = Опасен
+criminal-records-status-search = Пропал
+criminal-records-status-perma = Пермабриг
+criminal-records-console-suspected-reason = Причина подозрения
+criminal-records-console-reason = Причина
+criminal-records-console-search-reason = Причина поиска
+criminal-records-console-dangerous-reason = Причина
+>>>>>>> goob
 criminal-records-console-reason-placeholder = Пример: { $placeholder }
 
 ## Crime History
@@ -41,6 +51,15 @@ criminal-records-console-released = { $name } ({ $job }) отпустили, о�
 criminal-records-console-paroled = { $name } ({ $job }) освободили по УДО, ответственный: { $officer }.
 criminal-records-console-not-parole = { $name } ({ $job }) лишили права на УДО, ответственный: { $officer }.
 criminal-records-console-unknown-officer = <неизвестный>
+<<<<<<< HEAD
+=======
+criminal-records-console-search = { $officer } отметил { $name } ({ $job }) как пропащего по причине: { $reason }
+criminal-records-console-not-search = { $officer } снял статус пропащего с { $name } ({ $job }).
+criminal-records-console-perma = { $name } ({ $job }) отправлен в пермабриг { $officer }.
+criminal-records-console-not-perma = { $name } ({ $job }) освобожден из пермабрига { $officer }.
+criminal-records-console-dangerous = { $officer } отметил { $name } ({ $job }) как опасного по причине: { $reason }.
+criminal-records-console-not-dangerous = { $name } ({ $job }) снят со списка опасных { $officer }.
+>>>>>>> goob
 
 ## Filters
 
@@ -48,8 +67,13 @@ criminal-records-filter-placeholder = Введите текст и нажмит�
 criminal-records-name-filter = Имя
 criminal-records-prints-filter = Отпечатки пальцев
 criminal-records-dna-filter = ДНК
+<<<<<<< HEAD
 criminal-records-job-filter = Job
 criminal-records-species-filter = Species
+=======
+criminal-records-job-filter = Должность
+criminal-records-species-filter = Вид
+>>>>>>> goob
 
 ## Arrest auto history lines
 

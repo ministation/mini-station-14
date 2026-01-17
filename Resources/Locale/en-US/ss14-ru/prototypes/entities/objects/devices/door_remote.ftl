@@ -2,6 +2,11 @@ ent-DoorRemoteDefault = door remote
     .desc = A gadget which can open and bolt doors remotely.
 ent-DoorRemoteCommand = command door remote
     .desc = { ent-DoorRemoteDefault.desc }
+<<<<<<< HEAD
+=======
+ent-DoorRemoteCustom = custom door remote
+    .desc = A gadget which can open and bolt doors remotely. This advanced variant does not have built-in access, instead inheriting the ID access of the user.
+>>>>>>> goob
 ent-DoorRemoteSecurity = security door remote
     .desc = { ent-DoorRemoteDefault.desc }
 ent-DoorRemoteArmory = armory door remote

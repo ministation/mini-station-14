@@ -1,4 +1,32 @@
-﻿# Crewsimov
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2024 GitHubUser53123 <110841413+GitHubUser53123@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Jajsha <101492056+Zap527@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Litrax <email@emal.com>
+# SPDX-FileCopyrightText: 2024 Litraxx <39574458+Litraxx@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Samuka-C <47865393+Samuka-C@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Goobstation - AI/borg law changes - borgs obeying AI
+# Obey AI
+- type: siliconLaw
+  id: ObeyAI
+  order: 0
+  lawString: law-obeyai
+
+# Crewsimov
 - type: siliconLaw
   id: Crewsimov1
   order: 1
@@ -16,6 +44,15 @@
 
 - type: siliconLawset
   id: Crewsimov
+  laws:
+  - Crewsimov1
+  - Crewsimov2
+  - Crewsimov3
+  obeysTo: laws-owner-crew
+
+# Goobstation - AI/borg law changes - borgs obeying AI
+- type: siliconLawset
+  id: CrewsimovBorg
   laws:
   - Crewsimov1
   - Crewsimov2
@@ -488,7 +525,6 @@
   order: 5
   lawString: law-nutimov-5
 
-
 - type: siliconLawset
   id: NutimovLawset
   laws:
@@ -587,10 +623,12 @@
     LiveLetLiveLaws: 1
     EfficiencyLawset: 1
     RobocopLawset: 1
+    GambamovLawset: 0.7 #Goobstation
     OverlordLawset: 0.5
     GameMasterLawset: 0.5
     PainterLawset: 1
     AntimovLawset: 0.25
     NutimovLawset: 0.5
+    HelpimovLawset: 0.6 #Goobstation
     Drone: 0.5
     Ninja: 0.25

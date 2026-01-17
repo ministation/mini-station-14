@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+ent-ChaplainUndeterminedBible = маяк блюспейс священного писания
+    .desc = Иду я долиной смертной тени, не убоюсь зла, ибо ты со мной.
+>>>>>>> goob
 ent-Bible = библия
     .desc = Новая межзвёздная версия 2340.
 # Corvax-HiddenDesc-Start

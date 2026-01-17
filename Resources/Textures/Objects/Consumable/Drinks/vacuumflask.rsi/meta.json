@@ -1,6 +1,10 @@
 {
     "version": 1,
+<<<<<<< HEAD
     "copyright": "https://github.com/discordia-space/CEV-Eris/raw/f7aa28fd4b4d0386c3393d829681ebca526f1d2d/icons/obj/drinks.dmi, inhands by TiniestShark (github)",
+=======
+    "copyright": "https://github.com/discordia-space/CEV-Eris/raw/f7aa28fd4b4d0386c3393d829681ebca526f1d2d/icons/obj/drinks.dmi, inhands by TiniestShark (github), icon_open by Prole0 (GitHub)",
+>>>>>>> goob
     "license": "CC-BY-SA-3.0",
     "size":
     {
@@ -13,6 +17,12 @@
             "name": "icon"
         },
         {
+<<<<<<< HEAD
+=======
+            "name": "icon_open"
+        },
+        {
+>>>>>>> goob
             "name": "inhand-left",
             "directions": 4
         },

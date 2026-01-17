@@ -1,3 +1,13 @@
+// SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <koolthunder019@gmail.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Diagnostics.CodeAnalysis;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -13,14 +23,22 @@ public sealed partial class GroupLoadoutEffect : LoadoutEffect
     [DataField(required: true)]
     public ProtoId<LoadoutEffectGroupPrototype> Proto;
 
+<<<<<<< HEAD
     public override bool Validate(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutPrototype proto, ICommonSession? session, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason) // Corvax-Sponsors
+=======
+    public override bool Validate(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutPrototype proto, ICommonSession? session, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason) // CorvaxGoob-Sponsors
+>>>>>>> goob
     {
         var effectsProto = collection.Resolve<IPrototypeManager>().Index(Proto);
 
         var reasons = new List<string>();
         foreach (var effect in effectsProto.Effects)
         {
+<<<<<<< HEAD
             if (effect.Validate(profile, loadout, proto, session, collection, out reason))
+=======
+            if (effect.Validate(profile, loadout, proto, session, collection, out reason)) // CorvaxGoob-Sponsors
+>>>>>>> goob
                 continue;
 
             reasons.Add(reason.ToMarkup());

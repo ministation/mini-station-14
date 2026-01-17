@@ -15,7 +15,11 @@ station-beacon-perma-brig = Пермабриг
 station-beacon-detective = Детектив
 station-beacon-courtroom = Зал суда
 # Corvax-Localization-Start
+<<<<<<< HEAD
 station-beacon-law = Офис АВД
+=======
+station-beacon-law = Офис адвоката
+>>>>>>> goob
 # Corvax-Localization-End
 station-beacon-security-checkpoint = КПП СБ
 station-beacon-medical = Медицинский отдел
@@ -28,7 +32,12 @@ station-beacon-surgery = Операционная
 station-beacon-psychology = Психолог
 station-beacon-clinic = Клиника
 station-beacon-science = Научный отдел
+<<<<<<< HEAD
 station-beacon-research-and-development = РНД
+=======
+station-beacon-paramedic = Парамедик
+station-beacon-research-and-development = НИО
+>>>>>>> goob
 station-beacon-research-server = Серверная
 station-beacon-research-director = Кабинет НР
 station-beacon-robotics = Робототехника
@@ -44,6 +53,17 @@ station-beacon-ce = Кабинет СИ
 station-beacon-ame = ДАМ
 station-beacon-solars = Солнечные панели
 station-beacon-gravgen = Генератор гравитации
+<<<<<<< HEAD
+=======
+station-beacon-solars-N = Солнечные панели (Север)
+station-beacon-solars-NE = Солнечные панели (Северо-Восток)
+station-beacon-solars-E = Солнечные панели (Восток)
+station-beacon-solars-SE = Солнечные панели (Юго-Восток)
+station-beacon-solars-S = Солнечные панели (Юг)
+station-beacon-solars-SW = Солнечные панели (Юго-Запад)
+station-beacon-solars-W = Солнечные панели (Запад)
+station-beacon-solars-NW = Солнечные панели (Северо-Запад)
+>>>>>>> goob
 station-beacon-pa = Контроль УЧ
 station-beacon-smes = СМЭС
 station-beacon-telecoms = Телекоммуникации
@@ -65,7 +85,11 @@ station-beacon-arrivals = Зал прибытия
 station-beacon-evac = Зал эвакуации
 station-beacon-docking-arm = Стыковочная зона
 station-beacon-eva-storage = Хранилище ВКД
+<<<<<<< HEAD
 station-beacon-chapel = Церковь
+=======
+station-beacon-chapel = Храм
+>>>>>>> goob
 station-beacon-library = Библиотека
 station-beacon-reporter = Репортёр
 station-beacon-dorms = Жилой отсек
@@ -75,3 +99,25 @@ station-beacon-disposals = Мусоросброс
 station-beacon-cryosleep = Криосон
 station-beacon-escape-pod = Спасательная капсула
 station-beacon-vox = Вокс-комната
+<<<<<<< HEAD
+=======
+station-beacon-escape-pod-N = Спасательная капсула (Север)
+station-beacon-escape-pod-NE = Спасательная капсула (Северо-Восток)
+station-beacon-escape-pod-E = Спасательная капсула (Восток)
+station-beacon-escape-pod-SE = Спасательная капсула (Юго-Восток)
+station-beacon-escape-pod-S = Спасательная капсула (Юг)
+station-beacon-escape-pod-SW = Спасательная капсула (Юго-Запад)
+station-beacon-escape-pod-W = Спасательная капсула (Запад)
+station-beacon-escape-pod-NW = Спасательная капсула (Северо-Запад)
+station-beacon-gorlex = Бараки Gorlex
+station-beacon-gorlex-office = Офис Gorlex
+station-beacon-gorlex-breakroom = Комната отдыха Gorlex
+station-beacon-gorlex-hos = Командование Gorlex
+station-beacon-cybersun-legal = Юридический отдел Cybersun
+station-beacon-interdyne = Триаж Interdyne
+station-beacon-interdyne-front = Приёмная Interdyne
+station-beacon-cybersun-rd = НИО Cybersun
+station-beacon-donk = Поставки DONK Co.
+station-beacon-donk-front = Приёмная DONK Co.
+station-beacon-shipyard = Верфь
+>>>>>>> goob

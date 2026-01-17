@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 ﻿using Content.Shared.Damage.Components;
+=======
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared.Damage.Components;
+>>>>>>> goob
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Content.Shared.Alert;
@@ -172,6 +181,10 @@ public abstract class SharedRootableSystem : EntitySystem
     private void OnRefreshMovementSpeed(Entity<RootableComponent> entity, ref RefreshMovementSpeedModifiersEvent args)
     {
         if (entity.Comp.Rooted)
+<<<<<<< HEAD
             args.ModifySpeed(entity.Comp.SpeedModifier);
+=======
+            args.ModifySpeed(entity.Comp.SpeedModifier, bypassImmunity: true);
+>>>>>>> goob
     }
 }

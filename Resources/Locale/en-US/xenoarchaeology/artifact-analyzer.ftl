@@ -1,7 +1,25 @@
+<<<<<<< HEAD
 # Консоль анализа артефактов
 analysis-console-menu-title = Анализатор артефактов Mark 3
 analysis-console-server-list-button = Сервер
 analysis-console-extract-button = Извлечь очки
+=======
+# SPDX-FileCopyrightText: 2023 Guillaume E <262623+quatre@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Vasilis <vascreeper@yahoo.com>
+# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+analysis-console-menu-title = Broad-Spectrum Mark 3 Analysis Console
+analysis-console-server-list-button = Server
+analysis-console-extract-button = Extract points
+>>>>>>> goob
 
 analysis-console-info-no-scanner = Анализатор не подключен! Подключите с помощью мультитула.
 analysis-console-info-no-artifact = Артефакт не обнаружен! Поместите артефакт на платформу для сканирования.

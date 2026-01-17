@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 ﻿- type: alert
+=======
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: alert
+>>>>>>> goob
   id: BlobResource
   icons:
   - sprite: /Textures/_Goobstation/Blob/Interface/Alerts/blob_resource.rsi
@@ -159,4 +170,8 @@
   name: blob-health-alert-name
   description: blob-health-alert-desc
   minSeverity: 0
+<<<<<<< HEAD
   maxSeverity: 20
+=======
+  maxSeverity: 20
+>>>>>>> goob

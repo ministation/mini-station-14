@@ -26,8 +26,11 @@ ent-ParadoxCloneSpawn = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-RevenantSpawn = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
+<<<<<<< HEAD
 ent-WizardSpawn = { ent-BaseWizardRule }
     .desc = { ent-BaseWizardRule.desc }
+=======
+>>>>>>> goob
 ent-GasLeak = { ent-BaseStationEventShortDelay }
     .desc = { ent-BaseStationEventShortDelay.desc }
 ent-KudzuGrowth = { ent-BaseStationEventLongDelay }
@@ -64,3 +67,8 @@ ent-SmugglerStashVariationPass = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-DerelictCyborgSpawn = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
+<<<<<<< HEAD
+=======
+ent-AncientRogueKingSpawn = { ent-BaseStationEventShortDelay }
+    .desc = { ent-BaseStationEventShortDelay.desc }
+>>>>>>> goob

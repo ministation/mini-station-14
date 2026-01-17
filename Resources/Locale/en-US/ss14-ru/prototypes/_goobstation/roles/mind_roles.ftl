@@ -1,0 +1,12 @@
+ent-DevilMindRole = Devil Role
+    .desc = { ent-BaseMindRoleAntag.desc }
+ent-MindRoleChangeling = Changeling Role
+    .desc = { ent-BaseMindRoleAntag.desc }
+ent-MindRoleHeretic = Heretic Role
+    .desc = { ent-BaseMindRoleAntag.desc }
+ent-MindRoleGhoul = Ghoul
+    .desc = { ent-BaseMindRoleAntag.desc }
+ent-MindRoleBrainwashed = Brainwashed Role
+    .desc = { ent-BaseMindRoleAntag.desc }
+ent-MindRoleSlasher = Slasher Role
+    .desc = { ent-BaseMindRoleAntag.desc }

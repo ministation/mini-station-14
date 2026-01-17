@@ -3,6 +3,11 @@ marking-TattooNightlingChest-tattoo_nightling = Татуировка, грудь
 marking-TattooHiveChest = Татуировка, спина (Улей)
 marking-TattooSilverburghLeftLeg-tattoo_silverburgh_l_leg = Татуировка, левая нога (Силвербург)
 marking-TattooSilverburghRightLeg-tattoo_silverburgh_r_leg = Татуировка, правая нога (Силвербург)
+<<<<<<< HEAD
+=======
+marking-TattooNanotrasenChest-tattoo_nanotrasen_chest = Татуировка, грудь (NanoTrasen)
+marking-TattooNanotrasenChest = Татуировка, грудь (NanoTrasen)
+>>>>>>> goob
 marking-TattooNightlingChest = Татуировка, грудь (Найтлинг)
 marking-TattooCampbellLeftArm-tattoo_campbell_l_arm = Татуировка, левая рука (Кэмпбелль)
 marking-TattooCampbellRightArm-tattoo_campbell_r_arm = Татуировка, правая рука (Кэмпбелль)
@@ -18,7 +23,42 @@ marking-TattooCampbellLeftLeg = Татуировка, левая нога (Кэ�
 marking-TattooCampbellRightLeg = Татуировка, правая нога (Кэмпбелль)
 marking-TattooEyeRight = Правый глаз
 marking-TattooEyeLeft = Левый глаз
+<<<<<<< HEAD
 marking-TattooEyeMothRight-tattoo_eye_moth_r = Right Eye
 marking-TattooEyeMothRight = Right Eye
 marking-TattooEyeMothLeft-tattoo_eye_moth_l = Left Eye
 marking-TattooEyeMothLeft = Left Eye
+=======
+marking-TattooLoops-tattoo_loops = Петли
+marking-TattooLoops = Петли
+marking-TattooTribal1-tattoo_tribal1 = Племенное тату
+marking-TattooTribal1 = Племенное тату
+marking-BuffChest_buff = Мускулы
+marking-BuffChest = Мускулы
+marking-TattooEyeMothRight-tattoo_eye_moth_r = Правый Глаз
+marking-TattooEyeRightGlowy-tattoo_eye_r = Свечение Правый Глаз
+marking-TattooEyeRightGlowy = Свечение Правый Глаз
+marking-TattooEyeLeftGlowy-tattoo_eye_l = Свечение Левый Глаз
+marking-TattooEyeLeftGlowy = Свечение Левый Глаз
+marking-TattooEyeMothRight = Правый Глаз
+marking-TattooEyeMothLeft-tattoo_eye_moth_l = Левый Глаз
+marking-TattooEyeMothLeft = Левый Глаз
+marking-TattooEyeVoxRight-tattoo_eye_vox_r = Правый глаз
+marking-TattooEyeVoxRight = Правый глаз
+marking-TattooEyeVoxLeft-tattoo_eye_vox_l = Левый глаз
+marking-TattooEyeVoxLeft = Левый глаз
+marking-TattooEyeshadowUpper-tattoo_eyeshadow_upper = Тени (Верхние)
+marking-TattooEyeshadowUpper = Тени (Верхние)
+marking-TattooEyeshadowLower-tattoo_eyeshadow_lower = Тени (Нижние)
+marking-TattooEyeshadowLower = Тени (Нижние)
+marking-TattooEyeshadowLowerReptilian-tattoo_eyeshadow_lower_reptilian = Тени (Нижние)
+marking-TattooEyeshadowLowerReptilian = Тени (Нижние)
+marking-TattooEyeshadowVoxSmall-tattoo_eyeshadow_small = Тени (Малые)
+marking-TattooEyeshadowVoxSmall = Тени (Малые)
+marking-TattooEyeshadowVoxMedium-tattoo_eyeshadow_medium = Тени (Средние)
+marking-TattooEyeshadowVoxMedium = Тени (Средние)
+marking-TattooEyeshadowVoxLarge-tattoo_eyeshadow_Large = Тени (Большие)
+marking-TattooEyeshadowVoxLarge = Тени (Большие)
+marking-TattooVoxTailRing-tattoo_vox_tail_ring = Хвост кольцом
+marking-TattooVoxTailRing = Хвост кольцом
+>>>>>>> goob

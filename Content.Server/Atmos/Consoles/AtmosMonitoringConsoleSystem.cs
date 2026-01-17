@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.Piping.Components;
 using Content.Server.DeviceNetwork.Components;
@@ -497,7 +502,7 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
         if (component.NavMapBlip == null)
             return;
 
-        var netEntity = EntityManager.GetNetEntity(uid);
+        var netEntity = GetNetEntity(uid);
         var query = AllEntityQuery<AtmosMonitoringConsoleComponent, TransformComponent>();
 
         while (query.MoveNext(out var ent, out var entConsole, out var entXform))
@@ -531,7 +536,7 @@ public sealed class AtmosMonitoringConsoleSystem : SharedAtmosMonitoringConsoleS
         if (component.NavMapBlip == null)
             return;
 
-        var netEntity = EntityManager.GetNetEntity(uid);
+        var netEntity = GetNetEntity(uid);
         var query = AllEntityQuery<AtmosMonitoringConsoleComponent>();
 
         while (query.MoveNext(out var ent, out var entConsole))

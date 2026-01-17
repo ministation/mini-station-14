@@ -1,3 +1,35 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Clyybber <darkmine956@gmail.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Francesco <frafonia@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+// HEAVILY EDITED
+// if wizden ever does something to this system we're FUCKED
+// regards.
+
+>>>>>>> goob
 using Content.Shared.Buckle;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Hands.Components;
@@ -9,13 +41,17 @@ using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
 
 namespace Content.Shared.Standing;
-
 public sealed class StandingStateSystem : EntitySystem
 {
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
+<<<<<<< HEAD
     [Dependency] private readonly MovementSpeedModifierSystem _movement = default!; // CorvaxNext EDIT
+=======
+    [Dependency] private readonly MovementSpeedModifierSystem _movement = default!; // WD EDIT
+    [Dependency] private readonly SharedBuckleSystem _buckle = default!; // WD EDIT
+>>>>>>> goob
 
     // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
     private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
@@ -48,13 +84,13 @@ public sealed class StandingStateSystem : EntitySystem
         if (!Resolve(uid, ref standingState, false))
             return false;
 
-        return !standingState.Standing;
+        return standingState.CurrentState is StandingState.Lying or StandingState.GettingUp;
     }
 
     public bool Down(EntityUid uid,
         bool playSound = true,
         bool dropHeldItems = true,
-        bool force = false,
+        bool force = true,
         StandingStateComponent? standingState = null,
         AppearanceComponent? appearance = null,
         HandsComponent? hands = null)
@@ -66,7 +102,7 @@ public sealed class StandingStateSystem : EntitySystem
         // Optional component.
         Resolve(uid, ref appearance, ref hands, false);
 
-        if (!standingState.Standing)
+        if (standingState.CurrentState is StandingState.Lying or StandingState.GettingUp)
             return true;
 
         // This is just to avoid most callers doing this manually saving boilerplate
@@ -92,7 +128,10 @@ public sealed class StandingStateSystem : EntitySystem
         }
 
         standingState.CurrentState = StandingState.Lying;
+<<<<<<< HEAD
         standingState.Standing = false;
+=======
+>>>>>>> goob
         Dirty(uid, standingState);
         RaiseLocalEvent(uid, new DownedEvent(), false);
 
@@ -122,7 +161,11 @@ public sealed class StandingStateSystem : EntitySystem
             _audio.PlayPredicted(standingState.DownSound, uid, uid);
         }
 
+<<<<<<< HEAD
         _movement.RefreshMovementSpeedModifiers(uid); // CorvaxNext EDIT
+=======
+        _movement.RefreshMovementSpeedModifiers(uid); // WD EDIT
+>>>>>>> goob
         return true;
     }
 
@@ -138,28 +181,34 @@ public sealed class StandingStateSystem : EntitySystem
         // Optional component.
         Resolve(uid, ref appearance, false);
 
-        if (standingState.Standing)
+        if (standingState.CurrentState is StandingState.Standing)
             return true;
 
+<<<<<<< HEAD
         //if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle)) // WD EDIT
         //    return false;
+=======
+        if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle)) // WD EDIT
+            return false;
+>>>>>>> goob
 
         if (!force)
         {
             var msg = new StandAttemptEvent();
             RaiseLocalEvent(uid, msg, false);
-
             if (msg.Cancelled)
                 return false;
         }
 
         standingState.CurrentState = StandingState.Standing;
+<<<<<<< HEAD
         standingState.Standing = true;
+=======
+>>>>>>> goob
         Dirty(uid, standingState);
         RaiseLocalEvent(uid, new StoodEvent(), false);
 
         _appearance.SetData(uid, RotationVisuals.RotationState, RotationState.Vertical, appearance);
-
         if (TryComp(uid, out FixturesComponent? fixtureComponent))
         {
             foreach (var key in standingState.ChangedFixtures)
@@ -169,14 +218,18 @@ public sealed class StandingStateSystem : EntitySystem
             }
         }
         standingState.ChangedFixtures.Clear();
+<<<<<<< HEAD
         _movement.RefreshMovementSpeedModifiers(uid); // CorvaxNext EDIT
+=======
+        _movement.RefreshMovementSpeedModifiers(uid); // WD EDIT
+>>>>>>> goob
 
         return true;
     }
 }
 
 [ByRefEvent]
-public record struct DropHandItemsEvent();
+public record struct DropHandItemsEvent(bool Handled = false); // Goob edit
 
 /// <summary>
 /// Subscribe if you can potentially block a down attempt.

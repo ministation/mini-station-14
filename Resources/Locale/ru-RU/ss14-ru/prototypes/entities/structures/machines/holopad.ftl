@@ -89,7 +89,11 @@ ent-HolopadScienceRobotics = { ent-Holopad }
     .suffix = Робототехника
     .desc = { ent-Holopad.desc }
 ent-HolopadScienceRnd = { ent-Holopad }
+<<<<<<< HEAD
     .suffix = РНД
+=======
+    .suffix = НИО
+>>>>>>> goob
     .desc = { ent-Holopad.desc }
 ent-HolopadScienceFront = { ent-Holopad }
     .suffix = Научный Приёмная
@@ -200,7 +204,11 @@ ent-HolopadSecurityCourtroom = { ent-Holopad }
     .suffix = Зал суда
     .desc = { ent-Holopad.desc }
 ent-HolopadSecurityLawyer = { ent-Holopad }
+<<<<<<< HEAD
     .suffix = АВД
+=======
+    .suffix = Адвокат
+>>>>>>> goob
     .desc = { ent-Holopad.desc }
 ent-HolopadSecurityArmory = { ent-Holopad }
     .suffix = Оружейная
@@ -230,7 +238,11 @@ ent-HolopadServiceBotany = { ent-Holopad }
     .suffix = Гидропоника
     .desc = { ent-Holopad.desc }
 ent-HolopadServiceChapel = { ent-Holopad }
+<<<<<<< HEAD
     .suffix = Церковь
+=======
+    .suffix = Храм
+>>>>>>> goob
     .desc = { ent-Holopad.desc }
 ent-HolopadServiceLibrary = { ent-Holopad }
     .suffix = Библиотека

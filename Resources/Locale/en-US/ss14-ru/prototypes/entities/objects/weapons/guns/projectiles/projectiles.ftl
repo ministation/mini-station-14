@@ -26,20 +26,36 @@ ent-EmitterBolt = emitter bolt
     .desc = { ent-BaseBullet.desc }
 ent-WatcherBolt = watcher bolt
     .desc = { ent-BaseBullet.desc }
+<<<<<<< HEAD
 ent-BoltTempgunCold = freezing bolt
     .desc = { ent-WatcherBolt.desc }
 ent-WatcherBoltMagmawing = magmawing watcher bolt
     .desc = { ent-BaseBullet.desc }
 ent-BoltTempgunHot = scorching bolt
     .desc = { ent-WatcherBoltMagmawing.desc }
+=======
+ent-WatcherBoltMagmawing = magmawing watcher bolt
+    .desc = { ent-BaseBullet.desc }
+ent-WatcherBoltIcewing = icewing watcher bolt
+    .desc = { ent-BaseBullet.desc }
+>>>>>>> goob
 ent-BasiliskRay = basilisk ray
     .desc = { ent-BaseBullet.desc }
 ent-BulletKinetic = kinetic bolt
     .desc = Not too bad, but you still don't want to get hit by it.
 ent-BulletKineticShuttle = { ent-BaseBullet }
     .desc = { ent-BaseBullet.desc }
+<<<<<<< HEAD
 ent-BulletCharge = charge bolt
     .desc = Marks a target for additional damage.
+=======
+ent-BulletSingularityBusterRocket = singularity buster rocket
+    .desc = { ent-BulletRocket.desc }
+ent-BulletCharge = charge bolt
+    .desc = Marks a target for additional damage.
+ent-BulletChargeGlaive = leech bolt
+    .desc = { ent-BulletCharge.desc }
+>>>>>>> goob
 ent-AnomalousParticleDelta = delta particles
     .desc = { ent-BaseBullet.desc }
 ent-AnomalousParticleDeltaStrong = { ent-AnomalousParticleDelta }

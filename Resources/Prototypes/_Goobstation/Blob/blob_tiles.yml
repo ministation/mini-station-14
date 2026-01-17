@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 ﻿- type: entity
+=======
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 shibe <swiftshibe@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+>>>>>>> goob
   id: SpawnPointGhostBlob
   name: Blob
   suffix: DONTMAP, spawner
@@ -10,8 +28,18 @@
       name: ghost-role-information-blob-name
       description: ghost-role-information-blob-description
       rules: You are an antagonist, destroy the station!
+<<<<<<< HEAD
       raffle:
         settings: default
+=======
+      mindRoles:
+      - MindRoleGhostRoleSoloAntagonist
+      raffle:
+        settings: default
+      requirements:
+      - !type:OverallPlaytimeRequirement
+        time: 18000 #5 hours
+>>>>>>> goob
     - type: Sprite
       sprite: Markers/jobs.rsi
       layers:
@@ -93,9 +121,20 @@
     name: ghost-role-information-blob-name
     description: ghost-role-information-blob-description
     rules: You are an antagonist, destroy the station!
+<<<<<<< HEAD
     reregister: false
     raffle:
       settings: default
+=======
+    mindRoles:
+    - MindRoleGhostRoleSoloAntagonist
+    reregister: false
+    raffle:
+      settings: default
+    requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 18000 #5 hours
+>>>>>>> goob
   - type: GhostTakeoverAvailable
 
 - type: entity
@@ -326,8 +365,16 @@
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
+<<<<<<< HEAD
     - type: Reflect
       reflectProb: 0.6
+=======
+    - type: Damageable
+      damageContainer: Blob
+      damageModifierSet: BlobReflective
+    - type: Reflect
+      reflectProb: 1
+>>>>>>> goob
       spread: 20
       reflects:
         - Energy

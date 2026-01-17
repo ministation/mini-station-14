@@ -1,6 +1,7 @@
 figurines-hop-1 = Бумаги, пожалуйста.
 figurines-hop-2 = Вы уволены.
 figurines-hop-3 = BRB.
+<<<<<<< HEAD
 figurines-hop-4 = You can get AA if you fill out the form.
 figurines-hop-5 = I was gone for two seconds...
 figurines-passenger-1 = Изоли пожалуйста.
@@ -8,6 +9,15 @@ figurines-passenger-2 = Вызывайте эвак.
 figurines-passenger-3 = HELP MAINTS!!
 figurines-passenger-4 = I'm no tider.
 figurines-passenger-5 = How much for a toolbelt?
+=======
+figurines-hop-4 = Вы можете получить по ебалу, если не заполните форму.
+figurines-hop-5 = Он исчез...
+figurines-passenger-1 = Изоли пожалуйста.
+figurines-passenger-2 = Вызывайте эвак.
+figurines-passenger-3 = СПАСИ ТЕХИ!!
+figurines-passenger-4 = Я не грейтайд.
+figurines-passenger-5 = Сколько с меня за пояс?
+>>>>>>> goob
 figurines-greytider-1 = Чувак, эта вечеринка отстой. Я, бля, ненавижу этих людей.
 figurines-greytider-2 = Ой-ой, кто потерял свою дубинку?
 figurines-greytider-3 = Робаст.
@@ -47,7 +57,11 @@ figurines-boxer-2 = Мы разберёмся на ринге, ясно?
 figurines-boxer-3 = Я. ЧЕМПИОН!!
 figurines-boxer-4 = Не смотрите на меня, в него стреляли, а не били.
 figurines-boxer-5 = Капитан, давай один на один.
+<<<<<<< HEAD
 figurines-captain-1 = Слава НТ!
+=======
+figurines-captain-1 = Слава NT!
+>>>>>>> goob
 figurines-captain-2 = Как я получил эту должность? Да.
 figurines-captain-3 = Ядерный диск в безопасности. Где? Где-то.
 figurines-captain-4 = Где моя айди?
@@ -135,8 +149,13 @@ figurines-rd-5 = Торт - это ложь!
 figurines-rd-6 = Черта, которую я ищу в учёном, это заменяемость.
 figurines-scientist-1 = Кто-то другой сделал эти бомбы!
 figurines-scientist-2 = Он попросил, чтобы его боргировали!
+<<<<<<< HEAD
 figurines-scientist-3 = Карп в РНД!
 figurines-scientist-4 = Взрыв в РНД!
+=======
+figurines-scientist-3 = Карп в НИО!
+figurines-scientist-4 = Взрыв в НИО!
+>>>>>>> goob
 figurines-scientist-5 = Кто-нибудь видел аномалию?
 figurines-scientist-6 = Аномалия взорвалась!
 figurines-cmo-1 = Датчики костюмов!
@@ -212,27 +231,42 @@ figurines-nukie-2 = Виски, Эхо, Виски.
 figurines-nukie-3 = Ядерка делает бум.
 figurines-nukie-4 = Какой код?
 figurines-nukie-5 = Командир?.. Это шарик...
+<<<<<<< HEAD
 figurines-nukie-elite-1 = Ни слова по нанотрейзен.
+=======
+figurines-nukie-elite-1 = Ни слова по нанотрейзеновски.
+>>>>>>> goob
 figurines-nukie-elite-2 = ЭТО ПИВНАЯ!
 figurines-nukie-elite-3 = Ребят, вы живы?
 figurines-nukie-elite-4 = Взрывайте и зачищайте!
 figurines-nukie-elite-5 = Добейте выживших.
 figurines-nukie-elite-6 = Хорошая работа, команда.
 figurines-nukie-commander-1 = ДОСТАНЬТЕ ЭТОТ ЧЁРТОВ ДИСК!
+<<<<<<< HEAD
 figurines-nukie-commander-2 = Fuckin' flukies.
+=======
+figurines-nukie-commander-2 = Ебучие мартышки.
+>>>>>>> goob
 figurines-nukie-commander-3 = Синдикат передаёт привет.
 figurines-nukie-commander-4 = Провал - это не вариант.
 figurines-nukie-commander-5 = Упс.
 figurines-footsoldier-1 = Я злой мальчик. С каждым днём всё меньше мальчик, с каждым днём всё больше злой.
 figurines-footsoldier-2 = Кого ты выберешь? Их или нас? Нас или их?
+<<<<<<< HEAD
 figurines-footsoldier-3 = Glory to the syndicate!
 figurines-footsoldier-4 = Down with Nanotrasen!
 figurines-footsoldier-5 = I'd rather die than join Nanotrasen.
+=======
+figurines-footsoldier-3 = Слава Синдикату!
+figurines-footsoldier-4 = Nanotrasen падёт!
+figurines-footsoldier-5 = Я лучше сдохну чем устроюсь в Nanotrasen.
+>>>>>>> goob
 figurines-wizard-1 = Ei Nath!
 figurines-wizard-2 = Wehgardium Leviosa!
 figurines-wizard-3 = Skidaddle skadoodle!
 figurines-wizard-4 = ФАЙРБОЛЛ!
 figurines-space-dragon-1 = Рыба поглотит станцию.
+<<<<<<< HEAD
 figurines-space-dragon-2 = Dragon de- Actually, nevermind.
 figurines-space-dragon-3 = Crew is delicious.
 figurines-space-dragon-4 = Don't you dare make sushi.
@@ -243,6 +277,18 @@ figurines-queen-3 = We consume all.
 figurines-queen-4 = We are the apex.
 figurines-queen-5 = You're just biomass.
 figurines-queen-6 = We must evolve.
+=======
+figurines-space-dragon-2 = Вообще-то Змей Го... Ладно, не важно.
+figurines-space-dragon-3 = Вкусный экипаж.
+figurines-space-dragon-4 = Даже не смей делать суши.
+figurines-space-dragon-5 = Эта станция слишком мала для нас двоих.
+figurines-queen-1 = Наши владения должны расширяться.
+figurines-queen-2 = Улью нужен корм.
+figurines-queen-3 = Мы поглощаем всё.
+figurines-queen-4 = Мы — вершина.
+figurines-queen-5 = Ты всего лишь биомасса.
+figurines-queen-6 = Мы должны эволюционировать.
+>>>>>>> goob
 
 # figurines-queen
 

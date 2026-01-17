@@ -38,7 +38,11 @@ public sealed partial class AtmosPipeLayersSystem : SharedAtmosPipeLayersSystem
         if (ent.Comp.PipeLayersLocked)
             return;
 
+<<<<<<< HEAD
         base.SetPipeLayer(ent, layer);
+=======
+        base.SetPipeLayer(ent, layer, user, used);
+>>>>>>> goob
 
         if (!TryComp<NodeContainerComponent>(ent, out var nodeContainer))
             return;

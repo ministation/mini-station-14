@@ -1,7 +1,10 @@
 ent-BaseMagazineBoxLightRifle = ammunition box (.30 rifle)
     .desc = { ent-BaseItem.desc }
 ent-MagazineBoxLightRifleBig = ammunition box (.30 rifle)
+<<<<<<< HEAD
     .suffix = Big
+=======
+>>>>>>> goob
     .desc = { ent-BaseMagazineBoxLightRifle.desc }
 ent-MagazineBoxLightRifle = ammunition box (.30 rifle)
     .desc = A cardboard box of .30 rifle rounds. Intended to hold general-purpose kinetic ammunition.

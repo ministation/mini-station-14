@@ -1,11 +1,21 @@
 // SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+>>>>>>> goob
 // SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Collections.Immutable;
 using Content.Server._DV.CosmicCult.Components;
+<<<<<<< HEAD
+=======
+using Content.Goobstation.Shared.Bible;
+using Content.Goobstation.Shared.Religion; // Goobstation - Bible
+>>>>>>> goob
 using Content.Server.Popups;
 using Content.Shared._DV.CosmicCult;
 using Content.Shared._DV.CosmicCult.Components;
@@ -37,6 +47,10 @@ public sealed class CosmicBlankSystem : EntitySystem
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly SharedStunSystem _stun = default!;
+<<<<<<< HEAD
+=======
+    [Dependency] private readonly DivineInterventionSystem _divineIntervention = default!;
+>>>>>>> goob
 
     public override void Initialize()
     {
@@ -56,6 +70,12 @@ public sealed class CosmicBlankSystem : EntitySystem
             return;
         }
 
+<<<<<<< HEAD
+=======
+        if (_divineIntervention.TouchSpellDenied(args.Target))
+            return;
+
+>>>>>>> goob
         if (args.Handled)
             return;
 

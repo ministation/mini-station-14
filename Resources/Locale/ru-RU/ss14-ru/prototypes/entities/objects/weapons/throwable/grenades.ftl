@@ -13,8 +13,13 @@ ent-SyndieMiniBomb = минибомба
 # Corvax-HiddenDesc-End
 ent-SelfDestructSeq = Самоуничтожение
     .desc = Уйти на своих условиях!
+<<<<<<< HEAD
 ent-SingularityGrenade = граната сингулярности
     .desc = Граната, которая имитирует силу сингулярности, собирая вещи в кучу.
+=======
+ent-SupermatterGrenade = граната суперматерии
+    .desc = Граната, имитирующая взрыв суперматерии, сбивающая предметы в кучу и взрывающаяся через некоторое время.
+>>>>>>> goob
 ent-WhiteholeGrenade = граната белой дыры
     .desc = Граната, которая некоторое время отталкивает всё вокруг.
 ent-NuclearGrenade = критическая масса
@@ -36,8 +41,13 @@ ent-TearGasGrenade = слезоточивая граната
     .desc = Граната со слезоточивым газом для борьбы с беспорядками. Вызывает раздражение, боль и заставляет вас выплакать глаза.
 ent-MetalFoamGrenade = металлопенная граната
     .desc = Аварийное приспособление, используемое для заделывания пробоин. Почти так же надёжно, как настоящие стены.
+<<<<<<< HEAD
 ent-AirGrenade = air grenade
     .desc = A special solid state chemical grenade used for quickly releasing standard air into a spaced area. Fills up to 30 tiles!
+=======
+ent-AirGrenade = воздушная граната
+    .desc = Специальная твердотельная химическая граната, используемая для быстрого выпуска стандартного воздуха в пространство. Заполняет до 30 клеток!
+>>>>>>> goob
 ent-GrenadeDummy = граната-обманка
     .desc = Граната есть - взрыва нет.
 # Corvax-HiddenDesc-Start

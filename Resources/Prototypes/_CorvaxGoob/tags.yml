@@ -1,0 +1,94 @@
+# В алфавитном порядке пж
+
+- type: Tag
+  id: AdvancedRetractor
+
+- type: Tag
+  id: BoneSetter
+
+- type: Tag
+  id: CarcTile
+
+- type: Tag
+  id: CartridgeLargeCaliber
+
+- type: Tag
+  id: Cautery
+
+- type: Tag
+  id: CHIMP
+
+- type: Tag
+  id: Drill
+
+- type: Tag
+  id: DroneShuttleLinkable
+
+- type: Tag
+  id: FlashlightSeclite
+
+- type: Tag
+  id: EnergyCautery
+
+- type: Tag
+  id: EnergyScalpel
+
+- type: Tag
+  id: Hemostat
+  
+- type: Tag
+  id: LavalandJaunter
+
+- type: Tag
+  id: LightTubeCrystalBlue
+
+- type: Tag
+  id: LightTubeCrystalGreen
+
+- type: Tag
+  id: LightTubeCrystalRed
+
+- type: Tag
+  id: Locator
+
+- type: Tag
+  id: LocatorWide
+
+- type: Tag
+  id: MagazineLargeCaliber
+
+- type: Tag
+  id: MineralScanner
+
+- type: Tag
+  id: MiningDrill
+
+- type: Tag
+  id: Photo
+
+- type: Tag
+  id: Retractor
+
+- type: Tag
+  id: SawElectric
+
+- type: Tag
+  id: Scalpel
+
+- type: Tag
+  id: ScalpelLaser
+
+- type: Tag
+  id: ScienceTool
+
+- type: Tag
+  id: SeismicCharge
+
+- type: Tag
+  id: Skills
+
+- type: Tag
+  id: TelescopicBaton
+
+- type: Tag
+  id: TelescopicShield

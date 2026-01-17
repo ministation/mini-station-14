@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 using Content.Shared.Interaction;
+=======
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: MIT
+
+>>>>>>> goob
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Radio.Components;
@@ -43,6 +51,7 @@ public abstract class SharedHeadsetSystem : EntitySystem
     {
         component.IsEquipped = false;
     }
+<<<<<<< HEAD
 
     // Corvax-Next-HeadsetSound-Start
     private void OnGetVerbs(EntityUid uid, HeadsetComponent component, ref GetVerbsEvent<Verb> args)
@@ -84,3 +93,6 @@ public abstract class SharedHeadsetSystem : EntitySystem
     }
     // Corvax-Next-HeadsetSound-End
 }
+=======
+}
+>>>>>>> goob

@@ -2,8 +2,17 @@
 uplink-pistol-viper-name = Гадюка
 uplink-pistol-viper-desc = Небольшой, легко скрываемый, но маломощный пистолет. Оснащён полностью автоматическим ресивером. Использует патроны калибра .35 авто.
 uplink-revolver-python-name = Питон
+<<<<<<< HEAD
 uplink-revolver-python-desc = Брутально простой, эффективный и громкий револьвер Синдиката. Поставляется с бронебойными патронами. Использует патроны калибра .45 магнум.
 uplink-pistol-cobra-name = Кобра
+=======
+uplink-estoc-bundle-name = Эсток
+uplink-estoc-bundle-desc = Марксманская винтовка для снайперской поддержки, оснащённая прицелом средней дальности для боя на дальние расстояния. В комплекте два магазина для винтовки (.20).
+uplink-revolver-python-desc = Брутально простой, эффективный и громкий револьвер Синдиката. Поставляется с бронебойными патронами. Использует патроны калибра .45 магнум.
+uplink-pistol-cobra-name = Кобра
+uplink-gloves-knuckleduster-name = Кастеты Синдиката
+uplink-gloves-knuckleduster-desc = Пара кастетов из пластитанового сплава, позволяющих ударить достаточно сильно, чтобы разбить челюсть Капитана на куски.
+>>>>>>> goob
 uplink-pistol-cobra-desc = Пистолет суровых робастных агентов, с интегрированным глушителем. Использует патроны калибра .25 безгильзовый.
 uplink-rifle-mosin-name = Старая винтовка
 uplink-rifle-mosin-desc = Затворная винтовка, повидавшая не одну войну. Не современная ни по каким стандартам, заряжается вручную и имеет ужасную отдачу, но зато дешёвая.
@@ -19,8 +28,11 @@ uplink-fire-axe-flaming-name = Пылающий топор
 uplink-fire-axe-flaming-desc = Классическое оружие, оснащённое передовой атмос-технологией, позволяющей ему поджигать цели. Теперь с прочной прорезиненной рукояткой!
 uplink-gloves-north-star-name = Перчатки Полярной звезды
 uplink-gloves-north-star-desc = Пара перчаток, которые значительно сокращают время между ударами, позволяя избивать людей до смерти шквалом ударов.
+<<<<<<< HEAD
 uplink-gloves-knuckleduster-name = Syndicate Knuckle Dusters
 uplink-gloves-knuckleduster-desc = A pair of plastitanium knuckle dusters that let you punch hard enough to break the captains jaw into pieces.
+=======
+>>>>>>> goob
 # Explosives
 uplink-explosive-grenade-name = Разрывная граната
 uplink-explosive-grenade-desc = Простая граната с 3,5-секундным запалом, ориентированная на поражение личного состава. Наносит минимальные повреждения стенам и полу.
@@ -29,9 +41,15 @@ uplink-flash-grenade-desc = Стандартная светошумовая гр
 uplink-smoke-grenade-name = Дымовая граната
 uplink-smoke-grenade-desc = Граната, выпускающая огромное облако дыма, идеально подходит для того, чтобы убить кого-то в тени или незаметно скрыться.
 uplink-mini-bomb-name = Минибомба Синдиката
+<<<<<<< HEAD
 uplink-mini-bomb-desc = Маломощное, высокоэффективное точечное взрывное устройство для диверсий, с 5-секундным взрывателем. Идеально подходит для быстрого уничтожения устройств, трупа или чего-либо ещё.
 uplink-singularity-grenade-name = Граната сингулярности
 uplink-singularity-grenade-desc = Граната, имитирующая силу сингулярности, генерирует мощный гравитационный колодец.
+=======
+uplink-mini-bomb-desc = Маломощное, высокоэффективное точечное взрывное устройство для диверсий, с 5-секундным взрывателем. Идеально подходит для быстрого уничтожения устройств, трупа или чего-либо ещё
+uplink-supermatter-grenade-name = Граната суперматерии
+uplink-supermatter-grenade-desc = Граната, имитирующая взрыв суперматерии, создает мощный гравитационный колодец. Взрыв, сравнимый с мини-бомбой.
+>>>>>>> goob
 uplink-whitehole-grenade-name = Граната белой дыры
 uplink-whitehole-grenade-desc = Граната, которая отталкивает всё вокруг в течение примерно 10 секунд. Очень полезно в небольших помещениях и при преследовании.
 uplink-penguin-grenade-name = Пингвин-гренадёр
@@ -59,6 +77,7 @@ uplink-shrapnel-grenade-desc = Выпускает серию острых оск
 # Ammo
 uplink-pistol-magazine-name = Пистолетный магазин (.35 авто)
 uplink-pistol-magazine-desc = Пистолетный магазин на 10 патронов. Совместим с "Гадюкой".
+<<<<<<< HEAD
 uplink-pistol-magazine-high-name = Автопистолетный магазин (.35 авто)
 uplink-pistol-magazine-high-desc = Автопистолетный магазин на 16 патронов. Совместим с "Гадюкой".
 uplink-pistol-magazine-c20r-name = Магазин ПП (.35 авто)
@@ -67,6 +86,10 @@ uplink-magazine-bulldog-pellet-name = Drum magazine (.50 pellet)
 uplink-magazine-bulldog-pellet-desc = Shotgun magazine with 8 shells filled with buckshot. Compatible with the Bulldog.
 uplink-magazine-bulldog-slug-name = Drum magazine (.50 slug)
 uplink-magazine-bulldog-slug-desc = Shotgun magazine with 8 shells filled with slugs. Compatible with the Bulldog.
+=======
+uplink-pistol-magazine-c20r-name = Магазин ПП (.35 авто)
+uplink-pistol-magazine-c20r-desc = Магазин ПП на 30 патронов. Совместим с C-20r.
+>>>>>>> goob
 uplink-pistol-magazine-caseless-name = Пистолетный магазин (.25 безгильзовые)
 uplink-pistol-magazine-caseless-desc = Пистолетный магазин на 10 патронов. Совместим с "Коброй".
 uplink-speedloader-magnum-name = Спидлоадер (.45 магнум ББ)
@@ -90,7 +113,11 @@ uplink-chest-rig-name = Армейская ременно-плечевая си�
 uplink-chest-rig-desc = Взрывоустойчивая тактическая разгрузочная система, используемая для хранения предательского снаряжения.
 uplink-emag-name = Криптографический секвенсор
 uplink-emag-desc = Он же ЕМАГ, визитная карточка Синдиката. Устройство, способное взламывать различные станционные устройства. Перезаряжается автоматически.
+<<<<<<< HEAD
 uplink-access-breaker-name = Взломщик доступа
+=======
+uplink-access-breaker-name = Разрушитель аутентификации
+>>>>>>> goob
 uplink-access-breaker-desc = Взломанный конфигуратор доступов и хороший друг емага. Это устройство способно принудительно открывать шлюзы, а также стирать требование доступа с оборудования станции. Перезаряжается автоматически.
 uplink-agent-id-card-name = ID карта Агента
 uplink-agent-id-card-desc = Модифицированная ID карта, которая может копировать доступы с других карт и менять своё имя и должность по усмотрению.
@@ -102,7 +129,11 @@ uplink-reinforcement-radio-name = Телепорт подкрепления
 uplink-reinforcement-radio-traitor-desc = Телепортирует в качестве подкрепления сомнительного качества агента. Не имеет кнопки отключения, покупайте его только если вы готовы к вечеринке. Вызовите медика, шпиона или вора, чтобы они помогли вам. Удачи.
 uplink-reinforcement-radio-nukeops-name = Телепорт Ядерного оперативника
 uplink-reinforcement-radio-nukeops-desc = Телепортирует в качестве подкрепления сомнительного качества ядерного оперативника. Не имеет кнопки отключения, покупайте его только если вы готовы к вечеринке. У них будет базовое снаряжение ядерного оперативника.
+<<<<<<< HEAD
 uplink-reinforcement-radio-cyborg-assault-name = Телепорт штурмового киборга Синдиката
+=======
+uplink-reinforcement-radio-cyborg-assault-name = Телепорт штурмового борга Синдиката
+>>>>>>> goob
 uplink-reinforcement-radio-cyborg-assault-desc = Машина для убийств с доступом к энергомечу, пулемёту, криптографическому секвенсору и пинпоинтеру.
 uplink-stealth-box-name = Стелс-коробка
 uplink-stealth-box-desc = Ящик, оснащённый технологией невидимости. Пробирайтесь незамеченными, но не двигайтесь слишком быстро, иначе вы раскроете себя!
@@ -122,9 +153,15 @@ uplink-radio-jammer-name = Глушитель связи
 # Corvax-HiddenDesc-Start
 uplink-radio-jammer-desc = При активации это устройство блокирует любую исходящую поблизости радиосвязь и скрывает датчики комбинезонов с мониторов. Замаскирован под оценочный инструмент.
 # Corvax-HiddenDesc-End
+<<<<<<< HEAD
 uplink-syndicate-weapon-module-name = Оружейный модуль киборга
 uplink-syndicate-weapon-module-desc = Модернизирует киборга с помощью мачете и продвинутого лазерного пистолета.
 uplink-syndicate-martyr-module-name = Модуль киборга Мученик
+=======
+uplink-syndicate-weapon-module-name = Оружейный модуль борга
+uplink-syndicate-weapon-module-desc = Модернизирует борга с помощью мачете и продвинутого лазерного пистолета.
+uplink-syndicate-martyr-module-name = Модуль борга Мученик
+>>>>>>> goob
 uplink-syndicate-martyr-module-desc = Превратите с помощью этого модуля своего емагнутого друга-борга в ходячую бомбу. Убедитесь, что они верны вашему делу, результаты могут варьироваться.
 uplink-singularity-beacon-name = Маяк сингулярности
 uplink-singularity-beacon-desc = Устройство, притягивающее сингулярность. Должно быть закреплено и запитано. Будучи поглощённым, заставляет сингулярность расти.
@@ -184,10 +221,17 @@ uplink-surplus-bundle-name = Ящик припасов Синдиката
 uplink-surplus-bundle-desc = Содержит случайное снаряжение Синдиката, общей стоимостью в 50 телекристаллов. Оно может быть как бесполезным хламом, так и реально крутым.
 uplink-super-surplus-bundle-name = Ящик суперприпасов Синдиката
 uplink-super-surplus-bundle-desc = Содержит случайное снаряжение Синдиката, общей стоимостью в 125 телекристаллов.
+<<<<<<< HEAD
 uplink-starter-kit-name = Basic Operative Bundle
 uplink-starter-kit-desc = Contains 40 telecrystals of basic operative gear. For those operatives who just don't know what they should buy.
 # Tools
 uplink-toolbox-name = Ящик инструментов
+=======
+# Tools
+uplink-toolbox-name = Ящик инструментов
+uplink-starter-kit-name = Базовый пакет Оперативника
+uplink-starter-kit-desc = Содержит снаряжение на 200 телекристаллов. Для оперативников, кто не знает, что приобрести.
+>>>>>>> goob
 uplink-toolbox-desc = Полный набор инструментов для предателя с тягой к механике. Включает пару изолированных боевых перчаток и противогаз Синдиката.
 uplink-syndicate-jaws-of-life-name = Челюсти жизни
 uplink-syndicate-jaws-of-life-desc = Комбинация лома и кусачек. Используется для проникновения на станцию или в её отделы.
@@ -222,13 +266,17 @@ uplink-cluster-banana-peel-name = Кластерный банан
 uplink-cluster-banana-peel-desc = После приземления распадается на 6 взрывных банановых кожур, которые автоматически детонируют через 20 секунд, если на них никто не поскользнётся.
 uplink-cane-blade-name = Трость с клинком
 uplink-cane-blade-desc = Трость со спрятанным клинком, который можно в любой момент вынуть.
+<<<<<<< HEAD
 uplink-saw-advanced-name = Advanced Circular Saw
 uplink-saw-advanced-desc = A bleeding-edge surgical implement designed to cut through flesh and bone alike.
+=======
+>>>>>>> goob
 # Armor
 uplink-chameleon-name = Набор "Хамелеон"
 uplink-chameleon-desc = Рюкзак, полный вещей, оснащённых технологией хамелеона, позволяющих вам маскироваться под кого угодно на станции, и даже больше!
 uplink-clothing-no-slips-shoes-name = Нескользящая обувь
 uplink-clothing-no-slips-shoes-desc = Ботинки-хамелеоны, которые защищают вас от подскальзывания.
+<<<<<<< HEAD
 uplink-clothing-chameleon-thieving-gloves-name = Chameleon Thieving Gloves
 uplink-clothing-chameleon-thieving-gloves-desc = Discreetly steal from pockets and improve your thieving technique with these fancy new gloves. They can change appearance to match any pair of gloves!
 uplink-clothing-thieving-gloves-name = Воровские перчатки
@@ -236,6 +284,15 @@ uplink-clothing-thieving-gloves-desc = Незаметно обчищайте к�
 uplink-clothing-outer-vest-web-elite-name = Elite Web Vest
 uplink-clothing-outer-vest-web-elite-desc = A synthetic armor vest. This one has added webbing and heat resistant fibers.
 uplink-clothing-outer-vest-web-name = Тактический жилет
+=======
+uplink-clothing-thieving-gloves-name = Воровские перчатки
+uplink-clothing-chameleon-thieving-gloves-name = Хамелеонские перчатки вора
+uplink-clothing-chameleon-thieving-gloves-desc = Незаметно обчищайте карманы и улучшайте свой навык воровства с помощью этих новых модных перчаток. Они даже могут менять свой внешний вид, чтобы выглядеть как любая другая пара перчаток!
+uplink-clothing-thieving-gloves-desc = Незаметно обчищайте карманы и улучшайте свой навык воровства с помощью этих новых модных перчаток. Они даже выглядят как обычные!
+uplink-clothing-outer-vest-web-name = Тактический жилет
+uplink-clothing-outer-vest-web-elite-name = Elite Web Vest
+uplink-clothing-outer-vest-web-elite-desc = A synthetic armor vest. This one has added webbing and heat resistant fibers.
+>>>>>>> goob
 uplink-clothing-outer-vest-web-desc = Синтетический бронежилет. Имеет дополнительные ремни и баллистические пластины.
 uplink-hardsuit-syndie-name = Скафандр Синдиката
 uplink-hardsuit-syndie-desc = Широко известный бронированный кроваво-красный скафандр Синдиката, позволяющий выходить в открытый космос и устойчивый к пулям.
@@ -277,7 +334,11 @@ uplink-combat-medipen-desc = Одноразовый медипен, содерж
 uplink-stimpack-name = Инъектор гиперзина
 uplink-stimpack-desc = Легендарный химический коктейль, производимый компанией Donk Co. для Синдиката. Одна инъекция этого вещества увеличивает скорость бега и позволяет быстрее восстанавливаться после оглушения в течение 30-ти секунд.
 uplink-stimkit-name = Набор инъекторов гиперзина
+<<<<<<< HEAD
 uplink-stimkit-desc = Аптечка, содержащая 6 микроинъекторов гиперзина, каждый из которых содержит дозу гиперзина на 15 секунд.
+=======
+uplink-stimkit-desc = Аптечка, содержащая 8 микроинъекторов гиперзина, каждый из которых содержит дозу гиперзина на 15 секунд.
+>>>>>>> goob
 uplink-syndicate-segway-crate-name = Сегвей Синдиката
 uplink-syndicate-segway-crate-desc = Будьте врагом корпорации на стиле.
 uplink-syndicate-sponge-box-name = Коробка губок Синдиката
@@ -332,6 +393,15 @@ uplink-combat-bakery-desc = Набор подпольного печёного �
 uplink-business-card-name = Визитная карточка Синдиката
 uplink-business-card-desc = Визитная карточка, которую можно передать кому-нибудь, чтобы продемонстрировать свою принадлежность к Синдикату, или оставить на месте преступления, чтобы подшутить над детективом. Вы можете приобрести не более трёх таких визиток.
 uplink-fake-mindshield-name = Фальшивый Щит разума
+<<<<<<< HEAD
 uplink-fake-mindshield-desc = Переключаемый имплант, способный имитировать те же сигналы, что испускает настоящий Щит разума, когда он включен, обманывая способные визоры, заставляя их думать, что у вас есть Щит разума (имплант марки Nanotrasen не предоставляется).
 uplink-smuggler-satchel-name = Сумка контрабандиста
+=======
+uplink-contraband-lighter-name = Коробка контрабандных зажигалок
+uplink-contraband-lighter-desc = Загадочная коробка, в которой гарантировано будет брендовая зажигалка Синдиката. Не требует топлива.
+uplink-fake-mindshield-desc = Переключаемый имплант, способный имитировать те же сигналы, что испускает настоящий Щит разума, когда он включен, обманывая способные визоры, заставляя их думать, что у вас есть Щит разума (имплант марки NanoTrasen не предоставляется).
+uplink-smuggler-satchel-name = Сумка контрабандиста
+uplink-acolyte-armor-name = Броня преспешника
+uplink-acolyte-armor-desc = Содержит броню преспешника, необходимую каждому лидеру культа. Выглядящий зловеще элемент брони, сделанный из костей, и на удивление устойчивый к повреждениям.
+>>>>>>> goob
 uplink-smuggler-satchel-desc = Удобная, подозрительная на вид сумка. Достаточно плоская, чтобы поместиться под напольной плиткой.

@@ -4,7 +4,11 @@ ent-AdminInstantEffectEMP = { ent-AdminInstantEffectBase }
     .suffix = ЭМИ
     .desc = { ent-AdminInstantEffectBase.desc }
 ent-AdminInstantEffectBluespace = { ent-AdminInstantEffectBase }
+<<<<<<< HEAD
     .suffix = BluespaceFlash
+=======
+    .suffix = Блюспейс вспышка
+>>>>>>> goob
     .desc = { ent-AdminInstantEffectBase.desc }
 ent-AdminInstantEffectFlash = { ent-AdminInstantEffectBase }
     .suffix = Вспышка

@@ -1,5 +1,6 @@
 ent-FoodTacoShell = taco shell
     .desc = A taco shell, easy to hold, but falls on its side when put down.
+<<<<<<< HEAD
 ent-FoodTacoBase = { ent-FoodInjectableBase }
     .desc = { ent-FoodInjectableBase.desc }
 ent-FoodTacoBeef = beef taco
@@ -18,3 +19,5 @@ ent-FoodTacoDragon = draco
     .desc = A dragon taco, which is technically also a fish taco.
 ent-FoodMealSoftTaco = soft taco
     .desc = Take a bite!
+=======
+>>>>>>> goob

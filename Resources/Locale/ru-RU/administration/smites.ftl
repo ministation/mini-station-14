@@ -60,6 +60,10 @@ admin-smite-omni-accent-name = Омни-акцент
 
 ## Smite descriptions
 
+<<<<<<< HEAD
+=======
+admin-smite-hell-teleport-name = отправить в Ад
+>>>>>>> goob
 admin-smite-explode-description = Взрывает цель.
 admin-smite-chess-dimension-description = Изгоняет цель в шахматное измерение.
 admin-smite-set-alight-description = Поджигает цель.
@@ -102,6 +106,10 @@ admin-smite-terminate-description = Создаёт экстерминатора 
 admin-smite-super-slip-description = Очень сильно поскальзывает цель.
 admin-smite-omni-accent-description = Заставляет цель говорить с почти каждым возможным акцентом.
 admin-smite-super-bonk-lite-description = Заставляет цель удариться о каждый стол на станции и за её пределами. Прекращает действовать после смерти цели.
+<<<<<<< HEAD
+=======
+admin-smite-hell-teleport-description = Телепортирует объект в Ад.
+>>>>>>> goob
 
 ## Tricks descriptions
 

@@ -10,7 +10,11 @@ ent-SignDirectionalSec = знак "служба безопасности"
     .desc = Указатель в сторону отдела службы безопасности.
 ent-SignDirectionalBrig = знак "бриг"
     .desc = Указатель в сторону брига.
+<<<<<<< HEAD
 ent-SignDirectionalChapel = знак "церковь"
+=======
+ent-SignDirectionalChapel = знак "храм"
+>>>>>>> goob
     .desc = Указатель в сторону церкви.
 ent-SignDirectionalChemistry = знак "химлаб"
     .desc = Указатель в сторону химической лаборатории.
@@ -84,8 +88,13 @@ ent-SignHydro1 = знак "гидропоника"
     .desc = Знак, указывающий на гидропонику.
 ent-SignLibrary = знак "библиотека"
     .desc = Знак, указывающий на библиотеку.
+<<<<<<< HEAD
 ent-SignChapel = знак "церковь"
     .desc = Знак, указывающий на церковь.
+=======
+ent-SignChapel = знак "храм"
+    .desc = Знак, указывающий на храм.
+>>>>>>> goob
 ent-SignHead = знак "глава"
     .desc = Официальный знак, указывающий на место обитания сертифицированного Nanotrasen руководителя отдела.
 ent-SignConference = знак "конференц-зал"
@@ -128,7 +137,11 @@ ent-SignMorgue = знак "морг"
     .desc = Знак, указывающий на морг.
 ent-SignPrison = знак "тюрьма"
     .desc = Знак, указывающий на тюрьму.
+<<<<<<< HEAD
 ent-SignRND = знак "РнД"
+=======
+ent-SignRND = знак "НИО"
+>>>>>>> goob
     .desc = Знак, указывающий на отдел исследования и разработки.
 ent-SignScience = знак "наука"
     .desc = Знак, указывающий на научный отсек.
@@ -150,8 +163,13 @@ ent-SignCans = знак "канистры"
     .desc = Знак, указывающий на удачное присутствие канистр газов.
 ent-SignBio = знак "био лаб"
     .desc = Знак, указывающий на биологическую лабораторию.
+<<<<<<< HEAD
 ent-SignGenpop = genpop sign
     .desc = A sign indicating the genpop prison.
+=======
+ent-SignGenpop = знак "общий блок"
+    .desc = Знак, указывающий на общую зону тюрьмы.
+>>>>>>> goob
 ent-SignBiohazard = знак "биологическая угроза"
     .desc = Знак, предупреждающий о биологической опасности.
 ent-SignPsychology = знак "психолог"
@@ -273,8 +291,13 @@ ent-SignSomethingOld2 = старый плакат
     .desc = Выглядит так, будто планета разламывается врезающейся в неё станцией. Страшновато.
 ent-SignSecurity = знак "служба безопасности"
     .desc = Знак, изображающий эмблему службы безопасности.
+<<<<<<< HEAD
 ent-SignDetective = Detective sign
     .desc = A sign depicting the detective's office.
+=======
+ent-SignDetective = знак "детектив"
+    .desc = Знак, изображающий эмблему офиса детектива.
+>>>>>>> goob
 ent-SignPlaque = золотая табличка
     .desc = Престижная золотая табличка.
 ent-SignKiddiePlaque = простая табличка

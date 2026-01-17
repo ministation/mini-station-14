@@ -1,7 +1,12 @@
 ent-CrateServiceJanitorialSupplies = ящик с уборочным инвентарём
     .desc = Победите копоть и грязь с Незаменимыми Припасами для Уборки от Nanotrasen! Содержит три ведра, таблички мокрого пола и очищающие гранаты. Также содержит одну швабру, тряпку, щётку, чистящий спрей и мусорный пакет.
+<<<<<<< HEAD
 ent-CrateServiceCleanerGrenades = bulk cleanades crate
     .desc = Contains two boxes of cleaner grenades, for those deeply-entrenched stains.
+=======
+ent-CrateServiceCleanerGrenades = ящик чистящих гранат
+    .desc = Содержит две коробки чистящих гранат, для глубоко въевшихся пятен.
+>>>>>>> goob
 ent-CrateServiceReplacementLights = ящик запасных лампочек
     .desc = Да воссияет над станцией Свет Эфира! Или хотя бы свет сорока двух лампочек-труб и двадцати одной обычной лампочки.
 ent-CrateServiceHolidayLights = ящик праздничных лампочек
@@ -19,6 +24,10 @@ ent-CrateServiceBureaucracy = ящик бюрократических припа
 ent-CrateServiceFaxMachine = ящик с факсом
     .desc = Факсовый аппарат и отвёртка для настройки его имени.
 ent-CrateServicePersonnel = ящик для найма персонала
+<<<<<<< HEAD
+=======
+    .suffix = Защищённый
+>>>>>>> goob
     .desc = Содержит коробку с КПК и чистыми ID картами.
 ent-CrateServiceBooks = ящик книг
     .desc = Содержит 10 пустых книг случайного вида.
@@ -37,5 +46,12 @@ ent-CrateTrashCartFilled = { ent-CrateTrashCart }
     .desc = { ent-CrateTrashCart.desc }
 ent-CrateCandles = ящик свечей
     .desc = Содержит 4 коробки свечей, 2 больших и 2 маленьких. Для создания атмосферы или ещё чего-нибудь.
+<<<<<<< HEAD
 ent-CrateServiceColorfulLights = colorful lights crate
     .desc = It's not a party until it's hard to see, a little disorienting, and your ears hurt.
+=======
+ent-CrateHolySupplies = ящик со святыми принадлежностями
+    .desc = Содержит Библию и 2 кувшина святой воды для религиозных нужд
+ent-CrateServiceColorfulLights = ящик с разноцветными огнями
+    .desc = Вечеринка не в счёт, пока не начинает всё плохо видеть, немного кружится голова и болят уши.
+>>>>>>> goob

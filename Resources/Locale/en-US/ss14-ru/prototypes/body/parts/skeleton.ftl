@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ent-PartSkeleton = skeleton body part
     .desc = { ent-BaseItem.desc }
 ent-TorsoSkeleton = skeleton torso
@@ -20,3 +21,29 @@ ent-LeftFootSkeleton = left skeleton foot
     .desc = { ent-PartSkeleton.desc }
 ent-RightFootSkeleton = right skeleton foot
     .desc = { ent-PartSkeleton.desc }
+=======
+ent-PartSkeletonBase = skeleton body part
+    .desc = { ent-BasePartInorganic.desc }
+ent-ChestSkeleton = skeleton chest
+    .desc = { ent-PartSkeletonBase.desc }
+ent-GroinSkeleton = skeleton groin
+    .desc = { ent-PartSkeletonBase.desc }
+ent-HeadSkeleton = skull
+    .desc = Alas poor Yorick...
+ent-LeftArmSkeleton = left skeleton arm
+    .desc = { ent-PartSkeletonBase.desc }
+ent-RightArmSkeleton = right skeleton arm
+    .desc = { ent-PartSkeletonBase.desc }
+ent-LeftHandSkeleton = left skeleton hand
+    .desc = { ent-PartSkeletonBase.desc }
+ent-RightHandSkeleton = right skeleton hand
+    .desc = { ent-PartSkeletonBase.desc }
+ent-LeftLegSkeleton = left skeleton leg
+    .desc = { ent-PartSkeletonBase.desc }
+ent-RightLegSkeleton = right skeleton leg
+    .desc = { ent-PartSkeletonBase.desc }
+ent-LeftFootSkeleton = left skeleton foot
+    .desc = { ent-PartSkeletonBase.desc }
+ent-RightFootSkeleton = right skeleton foot
+    .desc = { ent-PartSkeletonBase.desc }
+>>>>>>> goob

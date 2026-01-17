@@ -1,4 +1,12 @@
-﻿using Content.Server.Worldgen.Components.Debris;
+// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server.Worldgen.Components.Debris;
 using Content.Shared.Maps;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -12,8 +20,8 @@ namespace Content.Server.Worldgen.Systems.Debris;
 public sealed class SimpleFloorPlanPopulatorSystem : BaseWorldSystem
 {
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly ITileDefinitionManager _tileDefinition = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
+    [Dependency] private readonly TurfSystem _turf = default!;
 
     /// <inheritdoc />
     public override void Initialize()
@@ -30,7 +38,11 @@ public sealed class SimpleFloorPlanPopulatorSystem : BaseWorldSystem
         while (enumerator.MoveNext(out var tile))
         {
             var coords = _map.GridTileToLocal(uid, grid, tile.Value.GridIndices);
+<<<<<<< HEAD
             var selector = tile.Value.Tile.GetContentTileDefinition(_tileDefinition).ID;
+=======
+            var selector = _turf.GetContentTileDefinition(tile.Value).ID;
+>>>>>>> goob
             if (!component.Caches.TryGetValue(selector, out var cache))
                 continue;
 
@@ -47,4 +59,3 @@ public sealed class SimpleFloorPlanPopulatorSystem : BaseWorldSystem
         }
     }
 }
-

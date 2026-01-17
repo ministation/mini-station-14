@@ -1,20 +1,54 @@
+// SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 blueDev2 <89804215+blueDev2@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ark <189933909+ark1368@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared._DV.Chemistry.Components; // DeltaV
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.Chemistry.Reagent;
+using Content.Shared.Body.Components;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
-using Content.Shared.FixedPoint;
+using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Forensics;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Stacks;
 using Content.Shared.Nutrition.EntitySystems;
+<<<<<<< HEAD
 using Content.Shared._CorvaxNext.Skills;
+=======
+using Content.Shared._CorvaxGoob.Skills;
+using Content.Server._CorvaxGoob.Skills;
+using Robust.Shared.Timing; // Goobstation
+using System.Linq; // Goobstation
+using Content.Shared.Chemistry.Reagent; // Goobstation
+>>>>>>> goob
 
 namespace Content.Server.Chemistry.EntitySystems;
 
@@ -23,9 +57,16 @@ public sealed class InjectorSystem : SharedInjectorSystem
     [Dependency] private readonly BloodstreamSystem _blood = default!;
     [Dependency] private readonly ReactiveSystem _reactiveSystem = default!;
     [Dependency] private readonly OpenableSystem _openable = default!;
+<<<<<<< HEAD
     [Dependency] private readonly SharedSkillsSystem _skills = default!;
 
     private const float DelayModifierWithoutSkill = 5; // Corvax-Next-Skills
+=======
+    [Dependency] private readonly SkillsSystem _skills = default!; // CorvaxGoob-Skills
+
+    private const float DelayModifierWithoutSkill = 5; // CorvaxGoob-Skills
+    [Dependency] private readonly IGameTiming _timing = default!; // Goobstation
+>>>>>>> goob
 
     public override void Initialize()
     {
@@ -112,6 +153,12 @@ public sealed class InjectorSystem : SharedInjectorSystem
     /// </summary>
     private void InjectDoAfter(Entity<InjectorComponent> injector, EntityUid target, EntityUid user)
     {
+        if (HasComp<BlockInjectionComponent>(target)) // DeltaV
+        {
+            Popup.PopupEntity(Loc.GetString("injector-component-deny-user"), target, user);
+            return;
+        }
+
         // Create a pop-up for the user
         if (injector.Comp.ToggleState == InjectorToggleMode.Draw)
         {
@@ -180,12 +227,12 @@ public sealed class InjectorSystem : SharedInjectorSystem
             if (injector.Comp.ToggleState == InjectorToggleMode.Inject)
             {
                 AdminLogger.Add(LogType.ForceFeed,
-                    $"{EntityManager.ToPrettyString(user):user} is attempting to inject {EntityManager.ToPrettyString(target):target} with a solution {SharedSolutionContainerSystem.ToPrettyString(solution):solution}");
+                    $"{ToPrettyString(user):user} is attempting to inject {ToPrettyString(target):target} with a solution {SharedSolutionContainerSystem.ToPrettyString(solution):solution}");
             }
             else
             {
                 AdminLogger.Add(LogType.ForceFeed,
-                    $"{EntityManager.ToPrettyString(user):user} is attempting to draw {injector.Comp.TransferAmount.ToString()} units from {EntityManager.ToPrettyString(target):target}");
+                    $"{ToPrettyString(user):user} is attempting to draw {injector.Comp.TransferAmount.ToString()} units from {ToPrettyString(target):target}");
             }
         }
         else
@@ -196,19 +243,26 @@ public sealed class InjectorSystem : SharedInjectorSystem
             if (injector.Comp.ToggleState == InjectorToggleMode.Inject)
             {
                 AdminLogger.Add(LogType.Ingestion,
-                    $"{EntityManager.ToPrettyString(user):user} is attempting to inject themselves with a solution {SharedSolutionContainerSystem.ToPrettyString(solution):solution}.");
+                    $"{ToPrettyString(user):user} is attempting to inject themselves with a solution {SharedSolutionContainerSystem.ToPrettyString(solution):solution}.");
             }
             else
             {
                 AdminLogger.Add(LogType.ForceFeed,
-                    $"{EntityManager.ToPrettyString(user):user} is attempting to draw {injector.Comp.TransferAmount.ToString()} units from themselves.");
+                    $"{ToPrettyString(user):user} is attempting to draw {injector.Comp.TransferAmount.ToString()} units from themselves.");
             }
         }
 
+<<<<<<< HEAD
         // Corvax-Next-Skills-Start
         if (!_skills.HasSkill(user, Skills.MedicalEquipment))
             actualDelay *= DelayModifierWithoutSkill;
         // Corvax-Next-Skills-End
+=======
+        // CorvaxGoob-Skills-Start
+        if (!_skills.HasSkill(user, Skills.MedicalEquipment))
+            actualDelay *= DelayModifierWithoutSkill;
+        // CorvaxGoob-Skills-End
+>>>>>>> goob
 
         DoAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, user, actualDelay, new InjectorDoAfterEvent(), injector.Owner, target: target, used: injector.Owner)
         {
@@ -246,7 +300,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
         // Move units from attackSolution to targetSolution
         var removedSolution = SolutionContainers.SplitSolution(target.Comp.ChemicalSolution.Value, realTransferAmount);
 
-        _blood.TryAddToChemicals(target, removedSolution, target.Comp);
+        _blood.TryAddToChemicals(target.AsNullable(), removedSolution);
 
         _reactiveSystem.DoEntityReaction(target, removedSolution, ReactionMethod.Injection);
 
@@ -262,6 +316,9 @@ public sealed class InjectorSystem : SharedInjectorSystem
     private bool TryInject(Entity<InjectorComponent> injector, EntityUid targetEntity,
         Entity<SolutionComponent> targetSolution, EntityUid user, bool asRefill)
     {
+        if (HasComp<BlockInjectionComponent>(targetEntity))  // DeltaV
+            return false;
+
         if (!SolutionContainers.TryGetSolution(injector.Owner, injector.Comp.SolutionName, out var soln,
                 out var solution) || solution.Volume == 0)
             return false;
@@ -411,6 +468,14 @@ public sealed class InjectorSystem : SharedInjectorSystem
                 ref target.Comp.BloodSolution))
         {
             var bloodTemp = SolutionContainers.SplitSolution(target.Comp.BloodSolution.Value, drawAmount);
+            // Goobstation start
+            // On blood draw, freshness will almost always be at it's best
+            foreach (var dna in bloodTemp
+                .SelectMany(r => r.Reagent.EnsureReagentData().OfType<DnaData>()))
+            {
+                dna.Freshness = _timing.CurTime;
+            }
+            // Goobstation end
             SolutionContainers.TryAddSolution(injectorSolution, bloodTemp);
         }
 

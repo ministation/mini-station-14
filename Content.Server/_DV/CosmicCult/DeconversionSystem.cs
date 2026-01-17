@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+using Content.Goobstation.Common.Religion;
+>>>>>>> goob
 using Content.Server._DV.CosmicCult.Components;
 using Content.Shared._DV.CosmicCult;
 using Content.Shared._DV.CosmicCult.Components;
@@ -66,6 +70,21 @@ public sealed class DeconversionSystem : EntitySystem
             || _mobState.IsDead(args.Target.Value))
             return;
 
+<<<<<<< HEAD
+=======
+        if (!HasComp<BibleUserComponent>(args.User))
+        {
+            _popup.PopupEntity(Loc.GetString("cleanse-item-sizzle",
+                ("target", Identity.Entity(args.Used, EntityManager))),
+                args.User,
+                args.User);
+            _audio.PlayPvs(uid.Comp.SizzleSound, args.User);
+            _damageable.TryChangeDamage(args.User, uid.Comp.SelfDamage, origin: uid);
+            _delay.TryResetDelay((uid, useDelay));
+            return;
+        }
+
+>>>>>>> goob
         _popup.PopupEntity(Loc.GetString("cleanse-deconvert-attempt-begin",
             ("target", Identity.Entity(args.User, EntityManager))),
             args.User,

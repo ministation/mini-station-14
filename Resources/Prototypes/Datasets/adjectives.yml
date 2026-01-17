@@ -2,4 +2,8 @@
   id: Adjectives
   values:
     prefix: adjectives-dataset-
+<<<<<<< HEAD
     count: 956 # Corvax-MRP-Edit
+=======
+    count: 956
+>>>>>>> goob

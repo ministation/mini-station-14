@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+ent-BaseDionaOrganUnGibbable = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+>>>>>>> goob
 ent-BaseDionaOrgan = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-OrganDionaBrain = мозг

@@ -39,16 +39,28 @@ ui-options-admin-sounds = Музыка админов
 ui-options-bwoink-sound = Звук уведомления Ахелпа
 ui-options-volume-label = Громкость
 ui-options-display-label = Дисплей
+<<<<<<< HEAD
+=======
+# Goobstation - Highlight Volume
+ui-options-highlight-volume = Громкость упоминаний в чате:
+>>>>>>> goob
 ui-options-quality-label = Качество
 ui-options-misc-label = Разное
 ui-options-interface-label = Интерфейс
 
 ## Graphics menu
 
+<<<<<<< HEAD
 ui-options-auto-fill-highlights = Автоматически заполнять подсветкой информацию о персонаже
 ui-options-highlights-color = Цвет подсветки:
 ui-options-highlights-color-example = Это подсвеченный текст
 ui-options-show-held-item = Показать удерживаемый элемент рядом с курсором
+=======
+ui-options-show-held-item = Показать удерживаемый элемент рядом с курсором
+ui-options-auto-fill-highlights = Автозаполнение выделений чата от информации о персонаже
+ui-options-highlights-color = Цвет выделений:
+ui-options-highlights-color-example = Это выделенный текст!
+>>>>>>> goob
 ui-options-show-combat-mode-indicators = Показать индикатор боевого режима рядом с курсором
 ui-options-opaque-storage-window = Непрозрачность окна хранилища
 ui-options-show-ooc-patron-color = Цветной ник в OOC для патронов с Patreon
@@ -96,6 +108,10 @@ ui-options-vp-vertical-fit-tooltip =
     то это приведёт к его обрезанию по горизонтальной оси.
 ui-options-vp-low-res = Изображение низкого разрешения
 ui-options-parallax-low-quality = Низкокачественный параллакс (фон)
+<<<<<<< HEAD
+=======
+ui-options-ambient-occlusion = Отображать окружающее затенение
+>>>>>>> goob
 ui-options-fps-counter = Показать счётчик FPS
 ui-options-vp-width = Ширина окна игры:
 ui-options-hud-layout = Тип HUD:
@@ -117,11 +133,19 @@ ui-options-header-hotbar = Хотбар
 ui-options-header-shuttle = Шаттл
 ui-options-header-map-editor = Редактор карт
 ui-options-header-dev = Разработка
+<<<<<<< HEAD
+=======
+ui-options-hotkey-default-walk = Ходьба по умолчанию
+>>>>>>> goob
 ui-options-header-general = Основное
 ui-options-header-text-cursor = Текстовый курсор
 ui-options-header-text-cursor-select = Выделение текста
 ui-options-header-text-edit = Редактирование текста
 ui-options-header-text-chat = Чат
+<<<<<<< HEAD
+=======
+ui-options-function-toggle-standing = Ползти/Встать
+>>>>>>> goob
 ui-options-header-text-other = Прочий ввод текста
 ui-options-hotkey-keymap = Использовать клавиши QWERTY (США)
 ui-options-hotkey-toggle-walk = Переключать шаг\бег
@@ -130,6 +154,10 @@ ui-options-function-move-left = Двигаться налево
 ui-options-function-move-down = Двигаться вниз
 ui-options-function-move-right = Двигаться направо
 ui-options-function-walk = Идти
+<<<<<<< HEAD
+=======
+ui-options-function-toggle-knockdown = Переключить ползание
+>>>>>>> goob
 ui-options-function-camera-rotate-left = Повернуть налево
 ui-options-function-camera-rotate-right = Повернуть направо
 ui-options-function-camera-reset = Сбросить камеру
@@ -145,9 +173,16 @@ ui-options-function-alt-activate-item-in-hand = Альтернативно ис�
 ui-options-function-activate-item-in-world = Использовать предмет в мире
 ui-options-function-alt-activate-item-in-world = Альтернативно использовать предмет в мире
 ui-options-function-drop = Положить предмет
+<<<<<<< HEAD
 ui-options-function-examine-entity = Осмотреть
 ui-options-function-swap-hands = Поменять руки
 ui-options-function-swap-hands-reverse = Swap hands (other direction)
+=======
+ui-options-function-smart-equip-back = Умная экипировка на спину
+ui-options-function-examine-entity = Осмотреть
+ui-options-function-swap-hands = Поменять руки
+ui-options-function-swap-hands-reverse = Поменять руки (другое направление)
+>>>>>>> goob
 ui-options-function-move-stored-item = Переместить хранящийся объект
 ui-options-function-rotate-stored-item = Повернуть хранящийся объект
 ui-options-function-save-item-location = Сохранить расположение объекта
@@ -208,6 +243,7 @@ ui-options-function-show-debug-console = Открыть консоль
 ui-options-function-show-debug-monitors = Показать дебаг информацию
 ui-options-function-inspect-entity = Изучить сущность
 ui-options-function-hide-ui = Спрятать интерфейс
+<<<<<<< HEAD
 ui-options-function-hotbar1 = 1 слот хотбара
 ui-options-function-hotbar2 = 2 слот хотбара
 ui-options-function-hotbar3 = 3 слот хотбара
@@ -258,6 +294,48 @@ ui-options-function-loadoutshift7 = Hotbar Loadout Shift+7
 ui-options-function-loadoutshift8 = Hotbar Loadout Shift+8
 ui-options-function-loadoutshift9 = Hotbar Loadout Shift+9
 ui-options-function-loadoutshift0 = Hotbar Loadout Shift+0
+=======
+ui-options-function-hotbar1 = Слот хотбара 1
+ui-options-function-hotbar2 = Слот хотбара 2
+ui-options-function-hotbar3 = Слот хотбара 3
+ui-options-function-hotbar4 = Слот хотбара 4
+ui-options-function-hotbar5 = Слот хотбара 5
+ui-options-function-hotbar6 = Слот хотбара 6
+ui-options-function-hotbar7 = Слот хотбара 7
+ui-options-function-hotbar8 = Слот хотбара 8
+ui-options-function-hotbar9 = Слот хотбара 9
+ui-options-function-hotbar0 = Слот хотбара 0
+ui-options-function-hotbar-shift1 = Слот хотбара Shift+1
+ui-options-function-hotbar-shift2 = Слот хотбара Shift+2
+ui-options-function-hotbar-shift3 = Слот хотбара Shift+3
+ui-options-function-hotbar-shift4 = Слот хотбара Shift+4
+ui-options-function-hotbar-shift5 = Слот хотбара Shift+5
+ui-options-function-hotbar-shift6 = Слот хотбара Shift+6
+ui-options-function-hotbar-shift7 = Слот хотбара Shift+7
+ui-options-function-hotbar-shift8 = Слот хотбара Shift+8
+ui-options-function-hotbar-shift9 = Слот хотбара Shift+9
+ui-options-function-hotbar-shift0 = Слот хотбара Shift+0
+ui-options-function-loadout1 = Страница хотбара 1
+ui-options-function-loadout2 = Страница хотбара 2
+ui-options-function-loadout3 = Страница хотбара 3
+ui-options-function-loadout4 = Страница хотбара 4
+ui-options-function-loadout5 = Страница хотбара 5
+ui-options-function-loadout6 = Страница хотбара 6
+ui-options-function-loadout7 = Страница хотбара 7
+ui-options-function-loadout8 = Страница хотбара 8
+ui-options-function-loadout9 = Страница хотбара 9
+ui-options-function-loadout0 = Страница хотбара 0
+ui-options-function-loadoutshift1 = Страница хотбара Shift+1
+ui-options-function-loadoutshift2 = Страница хотбара Shift+2
+ui-options-function-loadoutshift3 = Страница хотбара Shift+3
+ui-options-function-loadoutshift4 = Страница хотбара Shift+4
+ui-options-function-loadoutshift5 = Страница хотбара Shift+5
+ui-options-function-loadoutshift6 = Страница хотбара Shift+6
+ui-options-function-loadoutshift7 = Страница хотбара Shift+7
+ui-options-function-loadoutshift8 = Страница хотбара Shift+8
+ui-options-function-loadoutshift9 = Страница хотбара Shift+9
+ui-options-function-loadoutshift0 = Страница хотбара Shift+0
+>>>>>>> goob
 ui-options-function-shuttle-strafe-up = Стрейф вверх
 ui-options-function-shuttle-strafe-right = Стрейф вправо
 ui-options-function-shuttle-strafe-left = Стрейф влево
@@ -282,6 +360,23 @@ ui-options-function-text-cursor-select-word-left = Расширить выдел
 ui-options-function-text-cursor-select-word-right = Расширить выделение вправо на слово
 ui-options-function-text-cursor-select-begin = Расширить выделение до начала
 ui-options-function-text-cursor-select-end = Расширить выделение до конца
+<<<<<<< HEAD
+=======
+ui-options-header-targeting = Прицеливание
+ui-options-function-target-head = Целиться в голову
+# Goobstation - Highlight chat sounds!
+ui-options-highlight-sound = Проигрывать звук упоминаний
+ui-options-function-target-chest = Целиться в грудь
+ui-options-function-target-groin = Целиться в пах
+ui-options-function-target-left-arm = Целиться в левую руку
+ui-options-function-target-right-arm = Целиться в правую руку
+ui-options-function-target-left-hand = Целиться в левую кисть
+ui-options-function-target-right-hand = Целиться в правую кисть
+ui-options-function-target-left-leg = Целиться в левую ногу
+ui-options-function-target-right-leg = Целиться в правую ногу
+ui-options-function-target-left-foot = Целиться в левую ступню
+ui-options-function-target-right-foot = Целиться в правую ступню
+>>>>>>> goob
 ui-options-function-text-backspace = Стереть
 ui-options-function-text-delete = Стереть спереди
 ui-options-function-text-word-backspace = Стереть слово
@@ -295,6 +390,7 @@ ui-options-function-text-cut = Вырезать
 ui-options-function-text-paste = Вставить
 ui-options-function-text-history-prev = Предыдущее с истории
 ui-options-function-text-history-next = Следующее с истории
+<<<<<<< HEAD
 ui-options-function-text-release-focus = Release focus
 ui-options-function-text-scroll-to-bottom = Пролистать вниз
 ui-options-function-text-tab-complete = Tab completion
@@ -302,6 +398,16 @@ ui-options-function-text-complete-next = Complete next
 ui-options-function-text-complete-prev = Complete previous
 ui-options-net-interp-ratio = Сетевое сглаживание
 ui-options-net-predict = Предугадывание на стороне клиента
+=======
+ui-options-function-text-release-focus = Сбросить фокус
+ui-options-function-text-scroll-to-bottom = Пролистать вниз
+ui-options-function-text-tab-complete = Tab completion
+ui-options-function-text-complete-next = Завершить следующие
+ui-options-function-text-complete-prev = Завершить предыдущее
+ui-options-net-interp-ratio = Сетевое сглаживание
+ui-options-net-predict = Предугадывание на стороне клиента
+ui-options-admin-overlay-antag-format-off = Не показывать статус антагониста/тип роли
+>>>>>>> goob
 ui-options-net-interp-ratio-tooltip =
     Увеличение этого параметра, как правило, делает игру
     более устойчивой к потере пакетов, однако при этом
@@ -349,6 +455,7 @@ ui-options-admin-player-panel = Список персонажей в админ 
 ui-options-admin-playerlist-separate-symbols = Показывать отдельные символы для каждого типа антагониста
 ui-options-admin-playerlist-character-color = Цветные имена антагонистов
 ui-options-admin-playerlist-roletype-color = Цветные типы ролей
+<<<<<<< HEAD
 ui-options-admin-player-tab-symbol-setting = Character column antag symbols
 ui-options-admin-player-tab-symbol-setting-off = No antag symbol
 ui-options-admin-player-tab-symbol-setting-basic = Show standard antag symbol
@@ -377,9 +484,44 @@ ui-options-admin-enable-overlay-starting-job = Show starting job
 ui-options-admin-overlay-merge-distance = Stack merge distance
 ui-options-admin-overlay-ghost-fade-distance = Ghost overlay fade range from mouse
 ui-options-admin-overlay-ghost-hide-distance = Ghost overlay hide range from mouse
+=======
+ui-options-admin-player-tab-symbol-setting = Символы антагонистов в колонке персонажей
+ui-options-admin-player-tab-symbol-setting-off = Без символа антагониста
+ui-options-admin-player-tab-symbol-setting-basic = Показывать стандартный символ антагониста
+ui-options-admin-player-tab-symbol-setting-specific = Показывать конкретный символ антагониста
+ui-options-admin-player-tab-role-setting = Настройки отображения ролей
+ui-options-admin-player-tab-role-setting-roletype = Показывать тип роли
+ui-options-admin-player-tab-role-setting-subtype = Показывать подтип
+ui-options-admin-player-tab-role-setting-roletypesubtype = Показывать тип роли и подтип
+ui-options-admin-player-tab-role-setting-subtyperoletype = Показывать подтип и тип роли
+ui-options-admin-player-tab-color-setting = Настройки цвета
+ui-options-admin-player-tab-color-setting-off = Ненавижу цвета
+ui-options-admin-player-tab-color-setting-character = Окрашивать имена персонажей антагонистов
+ui-options-admin-player-tab-color-setting-roletype = Окрашивать все типы ролей
+ui-options-admin-player-tab-color-setting-both = Окрашивать и то, и другое
+ui-options-admin-overlay-title = Админ оверлей
+ui-options-admin-overlay-antag-format = Стиль метки антагониста
+ui-options-admin-overlay-antag-format-binary = Показывать статус антагониста
+ui-options-admin-overlay-antag-format-roletype = Показывать тип роли
+ui-options-admin-overlay-antag-format-subtype = Показывать подтип
+ui-options-admin-overlay-antag-symbol = Стиль символа антагониста
+ui-options-admin-overlay-antag-symbol-off = Без символа антагониста
+ui-options-admin-overlay-antag-symbol-basic = Показывать стандартный символ антагониста
+ui-options-admin-overlay-antag-symbol-specific = Показывать конкретный символ антагониста
+ui-options-admin-enable-overlay-playtime = Показывать время игры
+ui-options-admin-enable-overlay-starting-job = Показывать стартовую должность
+ui-options-admin-overlay-merge-distance = Расстояние слияния наложений
+ui-options-admin-overlay-ghost-fade-distance = Дальность затухания наложения призрака от мыши
+ui-options-admin-overlay-ghost-hide-distance = Дальность скрытия наложения призрака от мыши
+>>>>>>> goob
 ui-options-enable-overlay-symbols = Добавить символ антага к тексту
 ui-options-enable-overlay-playtime = Отображать наигранное время
 ui-options-enable-overlay-starting-job = Показывать начальную должность
 ui-options-overlay-merge-distance = Stack merge distance
+<<<<<<< HEAD
 ui-options-overlay-ghost-fade-distance = Ghost overlay fade range from mouse
 ui-options-overlay-ghost-hide-distance = Ghost overlay hide range from mouse
+=======
+ui-options-overlay-ghost-fade-distance = Дальность затухания наложения призрака от мыши
+ui-options-overlay-ghost-hide-distance = Дальность скрытия наложения призрака от мыши
+>>>>>>> goob

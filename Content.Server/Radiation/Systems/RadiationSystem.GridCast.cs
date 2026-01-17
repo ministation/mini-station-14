@@ -1,8 +1,25 @@
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 root <root@DESKTOP-HJPF29C>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 yavuz <58685802+yahay505@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Numerics;
 using Content.Server.Radiation.Components;
 using Content.Server.Radiation.Events;
 using Content.Shared.Radiation.Components;
 using Content.Shared.Radiation.Systems;
+//using Content.Shared.Singularity.Components; // Goobstation - Radiation Overhaul // CorvaxGoob Radiation Overhaul - Start
 using Robust.Shared.Collections;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Timing;
@@ -35,7 +52,7 @@ public partial class RadiationSystem
         stopwatch.Start();
 
         _sources.Clear();
-        _sources.EnsureCapacity(EntityManager.Count<RadiationSourceComponent>());
+        _sources.EnsureCapacity(Count<RadiationSourceComponent>());
 
         var sources = EntityQueryEnumerator<RadiationSourceComponent, TransformComponent>();
         var destinations = EntityQueryEnumerator<RadiationReceiverComponent, TransformComponent>();
@@ -135,7 +152,7 @@ public partial class RadiationSystem
 
         var mapId = destTrs.MapID;
 
-        // get direction from rad source to destination and its distance
+        // CorvaxGoob Radiation Overhaul Revert - Start
         var dir = destWorld - source.WorldPosition;
         var dist = dir.Length();
 
@@ -147,6 +164,19 @@ public partial class RadiationSystem
         var rads = source.Intensity - source.Slope * dist;
         if (rads < MinIntensity)
             return null;
+
+        // Goobstation Start - Radiation Overhaul
+        // get direction from rad source to destination and its distance
+        // var dir = destWorld - source.WorldPosition;
+        // var dist = Math.Max(dir.Length(),0.5f);
+        // if (TryComp(source.Entity.Owner, out EventHorizonComponent? horizon)) // if we have a horizon emit radiation from the horizon,
+        //     dist = Math.Max(dist - horizon.Radius, 0.5f);
+        // var rads = source.Intensity / (dist );
+        // if (rads < 0.01)
+        //     return null;
+        // Goobstation End - Radiation Overhaul
+
+        // CorvaxGoob Radiation Overhaul Revert - End
 
         // create a new radiation ray from source to destination
         // at first we assume that it doesn't hit any radiation blockers
@@ -192,6 +222,86 @@ public partial class RadiationSystem
         return ray;
     }
 
+    // CorvaxGoob Radiation Overhaul - Start
+    /*
+    // Goobstation - Radiation Overhaul
+    /// <summary>
+    /// Similar to GridLineEnumerator, but also returns the distance the ray traveled in each cell
+    /// </summary>
+    /// <param name="sourceGridPos">source of the ray, in grid space</param>
+    /// <param name="destGridPos"></param>
+    /// <returns></returns>
+    private static IEnumerable<(Vector2i cell, float distInCell)> AdvancedGridRaycast(Vector2 sourceGridPos, Vector2 destGridPos)
+    {
+        var delta = destGridPos - sourceGridPos;
+
+        if (delta.LengthSquared() < 0.0001f)
+        {
+            yield return (new Vector2i((int)Math.Floor(sourceGridPos.X), (int)Math.Floor(sourceGridPos.Y)), 0f);
+            yield break;
+        }
+        
+        var currentX = (int)Math.Floor(sourceGridPos.X);
+        var currentY = (int)Math.Floor(sourceGridPos.Y);
+        var destX = (int)Math.Floor(destGridPos.X);
+        var destY = (int)Math.Floor(destGridPos.Y);
+        
+        var stepX = 0;
+        float tDeltaX = 0, tMaxX = float.MaxValue;
+        if (delta.X != 0)
+        {
+            stepX = delta.X > 0 ? 1 : -1;
+            float xEdge = stepX > 0 ? currentX + 1 : currentX;
+            tMaxX = (xEdge - sourceGridPos.X) / delta.X;
+            tDeltaX = stepX / delta.X;
+        }
+        
+        var stepY = 0;
+        float tDeltaY = 0, tMaxY = float.MaxValue;
+        if (delta.Y != 0)
+        {
+            stepY = delta.Y > 0 ? 1 : -1;
+            float yEdge = stepY > 0 ? currentY + 1 : currentY;
+            tMaxY = (yEdge - sourceGridPos.Y) / delta.Y;
+            tDeltaY = stepY / delta.Y;
+        }
+        
+        var entry = sourceGridPos;
+        var maxIterations = Math.Abs(destX - currentX) + Math.Abs(destY - currentY) + 2;
+        var iterations = 0;
+        
+        while (true)
+        {
+            if (++iterations > maxIterations)
+                yield break;
+            
+            var tExit = Math.Min(tMaxX, tMaxY);
+            var exitIsX = tMaxX < tMaxY;
+            if (tExit > 1f)
+                tExit = 1f;
+            var exit = sourceGridPos + delta * tExit;
+            var cell = new Vector2i(currentX, currentY);
+            yield return (cell, (exit - entry).Length());
+            
+            if (tExit >= 1f - 1e-6f)
+                break;
+                
+            if (exitIsX)
+            {
+                currentX += stepX;
+                tMaxX += tDeltaX;
+            }
+            else
+            {
+                currentY += stepY;
+                tMaxY += tDeltaY;
+            }
+            entry = exit;
+        }
+    }
+    */
+    // CorvaxGoob Radiation Overhaul Revert - End
+
     private RadiationRay Gridcast(
         Entity<MapGridComponent, TransformComponent> grid,
         ref RadiationRay ray,
@@ -209,17 +319,30 @@ public partial class RadiationSystem
 
         // get coordinate of source and destination in grid coordinates
 
+        // CorvaxGoob Radiation Overhaul Revert - Start
+        // Goobstation Start - Radiation Overhaul
+
         // TODO Grid overlap. This currently assumes the grid is always parented directly to the map (local matrix == world matrix).
         // If ever grids are allowed to overlap, this might no longer be true. In that case, this should precompute and cache
         // inverse world matrices.
 
+        //var srcLocal = sourceTrs.ParentUid == grid.Owner
         Vector2 srcLocal = sourceTrs.ParentUid == grid.Owner
             ? sourceTrs.LocalPosition
             : Vector2.Transform(ray.Source, grid.Comp2.InvLocalMatrix);
 
+        //var dstLocal = destTrs.ParentUid == grid.Owner
         Vector2 dstLocal = destTrs.ParentUid == grid.Owner
             ? destTrs.LocalPosition
             : Vector2.Transform(ray.Destination, grid.Comp2.InvLocalMatrix);
+
+        // Vector2 sourceGrid = new(
+        //     srcLocal.X / grid.Comp1.TileSize,
+        //     srcLocal.Y / grid.Comp1.TileSize);
+
+        // Vector2 destGrid = new(
+        //     dstLocal.X / grid.Comp1.TileSize,
+        //     dstLocal.Y / grid.Comp1.TileSize);
 
         Vector2i sourceGrid = new(
             (int)Math.Floor(srcLocal.X / grid.Comp1.TileSize),
@@ -228,6 +351,30 @@ public partial class RadiationSystem
         Vector2i destGrid = new(
             (int)Math.Floor(dstLocal.X / grid.Comp1.TileSize),
             (int)Math.Floor(dstLocal.Y / grid.Comp1.TileSize));
+
+        /*
+        foreach (var (point,dist) in AdvancedGridRaycast(sourceGrid,destGrid))
+        {
+            if (resistanceMap.TryGetValue(point, out var resData))
+            {
+                var passRatioFromRadResistance = (1 / (resData > 2 ? (resData / 2) : 1));
+
+                var passthroughRatio = MathF.Pow(passRatioFromRadResistance, dist);
+                ray.Rads *= passthroughRatio;
+
+                // save data for debug
+                if (saveVisitedTiles)
+                    blockers!.Add((point, ray.Rads));
+
+                // no intensity left after blocker
+                if (ray.Rads <= MinIntensity)
+                {
+                    ray.Rads = 0;
+                    break;
+                }
+            }
+        }
+        */
 
         // iterate tiles in grid line from source to destination
         var line = new GridLineEnumerator(sourceGrid, destGrid);
@@ -249,6 +396,9 @@ public partial class RadiationSystem
                 break;
             }
         }
+
+        // Goobstation End - Radiation Overhaul
+        // CorvaxGoob Radiation Overhaul Revert - End
 
         if (!saveVisitedTiles || blockers!.Count <= 0)
             return ray;
@@ -280,9 +430,16 @@ public partial class RadiationSystem
 
             if (_blockerQuery.TryComp(xform.ParentUid, out var blocker))
             {
+                // CorvaxGoob Radiation Overhaul Revert - Start
+                // Goobstation Start - Radiation Overhaul
+                // var ratio = blocker.RadDecay>2? 1 / (blocker.RadDecay/2):1;
+                // rads = (rads - blocker.RadResistance) * ratio;
+
                 rads -= blocker.RadResistance;
-                if (rads < 0)
+                if (rads < 0.1)
                     return 0;
+                // Goobstation End - Radiation Overhaul
+                // CorvaxGoob Radiation Overhaul Revert - End
             }
 
             child = parent;

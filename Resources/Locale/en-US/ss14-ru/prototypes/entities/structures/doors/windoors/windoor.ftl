@@ -156,6 +156,12 @@ ent-PlasmaWindoorSyndicateLocked = { ent-WindoorPlasma }
 ent-PlasmaWindoorSecureSyndicateLocked = { ent-WindoorSecurePlasma }
     .suffix = Syndicate, Locked, Plasma
     .desc = { ent-WindoorSecurePlasma.desc }
+<<<<<<< HEAD
+=======
+ent-PlasmaWindoorSecureSyndicateLockedIndestructable = secure plasma windoor?
+    .desc = You have a bad feeling about this.
+    .suffix = Syndicate, Locked, Plasma, Indestructable
+>>>>>>> goob
 ent-UraniumWindoorSyndicateLocked = { ent-WindoorUranium }
     .suffix = Syndicate, Locked, Uranium
     .desc = { ent-WindoorUranium.desc }

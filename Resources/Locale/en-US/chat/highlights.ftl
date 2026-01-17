@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Command
 highlights-captain = Captain, "Cap", Bridge, Command
 highlights-head-of-personnel = Head Of Personnel, "HoP", Service, Bridge, Command
@@ -6,6 +7,23 @@ highlights-chief-medical-officer = Chief Medical Officer, "CMO", MedBay, "Med", 
 highlights-head-of-security = Head of Security, "HoS", Security, "Sec", Bridge, Command
 highlights-quartermaster = Quartermaster, "QM", Cargo, Bridge, Command
 highlights-research-director = Research Director, "RD", Science, "Sci", Bridge, Command
+=======
+#Goob start
+#Central Command
+highlights-nanotrasen-representative = Nanotrasen Representative, "Central Command", "NTR", "NT", "CC", Bridge, "Command"
+highlights-blueshield-officer = Blueshield Officer, "Central Command", "BSO", "CC", Bridge, "Command"
+
+
+# Command
+highlights-captain = Captain, "Cap", Bridge, "Command"
+highlights-head-of-personnel = Head Of Personnel, "HoP", Service, Bridge, "Command"
+highlights-chief-engineer = Chief Engineer, "CE", Engineering, Engineer, "Engi", Bridge, "Command"
+highlights-chief-medical-officer = Chief Medical Officer, "CMO", MedBay, "Med", Bridge, "Command"
+highlights-head-of-security = Head of Security, "HoS", Security, "Sec", Bridge, "Command"
+highlights-quartermaster = Quartermaster, "QM", Cargo, Bridge, "Command"
+highlights-research-director = Research Director, "RD", Science, "Sci", Bridge, "Command"
+#Goob end
+>>>>>>> goob
 
 # Security
 highlights-detective = Detective, "Det", Security, "Sec"

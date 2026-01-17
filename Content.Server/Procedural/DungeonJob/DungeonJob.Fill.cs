@@ -24,7 +24,11 @@ public sealed partial class DungeonJob
                 if (fill.AllowedTiles != null && !fill.AllowedTiles.Contains(tileDef.ID))
                     continue;
 
+<<<<<<< HEAD
                 if (!_anchorable.TileFree((_gridUid, _grid), tile, DungeonSystem.CollisionLayer, DungeonSystem.CollisionMask))
+=======
+                if (!_anchorable.TileFree(_grid, tile, DungeonSystem.CollisionLayer, DungeonSystem.CollisionMask))
+>>>>>>> goob
                     continue;
 
                 var gridPos = _maps.GridTileToLocal(_gridUid, _grid, tile);

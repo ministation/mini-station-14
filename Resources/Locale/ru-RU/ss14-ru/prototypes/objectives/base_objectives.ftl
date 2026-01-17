@@ -18,5 +18,8 @@ ent-BaseSurviveObjective = { ent-BaseObjective }
     .desc = { ent-BaseObjective.desc }
 ent-BaseCodeObjective = { ent-BaseObjective }
     .desc = { ent-BaseObjective.desc }
+<<<<<<< HEAD
 ent-BaseFreeObjective = { ent-BaseObjective }
     .desc = { ent-BaseObjective.desc }
+=======
+>>>>>>> goob

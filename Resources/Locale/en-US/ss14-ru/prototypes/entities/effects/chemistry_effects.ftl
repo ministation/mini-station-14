@@ -2,6 +2,13 @@ ent-BaseFoam = { "" }
     .desc = { "" }
 ent-Smoke = smoke
     .desc = { ent-BaseFoam.desc }
+<<<<<<< HEAD
+=======
+ent-TearGasSmoke = tear gas
+    .desc = { ent-BaseFoam.desc }
+ent-TearGasSmokeWhite = { ent-TearGasSmoke }
+    .desc = { ent-TearGasSmoke.desc }
+>>>>>>> goob
 ent-WizardSmoke = smoke
     .desc = { ent-Smoke.desc }
 ent-Foam = foam
@@ -20,3 +27,8 @@ ent-FoamedAluminiumMetal = foamed aluminium metal
     .desc = Leftover sparse foam from an aluminum foam grenade. Easily destroyed.
 ent-ReactionFlash = { "" }
     .desc = { "" }
+<<<<<<< HEAD
+=======
+ent-Resin = resin
+    .desc = { ent-BaseFoam.desc }
+>>>>>>> goob

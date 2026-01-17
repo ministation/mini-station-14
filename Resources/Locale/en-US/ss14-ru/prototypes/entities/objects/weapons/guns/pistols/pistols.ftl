@@ -5,7 +5,11 @@ ent-WeaponPistolViper = viper
 ent-WeaponPistolEchis = echis
     .desc = A cyborg-mounted weapon system based on the Viper pistol. Creates ammunition on the fly from an internal fabricator, which slowly self-charges.
 ent-WeaponPistolCobra = cobra
+<<<<<<< HEAD
     .desc = Integrally suppressed semi-automatic pistol used by the Syndicate, firing caseless subsonic rounds. Favored by any agent who likes to keep things quiet and leave no evidence behind. Feeds from .25 pistol magazines.
+=======
+    .desc = Integrally suppressed semi-automatic pistol used by the Syndicate, firing caseless subsonic rounds. Favored by any agent who likes to keep things quiet and leave no evidence behind. Feeds from 9.5mm pistol magazines.
+>>>>>>> goob
 ent-WeaponPistolMk58 = mk 58
     .desc = Designed by Nanotrasen’s Small Arms Division, the Mk58 is a conventional semi-automatic pistol with a simple recoil-operated action and excellent reliability. The standard sidearm of Nanotrasen’s station security and emergency response teams. Feeds from .35 pistol magazines.
 ent-WeaponPistolN1984 = N1984

@@ -100,6 +100,10 @@ loadout-group-station-engineer-outerclothing = Инженер, верхняя о
 loadout-group-station-engineer-shoes = Инженер, обувь
 loadout-group-station-engineer-id = Инженер, ID
 loadout-group-atmospheric-technician-jumpsuit = Атмосферный техник, комбинезон
+<<<<<<< HEAD
+=======
+loadout-group-atmospheric-technician-head = Атмосферный техник, голова
+>>>>>>> goob
 loadout-group-atmospheric-technician-backpack = Атмосферный техник, рюкзак
 loadout-group-atmospheric-technician-outerclothing = Атмосферный техник, верхняя одежда
 loadout-group-atmospheric-technician-shoes = Атмосферный техник, обувь
@@ -126,7 +130,10 @@ loadout-group-head-of-security-outerclothing = Глава службы безо�
 loadout-group-warden-head = Смотритель, голова
 loadout-group-warden-jumpsuit = Смотритель, комбинезон
 loadout-group-warden-outerclothing = Смотритель, верхняя одежда
+<<<<<<< HEAD
 loadout-group-warden-backpack = Смотритель, рюкзак
+=======
+>>>>>>> goob
 loadout-group-security-head = Офицер СБ, голова
 loadout-group-security-jumpsuit = Офицер СБ, комбинезон
 loadout-group-security-backpack = Офицер СБ, рюкзак
@@ -162,6 +169,7 @@ loadout-group-paramedic-head = Парамедик, голова
 loadout-group-paramedic-jumpsuit = Парамедик, комбинезон
 loadout-group-paramedic-outerclothing = Парамедик, верхняя одежда
 loadout-group-paramedic-shoes = Парамедик, обувь
+<<<<<<< HEAD
 loadout-group-medical-glasses = Medical glasses
 # Wildcards
 loadout-group-reporter-jumpsuit = Репортёр, комбинезон
@@ -169,3 +177,11 @@ loadout-group-psychologist-jumpsuit = Психолог, комбинезон
 loadout-group-boxer-jumpsuit = Боксёр, комбинезон
 loadout-group-boxer-gloves = Боксёр, перчатки
 loadout-group-boxer-stimulant = Боксёр, стимулятор
+=======
+# Wildcards
+loadout-group-reporter-jumpsuit = Репортёр, комбинезон
+loadout-group-medical-glasses = медицинские очки
+loadout-group-psychologist-jumpsuit = Психолог, комбинезон
+loadout-group-boxer-jumpsuit = Боксёр, комбинезон
+loadout-group-boxer-gloves = Боксёр, перчатки
+>>>>>>> goob

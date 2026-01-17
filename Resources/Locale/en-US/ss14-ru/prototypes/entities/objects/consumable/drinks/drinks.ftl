@@ -207,8 +207,13 @@ ent-DrinkIceCreamGlass = { ent-DrinkGlass }
 ent-IrishBoolGlass = { ent-DrinkGlass }
     .suffix = irish bool
     .desc = { ent-DrinkGlass.desc }
+<<<<<<< HEAD
 ent-DrinkIrishSlammer = { ent-DrinkGlass }
     .suffix = grenade penguin
+=======
+ent-DrinkIrishCarBomb = { ent-DrinkGlass }
+    .suffix = irish car bomb
+>>>>>>> goob
     .desc = { ent-DrinkGlass.desc }
 ent-DrinkIrishCoffeeGlass = { ent-DrinkGlass }
     .suffix = irish coffee

@@ -1,3 +1,26 @@
+# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 KittenColony <149278380+KittenColony@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Morb <14136326+Morb0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nairod <110078045+Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 pigeonpeas <147350443+pigeonpeas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Alzore <140123969+Blackern5000@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 PuroSlavKing <103608145+PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: marking
   id: LizardFrillsAquatic
   bodyPart: HeadSide
@@ -87,9 +110,15 @@
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
   sprites:
+<<<<<<< HEAD
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
     state: horns_curled_l
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
+=======
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+    state: horns_curled_l
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+>>>>>>> goob
     state: horns_curled_r
 
 - type: marking
@@ -98,9 +127,15 @@
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
   sprites:
+<<<<<<< HEAD
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
     state: horns_ram_l
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
+=======
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+    state: horns_ram_l
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+>>>>>>> goob
     state: horns_ram_r
 
 - type: marking
@@ -109,9 +144,15 @@
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
   sprites:
+<<<<<<< HEAD
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
     state: horns_short_l
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
+=======
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+    state: horns_short_l
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+>>>>>>> goob
     state: horns_short_r
 
 - type: marking
@@ -120,9 +161,15 @@
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
   sprites:
+<<<<<<< HEAD
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
     state: horns_simple_l
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
+=======
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+    state: horns_simple_l
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+>>>>>>> goob
     state: horns_simple_r
 
 - type: marking
@@ -131,9 +178,15 @@
   markingCategory: HeadTop
   speciesRestriction: [Reptilian]
   sprites:
+<<<<<<< HEAD
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
     state: horns_double_l
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
+=======
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+    state: horns_double_l
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+>>>>>>> goob
     state: horns_double_r
 
 - type: marking
@@ -244,7 +297,7 @@
 - type: marking
   id: LizardLArmTiger
   bodyPart: LArm
-  markingCategory: Arms
+  markingCategory: LeftArm
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
@@ -253,7 +306,7 @@
 - type: marking
   id: LizardLLegTiger
   bodyPart: LLeg
-  markingCategory: Legs
+  markingCategory: LeftLeg
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
@@ -262,7 +315,7 @@
 - type: marking
   id: LizardRArmTiger
   bodyPart: RArm
-  markingCategory: Arms
+  markingCategory: RightArm
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
@@ -271,7 +324,7 @@
 - type: marking
   id: LizardRLegTiger
   bodyPart: RLeg
-  markingCategory: Legs
+  markingCategory: RightLeg
   speciesRestriction: [Reptilian]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
@@ -281,51 +334,87 @@
   id: LizardHornsArgali
   bodyPart: HeadTop
   markingCategory: HeadTop
+<<<<<<< HEAD
   speciesRestriction: [Reptilian, Kobold] # backmen: species
   sprites:
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
     state: horns_argali_l
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
+=======
+  speciesRestriction: [Reptilian, Kobold] # Shitmed Change
+  sprites:
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+    state: horns_argali_l
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+>>>>>>> goob
     state: horns_argali_r
 
 - type: marking
   id: LizardHornsAyrshire
   bodyPart: HeadTop
   markingCategory: HeadTop
+<<<<<<< HEAD
   speciesRestriction: [Reptilian, Kobold] # backmen: species
   sprites:
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
     state: horns_ayrshire_l
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
+=======
+  speciesRestriction: [Reptilian, Kobold] # Shitmed Change
+  sprites:
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+    state: horns_ayrshire_l
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+>>>>>>> goob
     state: horns_ayrshire_r
 
 - type: marking
   id: LizardHornsMyrsore
   bodyPart: HeadTop
   markingCategory: HeadTop
+<<<<<<< HEAD
   speciesRestriction: [Reptilian, Kobold] # backmen: species
   sprites:
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
     state: horns_myrsore_l
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
+=======
+  speciesRestriction: [Reptilian, Kobold] # Shitmed Change
+  sprites:
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+    state: horns_myrsore_l
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+>>>>>>> goob
     state: horns_myrsore_r
 
 - type: marking
   id: LizardHornsBighorn
   bodyPart: HeadTop
   markingCategory: HeadTop
+<<<<<<< HEAD
   speciesRestriction: [Reptilian, Kobold] # backmen: species
   sprites:
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
     state: horns_bighorn_l
   - sprite: _CorvaxNext/Mobs/Customization/reptilian_parts.rsi # Corvax-Next-BetterLizards-Edit
+=======
+  speciesRestriction: [Reptilian, Kobold] # Shitmed Change
+  sprites:
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+    state: horns_bighorn_l
+  - sprite: _White/Mobs/Customization/reptilian_parts.rsi # WWDP-Edit
+>>>>>>> goob
     state: horns_bighorn_r
 
 - type: marking
   id: LizardHornsDemonic
   bodyPart: HeadTop
   markingCategory: HeadTop
+<<<<<<< HEAD
   speciesRestriction: [Reptilian, Kobold] # backmen: species
+=======
+  speciesRestriction: [Reptilian, Kobold] # Shitmed Change
+>>>>>>> goob
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: horns_demonic
@@ -334,7 +423,11 @@
   id: LizardHornsKoboldEars
   bodyPart: HeadTop
   markingCategory: HeadTop
+<<<<<<< HEAD
   speciesRestriction: [Reptilian, Kobold] # backmen: species
+=======
+  speciesRestriction: [Reptilian, Kobold] # Shitmed Change
+>>>>>>> goob
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: horns_kobold_ears
@@ -343,7 +436,11 @@
   id: LizardHornsFloppyKoboldEars
   bodyPart: HeadSide
   markingCategory: HeadSide
+<<<<<<< HEAD
   speciesRestriction: [Reptilian, Kobold] # backmen: species
+=======
+  speciesRestriction: [Reptilian, Kobold] # Shitmed Change
+>>>>>>> goob
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: horns_floppy_kobold_ears

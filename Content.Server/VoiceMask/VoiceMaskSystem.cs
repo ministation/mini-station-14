@@ -1,12 +1,38 @@
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Bakke <luringens@protonmail.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 2025 GabyChangelog <agentepanela2@gmail.com>
+// SPDX-FileCopyrightText: 2025 Kyoth25f <kyoth25f@gmail.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 2025 āda <ss.adasts@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Goobstation.Shared.IntrinsicVoiceModulator.VoiceMask; // Goobstation
 using Content.Shared.Actions;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
+using Content.Shared.Chat.RadioIconsEvents; // Goobstation
 using Content.Shared.Clothing;
 using Content.Shared.Database;
 using Content.Shared.Inventory;
 using Content.Shared.Popups;
 using Content.Shared.Preferences;
+using Content.Shared.Roles.Jobs; // Goobstation
 using Content.Shared.Speech;
 using Content.Shared.VoiceMask;
 using Robust.Shared.Configuration;
@@ -34,8 +60,14 @@ public sealed partial class VoiceMaskSystem : EntitySystem
         SubscribeLocalEvent<VoiceMaskComponent, VoiceMaskChangeVerbMessage>(OnChangeVerb);
         SubscribeLocalEvent<VoiceMaskComponent, ClothingGotEquippedEvent>(OnEquip);
         SubscribeLocalEvent<VoiceMaskSetNameEvent>(OpenUI);
+<<<<<<< HEAD
         Subs.CVar(_cfgManager, CCVars.MaxNameLength, value => _maxNameLength = value, true);
         InitializeTTS(); // Corvax-TTS
+=======
+        InitializeTTS(); // CorvaxGoob-TTS
+
+        Subs.CVar(_cfgManager, CCVars.MaxNameLength, value => _maxNameLength = value, true);
+>>>>>>> goob
     }
 
     private void OnTransformSpeakerName(Entity<VoiceMaskComponent> entity, ref InventoryRelayedEvent<TransformSpeakerNameEvent> args)
@@ -73,12 +105,14 @@ public sealed partial class VoiceMaskSystem : EntitySystem
 
         UpdateUI(entity);
     }
+
     #endregion
 
     #region UI
     private void OnEquip(EntityUid uid, VoiceMaskComponent component, ClothingGotEquippedEvent args)
     {
-        _actions.AddAction(args.Wearer, ref component.ActionEntity, component.Action, uid);
+        if (component.EnableAction) //Goobstation
+            _actions.AddAction(args.Wearer, ref component.ActionEntity, component.Action, uid);
     }
 
     private void OpenUI(VoiceMaskSetNameEvent ev)
@@ -95,10 +129,14 @@ public sealed partial class VoiceMaskSystem : EntitySystem
         UpdateUI((maskEntity.Value, voiceMaskComp));
     }
 
-    private void UpdateUI(Entity<VoiceMaskComponent> entity)
+    public void UpdateUI(Entity<VoiceMaskComponent> entity) // Make public by goobstation
     {
         if (_uiSystem.HasUi(entity, VoiceMaskUIKey.Key))
+<<<<<<< HEAD
             _uiSystem.SetUiState(entity.Owner, VoiceMaskUIKey.Key, new VoiceMaskBuiState(GetCurrentVoiceName(entity), entity.Comp.VoiceId, entity.Comp.VoiceMaskSpeechVerb));
+=======
+            _uiSystem.SetUiState(entity.Owner, VoiceMaskUIKey.Key, new VoiceMaskBuiState(GetCurrentVoiceName(entity), entity.Comp.VoiceId, entity.Comp.VoiceMaskSpeechVerb, entity.Comp.JobIconProtoId)); // CorvaxGoob-TTS
+>>>>>>> goob
     }
     #endregion
 

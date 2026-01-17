@@ -1,6 +1,10 @@
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 // SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+>>>>>>> goob
 // SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -8,6 +12,10 @@
 using System.Linq;
 using Content.Server._DV.CosmicCult.Components;
 using Content.Server._DV.CosmicCult.EntitySystems;
+<<<<<<< HEAD
+=======
+using Content.Goobstation.Shared.Religion; // Goobstation - Shitchap
+>>>>>>> goob
 using Content.Server.Actions;
 using Content.Server.Atmos.Components;
 using Content.Server.Audio;
@@ -30,6 +38,11 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
+<<<<<<< HEAD
+=======
+using Content.Shared._Shitmed.Targeting; // Shitmed Change
+
+>>>>>>> goob
 namespace Content.Server._DV.CosmicCult;
 
 public sealed class MonumentSystem : SharedMonumentSystem
@@ -71,11 +84,22 @@ public sealed class MonumentSystem : SharedMonumentSystem
         {
             if (_timing.CurTime >= monuComp.CheckTimer)
             {
+<<<<<<< HEAD
                 var entities = _lookup.GetEntitiesInRange(Transform(uid).Coordinates, 10);
                 entities.RemoveWhere(entity => !HasComp<InfluenceVitalityComponent>(entity));
 
                 foreach (var entity in entities)
                     _damage.TryChangeDamage(entity, monuComp.MonumentHealing * -1);
+=======
+                var entities = _lookup.GetEntitiesInRange(Transform(uid).Coordinates, 15);
+                entities.RemoveWhere(entity => !HasComp<InfluenceVitalityComponent>(entity));
+
+                foreach (var entity in entities)
+                    if (TryComp<CosmicCultComponent>(entity, out var cultComp))
+                    {
+                        _damage.TryChangeDamage(entity, monuComp.MonumentHealing * cultComp.ShitMedHeal, targetPart: TargetBodyPart.All); // Shitmed Change
+                    }
+>>>>>>> goob
 
                 monuComp.CheckTimer = _timing.CurTime + monuComp.CheckWait;
             }
@@ -344,6 +368,14 @@ public sealed class MonumentSystem : SharedMonumentSystem
 
         while (objectiveQuery.MoveNext(out _, out var objectiveComp))
             objectiveComp.Tier = 1;
+<<<<<<< HEAD
+=======
+
+        //add the move action
+        var leaderQuery = EntityQueryEnumerator<CosmicCultLeadComponent>();
+        while (leaderQuery.MoveNext(out var leader, out var leaderComp))
+            _actions.AddAction(leader, ref leaderComp.CosmicMonumentMoveActionEntity, leaderComp.CosmicMonumentMoveAction, leader);
+>>>>>>> goob
     }
 
     public void MonumentTier2(Entity<MonumentComponent> uid)
@@ -374,12 +406,15 @@ public sealed class MonumentSystem : SharedMonumentSystem
             Dirty(cultist, cultComp);
         }
 
+<<<<<<< HEAD
         //add the move action
         var leaderQuery = EntityQueryEnumerator<CosmicCultLeadComponent>();
 
         while (leaderQuery.MoveNext(out var leader, out var leaderComp))
             _actions.AddAction(leader, ref leaderComp.CosmicMonumentMoveActionEntity, leaderComp.CosmicMonumentMoveAction, leader);
 
+=======
+>>>>>>> goob
         Dirty(uid);
     }
 
@@ -405,7 +440,15 @@ public sealed class MonumentSystem : SharedMonumentSystem
             EnsureComp<PressureImmunityComponent>(cultist);
             EnsureComp<TemperatureImmunityComponent>(cultist);
 
+<<<<<<< HEAD
             _damage.SetDamageContainerID(cultist, "BiologicalMetaphysical");
+=======
+            // Goobstation Change - Shitchap
+            if (!HasComp<WeakToHolyComponent>(cultist))
+                EnsureComp<WeakToHolyComponent>(cultist).AlwaysTakeHoly = true;
+            else
+                cultComp.WasWeakToHoly = true;
+>>>>>>> goob
 
             foreach (var influenceProto in _protoMan.EnumeratePrototypes<InfluencePrototype>().Where(influenceProto => influenceProto.Tier == 3))
                 cultComp.UnlockedInfluences.Add(influenceProto.ID);

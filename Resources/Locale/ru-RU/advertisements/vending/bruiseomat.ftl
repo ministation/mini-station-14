@@ -3,7 +3,11 @@ advertisement-bruiseomat-2 = Есть у кого ТК?
 advertisement-bruiseomat-3 = Кто-нибудь купил ЕМАГ?
 advertisement-bruiseomat-4 = Я хочу вернуться на свою родную станцию....
 advertisement-bruiseomat-5 = Берегитесь мима и клоуна. БЕРЕГИТЕСЬ!
+<<<<<<< HEAD
 advertisement-bruiseomat-6 = Ядерка на ужин и эскадрон смерти обезоружен!
+=======
+advertisement-bruiseomat-6 = Ядерка на ужин и Эскадрон Смерти обезоружен!
+>>>>>>> goob
 advertisement-bruiseomat-7 = Ты никогда не сможешь сравниться с МОИМИ смесями, Агент!
 advertisement-bruiseomat-8 = Жаждете крови? Я позабочусь о вас!
 advertisement-bruiseomat-9 = Если они не хотят, чтобы мы взорвали станцию, то зачем они оставили диск почти без защиты?
@@ -23,7 +27,11 @@ thankyou-bruiseomat-7 = Пожалуйста, пусть это будет ко�
 thankyou-bruiseomat-8 = Похоже, сегодня не только станция подверглась нападению.
 thankyou-bruiseomat-9 = Что, вашу мать, вы купили?
 thankyou-bruiseomat-10 = Отдадим должное ядерным срочникам!
+<<<<<<< HEAD
 thankyou-bruiseomat-11 = Смерть Nanotrasen!!!
+=======
+thankyou-bruiseomat-11 = Смерть NanoTrasen!!!
+>>>>>>> goob
 thankyou-bruiseomat-12 = Серьёзно? Это ваш план?
 thankyou-bruiseomat-13 = За всю свою бесконечную жизнь я ни разу не видел такого закупа.
 thankyou-bruiseomat-14 = Ловите капитана!
@@ -34,7 +42,11 @@ thankyou-bruiseomat-18 = Не забудьте свой пинпоинтер!
 thankyou-bruiseomat-19 = Ещё увидимся! А может и нет, это более вероятно!
 thankyou-bruiseomat-20 = Захватите ещё одного меня! Мне нужен друг!
 thankyou-bruiseomat-21 = Ты же собираешься протрезветь перед миссией?
+<<<<<<< HEAD
 thankyou-bruiseomat-22 = 5 telecrystal says you won't make it to the shuttle before you fall over.
+=======
+thankyou-bruiseomat-22 = Пять телекристаллов говорит, что вы не доберётесь до шаттла, прежде чем падёте.
+>>>>>>> goob
 thankyou-bruiseomat-23 = Раздатчик безалкоголя вон там, худышка.
 thankyou-bruiseomat-24 = Вы потратили свои ТК на кошачьи ушки?
 thankyou-bruiseomat-25 = Серьёзно? Ты хочешь выпить именно это?

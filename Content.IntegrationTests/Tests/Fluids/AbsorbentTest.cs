@@ -1,7 +1,15 @@
+// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 LordCarve <27449516+LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: MIT
+
 using Content.Server.Fluids.EntitySystems;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.FixedPoint;
+using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Fluids;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
@@ -110,7 +118,7 @@ public sealed class AbsorbentTest
                 solutionContainerSystem.AddSolution(refillableSoln.Value, new Solution(NonEvaporablePrototypeId, testCase.InitialRefillableSolution.VolumeOfNonEvaporable));
 
             // Act
-            absorbentSystem.Mop(user, refillable, absorbent, component);
+            absorbentSystem.Mop((absorbent, component), user, refillable);
 
             // Assert
             var absorbentComposition = absorbentSolution.GetReagentPrototypes(prototypeManager).ToDictionary(r => r.Key.ID, r => r.Value);
@@ -167,7 +175,7 @@ public sealed class AbsorbentTest
                 solutionContainerSystem.AddSolution(refillableSoln.Value, new Solution(NonEvaporablePrototypeId, testCase.InitialRefillableSolution.VolumeOfNonEvaporable));
 
             // Act
-            absorbentSystem.Mop(user, refillable, absorbent, component);
+            absorbentSystem.Mop((absorbent, component), user, refillable);
 
             // Assert
             var absorbentComposition = absorbentSolution.GetReagentPrototypes(prototypeManager).ToDictionary(r => r.Key.ID, r => r.Value);

@@ -22,8 +22,13 @@ ent-ScramImplant = имплант "побег"
     .desc = Этот имплант при активации случайным образом телепортирует пользователя в большом радиусе.
 ent-DnaScramblerImplant = имплант "миксер ДНК"
     .desc = Этот имплант позволяет пользователю случайным образом изменить свою внешность и имя один раз.
+<<<<<<< HEAD
 ent-ChameleonControllerImplant = chameleon controller implant
     .desc = This implant allows you to instantly change the appearance of all worn chameleon clothing.
+=======
+ent-ChameleonControllerImplant = имплант "контроллер хамелеона"
+    .desc = Этот имплант позволяет пользователю мгновенно менять внешний вид всех надетых хамелеон-вещей.
+>>>>>>> goob
 ent-MicroBombImplant = имплант "микробомба"
     .desc = Этот имплант взрывает пользователя при активации или после смерти.
 ent-MacroBombImplant = имплант "макробомба"

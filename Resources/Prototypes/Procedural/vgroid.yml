@@ -1,3 +1,13 @@
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Weide <64257676+Lyacs@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 lanse12 <cloudability.ez@gmail.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
 # Okay so my general thought is this:
 # 1. Generate the large mass
 # 2. Generate smaller masses offset
@@ -33,62 +43,68 @@
       replacement: IronRock
       entity: IronRockIron
       count: 50
-      minGroupSize: 10
-      maxGroupSize: 15
+      minGroupSize: 20
+      maxGroupSize: 30
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockCoal
       count: 50
-      minGroupSize: 8
-      maxGroupSize: 12
+      minGroupSize: 15
+      maxGroupSize: 20
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockQuartz
       count: 50
-      minGroupSize: 10
-      maxGroupSize: 15
-    - !type:OreDunGen
-      replacement: IronRock
-      entity: IronRockSalt
-      count: 50
-      minGroupSize: 8
-      maxGroupSize: 12
+      minGroupSize: 20
+      maxGroupSize: 30
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockGold
-      count: 40
-      minGroupSize: 8
-      maxGroupSize: 12
+      count: 50
+      minGroupSize: 10
+      maxGroupSize: 20
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockSilver
-      count: 40
-      minGroupSize: 8
-      maxGroupSize: 12
+      count: 50
+      minGroupSize: 10
+      maxGroupSize: 20
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockPlasma
-      count: 35
-      minGroupSize: 4
-      maxGroupSize: 8
+      count: 50
+      minGroupSize: 10
+      maxGroupSize: 20
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockUranium
-      count: 35
-      minGroupSize: 4
-      maxGroupSize: 8
+      count: 50
+      minGroupSize: 10
+      maxGroupSize: 20
+    - !type:OreDunGen #Goob wiznerf partial revert
+      replacement: IronRock
+      entity: IronRockBananium
+      count: 50
+      minGroupSize: 5
+      maxGroupSize: 10
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockArtifactFragment
-      count: 25
-      minGroupSize: 1
-      maxGroupSize: 3
+      count: 50
+      minGroupSize: 2
+      maxGroupSize: 4
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockDiamond
       count: 15
       minGroupSize: 1
       maxGroupSize: 2
+    - !type:OreDunGen # Goobstation
+      replacement: IronRock
+      entity: IronRockBSCrystal
+      count: 40
+      minGroupSize: 2
+      maxGroupSize: 5
     - !type:OreDunGen
       replacement: IronRock
       entity: IronRockGibtonite

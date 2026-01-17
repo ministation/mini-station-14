@@ -36,8 +36,13 @@ ent-ClothingUniformJumpskirtHoSAlt = юбка-водолазка главы сл
     .desc = Это водолазка, носимая теми, кто достаточно силён и дисциплинирован, чтобы достичь должности главы службы безопасности. Её прочная ткань обеспечивает слабую защиту от механических повреждений.
 ent-ClothingUniformJumpskirtHoSParadeMale = парадная форма главы службы безопасности
     .desc = Роскошная униформа главы службы безопасности, для особых случаев.
+<<<<<<< HEAD
 ent-ClothingUniformJumpskirtCommandGeneric = command jumpskirt
     .desc = A generic Command-colored jumpsuit not associated with any particular department.
+=======
+ent-ClothingUniformJumpskirtCommandGeneric = юбка-комбинезон командования
+    .desc = Универсальный комбинезон цвета командования, не связанный с каким-либо конкретным отделом.
+>>>>>>> goob
 ent-ClothingUniformJumpskirtHydroponics = юбка-комбинезон ботаника
     .desc = Имеет сильный запах земли. Будем надеяться, что она просто грязная, а не вся в земле.
 ent-ClothingUniformJumpskirtJanitor = юбка-комбинезон уборщика

@@ -6,5 +6,10 @@ ent-WeaponSubMachineGunC20r = C-20r submachine gun
     .desc = A classic and widespread submachine gun, infamous for its use by the Gorlex Marauders. One of the first homegrown Waffle Corp. designs, it remains in service today. Feeds from .35 SMG magazines.
 ent-WeaponSubMachineGunDrozd = Drozd
     .desc = A modern SMG manufactured by Nanotrasen’s Small Arms Division. It features an exceptional rate of fire in burst mode, useful for holding defensive angles or engaging hostiles at longer ranges. Feeds from .35 SMG magazines.
+<<<<<<< HEAD
 ent-WeaponSubMachineGunWt550 = WT550
     .desc = A truly unique firearm, the WT550 was designed by Nanotrasen's Small Arms Division as a compact submachine gun fully controllable with one hand. It contains an exotic internal recoil buffer and feeds from special top-mounted .35 magazines.
+=======
+ent-WeaponSubMachineGunWt550 = WT550 autorifle
+    .desc = A truly unique firearm, the WT550 was designed by Nanotrasen's Small Arms Division as a compact, cheap, and mass produced submachine gun fully controllable with one hand. It contains an exotic internal recoil buffer and feeds from special top-mounted .35 magazines.
+>>>>>>> goob

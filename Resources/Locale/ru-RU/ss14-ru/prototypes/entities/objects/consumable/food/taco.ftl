@@ -1,5 +1,6 @@
 ent-FoodTacoShell = лепёшка тако
     .desc = Оболочка для тако, которую удобно держать. Падает на бок, если положить.
+<<<<<<< HEAD
 ent-FoodTacoBase = { ent-FoodInjectableBase }
     .desc = { ent-FoodInjectableBase.desc }
 ent-FoodTacoBeef = говяжье тако
@@ -18,3 +19,5 @@ ent-FoodTacoDragon = draco
     .desc = A dragon taco, which is technically also a fish taco.
 ent-FoodMealSoftTaco = мягкая лепёшка тако
     .desc = Попробуйте кусочек!
+=======
+>>>>>>> goob

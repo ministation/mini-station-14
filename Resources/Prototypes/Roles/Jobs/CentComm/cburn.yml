@@ -1,3 +1,14 @@
+# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 blobadoodle <me@bloba.dev>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: job
   id: CBURN
   name: job-name-cburn
@@ -8,10 +19,13 @@
   icon: "JobIconNanotrasen"
   supervisors: job-supervisors-centcom
   canBeAntag: false
+  skills: # CorvaxGoob-Skills
+  - All
   accessGroups:
   - AllAccess
   access:
   - CentralCommand
+<<<<<<< HEAD
   special:
   - !type:AddComponentSpecial
     components:
@@ -28,31 +42,48 @@
       - Surgery
       - MedicalEquipment
       - Butchering
+=======
+  # Goobstation
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  special: # Goobstation
+>>>>>>> goob
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
+    implants: [ MindShieldImplant, FreedomImplant, BluespaceLifelineImplant, RadioImplantCentcomm, NutrimentPumpImplant, StypticStimulatorImplant, DeathRattleImplantCentcomm ]
 
-- type: startingGear
+- type: startingGear # Goobstation - Start - Sol
   id: CBURNGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBrown
     back: ClothingBackpackDuffelCBURN
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesSecurity
+    neck: ExecutiveIDCard # Executive Access!
+    eyes: ClothingEyesGlassesMedSec # Better glasses
     ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
-    shoes: ClothingShoesBootsCombatFilled
-    id: CBURNPDA
-    pocket1: RadioHandheld
-    pocket2: WeaponLaserGun
-    belt: ClothingBeltBandolier
+    shoes: ClothingShoesBootsMagEmergencyResponseTeam # Goobstation
+    id: CBURNPDA # Todo - Replace it.
+    pocket1: InfectionScannerCburn # Goob
+    pocket2: WeaponPulsePistol
+    belt: ClothingBeltSecurityFilled # No shotgun, no bandolier.
   storage:
     back:
+<<<<<<< HEAD
     - WeaponShotgunDoubleBarreled
     - BoxShotgunIncendiary
     - GrenadeFlashBang
     - PillAmbuzolPlus
     - PillAmbuzol
+=======
+    - WeaponPulseCarbine # CBURN desperately needs a good fucking gun, not that dogshit. - Also, this gun is literally never used.
+    - AmbuzolPlusMedipen # Injectors are cooler.
+    - AmbuzolMedipen # Injectors are cooler.
+    - AmbuzolMedipen # Injectors are cooler.
+    - MedkitCombatFilled # Ah yes, let's send them in with ZERO meds. Good luck!
+    - CburnSpear # SPEAAR
+# Goobstation - End - Sol
+>>>>>>> goob
 
 - type: chameleonOutfit
   id: CBURNChameleonOutfit

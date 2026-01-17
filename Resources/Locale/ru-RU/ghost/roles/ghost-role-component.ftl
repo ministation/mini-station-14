@@ -40,6 +40,13 @@ ghost-role-information-mouse-description = Голодная и озорная м
 ghost-role-information-mothroach-name = Таракамоль
 ghost-role-information-mothroach-description = Милая озорная таракамоль.
 ghost-role-information-snail-name = Улитка
+<<<<<<< HEAD
+=======
+ghost-role-information-squackroach-name = Гарпимоль
+ghost-role-information-squackroach-description = Дьявольская, но почти безобидная гарпимоль.
+ghost-role-information-moproach-name = Швабромоль
+ghost-role-information-moproach-description = Милая швабромоль с ещё более милыми обувью в виде швабр на ногах.
+>>>>>>> goob
 ghost-role-information-snail-description = Маленькая улитка, которая не против немного побыть на свободе. Только не убегай за пределы клетки!
 ghost-role-information-snailspeed-name = Улитка
 ghost-role-information-snailspeed-description = Маленькая улитка с турбоулиточными ускорителями.
@@ -82,6 +89,11 @@ ghost-role-information-salvage-carp-description = Защищайте ценно�
 ghost-role-information-sentient-carp-name = Разумный карп
 ghost-role-information-sentient-carp-description = Помогите дракону наводнить станцию карпами!
 ghost-role-information-willow-name = Кенгуру Уиллоу
+<<<<<<< HEAD
+=======
+ghost-role-information-space-goldfish-name = Космическая золотая рыбка
+ghost-role-information-space-goldfish-description = Плавайте бесцельно в воздухе и покусывайте каждого, кто осмелится вызвать ваш гнев.
+>>>>>>> goob
 ghost-role-information-willow-description = Вы кенгуру по имени Уиллоу! Уиллоу любит бокс.
 ghost-role-information-honkbot-name = Хонкбот
 ghost-role-information-honkbot-description = Искусственное воплощение чистого зла.
@@ -145,8 +157,13 @@ ghost-role-information-behonker-name = Бехонкер
 ghost-role-information-behonker-description = Вы - антагонист, несущий смерть и хонки всем, кто не следует за хонкоматерью.
 ghost-role-information-hellspawn-name = Адское отродье
 ghost-role-information-hellspawn-description = Несите смерть всем, кто не повинуется великой богине Нар'Си.
+<<<<<<< HEAD
 ghost-role-information-Death-Squad-name = Оперативник Эскадрона смерти
 ghost-role-information-Death-Squad-description = Один из лучших агентов внутренних дел Nanotrasen. Ожидайте приказов от Центкома или представителя Центкома.
+=======
+ghost-role-information-Death-Squad-name = Оперативник Эскадрона Смерти
+ghost-role-information-Death-Squad-description = Один из лучших агентов внутренних дел NanoTrasen. Ожидайте приказов от Центкома или представителя Центкома.
+>>>>>>> goob
 ghost-role-information-Death-Squad-rules = Вы обязаны подчиняться приказам своего командира, вы фактически его [color={ role-type-familiar-color }][bold]{ role-type-familiar-name }[/bold][/color].
 ghost-role-information-SyndiCat-name = СиндиКот
 ghost-role-information-SyndiCat-description = Вы - верный дрессированный питомец ядерных оперативников с микробомбой. Служите своему хозяину до самой смерти!
@@ -175,11 +192,19 @@ ghost-role-information-syndicate-monkey-reinforcement-name = Агент Синд
 ghost-role-information-syndicate-monkey-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученная обезьяна, поможете им.
 ghost-role-information-syndicate-kobold-reinforcement-name = Агент Синдиката-кобольд
 ghost-role-information-syndicate-kobold-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученный кобольд, поможете им.
+<<<<<<< HEAD
 ghost-role-information-syndicate-cyborg-assault-name = Штурмовой киборг Синдиката
 ghost-role-information-syndicate-cyborg-saboteur-name = Саботажный киборг Синдиката
 ghost-role-information-syndicate-cyborg-description = Синдикату нужно подкрепление. Вы, холодная кремниевая машина для убийства, поможете им.
 ghost-role-information-derelict-cyborg-name = Заброшенный киборг
 ghost-role-information-derelict-cyborg-description = Вы - обычный киборг, который заблудился в космосе. После долгих лет воздействия ионных бурь вы оказываетесь рядом с космической станцией.
+=======
+ghost-role-information-syndicate-cyborg-assault-name = Штурмовой борг Синдиката
+ghost-role-information-syndicate-cyborg-saboteur-name = Саботажный борг Синдиката
+ghost-role-information-syndicate-cyborg-description = Синдикату нужно подкрепление. Вы, холодная кремниевая машина для убийства, поможете им.
+ghost-role-information-derelict-cyborg-name = Заброшенный борг
+ghost-role-information-derelict-cyborg-description = Вы - обычный борг, который заблудился в космосе. После долгих лет воздействия ионных бурь вы оказываетесь рядом с космической станцией.
+>>>>>>> goob
 ghost-role-information-security-name = Служба безопасности
 ghost-role-information-security-description = Вы входите в состав оперативной группы службы безопасности, но, похоже, попали в странную ситуацию...
 ghost-role-information-medical-name = Медицинский
@@ -227,6 +252,14 @@ ghost-role-information-pirate-captain-name = Капитан космически
 ghost-role-information-pirate-captain-description = Агх, дружище! Ты здесь главный, и тебе нужно разработать план, как заполучить эту сочную добычу с помощью крючка или мошенничества. Только постарайтесь избегать службы безопасности и утилизаторов!
 ghost-role-information-disaster-victim-name = Жертва катастрофы
 ghost-role-information-disaster-victim-description = Вы спаслись на спасательной капсуле с другой станции, которую постигла ужасная участь. Возможно, вас найдут и спасут.
+<<<<<<< HEAD
+=======
+ghost-role-information-pirate-irs-name = Космический пират
+ghost-role-information-pirate-irs-description = Конфискуйте ценные ресурсы станции. Арестуйте капитана за уклонение от налоговой службы.
+ghost-role-information-pirate-irs-captain-name = Капитан космических пиратов
+ghost-role-information-pirate-irs-captain-description = Руководите раскулачиванием. Арестуйте капитана за уклонение от налоговой службы.
+ghost-role-information-pirate-irs-rules = Вы [color=red][bold]Командный антагонист[/bold][/color] вместе с другими пиратами.
+>>>>>>> goob
 ghost-role-information-syndie-disaster-victim-name = Жертва катастрофы из Синдиката
 ghost-role-information-syndie-disaster-victim-description = Вы - обычный пассажир со станции Синдиката. К несчастью, спасательная капсула закинула вас во вражеский сектор...
 ghost-role-information-artifact-name = Разумный артефакт
@@ -237,5 +270,10 @@ ghost-role-information-gingerbread-name = Пряничный человечек
 ghost-role-information-gingerbread-description =
     Существо чистого праздничного духа.
     Распространяйте паточную вкуснятину и хорошее настроение.
+<<<<<<< HEAD
+=======
+ghost-role-information-emotional-support-scurret-name = Эмоционально поддерживающий Скюррет
+ghost-role-information-emotional-support-scurret-description = Поддерживайте экипаж, будьте милым, постоянно говорите "ва".
+>>>>>>> goob
 ghost-role-information-wizard-name = Волшебник
 ghost-role-information-wizard-desc = ТЫ ВОЛШЕБНИК! Покажи станции, из чего сделана твоя магия.

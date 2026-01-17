@@ -1,4 +1,14 @@
+<<<<<<< HEAD:Content.Shared/EntityEffects/Effects/Electrocute.cs
 using Content.Shared.Electrocution;
+=======
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server.Electrocution;
+using Content.Shared.EntityEffects;
+>>>>>>> goob:Content.Server/EntityEffects/Effects/Electrocute.cs
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.EntityEffects.Effects;

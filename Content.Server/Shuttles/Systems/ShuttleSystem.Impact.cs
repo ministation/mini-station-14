@@ -1,3 +1,51 @@
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
+// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using System.Numerics;
+>>>>>>> goob
 using Content.Server.Shuttles.Components;
 using Content.Shared.Atmos.Components;
 using Content.Shared.Audio;
@@ -275,7 +323,11 @@ public sealed partial class ShuttleSystem
 
         foreach (var tileRef in _mapSystem.GetLocalTilesIntersecting(uid, grid, new Circle(centerTile, radius)))
         {
+<<<<<<< HEAD
             var def = (ContentTileDefinition)_tileDefManager[tileRef.Tile.TypeId];
+=======
+            var def = _turf.GetContentTileDefinition(tileRef);
+>>>>>>> goob
             mass += def.Mass;
             tileCount++;
 
@@ -323,6 +375,7 @@ public sealed partial class ShuttleSystem
         {
             ProcessBrokenTilesAndSparks(uid, grid, brokenTiles, sparkTiles);
         }
+<<<<<<< HEAD
     }
 
     /// <summary>
@@ -403,6 +456,124 @@ public sealed partial class ShuttleSystem
 
             // Mark tiles for breaking/effects
             var def = (ContentTileDefinition)_tileDefManager[_mapSystem.GetTileRef(uid, grid, tileData.Tile).Tile.TypeId];
+            if (tileData.Energy > def.Mass * _tileBreakEnergyMultiplier)
+                brokenTiles.Add((tileData.Tile, Tile.Empty));
+
+        }
+    }
+
+    /// <summary>
+    /// Process visual effects and tile breaking after entity processing
+    /// </summary>
+    private void ProcessBrokenTilesAndSparks(
+        EntityUid uid,
+        MapGridComponent grid,
+        List<(Vector2i, Tile)> brokenTiles,
+        List<Vector2i> sparkTiles)
+    {
+        // Break tiles
+        _mapSystem.SetTiles(uid, grid, brokenTiles);
+
+        if (TerminatingOrDeleted(uid))
+            return;
+
+        // Spawn spark effects
+        foreach (var tile in sparkTiles)
+        {
+            var coords = _mapSystem.GridTileToLocal(uid, grid, tile);
+            Spawn(_sparkEffect, coords);
+        }
+    }
+
+    /// <summary>
+    /// Check whether this impact should be logged to admins.
+    /// Used to prevent spamming logs.
+    /// </summary>
+    private bool CheckShouldLog(EntityUid uid)
+    {
+        return !(_impactedAt.ContainsKey(uid) && _gameTiming.CurTime < _impactedAt[uid] + _adminLogSpacing);
+=======
+>>>>>>> goob
+    }
+
+    /// <summary>
+    /// Process a batch of tiles from the impact zone
+    /// </summary>
+    private void ProcessTileBatch(
+        EntityUid uid,
+        MapGridComponent grid,
+        List<ImpactTileData> tilesToProcess,
+        Vector2 throwDirection,
+        int startIndex,
+        int endIndex,
+        List<(Vector2i, Tile)> brokenTiles,
+        List<Vector2i> sparkTiles)
+    {
+        // here so we don't have to `new` it every iteration
+        var damageSpec = new DamageSpecifier()
+        {
+            DamageDict = { ["Blunt"] = 0, ["Structural"] = 0 }
+        };
+
+        var entitiesOnTile = new HashSet<Entity<TransformComponent>>();
+        var tileCenter = new Vector2(grid.TileSize / 2f, grid.TileSize / 2f);
+
+        for (var i = startIndex; i < endIndex; i++)
+        {
+            var tileData = tilesToProcess[i];
+
+            bool canBreakTile = true;
+
+            // Process entities on this tile
+            entitiesOnTile.Clear();
+            _lookup.GetLocalEntitiesIntersecting(uid, tileData.Tile, entitiesOnTile, gridComp: grid);
+
+            // this loop is a hotspot so tell if you know how to optimise it
+            foreach (var localEnt in entitiesOnTile)
+            {
+                // the query can ocassionally return entities barely touching this tile so check for that
+                var toCenter = tileData.Tile + tileCenter - localEnt.Comp.Coordinates.Position;
+                if (MathF.Abs(toCenter.X) > 0.5f || MathF.Abs(toCenter.Y) > 0.5f)
+                    continue;
+
+                if (_dmgQuery.TryComp(localEnt, out var damageable))
+                {
+                    // Apply damage scaled by distance but capped to prevent gibbing
+                    var scaledDamage = tileData.Energy * _damageMultiplier;
+                    damageSpec.DamageDict["Blunt"] = scaledDamage;
+                    damageSpec.DamageDict["Structural"] = scaledDamage * _structuralDamage;
+
+                    _damageSys.TryChangeDamage(localEnt, damageSpec, damageable: damageable);
+                }
+                // might've been destroyed
+                if (TerminatingOrDeleted(localEnt) || EntityManager.IsQueuedForDeletion(localEnt))
+                    continue;
+
+                if (!_physicsQuery.TryComp(localEnt, out var physics))
+                    continue;
+
+                // no breaking tiles under walls that haven't been destroyed
+                if ((physics.BodyType & BodyType.Static) != 0
+                    && (physics.CollisionLayer & (int)CollisionGroup.Impassable) != 0)
+                {
+                    canBreakTile = false;
+                }
+                else
+                {
+                    var direction = throwDirection * tileData.DistanceFactor;
+                    _throwing.TryThrow(localEnt, direction, physics, localEnt.Comp, _projQuery, direction.Length(), playSound: false);
+                }
+            }
+
+            // Mark tiles for spark effects
+            if (tileData.Energy > _sparkEnergy && tileData.DistanceFactor > 0.7f && _random.Prob(_sparkChance))
+                sparkTiles.Add(tileData.Tile);
+
+            if (!canBreakTile)
+                continue;
+
+            // Mark tiles for breaking/effects
+            var def = _turf.GetContentTileDefinition(_mapSystem.GetTileRef(uid, grid, tileData.Tile));
             if (tileData.Energy > def.Mass * _tileBreakEnergyMultiplier)
                 brokenTiles.Add((tileData.Tile, Tile.Empty));
 

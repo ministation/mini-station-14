@@ -1,7 +1,11 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
   "copyright": "made by blooodyspy",
+=======
+  "copyright": "made by blooodyspy, cosmos made by Armok",
+>>>>>>> goob
   "size": {
     "x": 48,
     "y": 48
@@ -74,6 +78,23 @@
           0.125, 0.125, 0.125
         ]
       ]
+<<<<<<< HEAD
     }
   ]
 }
+=======
+    },
+    {
+      "name": "cosmos",
+      "delays": [
+        [
+          0.125, 0.125, 0.125, 0.125, 0.125,
+          0.125, 0.125, 0.125, 0.125, 0.125,
+          0.125, 0.125, 0.125, 0.125, 0.125,
+          0.125, 0.125
+        ]
+      ]
+    }
+  ]
+}
+>>>>>>> goob

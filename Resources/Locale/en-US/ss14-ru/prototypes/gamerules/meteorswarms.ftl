@@ -20,6 +20,7 @@ ent-GameRuleUristSwarm = { ent-GameRuleMeteorSwarm }
     .desc = { ent-GameRuleMeteorSwarm.desc }
 ent-ImmovableRodSpawn = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
+<<<<<<< HEAD
 ent-GameRuleCowSwarm = { ent-GameRuleMeteorSwarm }
     .desc = { ent-GameRuleMeteorSwarm.desc }
 ent-GameRuleClownSwarm = { ent-GameRuleMeteorSwarm }
@@ -28,3 +29,5 @@ ent-GameRulePotatoSwarm = { ent-GameRuleMeteorSwarm }
     .desc = { ent-GameRuleMeteorSwarm.desc }
 ent-GameRuleFunSwarm = { ent-GameRuleMeteorSwarm }
     .desc = { ent-GameRuleMeteorSwarm.desc }
+=======
+>>>>>>> goob

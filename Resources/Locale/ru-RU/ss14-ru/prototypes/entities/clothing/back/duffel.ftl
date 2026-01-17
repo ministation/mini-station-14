@@ -37,6 +37,11 @@ ent-ClothingBackpackDuffelSyndicate = чёрно-красный вещмешок
 # Corvax-HiddenDesc-End
 ent-ClothingBackpackDuffelSyndicateBundle = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
+<<<<<<< HEAD
+=======
+ent-ClothingBackpackDuffelBundle = { ent-ClothingBackpackDuffel }
+    .desc = { ent-ClothingBackpackDuffel.desc }
+>>>>>>> goob
 ent-ClothingBackpackDuffelSyndicateAmmo = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
 ent-ClothingBackpackDuffelSyndicateAmmoBundle = { ent-ClothingBackpackDuffelSyndicateAmmo }

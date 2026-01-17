@@ -5,9 +5,17 @@ ent-BaseTraitorSocialObjective = { ent-BaseTraitorObjective }
 ent-BaseTraitorStealObjective = { ent-BaseTraitorObjective }
     .desc = { ent-BaseTraitorObjective.desc }
 ent-EscapeShuttleObjective = Escape to centcomm alive and unrestrained.
+<<<<<<< HEAD
     .desc = One of our undercover agents will debrief you when you arrive. Don't show up in cuffs.
 ent-DieObjective = Die a glorious death
     .desc = Die.
+=======
+    .desc = One of our undercover agents will debrief you when you arrive on the evacuation shuttle. Don't show up in cuffs.
+ent-DieObjective = Die a glorious death
+    .desc = Die.
+ent-HijackShuttleObjective = Hijack emergency shuttle
+    .desc = Leave on the shuttle free and clear of the loyal Nanotrasen crew on board. Use ANY methods available to you. Syndicate agents, Nanotrasen enemies, and handcuffed hostages may remain alive on the shuttle. Ignore assistance from anyone other than a support agent.
+>>>>>>> goob
 ent-KillRandomPersonObjective = { ent-BaseTraitorObjective }
     .desc = Do it however you like, just make sure they don't get off the station.
 ent-KillRandomHeadObjective = { ent-BaseTraitorObjective }
@@ -20,8 +28,11 @@ ent-BaseCMOStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
 ent-CMOHyposprayStealObjective = { ent-BaseCMOStealObjective }
     .desc = { ent-BaseCMOStealObjective.desc }
+<<<<<<< HEAD
 ent-CMOCrewMonitorStealObjective = { ent-BaseCMOStealObjective }
     .desc = { ent-BaseCMOStealObjective.desc }
+=======
+>>>>>>> goob
 ent-BaseRDStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
 ent-RDHardsuitStealObjective = { ent-BaseRDStealObjective }
@@ -30,8 +41,15 @@ ent-HandTeleporterStealObjective = { ent-BaseRDStealObjective }
     .desc = { ent-BaseRDStealObjective.desc }
 ent-EnergyShotgunStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
+<<<<<<< HEAD
 ent-MagbootsStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
+=======
+ent-BaseCEStealObjective = { ent-BaseTraitorStealObjective }
+    .desc = { ent-BaseTraitorStealObjective.desc }
+ent-MagbootsStealObjective = { ent-BaseCEStealObjective }
+    .desc = { ent-BaseCEStealObjective.desc }
+>>>>>>> goob
 ent-ClipboardStealObjective = { ent-BaseTraitorStealObjective }
     .desc = { ent-BaseTraitorStealObjective.desc }
 ent-KnuckleDustersStealObjective = { ent-BaseTraitorStealObjective }
@@ -46,3 +64,8 @@ ent-CaptainJetpackStealObjective = { ent-BaseCaptainObjective }
     .desc = { ent-BaseCaptainObjective.desc }
 ent-CaptainGunStealObjective = { ent-BaseCaptainObjective }
     .desc = { ent-BaseCaptainObjective.desc }
+<<<<<<< HEAD
+=======
+ent-NukeDiskStealObjective = { ent-BaseCaptainObjective }
+    .desc = { ent-BaseCaptainObjective.desc }
+>>>>>>> goob

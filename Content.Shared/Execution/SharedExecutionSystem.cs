@@ -1,3 +1,15 @@
+// SPDX-FileCopyrightText: 2024 Celene <4323352+CuteMoonGod@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Celene <maurice_riepert94@web.de>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.ActionBlocker;
 using Content.Shared.Chat;
 using Content.Shared.CombatMode;
@@ -12,10 +24,11 @@ using Content.Shared.Verbs;
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Interaction.Events;
-using Content.Shared.Mind;
 using Robust.Shared.Player;
 using Robust.Shared.Audio.Systems;
-
+using Content.Shared.Body.Part; // Goobstation decapitation
+using Content.Shared.Body.Systems; // Goobstation decapitation
+using Content.Shared._Shitmed.Medical.Surgery.Wounds.Systems; // Goobstation decapitation
 namespace Content.Shared.Execution;
 
 /// <summary>
@@ -32,6 +45,8 @@ public sealed class SharedExecutionSystem : EntitySystem
     [Dependency] private readonly SharedCombatModeSystem _combat = default!;
     [Dependency] private readonly SharedExecutionSystem _execution = default!;
     [Dependency] private readonly SharedMeleeWeaponSystem _melee = default!;
+    [Dependency] private readonly WoundSystem _wounds = default!; // Goobstation decapitation
+    [Dependency] private readonly SharedBodySystem _body = default!; // Goobstation decapitation
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -88,7 +103,8 @@ public sealed class SharedExecutionSystem : EntitySystem
             {
                 BreakOnMove = true,
                 BreakOnDamage = true,
-                NeedHand = true
+                NeedHand = true,
+                MultiplyDelay = false, // Goobstation
             };
 
         _doAfter.TryStartDoAfter(doAfter);
@@ -132,7 +148,6 @@ public sealed class SharedExecutionSystem : EntitySystem
         args.Damage += bonus;
         args.ResistanceBypass = true;
     }
-
     private void OnSuicideByEnvironment(Entity<ExecutionComponent> entity, ref SuicideByEnvironmentEvent args)
     {
         if (!TryComp<MeleeWeaponComponent>(entity, out var melee))
@@ -151,7 +166,7 @@ public sealed class SharedExecutionSystem : EntitySystem
         args.Handled = true;
     }
 
-    private void ShowExecutionInternalPopup(string locString, EntityUid attacker, EntityUid victim, EntityUid weapon, bool predict = true)
+    public void ShowExecutionInternalPopup(string locString, EntityUid attacker, EntityUid victim, EntityUid weapon, bool predict = true) // Made public by goobstation
     {
         if (predict)
         {
@@ -173,7 +188,7 @@ public sealed class SharedExecutionSystem : EntitySystem
         }
     }
 
-    private void ShowExecutionExternalPopup(string locString, EntityUid attacker, EntityUid victim, EntityUid weapon)
+    public void ShowExecutionExternalPopup(string locString, EntityUid attacker, EntityUid victim, EntityUid weapon) // Made public by goobstation
     {
         _popup.PopupEntity(
             Loc.GetString(locString, ("attacker", Identity.Entity(attacker, EntityManager)), ("victim", Identity.Entity(victim, EntityManager)), ("weapon", weapon)),
@@ -218,6 +233,8 @@ public sealed class SharedExecutionSystem : EntitySystem
         else
         {
             _melee.AttemptLightAttack(attacker, weapon, meleeWeaponComp, victim);
+            if (entity.Comp.Decapitation)// Goobstation Decapitation
+                Decapitation(victim);
         }
 
         _combat.SetInCombatMode(attacker, prev);
@@ -230,4 +247,26 @@ public sealed class SharedExecutionSystem : EntitySystem
             _execution.ShowExecutionExternalPopup(externalMsg, attacker, victim, entity);
         }
     }
+    // Goobatation  start Decapitation
+    private void Decapitation(EntityUid victim)
+    {
+        var bodyparts = _body.GetBodyChildren(victim);
+
+        var head = new EntityUid?();
+        var body = new EntityUid?();
+
+        foreach (var bodypart in bodyparts)
+        {
+            if (bodypart.Component.PartType == BodyPartType.Chest)
+                body = bodypart.Id;
+            if (bodypart.Component.PartType == BodyPartType.Head)
+                head = bodypart.Id;
+        }
+
+        if(!head.HasValue || !body.HasValue)
+            return;
+
+        _wounds.AmputateWoundable(body.Value,head.Value);
+    }
+    // Goobstation end
 }

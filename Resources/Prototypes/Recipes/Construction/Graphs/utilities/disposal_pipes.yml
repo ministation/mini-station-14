@@ -1,3 +1,14 @@
+# SPDX-FileCopyrightText: 2022 Jack Fox <35575261+DubiousDoggo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 08A <git@08a.re>
+# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: constructionGraph
   id: DisposalPipe
   start: start
@@ -81,6 +92,12 @@
       - material: Cable
         amount: 1
         doAfter: 1
+    # Goobstation - DisposalBlocker
+    - to: blocker
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
   - node: broken
     entity: DisposalPipeBroken
     edges:
@@ -88,7 +105,7 @@
       completed:
       - !type:SpawnPrototype
         prototype: SheetSteel1
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -100,7 +117,7 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -112,7 +129,21 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
+      steps:
+      - tool: Welding
+        doAfter: 1
+  - node: signaller
+    entity: DisposalSignaller
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: CableApcStack1 # I have no idea why this does not work
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -138,7 +169,7 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -151,7 +182,7 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -163,7 +194,7 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -176,7 +207,7 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -192,7 +223,7 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -208,7 +239,7 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -224,7 +255,7 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -241,7 +272,7 @@
       - !type:SpawnPrototype
         prototype: SheetSteel1
         amount: 2
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -256,7 +287,7 @@
         amount: 2
       - !type:SpawnPrototype
         prototype: CableApcStack1
-      - !type:DeleteEntity
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1
@@ -270,7 +301,20 @@
         amount: 2
       - !type:SpawnPrototype
         prototype: CableApcStack1
-      - !type:DeleteEntity
+      - !type:DestroyEntity
+      steps:
+      - tool: Welding
+        doAfter: 1
+  # Goobstation - DisposalBlocker
+  - node: blocker
+    entity: DisposalBlocker
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DestroyEntity
       steps:
       - tool: Welding
         doAfter: 1

@@ -8,4 +8,8 @@ department-Security = Служба безопасности
 department-Science = Научный отдел
 department-Silicon = Синтетики
 department-Specific = На определённых станциях
+<<<<<<< HEAD
 department-Unknown = Unknown
+=======
+department-Unknown = Неизвестно
+>>>>>>> goob

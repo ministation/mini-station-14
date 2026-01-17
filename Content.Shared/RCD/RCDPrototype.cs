@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 using Content.Shared.FixedPoint;
+=======
+// SPDX-FileCopyrightText: 2024 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Goobstation.Maths.FixedPoint;
+>>>>>>> goob
 using Content.Shared.Physics;
 using Robust.Shared.Physics.Collision.Shapes;
 using Robust.Shared.Prototypes;
@@ -44,6 +57,12 @@ public sealed partial class RCDPrototype : IPrototype
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public string? Prototype { get; private set; }
+
+    /// <summary>
+    /// If the entity can be flipped, this prototype is available as an alternate (mode dependent)
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadOnly)]
+    public string? MirrorPrototype { get; private set; }
 
     /// <summary>
     /// Number of charges consumed when the operation is completed
@@ -138,6 +157,7 @@ public enum RcdConstructionRule : byte
     MustBuildOnSubfloor,        // Can only be built on exposed subfloor (e.g. catwalks on lattice or hull plating)
     IsWindow,                   // The entity is a window and can be built on grilles
     IsCatwalk,                  // The entity is a catwalk
+    IsWallLight                 // Goobstation - The entity is wall light
 }
 
 public enum RcdRotation : byte

@@ -34,6 +34,11 @@ ent-ClothingBackpackDuffelSyndicate = syndicate duffel bag
     .desc = A large duffel bag for holding various traitor goods.
 ent-ClothingBackpackDuffelSyndicateBundle = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
+<<<<<<< HEAD
+=======
+ent-ClothingBackpackDuffelBundle = { ent-ClothingBackpackDuffel }
+    .desc = { ent-ClothingBackpackDuffel.desc }
+>>>>>>> goob
 ent-ClothingBackpackDuffelSyndicateAmmo = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
 ent-ClothingBackpackDuffelSyndicateAmmoBundle = { ent-ClothingBackpackDuffelSyndicateAmmo }
@@ -44,5 +49,9 @@ ent-ClothingBackpackDuffelSyndicateMedicalBundle = { ent-ClothingBackpackDuffelS
     .desc = { ent-ClothingBackpackDuffelSyndicateMedical.desc }
 ent-ClothingBackpackDuffelHolding = duffelbag of holding
     .desc = A duffelbag that opens into a localized pocket of bluespace.
+<<<<<<< HEAD
 ent-ClothingBackpackDuffelCBURN = CBURN duffel bag
+=======
+ent-ClothingBackpackDuffelCBURN = biohazard containment duffel bag
+>>>>>>> goob
     .desc = A duffel bag containing a variety of biological containment equipment.

@@ -1,4 +1,19 @@
-﻿- type: constructionGraph
+# SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Julian Giebel <j.giebel@netrocks.info>
+# SPDX-FileCopyrightText: 2021 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2024 Boolean-Buckeye <36829021+Boolean-Buckeye@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BooleanBuckeye <booleanbuckeye@gmail.com>
+# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: constructionGraph
   id: LightFixture
   start: start
   graph:
@@ -24,6 +39,34 @@
             - material: Steel
               amount: 1
               doAfter: 2.0
+        - to: floorLight # CorvaxGoob-Start
+          steps:
+            - material: Steel
+              amount: 3
+              doAfter: 2.0
+        - to: floorLightRGB
+          steps:
+            - tag: LightTubeCrystalRed
+              name: construction-graph-tag-light-tube-crystal-red
+              icon:
+                sprite: Objects/Power/light_tube.rsi
+                state: normal
+              doAfter: 1
+            - tag: LightTubeCrystalGreen
+              name: construction-graph-tag-light-tube-crystal-green
+              icon:
+                sprite: Objects/Power/light_tube.rsi
+                state: normal
+              doAfter: 1
+            - tag: LightTubeCrystalBlue
+              name: construction-graph-tag-light-tube-crystal-blue
+              icon:
+                sprite: Objects/Power/light_tube.rsi
+                state: normal
+              doAfter: 1
+            - material: Steel
+              amount: 3
+              doAfter: 1.0 # CorvaxGoob-End
         - to: emergencyLight
           steps:
             - material: Steel
@@ -62,6 +105,36 @@
               prototype: SheetSteel1
               amount: 1
             - !type:DeleteEntity {}
+    - node: floorLight # CorvaxGoob-Start
+      entity: EmptyPoweredFloorTileLight
+      edges:
+        - to: start
+          conditions:
+            - !type:ContainerEmpty
+              container: "light_bulb"
+          steps:
+            - tool: Screwing
+              doAfter: 2.0
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 3
+            - !type:DeleteEntity {}
+    - node: floorLightRGB
+      entity: EmptyPoweredFloorTileLightRGB
+      edges:
+        - to: start
+          conditions:
+            - !type:ContainerEmpty
+              container: "light_bulb"
+          steps:
+            - tool: Screwing
+              doAfter: 2.0
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 3
+            - !type:DeleteEntity {} # CorvaxGoob-End
     - node: groundLight
       entity: PoweredLightPostSmallEmpty
       edges:

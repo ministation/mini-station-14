@@ -1,5 +1,8 @@
 [game]
+<<<<<<< HEAD
 fallbackpreset = "extended"
+=======
+>>>>>>> goob
 lobbyenabled = true
 role_timers = true
 contraband_examine = false
@@ -12,13 +15,20 @@ punctuation = false
 enable_during_round = false
 
 [atmos]
+<<<<<<< HEAD
 space_wind = true
 space_wind_max_velocity = 22.0
+=======
+>>>>>>> goob
 max_explosion_range = 10.0
 
 [shuttle]
 emergency_early_launch_allowed = true
+<<<<<<< HEAD
 arrivals_map = "/Maps/Corvax/Misc/corvax_terminal.yml"
+=======
+arrivals_map = "/Maps/_CorvaxGoob/Base/Misc/corvax_terminal.yml"
+>>>>>>> goob
 auto_call_time = 150
 
 [vote]
@@ -27,3 +37,9 @@ same_type_timeout = 300.0
 timerrestart = 30
 preset_enabled = false
 restart_enabled = false
+<<<<<<< HEAD
+=======
+
+[ragequit]
+notify = false
+>>>>>>> goob

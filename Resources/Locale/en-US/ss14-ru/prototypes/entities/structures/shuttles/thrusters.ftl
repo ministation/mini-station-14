@@ -16,3 +16,9 @@ ent-GyroscopeUnanchored = { ent-Gyroscope }
 ent-DebugGyroscope = { ent-BaseThruster }
     .suffix = DEBUG
     .desc = { ent-BaseThruster.desc }
+<<<<<<< HEAD
+=======
+ent-ThrusterShuttleEvac = thruster
+    .desc = A thruster that allows a shuttle to move.
+    .suffix = Evac shuttle, unanchorable
+>>>>>>> goob

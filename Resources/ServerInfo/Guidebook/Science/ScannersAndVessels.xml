@@ -1,6 +1,20 @@
+<<<<<<< HEAD
 <Document>
 ## Сканер аномалий
 
+=======
+<!--
+SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+
+SPDX-License-Identifier: MIT
+-->
+
+<Document>
+## Сканер аномалий
+
+>>>>>>> goob
 Сканер аномалий используется для сбора различной информации об аномалиях. Найти такой можно в шкафчиках научного отдела.
 
 <Box>

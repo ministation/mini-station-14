@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ent-WeaponEnergyTurretStationMachineCircuitboardBase = sentry turret machine board
     .desc = A machine printed circuit board for a sentry turret.
 ent-WeaponEnergyTurretStationMachineCircuitboard = охранная турель (машинная плата)
@@ -8,3 +9,15 @@ ent-WeaponEnergyTurretSecurityMachineCircuitboard = { ent-WeaponEnergyTurretStat
 ent-WeaponEnergyTurretAIMachineCircuitboard = охранная турель ИИ (машинная плата)
     .desc = Печатная плата для охранной турели ИИ.
     .suffix = AI, Silicon
+=======
+ent-WeaponEnergyTurretStationMachineCircuitboardBase = охранная турель (машинная плата)
+    .desc = Печатная плата для охранной турели.
+ent-WeaponEnergyTurretStationMachineCircuitboard = { ent-WeaponEnergyTurretStationMachineCircuitboardBase }
+    .desc = { ent-WeaponEnergyTurretStationMachineCircuitboardBase.desc }
+ent-WeaponEnergyTurretSecurityMachineCircuitboard = { ent-WeaponEnergyTurretStationMachineCircuitboardBase }
+    .suffix = СБ
+    .desc = { ent-WeaponEnergyTurretStationMachineCircuitboardBase.desc }
+ent-WeaponEnergyTurretAIMachineCircuitboard = охранная турель ИИ (машинная плата)
+    .desc = Печатная плата для охранной турели ИИ.
+    .suffix = ИИ, Борги
+>>>>>>> goob

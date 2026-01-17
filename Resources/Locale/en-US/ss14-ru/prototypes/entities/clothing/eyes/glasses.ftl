@@ -4,10 +4,17 @@ ent-ClothingEyesGlassesGarOrange = orange gar glasses
     .desc = Just who the hell do you think I am?!
 ent-ClothingEyesGlassesGarGiga = giga gar glasses
     .desc = We evolve past the person we were a minute before. Little by little we advance with each turn. That's how a drill works!
+<<<<<<< HEAD
 ent-ClothingEyesGlassesMeson = engineering goggles
     .desc = Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types.
 ent-ClothingEyesGlasses = glasses
     .desc = A pair of spectacular spectacles with prescription lenses.
+=======
+ent-ClothingEyesGlassesMeson = meson goggles
+    .desc = Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types.
+ent-ClothingEyesGlasses = glasses
+    .desc = Upon closer inspection, you realize these lenses are infact made of plastic.
+>>>>>>> goob
 ent-ClothingEyesGlassesJensen = jensen glasses
     .desc = A pair of yellow tinted folding glasses. You never asked for these.
 ent-ClothingEyesGlassesJamjar = jamjar glasses

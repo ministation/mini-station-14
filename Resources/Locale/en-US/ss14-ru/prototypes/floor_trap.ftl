@@ -15,9 +15,12 @@ ent-SpawnFloorTrapBear = { ent-CollideFloorTrapSpawn }
 ent-SpawnFloorTrapKangaroo = { ent-CollideFloorTrapSpawn }
     .suffix = Kangaroo
     .desc = { ent-CollideFloorTrapSpawn.desc }
+<<<<<<< HEAD
 ent-SpawnFloorTrapXenoDrone = { ent-CollideFloorTrapSpawn }
     .suffix = Xeno. Drone
     .desc = { ent-CollideFloorTrapSpawn.desc }
 ent-SpawnFloorTrapXenoBurrower = { ent-CollideFloorTrapSpawn }
     .suffix = Xeno. Burrower
     .desc = { ent-CollideFloorTrapSpawn.desc }
+=======
+>>>>>>> goob

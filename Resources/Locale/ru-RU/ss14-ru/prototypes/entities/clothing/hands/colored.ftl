@@ -20,6 +20,11 @@ ent-ClothingHandsGlovesColorOrange = оранжевые перчатки
     .desc = Обычные оранжевые перчатки, которые не спасут вас от поджаривания.
 ent-ClothingHandsGlovesColorWhite = белые перчатки
     .desc = Эти перчатки выглядят роскошно.
+<<<<<<< HEAD
+=======
+ent-ClothingHandsGlovesColorYellowBase = { ent-ClothingHandsBase }
+    .desc = { ent-ClothingHandsBase.desc }
+>>>>>>> goob
 ent-ClothingHandsGlovesColorYellow = изолированные перчатки
     .desc = Эти перчатки защищают пользователя от поражения электрическим током.
 ent-ClothingHandsGlovesColorYellowBudget = дешёвые изолированные перчатки

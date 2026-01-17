@@ -1,3 +1,42 @@
+// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 2020 GlassEclipse <32942106+GlassEclipse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Jackson Lewis <inquisitivepenguin@protonmail.com>
+// SPDX-FileCopyrightText: 2020 Vince <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 collinlunn <60152240+collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Kyle Tyo <36606155+VerinSenpai@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 MarkerWicker <markerWicker@proton.me>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Princess Cheeseballs <66055347+Pronana@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Numerics;
 using Content.Shared.Alert;
 using Content.Shared.CCVar;
@@ -14,6 +53,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Robust.Shared.Maths; // Shitmed Change
+using Content.Goobstation.Common.Movement; // Goob edit
 
 namespace Content.Shared.Movement.Systems
 {
@@ -93,7 +134,12 @@ namespace Content.Shared.Movement.Systems
 
             // Relay the fact we had any movement event.
             // TODO: Ideally we'd do these in a tick instead of out of sim.
-            var moveEvent = new MoveInputEvent(entity, entity.Comp.HeldMoveButtons);
+            // Shitmed Change Start
+            Vector2 vector2 = DirVecForButtons(buttons);
+            Vector2i vector2i = new Vector2i((int) vector2.X, (int) vector2.Y);
+            Direction dir = (vector2i == Vector2i.Zero) ? Direction.Invalid : vector2i.AsDirection();
+            var moveEvent = new MoveInputEvent(entity, buttons, dir, buttons != 0);
+            // Shitmed Change End
             entity.Comp.HeldMoveButtons = buttons;
             RaiseLocalEvent(entity, ref moveEvent);
             Dirty(entity, entity.Comp);
@@ -113,14 +159,19 @@ namespace Content.Shared.Movement.Systems
             entity.Comp.TargetRelativeRotation = state.TargetRelativeRotation;
             entity.Comp.CanMove = state.CanMove;
             entity.Comp.RelativeEntity = EnsureEntity<InputMoverComponent>(state.RelativeEntity, entity.Owner);
+            entity.Comp.DefaultSprinting = state.DefaultSprinting;
 
             // Reset
             entity.Comp.LastInputTick = GameTick.Zero;
             entity.Comp.LastInputSubTick = 0;
-
+             // Shitmed Change Start
+            Vector2 vector2 = DirVecForButtons(entity.Comp.HeldMoveButtons);
+            Vector2i vector2i = new Vector2i((int) vector2.X, (int) vector2.Y);
+            Direction dir = (vector2i == Vector2i.Zero) ? Direction.Invalid : vector2i.AsDirection();
+            // Shitmed Change End
             if (entity.Comp.HeldMoveButtons != state.HeldMoveButtons)
             {
-                var moveEvent = new MoveInputEvent(entity, entity.Comp.HeldMoveButtons);
+                var moveEvent = new MoveInputEvent(entity, entity.Comp.HeldMoveButtons, dir, state.HeldMoveButtons != 0); // Shitmed Change
                 entity.Comp.HeldMoveButtons = state.HeldMoveButtons;
                 RaiseLocalEvent(entity.Owner, ref moveEvent);
 
@@ -139,6 +190,7 @@ namespace Content.Shared.Movement.Systems
                 HeldMoveButtons = entity.Comp.HeldMoveButtons,
                 RelativeRotation = entity.Comp.RelativeRotation,
                 TargetRelativeRotation = entity.Comp.TargetRelativeRotation,
+                DefaultSprinting = entity.Comp.DefaultSprinting
             };
         }
 
@@ -168,9 +220,17 @@ namespace Content.Shared.Movement.Systems
                 return;
             }
 
+            // Shitmed Change Start
+            var xform = XformQuery.GetComponent(uid);
+            if (TryComp(uid, out RelayInputMoverComponent? relay)
+                 && TryComp(relay.RelayEntity, out TransformComponent? relayXform)
+                 && MoverQuery.TryGetComponent(relay.RelayEntity, out var relayMover))
+                xform = relayXform;
+
             // If we updated parent then cancel the accumulator and force it now.
-            if (!TryUpdateRelative(uid, mover, XformQuery.GetComponent(uid)) && mover.TargetRelativeRotation.Equals(Angle.Zero))
+            if (!TryUpdateRelative(uid, mover, xform) && mover.TargetRelativeRotation.Equals(Angle.Zero))
                 return;
+            // Shitmed Change End
 
             mover.LerpTarget = TimeSpan.Zero;
             mover.TargetRelativeRotation = Angle.Zero;
@@ -319,6 +379,12 @@ namespace Content.Shared.Movement.Systems
             if (!MoverQuery.TryGetComponent(entity, out var moverComp))
                 return;
 
+            // Shitmed Change Start
+            var moverEntity = new Entity<InputMoverComponent>(entity, moverComp);
+            var moveEvent = new MoveInputEvent(moverEntity, moverComp.HeldMoveButtons, dir, state);
+            RaiseLocalEvent(entity, ref moveEvent);
+            // Shitmed Change End
+
             // For stuff like "Moving out of locker" or the likes
             // We'll relay a movement input to the parent.
             if (_container.IsEntityInContainer(entity) &&
@@ -342,6 +408,7 @@ namespace Content.Shared.Movement.Systems
 
             entity.Comp.RelativeEntity = xform.GridUid ?? xform.MapUid;
             entity.Comp.TargetRelativeRotation = Angle.Zero;
+            RaiseLocalEvent(entity, new SprintingInputEvent(entity)); // WD EDIT
         }
 
         private void HandleRunChange(EntityUid uid, ushort subTick, bool walking)
@@ -354,6 +421,7 @@ namespace Content.Shared.Movement.Systems
                 if (moverComp != null)
                 {
                     SetMoveInput((uid, moverComp), MoveButtons.None);
+                    RaiseLocalEvent(uid, new SprintingInputEvent((uid, moverComp))); // WD EDIT
                 }
 
                 HandleRunChange(relayMover.RelayEntity, subTick, walking);
@@ -474,6 +542,8 @@ namespace Content.Shared.Movement.Systems
             // Logger.Info($"[{_gameTiming.CurTick}/{subTick}] Sprint: {enabled}");
 
             SetMoveInput(entity, subTick, walking, MoveButtons.Walk);
+            RaiseLocalEvent(entity, new ToggleWalkEvent(walking)); // Goob edit
+            RaiseLocalEvent(entity, new SprintingInputEvent(entity)); // WD EDIT
         }
 
         /// <summary>

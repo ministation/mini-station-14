@@ -1,0 +1,68 @@
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: job
+  id: Brigmedic
+  name: job-name-brigmedic
+  description: job-description-brigmedic
+  playTimeTracker: JobBrigmedic
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Medical
+    time: 18000 # 5 hrs
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 18000 # 10 hrs
+  - !type:SpeciesRequirement # CorvaxGoob-Species
+    inverted: true
+    species:
+    - Abductor
+  startingGear: BrigmedicGear
+  icon: "JobIconBrigmedic"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  #goobcoins: 35 Corvax-Goob-coins
+  skills: # CorvaxGoob-Skills
+  - Shooting
+  - Surgery
+  - MedicalEquipment
+  guides:
+  - MedicalDoctor
+  # - Brigmedic SOP Hidden by CorvaxGoob
+  - Medicine
+  access: # EE parity, make corpsman able function.
+  - Security
+  - Brig
+  - Medical
+  - Maintenance
+  - Service
+  - External
+  - Cryogenics
+  - Medical #Corvax-Goob-brigmedic-loadout-update
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+    - type: SecurityStaff
+  - !type:AddComponentSpecial
+    components:
+    - type: SurgerySpeedModifier
+      speedModifier: 1.25 # Same as Paramedic
+
+- type: chameleonOutfit
+  id: BrigmedicChameleonOutfit
+  job: Brigmedic
+  equipment:
+    mask: ClothingMaskSecurityMedicalRespirator #Corvax-Goob-brigmedic-loadout-update
+    eyes: ClothingEyesGlassesMedSec
+    ears: ClothingHeadsetBrigmedic
+    outerClothing: ClothingOuterCoatAMG
+    gloves: ClothingHandsGlovesColorWhite
+    jumpsuit: ClothingUniformJumpsuitBrigmedic
+    id: BrigmedicPDA
+    back: ClothingBackpackBrigmedic
+    shoes: ClothingShoesBootsJack
+    head: ClothingHeadHatBeretBrigmedic

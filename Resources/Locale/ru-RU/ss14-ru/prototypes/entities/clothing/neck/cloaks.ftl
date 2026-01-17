@@ -16,14 +16,24 @@ ent-ClothingNeckCloakHop = плащ главы персонала
     .desc = Синий плащ с красными плечиками и золотыми пуговицами, свидетельствующий что вы являетесь хранителем каждого шлюза на станции.
 ent-ClothingNeckCloakHerald = плащ герольда
     .desc = Зловещий красный плащ с шипами на плечах.
+<<<<<<< HEAD
 ent-ClothingNeckCloakNanotrasen = плащ Nanotrasen
     .desc = Величественный синий плащ, представляющий Nanotrasen.
+=======
+ent-ClothingNeckCloakNanotrasen = плащ NanoTrasen
+    .desc = Величественный синий плащ, представляющий NanoTrasen.
+>>>>>>> goob
 ent-ClothingNeckCloakCapFormal = торжественный плащ капитана
     .desc = Роскошно украшенный плащ для особых случаев.
 ent-ClothingNeckCloakAdmin = вех!-плащ
     .desc = Вех!
+<<<<<<< HEAD
 ent-ClothingNeckCloakSalvagerSupreme = supereme salvager's cloak
     .desc = Worn by the most skilled salvagers, for one who has mastered space and made the mining asteroid his domain. They don't just hand these things out, y'know?
+=======
+ent-ClothingNeckCloakSalvagerSupreme = плащ верховного утилизатора
+    .desc = Его носят самые опытные утилизаторы, те, кто освоил космос и сделал шахтёрский астероид своей территорией. Такие вещи не вручаются просто так.
+>>>>>>> goob
 ent-ClothingNeckCloakMiner = плащ шахтёра
     .desc = Его носят самые опытные шахтёры, способные сдвинуть горы и засыпать долины.
 ent-ClothingNeckCloakTrans = вампирский плащ
@@ -37,11 +47,19 @@ ent-ClothingNeckCloakMoth = плащ моли
 ent-ClothingNeckCloakVoid = плащ пустоты
     .desc = Плащ тьмы. Для тех, кто перешёл на тёмную сторону силы.
 ent-ClothingNeckCloakAce = плащ пилота
+<<<<<<< HEAD
     .desc = Плащ, вручаемый лучшим космическим асам Nanotrasen.
 ent-ClothingNeckCloakAro = плащ вервольфа
     .desc = Этот плащ позволяет окружающим понять, что вы - одинокий волк.
 ent-ClothingNeckCloakAroace = плащ аэропилота
     .desc = Почётный плащ, вручаемый лучшим пилотам Nanotrasen, служившим на обитаемых планетах.
+=======
+    .desc = Плащ, вручаемый лучшим космическим асам NanoTrasen.
+ent-ClothingNeckCloakAro = плащ вервольфа
+    .desc = Этот плащ позволяет окружающим понять, что вы - одинокий волк.
+ent-ClothingNeckCloakAroace = плащ аэропилота
+    .desc = Почётный плащ, вручаемый лучшим пилотам NanoTrasen, служившим на обитаемых планетах.
+>>>>>>> goob
 ent-ClothingNeckCloakBi = ядовитый плащ
     .desc = Пурпурный цвет — явный признак того, что вы ядовиты.
 ent-ClothingNeckCloakIntersex = плащ циклопа
@@ -49,7 +67,11 @@ ent-ClothingNeckCloakIntersex = плащ циклопа
 ent-ClothingNeckCloakLesbian = плащ поэта
     .desc = Этот плащ принадлежал древнему поэту, вы забыли, какому именно.
 ent-ClothingNeckCloakGay = плащ сетевого маркетинга
+<<<<<<< HEAD
     .desc = Этот плащ пользуется большим спросом в маркетинговых офисах Nanotrasen.
+=======
+    .desc = Этот плащ пользуется большим спросом в маркетинговых офисах NanoTrasen.
+>>>>>>> goob
 ent-ClothingNeckCloakEnby = плащ кладоискателя
     .desc = Этот плащ принадлежал жадному искателю сокровищ.
 ent-ClothingNeckCloakPan = поварской плащ

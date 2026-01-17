@@ -1,8 +1,13 @@
 ent-AsteroidRock = астероидный камень
     .desc = Каменистый астероид.
     .suffix = Низкое содержание руды
+<<<<<<< HEAD
 ent-BaseRockGibtonite = { "" }
     .suffix = Gibtonite
+=======
+ent-BaseRockGibtonite = { ent-AsteroidRock }
+    .suffix = Гибтонит
+>>>>>>> goob
     .desc = { "" }
 ent-AsteroidRockCoal = { ent-AsteroidRock }
     .desc = Рудная жила, богатая углём.
@@ -50,7 +55,11 @@ ent-AsteroidRockBananium = { ent-AsteroidRock }
     .desc = Рудная жила, богатая бананиумом.
     .suffix = Бананиум
 ent-AsteroidRockBananiumCrab = { ent-AsteroidRockBananium }
+<<<<<<< HEAD
     .suffix = Bananium Crab
+=======
+    .suffix = Бананиум, Рудокраб
+>>>>>>> goob
     .desc = { ent-AsteroidRockBananium.desc }
 ent-AsteroidRockSalt = { ent-AsteroidRock }
     .desc = Рудная жила, богатая солью.
@@ -99,8 +108,13 @@ ent-IronRockSalt = { ent-IronRock }
 ent-IronRockArtifactFragment = { ent-IronRock }
     .desc = Каменная стена. Что это торчит из неё?
     .suffix = Фрагмент артефакта
+<<<<<<< HEAD
 ent-IronRockGibtonite = { ent-BaseRockGibtonite }
     .desc = { ent-BaseRockGibtonite.desc }
+=======
+ent-IronRockGibtonite = { ent-IronRock }
+    .desc = { ent-IronRock.desc }
+>>>>>>> goob
 ent-IronRockDiamond = { ent-IronRock }
     .desc = Рудная жила, богатая алмазами.
     .suffix = Алмазы

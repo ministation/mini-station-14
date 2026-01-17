@@ -27,7 +27,11 @@ ent-ClothingNeckCloakSalvagerSupreme = supereme salvager's cloak
 ent-ClothingNeckCloakTrans = vampire cloak
     .desc = Worn by high ranking vampires of the transylvanian society of vampires.
 ent-ClothingNeckCloakGoliathCloak = goliath cloak
+<<<<<<< HEAD
     .desc = A cloak made from the hide of resilient fauna from a distant planet, though its protective value has faded with its age.
+=======
+    .desc = A cloak made from the hide of resilient fauna from a distant planet.
+>>>>>>> goob
 ent-ClothingNeckCloakPirateCap = pirate captain cloak
     .desc = A rather fetching black pirate cloak, complete with skull motif.
 ent-ClothingNeckCloakMoth = moth cloak

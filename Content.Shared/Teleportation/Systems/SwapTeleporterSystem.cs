@@ -1,3 +1,16 @@
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 crasg <109207982+Scruq445@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Goobstation.Common.BlockTeleport;
+using Content.Goobstation.Common.Effects;
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
@@ -28,6 +41,7 @@ public sealed class SwapTeleporterSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private readonly SparksSystem _sparks = default!; // goob edit - sparks everywhere
 
     private EntityQuery<TransformComponent> _xformQuery;
 
@@ -49,6 +63,13 @@ public sealed class SwapTeleporterSystem : EntitySystem
         var (uid, comp) = ent;
         if (args.Target == null || !args.CanReach)
             return;
+
+        // Goobstation start
+        var ev = new TeleportAttemptEvent();
+        RaiseLocalEvent(args.User, ref ev);
+        if (ev.Cancelled)
+            return;
+        // Goobstation end
 
         var target = args.Target.Value;
 
@@ -113,6 +134,13 @@ public sealed class SwapTeleporterSystem : EntitySystem
         if (comp.TeleportTime != null)
             return;
 
+        // Goobstation start
+        var ev = new TeleportAttemptEvent();
+        RaiseLocalEvent(user, ref ev);
+        if (ev.Cancelled)
+            return;
+        // Goobstation end
+
         if (comp.LinkedEnt == null)
         {
             _popup.PopupClient(Loc.GetString("swap-teleporter-popup-teleport-cancel-link"), ent, user);
@@ -172,6 +200,11 @@ public sealed class SwapTeleporterSystem : EntitySystem
             otherTeleEnt,
             PopupType.MediumCaution);
         _transform.SwapPositions(teleEnt, otherTeleEnt);
+
+        // goob edit - sparks everywhere
+        _sparks.DoSparks(Transform(teleEnt).Coordinates);
+        _sparks.DoSparks(Transform(otherTeleEnt).Coordinates);
+        // end goob edit
     }
 
     /// <summary>
@@ -190,6 +223,11 @@ public sealed class SwapTeleporterSystem : EntitySystem
 
         if (IsPaused(entity1) || IsPaused(entity2))
             return false;
+
+        // Goobstation - Prevent warping into CC with surgery on mice
+        if (entity1.Comp.MapID != entity2.Comp.MapID)
+            return false;
+        // Goobstation End
 
         return true;
     }

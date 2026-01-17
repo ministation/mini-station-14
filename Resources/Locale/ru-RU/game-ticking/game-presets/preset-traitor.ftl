@@ -25,7 +25,11 @@ traitor-role-greeting =
     Вы - агент организации { $corporation } на задании [color = darkred]Синдиката.[/color].
     Ваши цели и кодовые слова перечислены в меню персонажа.
     Воспользуйтесь своим аплинком, чтобы приобрести всё необходимое для выполнения работы.
+<<<<<<< HEAD
     Смерть Nanotrasen!
+=======
+    Смерть NanoTrasen!
+>>>>>>> goob
 traitor-role-codewords =
     Кодовые слова следующие: [color = lightgray]
     { $codewords }.[/color]
@@ -43,3 +47,10 @@ traitor-role-uplink-implant =
     Аплинк надежно защищён, пока кто-нибудь не извлечёт его из вашего тела.
 traitor-role-uplink-code-short = Ваш код аплинка: { $code }. Установите его в качестве рингтона КПК для доступа к аплинку.
 traitor-role-uplink-implant-short = Ваш аплинк был имплантирован. Воспользуйтесь им из хотбара.
+<<<<<<< HEAD
+=======
+traitor-role-moreinfo = Найдите больше информации о своей роли в меню персонажа.
+traitor-role-nouplink = У вас нет аплинка Синдиката. Действуйте обдуманно.
+traitor-role-allegiances = Ваша приверженность:
+traitor-role-notes = Заметки от вашего нанимателя:
+>>>>>>> goob

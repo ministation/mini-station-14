@@ -1,5 +1,10 @@
 ent-ImmovableRod = immovable rod
     .desc = You can sense that it's hungry. That's usually a bad sign.
+<<<<<<< HEAD
+=======
+ent-ImmovableVoidRod = immovable void rod
+    .desc = You can sense that it's hungry. That's usually a bad sign.
+>>>>>>> goob
 ent-ImmovableRodDespawn = { ent-ImmovableRod }
     .suffix = Despawn
     .desc = { ent-ImmovableRod.desc }

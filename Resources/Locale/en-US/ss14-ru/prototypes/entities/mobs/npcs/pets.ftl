@@ -8,8 +8,13 @@ ent-MobCorgiMouse = real mouse
     .desc = It's 100% a real hungry mouse.
 ent-MobCorgiIanPup = Puppy Ian
     .desc = Favourite puppy corgi. Awww.
+<<<<<<< HEAD
 ent-MobCatRuntime = Runtime
     .desc = Professional mouse hunter. Escape artist.
+=======
+ent-MobCatRuntime = Aves
+    .desc = The cat who walks by himself.
+>>>>>>> goob
 ent-MobCatException = Exception
     .desc = Ask nicely, and maybe they'll give you one of their spare lives.
 ent-MobCatFloppa = Floppa
@@ -49,3 +54,8 @@ ent-MobMonkeyPunpun = Pun Pun
     .desc = A prominent representative of monkeys with unlimited access to alcohol.
 ent-MobCrabAtmos = Tropico
     .desc = The noble and stalwart defender of Atmosia. Viva!
+<<<<<<< HEAD
+=======
+ent-MobPollyParrot = Polly the parrot
+    .desc = An expert in quantum cracker theory
+>>>>>>> goob

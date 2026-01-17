@@ -1,4 +1,27 @@
-﻿using System.Linq;
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using System.Linq;
 using Content.Shared.Actions;
 using Content.Shared.Damage;
 using Content.Shared.Examine;
@@ -7,6 +30,7 @@ using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction.Events;
+using Content.Shared.Item.ItemToggle;
 using Content.Shared.Maps;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Physics;
@@ -16,6 +40,8 @@ using Content.Shared.Verbs;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Player;
+using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Blocking;
@@ -31,6 +57,8 @@ public sealed partial class BlockingSystem : EntitySystem
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly ExamineSystemShared _examine = default!;
+    [Dependency] private readonly ItemToggleSystem _toggle = default!; // Goobstation
+    [Dependency] private readonly TurfSystem _turf = default!;
 
     public override void Initialize()
     {
@@ -96,7 +124,7 @@ public sealed partial class BlockingSystem : EntitySystem
         if (!handQuery.TryGetComponent(args.Performer, out var hands))
             return;
 
-        var shields = _handsSystem.EnumerateHeld(args.Performer, hands).ToArray();
+        var shields = _handsSystem.EnumerateHeld((args.Performer, hands)).ToArray();
 
         foreach (var shield in shields)
         {
@@ -165,7 +193,7 @@ public sealed partial class BlockingSystem : EntitySystem
         }
 
         //Don't allow someone to block if someone else is on the same tile
-        var playerTileRef = xform.Coordinates.GetTileRef();
+        var playerTileRef = _turf.GetTileRef(xform.Coordinates);
         if (playerTileRef != null)
         {
             var intersecting = _lookup.GetLocalEntitiesIntersecting(playerTileRef.Value, 0f);
@@ -276,7 +304,7 @@ public sealed partial class BlockingSystem : EntitySystem
         if (!handQuery.TryGetComponent(user, out var hands))
             return;
 
-        var shields = _handsSystem.EnumerateHeld(user, hands).ToArray();
+        var shields = _handsSystem.EnumerateHeld((user, hands)).ToArray();
 
         foreach (var shield in shields)
         {
@@ -297,6 +325,8 @@ public sealed partial class BlockingSystem : EntitySystem
             return;
 
         var fraction = component.IsBlocking ? component.ActiveBlockFraction : component.PassiveBlockFraction;
+        if (!_toggle.IsActivated(uid)) // Goobstation
+            fraction = 0f;
         var modifier = component.IsBlocking ? component.ActiveBlockDamageModifier : component.PassiveBlockDamageModifer;
 
         var msg = new FormattedMessage();

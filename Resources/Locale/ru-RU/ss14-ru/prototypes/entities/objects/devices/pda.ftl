@@ -88,9 +88,12 @@ ent-CentcomPDA = КПК Центком
 ent-AdminPDA = КПК админа
     .desc = Если вы не админ, верните этот КПК ближайшему админу.
     .suffix = Админ
+<<<<<<< HEAD
 ent-DeathsquadPDA = { ent-CentcomPDA }
     .suffix = Эскадрон смерти
     .desc = { ent-CentcomPDA.desc }
+=======
+>>>>>>> goob
 ent-MusicianPDA = КПК музыканта
     .desc = Он наполняет вас вдохновением.
 ent-VisitorMusicianPDA = { ent-MusicianPDA }
@@ -162,3 +165,8 @@ ent-ChameleonPDA = КПК пассажира
     .suffix = Хамелеон
 ent-WizardPDA = КПК волшебника
     .desc = Вы слышите слабый шепот, доносящийся из него.
+<<<<<<< HEAD
+=======
+ent-ScurretPDA = { ent-ClearPDA }
+    .desc = Временный КПК, выдаваемый скюрретам. Ничего толком не делает. Вава!
+>>>>>>> goob

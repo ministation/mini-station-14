@@ -119,6 +119,7 @@ public abstract partial class SharedAtmosPipeLayersSystem : EntitySystem
         if (ent.Comp.NumberOfPipeLayers <= 1 || ent.Comp.PipeLayersLocked)
             return;
 
+<<<<<<< HEAD
         if (TryComp<SubFloorHideComponent>(ent, out var subFloorHide) && subFloorHide.IsUnderCover)
         {
             _popup.PopupPredicted(Loc.GetString("atmos-pipe-layers-component-cannot-adjust-pipes"), ent, args.User);
@@ -127,6 +128,18 @@ public abstract partial class SharedAtmosPipeLayersSystem : EntitySystem
 
         if (TryComp<ToolComponent>(args.Used, out var tool) && _tool.HasQuality(args.Used, ent.Comp.Tool, tool))
             _tool.UseTool(args.Used, args.User, ent, ent.Comp.Delay, tool.Qualities, new TrySetNextPipeLayerCompletedEvent());
+=======
+        if (!TryComp<ToolComponent>(args.Used, out var tool) || !_tool.HasQuality(args.Used, ent.Comp.Tool, tool))
+            return;
+
+        if (TryComp<SubFloorHideComponent>(ent, out var subFloorHide) && subFloorHide.IsUnderCover)
+        {
+            _popup.PopupClient(Loc.GetString("atmos-pipe-layers-component-cannot-adjust-pipes"), ent, args.User);
+            return;
+        }
+
+        _tool.UseTool(args.Used, args.User, ent, ent.Comp.Delay, tool.Qualities, new TrySetNextPipeLayerCompletedEvent());
+>>>>>>> goob
     }
 
     private void OnUseInHandEvent(Entity<AtmosPipeLayersComponent> ent, ref UseInHandEvent args)
@@ -141,7 +154,11 @@ public abstract partial class SharedAtmosPipeLayersSystem : EntitySystem
                 var toolName = Loc.GetString(toolProto.ToolName).ToLower();
                 var message = Loc.GetString("atmos-pipe-layers-component-tool-missing", ("toolName", toolName));
 
+<<<<<<< HEAD
                 _popup.PopupPredicted(message, ent, args.User);
+=======
+                _popup.PopupClient(message, ent, args.User);
+>>>>>>> goob
             }
 
             return;
@@ -217,7 +234,11 @@ public abstract partial class SharedAtmosPipeLayersSystem : EntitySystem
             var layerName = GetPipeLayerName(ent.Comp.CurrentPipeLayer);
             var message = Loc.GetString("atmos-pipe-layers-component-change-layer", ("layerName", layerName));
 
+<<<<<<< HEAD
             _popup.PopupPredicted(message, ent, user);
+=======
+            _popup.PopupClient(message, ent, user);
+>>>>>>> goob
         }
     }
 

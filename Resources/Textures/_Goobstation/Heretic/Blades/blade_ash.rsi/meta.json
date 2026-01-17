@@ -217,6 +217,16 @@
           0.1
         ]
       ]
+<<<<<<< HEAD
     }
   ]
 }
+=======
+    },
+    {
+      "name": "equipped-BELT",
+      "directions": 4
+    }
+  ]
+}
+>>>>>>> goob

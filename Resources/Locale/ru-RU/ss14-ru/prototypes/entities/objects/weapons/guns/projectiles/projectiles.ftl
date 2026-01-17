@@ -26,6 +26,7 @@ ent-EmitterBolt = заряд эмиттера
     .desc = { ent-BaseBullet.desc }
 ent-WatcherBolt = заряд наблюдателя
     .desc = { ent-BaseBullet.desc }
+<<<<<<< HEAD
 ent-BoltTempgunCold = freezing bolt
     .desc = { ent-WatcherBolt.desc }
 ent-WatcherBoltMagmawing = заряд наблюдателя-магмакрыла
@@ -33,13 +34,29 @@ ent-WatcherBoltMagmawing = заряд наблюдателя-магмакрыл�
 ent-BoltTempgunHot = scorching bolt
     .desc = { ent-WatcherBoltMagmawing.desc }
 ent-BasiliskRay = basilisk ray
+=======
+ent-WatcherBoltMagmawing = заряд наблюдателя-магмакрыла
+    .desc = { ent-BaseBullet.desc }
+ent-WatcherBoltIcewing = icewing watcher bolt
+    .desc = { ent-BaseBullet.desc }
+ent-BasiliskRay = луч василиска
+>>>>>>> goob
     .desc = { ent-BaseBullet.desc }
 ent-BulletKinetic = кинетический заряд
     .desc = Не так уж плохо, но вы всё ещё не хотите попасть под это.
 ent-BulletKineticShuttle = { ent-BaseBullet }
     .desc = { ent-BaseBullet.desc }
+<<<<<<< HEAD
 ent-BulletCharge = заряд
     .desc = Помечает цель для нанесения дополнительного урона.
+=======
+ent-BulletSingularityBusterRocket = singularity buster rocket
+    .desc = { ent-BulletRocket.desc }
+ent-BulletCharge = заряд
+    .desc = Помечает цель для нанесения дополнительного урона.
+ent-BulletChargeGlaive = пиявка
+    .desc = { ent-BulletCharge.desc }
+>>>>>>> goob
 ent-AnomalousParticleDelta = дельта-частицы
     .desc = { ent-BaseBullet.desc }
 ent-AnomalousParticleDeltaStrong = { ent-AnomalousParticleDelta }
@@ -70,7 +87,11 @@ ent-BulletGrenadeFlash = светошумовая граната
     .desc = { ent-BaseBulletTrigger.desc }
 ent-BulletGrenadeFrag = осколочная граната
     .desc = { ent-BaseBulletTrigger.desc }
+<<<<<<< HEAD
 ent-BulletGrenadeCleanade = cleanade grenade round
+=======
+ent-BulletGrenadeCleanade = снаряд чистящей гранаты
+>>>>>>> goob
     .desc = { ent-BaseBulletTrigger.desc }
 ent-BulletGrenadeEMP = ЭМИ ракета
     .desc = { ent-BaseBulletTrigger.desc }
@@ -80,7 +101,11 @@ ent-BulletAcid = плевок кислоты
     .desc = { ent-BaseBullet.desc }
 ent-BulletWaterShot = вода
     .desc = { "" }
+<<<<<<< HEAD
 ent-BulletHivebot = hivebot bullet
+=======
+ent-BulletHivebot = пуля ройбота
+>>>>>>> goob
     .desc = { ent-BaseBullet.desc }
 ent-BulletCannonBall = пушечное ядро
     .desc = { ent-BaseBulletTrigger.desc }

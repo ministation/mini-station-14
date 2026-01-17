@@ -84,7 +84,11 @@ ent-ERTSecurityIDCard = ID-карта офицера ОБР
     .desc = { ent-IDCardStandard.desc }
 ent-MusicianIDCard = ID-карта музыканта
     .desc = { ent-IDCardStandard.desc }
+<<<<<<< HEAD
 ent-CentcomIDCardDeathsquad = ID-карта эскадрона смерти
+=======
+ent-CentcomIDCardDeathsquad = ID-карта Эскадрона Смерти
+>>>>>>> goob
     .desc = { ent-IDCardStandard.desc }
 ent-AgentIDCard = { ent-PassengerIDCard }
     .suffix = Агентская
@@ -108,8 +112,13 @@ ent-ZookeeperIDCard = ID-карта зоотехника
     .desc = { ent-IDCardStandard.desc }
 ent-DetectiveIDCard = ID-карта детектива
     .desc = { ent-IDCardStandard.desc }
+<<<<<<< HEAD
 ent-PrisonerIDCard = prisoner ID card
     .desc = A generically printed ID card for scummy prisoners.
+=======
+ent-PrisonerIDCard = ID-карта заключённого
+    .desc = Шаблонная, напечатанная ID-карта для мерзких заключённых.
+>>>>>>> goob
 ent-CBURNIDcard = ID-карта РХБЗЗ
     .desc = { ent-CentcomIDCard.desc }
     .suffix = РХБЗЗ
@@ -124,8 +133,11 @@ ent-SeniorPhysicianIDCard = ID-карта ведущего врача
     .desc = { ent-MedicalIDCard.desc }
 ent-SeniorOfficerIDCard = ID-карта инструктора СБ
     .desc = { ent-SecurityIDCard.desc }
+<<<<<<< HEAD
 ent-WizardIDCard = ID-карта волшебника
     .desc = { ent-IDCardStandard.desc }
+=======
+>>>>>>> goob
 ent-UniversalIDCard = универсальная ID-карта
     .desc = ID-карта, которая позволит вам осуществить свои самые сокровенные желания.
     .suffix = Админ

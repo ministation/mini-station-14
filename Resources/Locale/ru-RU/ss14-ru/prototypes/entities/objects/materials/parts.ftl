@@ -10,6 +10,7 @@ ent-PartRodMetal1 = металлический стержень
     .suffix = Один
     .desc = { ent-PartRodMetal.desc }
 ent-PartRodMetalLingering0 = { ent-PartRodMetal }
+<<<<<<< HEAD
     .suffix = 0, Не исчезают закончившись
     .desc = { ent-PartRodMetal.desc }
 ent-FloorTileItemSteelLingering0 = { ent-FloorTileItemSteel }
@@ -20,4 +21,16 @@ ent-FloorTileItemWhiteLingering0 = { ent-FloorTileItemWhite }
     .desc = { ent-FloorTileItemWhite.desc }
 ent-FloorTileItemDarkLingering0 = { ent-FloorTileItemDark }
     .suffix = Lingering, 0
+=======
+    .suffix = Не исчезают закончившись, 0
+    .desc = { ent-PartRodMetal.desc }
+ent-FloorTileItemSteelLingering0 = { ent-FloorTileItemSteel }
+    .suffix = Не исчезают закончившись, 0
+    .desc = { ent-FloorTileItemSteel.desc }
+ent-FloorTileItemWhiteLingering0 = { ent-FloorTileItemWhite }
+    .suffix = Не исчезают закончившись, 0
+    .desc = { ent-FloorTileItemWhite.desc }
+ent-FloorTileItemDarkLingering0 = { ent-FloorTileItemDark }
+    .suffix = Не исчезают закончившись, 0
+>>>>>>> goob
     .desc = { ent-FloorTileItemDark.desc }

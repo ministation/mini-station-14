@@ -73,7 +73,7 @@
     - id: Joint
       amount: !type:RangeNumberSelector
         range: 1, 5
-    - id: Blunt
+    - id: BluntCigar # Shitmed Change - Name conflicts!
       amount: !type:RangeNumberSelector
         range: 1, 5
     - id: SmokingPipeFilledCannabis
@@ -209,7 +209,7 @@
     - id: ChemicalPayload
       amount: !type:RangeNumberSelector
         range: 1, 2
-    - id: ExplosivePayload
+    - id: ShrapnelPayload
       amount: !type:RangeNumberSelector
         range: 1, 2
 
@@ -267,6 +267,8 @@
     - id: ToyFigurineSpaceDragon
     - id: ToyFigurineQueen
     - id: ToyFigurineRatKing
+    - id: PresentRandomUnsafe
+      weight: 0.001
 
 - type: entityTable #1x small
   id: RandomSatchelCashTable

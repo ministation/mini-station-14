@@ -1,6 +1,12 @@
 ent-PartHuman = human body part
     .desc = { ent-BaseItem.desc }
+<<<<<<< HEAD
 ent-TorsoHuman = human torso
+=======
+ent-ChestHuman = human chest
+    .desc = { ent-PartHuman.desc }
+ent-GroinHuman = human groin
+>>>>>>> goob
     .desc = { ent-PartHuman.desc }
 ent-HeadHuman = human head
     .desc = { ent-PartHuman.desc }

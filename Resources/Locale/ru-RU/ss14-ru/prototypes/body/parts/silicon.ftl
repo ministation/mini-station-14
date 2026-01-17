@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ent-PartSilicon = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-LeftArmBorg = левая рука киборга
@@ -12,3 +13,19 @@ ent-LightHeadBorg = голова киборга
     .desc = { ent-PartSilicon.desc }
 ent-TorsoBorg = туловище киборга
     .desc = { ent-PartSilicon.desc }
+=======
+ent-PartSiliconBase = { ent-BasePartInorganic }
+    .desc = { ent-BasePartInorganic.desc }
+ent-LeftArmBorg = левая рука борга
+    .desc = { ent-PartSiliconBase.desc }
+ent-RightArmBorg = правая рука борга
+    .desc = { ent-PartSiliconBase.desc }
+ent-LeftLegBorg = левая нога борга
+    .desc = { ent-PartSiliconBase.desc }
+ent-RightLegBorg = правая нога борга
+    .desc = { ent-PartSiliconBase.desc }
+ent-LightHeadBorg = голова борга
+    .desc = { ent-PartSiliconBase.desc }
+ent-TorsoBorg = туловище борга
+    .desc = { ent-PartSiliconBase.desc }
+>>>>>>> goob

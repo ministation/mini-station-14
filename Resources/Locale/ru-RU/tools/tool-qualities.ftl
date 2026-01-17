@@ -13,6 +13,11 @@ tool-quality-pulsing-tool-name = Мультитул
 tool-quality-slicing-name = Нарезка
 tool-quality-slicing-tool-name = Нож
 tool-quality-sawing-name = Отпиливание
+<<<<<<< HEAD
+=======
+tool-quality-ignition-name = Зажигание
+tool-quality-ignition-tool-name = Спички
+>>>>>>> goob
 tool-quality-sawing-tool-name = Пила
 tool-quality-honking-name = Хонканье
 tool-quality-honking-tool-name = Велосипедный клаксон
@@ -22,3 +27,8 @@ tool-quality-rolling-name = Раскатывание
 tool-quality-rolling-tool-name = Скалка
 tool-quality-digging-name = Копание
 tool-quality-digging-tool-name = Лопата
+<<<<<<< HEAD
+=======
+tool-quality-brushing-name = Оттирание
+tool-quality-brushing-tool-name = Проволочная щётка
+>>>>>>> goob

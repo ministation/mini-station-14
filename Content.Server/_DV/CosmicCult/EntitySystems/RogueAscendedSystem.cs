@@ -5,7 +5,11 @@ using Content.Server._DV.CosmicCult.Components;
 //using Content.Server._Impstation.Thaven;
 using Content.Server.Actions;
 using Content.Server.Antag;
+<<<<<<< HEAD
 using Content.Server.Bible.Components;
+=======
+//using Content.Server.Bible.Components;
+>>>>>>> goob
 using Content.Server.Interaction;
 using Content.Server.Light.Components;
 using Content.Server.Light.EntitySystems;

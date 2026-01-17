@@ -1,11 +1,21 @@
+<<<<<<< HEAD
 ent-CratePlants = plant crate
     .desc = A variety pack of potted plants to spruce up your station!
+=======
+ent-CratePlants = ящик растений
+    .desc = Набор разнообразных комнатных растений для украшения вашей станции!
+>>>>>>> goob
 ent-CrateFunPlushie = ящик плюшевых игрушек
     .desc = Куча мягких плюшевых игрушек. Разложите их повсюду, а потом подумайте, как вы объясните эту покупку NT.
 ent-CrateFunLizardPlushieBulk = оптовый ящик плюшевых унатхов
     .desc = Куча мягких плюшевых унатхов. Разложите их повсюду, а потом подумайте, как вы объясните эту покупку NT.
+<<<<<<< HEAD
 ent-CrateFunSharkPlushieBulk = bulk soft toy shark crate
     .desc = A crate filled with a variety of everyone's favorite finned friend. Rawr!
+=======
+ent-CrateFunSharkPlushieBulk = оптовый ящик с мягкими акулами
+    .desc = Ящик, наполненный разнообразными мягкими игрушками — всеми любимыми друзьями с плавниками. Ррр!
+>>>>>>> goob
 ent-CrateFunInstrumentsVariety = набор различных музыкальных инструментов
     .desc = Развеселите и расшевелите станцию с этой разнообразной коллекцией! Содержит семь музыкальных инструментов.
 ent-CrateFunInstrumentsBrass = набор духовых инструментов
@@ -46,3 +56,10 @@ ent-CrateFunMysteryFigurines = ящик минифигурок Загадочн�
     .desc = Коллекция из 10 коробок загадочных минифигурок. Дубликаты возврату не подлежат.
 ent-CrateFunDartsSet = набор для дартса
     .desc = Коробка со всем необходимым для увлекательной игры в дартс.
+<<<<<<< HEAD
+=======
+ent-CrateFunScurret = увлажнённый скюррет
+    .desc = Погоди, что?
+ent-CrateFunSelfInsertPlushie = ящик с плюшевыми фигурками экипажа
+    .desc = Коробка, полная милых плюшевых фигурок любимых членов экипажа.
+>>>>>>> goob

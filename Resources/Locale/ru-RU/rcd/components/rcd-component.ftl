@@ -18,6 +18,11 @@ rcd-component-nothing-to-deconstruct-message = Здесь нечего демо�
 rcd-component-tile-obstructed-message = Вы не можете демонтировать клетку, на которой что-то находится!
 # Construction
 rcd-component-no-valid-grid = Вы слишком далеко в космосе, чтобы строить здесь!
+<<<<<<< HEAD
+=======
+rcd-component-deconstruct-target-no-access = У вас нет доступа чтобы демонтировать это!
+rcd-component-deconstruct-target-is-bolted = Болты препятствуют демонтированию!
+>>>>>>> goob
 rcd-component-must-build-on-empty-tile-message = Здесь уже имеется фундамент!
 rcd-component-cannot-build-on-empty-tile-message = Это не может быть построено без фундамента.
 rcd-component-must-build-on-subfloor-message = Это может быть построено только на покрытии!
@@ -32,6 +37,7 @@ rcd-component-windows-and-grilles = Окна и решётки
 rcd-component-airlocks = Шлюзы
 rcd-component-electrical = Электроприборы
 rcd-component-lighting = Освещение
+<<<<<<< HEAD
 rcd-component-piping = Трубы
 rcd-component-atmosphericutility = Атмосферные приборы
 rcd-component-pumps = Насосы & Вентили
@@ -39,6 +45,15 @@ rcd-component-vents = Вентиляции
 
 ### Prototype names (note: constructable items will be puralized)
 
+=======
+
+### Prototype names (note: constructable items will be puralized)
+
+rcd-component-piping = трубы
+rcd-component-atmosphericutility = атмос
+rcd-component-pumps = насосы и клапаны
+rcd-component-vents = вентиляция
+>>>>>>> goob
 rcd-component-deconstruct = демонтаж
 rcd-component-floor-steel = стальной пол
 rcd-component-plating = корпусное покрытие

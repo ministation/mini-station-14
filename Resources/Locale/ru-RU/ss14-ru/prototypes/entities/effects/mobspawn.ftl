@@ -10,7 +10,11 @@ ent-MobSpawnCrabGold = спавнер моб рудокраб золото
     .desc = { ent-MobSpawnCrabQuartz.desc }
 ent-MobSpawnCrabUranium = спавнер моб рудокраб уран
     .desc = { ent-MobSpawnCrabQuartz.desc }
+<<<<<<< HEAD
 ent-MobSpawnCrabBananium = mobspawner bananiumcrab
+=======
+ent-MobSpawnCrabBananium = спавнер моб рудокраб бананиум
+>>>>>>> goob
     .desc = { ent-MobSpawnCrabQuartz.desc }
 ent-EffectAnomalyFloraBulb = { "" }
     .desc = { "" }

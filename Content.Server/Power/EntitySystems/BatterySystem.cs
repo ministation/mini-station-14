@@ -1,9 +1,49 @@
+<<<<<<< HEAD
 using Content.Server.Emp;
 using Content.Server.Power.Components;
 using Content.Shared.Cargo;
+=======
+// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
+// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 Kirus59 <145689588+Kirus59@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Kyle Tyo <36606155+VerinSenpai@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using System.Diagnostics.CodeAnalysis;
+using Content.Server._White.Blocking;
+using Content.Server.Cargo.Systems;
+using Content.Server.Emp;
+using Content.Server.Power.Components;
+using Content.Shared.Emp; // Goobstation
+>>>>>>> goob
 using Content.Shared.Examine;
 using Content.Shared.Rejuvenate;
 using JetBrains.Annotations;
+using Robust.Shared.Containers;
 using Robust.Shared.Utility;
 using Robust.Shared.Timing;
 
@@ -12,7 +52,10 @@ namespace Content.Server.Power.EntitySystems
     [UsedImplicitly]
     public sealed class BatterySystem : EntitySystem
     {
-        [Dependency] private readonly IGameTiming _timing = default!;
+        [Dependency] private readonly SharedContainerSystem _containers = default!; // WD EDIT
+        [Dependency] private readonly IGameTiming Timing = default!;
+
+        private EntityQuery<EmpDisabledComponent> _disabledQuery; // Goobstation
 
         public override void Initialize()
         {
@@ -28,6 +71,8 @@ namespace Content.Server.Power.EntitySystems
 
             SubscribeLocalEvent<NetworkBatteryPreSync>(PreSync);
             SubscribeLocalEvent<NetworkBatteryPostSync>(PostSync);
+
+            _disabledQuery = GetEntityQuery<EmpDisabledComponent>(); // Goobstation
         }
 
         private void OnNetBatteryRejuvenate(EntityUid uid, PowerNetworkBatteryComponent component, RejuvenateEvent args)
@@ -93,9 +138,13 @@ namespace Content.Server.Power.EntitySystems
 
                 if (comp.AutoRechargePause)
                 {
-                    if (comp.NextAutoRecharge > _timing.CurTime)
+                    if (comp.NextAutoRecharge > Timing.CurTime)
                         continue;
                 }
+
+                // Goobstation
+                if (comp.CanEmp && _disabledQuery.HasComponent(uid))
+                    continue;
 
                 SetCharge(uid, batt.CurrentCharge + comp.AutoRechargeRate * frameTime, batt);
             }
@@ -112,6 +161,8 @@ namespace Content.Server.Power.EntitySystems
         private void OnEmpPulse(EntityUid uid, BatteryComponent component, ref EmpPulseEvent args)
         {
             args.Affected = true;
+            if (!HasComp<RechargeableBlockingComponent>(uid)) // Goobstation - rechargeable blocking system handles it
+                args.Disabled = true;
             UseCharge(uid, args.EnergyConsumption, component);
             // Apply a cooldown to the entity's self recharge if needed to avoid it immediately self recharging after an EMP.
             TrySetChargeCooldown(uid);
@@ -205,7 +256,7 @@ namespace Content.Server.Power.EntitySystems
             if (value < 0)
                 value = batteryself.AutoRechargePauseTime;
 
-            if (_timing.CurTime + TimeSpan.FromSeconds(value) <= batteryself.NextAutoRecharge)
+            if (Timing.CurTime + TimeSpan.FromSeconds(value) <= batteryself.NextAutoRecharge)
                 return;
 
             SetChargeCooldown(uid, batteryself.AutoRechargePauseTime, batteryself);
@@ -220,9 +271,9 @@ namespace Content.Server.Power.EntitySystems
                 return;
 
             if (value >= 0)
-                batteryself.NextAutoRecharge = _timing.CurTime + TimeSpan.FromSeconds(value);
+                batteryself.NextAutoRecharge = Timing.CurTime + TimeSpan.FromSeconds(value);
             else
-                batteryself.NextAutoRecharge = _timing.CurTime;
+                batteryself.NextAutoRecharge = Timing.CurTime;
         }
 
         /// <summary>
@@ -267,5 +318,36 @@ namespace Content.Server.Power.EntitySystems
             RaiseLocalEvent(uid, ref ev);
             return newValue;
         }
+<<<<<<< HEAD
+=======
+
+        // WD EDIT START
+        public bool TryGetBatteryComponent(EntityUid uid, [NotNullWhen(true)] out BatteryComponent? battery,
+            [NotNullWhen(true)] out EntityUid? batteryUid)
+        {
+            if (TryComp(uid, out battery))
+            {
+                batteryUid = uid;
+                return true;
+            }
+
+            if (!_containers.TryGetContainer(uid, "cell_slot", out var container)
+                || container is not ContainerSlot slot)
+            {
+                battery = null;
+                batteryUid = null;
+                return false;
+            }
+
+            batteryUid = slot.ContainedEntity;
+
+            if (batteryUid != null)
+                return TryComp(batteryUid, out battery);
+
+            battery = null;
+            return false;
+        }
+        // WD EDIT END
+>>>>>>> goob
     }
 }

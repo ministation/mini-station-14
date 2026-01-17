@@ -1,5 +1,9 @@
 // SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+>>>>>>> goob
 // SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -20,13 +24,21 @@ public sealed partial class CosmicEntropyDebuffComponent : Component
     public TimeSpan CheckTimer = default!;
 
     [DataField]
+<<<<<<< HEAD
     public TimeSpan CheckWait = TimeSpan.FromSeconds(1);
+=======
+    public TimeSpan CheckWait = TimeSpan.FromSeconds(10);
+>>>>>>> goob
 
     /// <summary>
     /// The chance to recieve a message popup while under the effects of Entropic Degen.
     /// </summary>
     [DataField]
+<<<<<<< HEAD
     public float PopupChance = 0.05f;
+=======
+    public float PopupChance = 0.00f;
+>>>>>>> goob
 
     /// <summary>
     /// The debuff applied while the component is present.
@@ -36,9 +48,15 @@ public sealed partial class CosmicEntropyDebuffComponent : Component
     {
         DamageDict = new()
         {
+<<<<<<< HEAD
             { "Cold", 5.0},
             { "Asphyxiation", 5.0},
             { "Ion", 5.0},
+=======
+            //{ "Cold", 5.0}, Goobstation: Less metagaming
+            { "Asphyxiation", 5.0},
+            { "Ion", 10.0},
+>>>>>>> goob
         }
     };
 }

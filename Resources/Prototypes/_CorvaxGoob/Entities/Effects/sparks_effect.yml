@@ -1,0 +1,9 @@
+- type: entity
+  id: SpawnEffectSparks
+  components:
+  - type: ExecuteTargetEventsOnTrigger
+    events:
+    - !type:DoSparksTargetEvent
+      playSound: false
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger

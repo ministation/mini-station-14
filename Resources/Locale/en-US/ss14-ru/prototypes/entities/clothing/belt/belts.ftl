@@ -18,14 +18,24 @@ ent-ClothingBeltSecurity = security belt
     .desc = Can hold security gear like handcuffs and flashes.
 ent-ClothingBeltSheath = sabre sheath
     .desc = An ornate sheath designed to hold an officer's blade.
+<<<<<<< HEAD
 ent-ClothingBeltBandolier = bandolier
     .desc = A bandolier for holding shotgun ammunition.
 ent-ClothingBeltChampion = championship belt
     .desc = Proves to the world that you are the strongest!
+=======
+>>>>>>> goob
 ent-ClothingBeltHolster = shoulder holster
     .desc = A holster to carry a handgun and ammo. WARNING: Badasses only.
 ent-ClothingBeltSyndieHolster = syndicate shoulder holster
     .desc = A deep shoulder holster capable of holding many types of ballistics.
+<<<<<<< HEAD
+=======
+ent-ClothingBeltBandolier = bandolier
+    .desc = A bandolier for holding shotgun ammunition.
+ent-ClothingBeltChampion = championship belt
+    .desc = Proves to the world that you are the strongest!
+>>>>>>> goob
 ent-ClothingBeltSecurityWebbing = security carrier
     .desc = Unique and versatile chest rig, can hold security gear.
 ent-ClothingBeltMercWebbing = mercenary webbing

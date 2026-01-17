@@ -10,6 +10,11 @@ store-currency-display-debugdollar =
     }
 store-currency-display-telecrystal = ТК
 store-currency-display-stolen-essence = Украденная эссенция
+<<<<<<< HEAD
 store-currency-display-silicon-memory = Memory
 store-currency-display-wizcoin = Маг₭øин™
 store-currency-display-tradeunit = ЕТ
+=======
+store-currency-display-wizcoin = Маг₭øин™
+store-currency-display-silicon-memory = Память
+>>>>>>> goob

@@ -1,7 +1,11 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
   "copyright": "Created by discord:IAmRasputin#5242. Vox state by Flareguy for SS14",
+=======
+  "copyright": "Created by discord:IAmRasputin#5242. Vox state by Flareguy for SS14, vulp sprites made by YERO",
+>>>>>>> goob
   "size": {
     "x": 32,
     "y": 32
@@ -12,6 +16,26 @@
     },
     {
       "name": "icon-flash"
+    },
+    {
+<<<<<<< HEAD
+      "name": "off-equipped-HELMET",
+=======
+      "name": "equipped-HELMET",
+>>>>>>> goob
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "off-equipped-HELMET-vox",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-vox",
+      "directions": 4
     },
     {
       "name": "off-equipped-HELMET",
@@ -27,6 +51,18 @@
     },
     {
       "name": "on-equipped-HELMET-vox",
+      "directions": 4
+    },
+    {
+      "name": "off-equipped-HELMET-vulpkanin",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-vulpkanin",
+      "directions": 4
+    },
+    {
+      "name": "equipped-HELMET-vulpkanin",
       "directions": 4
     }
   ]

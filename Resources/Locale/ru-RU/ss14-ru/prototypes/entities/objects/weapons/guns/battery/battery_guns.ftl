@@ -65,9 +65,17 @@ ent-WeaponBehonkerLaser = око бехонкера
     .desc = Глаз бехонкера, при сжатии выстреливает лазером.
 ent-WeaponEnergyShotgun = энергетический дробовик
     .desc = Единственный в своём роде прототип энергетического оружия, использующий различные конфигурации дробовика. Оно позволяет совершать как смертельные, так и несмертельные выстрелы, что делает его универсальным оружием.
+<<<<<<< HEAD
 ent-WeaponTemperatureGun = temperature gun
     .desc = An advanced gun that shoots body-temperature-changing beams. This probably constitutes as some kind of war crime.
 ent-XenoborgLaserGun = xenoborg laser gun
     .desc = { ent-WeaponAdvancedLaser.desc }
 ent-XenoborgHeavyLaserGun = xenoborg heavy laser gun
+=======
+ent-WeaponTemperatureGun = термопушка
+    .desc = Продвинутое оружие, стреляющее лучами, изменяющими температуру тела. Вероятно, это подпадает под военное преступление.
+ent-XenoborgLaserGun = лазерная пушка ксеноборга
+    .desc = { ent-WeaponAdvancedLaser.desc }
+ent-XenoborgHeavyLaserGun = тяжёлая лазерная пушка ксеноборга
+>>>>>>> goob
     .desc = { ent-WeaponAdvancedLaser.desc }

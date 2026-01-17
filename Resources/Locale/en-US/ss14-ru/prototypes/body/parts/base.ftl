@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ent-BasePart = body part
     .desc = { ent-BaseItem.desc }
 ent-BaseTorso = torso
@@ -20,3 +21,29 @@ ent-BaseLeftFoot = left foot
     .desc = { ent-BasePart.desc }
 ent-BaseRightFoot = right foot
     .desc = { ent-BasePart.desc }
+=======
+ent-BasePartInorganic = body part
+    .desc = { ent-BaseItem.desc }
+ent-BaseChestInorganic = chest
+    .desc = { "" }
+ent-BaseGroinInorganic = groin
+    .desc = { "" }
+ent-BaseHead = head
+    .desc = { "" }
+ent-BaseLeftArm = left arm
+    .desc = { "" }
+ent-BaseRightArm = right arm
+    .desc = { "" }
+ent-BaseLeftHand = left hand
+    .desc = { "" }
+ent-BaseRightHand = right hand
+    .desc = { "" }
+ent-BaseLeftLeg = left leg
+    .desc = { "" }
+ent-BaseRightLeg = right leg
+    .desc = { "" }
+ent-BaseLeftFoot = left foot
+    .desc = { "" }
+ent-BaseRightFoot = right foot
+    .desc = { "" }
+>>>>>>> goob

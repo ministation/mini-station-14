@@ -57,6 +57,24 @@ ent-DefaultStationBeaconLawOffice = { ent-DefaultStationBeaconSecurity }
 ent-DefaultStationBeaconSecurityCheckpoint = { ent-DefaultStationBeaconSecurity }
     .suffix = Sec Checkpoint
     .desc = { ent-DefaultStationBeaconSecurity.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconSecurityGorlex = { ent-DefaultStationBeaconSecurity }
+    .suffix = Gorlex Barracks
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+ent-DefaultStationBeaconSecurityGorlexOffice = { ent-DefaultStationBeaconSecurity }
+    .suffix = Gorlex Office
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+ent-DefaultStationBeaconSecurityGorlexBreak = { ent-DefaultStationBeaconSecurity }
+    .suffix = Gorlex Breakroom
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+ent-DefaultStationBeaconSecurityGorlexHos = { ent-DefaultStationBeaconSecurity }
+    .suffix = Gorlex Command
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+ent-DefaultStationBeaconSecurityCybersunLegal = { ent-DefaultStationBeaconSecurity }
+    .suffix = Cybersun Legal Dept
+    .desc = { ent-DefaultStationBeaconSecurity.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconMedical = { ent-DefaultStationBeacon }
     .suffix = Medical
     .desc = { ent-DefaultStationBeacon.desc }
@@ -84,6 +102,18 @@ ent-DefaultStationBeaconPsychology = { ent-DefaultStationBeaconMedical }
 ent-DefaultStationBeaconClinic = { ent-DefaultStationBeaconMedical }
     .suffix = Clinic
     .desc = { ent-DefaultStationBeaconMedical.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconParamedic = { ent-DefaultStationBeaconMedical }
+    .suffix = Paramedics
+    .desc = { ent-DefaultStationBeaconMedical.desc }
+ent-DefaultStationBeaconInterdyne = { ent-DefaultStationBeaconMedical }
+    .suffix = Interdyne Triage
+    .desc = { ent-DefaultStationBeaconMedical.desc }
+ent-DefaultStationBeaconInterdyneFront = { ent-DefaultStationBeaconMedical }
+    .suffix = Interdyne Reception
+    .desc = { ent-DefaultStationBeaconMedical.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconScience = { ent-DefaultStationBeacon }
     .suffix = Science
     .desc = { ent-DefaultStationBeacon.desc }
@@ -105,6 +135,12 @@ ent-DefaultStationBeaconArtifactLab = { ent-DefaultStationBeaconScience }
 ent-DefaultStationBeaconAnomalyGenerator = { ent-DefaultStationBeaconScience }
     .suffix = Anomaly Generator
     .desc = { ent-DefaultStationBeaconScience.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconCybersunRD = { ent-DefaultStationBeaconScience }
+    .suffix = Cybersun R&D
+    .desc = { ent-DefaultStationBeaconScience.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconSupply = { ent-DefaultStationBeacon }
     .suffix = Supply
     .desc = { ent-DefaultStationBeacon.desc }
@@ -120,6 +156,15 @@ ent-DefaultStationBeaconQMRoom = { ent-DefaultStationBeaconSupply }
 ent-DefaultStationBeaconSalvage = { ent-DefaultStationBeaconSupply }
     .suffix = Salvage
     .desc = { ent-DefaultStationBeaconSupply.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconDonk = { ent-DefaultStationBeaconSupply }
+    .suffix = DONK Co. Shipping
+    .desc = { ent-DefaultStationBeaconSupply.desc }
+ent-DefaultStationBeaconDonkFront = { ent-DefaultStationBeaconSupply }
+    .suffix = DONK Co. Front
+    .desc = { ent-DefaultStationBeaconSupply.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconEngineering = { ent-DefaultStationBeacon }
     .suffix = Engineering
     .desc = { ent-DefaultStationBeacon.desc }
@@ -132,6 +177,33 @@ ent-DefaultStationBeaconAME = { ent-DefaultStationBeaconEngineering }
 ent-DefaultStationBeaconSolars = { ent-DefaultStationBeaconEngineering }
     .suffix = Solars
     .desc = { ent-DefaultStationBeaconEngineering.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconSolarsN = { ent-DefaultStationBeaconEngineering }
+    .suffix = Solars, North
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsNE = { ent-DefaultStationBeaconEngineering }
+    .suffix = Solars, Northeast
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsE = { ent-DefaultStationBeaconEngineering }
+    .suffix = Solars, East
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsSE = { ent-DefaultStationBeaconEngineering }
+    .suffix = Solars, Southeast
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsS = { ent-DefaultStationBeaconEngineering }
+    .suffix = Solars, South
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsSW = { ent-DefaultStationBeaconEngineering }
+    .suffix = Solars, Southwest
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsW = { ent-DefaultStationBeaconEngineering }
+    .suffix = Solars, West
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+ent-DefaultStationBeaconSolarsNW = { ent-DefaultStationBeaconEngineering }
+    .suffix = Solars, Northwest
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconGravGen = { ent-DefaultStationBeaconEngineering }
     .suffix = Grav Gen
     .desc = { ent-DefaultStationBeaconEngineering.desc }
@@ -156,6 +228,12 @@ ent-DefaultStationBeaconTEG = { ent-DefaultStationBeaconEngineering }
 ent-DefaultStationBeaconTechVault = { ent-DefaultStationBeaconEngineering }
     .suffix = Tech Vault
     .desc = { ent-DefaultStationBeaconEngineering.desc }
+<<<<<<< HEAD
+=======
+ent-DefaultStationBeaconShipyard = { ent-DefaultStationBeaconEngineering }
+    .suffix = Shipyard
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
+>>>>>>> goob
 ent-DefaultStationBeaconService = { ent-DefaultStationBeacon }
     .suffix = Service
     .desc = { ent-DefaultStationBeacon.desc }
@@ -225,6 +303,7 @@ ent-DefaultStationBeaconCryosleep = { ent-DefaultStationBeacon }
 ent-DefaultStationBeaconEscapePod = { ent-DefaultStationBeacon }
     .suffix = Escape Pod
     .desc = { ent-DefaultStationBeacon.desc }
+<<<<<<< HEAD
 ent-DefaultStationBeaconVox = { ent-DefaultStationBeacon }
     .suffix = Vox
     .desc = { ent-DefaultStationBeacon.desc }
@@ -243,3 +322,32 @@ ent-DefaultStationBeaconCentCommThunderdome = { ent-DefaultStationBeaconGhost }
 ent-DefaultStationBeaconCentCommERT = { ent-DefaultStationBeaconGhost }
     .suffix = CentComm ERT
     .desc = { ent-DefaultStationBeaconGhost.desc }
+=======
+ent-DefaultStationBeaconEscapePodN = { ent-DefaultStationBeacon }
+    .suffix = Escape Pod, North
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodNE = { ent-DefaultStationBeacon }
+    .suffix = Escape Pod, Northeast
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodE = { ent-DefaultStationBeacon }
+    .suffix = Escape Pod, East
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodSE = { ent-DefaultStationBeacon }
+    .suffix = Escape Pod, Southeast
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodS = { ent-DefaultStationBeacon }
+    .suffix = Escape Pod, South
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodSW = { ent-DefaultStationBeacon }
+    .suffix = Escape Pod, Southwest
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodW = { ent-DefaultStationBeacon }
+    .suffix = Escape Pod, West
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconEscapePodNW = { ent-DefaultStationBeacon }
+    .suffix = Escape Pod, Northwest
+    .desc = { ent-DefaultStationBeacon.desc }
+ent-DefaultStationBeaconVox = { ent-DefaultStationBeacon }
+    .suffix = Vox
+    .desc = { ent-DefaultStationBeacon.desc }
+>>>>>>> goob

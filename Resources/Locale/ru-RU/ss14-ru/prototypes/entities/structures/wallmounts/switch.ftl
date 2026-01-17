@@ -99,7 +99,11 @@ ent-LockableButtonKitchen = { ent-LockableButton }
     .suffix = Кухня
     .desc = { ent-LockableButton.desc }
 ent-LockableButtonChapel = { ent-LockableButton }
+<<<<<<< HEAD
     .suffix = Церковь
+=======
+    .suffix = Храм
+>>>>>>> goob
     .desc = { ent-LockableButton.desc }
 ent-LockableButtonHydroponics = { ent-LockableButton }
     .suffix = Гидропоника

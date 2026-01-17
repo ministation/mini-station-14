@@ -1,5 +1,17 @@
+<<<<<<< HEAD
 ﻿using Content.Server.Shuttles.Systems;
 using Robust.Shared.Audio;
+=======
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: MIT
+
+using Content.Server.Shuttles.Systems;
+>>>>>>> goob
 using Robust.Shared.Serialization.TypeSerializers.Implementations;
 using Robust.Shared.Utility;
 
@@ -22,6 +34,7 @@ public sealed partial class StationEmergencyShuttleComponent : Component
     /// </summary>
     [DataField("emergencyShuttlePath", customTypeSerializer: typeof(ResPathSerializer))]
     public ResPath EmergencyShuttlePath { get; set; } = new("/Maps/Shuttles/emergency.yml");
+<<<<<<< HEAD
 
     /// <summary>
     /// The announcement made when the shuttle has successfully docked with the station.
@@ -58,3 +71,6 @@ public sealed partial class StationEmergencyShuttleComponent : Component
     /// </summary>
     public LocId LaunchExtendedMessage = "emergency-shuttle-extended";
 }
+=======
+}
+>>>>>>> goob

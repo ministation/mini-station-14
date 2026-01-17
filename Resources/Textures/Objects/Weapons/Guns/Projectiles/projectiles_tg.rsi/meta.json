@@ -57,7 +57,11 @@
       "name": "heavylaser_flash"
     },
     {
+<<<<<<< HEAD
         "name": "adtomnilaser"
+=======
+      "name": "ice"
+>>>>>>> goob
     }
   ]
 }

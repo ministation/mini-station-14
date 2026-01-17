@@ -1,7 +1,12 @@
 ent-BaseBeaker = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
+<<<<<<< HEAD
 ent-BorgBeaker = integrated beaker
     .desc = An internal compartment installed into a cyborg. Rated for 50 units of any liquid.
+=======
+ent-BorgBeaker = встроенная мензурка
+    .desc = Внутренний отсек, установленный в борга. Рассчитан на 50 единиц любой жидкости.
+>>>>>>> goob
 ent-BaseBeakerMetallic = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-Beaker = мензурка
@@ -23,8 +28,11 @@ ent-BaseSyringe = шприц
     .desc = Используется для забора образцов крови у существ или для введения им реагентов.
 ent-Syringe = { ent-BaseSyringe }
     .desc = { ent-BaseSyringe.desc }
+<<<<<<< HEAD
 ent-MiniSyringe = мини-шприц
     .desc = Обычный шприц, переделанный так, чтобы поместиться в шприцемёт.
+=======
+>>>>>>> goob
 ent-PrefilledSyringe = { ent-BaseSyringe }
     .desc = { ent-BaseSyringe.desc }
 ent-SyringeBluespace = блюспейс-шприц

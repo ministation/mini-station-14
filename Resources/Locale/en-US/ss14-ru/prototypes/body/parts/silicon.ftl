@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ent-PartSilicon = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-LeftArmBorg = cyborg left arm
@@ -12,3 +13,19 @@ ent-LightHeadBorg = cyborg head
     .desc = { ent-PartSilicon.desc }
 ent-TorsoBorg = cyborg torso
     .desc = { ent-PartSilicon.desc }
+=======
+ent-PartSiliconBase = { ent-BasePartInorganic }
+    .desc = { ent-BasePartInorganic.desc }
+ent-LeftArmBorg = cyborg left arm
+    .desc = { ent-PartSiliconBase.desc }
+ent-RightArmBorg = cyborg right arm
+    .desc = { ent-PartSiliconBase.desc }
+ent-LeftLegBorg = cyborg left leg
+    .desc = { ent-PartSiliconBase.desc }
+ent-RightLegBorg = cyborg right leg
+    .desc = { ent-PartSiliconBase.desc }
+ent-LightHeadBorg = cyborg head
+    .desc = { ent-PartSiliconBase.desc }
+ent-TorsoBorg = cyborg torso
+    .desc = { ent-PartSiliconBase.desc }
+>>>>>>> goob

@@ -54,8 +54,13 @@ ent-FoodMeatClown = мясо клоуна
     .desc = Вкусный, круглый кусок мяса клоуна. Какой ужас.
 ent-FoodMeatMeatball = фрикаделька
     .desc = Шарик сырого мяса. Ноу хомо.
+<<<<<<< HEAD
 ent-FoodMeatPatty = meat patty
     .desc = A flat slab of ground meat. Ready for grillin'.
+=======
+ent-FoodMeatPatty = мясная котлета
+    .desc = Плоский кусок измельчённого мяса. Готовый к прожарке на гриле.
+>>>>>>> goob
 ent-FoodMeatSlime = шар слизи
     .desc = Студенистая масса из слаймового желе.
 ent-FoodMeatSnail = сырое мясо улитки
@@ -90,8 +95,13 @@ ent-FoodMeatSpiderlegCooked = приготовленная паучья нога
     .desc = Нога гигантского паука, которая всё ещё дёргается после приготовления. Отвратительно!
 ent-FoodMeatMeatballCooked = фрикаделька
     .desc = Приготовленная фрикаделька. Идеально подходит для добавления в другие блюда... кроме фруктовых.
+<<<<<<< HEAD
 ent-FoodMeatPattyCooked = cooked meat patty
     .desc = A cooked meat patty.
+=======
+ent-FoodMeatPattyCooked = приготовленная мясная котлета
+    .desc = Обычная, приготовленная мясная котлета.
+>>>>>>> goob
 ent-FoodMeatSnailCooked = варёная улитка
     .desc = Лучше с солью.
 ent-FoodMeatAnomalyCooked = аномальный стейк

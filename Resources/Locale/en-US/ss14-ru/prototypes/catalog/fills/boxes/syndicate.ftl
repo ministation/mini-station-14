@@ -2,7 +2,11 @@ ent-ElectricalDisruptionKit = electrical disruption kit
     .suffix = Filled
     .desc = { ent-BoxCardboard.desc }
 ent-ChemicalSynthesisKit = chemical synthesis kit
+<<<<<<< HEAD
     .desc = A starter kit for the aspiring chemist, includes two vials of vestine for all your criminal needs!
+=======
+    .desc = A starter kit for the aspiring chemist, notably includes a chemical payload and timer, a hyperzine syringe, and two vials of vestine for all your criminal needs!
+>>>>>>> goob
 ent-ThrowingKnivesKit = throwing knives kit
     .desc = A set of 4 syndicate branded throwing knives, perfect for embedding into the body of your victims.
 ent-BoxDeathRattleImplants = deathrattle implant box

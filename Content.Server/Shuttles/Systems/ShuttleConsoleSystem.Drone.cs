@@ -1,5 +1,16 @@
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Server._CorvaxGoob.Shuttles.Systems;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
+using Content.Shared.DeviceLinking;
 using Content.Shared.Station.Components;
 using Content.Shared.UserInterface;
 
@@ -58,6 +69,24 @@ public sealed partial class ShuttleConsoleSystem
     {
         if (!Resolve(uid, ref component))
             return null;
+
+        if (_tags.HasTag(uid, ShuttleDroneLinkSystem.RemoteDroneTag)) // CorvaxGoob-LinkableDrones
+        {
+            if (!TryComp<DeviceLinkSourceComponent>(uid, out var deviceLinkSink))
+                return null;
+
+            foreach (var linkedPort in deviceLinkSink.LinkedPorts)
+                foreach (var port in linkedPort.Value)
+                    if (port.Source == ShuttleDroneLinkSystem.RemoteDroneSourcePort)
+                    {
+                        if (!HasComp<ShuttleConsoleComponent>(linkedPort.Key))
+                            continue;
+
+                        return linkedPort.Key;
+                    }
+
+            return null;
+        }
 
         var stationUid = _station.GetOwningStation(uid);
 

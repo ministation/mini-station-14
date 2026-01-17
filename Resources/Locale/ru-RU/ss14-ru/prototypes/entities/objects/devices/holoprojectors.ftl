@@ -11,8 +11,13 @@ ent-HolofanProjector = атмос голопроектор
 ent-HolofanProjectorEmpty = { ent-HolofanProjector }
     .suffix = Пустой
     .desc = { ent-HolofanProjector.desc }
+<<<<<<< HEAD
 ent-HolofanProjectorBorg = integrated holofan
     .desc = Stops idiots from causing more crew harm during atmospheric emergencies. Installed directly into an engineering cyborg, it  recharges over time.
+=======
+ent-HolofanProjectorBorg = встроенный атмос голопроектор
+    .desc = Не позволяет идиотам причинить ещё больше вреда экипажу во время чрезвычайных ситуаций. Установлен напрямую в инженерного борга. Перезаряжается со временем.
+>>>>>>> goob
 ent-HoloprojectorField = проектор силового поля
     .desc = Создаёт непроходимое силовое поле, через которое ничего не проходит. Нахождение в непосредственной близости может вызвать рак, а может и не вызвать.
 ent-HoloprojectorFieldEmpty = { ent-HoloprojectorField }

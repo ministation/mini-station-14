@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 ﻿using Robust.Shared.GameStates;
+=======
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Robust.Shared.GameStates;
+>>>>>>> goob
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Starlight.CollectiveMind
@@ -13,9 +26,28 @@ namespace Content.Shared._Starlight.CollectiveMind
         public ProtoId<CollectiveMindPrototype>? DefaultChannel = null;
 
         [DataField]
+<<<<<<< HEAD
+=======
+        public HashSet<ProtoId<CollectiveMindPrototype>> Channels = new();
+
+        [DataField]
+>>>>>>> goob
         public bool HearAll = false;
 
         [DataField]
         public bool SeeAllNames = false;
+<<<<<<< HEAD
+=======
+
+        [DataField]
+        public bool RespectAccents = false;
+
+        // Goobstation
+        /// <summary>
+        /// Whether the collective mind can be used while in critical condition
+        /// </summary>
+        [DataField]
+        public bool CanUseInCrit = false;
+>>>>>>> goob
     }
 }

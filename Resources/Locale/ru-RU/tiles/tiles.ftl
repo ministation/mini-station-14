@@ -37,6 +37,10 @@ tiles-dark-floor-diagonal-mini = тёмные стальные диагонал�
 tiles-plastic-dark-floor = тёмные пластиковые плиты
 tiles-techmaint-floor = технический пол
 tiles-reinforced-floor = армированный пол
+<<<<<<< HEAD
+=======
+tiles-techmaint-floor-dark = тёмный технический пол
+>>>>>>> goob
 tiles-super-reinforced-floor = укреплённый армированный пол
 tiles-mono-floor = моно пол
 tiles-linoleum-floor = линолеумный пол
@@ -60,6 +64,7 @@ tiles-brass-floor-reebe = гладкое латунное покрытие
 tiles-mime-floor = мимский пол
 tiles-kitchen-floor = кухонный пол
 tiles-laundry-floor = пол прачечной
+<<<<<<< HEAD
 tiles-concrete-tile = внутренний бетонный пол
 tiles-concrete-slab = внутренняя бетонная плита
 tiles-concrete-smooth = внутренний гладкий бетонный пол
@@ -69,6 +74,17 @@ tiles-gray-concrete-smooth = внутренний гладкий серый бе
 tiles-old-concrete-tile = внутренний старый бетонный пол
 tiles-old-concrete-slab = внутренняя старая бетонная плита
 tiles-old-concrete-smooth = внутренний старый гладкий бетонный пол
+=======
+tiles-concrete-tile = бетонный пол
+tiles-concrete-slab = бетонная плита
+tiles-concrete-smooth = гладкий бетонный пол
+tiles-gray-concrete-tile = серый бетонный пол
+tiles-gray-concrete-slab = серая бетонная плита
+tiles-gray-concrete-smooth = гладкий серый бетонный пол
+tiles-old-concrete-tile = старый бетонный пол
+tiles-old-concrete-slab = старая бетонная плита
+tiles-old-concrete-smooth = старый гладкий бетонный пол
+>>>>>>> goob
 tiles-blue-arcade-floor = синий пол аркады
 tiles-red-arcade-floor = красный пол аркады
 tiles-eighties-floor = пол восьмидесятых
@@ -103,6 +119,7 @@ tiles-dark-grass-floor = тёмная трава
 tiles-light-grass-floor = светлая трава
 tiles-dirt-floor = грязь
 tiles-asteroid-sand = астероидный песок
+<<<<<<< HEAD
 tiles-asteroid-sand-borderless = borderless asteroid sand
 tiles-asteroid-sand-dug = копаный астероидный песок
 tiles-asteroid-plating = астероидное покрытие
@@ -110,6 +127,15 @@ tiles-asteroid-tile = астероидная плитка
 tiles-asteroid-ironsand = железопесочный астероид
 tiles-asteroid-ironsand-borderless = borderless asteroid ironsand
 tiles-cave = пещера
+=======
+tiles-asteroid-sand-dug = копаный астероидный песок
+tiles-asteroid-sand-borderless = не имеющий границ астероидный песок
+tiles-asteroid-plating = астероидное покрытие
+tiles-asteroid-tile = астероидная плитка
+tiles-asteroid-ironsand = железопесочный астероид
+tiles-cave = пещера
+tiles-asteroid-ironsand-borderless = не имеющий границ железопесочный астероид
+>>>>>>> goob
 tiles-cave-drought = сухая пещера
 tiles-flesh-floor = мясистый пол
 tiles-techmaint3-floor = решётчатый технический пол
@@ -119,6 +145,10 @@ tiles-desert-floor = пол пустыня
 tiles-low-desert-floor = пол низинная пустыня
 tiles-grass-planet-floor = пол трава планеты
 tiles-basalt-floor = пол базальт
+<<<<<<< HEAD
+=======
+tiles-dirt-planet-floor = грязь планеты
+>>>>>>> goob
 tiles-snow-floor = пол снег
 tiles-wood3 = пол сломанный деревянный
 tiles-hull = наружная обшивка корпуса
@@ -131,5 +161,19 @@ tiles-jungle-astro-grass = астро-трава джунглей
 tiles-astro-ice = астро-лёд
 tiles-astro-snow = астро-снег
 tiles-astro-asteroid-sand = астро-песок астероида
+<<<<<<< HEAD
 tiles-astro-asteroid-sand-borderless = borderless asteroid astro-sand
 tiles-wood-large = большой деревянный пол
+=======
+tiles-wood-large = большой деревянный пол
+tiles-astro-asteroid-sand-borderless = не имеющий границ астро-песок астероида
+tiles-xeno-floor = ксеноморфный пол
+tiles-xeno-steel = стальной ксеноморфный пол
+tiles-xeno-steel-corner = угловой стальной ксеноморфный пол
+tiles-xeno-maint = технический ксеноморфный пол
+tiles-dark-squiggly = темный стальной волнистый пол
+tiles-white-marble = белый мрамор
+tiles-dark-marble = тёмный мрамор
+tiles-plasma-marble = плазма мрамор
+tiles-uranium-marble = урановый мрамор
+>>>>>>> goob

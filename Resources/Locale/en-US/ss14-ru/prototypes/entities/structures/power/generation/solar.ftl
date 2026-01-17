@@ -16,6 +16,10 @@ ent-SolarPanelUraniumBroken = uranium solar panel
     .desc = A broken uranium solar panel.
     .suffix = Broken
 ent-SolarAssembly = solar assembly
+<<<<<<< HEAD
     .desc = A solar assembly. Anchor to a wire to start building a solar panel.
+=======
+    .desc = A solar assembly. Insert glass to build a solar panel.
+>>>>>>> goob
 ent-SolarTracker = solar tracker
     .desc = A solar tracker. Tracks the nearest star.
